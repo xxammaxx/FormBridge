@@ -11,7 +11,7 @@
 | M2 | Wohnsitz in Deutschland + Steuern in DE? | Eigene Bestätigung; ggf. Nachweis | **BLOCKER** |
 | M3a | Selbstständig oder freiberuflich? | Status bestätigen | **BLOCKER**, falls weder a/b/c |
 | M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für 01.06.–30.11.2027? | Schriftliche Freistellung klären | **BLOCKER**, falls nicht freigestellt |
-| M3c | Selbstständigkeit erst ab Förderbeginn geplant? | PTF-Anfrage Q2; Gewerbe-/Finanzamt-Timing | **POTENZIELLER BLOCKER** |
+| M3c | Selbstständigkeit erst ab Förderbeginn geplant? | PTF-Anfrage Q2; **sichere Planung: Registrierung vor formalem Antrag (März 2027)** oder Freistellung; „erst 01.06.2027" ist nicht sicher; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **POTENZIELLER BLOCKER** |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
 | M5 | Einschlägige Vorarbeiten + umfassende Kenntnisse nachweisbar? | Bewerbungstext §11/§14 ergänzen; Nachweise | **BLOCKER**, falls kein Nachweis |
 | M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | Alle Beihilfen auflisten; De-minimis-Erklärung | **BLOCKER**, falls überschritten |
@@ -44,7 +44,7 @@
 | # | Entscheidung | Optionen | Empfehlung | Status |
 |---|---|---|---|---|
 | O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** empfohlen; **keine Festlegung ohne Owner-Freigabe** | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
-| O2 | **Stunden** | 950 / 850 | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O2 | **Stunden** | 950 (Default) / 850 (bewusste Änderung) | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O3 | **Second Stage** | Ja / Nein | Ja, wenn Integration/Community gewollt; sonst Nein und §16/§17 entfernen | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | Bedingte Empfehlung F3; Owner entscheidet | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O5 | **Q1/Q2/Q3-Anfragen** | senden / nicht senden | Q2 ist kritisch; Q3 nur für Maximalausschöpfung | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |

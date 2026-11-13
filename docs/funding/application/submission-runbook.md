@@ -62,7 +62,7 @@ Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9
 - [ ] Keine Platzhalter mehr im Portaltext.
 - [ ] Wort-/Zeichenlimits eingehalten.
 - [ ] Projektlink `https://github.com/xxammaxx/FormBridge` korrekt.
-- [ ] Stunden = 950 oder 850, konsistent mit Budget/Plan.
+- [ ] Stunden = 950 (Default) oder 850 (bewusste Owner-Änderung), konsistent mit Budget/Plan.
 - [ ] Second Stage = Ja/Nein, konsistent mit §16/§17.
 - [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
 - [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) gesetzt.

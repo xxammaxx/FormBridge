@@ -2,7 +2,7 @@
 
 **Candidate:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
 **Reviewer:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Tests:** 109/109 PASS · **Relative Links:** 0 gebrochen
-**Gate:** **APPLICATION_READY_WITH_BLOCKERS** — Bewerbung vollständig vorbereitet; die verbleibenden Punkte sind ausschließlich Owner-Angaben, Owner-Entscheidungen, Portal-Live-Prüfung und ausdrücklich benannte externe Klärungen.
+**Gate:** **READY_FOR_OWNER_INPUT** (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) — Bewerbung vollständig vorbereitet; die verbleibenden Punkte sind ausschließlich Owner-Angaben, Owner-Entscheidungen, Portal-Live-Prüfung und ausdrücklich benannte externe Klärungen.
 
 ## 1. Was geprüft wurde
 
@@ -52,13 +52,14 @@
 |---|---|---|---|
 | M1 | Alter ≥ 18 | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M2 | Wohnsitz DE + Steuern DE | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Selbstständigkeit ab Förderbeginn | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + ggf. PTF-Antwort (Q2) |
+| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Selbstständigkeit ab Förderbeginn | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + ggf. PTF-Antwort (Q2); sichere Planung: Registrierung vor formalem Antrag |
+| Q2 | Zeitpunkt der Selbstständigkeit | `[PTF_BESTÄTIGUNG]` | Aktueller PTF-Wiki-Eintrag verlangt Steuernummer/Anmeldung zum formalen Antrag; „erst zum Förderbeginn" nicht sicher. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M5 | Vorarbeiten/Kenntnisse | `[OWNER_ANGABE]` | §11/§14 personalisieren |
 | M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
 | M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
 
-**Q2/M3c** ist die einzige potenziell harte externe Hürde. **Keine Anfrage versendet.**
+**Q2/M3c** ist die einzige potenziell harte externe Hürde. **Keine Anfrage versendet.** Die Quellenlage ist präzisiert: Der aktuelle PTF-Wiki-Eintrag „Antragstellung" verlangt eine Steuernummer/Anmeldung bereits zum **formalen Antrag**; die historische Formulierung „spätestens bei Projektbeginn" ist sekundär und nicht bindend. „Erst zum 01.06.2027" ist daher **nicht sicher**; die konservative Planung ist Registrierung vor dem formalen Antrag oder Arbeitgeber-Freistellung.
 
 ### 3.2 Portal-Live-Prüfung
 
@@ -98,10 +99,10 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 
 ## 5. Gate-Begründung
 
-**APPLICATION_READY_WITH_BLOCKERS**, weil:
+**READY_FOR_OWNER_INPUT** (früher `APPLICATION_READY_WITH_BLOCKERS`), weil:
 
 - alle öffentlich prüfbaren Anforderungen erfüllt und beide Reviews PASS sind;
 - aber M1–M6, Q2, die Portal-Live-Prüfung und die Lizenz-/Second-Stage-Entscheidung echte Owner-/externe Voraussetzungen sind;
 - Q3/Q3b bewusst offen, aber quantifiziert und bei konservativer Planung nicht einreichungsblockierend.
 
-**Nicht** `APPLICATION_READY_FOR_OWNER_REVIEW`, solange Q2/M3c und die persönlichen Pflichtangaben nicht geklärt sind. **Nicht** `VALIDATION_FAILED`; es gibt keinen ungelösten materiellen Fehler. **Nicht** `BLOCKED`; die offenen Punkte sind Owner-Input, nicht fehlender Zugriff.
+**Nicht** `READY_FOR_FINAL_APPROVAL`, solange Q2/M3c und die persönlichen Pflichtangaben nicht geklärt sind. **Nicht** `VALIDATION_FAILED`; es gibt keinen ungelösten materiellen Fehler. **Nicht** `BLOCKED`; die offenen Punkte sind Owner-Input, nicht fehlender Zugriff.

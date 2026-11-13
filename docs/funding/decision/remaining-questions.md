@@ -25,13 +25,15 @@
 - **Verbindlich nötig?** Nein für **eine** Einreichung; ja, wenn beide aktiv gehalten werden.
 - **Abhängige Entscheidung:** Owner-Strategie A5/B3 (`owner-decisions.md`).
 
-## Q2 — Selbstständigkeit ab Förderbeginn (F3)
+## Q2 — Selbstständigkeit: Bewerbung, formaler Antrag, Förderbeginn (UNRESOLVED)
 
-- **Bekannt:** Bewerbung setzt „selbstständig oder freiberuflich" voraus; Angestellte mit (anteiliger) Freistellung sind ausdrücklich zulässig (FAQ Bewerbung 02 FN**).
-- **Fehlt:** Ob Selbstständigkeit, die **erst ab Förderbeginn** aufgenommen wird, bei Bewerbung/Auswahl akzeptiert ist (und welcher Nachweis — Gewerbe/Finanzamt-Timing).
+- **Bekannt:** Bewerbung setzt „selbstständig oder freiberuflich“ voraus; Angestellte mit (anteiliger) Freistellung sind ausdrücklich zulässig (FAQ Bewerbung 02 FN**). Der aktuelle PTF-Wiki-Eintrag „Antragstellung“ (Stand 03.03.2026) verlangt für den **formalen Antrag** eine „Steuernummer für selbständige Tätigkeit … bzw. Kopie der Anmeldung/Eingangsbestätigung beim Finanzamt“. Historische Seiten (2020/2022) nennen „spätestens bei Projektbeginn“.
+- **Fehlt:** Ob die Selbstständigkeit bereits zur **Jury-Bewerbung** (Nov 2026) bestehen muss, ob sie bis zum **formalen Antrag** (Frühjahr 2027) genügt oder ob eine Aufnahme **erst zum Förderbeginn** (01.06.2027) akzeptiert wird — und welcher Nachweis zu welchem Zeitpunkt.
+- **Tendenz (keine Rechtsaussage):** Der aktuelle Wiki-Eintrag spricht für eine Registrierung **vor dem formalen Antrag**; „erst zum Förderbeginn“ ist **nicht sicher** tragfähig.
 - **Relevanz:** Entscheidend, falls der Owner derzeit nicht selbstständig/freiberuflich ist und keine Freistellung hat.
-- **Verbindlich nötig?** **Ja — harte formale Hürde.**
-- **Abhängige Entscheidung:** A2 (PTF-Query) und ggf. Gewerbeanmeldung-Timing.
+- **Verbindlich nötig?** **Ja — potenziell harte formale Hürde.**
+- **Vollständige Analyse:** [q2-employment-status.md](q2-employment-status.md).
+- **Abhängige Entscheidung:** A2 (PTF-Query) und Gewerbe-/Finanzamt-Timing; Owner-Checkliste M3c.
 
 ## Q3 — Berechnungslogik 47.500 € vs. 47.381,25 € (UNRESOLVED)
 

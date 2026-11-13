@@ -126,7 +126,7 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 **Begründung:** 950 h entsprechen der maximalen Stundenzahl für Einzelpersonen; die Aufteilung ist im [Sechs-Monats-Plan](six-month-development-plan.md) dokumentiert. Eine realistische 850-h-Variante liegt in [budget-final.md](budget-final.md).
 
-**Status:** FINAL (950; 850 nur bei bewusster Owner-Änderung vor Einreichung)
+**Status:** FINAL (950)
 
 ---
 

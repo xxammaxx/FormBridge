@@ -93,3 +93,17 @@
 - Zeichenlimits oder Pflichtfelder erfinden.
 - Eine Portalantwort als „verifiziert“ bezeichnen, die nur aus dem Handbuch stammt.
 - Den bestehenden RepairProbe-Portal-Draft überschreiben.
+
+## I. Portalzugriff — dokumentierter Ist-Stand (13.11.2026)
+
+| Prüfung | Ergebnis |
+|---|---|
+| `https://bewerben.prototypefund.de/` | HTTP 200; öffentliche Landingpage mit Login/Registrierung |
+| `https://bewerben.prototypefund.de/jahrgang-03-innovation/` | Redirect auf `/auth/?next=/jahrgang-03-innovation/`; Formular nur nach Login |
+| Login | **nicht durchgeführt** — kein Owner-Konto, keine Owner-Zugangsdaten, keine Erlaubnis zum Anlegen eines Kontos |
+| Exakte Zeichenlimits | **PORTAL_UNVERIFIED** |
+| Pflichtfeldmarkierungen | **PORTAL_UNVERIFIED** |
+| Q19-Checkbox-Formulierung | **PORTAL_UNVERIFIED** |
+| RepairProbe-Draft | **nicht geöffnet, nicht verändert** |
+
+**Blocker:** Der Live-Abgleich ist ohne Owner-Login technisch nicht möglich. Es wird **keine** Portalvalidierung behauptet. Der Owner muss den Abgleich im eingeloggten Portal durchführen; die Tabelle oben ist die vollständige öffentlich belegbare Vorlage.

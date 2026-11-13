@@ -63,9 +63,9 @@ FormBridge kombiniert sieben Elemente in einer Kette:
 ## 6. Gesellschaftlicher Nutzen — belegt vs. plausibel
 
 **Belegt:**
-- 50 % der Befragten erledigten ihr letztes Anliegen vollständig offline; 24 % nutzten einen Medienbruch; 68 % der Medienbrüche waren unfreiwillig (eGovernment MONITOR 2026, D21/TUM, Erhebung April/Mai 2026, n = 5.725 (Item-Basis; Gesamt n = 8.091); https://initiatived21.de/uploads/03_Studien-Publikationen/eGovernment-MONITOR/2026/D21-eGovMon2026.pdf, abgerufen 13.11.2026).
+- 50 % der Befragten erledigten ihr letztes Anliegen vollständig offline; 24 % nutzten einen Medienbruch; 68 % der Medienbrüche waren unfreiwillig (eGovernment MONITOR 2026, D21/TUM, Erhebung April/Mai 2026, n = 5.725 (Item-Basis; Gesamt n = 8.091; Gesamt-n nicht unabhängig geprüft); https://initiatived21.de/uploads/03_Studien-Publikationen/eGovernment-MONITOR/2026/D21-eGovMon2026.pdf, abgerufen 13.11.2026).
 - FIM ist ein offizieller Standard für Verwaltungsdaten; das FIM-Portal betreibt Schemata und einen Datenschema-Konverter (XDF2/XDF3/JSON Schema/XSD). Der Konverter repariert jedoch kein bereits veröffentlichtes defektes XSD und liefert keine PDF→FIM-Zuordnung.
-- Das amtliche S00000159-XSD ist im geprüften Stand nicht standardkonform kompilierbar (170 betroffene Elemente; 169 xmllint-Meldungen zu D2; libxml2/xmllint).
+- Das amtliche S00000159-XSD ist im geprüften Stand nicht standardkonform kompilierbar (170 Parser-Fehler = 1 NCName + 169 D2-Meldungen; libxml2/xmllint).
 
 **Wichtig zur Reichweite:** Die D21-Zahlen belegen Medienbrüche allgemein, **nicht** die Prävalenz statischer PDFs als Ursache. Der Referenzfall belegt einen konkreten Fall; die Verallgemeinerung ist eine Forschungshypothese. **RF2** ist daher die Reparatur/deterministische Normalisierung bereits veröffentlichter defekter XSDs mit Semantikverlust-Protokoll — nicht die Behauptung, es fehle ein allgemeiner Schema-Konverter.
 

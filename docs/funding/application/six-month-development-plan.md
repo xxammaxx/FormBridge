@@ -203,7 +203,7 @@ Wird ein Muss-Kriterium nicht erreicht, wird das im Abschlussbericht als Abweich
 - `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, Lizenz (Owner-Entscheidung; Empfehlung Apache-2.0).
 - Release `v0.1.0` mit reproduzierbarem Testlauf und Hash.
 
-**FOSS-Umfang:** Nur selbst erstellte Code-/Dokumentationsergebnisse werden unter eine OSI-Lizenz gestellt. Amtliche PDFs/XSDs werden nicht redistribuiert, sondern per URL/Hash referenziert, solange die Rechte nicht geklärt sind.
+**FOSS-Umfang:** Nur selbst erstellte Code-/Dokumentationsergebnisse werden unter eine OSI-Lizenz gestellt. Amtliche PDFs/XSDs und abgeleitete FIM-Metadaten werden nicht redistribuiert, sondern per URL/Hash referenziert, solange die Rechte nicht geklärt sind. Eigener Regelkatalog und Manifest bleiben in jedem Fall FOSS.
 
 ## 9. Abgrenzung und Förderbedingungen
 
