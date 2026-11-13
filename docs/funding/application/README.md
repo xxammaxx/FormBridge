@@ -25,6 +25,6 @@
 | [Review Gründungsstrategie](../decision/review-founder-strategy-2026-11-13.md) | Unabhängige Reviews A/B, Residual LOW | PASS (bedingt) |
 | [Post-Selection-Gründungsplan](../decision/post-selection-founding-plan.md) | Finanzamt, ESG/§16c, GZ, Tragfähigkeit, Liquidität | EXTERNAL_CONFIRMATION_REQUIRED |
 
-**Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. **Keine Einreichung ohne Owner-Freigabe.**
+**Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung (formale Zulassungsvoraussetzung derzeit nicht erfüllt). **Keine Einreichung ohne Owner-Freigabe.**
 
 **Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung, keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.

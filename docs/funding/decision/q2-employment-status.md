@@ -1,6 +1,6 @@
 # Q2 — Selbstständigkeit: Bewerbungszeitpunkt, formaler Antrag und Förderbeginn
 
-**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Materielles Teilnahmerisiko:** ja
+**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Formale Zulassungsvoraussetzung:** derzeit **nicht erfüllt** · **Materielles Teilnahmerisiko:** ja
 **Anfrage:** [external-inquiry-drafts.md](external-inquiry-drafts.md) §A (kanonisch), **nicht versendet**
 **Zweck:** Die vier Aspekte sauber trennen: materielle Teilnahmevoraussetzung, Nachweiszeitpunkt, formaler Förderantrag und Beginn der selbstständigen Tätigkeit. Keine rechtliche Schlussfolgerung ohne offizielle Bestätigung.
 
@@ -8,12 +8,12 @@
 
 | Aspekt | Leitfrage | Aktueller öffentlicher Befund | Status |
 |---|---|---|---|
-| **1. Materielle Teilnahmevoraussetzung** | Muss man bereits selbstständig/freiberuflich sein, um teilnehmen zu dürfen? | **JG03-FAQ Bewerbung 02** und **Bewerbungsseite** verlangen „selbstständig oder Freiberufler*in“ oder eine anteilige Arbeitgeber-Freistellung. Das **JG03-Handbuch** (Sept. 2026) listet Selbstständigkeit dagegen **nicht** unter den zwingenden Förderbedingungen; die Checkliste sagt „als Privatperson“, nicht als Unternehmen/Verein. | **WIDERSPRÜCHLICH / RISIKO** |
+| **1. Materielle Teilnahmevoraussetzung** | Muss man bereits selbstständig/freiberuflich sein, um teilnehmen zu dürfen? | **BMFTR-RL Nr. 3** sagt: „Antragsberechtigt sind ausschließlich selbstständige Programmiererinnen und Programmierer …“. **JG03-FAQ Bewerbung 02** und **Bewerbungsseite** verlangen „selbstständig oder Freiberufler*in“ oder eine anteilige Arbeitgeber-Freistellung. Das **JG03-Handbuch** (Sept. 2026) listet Selbstständigkeit dagegen **nicht** unter den zwingenden Förderbedingungen; die Checkliste sagt „als Privatperson“. | **FORMALE ZULASSUNGSVORAUSSETZUNG; DERZEIT NICHT ERFÜLLT** |
 | **2. Nachweiszeitpunkt** | Wann müssen Steuernummer, Anmeldung oder Freistellung vorliegen? | Die offiziellen **Fragen für Innovation** enthalten **kein** Selbstständigkeits- oder Steuernummerfeld. Die **JG03-FAQ Auswahl 03** nennt für Einzelpersonen **keine Solo-Steuernummer** (nur Vorhabenbeschreibung, De-minimis, Kontoauszug). Das **JG02-Wiki** verlangt Steuernummer/Anmeldung zum formalen Antrag. | **OFFEN / WIDERSPRUCH** |
 | **3. Formaler Förderantrag** | Wann und mit welchen Unterlagen wird der BMFTR-Antrag gestellt? | Nach der Auswahl, Antragsworkshop **März 2027**. Die Detailseite nennt zugleich „**Bis Ende Februar** muss der Antrag beim BMFTR eingereicht sein“. Unterlagen für Einzelpersonen: Vorhabenbeschreibung, De-minimis-Erklärung, Kontoauszug; das JG02-Wiki nennt zusätzlich die Steuernummer. | **TERMINWIDERSPRUCH** |
 | **4. Beginn der Tätigkeit** | Wann wird die selbstständige Tätigkeit tatsächlich aufgenommen? | Geplant **01.06.2027**. Die Finanzamt-Registrierung ist nicht automatisch die „Aufnahme“; vorher keine ≥ 15 h/Woche und keine Umsätze. Keine öffentliche Regel garantiert, dass eine erst zum Förderbeginn beginnende Tätigkeit für den formalen Antrag akzeptiert wird. | **NICHT SICHER** |
 
-**Kernaussage:** Das Online-Formular für Innovation fragt nach den offiziellen Fragen **keine Steuernummer und keinen Selbstständigkeitsstatus** ab. Eine Einreichung ist daher technisch ohne Steuernummer möglich. Das beweist aber **nicht**, dass die materielle Voraussetzung entfällt: FAQ und Bewerbungsseite nennen sie weiterhin, während das JG03-Handbuch sie in der Liste der zwingenden Förderbedingungen nicht wiederholt.
+**Kernaussage:** Die verbindliche BMFTR-Richtlinie und die JG03-FAQ verlangen selbstständige Programmierer*innen; der Owner erfüllt diese formale Zulassungsvoraussetzung derzeit **nicht**. Das Online-Formular für Innovation fragt nach den offiziellen Fragen **keine Steuernummer und keinen Selbstständigkeitsstatus** ab; eine Einreichung ist daher technisch möglich. Das beweist aber **nicht**, dass die materielle Voraussetzung entfällt. Das JG03-Handbuch wiederholt sie in der Liste der zwingenden Förderbedingungen nicht — das ist eine Redaktionslücke, kein gleichrangiger Gegenbeleg.
 
 ## 2. Primär-/offizielle Quellen
 
@@ -39,12 +39,12 @@
 
 ## 4. Befund
 
-1. **Materielle Voraussetzung:** Die aktuellen JG03-FAQ und die Bewerbungsseite verlangen Selbstständigkeit/Freiberuflichkeit oder Freistellung. Das JG03-Handbuch führt sie nicht in der Liste der zwingenden Förderbedingungen und spricht von „Privatperson“. Dieser Widerspruch ist **nicht** zugunsten der für den Owner günstigeren Lesart auflösbar.
+1. **Materielle Voraussetzung:** Die BMFTR-RL Nr. 3 und die JG03-FAQ verlangen Selbstständigkeit/Freiberuflichkeit oder Freistellung. Der Owner erfüllt diese formale Zulassungsvoraussetzung **derzeit nicht**. Das JG03-Handbuch führt sie nicht in der Liste der zwingenden Förderbedingungen und spricht von „Privatperson“; das ist eine Redaktionslücke, **kein** gleichrangiger Gegenbeleg. Die Anforderung ist daher ernst zu nehmen, auch wenn der genaue Zeitpunkt (Online-Bewerbung vs. formaler Antrag) offen bleibt.
 2. **Nachweis:** Die Online-Fragen für Innovation enthalten kein Steuernummerfeld. Die JG03-Checkliste für Einzelpersonen nennt keine Solo-Steuernummer; das JG02-Wiki verlangt sie zum formalen Antrag. Der Nachweiszeitpunkt ist offen.
 3. **Formaler Antrag:** Der Antragsworkshop ist im März 2027 vorgesehen; gleichzeitig nennt die Detailseite eine Einreichung „bis Ende Februar“. Der genaue Termin muss PTF bestätigen.
 4. **Tätigkeitsbeginn:** Der geplante Beginn 01.06.2027 ist kein anerkannter Nachweiszeitpunkt. „Erst zum Förderbeginn“ ist nicht sicher tragfähig.
 
-**Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** — mit **materiellem Teilnahmerisiko**, das vor der Einreichung als Risiko offenzulegen und nach Möglichkeit durch eine PTF-Antwort zu klären ist.
+**Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** — die formale Zulassungsvoraussetzung ist **derzeit nicht erfüllt**; der Nachweiszeitpunkt ist offen. Das Risiko ist vor der Einreichung offenzulegen und nach Möglichkeit durch eine PTF-Antwort zu klären.
 
 ## 5. Was daraus für die aktuelle Bewerbung folgt
 

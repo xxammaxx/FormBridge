@@ -9,7 +9,7 @@
 |---|---|---|---|
 | M1 | Mindestalter 18? | Eigene Bestätigung | **BLOCKER** |
 | M2 | Wohnsitz in Deutschland + Steuern in DE? | Eigene Bestätigung; ggf. Nachweis | **BLOCKER** |
-| M3a | Derzeit selbstständig oder freiberuflich? | Status bestätigen; FAQ/Bewerbungsseite verlangen es, JG03-Handbuch nennt es nicht unter den zwingenden Förderbedingungen | **MATERIELLES RISIKO** |
+| M3a | Derzeit selbstständig oder freiberuflich? | Status bestätigen; BMFTR-RL/FAQ/Bewerbungsseite verlangen es; JG03-Handbuch nennt es nicht unter den zwingenden Förderbedingungen. Derzeit **nicht erfüllt**, falls keine Selbstständigkeit/Freistellung. | **FORMALE ZULASSUNGSVORAUSSETZUNG / RISIKO** |
 | M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für 01.06.–30.11.2027? | Schriftliche Freistellung klären | **BLOCKER**, falls nicht freigestellt |
 | M3c | Nicht selbstständig, Aufnahme erst 2027 geplant? | PTF-Anfrage Q2; materielle Voraussetzung klären oder Risiko bewusst tragen; falls Zustimmung: Registrierung vor dem PTF-bestätigten formalen Antragstermin, nicht erst 01.06.2027; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **MATERIELLES RISIKO / POTENZIELLER BLOCKER** |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
@@ -69,7 +69,7 @@
 - [ ] O2 Stunden entschieden; Budget/Plan konsistent.
 - [ ] O3 Second Stage entschieden; §16/§17 entfernt oder final.
 - [ ] O4 Projektfassung final bestätigt (F3 empfohlen).
-- [ ] O5 Q2-Anfrage gestellt oder bewusst zurückgestellt.
+- [ ] O5 Q2-Anfrage gestellt oder bewusst zurückgestellt. **Schnellster Kanal: Bewerbungssprechstunde 16.11.2026, 17:00 Uhr.**
 - [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
 - [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) bestätigt.
 - [ ] Persönliche Felder aus B ergänzt; keine Platzhalter mehr im Portaltext.

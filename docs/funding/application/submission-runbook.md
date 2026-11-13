@@ -26,7 +26,8 @@ Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/1
 
 **Owner-Checkliste:** [owner-checklist.md](owner-checklist.md) vollständig abarbeiten. Besonders:
 
-- [ ] M1–M6 positiv; M8 planbar. **M3a/M3c: materielles Q2-Risiko dokumentiert und entschieden.**
+- [ ] M1–M6 positiv; M8 planbar. **M3a/M3c: formale Q2-Zulassungsvoraussetzung dokumentiert und entschieden.**
+- [ ] Falls Q2 offen: Bewerbungssprechstunde **16.11.2026, 17:00 Uhr** nutzen (schnellster Klärungsweg).
 - [ ] O1 Lizenz; O2 Stunden (950/850); O3 Second Stage; O4 Projektfassung; O5 Q2-Anfrage.
 - [ ] Persönliche Felder ergänzt; keine Platzhalter mehr im Portaltext.
 - [ ] Q3/Q3b als offen dokumentiert; keine 47.500-€-Planung ohne Q3.

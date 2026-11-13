@@ -10,7 +10,7 @@
 |---|---|
 | Offizielle Fragen Jahrgang 03 Innovation | Vollständig gemappt (Fragen-PDF, 8 S., SHA-256 `1d6848c4…4fb74`) |
 | Wortlimits | Aus Handbuch Jahrgang 03; alle Abschnitte innerhalb der Limits; Portal-Tokenizer `PORTAL_UNVERIFIED` |
-| Q19-Bestätigungen | 18+/Hauptwohnsitz DE und FOSS-Lizenz vorhanden |
+| Q19-Bestätigungen | Handbuch Q19: über 18/Hauptwohnsitz DE und FOSS-Zusage; **nicht im Fragen-PDF Innovation**, Portal-Checkbox `PORTAL_UNVERIFIED` |
 | Finanzen 950 h | PK 47.500,00 / GK 2.375,00 / G 49.875,00 / F **47.381,25** / EA **2.493,75** |
 | Finanzen 850 h | PK 42.500,00 / GK 2.125,00 / G 44.625,00 / F **42.393,75** / EA **2.231,25** |
 | 800 h | Nur Sensitivität, ausdrücklich keine Antragsoption |
@@ -52,7 +52,7 @@
 |---|---|---|---|
 | M1 | Alter ≥ 18 | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M2 | Wohnsitz DE + Steuern DE | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme erst 2027 | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + PTF-Antwort (Q2); **materielles Risiko**; falls Zustimmung: Registrierung vor PTF-bestätigtem formalem Antrag |
+| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme erst 2027 | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + PTF-Antwort (Q2); **formale Zulassungsvoraussetzung derzeit nicht erfüllt**; falls Zustimmung: Registrierung vor PTF-bestätigtem formalem Antrag |
 | Q2 | Materielle Selbstständigkeitsvoraussetzung und Nachweiszeitpunkt | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen; Online-Fragen ohne Statusfeld; JG02-Wiki verlangt Steuernummer zum formalen Antrag. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M5 | Vorarbeiten/Kenntnisse | `[OWNER_ANGABE]` | §11/§14 personalisieren |
@@ -90,7 +90,7 @@
 
 | Punkt | Ergebnis |
 |---|---|
-| Materielle Teilnahmevoraussetzung | **Widersprüchlich:** JG03-FAQ Bewerbung 02 und Bewerbungsseite verlangen selbstständig/freiberuflich oder Arbeitgeber-Freistellung; das JG03-Handbuch listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. **Materielles Risiko**, PTF-Anfrage nötig. |
+| Materielle Teilnahmevoraussetzung | **Formale Zulassungsvoraussetzung derzeit nicht erfüllt:** BMFTR-RL Nr. 3 und JG03-FAQ/Bewerbungsseite verlangen selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Arbeitgeber-Freistellung. Das JG03-Handbuch listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen (Redaktionslücke), spricht von „Privatperson“. **Materielles Risiko**, PTF-Anfrage nötig. |
 | Nachweiszeitpunkt | Offizielle Online-Fragen (Innovation) enthalten **kein** Steuernummer-/Selbstständigkeitsfeld. JG03-Checkliste für Einzelpersonen: keine Solo-Steuernummer; JG02-Wiki: zum formalen Antrag. **Offen.** |
 | Formaler Antrag | Antragswerkstatt **März 2027**; Detailseite nennt zugleich „bis Ende Februar“. **Terminwiderspruch**, PTF-bestätigen lassen. |
 | „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn; Registrierung ≠ Aufnahme |

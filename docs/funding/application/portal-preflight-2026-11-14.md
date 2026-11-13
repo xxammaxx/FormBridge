@@ -1,7 +1,7 @@
 # Portal-Preflight — Jahrgang 03 Innovation (Stand 14.11.2026)
 
 **Zweck:** Den tatsächlichen Stand der Online-Bewerbung dokumentieren, die öffentlich belegbaren Portalfelder gegen die vorhandene Fassung prüfen und die verbleibenden Owner-Aktionen benennen. **Keine Einreichung, keine Kontoerstellung, keine E-Mail.**
-**Status:** **READY_WITH_EXPLICIT_BLOCKERS** — Bewerbungstext und Feldvorlage sind vorbereitet; der Live-Abgleich ist ohne Owner-Login nicht möglich, persönliche Angaben fehlen, und Q2 bleibt materiell widersprüchlich.
+**Status:** **READY_WITH_EXPLICIT_BLOCKERS** — Bewerbungstext und Feldvorlage sind vorbereitet; der Live-Abgleich ist ohne Owner-Login nicht möglich, persönliche Angaben fehlen, und die formale Q2-Zulassungsvoraussetzung ist derzeit **nicht erfüllt**.
 
 ## 1. Portalzugriff — tatsächlich geprüft
 
@@ -17,6 +17,8 @@
 | RepairProbe-Draft | **nicht geöffnet, nicht verändert** |
 
 **Einmalige Owner-Aktion:** Im Portal anmelden bzw. ein Konto anlegen, Jahrgang 03 Innovation öffnen und den Live-Abgleich durchführen. Der Agent darf kein Konto anlegen und keine Zugangsdaten verarbeiten.
+
+**Schnellster Q2-Kanal:** Bewerbungssprechstunde am **16.11.2026, 17:00 Uhr** (online, siehe Detailseite). Dort kann die materielle Selbstständigkeitsfrage vor der Einreichung geklärt werden.
 
 ## 2. Verifizierte offizielle Fragen und Limits
 
@@ -48,11 +50,11 @@
 |---|---|---:|---|---|
 | P1 | Projekt in einem Satz | 30 W. | §1 (22 W.) | **FINAL** |
 | P2 | Projekt kurz beschreiben | 100 W. | §2 (96 W.) | **FINAL** |
-| P3 | Gesellschaftliche Herausforderung | 175 W. | §3 (163 W.) | **FINAL** |
+| P3 | Gesellschaftliche Herausforderung | 175 W. | §3 (169 W.) | **FINAL** |
 | P4 | Technische Umsetzung | 175 W. | §4 (133 W.) | **FINAL** |
 | P5 | Aktueller Stand/Neuerungen | 100 W. | §5 (81 W.) | **FINAL** |
 | P6 | Link zum bestehenden Projekt | optional | §6 | **FINAL** |
-| P7 | Innovation/Abgrenzung | 100 W. | §7 (86 W.) | **FINAL** |
+| P7 | Innovation/Abgrenzung | 100 W. | §7 (92 W.) | **FINAL** |
 | P8 | Zielgruppe/Zugang | 100 W. | §8 (90 W.) | **FINAL** |
 | P9 | Meilensteine | 100 W. | §9 (68 W.) | **FINAL** |
 
@@ -73,7 +75,7 @@
 | # | Frage | Limit | Vorlage | Status |
 |---|---|---:|---|---|
 | S1 | Second Stage beantragen? | Ja/Nein | Ja | **OWNER-ENTSCHEIDUNG** |
-| S2 | Schwerpunkt | 175 W. | §16 (97 W.) | **FINAL (bei Ja)** |
+| S2 | Schwerpunkt | 175 W. | §16 (99 W.) | **FINAL (bei Ja)** |
 | S3 | Meilensteine | 100 W. | §17 (29 W.) | **FINAL (bei Ja)** |
 
 ### E. Bestätigungen
@@ -88,13 +90,14 @@
 1. **Accountname** für die Plattform.
 2. **Vorname/Name** der Hauptansprechperson.
 3. **E-Mail-Adresse** (regelmäßig geprüft).
-4. **Persönlicher GitHub-/Bitbucket-Link**.
-5. **Bisherige Softwareprojekte** (max. 3; Name, Link, Rolle/Umfang) für §11.
-6. **Motivation/persönlicher Bezug** für §14.
-7. **Q4** (GmbH/Verein/Institut/Anstellung): Ja/Nein; falls Ja, Q5-Abgrenzung.
-8. **Second Stage:** Ja/Nein.
-9. **Q19a/Q19b:** Checkboxen.
-10. **Optional:** 950 vs. 850 Stunden; Lizenz; Projektfassung F3.
+4. **Wohnsitzland/-ort** (Deutschland).
+5. **Persönlicher GitHub-/Bitbucket-Link**.
+6. **Bisherige Softwareprojekte** (max. 3; Name, Link, Rolle/Umfang) für §11.
+7. **Motivation/persönlicher Bezug** für §14.
+8. **Q4** (GmbH/Verein/Institut/Anstellung): Ja/Nein; falls Ja, Q5-Abgrenzung.
+9. **Second Stage:** Ja/Nein.
+10. **Q19a/Q19b:** Checkboxen (Handbuch; nicht im Fragen-PDF).
+11. **Optional:** 950 vs. 850 Stunden; Lizenz; Projektfassung F3.
 
 **Nicht in das Repository:** Klarname, Anschrift, E-Mail, Steuernummer, Kontoauszug, De-minimis-Daten. Diese Angaben gehören ausschließlich in das Portal/den geschützten Owner-Bereich.
 
@@ -102,7 +105,7 @@
 
 | Aspekt | Befund | Konsequenz |
 |---|---|---|
-| Materielle Voraussetzung | FAQ/Bewerbungsseite: selbstständig/freiberuflich oder Freistellung. JG03-Handbuch: nicht in den zwingenden Förderbedingungen; „als Privatperson“. | **Widerspruch**; formale Ablehnung möglich |
+| Materielle Voraussetzung | BMFTR-RL Nr. 3 und FAQ/Bewerbungsseite: selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Freistellung. JG03-Handbuch: nicht in den zwingenden Förderbedingungen; „als Privatperson“. | **Formale Zulassungsvoraussetzung derzeit nicht erfüllt**; Ablehnung möglich |
 | Nachweiszeitpunkt | Online-Fragen: kein Steuernummerfeld. JG03-Checkliste: keine Solo-Steuernummer. JG02-Wiki: zum formalen Antrag. | offen |
 | Formaler Antrag | März 2027 vs. „bis Ende Februar“ | Terminwiderspruch |
 | Tätigkeitsbeginn | geplant 01.06.2027; Registrierung ≠ Aufnahme | nicht sicher |
@@ -127,9 +130,10 @@
 **Für `READY_FOR_PORTAL_OWNER_APPROVAL` fehlen:**
 
 - authentifizierter Live-Abgleich der Felder, Zeichenlimits und Pflichtfelder;
-- vollständige persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19);
+- vollständige persönliche Angaben (A2–A5 inkl. Wohnsitz, E1, E5, Q4/Q5, Q19);
 - Entscheidung zu Second Stage, Stunden und ggf. Lizenz;
-- hinreichende Klärung der materiellen Q2-Voraussetzung oder bewusste Owner-Entscheidung, das Risiko zu tragen.
+- hinreichende Klärung der materiellen Q2-Voraussetzung oder bewusste Owner-Entscheidung, das Risiko zu tragen;
+- Nutzung der Bewerbungssprechstunde am 16.11.2026, 17:00 Uhr (empfohlen).
 
 **Tests/Links:** 109/109 Tests, 0 gebrochene relative Links (Stand vor diesem Dokument; nach Dokumentänderung erneut geprüft).
 

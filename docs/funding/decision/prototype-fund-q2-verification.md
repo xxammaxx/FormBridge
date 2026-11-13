@@ -1,13 +1,13 @@
 # Prototype Fund Q2 — Verifikation der Selbstständigkeits-Anforderungen
 
-**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Jahrgang 03 / Innovation** · **Materielles Teilnahmerisiko:** ja
+**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Jahrgang 03 / Innovation** · **Formale Zulassungsvoraussetzung:** derzeit **nicht erfüllt**
 **Zweck:** Die Fragen A–H beantworten, soweit öffentliche JG03-Quellen tragen. Keine Rechtsberatung; keine erfundene PTF-Antwort; keine Vermischung von Bewerbung, Nachweis, formalem Antrag und Tätigkeitsbeginn.
 
 ## Kurzantwort
 
 | Frage | Antwort | Status |
 |---|---|---|
-| **A. Darf sich eine arbeitssuchende, noch nicht selbstständige Privatperson bewerben?** | Die **JG03-FAQ Bewerbung 02** und die Bewerbungsseite verlangen „selbstständig oder Freiberufler*in“ bzw. Arbeitgeber-Freistellung. Das **JG03-Handbuch** listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. Die Online-Fragen für Innovation enthalten **kein** Selbstständigkeitsfeld. Die Frage ist damit **widersprüchlich**, nicht zugunsten des Owners geklärt. | **CONTRADICTED / RISIKO** |
+| **A. Darf sich eine arbeitssuchende, noch nicht selbstständige Privatperson bewerben?** | Die **BMFTR-RL Nr. 3** und die **JG03-FAQ Bewerbung 02** verlangen selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Arbeitgeber-Freistellung. Der Owner erfüllt diese formale Zulassungsvoraussetzung **derzeit nicht**. Das **JG03-Handbuch** listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die Online-Fragen enthalten **kein** Statusfeld. Der genaue Zeitpunkt (Online-Bewerbung vs. formaler Antrag) ist offen. | **FORMALE VORAUSSETZUNG DERZEIT NICHT ERFÜLLT / OFFEN** |
 | **B. Wann muss die selbstständige Tätigkeit angemeldet sein?** | Kein öffentlicher Stichtag. JG02-Wiki: zum formalen Antrag. JG03-Checkliste für Einzelpersonen: keine Solo-Steuernummer. Geplant: Registrierung vor dem PTF-bestätigten formalen Antragstermin, nicht erst 01.06.2027. | **OFFEN** |
 | **C. Steuernummer bei Bewerbung oder formalem Antrag?** | Die offiziellen Online-Fragen verlangen **keine** Steuernummer. JG02-Wiki verlangt sie zum formalen Antrag; JG03-FAQ Auswahl 03 nennt für Einzelpersonen keine Solo-Steuernummer. | **WIDERSPRUCH (JG02 vs. JG03)** |
 | **D. Welche Nachweise?** | Online: Name/Kontakt/Accounts, Projektfragen, Team/Erfahrung, Second Stage, zwei Bestätigungen. Formal (JG03): Vorhabenbeschreibung, De-minimis, Kontoauszug; JG02-Wiki zusätzlich Steuernummer/Anmeldung; bei Anstellung Arbeitgeber-Genehmigung. | **TEILWEISE BELEGT** |
@@ -63,4 +63,4 @@ Ende Feb 2027?     alternativer Termin laut Detailseite (Widerspruch)
 7. Ist die Nachreichung der Steuernummer nach dem formalen Antrag möglich?
 8. Gilt der Antragsschluss **Ende Februar** oder erst **nach der März-Rückmeldung**?
 
-**Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** — ohne PTF-Antwort keine belastbare Aussage. Die Bewerbung kann vorbereitet werden; die materielle Förderfähigkeit bleibt ein offenes Risiko.
+**Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** — ohne PTF-Antwort keine belastbare Aussage. Die formale Zulassungsvoraussetzung ist derzeit **nicht erfüllt**; die Bewerbung kann vorbereitet werden, die materielle Förderfähigkeit bleibt aber ein offenes Risiko.

@@ -4,7 +4,7 @@
 
 ## A. Persönliche Förderfähigkeit (bitte nur Ja/Nein bestätigen)
 
-- [ ] **M1:** Ich bin mindestens 18 Jahre alt.
+- [ ] **M1:** Ich bin volljährig (mindestens 18 Jahre alt).
 - [ ] **M2:** Ich habe meinen Hauptwohnsitz in Deutschland und zahle hier Steuern.
 - [ ] **M3a:** Ich bin **derzeit** selbstständig oder freiberuflich tätig. *(Materielle Voraussetzung laut FAQ/Bewerbungsseite; das JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen — Widerspruch.)*
 - [ ] **M3b:** Ich bin angestellt und für 01.06.–30.11.2027 (anteilig) freigestellt.

@@ -53,7 +53,7 @@
 | Rechtsanspruch | nein — Ermessensleistung | BA |
 | Anrechnung | keine Bedarfsanrechnung wie Grundsicherungsgeld; Erforderlichkeit/Ermessen/Tragfähigkeit relevant | gesetzlich/BA |
 
-**Einstiegsgeld und Gründungszuschuss sind systembedingt nicht gleichzeitig** (Grundsicherungsgeld vs. ALG I). Bei Wegfall von Grundsicherungsgeld ist **Wohngeld** als Auffangleistung zu prüfen.
+**Einstiegsgeld und Gründungszuschuss sind in der Regel nicht gleichzeitig** (Grundsicherungsgeld vs. ALG I); Aufstocker-/Einzelfallkonstellationen sind gesondert zu prüfen. Bei Wegfall von Grundsicherungsgeld ist **Wohngeld** als Auffangleistung zu prüfen.
 
 ## 6. Auswirkungen auf den Leistungsbezug
 

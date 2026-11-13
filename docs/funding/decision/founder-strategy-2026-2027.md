@@ -1,6 +1,6 @@
 # Gründungsstrategie 2026–2027 — FormBridge
 
-**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Materielles Teilnahmerisiko:** ja · **Keine persönlichen Daten in diesem Dokument**
+**Stand:** 14.11.2026 · **Status:** **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED** · **Formale Zulassungsvoraussetzung:** derzeit **nicht erfüllt** · **Keine persönlichen Daten in diesem Dokument**
 **Zweck:** Die zeitliche und förderrechtliche Strategie für eine geplante Selbstständigkeit im FormBridge-Kontext bewerten. Dies ist **keine Rechtsberatung** und keine Förderzusage.
 
 ## 1. Ausgangslage (neutral)
@@ -24,7 +24,7 @@
 | **Zuwendungsbescheid** | BMFTR prüft; keine öffentliche Statusregel exakt zu diesem Zeitpunkt. | OFFEN |
 | **Förderbeginn** (01.06.2027) | Projektstart; keine öffentliche Regel, die eine **erst jetzt** beginnende Selbstständigkeit erlaubt. | **NICHT SICHER** |
 
-**Ergebnis:** Die materielle Voraussetzung ist **widersprüchlich**: FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freiberuflichkeit oder Freistellung; das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“. Die Online-Fragen enthalten kein Status-/Steuernummerfeld. Die Strategie ist **bedingt tragfähig**, wenn PTF bestätigt, dass die Bewerbung ohne damalige Selbstständigkeit zulässig ist und die Registrierung **vor dem PTF-bestätigten formalen Antragstermin** genügt. Q2 bleibt **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**; die materielle Förderfähigkeit ist ein **offenes Risiko**.
+**Ergebnis:** Die BMFTR-RL und die JG03-FAQ verlangen selbstständige Programmierer*innen; der Owner erfüllt diese formale Zulassungsvoraussetzung **derzeit nicht**. Das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“ — eine Redaktionslücke, kein gleichrangiger Gegenbeleg. Die Online-Fragen enthalten kein Status-/Steuernummerfeld. Die Strategie ist **bedingt tragfähig**, wenn PTF bestätigt, dass die Bewerbung ohne damalige Selbstständigkeit zulässig ist und die Registrierung **vor dem PTF-bestätigten formalen Antragstermin** genügt. Q2 bleibt **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**; die materielle Förderfähigkeit ist ein **offenes Risiko**.
 
 ## 3. Empfohlene Strategie — Variante A (konditional)
 

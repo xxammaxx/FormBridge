@@ -31,6 +31,8 @@ FormBridge wird eine lokal ausführbare Software-Infrastruktur mit:
 
 **Puffer:** In den Monatsstunden sind ca. 8–10 % für Integration, Bugfixes und unerwartete Schema-Effekte enthalten. Es gibt keinen separaten „Reserve-Monat“.
 
+**Berichtsrhythmus:** Jeder Monat endet mit einem kurzen öffentlichen Bericht (Changelog/Testlauf/Doku-Update), wie in der Bewerbung §9 zugesagt.
+
 ## 3. Alternative 850 h
 
 Falls die verfügbare Kapazität 950 h nicht realistisch trägt, wird der Umfang über eine **eigene, vorab definierte 850-h-Muss-Tabelle** reduziert (§6.2). Tests werden nicht stillschweigend gestrichen; die niedrigeren Muss-Werte werden im Antrag offengelegt.
@@ -203,7 +205,7 @@ Wird ein Muss-Kriterium nicht erreicht, wird das im Abschlussbericht als Abweich
 - `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, Lizenz (Owner-Entscheidung; Empfehlung Apache-2.0).
 - Release `v0.1.0` mit reproduzierbarem Testlauf und Hash.
 
-**FOSS-Umfang:** Nur selbst erstellte Code-/Dokumentationsergebnisse werden unter eine OSI-Lizenz gestellt. Amtliche PDFs/XSDs und abgeleitete FIM-Metadaten werden nicht redistribuiert, sondern per URL/Hash referenziert, solange die Rechte nicht geklärt sind. Eigener Regelkatalog und Manifest bleiben in jedem Fall FOSS.
+**FOSS-Umfang:** Nur selbst erstellte Code-/Dokumentationsergebnisse werden unter eine OSI-Lizenz gestellt. Amtliche PDFs/XSDs und abgeleitete FIM-Metadaten werden nicht redistribuiert, sondern per URL/Hash referenziert, solange die Rechte nicht geklärt sind. Eigene Regeldefinitionen und Manifest bleiben FOSS; FIM-IDs und abgeleitete Metadaten werden nur nach Rechteklärung redistribuiert.
 
 ## 9. Abgrenzung und Förderbedingungen
 

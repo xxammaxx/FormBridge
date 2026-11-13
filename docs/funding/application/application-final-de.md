@@ -26,11 +26,11 @@ Im Förderzeitraum entsteht ein eigenständiges Open-Source-Modul mit Bibliothek
 
 ## 3. Gesellschaftliche Herausforderung (max. 175 Wörter)
 
-Ein Teil der amtlichen Formulare wird als statische PDF bereitgestellt und ist nicht interaktiv ausfüllbar. Wer sie digital bearbeiten will, muss Felder manuell nachbauen, Werte doppelt erfassen oder Cloud-Dienste mit sensiblen Daten beauftragen. Der eGovernment MONITOR 2026 zeigt: 50 % der Befragten erledigten ihr letztes Anliegen vollständig offline, 24 % nutzten einen Medienbruch; 68 % der Medienbrüche waren unfreiwillig. Im geprüften Referenzfall, dem Fürther Wohngeldantrag, liegt genau ein solches statisches PDF vor. Gleichzeitig fehlt in den geprüften offenen Projekten eine offene, prüfbare Brücke zwischen dem sichtbaren PDF und den versionierten FIM-Datenfeldern, die Verwaltungsverfahren bereits beschreiben.
+Ein Teil der amtlichen Formulare wird als statische PDF bereitgestellt und ist nicht interaktiv ausfüllbar. Wer sie digital bearbeiten will, muss Felder manuell nachbauen, Werte doppelt erfassen oder Cloud-Dienste mit sensiblen Daten beauftragen. Der eGovernment MONITOR 2026 zeigt: 50 % erledigten ihr letztes Anliegen vollständig offline, 24 % nutzten einen Medienbruch; 68 % davon unfreiwillig. Die Studie misst Medienbrüche allgemein, nicht PDFs als Ursache. Im geprüften Referenzfall, dem Fürther Wohngeldantrag, liegt genau ein solches statisches PDF vor. Gleichzeitig fehlt in den geprüften offenen Projekten eine offene, prüfbare Brücke zwischen dem sichtbaren PDF und den versionierten FIM-Datenfeldern, die Verwaltungsverfahren bereits beschreiben.
 
 Besonders relevant ist diese Lücke für Anträge mit sensiblen Daten, etwa Sozialleistungen, sowie für Beratungsstellen und Kommunen. FormBridge setzt nicht beim Endnutzer, sondern bei der Software an, die solche Anträge baut: Wenn Zuordnungen nachvollziehbar und unsicherheitsbewusst sind, können darauf aufbauende Anwendungen Medienbrüche reduzieren, ohne vertrauliche Daten an einen zentralen Dienst zu geben. Das ist kein Ersatz für Rechtsberatung oder Behördenentscheidungen, sondern eine technische Grundlage für verlässlichere digitale Verfahren.
 
-**Wörter:** 163 / 175 · **Status:** FINAL
+**Wörter:** 169 / 175 · **Status:** FINAL
 
 ---
 
@@ -62,9 +62,9 @@ https://github.com/xxammaxx/FormBridge
 
 ## 7. Innovation (max. 100 Wörter)
 
-Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne Lizenz und Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Kein einzelner Baustein deckt die Kette ab; die Kombination ist Eigenarbeit. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
+Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne im geprüften Stand gefundene Lizenzdatei und ohne Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Kein einzelner Baustein deckt die Kette ab; die Kombination ist Eigenarbeit. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
 
-**Wörter:** 86 / 100 · **Status:** FINAL
+**Wörter:** 92 / 100 · **Status:** FINAL
 
 ---
 
@@ -116,7 +116,7 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 [OWNER_BESTÄTIGUNG_ERFORDERLICH: Falls Q4 = Ja, Beteiligung/Anstellung nennen und die klare Trennung zum Projekt erläutern. Falls Q4 = Nein, Q5 entfällt.] FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.
 
-**Wörter Q5:** 21 / 60 · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
+**Wörter Q5:** 11 / 60 (Antworttext; Owner-Ergänzung bei Q4=Ja) · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
 
 ---
 
@@ -150,9 +150,9 @@ Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist
 
 ## 16. Second Stage — Schwerpunkt (max. 175 Wörter)
 
-Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr Funktionsumfang. In vier Monaten will ich: (1) zwei Integrationen begleiten, darunter eine kommunale Testumgebung und optional Feldexa 2.0 als Consumer, nicht als geförderte Integration; (2) Integrationsrezepte, stabile Schnittstellen und Beispieldaten veröffentlichen; (3) eine kleine Regelkatalog- und Schema-Community aufbauen, mit dokumentiertem Review- und Release-Prozess; (4) Nutzertests zur Verständlichkeit von UNKNOWN und zur Review-Zeit durchführen; (5) einen Wartungsplan und eine Governance-Skizze für die Zeit nach der Förderung erstellen. Erfolg wäre: mindestens eine externe Integration, eine veröffentlichte Version 0.2 und ein dokumentierter Pflegeweg. Keine neuen Kernfunktionen, keine Produkt-UI.
+Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr Funktionsumfang. In vier Monaten will ich: (1) eine externe Integration begleiten und optional eine kommunale Testumgebung prüfen; Feldexa 2.0 bleibt optionaler Consumer, nicht geförderte Integration; (2) Integrationsrezepte, stabile Schnittstellen und Beispieldaten veröffentlichen; (3) eine kleine Regelkatalog- und Schema-Community aufbauen, mit dokumentiertem Review- und Release-Prozess; (4) Nutzertests zur Verständlichkeit von UNKNOWN und zur Review-Zeit durchführen; (5) einen Wartungsplan und eine Governance-Skizze für die Zeit nach der Förderung erstellen. Erfolg wäre: mindestens eine externe Integration, eine veröffentlichte Version 0.2 und ein dokumentierter Pflegeweg. Keine neuen Kernfunktionen, keine Produkt-UI.
 
-**Wörter:** 99 / 175 · **Status:** FINAL (bei Second Stage = Ja)
+**Wörter:** 99 / 175 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
 
 ---
 
@@ -163,16 +163,16 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 3. Monat: Nutzertests zu UNKNOWN/Review-Zeit, Community-Austausch, Dokumentation.
 4. Monat: Version 0.2, Wartungs- und Governance-Skizze, Abschlussbericht.
 
-**Wörter:** 30 / 100 · **Status:** FINAL (bei Second Stage = Ja)
+**Wörter:** 29 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
 
 ---
 
 ## 18. Bestätigungen (Pflichtfelder im Portal)
 
-- [ ] Ich bin mindestens 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.
-- [ ] Ich sage zu, das im Förderzeitraum erstellte Softwareprojekt unter einer Freien-/Open-Source-Lizenz zu veröffentlichen.
+- [ ] „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ (Handbuch Q19)
+- [ ] „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ (Handbuch Q19)
 
-**Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH · **Hinweis:** Die beiden Bestätigungen sind im Handbuch (Q19) dokumentiert; die exakte Portal-Checkbox-Formulierung ist `PORTAL_UNVERIFIED`.
+**Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH · **Hinweis:** Q19 steht **nicht** im Fragen-PDF Innovation, sondern im Handbuch und in der Portal-Checkbox; die exakte Live-Formulierung ist `PORTAL_UNVERIFIED`.
 
 ---
 
