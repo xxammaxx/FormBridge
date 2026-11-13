@@ -41,10 +41,14 @@ Der Unterschied zu allem Geprüften ist nicht „PDF lesen" oder „FIM kennen",
 - Ein Projekt, das genau (2)–(5) umsetzt und wir übersehen haben (z. B. proprietary Govtech wie MACH-Internas, nicht-öffentliche Verwaltungscodebasen) → Gegenmaßnahme: Suche im openCode/EU-OSS-Katalog + FITKO-Kontext bis zur Antragstellung fortführen.
 - FITKO liefert 2027 einen produktiven XDF-Converter + PDF-Seite → Teil der Lücke fällt weg → Gegenmaßnahme: Modulgrenzen so setzen, dass die Provenienz-/Review-/Normalisierungsschicht unabhängig davon Wert hat.
 - CommonForms klärt Lizenz nicht → Detektion muss eigenständig (klein, regelbasiert + kleines lokales Modell) oder aus lizenzierter Quelle kommen — Machbarkeitsrisiko, siehe Modul-Spezifikation §Risiken.
-- Feldexa-eigene Product-Roadmap implementiertRecognition zufällig vor Förderbeginn → Abgrenzungspflicht (Modul ist app-unabhängig, eigene Codebasis, eigentliche Repo-Trennung geplant).
+- Feldexa-eigene Product-Roadmap implementiert. Recognition zufällig vor Förderbeginn → Abgrenzungspflicht (Modul ist app-unabhängig, eigene Codebasis, eigene Repository-Trennung mit diesem Repository umgesetzt (13.11.2026)).
 
 ## 5. Ist der verbleibende Beitrag substanziell genug?
 
 **Ja, unter Bedingungen.** Die verbleibende Arbeit ist kein „Feature", sondern ein abgegrenzter Infrastruktur-Baustein mit messbaren Forschungsfragen (Disambiguierungs-Genauigkeit, UNKNOWN-Anteil, Review-Aufwand, Schema-Hygiene-Testkorpus). Substanz ergibt sich aus drei nachweisbaren Lücken: Kontext-Disambiguierung mit Provenienz, schema-hygienische Validierung (neu entdecktes amtliches Defekt-Problem), und offline-fähige FOSS-Kette. **Nicht** substanziell wäre: reines Verketten vorhandener CLIs ohne die Provenienz-/Confidence-/UNKNOWN-Architektur — das wäre integration, keine förderfähige Neuentwicklung; entsprechend eng ist die Spezifikation geschnitten (`technical-specification.md`).
 
 **Empfehlung hieraus:** `CONDITIONAL_GO` — Bedingungen in `../funding/decision-report.md`.
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](../funding/project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).

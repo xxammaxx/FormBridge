@@ -25,9 +25,9 @@
 **Passung hoch (begründet, nicht garantiert):**
 - **Software-Infrastruktur:** FormBridge ist app-unabhängiges, wiederverwendbares Modul mit CLI/Library/Verify — Kernbegriff der Linie (innovation-Seite).
 - **Datensparsamkeit/Datenschutz:** lokal betreibbar, keine Cloud-Pflicht, keine Behördenübermittlung, UNKNOWN-Default statt aggressiver Auto-Zuordnung (innovativ-Seite-Kriterien 1–3).
-- **Neues Modul für bestehende Software:** genau der vom Handbuch/innovativ-Seite benannte zulässige Fall; Abgrenzung dokumentiert (`innovation-assessment-…`, Modul-Spezifikation §0).
+- **Neues Modul für bestehende Software:** genau der vom Handbuch/innovativ-Seite benannte zulässige Fall; Abgrenzung dokumentiert (`../research/innovation-assessment.md`, Modul-Spezifikation §0).
 - **Gesellschaftlicher Nutzen:** Medienbruch-Abbau bei Sozialleistungsanträgen (Wohngeld) — eGovernment MONITOR 2026 (D21): 50 % letztes Anliegen vollständig offline; 24 % mit Medienbruch (bereits in Issue #165 belegt; wird nicht neu erfunden, sondern zitiert).
-- **Hoher Entwicklungsanteil:** 6-Monatsplan ist 100 % Software-Entwicklung inkl. Forschungsmessung; kein Marketing/Docs--only-Projekt (Handbuch-Anforderung erfüllt).
+- **Hoher Entwicklungsanteil:** 6-Monatsplan ist 100 % Software-Entwicklung inkl. Forschungsmessung; kein Marketing-/Docs-only-Projekt (Handbuch-Anforderung erfüllt).
 
 **Interpretationen / offene Fragen (nicht verifizierbar aus Quellen, vor Einreichung klären):**
 1. Ob die Jury „Verwaltungs-/Formularinfrastruktur" explizit als gewünschten Schwerpunkt sieht (Interpretation: Infrastruktur für Zivilgesellschaft — Bürgerseite — ist gemeint; FormBridge bedient Primärnutzer Entwickler/Communities, Endnutzen über Produkte wie Feldexa).
@@ -53,9 +53,13 @@
 |---|---|---|
 | Jury sieht Verwaltungs-Adapter als „Behörden-IT" statt Zivilgesellschaft-Infrastruktur | mittel | Antragstext konsequent von Bürger-/Community-Nutzen her erzählen (siehe Bewerbungsbausteine) |
 | Neuheitsangriff: „das macht doch MACH/SurveyJS/open-formulieren" | mittel | Audit + Matrix + doc-only-Kennzeichnung als Anhang; Narrow-Hypothesis-Formulierung |
-| Scope-Risiko 6 Monate (Detektion ohne Lizenzbasis) | hoch→mittel | Spec §5: Detektionsminimum auf Vordruckklasse; Scans out-of-scope;RF-abhängige Messziele statt Feature-Versprechen |
+| Scope-Risiko 6 Monate (Detektion ohne Lizenzbasis) | hoch→mittel | Spec §5: Detektionsminimum auf Vordruckklasse; Scans out-of-scope; RF-abhängige Messziele statt Feature-Versprechen |
 | Second-Stage-Konzept-Pflicht | niedrig | Konzept (Nutzung/Community) in Bewerbung mitdenken; optional deklarieren |
 
 ## 5. Fazit
 
 Förderlinie Innovation ist nach verifizierten Kriterien **passungsfähig** (Infrastruktur + Datensparsamkeit + zulässiger „neues Modul"-Fall + hoher Entwicklungsanteil). Verbleibende Unklarheiten sind vor Einreichung durch Sprechstunde/Portal-Check zu klären. Eine Aussage zur **Bewerbungserfolgswahrscheinlichkeit** wird bewusst nicht getroffen.
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).

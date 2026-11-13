@@ -19,7 +19,7 @@
 
 ## 3. XSD-Analyse: Struktur, Abdeckung — und drei schwerwiegende Generator-Defekte
 
-Inhaltlich (struktur-indexiert in `docs/research/evidence/fim-fields-S00000159V1.4.json` — ein von uns extrahierter Metadaten-Index [Feld-IDs, Pfade, Labels, Typen] mit Bezug auf das oben genannte Original; kein Redistribut des Schemas selbst):
+Inhaltlich (struktur-indexiert in `docs/research/evidence/fim-fields-S00000159V1.4.json` — ein von uns extrahierter Metadaten-Index [Feld-IDs, Pfade, Labels, Typen] mit Bezug auf das oben genannte Original; keine Weiterverbreitung des Schemas selbst):
 640 Knoten, davon 185 Gruppen (G*) und 88 Datenfelder (F*) mit FIM-Labels; Elementnamen sind die FIM-Feld-IDs. 10 Top-Level-Pflichtabschnitte (Gesetzl. Vertreter, Antragsteller, Wohnung, Haushaltsmitglieder, Veränderungen, Miete, zusätzliche Nutzung, Zahlung, Hinweise, Signatur). 226 von 420 Elementdeklarationen sind per Default (`minOccurs`-Default 1) **pflicht**, 191 optional, 3 explizit required.
 
 **Fachliche Deckung PDF ↔ Schema (Details: `reference-dataset.json`, 30 Referenzfelder):**
@@ -36,16 +36,16 @@ Inhaltlich (struktur-indexiert in `docs/research/evidence/fim-fields-S00000159V1
 | Defekt | Anzahl | Beispiel/Evidenz |
 |---|---|---|
 | D1: Root-Element-Name kein NCName (Leerzeichen/Bindestrich) | 1 | `name="Wohngeld Mietzuschuss - Erstantrag"` → „not a valid value of the atomic type 'xs:NCName'" |
-| D2: `type`-Attribut **und** inline `<xs:simpleType>` gleichzeitig (verboten) | 169 | z. B. `<xs:element minOccurs="0" name="F00000646V1.2" type="xs:string"><xs:annotation>…</xs:annotation><xs:simpleType>…` |
+| D2: `type`-Attribut **und** inline `<xs:simpleType>` gleichzeitig (verboten) | 170 betroffene Elemente (xmllint meldet 169 Fehlermeldungen zu D2 — eine Meldung bleibt im Gesamtfehlerbild unterdrückt; die Elementzahl ist maßgeblich und deterministisch reproduzierbar) | z. B. `<xs:element minOccurs="0" name="F00000646V1.2" type="xs:string"><xs:annotation>…</xs:annotation><xs:simpleType>…` |
 | D3: Referenzierte Typ-Definitionen fehlen komplett | 21 | `F00002098V1.2`, `F00002599V1.1`, `F00000655V1.3`, `F00001851V1.3`, `F00002495V1.1`, `F00002578V1.2`, `F00002579V1.2`, `F00002582V1.0`, `F00002616V1.1`, `F00002484V1.1`, `F00000650/651/652/656/657/658…` |
 | D4: PCRE-Anker (`$`/`^`) in XSD-Regex-Facetten — unter XSD-Semantik **literale Zeichen** | 4 | E-Mail-Pattern `…{1,63}$` verwirft gültige Adresse `max@example.com` |
 
 **Konsequenz:** Das offizielle immutable XSD ist mit einem standardkonformen XSD-1.0-Prozessor **nicht kompilierbar** (170 Parser-Fehler mit libxml2/xmllint; Anzahl kann je nach Prozessorgeneration minimal variieren). „Schema-validen Output gegen die Original-XSD" kann kein Adapter leisten. **Wichtig:** Dieser Befund belegt die Kompilierbarkeits-Defekte des Originals; der später dokumentierte Validierungserfolg gilt ausschließlich für die **normalisierte Variante**, nicht für das offizielle Original-Artefakt. Nach der **dokumentierten, deterministischen Normalisierung** (D1: Root umbenennen; D2: `type`-Attribut bei inline simpleType entfernen; D3: 21 fehlende Typen als `xs:string`-Stubs; D4: `$`/`^`-Anker aus Facettenmustern entfernen) kompiliert das Schema.
 
-**Reproduktion (ohne Redistribut von Schema-Dateien):**
+**Reproduktion (ohne Weiterverbreitung von Schema-Dateien):**
 1. Original-XSD von der immutable-URL (§1) herunterladen und SHA-256 gegen `36250e69a5954b6e233f49a75c021e5cf2cf69a6f26a72c59829fc496ecda6d3` prüfen.
 2. Fehlerbild reproduzieren: `xmllint --noout --schema S00000159V1.4.xsd <beliebige-instanz>.xml` → 170 Parser-Fehler (Klassen D1/D2; D3/D4 treten nach Beseitigung von D1/D2 zu Tage).
-3. Normalisierung nach den vier oben genannten deterministischen Schritten durchführen (z. B. per XML-Baumtransformation; die Schritte sind vollständig spezifiziert).
+3. Normalisierung nach den vier oben genannten deterministischen Schritten durchführen. Konkretisierung der Schritte (wie im ursprünglichen Audit ausgeführt): **D1** — Root-Element zu gültigem NCName umbenennen, z. B. `Wohngeld_Mietzuschuss_Erstantrag` (Instanz-Root muss denselben Namen tragen, siehe abgelegte `docs/research/evidence/synthetic-instance.xml`); **D2** — bei jedem der 170 betroffenen Elemente das `type`-Attribut entfernen, wenn ein eigenes inline `<xs:simpleType>`-Kind existiert; **D3** — die 21 fehlenden Typen als `<xs:simpleType name="…"><xs:restriction base="xs:string"/></xs:simpleType>` ergänzen; **D4** — `$`/`^` aus den Facettenmustern entfernen. Werkzeughinweis: Bei Baumtransformationen (z. B. lxml/ElementTree) muss die Namespace-Deklaration `xmlns:xfd` erhalten bleiben (ElementTree verwirft sie sonst, weil Attribut-**Werte** nicht als Namespace-Verwendung gezählt werden).
 4. Validierung der hier abgelegten synthetischen Instanz gegen die selbst erzeugte normalisierte Variante: `xmllint --noout --schema S00000159V1.4-normalisiert.xsd docs/research/evidence/synthetic-instance.xml` → `synthetic-instance.xml validates`.
 
 **Ergebnis der End-to-End-Synthese-Validierung:** Eine synthetische XML-Instanz (nur Fantasiedaten, u. a. alle 10 Pflichtabschnitte, 30 Referenzfelder) wurde generiert und validiert → **PASS** (gegen normalisiertes Schema, nicht gegen das Original — das Original ist defekt). Alle Werte sind synthetisch; keine personenbezogenen Echtdaten.
@@ -66,3 +66,7 @@ Inhaltlich (struktur-indexiert in `docs/research/evidence/fim-fields-S00000159V1
 ## 5. Konsequenz für Issue #165 (separat autorisierter Produkt-Pilot)
 
 Die Feldexa-2.0-Produktpipeline bleibt für den echten App-E2E-Pilot **NOT_RUN** (Recognition-/Export-Packages sind auf main weiterhin `.gitkeep`; kein Flutter-SDK in dieser Umgebung). Dieser Bericht ändert daran nichts und implementiert keine Produktfunktion; er liefert aber den **Referenzdatensatz + Validierungsartefakte**, die der Pilot nach dessen Freigabe direkt wiederverwenden kann.
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](../funding/project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).

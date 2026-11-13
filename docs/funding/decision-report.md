@@ -4,7 +4,7 @@
 
 ## Empfehlung: **CONDITIONAL_GO**
 
-FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quellcode-Audit und Referenzfall-Validierung eine **tragfähige, abrechnungsehrliche** Bewerbungshypothese für die Förderlinie Innovation (Frist 30.11.2026, 15:00 CET). Die GO gilt unter den Bedingungen B1–B4 unten; solange sie offen sind, ist der Status **conditional**, nicht go.
+FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quellcode-Audit und Referenzfall-Validierung eine **tragfähige, abrechnungsehrliche** Bewerbungshypothese für die Förderlinie Innovation (Frist 30.11.2026, 15:00 CET). Die GO gilt unter den Bedingungen B1–B6 unten; solange sie offen sind, ist der Status **conditional**, nicht go.
 
 ## Evidenz in Kürze
 
@@ -14,7 +14,7 @@ FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quel
 4. **Referenzfall real:** Fürth-PDF (Hash, 8 Seiten, Textlage) ↔ FIM-Schema: nur 7/30 Referenzfelder trivial mappbar; 7 Kontext-Mehrdeutigkeiten, 4 Codelisten, 4 Strukturtransformationen, 3 fachliche Deckungslücken (u. a. Vermieter-Identität nicht repräsentierbar) — die Forschungsfragen sind real, nicht konstruiert.
 5. **Förderpassung verifiziert:** Innovation erlaubt ausdrücklich „neues Modul für bestehende Software"; Bestandsprojekte zulässig bei klarer Abgrenzung; hoher Entwicklungsanteil; FOSS-Pflicht — alles offiziell belegt.
 
-## Bedingungen (B1–B4) für echtes GO
+## Bedingungen (B1–B6) für echtes GO
 
 | # | Bedingung | Fälligkeit |
 |---|---|---|
@@ -42,3 +42,7 @@ FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quel
 ## Was diese Empfehlung NICHT ist
 
 Keine Förderzusage, keine Erfolgsprognose, keine Freigabe von Implementierung oder Produktaufgaben, kein Merge. Proposal PR bleibt Draft.
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).

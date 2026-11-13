@@ -45,3 +45,7 @@ Nutzungsphase statt Technologiephase: 1–2 Pilot-Integrationen (z. B. in Feldex
 - Nie „weltweit erstmalig" o. ä.; stattdessen: „nach unserer Quellcodeprüfung vom 13.11.2026 nicht vorhanden" (Anhang: Prior-Art-Matrix).
 - Defekte amtliche XSD neutral-sachlich formulieren (kooperativ, FITKO-sympathisierend; Ziel: Beitrag, nicht Anklage).
 - Zahlen nur aus verifizierten Quellen (D21 eGov-Monitor 2026; eigene Messungen als Messziele, nicht als Ergebnisse).
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).

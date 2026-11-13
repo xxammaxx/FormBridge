@@ -90,3 +90,7 @@ Regeln (3) werden als **datengetriebener, versionierter Regelkatalog** (YAML/JSO
 | 6 | Review-Zeit-Messung (RF4), Dokumentation, FOSS-Release, Bericht zu allen RFs | Abnahmekriterien §6 geprüft; Demo ohne Produkt/App |
 
 Jeder Meilenstein erzeugt nachprüfbare Artefakte (Tests, Berichte, Messwerte). Keine Behördenübermittlung, keine Echtdaten, keine App-Abhängigkeit.
+
+---
+
+**Herkunft (Provenienz):** Ursprünglich erstellt am 13.11.2026 im Repository [`xxammaxx/Feldexa_2.0`](https://github.com/xxammaxx/Feldexa_2.0) — Branch `docs/research-167-prior-art-audit`, Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168). Am 13.11.2026 in dieses unabhängige FormBridge-Repository migriert; Umfang der Anpassungen: siehe [project-boundary.md](../funding/project-boundary.md#e-provenienz-der-migrierten-dokumente) §E (Pfade/Namen, Redistribuierungs-Filter, Grenzdokumentation — keine Änderung von Forschungsergebnissen).
