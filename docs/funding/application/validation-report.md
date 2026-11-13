@@ -1,7 +1,7 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
-**Review-PASS:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
-**Reviewer:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Tests:** 109/109 PASS · **Relative Links:** 0 gebrochen
+**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
+**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Gründungs-Delta:** A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)** · **Tests:** 109/109 PASS · **Relative Links:** 0 gebrochen
 **Gate:** **READY_FOR_OWNER_INPUT** (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) — Bewerbung vollständig vorbereitet; die verbleibenden Punkte sind ausschließlich Owner-Angaben, Owner-Entscheidungen, Portal-Live-Prüfung und ausdrücklich benannte externe Klärungen.
 
 ## 1. Was geprüft wurde
@@ -108,7 +108,7 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 
 - Relative Links: 0 gebrochen.
 - `git ls-files` enthält keine `.pyc`/`__pycache__`.
-- Candidate `9ed86225`; Working Tree clean.
+- Bewerbungspaket-Candidate `9ed86225`; Gründungs-Delta docs-only mit separatem Review (Candidate-Hash im Review-Nachtrag/PR); Working Tree clean.
 - Keine Einreichung, keine E-Mail, keine Portaländerung, keine Lizenzfestlegung, kein Merge.
 
 ## 5. Gate-Begründung

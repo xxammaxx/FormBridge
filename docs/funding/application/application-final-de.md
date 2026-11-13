@@ -132,9 +132,9 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 ## 14. Motivation / Wild Card (max. 100 Wörter)
 
-Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Für den Fall der Auswahl plane ich die Aufnahme einer selbstständigen Tätigkeit vor dem formalen Antrag. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
+Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Ich bin bereit, die für eine Förderung erforderlichen formalen Schritte rechtzeitig einzuleiten. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
 
-**Wörter:** 81 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 77 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 

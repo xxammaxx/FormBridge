@@ -18,13 +18,13 @@
 
 | Zeitpunkt | Was offiziell gilt | Belastbarkeit |
 |---|---|---|
-| **Bewerbung** (01.10.–30.11.2026) | PTF-Bewerbungsseite: Einzelentwickler*innen „seid selbstständig** oder Freiberufler*innen und zahlt eure Steuern hier". Keine ausdrückliche Regel, ob dieser Status **am Bewerbungstag** vorliegen muss. | **OFFEN** |
+| **Bewerbung** (01.10.–30.11.2026) | PTF-Bewerbungsseite/FAQ Bewerbung 02: Einzelentwickler*innen „seid selbstständig** oder Freiberufler*innen und zahlt eure Steuern hier". Keine ausdrückliche Zeitpunktregel; die Bewerbung ohne Selbstständigkeit ist **nicht belegt**. | **NICHT BELEGT** |
 | **Projektauswahl** (Dez 2026–Feb 2027) | Jury entscheidet; danach Einladung zum formalen Antrag. | OFFEN für Status |
-| **Formaler Antrag** (bis Ende Februar 2027) | PTF-Wiki „Antragstellung" (JG02, Stand 03.03.2026): Steuernummer/Anmeldung beim Finanzamt; JG03-FAQ/Handbuch: Bewerbung als Privatperson, **keine Solo-Steuernummer** in der Checkliste; „Bis Ende Februar muss der Antrag beim BMFTR eingereicht sein". | **WIDERSPRUCH: JG02-Wiki vs. JG03-FAQ/Handbuch; Q2 `CONTRADICTED`** |
+| **Formaler Antrag** (Ende Februar 2027 oder nach Rückmeldung/Workshop März; PTF-bestätigt) | **Widerspruch nur beim Nachweis:** JG02-Wiki (Stand 03.03.2026) verlangt Steuernummer/Anmeldung zum formalen Antrag; die JG03-Checkliste nennt für Einzelpersonen **keine Solo-Steuernummer**. Die **Voraussetzung „selbstständig"** bleibt laut JG03-FAQ Bewerbung 02 bestehen. Handbuch: „Bis Ende Februar muss der Antrag beim BMFTR eingereicht sein". | **Q2 `CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED`** |
 | **Zuwendungsbescheid** | BMFTR prüft; keine öffentliche Statusregel exakt zu diesem Zeitpunkt. | OFFEN |
 | **Förderbeginn** (01.06.2027) | Projektstart; keine öffentliche Regel, die eine **erst jetzt** beginnende Selbstständigkeit erlaubt. | **NICHT SICHER** |
 
-**Ergebnis:** Die ursprüngliche Strategie („bewerben ohne Selbstständigkeit, nach Auswahl gründen") ist **nicht unzulässig, aber auch nicht bestätigt**. Sie ist **bedingt tragfähig**, wenn die Selbstständigkeit **vor dem formalen Antrag** (nicht erst zum Förderbeginn) registriert wird. Q2 bleibt **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**; eine PTF-Bestätigung ist erforderlich.
+**Ergebnis:** Die Voraussetzung „selbstständig/Freiberufler*in" bleibt in JG03 bestehen; die Bewerbung ohne Selbstständigkeit ist **nicht belegt**, aber auch nicht ausdrücklich ausgeschlossen. Widersprüchlich ist der **Nachweiszeitpunkt** (JG02-Wiki vs. JG03-Checkliste). Die Strategie ist **bedingt tragfähig**, wenn PTF bestätigt, dass die Bewerbung ohne damalige Selbstständigkeit zulässig ist und die Registrierung **vor dem formalen Antrag** genügt. Q2 bleibt **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**.
 
 ## 3. Empfohlene Strategie — Variante A (konditional)
 

@@ -55,7 +55,7 @@
 
 ## Besonders kritisch: M3c + Q2
 
-Die einzige Kombination, die eine sonst förderfähige Person **hart** ausschließen könnte, ist: derzeit nicht selbstständig/freiberuflich, keine Arbeitgeber-Freistellung, und die Selbstständigkeit soll erst zum Förderbeginn aufgenommen werden. Ob das akzeptiert wird, ist öffentlich **nicht** geregelt. Deshalb ist Q2 die wichtigste Anfrage; sie ist im [Anfrageentwurf](ptf-inquiry-draft.md) enthalten.
+Die einzige Kombination, die eine sonst förderfähige Person **hart** ausschließen könnte, ist: derzeit nicht selbstständig/freiberuflich, keine Arbeitgeber-Freistellung, und die Selbstständigkeit soll erst zum Förderbeginn aufgenommen werden. Ob das akzeptiert wird, ist öffentlich **nicht** geregelt. Deshalb ist Q2 die wichtigste Anfrage; sie ist im kanonischen [Anfrageentwurf](external-inquiry-drafts.md) §A enthalten.
 
 ## Was der Owner **nicht** beantworten muss
 

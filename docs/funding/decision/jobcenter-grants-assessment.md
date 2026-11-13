@@ -83,8 +83,8 @@
 |---|---|---|---|---|
 | **GSG + PTF** | 47.381,25 € Projektförderung | ggf. aufstockendes Grundsicherungsgeld | PTF-Projektkosten; GSG ist bedarfsgeprüft | Anrechnung der PTF-Zuwendung; Freibeträge; Meldepflichten |
 | **GSG + Einstiegsgeld + PTF** | 47.381,25 € | Einstiegsgeld (Ermessen, max. 24 Mon.) | Einstiegsgeld nicht auf GSG angerechnet (BA) | PTF-Anrechnung; Doppelförderung; Tragfähigkeit; Antrag vor Start |
-| **ALG I + GZ + PTF** | 47.381,25 € | GZ 6 Monate ALG I + 300 €, dann 9 × 300 € | GZ ersetzt ALG I; 150-Tage-Voraussetzung | PTF-Anrechnung; Doppelförderung; GZ-Antrag vor Start; Tragfähigkeit |
-| **PTF ohne Gründungsförderung** | 47.381,25 € | keine | Projektkosten; Eigenanteil 2.493,75 € | Lebensunterhalt/Vorfinanzierung aus eigenen Mitteln; Cash-Peak 25.353,13 € |
+| **ALG I + GZ + PTF** | 47.381,25 € | GZ 6 Monate ALG I + 300 €, dann 9 × 300 € | GZ ersetzt ALG I; 150-Tage-Voraussetzung; keine Bedarfsanrechnung | Erforderlichkeit/Ermessen; Doppelförderung; GZ-Antrag vor Start; Tragfähigkeit |
+| **PTF ohne Gründungsförderung** | 47.381,25 € | keine | Projektkosten; Eigenanteil 2.493,75 € | Lebensunterhalt/Vorfinanzierung aus eigenen Mitteln; **Projekt-Cash-Peak 25.353,13 €** |
 
 **Wichtig:** Die PTF-Zuwendung ist **nicht** mit 47.381,25 € Nettoeinkommen gleichzusetzen. Sie deckt projektbezogene Kosten; der Eigenanteil und die Lebenshaltung sind separat zu finanzieren.
 

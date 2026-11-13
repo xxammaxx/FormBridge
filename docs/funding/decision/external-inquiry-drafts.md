@@ -72,4 +72,4 @@
 
 - Keine Anfrage wird automatisch versendet.
 - Antworten werden nach Eingang mit Datum, Wortlaut und Konsequenz in den jeweiligen Dokumenten protokolliert.
-- Bis zur Antwort bleiben Q2/Q3 und die Gründungsförderung **UNRESOLVED**.
+- Bis zur Antwort bleiben **Q2 `CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED`**, **Q3 `UNRESOLVED`** und die Gründungsförderung **EXTERNAL_CONFIRMATION_REQUIRED**.

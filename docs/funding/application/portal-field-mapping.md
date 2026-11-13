@@ -50,7 +50,7 @@
 | E2 | Bist du oder sind deine Teammitglieder Gesellschafter*innen einer GmbH (oder andere Unternehmensform), haben einen Verein oder eine Organisation gegründet oder arbeiten für einen thematisch mit dem Projekt verbundenen Verein, ein Forschungsinstitut o. Ä.? | Ja/Nein | §12 Q4: `[OWNER_BESTÄTIGUNG]` | OWNER_BESTÄTIGUNG_ERFORDERLICH |
 | E3 | Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln. | 60 Wörter | §12 Q5 (21 W.) | OWNER_BESTÄTIGUNG_ERFORDERLICH |
 | E4 | Wie viele Stunden willst du (bzw. will das Team) in den 6 Monaten Förderzeitraum insgesamt an der Umsetzung arbeiten? | Zahl, max. 950 | §13: 950 | FINAL (950; 850 nur bei Owner-Änderung) |
-| E5 | Erfahrung, Hintergrund, Motivation, Perspektive: Was sollte die Jury über dich (bzw. euch) wissen und bei der Auswahl berücksichtigen? | 100 Wörter | §14 (81 W. + Platzhalter) | OWNER_ANGABE_ERFORDERLICH |
+| E5 | Erfahrung, Hintergrund, Motivation, Perspektive: Was sollte die Jury über dich (bzw. euch) wissen und bei der Auswahl berücksichtigen? | 100 Wörter | §14 (77 W. + Platzhalter) | OWNER_ANGABE_ERFORDERLICH |
 
 ## D. Second Stage
 

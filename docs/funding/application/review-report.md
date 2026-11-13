@@ -47,6 +47,17 @@
 
 **Residual LOW:** erwarteter Betriebspunkt Coverage/Recall explizit nennen; Mindestzahl Gap-Felder im Goldstandard; FOSS-Exception Plan/Anwendung angleichen; 170-Terminologie vereinheitlichen; D21-Gesamt-n=8.091 als nicht unabhängig geprüft kennzeichnen; M5-Tightness und Held-out-PDF bleiben Risiken.
 
+## Nachtrag — Gründungsstrategie/Q2 (docs-only Delta)
+
+Das Gründungs-Delta (Q2-Verifikation, Gründungsstrategie, Jobcenter/BA-Assessment, Zeitplan, Owner-Gate, kanonische Anfrage) wurde **separat** von zwei unabhängigen Reviewern geprüft. Geprüfter Candidate und Einzelbefunde: PR #1 / Review-Nachtrag.
+
+| Reviewer | Verdikt | Ergebnis |
+|---|---|---|
+| A — Förderrecht | `STRATEGY_CONDITIONALLY_VALID` | **PASS mit Auflagen** |
+| B — Sozialrecht/Finanzen | `EXTERNAL_CONFIRMATION_REQUIRED` | **PASS mit Auflagen** |
+
+**Wichtig:** Das Gründungs-Delta ändert keine Finanzzahlen und keine Falschangabe zum Selbstständigkeitsstatus. Q2 bleibt `CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED`; die Anfrage ist **nicht versendet**.
+
 ## Gemeinsames Fazit
 
 **PASS/PASS** für Candidate `9ed86225`. Die Bewerbung ist inhaltlich, finanziell und formal prüfbar; die verbleibenden Punkte sind Owner-Angaben, Portal-Live-Prüfung und die ausdrücklich offenen Q2/Q3/Q3b-Klärungen. **Keine Einreichung, keine E-Mail, keine Lizenzfestlegung, kein Merge.**

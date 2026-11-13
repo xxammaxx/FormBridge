@@ -54,7 +54,7 @@ M9 (Optional) Second Stage beantragen? Nur JETZT entscheidbar; keine Code-Meilen
 
 - **M1–M4 + M5–M8 alle „JA"** → Persönliche Förderfähigkeit nach veröffentlichten Kriterien erfüllt (Nachweispflichten bleiben formal).
 - **Ein „NEIN" in M1–M4** → INDIVIDUAL_ELIGIBILITY_UNKNOWN → Sprechstunde 16.11.2026 oder info@prototypefund.de.
-- **M3c „UNKNOWN"** → explizite Anfrage (siehe ptf-inquiry-draft.md).
+- **M3c „UNKNOWN"** → explizite Anfrage (kanonisch: [external-inquiry-drafts.md](external-inquiry-drafts.md) §A).
 - **M6 nein** → Förderhöhe ggf. durch De-minimis-Freiraum begrenzt (individuell rechnen).
 
 ## Verhältnis zur bisherigen Empfehlung
