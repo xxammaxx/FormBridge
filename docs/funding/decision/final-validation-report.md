@@ -37,7 +37,7 @@
 - Cash-Peak korrekt: 25.353,13 € total / 23.690,63 € extern / 1.662,50 € eigen; 24.937,50 € ist nur die Quartalsausgabe.
 - 109/109 Tests unabhängig bestätigt; Testqualität nicht abgeschwächt.
 - Keine blockierenden Findings; nur LOW-Dokumentationspunkte, im finalen Commit bereinigt.
-- **Kein BLOCKED:** Q3 betrifft nur die 118,75-€-Maximierung.
+- **Fokussierter Re-Check:** **PASS** für `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` (finaler SHA; nur LOW-Dokumentations-/Annotationskorrekturen gegenüber `fe3bd6e`).
 
 ## 4. Reviewer B — Förderrecht, Evidenz und Vergleich
 
@@ -48,6 +48,7 @@
 - Wettbewerber RepairVision, FixBot, NORA, AugRep/GYVA mit URL/Datum belegt; RP-K1-Abwertung darauf gestützt, nicht auf ungeprüfte Namenslisten.
 - Vergleich fair: F1/F2/F3/RP getrennt, demonstriert vs. geplant, 24–44-Test-Widerspruch offengelegt, keine Owner-Entscheidung.
 - Keine blockierenden Findings; vier LOW-Präzisierungen im finalen Commit bereinigt.
+- **Fokussierter Re-Check:** **PASS** für `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` (finaler SHA; nur LOW-Dokumentations-/Annotationskorrekturen gegenüber `fe3bd6e`).
 
 ## 5. Korrekturzyklus (Runde 3)
 
@@ -87,9 +88,10 @@ Vollständige Klassifikation: [owner-questions-status.md](owner-questions-status
 ## 9. Branch / Commit / PR
 
 - **Branch:** `docs/funding-decision-2026-11-13`
-- **Geprüfter Candidate:** `fe3bd6ec891575fdae6f05d717de7697819302cd`
-- **Finaler Dokumentations-Commit:** Branch-HEAD nach den LOW-Bereinigungen (SHA im Abschlussbericht / `git rev-parse HEAD`).
-- **PR:** wird als dedizierter Research-PR gegen `main` erstellt; die Draft-PRs #152/#168 im Feldexa-Repo bleiben unverändert.
+- **Erst geprüfter Candidate:** `fe3bd6ec891575fdae6f05d717de7697819302cd`
+- **Final geprüfter Candidate:** `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` (Reviewer A/B: PASS im fokussierten Re-Check)
+- **Finaler Dokumentations-Commit:** fügt nach diesem Re-Check nur die Re-Check-Notiz und LOW-Wortlautkorrekturen hinzu; der geprüfte Code-/Zahlenstand bleibt `b85ef7e2`.
+- **PR:** [#1](https://github.com/xxammaxx/FormBridge/pull/1) (Draft, `MERGEABLE`, `CLEAN`); die Draft-PRs #152/#168 im Feldexa-Repo bleiben unverändert.
 - **Nicht geändert:** Feldexa-App-Code, RepairProbe-Repo/Portal-Draft, Lizenzen, Anwendungen.
 
 ## 10. Gate-Ergebnis

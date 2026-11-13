@@ -154,7 +154,7 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 | # | Befund | Ursache | Korrektur | Revalidierung |
 |---|---|---|---|---|
-| R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Runde 2: **F/6 = 7.896,88 €**; Peak = **F/2 = 23.690,63 €**. R3 aktuell: 7.896,87 / 23.690,62; kumulativer Peak 25.353,13 €. | Review A2 (historisch) + Review A3 (R3) |
+| R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Runde 2: **F/6 = 7.896,88 €**; Peak = **F/2 = 23.690,63 €**. R3 aktuell: 7.896,87 / 23.690,62; kumulativer Peak 25.353,13 €. | Review A2 (historisch) + Review A/B (Runde 3) |
 | R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Runde 2: Szenario G mit 4 Frames; **die 31.650-€-Zeile war falsch** (PK statt Förderung). R3: 31.570,87 / 31.620,75 / Cap 31.670,15. | Review B2 (historisch) + Review A/B (Runde 3) |
 | R2-3 | De-minimis-Wirkung auf F fehlte (K7 REFUTED) | Anlage Nr. 1 nur in funding-rules, nicht im Modell | Szenario H: F-Limit = min(Szenario-F, 300.000 − Vorbelastung); Erklärung/Aufbewahrung | Review B2 (RL Anlage) |
 | R2-4 | Szenario C „nicht konstruierbar" zu absolut (K3¹) | Ratenhebel (FAQ: höherer Satz mit Rechnungs-Nachweis) nicht abgebildet | Relativierung: bei R ≤ ~50,13 €/h konstruierbar (Beispiel 50,10 €/h → G 49.974,75, F 47.476,01) | Review B2 + Nachrechnung |

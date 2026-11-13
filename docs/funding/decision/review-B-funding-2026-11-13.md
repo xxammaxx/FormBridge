@@ -51,7 +51,7 @@
 - Cash-Peak 25.353,13 / 1.662,50 / 23.690,63; Rate 2 = 23.690,62 mit 1-Cent-Rest dokumentiert.
 - F5–F7, F10, F12, F13 behoben (R1→Ä2; Mentor nur Up-and-Coming; M1→RL 2024; Quellenhierarchie nicht-normativ; W8/W9).
 - Relative Links: 0 gebrochen.
-- Statuslabels: `final-validation-report.md` DRAFT/PENDING; Reviews jetzt PASS; Runde 2 historisch markiert.
+- Statuslabels zum Review-Zeitpunkt (`fe3bd6e`): `final-validation-report.md` DRAFT/PENDING; im finalen Candidate `b85ef7e2` ist er FINAL. Reviews PASS; Runde 2 historisch markiert.
 
 ## 5. Findings
 

@@ -99,7 +99,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
   -s docs/funding/decision/validation -p 'test_*.py' -v
 # Ran 109 tests ... OK
 sha256sum financial_model.py test_financial_model.py scenario-report.md
-# dbf3fdec… / a60bcc4a… / 2a055390… (stimmen mit RUNBOOK überein)
+# dbf3fdec… / a60bcc4a… / 2a055390… (Snapshot `fe3bd6e`; finaler Modellhash `1b4e281e…`, RUNBOOK)
 ```
 
 **Quellen:** BMFTR-Richtlinie „Software Sprint" (BAnz AT 15.11.2024 B4; Ä1 01.12.2025; Ä2 25.06.2026), PTF-FAQ, PTF-Handbuch, VO (EU) 2023/2831. Details im [Quellenregister](source-register-2026-11-13.md).

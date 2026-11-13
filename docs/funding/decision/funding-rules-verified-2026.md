@@ -12,7 +12,7 @@
 |---|---|---|---|
 | RL 2024 | 07.11.2024 (BAnz AT 15.11.2024 B4) | Basistext: 95-%-Förderquote, Gesamtkosten-Caps, AZK-Kostenbasis, Eigenmittelnachweis, De-minimis, 6-/10-Monats-Laufzeit | VERBINDLICH |
 | Änderung 1 | 07.11.2025 (BAnz AT 01.12.2025 B4) | Nur organisatorisch: BMBF → BMFTR, Projektträger VDI/VDE-IT, elektronische Einreichung | VERBINDLICH; Nr. 5 unberührt |
-| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026 B4) | Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer"; Nr. 3 neu (Nachwuchs-Satz, Evaluationspflicht); 6 Stichtage (u. a. 30.11.2026); Geltung bis 30.06.2031 | VERBINDLICH; **Nr. 5 unberührt** |
+| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026 B4) | Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer"; Nr. 3 neu gefasst (Nachwuchs-Satz; Evaluationspflicht bestand bereits in RL 2024, wird erneut betont); 6 Stichtage (u. a. 30.11.2026); Geltung bis 30.06.2031 | VERBINDLICH; **Nr. 5 unberührt** |
 | Geltung | bis 30.06.2031 | Stichtag 30.11.2026 ist gelistet | VERBINDLICH |
 
 ## F1 — Zuwendungshöhe, Kostenbasis, Eigenanteil
