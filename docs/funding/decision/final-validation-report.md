@@ -19,7 +19,7 @@
 ## 2. Testevidenz
 
 - Befehl: `python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v`
-- Ergebnis: **102/102 PASS**
+- Ergebnis: **109/109 PASS**
 - Archiv: [`validation/test-output.txt`](validation/test-output.txt), [`validation/scenario-report.md`](validation/scenario-report.md), [`validation/RUNBOOK.md`](validation/RUNBOOK.md)
 - Frühere 56/57-Behauptung: **nicht reproduzierbar**, ersetzt.
 

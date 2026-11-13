@@ -31,6 +31,9 @@ test_rate_above_50_without_proof_rejected (test_financial_model.TestCapsAndBound
 test_zero_hours_flagged (test_financial_model.TestCapsAndBoundaries.test_zero_hours_flagged) ... ok
 test_zero_rate_raises (test_financial_model.TestCapsAndBoundaries.test_zero_rate_raises) ... ok
 test_calls_sum_to_funding (test_financial_model.TestCashFlow.test_calls_sum_to_funding) ... ok
+test_cumulative_peak_external (test_financial_model.TestCashFlow.test_cumulative_peak_external) ... ok
+test_cumulative_peak_own_contribution (test_financial_model.TestCashFlow.test_cumulative_peak_own_contribution) ... ok
+test_cumulative_peak_total_cash_need (test_financial_model.TestCashFlow.test_cumulative_peak_total_cash_need) ... ok
 test_first_call (test_financial_model.TestCashFlow.test_first_call) ... ok
 test_first_month_gap (test_financial_model.TestCashFlow.test_first_month_gap) ... ok
 test_monthly_cost (test_financial_model.TestCashFlow.test_monthly_cost) ... ok
@@ -38,6 +41,7 @@ test_monthly_own_contribution_is_floor (test_financial_model.TestCashFlow.test_m
 test_peak_external_prefinancing (test_financial_model.TestCashFlow.test_peak_external_prefinancing) ... ok
 test_peak_total_cash_need (test_financial_model.TestCashFlow.test_peak_total_cash_need) ... ok
 test_quarter_cost (test_financial_model.TestCashFlow.test_quarter_cost) ... ok
+test_quarter_cost_is_not_cumulative_peak (test_financial_model.TestCashFlow.test_quarter_cost_is_not_cumulative_peak) ... ok
 test_second_call (test_financial_model.TestCashFlow.test_second_call) ... ok
 test_third_call (test_financial_model.TestCashFlow.test_third_call) ... ok
 test_combined_regular_and_second_stage_above_limit (test_financial_model.TestDeminimis.test_combined_regular_and_second_stage_above_limit) ... ok
@@ -91,10 +95,13 @@ test_second_stage_633_funding_rate (test_financial_model.TestSecondStage.test_se
 test_second_stage_hours_cap_is_regular_hours (test_financial_model.TestSecondStage.test_second_stage_hours_cap_is_regular_hours) ... ok
 test_second_stage_no_overhead (test_financial_model.TestSecondStage.test_second_stage_no_overhead) ... ok
 test_second_stage_rate_cap_is_50 (test_financial_model.TestSecondStage.test_second_stage_rate_cap_is_50) ... ok
+test_child_violations_are_propagated (test_financial_model.TestTenMonth.test_child_violations_are_propagated) ... ok
 test_communicated_10_month_gap (test_financial_model.TestTenMonth.test_communicated_10_month_gap) ... ok
 test_financing_identity (test_financial_model.TestTenMonth.test_financing_identity) ... ok
 test_max_strict_funding (test_financial_model.TestTenMonth.test_max_strict_funding) ... ok
 test_second_phase_above_cap_breaks_combined (test_financial_model.TestTenMonth.test_second_phase_above_cap_breaks_combined) ... ok
+test_second_stage_hours_equal_regular_hours_is_allowed (test_financial_model.TestTenMonth.test_second_stage_hours_equal_regular_hours_is_allowed) ... ok
+test_second_stage_hours_must_not_exceed_regular_hours (test_financial_model.TestTenMonth.test_second_stage_hours_must_not_exceed_regular_hours) ... ok
 test_total_cost_cap (test_financial_model.TestTenMonth.test_total_cost_cap) ... ok
 test_total_costs (test_financial_model.TestTenMonth.test_total_costs) ... ok
 test_total_funding (test_financial_model.TestTenMonth.test_total_funding) ... ok
@@ -102,6 +109,6 @@ test_total_hours (test_financial_model.TestTenMonth.test_total_hours) ... ok
 test_total_own_contribution (test_financial_model.TestTenMonth.test_total_own_contribution) ... ok
 
 ----------------------------------------------------------------------
-Ran 102 tests in 0.011s
+Ran 109 tests in 0.010s
 
 OK

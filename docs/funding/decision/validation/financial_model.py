@@ -344,6 +344,15 @@ def combined_ten_month_budget(
     total_f = regular.f_effective + second.f_effective
     total_ea = total_g - total_f
     violations: list[str] = []
+    # K5 for the combined frame: the Second Stage cannot claim more hours
+    # than the regular phase that the applicant actually requested.
+    if second.hours > regular.hours:
+        violations.append("K5_second_stage_hours_exceed_regular_phase")
+    # Propagate child violations instead of hiding a non-compliant phase
+    # behind a compliant combined total.
+    for phase_name, budget in (("regular", regular), ("second", second)):
+        for violation in budget.violations:
+            violations.append(f"{phase_name}:{violation}")
     if total_g > MAX_COST_TEN_MONTH:
         violations.append("ten_month_total_cost_cap_exceeded")
     if total_f > floor_money(MAX_COST_TEN_MONTH * D95):
@@ -358,8 +367,8 @@ def combined_ten_month_budget(
         "cost_cap": MAX_COST_TEN_MONTH,
         "max_strict_funding": floor_money(MAX_COST_TEN_MONTH * D95),
         "communicated_funding": COMM_TEN_MONTH_FUNDING,
-        "compliant": not violations and regular.compliant and second.compliant,
-        "violations": violations,
+        "compliant": not violations,
+        "violations": tuple(dict.fromkeys(violations)),
     }
 
 
@@ -445,6 +454,14 @@ def cash_flow(budget: Budget) -> dict[str, Decimal]:
     monthly_cost = money(budget.g / Decimal(6))
     quarter_cost = money(budget.g / Decimal(2))
     monthly_ea = floor_money(budget.ea_effective / Decimal(6))
+    # The conservative cumulative peak occurs on 30 September, after four
+    # months of costs (June-September) but before the 01 October call.  It is
+    # not the same as a single quarter's cost: the June own-contribution gap
+    # remains unfunded until the second call.
+    four_month_cost = money(monthly_cost * Decimal(4))
+    cumulative_peak_cash_need = four_month_cost - parts[0]
+    four_month_ea = money(budget.ea_effective * Decimal(4) / Decimal(6))
+    cumulative_peak_external = cumulative_peak_cash_need - four_month_ea
     return {
         "first_call": parts[0],
         "second_call": parts[1],
@@ -453,8 +470,12 @@ def cash_flow(budget: Budget) -> dict[str, Decimal]:
         "monthly_cost": monthly_cost,
         "quarter_cost": quarter_cost,
         "monthly_own_contribution": monthly_ea,
-        "peak_external_prefinancing": parts[1],
-        "peak_total_cash_need": quarter_cost,
+        "cumulative_peak_cash_need": cumulative_peak_cash_need,
+        "cumulative_peak_external": cumulative_peak_external,
+        "cumulative_peak_own": four_month_ea,
+        # Backwards-compatible names used by the earlier documentation:
+        "peak_external_prefinancing": cumulative_peak_external,
+        "peak_total_cash_need": cumulative_peak_cash_need,
     }
 
 

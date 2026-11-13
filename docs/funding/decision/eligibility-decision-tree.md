@@ -29,7 +29,7 @@ P6 Hoher Entwicklungsanteil + realistische Stundenplanung?
 ## Phase 2 — Persönliche Knoten (Owner prüft; STATUS je nachweisabhängig)
 
 ```
-M1 Alter ≥ 18?                                        [RL Ä2 Nr. 3; FAQ Bewerbung 02]  → JA/NEIN
+M1 Alter ≥ 18?                                        [RL 2024 Nr. 3; FAQ Bewerbung 02]  → JA/NEIN
 M2 Wohnsitz Deutschland + Steuerzahlung in DE?        [FAQ Bewerbung 02]               → JA/NEIN
 M3 (a) Selbstständig oder freiberuflich?
     (b) ODER angestellt + (anteilige) Arbeitgeber-Freistellung für die Laufzeit?

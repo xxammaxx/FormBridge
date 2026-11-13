@@ -29,7 +29,7 @@
 
 | Kriterium | FB alt→neu | Anlass (Review A) | RP alt→neu | Anlass (Review B) |
 |---|---|---|---|---|
-| K1 | 7,0→**6,5** | Trivialitäts-Wahrnehmung SUPPORTED/HIGH („pdftotext+Regeln+xmllint", kein Code als Demo) | 4,5→**4,0** | Konkurrenz SUPPORTED/HIGH: RepairVision mit identischem USP („provisorische Labels"); iFixit FixBot; NORA; AugRep/GYVA Live-Pilot |
+| K1 | 7,0→**6,5** | Trivialitäts-Wahrnehmung SUPPORTED/HIGH („pdftotext+Regeln+xmllint", kein Code als Demo) | 4,5→**4,0** | Konkurrenz SUPPORTED/HIGH: RepairVision mit identischem USP („provisional labels"; https://dev.to/priyansh_narang_c1b96ab75/repairvision-an-intelligent-repair-cafe-platform-for-multimodal-fault-diagnosis-and-sustainable-4jm2); iFixit FixBot; NORA; AugRep/GYVA Live-Pilot |
 | K2 | — | — | 7,0→**6,0** | Bedarfs-Evidenz SUPPORTED/HIGH: n=1 widerspricht Schmerzpunkt; keine Pilotpartner |
 | K3 | 6,0→**6,5** | Lizenz-Angriff REFUTED (Born-digital-Scope; Referenzfall bewiesen ohne CommonForms) | 7,0→**6,5** | Machbarkeits-Angriff WEAK (Baseline), aber KI-Qualität/Quellenrechte-M4 unbelegt |
 | K4 | 7,0→**6,5** | Adaptierbarkeit nur schwach bedient (MED) | 6,0→**5,5** | FOSS-Kriterium formal LOW, aber Glaubwürdigkeit MED (privates Repo) |

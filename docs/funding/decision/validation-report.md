@@ -2,7 +2,7 @@
 
 **Datum:** 13.11.2026 · **Gegenstand:** Verifizierung der Förderregeln-Forschung (funding-rules-verified-2026.md, financial-model.md, eligibility-decision-tree.md, remaining-questions.md) · **Gate-Charakter:** PASS nur bei vollständiger, unabhängiger Bestätigung; offene Punkte bleiben UNKNOWN.
 
-> **Aktueller Stand (Revalidierungsrunde 3, 13.11.2026):** Das frühere Testskript war **nicht im Repository archiviert**; die berichteten „56/57" waren daher nicht reproduzierbar. Revision 4 ersetzt sie durch eine archivierte, vollständige Suite mit **102/102 PASS** ([`validation/test-output.txt`](validation/test-output.txt)). Zusätzlich korrigiert: Second-Stage-31.650-€-Fehler, 10-Monats-Option, rollierende De-minimis-Frist, 3-Jahres-Aufbewahrung, RepairProbe-Testzahl (24 vs. 44). Die unabhängigen Reviews A/B der Runde 3 stehen in [`review-A-financial-2026-11-13.md`](review-A-financial-2026-11-13.md) und [`review-B-funding-2026-11-13.md`](review-B-funding-2026-11-13.md); die Zusammenfassung in [`final-validation-report.md`](final-validation-report.md). V1–V8 unten sind **historisch** und gelten nur, soweit sie nicht durch R3 überschrieben sind.
+> **Aktueller Stand (Revalidierungsrunde 3, 13.11.2026):** Das frühere Testskript war **nicht im Repository archiviert**; die berichteten „56/57" waren daher nicht reproduzierbar. Revision 4 ersetzt sie durch eine archivierte, vollständige Suite mit **109/109 PASS** ([`validation/test-output.txt`](validation/test-output.txt)). Zusätzlich korrigiert: Second-Stage-31.650-€-Fehler, 10-Monats-Option, rollierende De-minimis-Frist, 3-Jahres-Aufbewahrung, RepairProbe-Testzahl (24 vs. 44). Die unabhängigen Reviews A/B der Runde 3 stehen in [`review-A-financial-2026-11-13.md`](review-A-financial-2026-11-13.md) und [`review-B-funding-2026-11-13.md`](review-B-funding-2026-11-13.md); die Zusammenfassung in [`final-validation-report.md`](final-validation-report.md). V1–V8 unten sind **historisch** und gelten nur, soweit sie nicht durch R3 überschrieben sind.
 
 ## V1 — Quellenvalidierung
 
@@ -21,7 +21,7 @@ Unabhängige Prüfung: **Reviewer A** (Auftrag: jede Schlussfolgerung widerlegen
 ## V3 — Finanzvalidierung
 
 - **Runde 1:** 18/18 Arithmetik-Prüfungen OK — **aber:** die Prüfungen deckten einzelne Figuren ab, **nicht** die Identitätslogik; Modell A war strukturell fehlerhaft (Finanzierungsidentität verletzt) und wurde erst durch den externen Befund aufgedeckt. Ursache dokumentiert in financial-model.md §6.
-- **Runde 2 (historisch):** Modell v3 (Kosten-/Finanzierung getrennt); **56/57 automatisierte Tests bestanden** (1 Test-Skript-Bug — falsche Test-Basis 50.000/1,05 statt 47.500/1,05 — korrigiert und separat re-verifiziert: Rundungs-Fußnote 2.261,90 korrekt); Negativ-Test „altes Modell A verletzt K3" bestanden; Second-Stage-3-Frame-Tests bestanden; De-minimis-Clamp-Test bestanden; Ratenhebel-Boundary (R = 50,1256 €/h → G = 50.000) bestanden. **Dieses Skript war nicht im Repo; die Zahl ist nicht reproduzierbar und wird durch R3 ersetzt.**
+- **Runde 2 (historisch):** Modell v3 (Kosten-/Finanzierung getrennt); **56/57 automatisierte Tests bestanden** (1 Test-Skript-Bug — falsche Test-Basis 50.000/1,05 statt 47.500/1,05 — korrigiert und separat re-verifiziert: Rundungs-Fußnote 2.261,90 korrekt); Negativ-Test „altes Modell A verletzt K3" bestanden; Second-Stage-3-Frame-Tests bestanden; De-minimis-Clamp-Test bestanden; Ratenhebel-Boundary behauptet (R = 50,1256 €/h → G = 50.000), **tatsächlich ergibt 50,1256 €/h G = 50.000,28 €; exakt ist 50,1253132832…**. **Dieses Skript war nicht im Repo; die Zahl ist nicht reproduzierbar und wird durch R3 ersetzt.**
 - Unabhängige Neuberechnung: **Reviewer A2 (M1–M10)** — Finanzkern cent-exakt bestätigt nach Fix R2-1; **Reviewer B2 (K1–K8)** — Methodik gegen RL/FAQ/Handbuch bestätigt.
 - Ergebnis: **PASS mit dokumentierter offener Berechnungslogik-Frage (Q3)** — konservative Planung 47.381,25 €.
 
@@ -56,7 +56,7 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 **Externer Befund (als Hypothese übernommen und geprüft):** Modell A (PK 47.500 → F 47.500 → Budget 50.000 → EA 2.500) verletze die Finanzierungsidentität: die ausgewiesenen Kosten (47.500 €) tragen nur 100 % Förderung, und die 2.500 € EA hatten keine Kostenposition. Modell B hatte dieselbe Diskrepanz (Kostenbasis 47.500 vs. „Budget" 50.000).
 
-**Prüfung gegen Primärquellen:** RL Nr. 5 („F = bis zu 95 % der Gesamtkosten PK+GK; Gesamtkosten ≤ 50.000 €") + FAQ Förderung 01 („Maximalfördersumme 47.500 € … 950 h × 50 €") + FAQ Förderung 02 („F immer maximal 95 % des Projektbudgets; mind. 5 % Eigenanteil"; „GK-Pauschale 5 % der Personalkosten") → **Befund bestätigt: Der alte Modell-A-/B-Ansatz war fehlerhaft** (F = 100 % der Kostenbasis; 50.000 € ohne Kostenpositionen). Zugleich zeigt der Abgleich eine **echte Quellen-Mehrdeutigkeit**: Die FAQ-Kommunikation (47.500 € ≙ 950 h × 50 €) ist mit der strikten 95-%-Logik nur vereinbar, wenn GK = 2.500 € (5 % des Gesamtbudgets statt der PK) angesetzt wird; bei GK = 5 % × PK (2.375 €) beträgt das strenge Maximum **47.381,25 €** (G = 49.875 €). Differenz 118,75 €; öffentlich nicht auflösbar → W2 geschärft, Q3 verbleibt.
+**Prüfung gegen Primärquellen (Runde 2, historisch; R3 ergänzt E3/E5):** RL Nr. 5 („F = bis zu 95 % der Gesamtkosten PK+GK; Gesamtkosten ≤ 50.000 €") + FAQ Förderung 01 („Maximalfördersumme 47.500 € … 950 h × 50 €") + FAQ Förderung 02 („F immer maximal 95 % des Projektbudgets; mind. 5 % Eigenanteil"; „GK-Pauschale 5 % der Personalkosten") → **Befund bestätigt: Der alte Modell-A-/B-Ansatz war fehlerhaft** (F = 100 % der Kostenbasis; 50.000 € ohne Kostenpositionen). Zugleich zeigt der Abgleich eine **echte Quellen-Mehrdeutigkeit**: Die FAQ-Kommunikation (47.500 € ≙ 950 h × 50 €) ist mit der strikten 95-%-Logik nur vereinbar, wenn G = 50.000 € erreicht wird — z. B. GK = 2.500 € (5 % des Gesamtbudgets), 1.000 Gesamtstunden ohne GK oder ein nachgewiesener Satz ab 50,125313 €/h; bei GK = 5 % × PK (2.375 €) beträgt das strenge Maximum **47.381,25 €** (G = 49.875 €). Differenz 118,75 €; öffentlich nicht auflösbar → W2 geschärft, Q3 verbleibt.
 
 **Ursache des ursprünglichen Fehlers:** Die FAQ-Kommunikationsformel („Maximalfördersumme = 950 h × 50 €") wurde ohne Prüfung der Kostenbasis mit der RL-95-%-Struktur verrechnet; das 50.000-€-„Budget" wurde als Finanzierungsgröße behauptet, obwohl unter den 950-h-/GK-Regeln Kostenpositionen von nur 47.500 € (ohne GK) bzw. 49.875 € (mit GK) konstruierbar sind.
 
@@ -105,13 +105,15 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 ## Revalidierungsrunde 2 — Review-Ergebnisse
 
+> **Historischer Abschnitt (Runde 2).** Die folgenden Zahlen und Urteile sind der Stand vor Revision 4. Aktuelle Werte: 109/109 Tests; Cash-Raten 7.896,87 / 23.690,62 / 15.793,76; kumulativer Peak 25.353,13 €; Second Stage 31.570,87 € (633 h) / 31.620,75 € (634 h). Die Runde-2-Aussagen werden nicht als aktuell gelesen.
+
 ### Reviewer A2 — Finanzmathematik (M1–M10; FAQ-Zitate live verifiziert; alle Figuren eigenständig per decimal nachgerechnet)
 
 | Aufgabe | Urteil | Kernbefund |
 |---|---|---|
 | M1 Identitäten | **REFUTED (1 Figur)** → behoben | A, B, D (alle Zeilen), E, F: cent-exakt korrekt; **eine Ausnahme:** Vorfinanzierungs-Satz „~11.845 €" widersprach „23.690,63 €" im selben Satz → korrigiert (Fix R2-1) |
 | M2–M7 | **SUPPORTED** | Szenarien A (45.125,00), B (47.381,25), C-Nichtkonstruierbarkeit bei 50 €/h, D-Tabelle, E-Differenz 118,75 €, F (9.975,00) alle exakt bestätigt |
-| M8 Vorfinanzierung | **REFUTED** → behoben | Erster Abruf = Juni-only = **F/6 = 7.896,88 €**; konservativer Peak = volles Quartal **F/2 = 23.690,63 €**; EA-Saldo 2.500 € deckt beide Lesarten (Fix R2-1) |
+| M8 Vorfinanzierung | **REFUTED (historisch)** → in R3 präzisiert | Runde 2: Erster Abruf = **F/6 = 7.896,88 €**; Peak = **F/2 = 23.690,63 €**. R3 aktuell: 7.896,87 / 23.690,62; kumulativer Peak 25.353,13 € (extern 23.690,63 €); EA-Saldo 2.500 € deckt beide Lesarten. |
 | M9 Negativ-Test | SUPPORTED | Altes Modell A: F/G = 100 % > 95 % ⇒ K3-Verstoß — Korrektur begründet; Kosmetik: 2.261,90/91 → Fußnote ergänzt (Rundung aus ungerundeter Basis) |
 | M10 Lücken | UNRESOLVED → behoben | Second-Stage-Zahlen (als E-Beleg §1 + Szenario G ergänzt), De-minimis-Wirkung auf F (Szenario H), >50-€-Satz-Hebel (Szenario C), Portal-Rundung (Q3 korrekt offen) |
 
@@ -126,7 +128,7 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 | K3 50.000-€-Grenze | SUPPORTED¹ | = Gesamtkosten-Cap (RL wörtlich); FAQ 47.500 = 0,95 × 50.000; Team-Beleg 95.000 = 0,95 × 100.000; „GK = 5 % des Budgets" ohne Quellenstütze. ¹„Nicht konstruierbar" gilt nur bei exakt 50 €/h — FAQ erlaubt höheren Satz (→ Szenario C Ratenhebel ergänzt) |
 | K4 Eigenanteil | SUPPORTED | Konzept „Zeit" + formaler Bank-Nachweis; keine Quelle für EA als Bar-Zuzahlung |
 | K5 950 h/50 € | SUPPORTED | Handbuch F14 verbatim; 950-h-Cap bindet vor 50.000-€-Cap (G = 49.875); 50 €/h = **Personalkostensatz** (FAQ 02), nicht All-in |
-| K6 Second Stage | **REFUTED** → behoben | Modell enthielt keine Second-Stage-Sektion (W4) → Szenario G mit 4 Frames ergänzt (konservativ 31.650 €); RL setzt keine separate Second-Phase-Quote (95 %-Satz richtlinienweit) |
+| K6 Second Stage | **REFUTED (historisch)** → in R3 korrigiert | Runde 2 ergänzte Szenario G, bezeichnete aber 31.650 € als Förderung. R3: 633 h = 31.570,87 €; 634 h = 31.620,75 €; 31.650 € sind PK. |
 | K7 De-minimis | **REFUTED** → behoben | Modell enthielt De-minimis nicht (300.000 €/3 Jahre, Kumulierung, Erklärung) → Szenario H ergänzt; frühere Beihilfen können F < 47.500 € drücken |
 | K8 Methodik-Lücken | → behoben | AZK-Anker ergänzt (RL Nr. 5/6: AZK Vordruck 0047 + Merkblatt Vorkalkulation); Vorfinanzierung konsistent F/6-Monats-Framing; Hinweis „Nr. 5 durch beide Änderungs-RLs unberührt" ergänzt |
 
@@ -150,8 +152,8 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 | # | Befund | Ursache | Korrektur | Revalidierung |
 |---|---|---|---|---|
-| R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Erster Abruf = **F/6 = 7.896,88 €**; konservativer Peak = **F/2 = 23.690,63 €** klar getrennt | Review A2 M8-Nachrechnung (7.896,88 = 47.381,25/6) |
-| R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Szenario G mit 4 Frames (31.667 kommuniziert / 31.650 Stunden-Frame / 31.670,15 RL-Pfad / 31.666,67 Anteil-Frame; konservativ 31.650) | Review B2-Belege zitiert |
+| R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Runde 2: **F/6 = 7.896,88 €**; Peak = **F/2 = 23.690,63 €**. R3 aktuell: 7.896,87 / 23.690,62; kumulativer Peak 25.353,13 €. | Review A2 (historisch) + Review A3 (R3) |
+| R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Runde 2: Szenario G mit 4 Frames; **die 31.650-€-Zeile war falsch** (PK statt Förderung). R3: 31.570,87 / 31.620,75 / Cap 31.670,15. | Review B2 (historisch) + Review A3/B3 (R3) |
 | R2-3 | De-minimis-Wirkung auf F fehlte (K7 REFUTED) | Anlage Nr. 1 nur in funding-rules, nicht im Modell | Szenario H: F-Limit = min(Szenario-F, 300.000 − Vorbelastung); Erklärung/Aufbewahrung | Review B2 (RL Anlage) |
 | R2-4 | Szenario C „nicht konstruierbar" zu absolut (K3¹) | Ratenhebel (FAQ: höherer Satz mit Rechnungs-Nachweis) nicht abgebildet | Relativierung: bei R ≤ ~50,13 €/h konstruierbar (Beispiel 50,10 €/h → G 49.974,75, F 47.476,01) | Review B2 + Nachrechnung |
 | R2-5 | AZK-Anker fehlte (K8a) | RL Nr. 5/6-Verweise nicht als Kostenbasis-Anker dokumentiert | AZK-Abschnitt (Vordruck 0047 + Merkblatt Vorkalkulation; PK + GK-Pauschale als einzige öffentlich belegte Positionen) | Review B2-Zitate |
@@ -213,7 +215,7 @@ Die frühere Dokumentation berichtete „56/57" bzw. „61/61" Tests, ohne das S
 python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v
 ```
 
-**Ergebnis:** `Ran 102 tests … OK` — **102/102 PASS**. Der Testumfang ist gegenüber der historischen Zahl 57 gewachsen, weil gezielte Regressionen ergänzt wurden (u. a. Second Stage, De-minimis-Kombination, 10-Monats-Cap, 50,125313-€/h-Schwelle, Floor-vs-Half-up). Es wurden **keine** Erwartungswerte abgeschwächt.
+**Ergebnis:** `Ran 109 tests … OK` — **109/109 PASS**. Der Testumfang ist gegenüber der historischen Zahl 57 gewachsen, weil gezielte Regressionen ergänzt wurden (u. a. Second Stage, De-minimis-Kombination, 10-Monats-Cap, 50,125313-€/h-Schwelle, Floor-vs-Half-up). Es wurden **keine** Erwartungswerte abgeschwächt.
 
 ### R3-2 — Befund: Second-Stage-31.650-€-Fehler
 
@@ -249,7 +251,7 @@ Die frühere Dokumentation sprach von „FormBridge vs. RepairProbe", während d
 
 | Kriterium | Status |
 |---|---|
-| Alle Berechnungen cent-exakt und reproduzierbar | ✅ 102/102 Tests, unabhängige Reviews A/B (Runde 3) |
+| Alle Berechnungen cent-exakt und reproduzierbar | ✅ 109/109 Tests; unabhängige Reviews A/B (Runde 3): **PENDING** |
 | 47.500 vs. 47.381,25 | ⚠️ **UNRESOLVED**, konservativ 47.381,25; Differenz 118,75; Anfrageentwurf |
 | Second Stage | ✅ korrigiert (31.570,87 / 31.620,75); Q3b offen |
 | 10-Monats-Option | ✅ dokumentiert (Szenario I); Kommunikationsinkonsistenz offen |

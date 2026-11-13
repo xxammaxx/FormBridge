@@ -1,6 +1,6 @@
 # Verifizierte Prototype-Fund-Förderbedingungen, Jahrgang 03 — Evidence-Protokoll (Revision 4)
 
-**Datum:** 13.11.2026 · **Quellenhierarchie:** 1) BMFTR-Förderrichtlinie „Software Sprint" (Primärrechtsquelle, BAnz AT 15.11.2024 B4, Ä1 BAnz AT 01.12.2025 B4, Ä2 BAnz AT 25.06.2026 B4) · 2) PTF-Website/Detailseite/Innovationsseite · 3) PTF-Handbuch Jahrgang 03 (PDF, 31 S., Stand September 2026) · 4) PTF-FAQ (28 Antwortblöcke) · 5) Bewerbungsportal · 6) EU-De-minimis-Verordnung 2023/2831.
+**Datum:** 13.11.2026 · **Quellenhierarchie:** 1) BMFTR-Förderrichtlinie „Software Sprint" (Primärrechtsquelle, BAnz AT 15.11.2024 B4, Ä1 BAnz AT 01.12.2025 B4, Ä2 BAnz AT 25.06.2026 B4) · 2) EU-De-minimis-Verordnung 2023/2831 · 3) **Programmkommunikation (nicht normativ):** PTF-Website/Detailseite/Innovationsseite, PTF-Handbuch Jahrgang 03 (PDF, 31 S., Stand September 2026), PTF-FAQ (28 Antwortblöcke), Bewerbungsportal.
 **Abruf:** 13.11.2026. **Vollständige Zitate/URLs:** [Quellenregister](source-register-2026-11-13.md).
 **Klassifikation:** VERBINDLICH / FAQ-ERLÄUTERUNG / HANDBUCH-ERLÄUTERUNG / ABGELEITET / INTERPRETATION / UNKNOWN / CONTRADICTED.
 
@@ -29,9 +29,9 @@
 | F1.8 950 h / 50 €/h solo; 1.900 h / 95.000 € Team | Handbuch Frage 14; FAQ Förderung 01 | HANDBUCH-/FAQ-ERLÄUTERUNG; keine RL-Stundengrenze |
 | F1.9 Höherer Stundensatz nur mit Rechnungsnachweis; in der Second Stage 50 €/h Cap | FAQ Förderung 01 | FAQ-ERLÄUTERUNG |
 | F1.10 47.500 € „Maximalfördersumme" = 950 h × 50 € | FAQ Förderung 01; Handbuch Frage 14; Innovationsseite | **Kommunikationsgröße**, keine aus RL Nr. 5 ableitbare Förderobergrenze; **W2/Q3** |
-| F1.11 Strenge Rechnung bei 950 h + 5 % GK: **47.381,25 €** | [Finanzmodell v4](financial-model.md) Szenario B | ABGELEITET; 102/102 Tests |
+| F1.11 Strenge Rechnung bei 950 h + 5 % GK: **47.381,25 €** | [Finanzmodell v4](financial-model.md) Szenario B | ABGELEITET; 109/109 Tests |
 | F1.12 Absolute Untergrenze ohne GK: **45.125,00 €** | Szenario A | ABGELEITET |
-| F1.13 10-Monats-Option: Gesamtkosten 83.337 €, Fördercap **79.170,15 €**; FAQ nennt gerundet 79.167 € | RL Nr. 4/5; FAQ Grundlagen 01 | VERBINDLICH (Rahmen) / ABGELEITET (Cap) |
+| F1.13 10-Monats-Option: Gesamtkosten 83.337 €, Fördercap **79.170,15 €**; FAQ nennt 79.167 € (Summe 47.500 + 31.667) | RL Nr. 4/5; FAQ Grundlagen 01 | VERBINDLICH (Rahmen) / ABGELEITET (Cap) |
 
 ## F2 — Mehrfachbewerbung und parallele Förderungen
 
@@ -49,7 +49,7 @@
 | Einzelperson | Volljährig (RL Nr. 3: Mindestalter 18); Softwareprojekt; Wohnsitz DE; selbstständig oder freiberuflich; Steuern in DE; Amtssprache Deutsch | VERBINDLICH/FAQ |
 | Angestellte | Für die Projektlaufzeit (anteilig) vom Arbeitgeber freigestellt; Teilzeit-Anstellung zulässig | FAQ Bewerbung 02 FN** |
 | Selbstständigkeit erst ab Förderbeginn | Nicht explizit geregelt | UNKNOWN — Q2 |
-| Teams | Kleine interdisziplinäre Teams; GbR; Sitz DE; max. 1/3 Wohnsitz Ausland; Mentor*in <= 10 % | VERBINDLICH/FAQ |
+| Teams | Kleine interdisziplinäre Teams; GbR; Sitz DE; max. 1/3 Wohnsitz Ausland; Mentor*in <= 10 % **nur in der Linie Up and Coming** | VERBINDLICH/FAQ |
 | Programmierkenntnisse | Erforderlich; Vibe-Coding nicht förderfähig | FAQ Förderung 08 |
 | De-minimis-Vorbelastung | 300.000 € / rollierende 3 Jahre; Erklärung bei Bewilligung | VERBINDLICH (RL Anlage; VO 2023/2831) |
 
@@ -85,7 +85,7 @@
 | Auszahlung: Quartalsraten nachlaufend | FAQ Förderung 03 | FAQ-ERLÄUTERUNG |
 | Pflichttermine: Kick-Off, Austausch, Demo Day, Second-Stage-Abschluss | FAQ Förderung 05 | FAQ-ERLÄUTERUNG; Reisekosten UNKNOWN |
 | NKBF 2017; Projektbericht; Evaluationsbeteiligung | RL Nr. 6/3; FAQ Förderung 06 | VERBINDLICH/FAQ |
-| Second Stage: nur initial mitbeantragbar; max. Stunden = Anteil der 1. Phase; 50 €/h; **keine Code-Meilensteine** | FAQ Förderung 01; Handbuch Frage 16 | FAQ-/HANDBUCH-ERLÄUTERUNG |
+| Second Stage: nur initial mitbeantragbar; max. Stunden = Anteil der 1. Phase; 50 €/h; **keine Code-Meilensteine** | Handbuch Second-Stage-Intro (Stunden); FAQ Förderung 01 (50-€-Cap); Handbuch Frage 16 (keine Code-Meilensteine) | FAQ-/HANDBUCH-ERLÄUTERUNG |
 | Second Stage strenge Förderung: 31.570,87 € (633 h) / 31.620,75 € (634 h); Cap 31.670,15 € | Finanzmodell v4 Szenario G | ABGELEITET |
 | De-minimis: 300.000 € / rollierende 3 Jahre; Kumulierungsverbot; Erklärung | RL Anlage Nr. 1; VO 2023/2831 Art. 3 | VERBINDLICH |
 | Aufbewahrung De-minimis-Unterlagen: mindestens 3 Jahre | RL Anlage Nr. 1 | VERBINDLICH; 10-Jahres-Angabe nicht belegt |
@@ -114,7 +114,9 @@
 | W4 | Second Stage: FAQ 31.667 € / „633 h" vs. RL 33.337 € Kosten-Cap / 95 % = 31.670,15 € vs. 633 h + 5 % GK = 31.570,87 € | **Korrigiert:** 31.650 € sind PK, nicht Förderung; konservativ 31.570,87 € (633 h) / 31.620,75 € (634 h) |
 | W5 | Ältere Nebenquelle „FOSS-Veröffentlichung 1 Monat nach Förderbeginn" | **CONTRADICTED/UNVERIFIED**; FAQ/RL sagen „zum Projektabschluss" |
 | W6 | 10-Monats-Option in FAQ/Detailseite vs. Innovationsseite (nur 6 Monate) | Kein Rechtswiderspruch (RL Nr. 4 erlaubt 10 Monate); Kommunikationsinkonsistenz dokumentiert; Szenario I |
-| W7 | FAQ Grundlagen 01 nennt 79.167 €/158.000 €; RL-Cap ergibt solo 79.170,15 €, Team 158.340,30 € (100.000 + 66.674 = 166.674 € Gesamtkosten; 95 %) | Die FAQ-Zahlen sind gerundet; keine Förderrelevanz für die 6-Monats-Baseline; als Kommunikationsrundung dokumentiert. |
+| W7 | FAQ Grundlagen 01 nennt 79.167 €/158.000 €; RL-Cap ergibt solo 79.170,15 €, Team 158.340,30 € (100.000 + 66.674 = 166.674 € Gesamtkosten; 95 %) | Die FAQ-Zahlen sind gerundet; 79.167 = 47.500 + 31.667; 158.000 weicht von 95.000 + 63.333 = 158.333 ab. Keine Förderrelevanz für die 6-Monats-Baseline; als Kommunikationsrundung dokumentiert. |
+| W8 | Second-Stage-Projektzahl: FAQ Second Stage 02 nennt „maximal 30 Projekte"; Detailseite nennt 15 (Innovation) / 5 (Up and Coming) / 10 (Resilienz) | Beide Zitate getrennt; für die eigene Bewerbung ist die Zahl nicht entscheidend, aber die Kommunikationsinkonsistenz ist dokumentiert. |
+| W9 | RL Nr. 3: „Unternehmen … sind nicht antragsberechtigt" vs. FAQ/Prozess: Teams müssen eine GbR gründen | Solo-Bewerbung davon nicht betroffen; für den Team-Pfad ist die GbR die programmspezifische Umsetzung. Nicht als Widerspruch aufgelöst; im Portal klären, falls Team geplant. |
 
 ## Rest-UNKNOWN (bewusst offen)
 

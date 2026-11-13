@@ -21,7 +21,7 @@ cd packages/feldexa_ui && ~/flutter/bin/flutter test
 | `packages/feldexa_ui` | 17 | PASS |
 | **Summe** | **240** | **PASS** |
 
-Vier Pakete (`feldexa_adapters_android`, `feldexa_adapters_simulated`, `feldexa_application`, `feldexa_export`, `feldexa_recognition`) haben **keine** Testdateien; `flutter test` meldet dort „Test directory 'test' does not appear to contain any test files."
+Fünf Pakete (`feldexa_adapters_android`, `feldexa_adapters_simulated`, `feldexa_application`, `feldexa_export`, `feldexa_recognition`) haben **keine** Testdateien; `flutter test` meldet dort „Test directory 'test' does not appear to contain any test files."
 
 **Umgebung:** Flutter 3.47.7 (stable), Dart 3.13.5, Linux. `flutter pub get` wurde ausgeführt; keine Produktdatei geändert.
 

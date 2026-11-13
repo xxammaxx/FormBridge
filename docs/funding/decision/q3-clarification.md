@@ -74,7 +74,7 @@ Die frühere Dokumentation bezeichnete **31.650 €** als „konservative Planun
 
 ## 6. Auswirkung der 10-Monats-Option
 
-Die RL Nr. 4 erlaubt 10 Monate (6 + 4) mit einer zweiten Kostengrenze von 33.337 €. Die Gesamtkostenobergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt gerundet 79.167 € (Differenz 3,15 €). Für die aktuelle 6-Monats-Entscheidung ist das ein Alternativszenario, keine Baseline. Es ist in [financial-model.md](financial-model.md) Szenario I dokumentiert.
+Die RL Nr. 4 erlaubt 10 Monate (6 + 4) mit einer zweiten Kostengrenze von 33.337 €. Die Gesamtkostenobergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt **79.167 €** — das ist exakt die Summe der beiden gerundeten Kommunikationsgrößen 47.500 + 31.667, nicht 95 % von 83.337; die Differenz zum strikten Cap beträgt 3,15 €. Für die aktuelle 6-Monats-Entscheidung ist das ein Alternativszenario, keine Baseline. Es ist in [financial-model.md](financial-model.md) Szenario I dokumentiert. (Team: 95.000 + 63.333 = 158.333, die FAQ nennt 158.000 — eine weitere Rundungsinkonsistenz.)
 
 ## 7. Entwurf einer schriftlichen Anfrage (DE, NICHT VERSENDET)
 

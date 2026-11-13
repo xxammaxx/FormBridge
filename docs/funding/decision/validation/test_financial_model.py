@@ -244,8 +244,10 @@ class TestCapsAndBoundaries(unittest.TestCase):
         self.assertTrue(b.compliant, b.violations)
 
     def test_cost_cap_50000_01_rejected(self) -> None:
-        b = compute_budget(950, rate="50.1254", rate_proof=True)
-        self.assertGreater(b.g, D("50000.00"))
+        # Exact rate that produces G = 50,000.01 after cent rounding.
+        rate = D("50000.01") / (D("950") * D("1.05"))
+        b = compute_budget(950, rate=rate, rate_proof=True)
+        self.assertEqual(b.g, D("50000.01"))
         self.assertIn("total_cost_cap_exceeded", b.violations)
 
     def test_no_overhead_zero_gk(self) -> None:
@@ -372,14 +374,14 @@ class TestSecondStage(unittest.TestCase):
 
     def test_second_stage_633_funding_rate(self) -> None:
         b = second_stage_budget(633)
-        self.assertEqual(b.f, floor_money(b.g * D("0.95")))
+        self.assertEqual(b.f, D("31570.87"))
         self.assertLessEqual(b.f, b.g * D("0.95"))
 
     def test_old_31650_funding_claim_is_invalid(self) -> None:
         # Claiming 31,650 EUR funding on 33,232.50 EUR costs would be 95.24 %.
         g = D("33232.50")
         self.assertGreater(D("31650.00") / g, D("0.95"))
-        self.assertAlmostEqual(float(D("31650.00") / g), 0.9523809523, places=8)
+        self.assertEqual((D("31650.00") / g * D("100")).quantize(D("0.001")), D("95.238"))
 
 
 class TestCashFlow(unittest.TestCase):
@@ -411,10 +413,26 @@ class TestCashFlow(unittest.TestCase):
         self.assertEqual(self.cf["quarter_cost"], D("24937.50"))
 
     def test_peak_external_prefinancing(self) -> None:
-        self.assertEqual(self.cf["peak_external_prefinancing"], D("23690.62"))
+        self.assertEqual(self.cf["peak_external_prefinancing"], D("23690.63"))
+
+    def test_cumulative_peak_total_cash_need(self) -> None:
+        self.assertEqual(self.cf["cumulative_peak_cash_need"], D("25353.13"))
+
+    def test_cumulative_peak_own_contribution(self) -> None:
+        self.assertEqual(self.cf["cumulative_peak_own"], D("1662.50"))
+
+    def test_cumulative_peak_external(self) -> None:
+        self.assertEqual(self.cf["cumulative_peak_external"], D("23690.63"))
 
     def test_peak_total_cash_need(self) -> None:
-        self.assertEqual(self.cf["peak_total_cash_need"], D("24937.50"))
+        self.assertEqual(self.cf["peak_total_cash_need"], D("25353.13"))
+
+    def test_quarter_cost_is_not_cumulative_peak(self) -> None:
+        self.assertEqual(self.cf["quarter_cost"], D("24937.50"))
+        self.assertEqual(
+            self.cf["cumulative_peak_cash_need"] - self.cf["quarter_cost"],
+            D("415.63"),
+        )
 
     def test_first_month_gap(self) -> None:
         gap = self.cf["monthly_cost"] - self.cf["first_call"]
@@ -563,6 +581,32 @@ class TestTenMonth(unittest.TestCase):
         too_high = second_stage_budget(635)
         combined = combined_ten_month_budget(self.regular, too_high)
         self.assertFalse(combined["compliant"])
+
+    def test_second_stage_hours_must_not_exceed_regular_hours(self) -> None:
+        short_regular = compute_budget(600)
+        second = second_stage_budget(634, regular_hours=950)
+        combined = combined_ten_month_budget(short_regular, second)
+        self.assertFalse(combined["compliant"])
+        self.assertIn(
+            "K5_second_stage_hours_exceed_regular_phase",
+            combined["violations"],
+        )
+
+    def test_child_violations_are_propagated(self) -> None:
+        short_regular = compute_budget(600)
+        second = second_stage_budget(635)  # itself over the Second-Stage cost cap
+        combined = combined_ten_month_budget(short_regular, second)
+        self.assertFalse(combined["compliant"])
+        self.assertTrue(
+            any("second:total_cost_cap_exceeded" in v for v in combined["violations"]),
+            combined["violations"],
+        )
+
+    def test_second_stage_hours_equal_regular_hours_is_allowed(self) -> None:
+        regular = compute_budget(633)
+        second = second_stage_budget(633, regular_hours=633)
+        combined = combined_ten_month_budget(regular, second)
+        self.assertTrue(combined["compliant"], combined["violations"])
 
 
 if __name__ == "__main__":

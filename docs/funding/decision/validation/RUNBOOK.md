@@ -9,7 +9,7 @@ archiviert Befehl, Eingaben, Rundungsregeln und Ergebnis.
 | Punkt | Wert |
 |---|---|
 | Datum | 13.11.2026 |
-| Python | 3.12 (stdlib `unittest`, `decimal`) |
+| Python | 3.14.8 (getestet); 3.12-kompatibel (nur stdlib `unittest`, `decimal`) |
 | Externe Abhängigkeiten | keine |
 | Betriebssystem | Linux |
 | Arbeitsverzeichnis | Repository-Root (`FormBridge/`) |
@@ -25,7 +25,7 @@ python3 -m unittest discover \
 Ausgabe in [`test-output.txt`](test-output.txt). Erwartet:
 
 ```text
-Ran 102 tests in ...s
+Ran 109 tests in ...s
 
 OK
 ```
@@ -73,11 +73,11 @@ Vollständige Begründung: [financial-model.md](../financial-model.md) §2.
 | `TestCapsAndBoundaries` | 950/951 h, 50.000/50.000,01 €, 5 % GK, Rate > 50 | 17 |
 | `TestRounding` | Half-up/Floor, Quartalssummen, Cent-Exaktheit | 11 |
 | `TestSecondStage` | 633/634/635 h, 31.667-Differenz, Rate-Cap | 11 |
-| `TestCashFlow` | Raten, Monats-/Quartalskosten, Peak | 10 |
+| `TestCashFlow` | Raten, Monats-/Quartalskosten, kumulativer Peak | 14 |
 | `TestDeminimis` | 0/260k/299,9k/300k/310k, Kombination regular+second | 8 |
 | `TestInvalidModels` | alte/fehlerhafte Modelle, 95-%-Verletzungen | 8 |
-| `TestTenMonth` | 83.337-Cap, 79.170,15, Kombination | 9 |
-| **Summe** | | **102** |
+| `TestTenMonth` | 83.337-Cap, 79.170,15, Kombination, K5 | 12 |
+| **Summe** | | **109** |
 
 ## 7. Grenzen
 
@@ -91,9 +91,9 @@ Vollständige Begründung: [financial-model.md](../financial-model.md) §2.
 
 | Datei | SHA-256 |
 |---|---|
-| `financial_model.py` | `b849c9d3723a2741bb6389f17c3555780624a886a9d8e11eeca55f233b231244` |
-| `test_financial_model.py` | `c7a5f363a01581e09bc9b99ea2afc0a120b16fa2e65f761dd86762c1a9d8bbeb` |
-| `scenario-report.md` | `8eb7a084fb421ce7d7e485dc2f66608ef7a59a511b77f03473b3f41f665eb8f8` |
+| `financial_model.py` | `dbf3fdec5a2eb915233d9792ede3aacff8b6c14bd99f50a7976ceccaf3296036` |
+| `test_financial_model.py` | `a60bcc4a305d470d41cc970ffc887991f1075ce99d44d10a372606e75bfdd579` |
+| `scenario-report.md` | `2a05539028a36d5d73b36b91e4d08f39b15ae5c069695622e82d23a484561383` |
 
 Diese Hashes beziehen sich auf den Stand **vor** dem finalen Commit; nach dem
 Commit werden sie in [`final-validation-report.md`](../final-validation-report.md)

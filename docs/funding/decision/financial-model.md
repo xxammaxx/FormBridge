@@ -1,6 +1,6 @@
 # Finanzmodell v4 — exakte Dezimalrechnung, getrennte Kosten- und Finanzierungslogik
 
-**Datum:** 13.11.2026 · **Revision 4** (v1: fehlerhaft, Finanzierungsidentität verletzt; v2: Identitätskorrektur; v3: Second Stage/De-minimis/Ratenhebel; **v4: unabhängige Quellenprüfung, 102/102-Testsuite, Second-Stage-Korrektur, 10-Monats-Option, rollierende De-minimis-Frist, Q3-Analyse**) · **Status:** Planungsmodell, keine Förderzusage · **Testbasis:** [`validation/financial_model.py`](validation/financial_model.py), [`validation/test_financial_model.py`](validation/test_financial_model.py), [`validation/test-output.txt`](validation/test-output.txt), [`validation/scenario-report.md`](validation/scenario-report.md)
+**Datum:** 13.11.2026 · **Revision 4** (v1: fehlerhaft, Finanzierungsidentität verletzt; v2: Identitätskorrektur; v3: Second Stage/De-minimis/Ratenhebel; **v4: unabhängige Quellenprüfung, 109/109-Testsuite, Second-Stage-Korrektur, 10-Monats-Option, rollierende De-minimis-Frist, Q3-Analyse**) · **Status:** Planungsmodell, keine Förderzusage · **Testbasis:** [`validation/financial_model.py`](validation/financial_model.py), [`validation/test_financial_model.py`](validation/test_financial_model.py), [`validation/test-output.txt`](validation/test-output.txt), [`validation/scenario-report.md`](validation/scenario-report.md)
 
 **Quellen:** [Quellenregister](source-register-2026-11-13.md) · **Q3:** [Q3-Klärung](q3-clarification.md) · **Regeln:** [funding-rules-verified-2026.md](funding-rules-verified-2026.md)
 
@@ -154,7 +154,7 @@ Beispiel: Vorbelastung 260.000 € → verfügbar 40.000 € → F = 40.000,00 �
 
 ### Szenario I — 10-Monats-Option (6 + 4 Monate; Alternativszenario)
 
-Die RL Nr. 4 erlaubt eine zehnmonatige Laufzeit (6 Monate Entwicklung + 4 Monate Vertiefung nach Evaluation); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt gerundet 79.167 € (Differenz 3,15 €). Beispiel mit 950 h + 634 h:
+Die RL Nr. 4 erlaubt eine zehnmonatige Laufzeit (6 Monate Entwicklung + 4 Monate Vertiefung nach Evaluation); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt **79.167 €** = 47.500 + 31.667 (Summe der gerundeten Kommunikationsgrößen; Differenz zum Cap 3,15 €). Beispiel mit 950 h + 634 h:
 
 ```text
 G = 49.875,00 + 33.285,00 = 83.160,00 €
@@ -190,9 +190,11 @@ Die Raten werden abgerundet; die letzte Rate erhält den Rest, damit die Summe e
 **Cash-Bedarf:**
 
 - Monatliche Gesamtkosten: 49.875,00 / 6 = **8.312,50 €**.
-- Erstes Monatsloch: 8.312,50 − 7.896,87 = **415,63 €** (das ist der Eigenanteil des ersten Monats).
-- Konservativer Peak **externer Vorfinanzierung**: F/2 = **23.690,62 €** (ein volles Quartal Juli–September vor der nächsten Rate).
-- Peak **gesamter Cash-Bedarf**: G/2 = **24.937,50 €** (davon 1.246,88 € eigener Anteil).
+- Erstes Monatsloch: 8.312,50 − 7.896,87 = **415,63 €**. Der monatliche Eigenanteil ist auf Cent abgerundet **415,62 €**; die 1-Cent-Differenz ist der Rundungsrest der ersten Rate. Beides sauber trennen.
+- Kumulativer Peak **gesamter Cash-Bedarf** am 30.09.2027 (vier Monatskosten, nur die erste Rate erhalten): 4 × 8.312,50 − 7.896,87 = **25.353,13 €**.
+- Davon eigener Anteil (vier Monate): **1.662,50 €**; externer/reimbursable Brückenbedarf: **23.690,63 €**.
+- Die zweite Rate am 01.10.2027 beträgt **23.690,62 €** (Floor); danach bleibt ein 1-Cent-Rundungsrest gegenüber dem kumulierten Eigenanteil.
+- Die **Quartalsausgabe** Juli–September ist **24.937,50 €** (G/2), aber **nicht** der kumulative Peak; die Differenz von 415,63 € ist das Juni-Loch.
 - Kontoauszug-Saldo für den Eigenanteil: **>= 2.500,00 €** deckt die strenge Lesart (2.493,75 €) und die FAQ-Lesart (2.500,00 €) ab.
 
 **Wichtig:** Die 2.500 € sind ein **Liquiditätsnachweis**, keine zusätzliche Kostenposition. Sie werden nicht auf G addiert.
@@ -220,21 +222,21 @@ Zusätzlich prüft das Modell: `F <= 47.500 €` (Kommunikationsdeckel), `F_seco
 python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v
 ```
 
-**Ergebnis am 13.11.2026:** `Ran 102 tests … OK` — **102/102 PASS**. Vollständige Ausgabe: [`validation/test-output.txt`](validation/test-output.txt). Szenariotabelle: [`validation/scenario-report.md`](validation/scenario-report.md). Modell: [`validation/financial_model.py`](validation/financial_model.py). Tests: [`validation/test_financial_model.py`](validation/test_financial_model.py). Laufzeitumgebung: Python 3.12 (stdlib `unittest`, `decimal`), keine externen Abhängigkeiten.
+**Ergebnis am 13.11.2026:** `Ran 109 tests … OK` — **109/109 PASS**. Vollständige Ausgabe: [`validation/test-output.txt`](validation/test-output.txt). Szenariotabelle: [`validation/scenario-report.md`](validation/scenario-report.md). Modell: [`validation/financial_model.py`](validation/financial_model.py). Tests: [`validation/test_financial_model.py`](validation/test_financial_model.py). Laufzeitumgebung: Python 3.14.8 (getestet; stdlib `unittest`, `decimal`), keine externen Abhängigkeiten.
 
 **Abgedeckte Regressionen (Auszug):**
 
 - Ursprüngliches Modell A (F = 47.500 bei G = 47.500) verletzt K2/K3.
 - GK auf Gesamtbudget statt PK (5,263 %) verletzt K7.
-- F > 95 % von G (47.500 auf 49.875) wird erkannt.
-- EA < 5 % von G (2.493,74 auf 49.875) wird erkannt.
-- 951 h, 50.000,01 €, GK > 5 %, Rate > 50 ohne Nachweis, Second-Stage-Rate > 50.
+- F > 95 % von G (47.500 auf 49.875) wird als Arithmetik-Nachweis geprüft; das Modell konstruiert F durch Floor selbst nie > 95 %.
+- EA < 5 % von G (2.493,74 auf 49.875) wird als Arithmetik-Nachweis geprüft; das Modell konstruiert EA als Rest selbst nie < 5 %.
+- 951 h, 50.000,01 € (exakter Satz), GK > 5 %, Rate > 50 ohne Nachweis, Second-Stage-Rate > 50.
 - Cent-Rundung, Floor-vs-Half-up, Quartalssummen, Schwellenwert 50,125313 €/h.
 - Second Stage 633/634/635 h; 31.650-€-Fehlclaim; 31.667-€-Differenz.
 - De-minimis 0 / 260.000 / 299.900 / 300.000 / 310.000; Kombination regular + Second Stage.
 - 10-Monats-Cap 83.337 € und 79.170,15 €.
 
-**Hinweis zur Vorgeschichte:** Die frühere Behauptung „56/57 Tests, 1 Skript-Bug" war **nicht reproduzierbar**, weil das Testskript nicht im Repository archiviert war. Revision 4 ersetzt sie durch die hier archivierte, vollständig lauffähige Suite. Die Zahl 57 ist damit historisch; der aktuelle, tatsächliche Testumfang ist **102**.
+**Hinweis zur Vorgeschichte:** Die frühere Behauptung „56/57 Tests, 1 Skript-Bug" war **nicht reproduzierbar**, weil das Testskript nicht im Repository archiviert war. Revision 4 ersetzt sie durch die hier archivierte, vollständig lauffähige Suite. Die Zahl 57 ist damit historisch; der aktuelle, tatsächliche Testumfang ist **109**.
 
 ## 8. Planungsempfehlung (keine Förderzusage)
 
@@ -254,7 +256,7 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 | v1 | — | FAQ-Formel „950 h × 50 €" als Förderbetrag; Eigenanteil additiv | **fehlerhaft** (K2/K3 verletzt) |
 | v2 | Externer Befund | Trennung Kostenrechnung/Finanzierung; Szenarien A–F; FAQ-Lesart als E | 61/61 Dezimal-Tests (nicht archiviert) |
 | v3 | Review A2/B2 | Second Stage, De-minimis, Ratenhebel, AZK-Anker, Vorfinanzierung | 56/57 (1 Skript-Bug; nicht archiviert) |
-| **v4** | **Unabhängige Neuprüfung 13.11.2026** | **Second-Stage-31.650-€-Fehler korrigiert (31.570,87/31.620,75); 10-Monats-Option ergänzt; De-minimis rollierend statt kalenderjährlich; Aufbewahrung 3 statt 10 Jahre; 102/102-Testsuite archiviert; Q3 mit fünf Erklärungen; 47.500-€-Aussage als Kommunikationsgröße präzisiert** | **102/102 PASS; Review A/B siehe [final-validation-report.md](final-validation-report.md)** |
+| **v4** | **Unabhängige Neuprüfung 13.11.2026** | **Second-Stage-31.650-€-Fehler korrigiert (31.570,87/31.620,75); 10-Monats-Option ergänzt; De-minimis rollierend statt kalenderjährlich; Aufbewahrung 3 statt 10 Jahre; 109/109-Testsuite archiviert; Q3 mit fünf Erklärungen; 47.500-€-Aussage als Kommunikationsgröße präzisiert** | **109/109 PASS; Review A/B siehe [final-validation-report.md](final-validation-report.md)** |
 
 **Ursache des ursprünglichen Fehlers:** Die FAQ-Formel wurde mit der RL-95-%-Struktur verrechnet, ohne die Kostenbasis zu prüfen. Das 50.000-€-„Budget" wurde als Finanzierungsgröße behandelt, obwohl unter 950 h + GK-Regeln nur 47.500 € (ohne GK) bzw. 49.875 € (mit GK) Kosten konstruierbar sind. Der Eigenanteil wurde als zusätzliche Finanzierung auf nicht existierende Kosten addiert.
 
