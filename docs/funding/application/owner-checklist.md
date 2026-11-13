@@ -15,7 +15,7 @@
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
 | M5 | Einschlägige Vorarbeiten + umfassende Kenntnisse nachweisbar? | Bewerbungstext §11/§14 ergänzen; Nachweise | **BLOCKER**, falls kein Nachweis |
 | M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | Alle Beihilfen auflisten; De-minimis-Erklärung | **BLOCKER**, falls überschritten |
-| M7 | Kapazität für 950 h / 6 Monate (~159–167 h/Monat)? | Kalender prüfen; sonst 850-h-Variante wählen | **PLANUNG** |
+| M7 | Kapazität für 950 h / 6 Monate (~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat))? | Kalender prüfen; sonst 850-h-Variante wählen | **PLANUNG** |
 | M8 | Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) zur Bewilligung? | Liquidität prüfen | **FORMAL** |
 | M9 | Second Stage beantragen? | Ja/Nein entscheiden; Konzept liegt vor | **PLANUNG** |
 
@@ -23,23 +23,29 @@
 
 | Feld | Platzhalter / Hinweis |
 |---|---|
-| Name, Vorname | `[OWNER_ANGABE_ERFORDERLICH]` |
+| Projekttitel | `FormBridge` |
+| Accountname | `[OWNER_ANGABE_ERFORDERLICH]` |
+| Vorname / Name | `[OWNER_ANGABE_ERFORDERLICH]` |
 | E-Mail | `[OWNER_ANGABE_ERFORDERLICH]` |
 | Wohnsitzland/-ort | `[OWNER_ANGABE_ERFORDERLICH]` |
-| GitHub-/Projektlink | `https://github.com/xxammaxx/FormBridge` (öffentlich) |
+| Persönlicher GitHub-/Bitbucket-Link | `[OWNER_ANGABE_ERFORDERLICH]` |
+| Projektlink (Q6) | `https://github.com/xxammaxx/FormBridge` (öffentlich) |
 | Bisherige Projekte (max. 3) | `[OWNER_ANGABE_ERFORDERLICH]` — Name, Link, Rolle/Umfang |
 | Motivation/persönlicher Bezug | `[OWNER_ANGABE_ERFORDERLICH]` — max. 100 Wörter |
-| Beteiligungen/GmbH/Verein/Institut | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — falls ja, Trennung erläutern (max. 60 Wörter) |
+| Q4: Gesellschafter*in/GmbH/Verein/Institut? | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Ja/Nein |
+| Q5: Falls ja, Trennung erläutern | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — max. 60 Wörter |
 | Team | Nein (Solo) — bestätigen |
 | Arbeitsstunden | 950 oder 850 — entscheiden |
+| Q19a: 18+ / Hauptwohnsitz DE | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Checkbox |
+| Q19b: FOSS-Lizenz-Zusage | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Checkbox |
 
 ## C. Owner-Entscheidungen
 
 | # | Entscheidung | Optionen | Empfehlung | Status |
 |---|---|---|---|---|
 | O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** empfohlen; **keine Festlegung ohne Owner-Freigabe** | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
-| O2 | **Stunden** | 950 / 850 / 800 | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
-| O3 | **Second Stage** | Ja / Nein | Ja, wenn Integration/Community gewollt; sonst Nein und Q16/Q17 entfernen | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O2 | **Stunden** | 950 / 850 | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O3 | **Second Stage** | Ja / Nein | Ja, wenn Integration/Community gewollt; sonst Nein und §16/§17 entfernen | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | Bedingte Empfehlung F3; Owner entscheidet | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O5 | **Q1/Q2/Q3-Anfragen** | senden / nicht senden | Q2 ist kritisch; Q3 nur für Maximalausschöpfung | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 
@@ -60,9 +66,11 @@
 - [ ] M1–M6 positiv geklärt; M8 planbar.
 - [ ] O1 Lizenz entschieden (oder bewusst offen bis nach Auswahl; FOSS-Zusage bleibt).
 - [ ] O2 Stunden entschieden; Budget/Plan konsistent.
-- [ ] O3 Second Stage entschieden; Q16/Q17 entfernt oder final.
+- [ ] O3 Second Stage entschieden; §16/§17 entfernt oder final.
 - [ ] O4 Projektfassung final bestätigt (F3 empfohlen).
 - [ ] O5 Q2-Anfrage gestellt oder bewusst zurückgestellt.
+- [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
+- [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) bestätigt.
 - [ ] Persönliche Felder aus B ergänzt; keine Platzhalter mehr im Portaltext.
 - [ ] Portal-Live-Fragen/Wortlimits geprüft; Abweichungen in `portal-field-mapping.md` nachgezogen.
 - [ ] `application-final-de.md` von Platzhaltern befreit (außer bewusst markierten).

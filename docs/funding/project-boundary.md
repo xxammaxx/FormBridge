@@ -22,7 +22,7 @@ Das in [`docs/research/technical-specification.md`](../research/technical-specif
 
 ## C. Explizite Verbotsliste bis zu einem Förderbescheid
 
-1. Keine produktiven oder prototypischen Quellcodedateien in diesem Repository (auch keine "Beispiel"-Implementierungen).
+1. Keine produktiven oder prototypischen Quellcodedateien **des FormBridge-Moduls** in diesem Repository (auch keine "Beispiel"-Implementierungen). Analyse-/Validierungsskripte (z. B. `docs/funding/decision/validation/financial_model.py`) sind davon nicht erfasst; sie implementieren keine FormBridge-Pipeline.
 2. Keine Behauptung, irgendein Forschungsziel sei erreicht; alle Formulierungen bleiben Forschungsziele.
 3. Keine Verwendung von Feldexa-Produktcode (auch nicht "als Ausgangsbasis").
 4. Keine Vorab-Erledigung von Meilensteinen aus Spezifikation §7 (diese würden sonst als Förderleistungen verloren).

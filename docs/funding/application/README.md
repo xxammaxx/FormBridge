@@ -7,7 +7,7 @@
 | [application-final-de.md](application-final-de.md) | Vollständiger deutscher Bewerbungstext mit Wortlimits und Platzhaltern | DRAFT |
 | [portal-field-mapping.md](portal-field-mapping.md) | Offizielle Fragen, Wortlimits, Antwortzuordnung, Portal-Unbekannte | DRAFT |
 | [six-month-development-plan.md](six-month-development-plan.md) | 950-h-Plan, 850-h-Alternative, Deliverables, Tests, Risiken | DRAFT |
-| [budget-final.md](budget-final.md) | Baseline 950 h, 850/800-Varianten, Q3/Q3b, Cash-Flow, De-minimis | DRAFT |
+| [budget-final.md](budget-final.md) | Baseline 950 h, 850-Variante, 800-Sensitivität, Q3/Q3b, Cash-Flow, De-minimis | DRAFT |
 | [innovation-evidence.md](innovation-evidence.md) | Prior Art, Abgrenzung, belegte vs. getestete Aussagen | DRAFT |
 | [owner-checklist.md](owner-checklist.md) | M1–M9, persönliche Angaben, Owner-Entscheidungen | DRAFT |
 | [review-report.md](review-report.md) | Unabhängige Reviews A/B | PENDING |

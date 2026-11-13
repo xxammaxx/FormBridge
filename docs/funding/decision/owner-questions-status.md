@@ -16,7 +16,7 @@
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | REQUIRES_OWNER_INPUT | **BLOCKER** | FAQ Förderung 08 | Eigene Bestätigung; ggf. Code-/Projektnachweise |
 | M5 | „Einschlägige Vorarbeiten + umfassende Kenntnisse" nachweisbar? | REQUIRES_OWNER_INPUT (öffentliche Vorarbeiten belegt; persönliche Kenntnisse nicht) | **BLOCKER**, falls kein Nachweis | RL Nr. 3; öffentliches FormBridge-/Feldexa-Repo = Vorarbeit | Bewerbungstext „Stand/Motivation"; Nachweise zusammenstellen |
 | M6 | De-minimis-Historie: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | REQUIRES_OWNER_INPUT | **BLOCKER**, falls überschritten | RL Anlage Nr. 1; VO 2023/2831 Art. 3 | Alle Beihilfen der letzten 3 Jahre auflisten; De-minimis-Erklärung |
-| M7 | Kapazität ~159–167 h/Monat (950 h/6 M.) real leistbar? | REQUIRES_OWNER_INPUT | **PLANNING** (kein formaler Blocker, aber Realismusrisiko) | FAQ Förderung 01; Handbuch Frage 14 | Kalender-/Kapazitätsplan; ggf. Stunden reduzieren |
+| M7 | Kapazität ~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat) (950 h/6 M.) real leistbar? | REQUIRES_OWNER_INPUT | **PLANNING** (kein formaler Blocker, aber Realismusrisiko) | FAQ Förderung 01; Handbuch Frage 14 | Kalender-/Kapazitätsplan; ggf. Stunden reduzieren |
 | M8 | Kontoauszug mit Saldo >= Eigenanteil (2.493,75 €; 2.500 € deckt alle Lesarten) zur Bewilligung? | REQUIRES_OWNER_INPUT | **BLOCKER bei Bewilligung**, nicht bei Einreichung | RL Nr. 4; FAQ Auswahl 03 | Liquidität prüfen; Kontoauszug zum richtigen Zeitpunkt |
 | M9 | Second Stage beantragen? | REQUIRES_OWNER_INPUT | **Kein Blocker** (optional) | Handbuch Frage 16; Detailseite | Strategische Entscheidung; nur jetzt möglich |
 

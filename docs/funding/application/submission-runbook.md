@@ -44,10 +44,11 @@ Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/1
 3. Abweichungen notieren (Frage geändert? neues Pflichtfeld? anderes Limit?).
 4. **Keine** erfundenen Limits übernehmen; die Live-Anzeige ist maßgeblich.
 5. Falls ein Feld nicht in der Tabelle steht: als `PORTAL_UNVERIFIED` markieren und nach dem Ausfüllen hier ergänzen.
+6. Allgemeine Angaben prüfen: Projekttitel, Accountname, Vorname/Name, E-Mail, persönlicher GitHub-Link, Projektlink (Q6).
 
 ## 4. Antworten eintragen
 
-Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9 → Team → Erfahrung → Förderfähigkeit → Stunden → Motivation → Second Stage.
+Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9 → Team → Erfahrung → Förderfähigkeit (Q4/Q5) → Stunden → Motivation → Second Stage → Q19-Bestätigungen.
 
 - Texte aus [application-final-de.md](application-final-de.md) kopieren.
 - Nach jedem Feld die Zeichen-/Wortanzeige prüfen.
@@ -62,7 +63,9 @@ Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9
 - [ ] Wort-/Zeichenlimits eingehalten.
 - [ ] Projektlink `https://github.com/xxammaxx/FormBridge` korrekt.
 - [ ] Stunden = 950 oder 850, konsistent mit Budget/Plan.
-- [ ] Second Stage = Ja/Nein, konsistent mit Q16/Q17.
+- [ ] Second Stage = Ja/Nein, konsistent mit §16/§17.
+- [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
+- [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) gesetzt.
 - [ ] FOSS-Zusage gesetzt; Lizenzstatus korrekt (offen oder entschieden).
 - [ ] Keine sensiblen personenbezogenen Daten in öffentlichen Feldern, die nicht erforderlich sind.
 - [ ] RepairProbe-Draft unverändert.
@@ -95,7 +98,7 @@ Priorität:
 
 1. Pflichtfelder + §1/§2/§3/§4/§5/§7/§9.
 2. Erfahrung/Motivation mit ehrlichen Platzhaltern ersetzen (nicht erfinden).
-3. Second Stage weglassen (Nein), wenn Q16/Q17 nicht final sind.
+3. Second Stage weglassen (Nein), wenn §16/§17 nicht final sind.
 4. **Nicht** eine unvollständige Bewerbung als „fertig" bezeichnen.
 
 ## 10. Nach der Einreichung — Beleg für den Owner

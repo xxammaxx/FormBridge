@@ -2,7 +2,7 @@
 
 **Datum:** 13.11.2026 · **Charakter:** Spezifikation für ein künftig zu entwickelndes, unabhängiges Infrastruktur-Modul. **KEINE Implementierungsanweisung** für das Feldexa-2.0-Produkt und keine Vorab-Förderleistung. Referenzhypothesen: `innovation-assessment.md`.
 
-> **Vorarbeit-Hinweis (Validierung 13.11.2026):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis 170 Fehler + validierende Instanz) ist **bereits als Forschungsvorarbeit** im Referenzfall nachgewiesen (`../research/reference-case-wohngeld.md`) und zählt **nicht** als Förderleistung. Fördergegenstand in Monat 1 (RF2) ist daraus abgegrenzt: das **deterministische Normalisierungswerkzeug**, dessen CI-Automatisierung und der **Korpus von ≥ 5 amtlichen FIM-XSDs** mit vollständigen Reparaturprotokollen — nicht die bereits dokumentierte Ein-Schema-Analyse.
+> **Vorarbeit-Hinweis (Validierung 13.11.2026):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis 170 Fehler + validierende Instanz) ist **bereits als Forschungsvorarbeit** im Referenzfall nachgewiesen (`../research/reference-case-wohngeld.md`) und zählt **nicht** als Förderleistung. Fördergegenstand in Monat 1 (RF2) ist daraus abgegrenzt: das **deterministische Normalisierungswerkzeug**, dessen CI-Automatisierung und der **Korpus von ≥ 3 amtlichen FIM-XSDs im 6-Monats-Kern (5 als Stretch)** mit vollständigen Reparaturprotokollen — nicht die bereits dokumentierte Ein-Schema-Analyse.
 
 ## 0. Abgrenzung
 
@@ -15,8 +15,8 @@
 Lokal betreibbare FOSS-Komponente, die sichtbare Felder statischer (nicht ausfüllbarer) Behörden-PDFs mit versionierten FIM-Datenfeld-Identifikatoren verbindet — mit nachprüfbarer Unsicherheit, menschlicher Freigabe und maschinenlesbarer Provenienz.
 
 - **RF1 (Disambiguierung):** Wie genau kann Abschnitts-Kontext (Seitenregion, Überschriften, Frage-Antwort-Blöcke) semantische Zuordnungen auf FIM-Feldpfade auflösen? Messgrößen: Feld-Precision/Recall vs. Goldstandard, Anteil korrekt als UNKNOWN markierter Fälle.
-- **RF2 (Schema-Hygiene):** Lassen sich defekte amtliche XSD-Artefakte (Nachweis: Referenzfall §3, 170 Parser-Fehler in S00000159v1.4) deterministisch normalisieren und die Normalisierung maschinenprüfbar dokumentieren? Messgrößen: Compile-Erfolg über einen Korpus von N FIM-Schemata, 100 % nachvollziehbare Reparaturprotokolle.
-- **RF3 (Provenienz):** Reicht ein offenes Provenienz-Artefakt (Hashes, Koordinaten, Zielpfade, Schema-Variante, Review-Entscheid) aus, um jede Ausgabe unabhängig zu reproduzieren und jede manuelle Änderung zu erkennen? Messgrößen: Reproduzierbarkeitsrate, Manipulations-Erkennungsrate im Negativtest.
+- **RF2 (Schema-Hygiene):** Lassen sich **bereits veröffentlichte defekte** amtliche XSD-Artefakte (Nachweis: Referenzfall §3, 170 betroffene Elemente in S00000159v1.4) deterministisch normalisieren und die Normalisierung maschinenprüfbar dokumentieren? Messgrößen: Compile-Erfolg **und Semantikverlust-Protokoll** über einen Korpus von N FIM-Schemata; 100 % nachvollziehbare Reparaturprotokolle.
+- **RF3 (Provenienz):** Reicht ein offenes Provenienz-Artefakt (Hashes, Koordinaten, Zielpfade, Schema-Variante, Review-Entscheid) aus, um jede Ausgabe unabhängig zu reproduzieren und **Inkonsistenzen/versehentliche Änderungen** sichtbar zu machen? Messgrößen: Reproduzierbarkeitsrate, Inkonsistenz-Erkennungsrate im Negativtest. **Keine Tamper-Proof-Behauptung ohne Signatur/Trust Anchor.**
 - **RF4 (Aufwand):** Welcher menschliche Review-Aufwand (Zeit/Korrektur je Feld) bleibt bei Ziel-Precision ≥ 0,95 gegenüber vollautomatischer Zuordnung?
 
 ## 2. Ein-/Ausgaben
@@ -63,19 +63,21 @@ Regeln (3) werden als **datengetriebener, versionierter Regelkatalog** (YAML/JSO
 | Risiko | Bewertung | Gegenmaßnahme |
 |---|---|---|
 | Keine lizenzsichere, offene Feld-Detektionsbasis (CommonForms ohne LICENSE) | hoch | Eigenes Detektionminimum (regelbasiert auf Textlage für Vordruckklasse A „born-digital mit Linien/Unterstreichungen"); Detektion für reine Scans bewusst **außerhalb** des 6-Monats-Scope |
-| FIM-Schemata weiterer Verfahren sind ebenfalls defekt (unbekannte Defektklassen) | mittel-hoch | RF2-Korpus über ≥5 Verfahrensschemata; Normalisierer als eigenständiges, unabhängig nützliches Ergebnis |
+| FIM-Schemata weiterer Verfahren sind ebenfalls defekt (unbekannte Defektklassen) | mittel-hoch | RF2-Korpus: ≥ 3 Verfahrensschemata im 6-Monats-Kern, 5 als Stretch; Normalisierer als eigenständiges, unabhängig nützliches Ergebnis |
 | Fachliche Falschzuordnung (Geldbeträge, Identitäten) mit Realwirkung | hoch | Kritische Kategorien (Betrag/Identität/Pflichtfeld) erhalten hartes Review-Gate + UNKNOWN-Default; Fehlzuordnungen werden im Goldstandard doppelt gewichtet |
 | Codelisten-Mapping fachlich falsch (z. B. Staatscodes) | mittel | Codelisten werden aus Schema-Facetten + FIM-Portal-Referenzen gebunden und im Manifest ausgewiesen; keine improvisierten Zuordnungen |
 | Schema-/Verfahrens-Vielfalt (Landesausprägungen) sprengt Scope | hoch | Scope bewusst: **1 Verfahrens-Familie (Wohngeld Mietzuschuss Erstantrag)** + Nachweis der Generalisierbarkeit über Schema-API (nicht über viele Verfahren) |
 | „LLM-Magie" untergräbt Reproduzierbarkeit | mittel | ML optional und nur lokal; jede Zuordnung über regel_id-Nachvollziehbarkeit aufführbar; Cloud-Abhängigkeit ausgeschlossen |
-| **Einwand „das lässt sich in einem Wochenende mit GPT bauen"** | mittel | Widerlegung per Messziel: Kontext-Disambiguierung (≥6 Mehrfachkontexte im Referenzfall), Codelisten-Fehlerkritik, deterministische Schema-Normalisierung (170 Fehler-Klassen) und manipulationsfestes Provenienz-Format sind messbare Qualitätsanforderungen, die ein Ad-hoc-Skript nicht erfüllt — die 6 Monate sind auf diese Messungen verpflichtet, nicht auf Funktionsumfang |
+| **Einwand „das lässt sich in einem Wochenende mit GPT bauen"** | mittel | Widerlegung per Messziel: Kontext-Disambiguierung (≥6 Mehrfachkontexte im Referenzfall), Codelisten-Fehlerkritik, deterministische Schema-Normalisierung (170 Fehler-Klassen) und ein **prüfbares, inkonsistenzsensitives** Provenienz-Format sind messbare Qualitätsanforderungen, die ein Ad-hoc-Skript nicht erfüllt — die 6 Monate sind auf diese Messungen verpflichtet, nicht auf Funktionsumfang |
 | **Einwand „FITKO liefert doch bereits JSON-Schemata mit FIM-IDs — wozu XSD normalisieren?"** | mittel | JSON-Schema-Pfad bleibt als Ausgabeformat (§2.4) erhalten und wird genutzt; die XSD-Normalisierung ist ein **eigenständiger, unabhängig nützlicher Beitrag** (RF2), weil viele Verwaltungs-XML-Toolchains und Fachverfahren XSD-basiert sind und das amtliche Artefakt nachweislich nicht kompilierbar ist — kein „XSD statt JSON", sondern „beides, mit dokumentierter Hygiene" |
 
 ## 6. Messbare Abnahmekriterien (Ende der 6 Monate)
 
+> **Scope-Hinweis (Revision 4, 13.11.2026):** Die folgenden Werte sind **Forschungsziele der Spezifikation**. Der Förderantrag kann für eine Einzelperson niedrigere Muss-Werte setzen (120/0,90/0,85, 3 XSDs) und muss die Abweichung sowie das Stretch-Ziel (200/0,95/0,90, 5 XSDs) offen dokumentieren. Die Spec-Werte werden nicht als „Stretch" umetikettiert.
+
 1. Referenzfall Fürth ↔ S00000159v1.4: Feld-Precision ≥ 0,95 / Recall ≥ 0,90 auf ≥ 200 annotierten Feldern (Goldstandard synthetisch; Referenz-PDF wiederbeschaffbar via URL+Hash) **und auf ≥ 1 zurückgehaltenem Dokument** (Wohngeld-Variante eines anderen Landes, gegen das der Regelkatalog nicht entwickelt wurde); **0 unbeabsichtigte** kritische Fehlzuordnungen (Identität/Betrag/Pflichtfeld) in der Endausgabe; alle Restrisiken als UNKNOWN/Review ausgeflaggt.
 2. Schema-Hygiene: Normalisierer kompiliert ≥ 5 amtliche FIM-XSDs inkl. S00000159v1.4 (vorher: 0/5) mit vollständigen, maschinenlesbaren Reparaturprotokollen.
-3. Emit+Validate: synthetische Datensätze validieren gegen normalisiertes XSD; Manifest-Verifikation reproduziert 100 % der Artefakte; ≥ 10 dokumentierte Manipulations-Negativfälle werden zuverlässig erkannt.
+3. Emit+Validate: synthetische Datensätze validieren gegen die dokumentiert normalisierte Schema-Variante; Manifest-Verifikation reproduziert 100 % der Artefakte; ≥ 10 dokumentierte Inkonsistenz-Negativfälle werden zuverlässig erkannt.
 4. Review-Messung (RF4): Median-Review-Zeit je Feld dokumentiert, gemessen durch **2–3 externe Testpersonen** (nicht durch die Entwickler); Ziel < 15 s/Feld für UNKNOWN-freie Restmenge (Messung, kein Leistungsversprechen).
 5. FOSS: Modul + Regelkatalog + Goldstandard-Format unter offener Lizenz (OSI, kompatibel zu MPL-2.0/Apache-2.0-Ökosystem); CI mit reproduzierbaren Tests; Dokumentation auf Deutsch+Englisch.
 6. **Negativabgrenzung:** Der Prototyp läuft ohne Feldexa-App, ohne Cloud-Dienst, ohne Behördenübertragung — nachweisbar in CI.
@@ -88,7 +90,7 @@ Regeln (3) werden als **datengetriebener, versionierter Regelkatalog** (YAML/JSO
 | 2 | Regelkatalog v1 (Antragsteller-/Wohnung-Abschnitte), Kandidaten-Engine, Confidence-Modell | Erste End-to-End-Kandidaten auf Referenz-PDF, UNKNOWN-Mechanik |
 | 3 | Goldstandard ≥ 200 Felder (synthetisch), Review-CLI, Codelisten-Bindung; **Rekrutierung von 2–3 externen Testpersonen** | Precision/Recall-Baseline veröffentlicht |
 | 4 | Disambiguierung mit Abschnittskontext (RF1), kritische Kategorien-Hard-Gates, Erarbeitung des **Held-out-Dokuments** (andere Landes-Variante) | RF1-Messung, Fehlkategorien-Analyse |
-| 5 | Emit+Validate+Verify (RF3), Manipulations-Negativtests, ≥ 5 FIM-Schemata (RF2-Korpus) | Reproduzierbarkeits-/Erkennungsraten |
+| 5 | Emit+Validate+Verify (RF3), Inkonsistenz-Negativtests, ≥ 3 FIM-Schemata im Kern (5 als Stretch, RF2-Korpus) | Reproduzierbarkeits-/Erkennungsraten |
 | 6 | Review-Zeit-Messung (RF4), Dokumentation, FOSS-Release, Bericht zu allen RFs | Abnahmekriterien §6 geprüft; Demo ohne Produkt/App |
 
 Jeder Meilenstein erzeugt nachprüfbare Artefakte (Tests, Berichte, Messwerte). Keine Behördenübermittlung, keine Echtdaten, keine App-Abhängigkeit.

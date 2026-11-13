@@ -42,7 +42,7 @@ M5 „Einschlägige Vorarbeiten + umfassende Kenntnisse" nachweisbar?
    [RL 2024 Nr. 3 (seit 2024); von Ä2 2026 neu gefasst + Nachwuchs-Satz ergänzt]  → JA mit Material / prüfen
 M6 De-minimis-Historie: < 300.000 € Beihilfen in den letzten 3 Jahren (alle „eine Unternehmereinheit" bildenden Unternehmen)?
    → De-minimis-Erklärung wird bei Bewilligung verlangt. [RL Nr. 1.3/5 + EU-VO]
-M7 Kapazität: ~159–167 h/Monat real leistbar (6 Monate); bei Teilzeit-Anstellung Arbeitsschutz-Grenzen?
+M7 Kapazität: ~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat) real leistbar (6 Monate); bei Teilzeit-Anstellung Arbeitsschutz-Grenzen?
    → [FAQ Förderung 01; Handbuch]
 M8 Kontoauszug mit Saldo ≥ Eigenanteil (streng gerechnet 2.493,75 € bei 950 h; **2.500 € deckt alle Lesarten ab**) verfügbar/beschaffbar zur Bewilligung?
    → [FAQ Auswahl 03; RL Nr. 4]

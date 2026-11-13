@@ -33,7 +33,7 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 
 ## Bezug zu Feldexa 2.0
 
-FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Feldexa_2.0) (kein Code-Austausch, keine Abhängigkeit). Feldexa 2.0 ist als **erste Anwendung** des künftigen Moduls vorgesehen (siehe ADR-001). Die ursprüngliche Forschung entstand im Feldexa-2.0-Repository (Issue [#167](https://github.com/xxammaxx/Feldexa_2.0/issues/167), Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168), Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, 13.11.2026) und wurde hierher migriert — Herkunft ist je Datei ausgewiesen.
+FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Feldexa_2.0) (kein Code-Austausch, keine Abhängigkeit). Feldexa 2.0 ist als **vorgesehene erste Anwendung** des künftigen Moduls vorgesehen, aber **nicht integriert** und **nicht Teil des Förderumfangs** (siehe ADR-001). Die ursprüngliche Forschung entstand im Feldexa-2.0-Repository (Issue [#167](https://github.com/xxammaxx/Feldexa_2.0/issues/167), Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168), Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, 13.11.2026) und wurde hierher migriert — Herkunft ist je Datei ausgewiesen.
 
 ## Lizenz
 

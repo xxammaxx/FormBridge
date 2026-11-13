@@ -33,7 +33,9 @@
 
 **Wirkung:** 4.987,50 € weniger Förderung als bei 950 h; 262,50 € weniger Eigenanteil. Dafür 100 h weniger Kapazitätsdruck. Die 850-h-Variante ist die realistische Wahl, wenn die Vollzeitkapazität nicht sicher ist.
 
-## 3. Alternative 800 h
+## 3. Sensitivität 800 h (nicht Antragsoption)
+
+Die 800-h-Variante ist eine **Sensitivitätsrechnung**, keine wählbare Antragsoption. Sie zeigt den linearen Effekt einer weiteren Reduktion; Plan und Runbook sind auf 950/850 ausgelegt.
 
 | Position | Betrag |
 |---|---:|

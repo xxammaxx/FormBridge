@@ -1,6 +1,8 @@
 # Finaler Validierungsbericht — Runde 3 (13.11.2026)
 
-**Status:** **FINAL (Dokumentation)** · **Geprüfter Candidate:** `fe3bd6ec891575fdae6f05d717de7697819302cd` · **Branch:** `docs/funding-decision-2026-11-13` · **Reviewer:** A (Finanzen) **PASS**, B (Förderrecht/Evidenz/Vergleich) **PASS**
+**Status:** **FINAL (Dokumentation)** · **Geprüfter Candidate:** `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` · **Branch:** `docs/funding-decision-2026-11-13` · **Reviewer:** A (Finanzen) **PASS**, B (Förderrecht/Evidenz/Vergleich) **PASS**
+
+> **Scope-Hinweis:** Dieser PASS gilt für das **Entscheidungs-/Finanzpaket** (Decision-Dokumente), **nicht** für das separate Bewerbungspaket unter [`application/`](../application/README.md). Die Bewerbungs-Reviews A/B haben einen eigenen Candidate und ein eigenes Gate.
 
 > **Gate:** **VALIDATED_WITH_OPEN_QUESTIONS** — Finanzkern, Quellenbasis und Vergleich sind unabhängig geprüft; Q3/Q3b bleiben als **nicht blockierende, quantifizierte** Unsicherheiten offen. Das ist **keine** Förderzusage, **keine** Bestätigung der persönlichen Förderfähigkeit und **keine** Entscheidung für den Owner.
 
