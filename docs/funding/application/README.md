@@ -1,7 +1,7 @@
 # Bewerbungspaket FormBridge — Index
 
 **Stand:** 14.11.2026 · **Status Bewerbungspaket:** `READY_FOR_OWNER_INPUT` · **Status Portal-Preflight:** `READY_WITH_EXPLICIT_BLOCKERS` · **Frist:** 30.11.2026, 15:00 Uhr MEZ
-**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` (Bewerbungstext/Finanzen) · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Gründungs-Delta (docs-only):** Reviewer A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, Reviewer B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)**; geprüfter Candidate `d062d9db` ([Review](../decision/review-founder-strategy-2026-11-13.md))
+**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` (Basis) · **Gründungs-Delta:** `d062d9db` ([Review](../decision/review-founder-strategy-2026-11-13.md)) · **Readiness-Delta:** `ef968f9` — Reviewer A/B **PASS**, Status `READY_WITH_EXPLICIT_BLOCKERS` ([Review](review-application-readiness-2026-11-14.md))
 
 | Dokument | Zweck | Status |
 |---|---|---|
@@ -15,7 +15,8 @@
 | [owner-decision-gate.md](owner-decision-gate.md) | Minimale Owner-Entscheidungen und Gate-Stufen | OWNER_ACTION |
 | [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md) | Live-Portalstatus, Feldvorlage, fehlende Owner-Angaben, Q2-Risiko | READY_WITH_EXPLICIT_BLOCKERS |
 | [founder-timeline.md](founder-timeline.md) | Zeitplan Nov 2026–Jun 2027, Varianten A/B/C | REVIEWED |
-| [review-report.md](review-report.md) | Unabhängige Reviews A/B | PASS/PASS |
+| [review-report.md](review-report.md) | Unabhängige Reviews A/B (Basis) | PASS/PASS |
+| [review-application-readiness-2026-11-14.md](review-application-readiness-2026-11-14.md) | Readiness-Review A/B, Q2/Portal/Finanzen | PASS (bedingt) |
 | [validation-report.md](validation-report.md) | Abschließende Revalidierung | PASS_WITH_BLOCKERS |
 | [submission-runbook.md](submission-runbook.md) | Konkrete Einreichungsschritte | READY |
 | [project-description-short.md](project-description-short.md) | Fünf-Satz- und Ein-Absatz-Beschreibung | READY |

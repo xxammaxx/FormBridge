@@ -47,6 +47,17 @@
 
 **Residual LOW:** erwarteter Betriebspunkt Coverage/Recall explizit nennen; Mindestzahl Gap-Felder im Goldstandard; FOSS-Exception Plan/Anwendung angleichen; 170-Terminologie vereinheitlichen; D21-Gesamt-n=8.091 als nicht unabhängig geprüft kennzeichnen; M5-Tightness und Held-out-PDF bleiben Risiken.
 
+## Nachtrag — Readiness JG03 Innovation (14.11.2026)
+
+Der aktuelle Bewerbungsstand wurde nach den Q2-/Portal-/Budget-Korrekturen erneut von zwei unabhängigen Reviewern geprüft.
+
+| Reviewer | Prüfgebiet | Ergebnis |
+|---|---|---|
+| A | Formalia, Fristen, Teilnahmevoraussetzungen, Portal-Mapping, Q2 | **PASS** |
+| B | Projektqualität, Innovation, Technik, Budget, Second Stage | **PASS** |
+
+**Geprüfter Candidate:** `ef968f9652069c0f92051db8f91d0125ed70ec1e` · **Status:** `READY_WITH_EXPLICIT_BLOCKERS` · **Details:** [Readiness-Review](review-application-readiness-2026-11-14.md).
+
 ## Nachtrag — Gründungsstrategie/Q2 (docs-only Delta)
 
 Das Gründungs-Delta (Q2-Verifikation, Gründungsstrategie, Jobcenter/BA-Assessment, Zeitplan, Owner-Gate, kanonische Anfrage) wurde **separat** von zwei unabhängigen Reviewern geprüft. Geprüfter Candidate: `d062d9dbf4a05b0e4bac38506a3a0b4deedc191c`; Einzelbefunde: [Review Gründungsstrategie](../decision/review-founder-strategy-2026-11-13.md).
