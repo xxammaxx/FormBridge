@@ -48,8 +48,8 @@
 
 | # | Frage | Limit | Vorlage | Status |
 |---|---|---:|---|---|
-| P1 | Projekt in einem Satz | 30 W. | §1 (22 W.) | **FINAL** |
-| P2 | Projekt kurz beschreiben | 100 W. | §2 (96 W.) | **FINAL** |
+| P1 | Projekt in einem Satz | 30 W. | §1 (23 W.) | **FINAL** |
+| P2 | Projekt kurz beschreiben | 100 W. | §2 (97 W.) | **FINAL** |
 | P3 | Gesellschaftliche Herausforderung | 175 W. | §3 (169 W.) | **FINAL** |
 | P4 | Technische Umsetzung | 175 W. | §4 (133 W.) | **FINAL** |
 | P5 | Aktueller Stand/Neuerungen | 100 W. | §5 (81 W.) | **FINAL** |
@@ -76,7 +76,7 @@
 |---|---|---:|---|---|
 | S1 | Second Stage beantragen? | Ja/Nein | Ja | **OWNER-ENTSCHEIDUNG** |
 | S2 | Schwerpunkt | 175 W. | §16 (99 W.) | **FINAL (bei Ja)** |
-| S3 | Meilensteine | 100 W. | §17 (29 W.) | **FINAL (bei Ja)** |
+| S3 | Meilensteine | 100 W. | §17 (30 W.) | **FINAL (bei Ja)** |
 
 ### E. Bestätigungen
 

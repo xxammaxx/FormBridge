@@ -6,7 +6,7 @@
 
 - [ ] **M1:** Ich bin volljährig (mindestens 18 Jahre alt).
 - [ ] **M2:** Ich habe meinen Hauptwohnsitz in Deutschland und zahle hier Steuern.
-- [ ] **M3a:** Ich bin **derzeit** selbstständig oder freiberuflich tätig. *(Materielle Voraussetzung laut FAQ/Bewerbungsseite; das JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen — Widerspruch.)*
+- [ ] **M3a:** Ich bin **derzeit** selbstständig oder freiberuflich tätig. *(Formale Zulassungsvoraussetzung laut BMFTR-RL Nr. 3 und FAQ/Bewerbungsseite; das JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen — Redaktionslücke.)*
 - [ ] **M3b:** Ich bin angestellt und für 01.06.–30.11.2027 (anteilig) freigestellt.
 - [ ] **M3c:** Ich bin derzeit **nicht** selbstständig und plane die Aufnahme erst 2027. → **Materielles Q2-Risiko**; PTF-Antwort oder bewusste Risikoentscheidung nötig. Falls PTF zustimmt: Registrierung vor dem PTF-bestätigten formalen Antragstermin, nicht erst zum 01.06.2027.
 - [ ] **M3d:** Ich habe zur Kenntnis genommen, dass die Online-Fragen kein Steuernummer-/Selbstständigkeitsfeld enthalten, die FAQ/Bewerbungsseite aber Selbstständigkeit verlangen.

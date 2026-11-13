@@ -12,7 +12,7 @@
 
 FormBridge ist ein geplantes freies, lokal laufendes Softwaremodul, das statische Behörden-PDFs analysiert, Formularfelder nachvollziehbar versionierten FIM-Datenfeldern zuordnet und prüfbare, strukturierte Ergebnisse bereitstellt.
 
-**Wörter:** 22 / 30 · **Status:** FINAL
+**Wörter:** 23 / 30 · **Status:** FINAL
 
 ---
 
@@ -20,7 +20,7 @@ FormBridge ist ein geplantes freies, lokal laufendes Softwaremodul, das statisch
 
 Im Förderzeitraum entsteht ein eigenständiges Open-Source-Modul mit Bibliothek und CLI. Es erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs, schlägt Zuordnungen zu versionierten FIM-Datenfeldern vor und markiert Unsicherheit ausdrücklich als UNKNOWN. Menschen prüfen und korrigieren die Vorschläge. Ein versioniertes Provenienz-Manifest und ein unabhängiger Verifier machen Quelle, Schema-Version, Koordinaten und Review-Entscheidungen nachprüfbar. Eine gegen die dokumentiert normalisierte Schema-Variante validierte Ausgabe und ein Abdeckungsbericht runden den Kern ab. Referenz ist der Wohngeldantrag S00000159; Scans, Produkt-UI und Behördenanschluss sind nicht Teil des Vorhabens. Selbst erstellter Code und Dokumentation werden FOSS; amtliche PDFs/XSDs und abgeleitete FIM-Metadaten nur nach Rechteklärung per URL/Hash.
 
-**Wörter:** 96 / 100 · **Status:** FINAL
+**Wörter:** 97 / 100 · **Status:** FINAL
 
 ---
 
@@ -163,14 +163,14 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 3. Monat: Nutzertests zu UNKNOWN/Review-Zeit, Community-Austausch, Dokumentation.
 4. Monat: Version 0.2, Wartungs- und Governance-Skizze, Abschlussbericht.
 
-**Wörter:** 29 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
+**Wörter:** 30 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
 
 ---
 
-## 18. Bestätigungen (Pflichtfelder im Portal)
+## 18. Bestätigungen (Handbuch Q19; Portal-Checkbox unverified)
 
-- [ ] „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ (Handbuch Q19)
-- [ ] „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ (Handbuch Q19)
+- [ ] „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ (Handbuch JG03, Q19, Sept. 2026)
+- [ ] „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ (Handbuch JG03, Q19, Sept. 2026)
 
 **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH · **Hinweis:** Q19 steht **nicht** im Fragen-PDF Innovation, sondern im Handbuch und in der Portal-Checkbox; die exakte Live-Formulierung ist `PORTAL_UNVERIFIED`.
 

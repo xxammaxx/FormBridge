@@ -31,8 +31,8 @@
 
 | # | Offizielle Frage (wörtlich) | Limit | Antwort | Status |
 |---|---|---|---:|---|
-| P1 | Beschreibe dein Projekt in einem Satz. | 30 Wörter | §1 (22 W.) | FINAL |
-| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (96 W.) | FINAL |
+| P1 | Beschreibe dein Projekt in einem Satz. | 30 Wörter | §1 (23 W.) | FINAL |
+| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (97 W.) | FINAL |
 | P3 | Welche gesellschaftliche Herausforderung willst du mit dem Projekt angehen? | 175 Wörter | §3 (169 W.) | FINAL |
 | P4 | Wie willst du dein Projekt technisch umsetzen? | 175 Wörter | §4 (133 W.) | FINAL |
 | P5 | Hast du schon an der Idee gearbeitet? Wenn ja, beschreibe kurz den aktuellen Stand und erkläre die geplanten Neuerungen. | 100 Wörter | §5 (81 W.) | FINAL |
@@ -59,14 +59,14 @@
 |---|---|---|---:|---|
 | S1 | Beantragst du die viermonatige Second-Stage-Förderung nach Ablauf der sechsmonatigen regulären Förderung? | Ja/Nein | §15: Ja | OWNER_ENTSCHEIDUNG |
 | S2 | Wenn du eine Verlängerung beantragen möchtest: Erzähle uns kurz, was dein Projekt braucht, um aus dem Prototypen-Stadium herauszukommen und wie du dein Projekt in den vier Monaten nachhaltig aufbauen willst. | 175 Wörter | §16 (99 W.) | FINAL (bei Ja; S1 Owner) |
-| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (29 W.) | FINAL (bei Ja; S1 Owner) |
+| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (30 W.) | FINAL (bei Ja; S1 Owner) |
 
-## E. Bestätigungen (Q19, Pflicht)
+## E. Bestätigungen (Q19; Handbuch, Portal-Checkbox unverified)
 
 | # | Bestätigung | Quelle | Status |
 |---|---|---|---|
-| Q19a | „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ | Handbuch Q19; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
-| Q19b | „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ | Handbuch Q19; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
+| Q19a | „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
+| Q19b | „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
 
 **Hinweis:** Q19 ist **nicht** im Fragen-PDF Innovation enthalten. Der Inhalt ist im Handbuch belegt; die exakte Checkbox-Formulierung und Reihenfolge im Portal ist `PORTAL_UNVERIFIED`.
 

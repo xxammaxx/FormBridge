@@ -73,7 +73,7 @@
 6. Führt die PTF-Zuwendung zu **Sozialversicherungs-/Steuerpflichten** (Einkommensteuer, Krankenversicherung)?
 7. **GZ-Sonderfall:** §§93–94 SGB III sind keine Bedarfsleistung; eine Einkommensanrechnung wie bei Grundsicherungsgeld ist dort nicht vorgesehen. Die PTF-Zuwendung kann aber bei **Erforderlichkeit/Ermessen** und bei der **Tragfähigkeit** relevant sein. Getrennt prüfen, nicht mit GSG/ESG gleichsetzen.
 
-**Regel:** Keine pauschale Aussage „kumulierbar" oder „nicht kumulierbar". Vor Aufnahme der Tätigkeit **schriftlich** Jobcenter/Agentur für Arbeit und PTF fragen; keine Anträge ohne diese Klärung. **ESG und GZ sind systembedingt nicht gleichzeitig** (Grundsicherungsgeld vs. ALG I). Bei Wegfall von Grundsicherungsgeld ist **Wohngeld** als Auffangleistung zu prüfen; §16c-Darlehen sind eine separate Sachgüter-Option.
+**Regel:** Keine pauschale Aussage „kumulierbar" oder „nicht kumulierbar". Vor Aufnahme der Tätigkeit **schriftlich** Jobcenter/Agentur für Arbeit und PTF fragen; keine Anträge ohne diese Klärung. **ESG und GZ sind in der Regel nicht gleichzeitig** (Grundsicherungsgeld vs. ALG I); Aufstocker-/Einzelfallkonstellationen sind gesondert zu prüfen. Bei Wegfall von Grundsicherungsgeld ist **Wohngeld** als Auffangleistung zu prüfen; §16c-Darlehen sind eine separate Sachgüter-Option.
 
 **Sequenz:** Finanzamt-Registrierung ist nicht automatisch „Aufnahme“ der hauptberuflichen Tätigkeit. Geplanter Beginn ist 01.06.2027; vorher keine ≥15 h/Woche und keine Umsätze. Einstiegsgeld/GZ müssen **vor** Aufnahme beantragt werden — daher Beratung/Antrag Jan–Mai 2027, nicht erst nach der Registrierung.
 
@@ -108,7 +108,7 @@
 | Keine Tragfähigkeitsbescheinigung | GZ/§16c entfällt | Businessplan, Finanzplan, fachkundige Stelle |
 | Tragfähigkeit endet mit PTF (30.11.2027) | GZ-Phase 2 nur 300 €/Monat; ESG verlangt Perspektive ohne Grundsicherungsgeld | Umsatz-/Anschlussplan ab 12/2027; Second Stage/andere Säule; rechtzeitig klären |
 | Registrierung wird als „Aufnahme“ gewertet | GZ/ESG können entfallen | Registrierung mit geplantem Beginn 01.06.2027; vorher keine ≥15 h/Woche Tätigkeit; schriftlich mit Jobcenter/BA klären |
-| ESG und GZ gleichzeitig | systembedingt ausgeschlossen (GSG vs. ALG I) | Nur ein Weg; Status zuerst klären |
+| ESG und GZ gleichzeitig | in der Regel ausgeschlossen (GSG vs. ALG I); Einzelfall prüfen | Nur ein Weg; Status zuerst klären |
 | ALG-I-Restanspruch < 150 Tage | GZ entfällt | Früh prüfen; ggf. Einstiegsgeld/Grundsicherungsgeld |
 | Steuernummer nicht rechtzeitig | Formalantrag gefährdet | Finanzamt früh kontaktieren; Anmeldung/Eingangsbestätigung |
 | Sozialversicherung/Krankenkasse unterschätzt | Nachzahlung | Beratung Krankenkasse/Steuerberatung |
