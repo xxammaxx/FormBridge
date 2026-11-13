@@ -49,7 +49,7 @@
 
 ## Nachtrag — Gründungsstrategie/Q2 (docs-only Delta)
 
-Das Gründungs-Delta (Q2-Verifikation, Gründungsstrategie, Jobcenter/BA-Assessment, Zeitplan, Owner-Gate, kanonische Anfrage) wurde **separat** von zwei unabhängigen Reviewern geprüft. Geprüfter Candidate und Einzelbefunde: PR #1 / Review-Nachtrag.
+Das Gründungs-Delta (Q2-Verifikation, Gründungsstrategie, Jobcenter/BA-Assessment, Zeitplan, Owner-Gate, kanonische Anfrage) wurde **separat** von zwei unabhängigen Reviewern geprüft. Geprüfter Candidate: `d062d9dbf4a05b0e4bac38506a3a0b4deedc191c`; Einzelbefunde: [Review Gründungsstrategie](../decision/review-founder-strategy-2026-11-13.md).
 
 | Reviewer | Verdikt | Ergebnis |
 |---|---|---|

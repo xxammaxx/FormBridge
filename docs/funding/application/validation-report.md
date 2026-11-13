@@ -108,7 +108,7 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 
 - Relative Links: 0 gebrochen.
 - `git ls-files` enthält keine `.pyc`/`__pycache__`.
-- Bewerbungspaket-Candidate `9ed86225`; Gründungs-Delta docs-only mit separatem Review (Candidate-Hash im Review-Nachtrag/PR); Working Tree clean.
+- Bewerbungspaket-Candidate `9ed86225`; Gründungs-Delta docs-only mit separatem Review (Candidate `d062d9db`, [Review](../decision/review-founder-strategy-2026-11-13.md)); Working Tree clean.
 - Keine Einreichung, keine E-Mail, keine Portaländerung, keine Lizenzfestlegung, kein Merge.
 
 ## 5. Gate-Begründung

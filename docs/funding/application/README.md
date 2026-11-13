@@ -1,7 +1,7 @@
 # Bewerbungspaket FormBridge — Index
 
 **Stand:** 13.11.2026 · **Status:** `READY_FOR_OWNER_INPUT` (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) · **Frist:** 30.11.2026, 15:00 Uhr MEZ
-**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` (Bewerbungstext/Finanzen) · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Gründungs-Delta (docs-only):** Reviewer A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, Reviewer B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)**; geprüfter Candidate-Hash im Review-Nachtrag/PR
+**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` (Bewerbungstext/Finanzen) · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Gründungs-Delta (docs-only):** Reviewer A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, Reviewer B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)**; geprüfter Candidate `d062d9db` ([Review](../decision/review-founder-strategy-2026-11-13.md))
 
 | Dokument | Zweck | Status |
 |---|---|---|
@@ -21,6 +21,7 @@
 | [Gründungsstrategie](../decision/founder-strategy-2026-2027.md) | Q2, Varianten, Sozialrechtswege | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
 | [Q2-Verifikation](../decision/prototype-fund-q2-verification.md) | Fragen A–H, Quellen, Status | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
 | [Jobcenter/BA-Assessment](../decision/jobcenter-grants-assessment.md) | Einstiegsgeld, §16c, Gründungszuschuss, Kombination | EXTERNAL_CONFIRMATION_REQUIRED |
+| [Review Gründungsstrategie](../decision/review-founder-strategy-2026-11-13.md) | Unabhängige Reviews A/B, Residual LOW | PASS (bedingt) |
 
 **Gate:** `READY_FOR_OWNER_INPUT` — alle öffentlich belegbaren Anforderungen erfüllt, soweit nicht Q2 widersprüchlich ist; offen sind Owner-Angaben (M1–M9), Q2/Q3/Q3b, Portal-Live-Prüfung und Lizenz-/Second-Stage-Entscheidung.
 
