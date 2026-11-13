@@ -160,7 +160,7 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 - Link-Check gesamt: **0 broken** (README + alle docs).
 - Stale-Strings-Scan: nur legitime Treffer (Korrektur-Marker, historische Abschnitte).
-- Zahlen: financial-model ↔ funding-rules ↔ comparison-report konsistent (Modell A/B, 47.500/50.000/2.500/950/50 €).
+- Zahlen: financial-model ↔ funding-rules ↔ comparison-report konsistent. **(Runde 1, historisch — durch Revalidierungsrunde 2 ersetzt: Modell v3 mit getrennter Kosten-/Finanzierungsrechnung; siehe Revalidierungsrunde 2 oben.)**
 - Datumsangaben: 13.11.2026 durchgängig; Frist 30.11.2026 15:00 CET; Förderzeitraum 01.06.–30.11.2027.
 - Förderentscheid FORMBRIDGE durch die Regelforschung **nicht** verändert (stabil, da alle gefundenen Regeln projektneutral sind und die Linien-Passung sogar gestärkt wurde — FAQ-Infrastruktur-Definition verbatim).
 - Vertraulichkeit: kein RepairProbe-Privat-/Portal-Inhalt; RepairProbe `9875e77` unverändert; Feldexa `a34456f` + PRs #152/#168 Draft unverändert.
