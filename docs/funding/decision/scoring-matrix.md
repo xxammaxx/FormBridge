@@ -19,10 +19,10 @@
 |---|---|---|---|---|
 | K1 | 7,0 | 4,5 | Korpus-falsifizierte Lücke (13-Repos-Quellcode-Audit, SHAs); XSD-Defekt 170 Fehler unabhängig reproduziert (reference-case §3) | Kein Prior-Art-Audit auffindbar (sources S18); „KI-Qualität nicht nachgewiesen" (eigenes Org-README S14) |
 | K2 | 6,5 | 7,0 | D21 eGov-Monitor 2026 (50 % offline / 24 % Medienbruch); Nutzen indirekt, ohne Nutzertests | Konkrete Gruppe Repair-Cafés; Nachhaltigkeitsnarrativ; Evidenz nur n=1 (S14) |
-| K3 | 6,0 | 7,0 | Kein Code; Detektions-Lizenzrisiko (CommonForms ohne LICENSE) | 44-Test-Python-Baseline existiert (S13); aber KI/Bildverständnis unbewiesen (S14) |
+| K3 | 6,0 | 7,0 | Kein Code; Detektions-Lizenzrisiko (CommonForms ohne LICENSE) | Öffentlich dokumentierte Python-Baseline (24–44 Tests, Quellen widersprüchlich; privat nicht verifizierbar); KI/Bildverständnis unbewiesen (S14) |
 | K4 | 7,0 | 6,0 | Infrastruktur-Design (CLI/Bibliothek/Verifier, ADR-001); öffentliches Repo; Lizenz offen | Apache-2.0 fixiert; Hauptcode privat (S13) |
 | K5 | 8,0 | 6,0 | Lehrbuch-Linien-Passung („Software-Infrastruktur", „neues Modul", S4); Grenze A/B/C sauber; Risiko nur Lizenz-Offenheit | Endnutzer-Werkzeug → Linien-Passung argumentabel; privater Code muss erst FOSS werden |
-| K6 | 7,0 | 6,0 | Vollständiger Entwurf + Evidenzkette im Repo; nicht im Portal | Portal-Draft vorhanden (S16, Draft); Qualität nicht einsehbar; Öffentlichkeitsarbeit stark |
+| K6 | 7,0 | 6,0 | Vollständiger Entwurf + Evidenzkette im Repo; nicht im Portal | Portal-Draft vorhanden (S16, Draft); Qualität nicht einsehbar; öffentliche Testzahl widersprüchlich (24 vs. 44) |
 | **Σ** | **6,85** | **6,025** | | |
 
 ## Nachjustierung nach den adversarial Reviews (symmetrisch, jede Änderung belegt)
@@ -67,3 +67,5 @@
 1. Gewichte und Punkte sind ein strukturiertes Instrument des Auftraggebers-Vorgehens, nicht Kalibrierungen gegen echte Jury-Urteile.
 2. RepairProbe-Antragsqualität (K6) ist wegen Portal-Zugriffsbeschränkung nur begrenzt beurteilbar — ein exzellenter Portal-Text könnte K6/RP heben (Enthaltung: +0,5…1,0 Punktmöglichkeitsraum, wäre aber noch nicht einmal in S2/S3 ausreichend zur Umkehr).
 3. Die Stabilität der Rangfolge über alle vier Szenarien ist das eigentliche Ergebnis; Punktabstände sind nicht als Präzision zu lesen.
+4. **Aktualisierung 13.11.2026:** Die frühere RepairProbe-Baseline „44 Tests" ist öffentlich nicht eindeutig; `llms.txt` nennt 24, `technical-baseline.html` nennt 44 (gleicher Commit). Die Matrix bewertet daher „24–44, nicht unabhängig verifiziert". Das ist eine Evidenz-, keine Qualitätsaussage.
+5. **Die Matrix ist kein Entscheidungsautomat.** Die bedingte Empfehlung im [Vergleichsbericht](comparison-report.md) beruht auf der qualitativen Zehn-Kriterien-Analyse, nicht auf dem gewichteten Total. Der Owner entscheidet.

@@ -1,120 +1,130 @@
-# Verifizierte Prototype-Fund-Förderbedingungen, Jahrgang 03 — Evidence-Protokoll
+# Verifizierte Prototype-Fund-Förderbedingungen, Jahrgang 03 — Evidence-Protokoll (Revision 4)
 
-**Datum:** 13.11.2026 · **Quellenhierarchie befolgt:** 1) PTF-Website, 2) Handbuch Jahrgang 03 (PTF_Handbuch_2026.pdf, 31 S.), 3) FAQ (alle 28 Antwortblöcke extrahiert), 4) Bewerbungsportal, 5) BMFTR-Förderrichtlinie „Software Sprint" inkl. beider Änderungsbekanntmachungen (Primärrechtsquelle), 6) Knowledge Base.
-**Abruf aller Quellen:** 13.11.2026. Belegzitate wortgleich aus den abgerufenen Fassungen; vollständige FAQ-Extraktion archiviert in der Recherche-Umgebung (`faq-answers.txt`).
-**Klassifikation:** VERIFIED / INTERPRETATION / UNKNOWN / CONTRADICTED / OUTDATED. Widersprüche werden getrennt ausgewiesen (§W).
+**Datum:** 13.11.2026 · **Quellenhierarchie:** 1) BMFTR-Förderrichtlinie „Software Sprint" (Primärrechtsquelle, BAnz AT 15.11.2024 B4, Ä1 BAnz AT 01.12.2025 B4, Ä2 BAnz AT 25.06.2026 B4) · 2) PTF-Website/Detailseite/Innovationsseite · 3) PTF-Handbuch Jahrgang 03 (PDF, 31 S., Stand September 2026) · 4) PTF-FAQ (28 Antwortblöcke) · 5) Bewerbungsportal · 6) EU-De-minimis-Verordnung 2023/2831.
+**Abruf:** 13.11.2026. **Vollständige Zitate/URLs:** [Quellenregister](source-register-2026-11-13.md).
+**Klassifikation:** VERBINDLICH / FAQ-ERLÄUTERUNG / HANDBUCH-ERLÄUTERUNG / ABGELEITET / INTERPRETATION / UNKNOWN / CONTRADICTED.
 
-## Gültigkeitskette der Förderrichtlinie (Primärquelle)
+> **Änderung gegenüber Revision 3:** Die 10-Monats-Option der RL Nr. 4 ist ergänzt; die Second-Stage-Rechnung ist korrigiert (31.650 € waren PK, nicht Förderung); De-minimis ist rollierend (nicht kalenderjährlich); die Aufbewahrung beträgt nach RL Anlage 3 Jahre (nicht 10); die 47.500-€-Aussage ist als Kommunikationsgröße präzisiert. Die vollständige Zahlenrechnung steht im [Finanzmodell v4](financial-model.md); Q3 bleibt [UNRESOLVED](q3-clarification.md).
+
+## Gültigkeitskette der Förderrichtlinie
 
 | Stufe | Datum | Inhalt | Status |
 |---|---|---|---|
-| RL 2024 | 07.11.2024 (BAnz AT 15.11.2024 B4) | Basistext: 95 % Förderquote, Gesamtkosten-Grenzen, AZK-Kostenbasis, Eigenmittelnachweis, De-minimis | VERIFIED |
-| Änderung 1 | 07.11.2025 (BAnz AT 01.12.2025 B4) | Nur organisatorisch: BMBF→BMFTR, Projektträger-Kontakt (VDI/VDE-IT), elektronische Einreichung empfohlen | VERIFIED |
-| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026) | Substanziell: 3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer" (Nr. 2 neu); Nr. 3 neu gefasst — **zudem expliziter Nachwuchs-Satz** („Nachwuchsentwickler und -entwicklerinnen mit bereits vorhandenen, aber noch geringen Erfahrungen … sind ausdrücklich auch antragsberechtigt") und Evaluationsbeteiligungspflicht; 6 Stichtage (incl. 30.11.2026); Geltung bis 30.06.2031. **Hinweis (Review-A-Korrektur):** Teams, Mindestalter 18 und die Anforderung „einschlägige Vorarbeiten und umfassende Kenntnisse" waren **bereits in RL 2024 Nr. 3** enthalten (BAnz-PDF geprüft) — Ä2-Nr. 3 fasst den Absatz neu und ergänzt primär den Nachwuchs-Satz | VERIFIED |
-| **Nr. 5 (Zuwendungshöhe)** | **NICHT geändert** | 95 % / 50.000 € / 33.337 € unverändert gültig | VERIFIED |
+| RL 2024 | 07.11.2024 (BAnz AT 15.11.2024 B4) | Basistext: 95-%-Förderquote, Gesamtkosten-Caps, AZK-Kostenbasis, Eigenmittelnachweis, De-minimis, 6-/10-Monats-Laufzeit | VERBINDLICH |
+| Änderung 1 | 07.11.2025 (BAnz AT 01.12.2025 B4) | Nur organisatorisch: BMBF → BMFTR, Projektträger VDI/VDE-IT, elektronische Einreichung | VERBINDLICH; Nr. 5 unberührt |
+| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026 B4) | Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer"; Nr. 3 neu (Nachwuchs-Satz, Evaluationspflicht); 6 Stichtage (u. a. 30.11.2026); Geltung bis 30.06.2031 | VERBINDLICH; **Nr. 5 unberührt** |
+| Geltung | bis 30.06.2031 | Stichtag 30.11.2026 ist gelistet | VERBINDLICH |
 
-Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2024/11/2024-11-15-bekanntmachung-software-sprint.html (BAnz-PDF: https://www.bundesanzeiger.de/pub/publication/EYdMVzE1Nv1zV8NeRh5/content/EYdMVzE1Nv1zV8NeRh5/BAnz%20AT%2015.11.2024%20B4.pdf) · Ä1: …/2025/12/2025-12-01-… · Ä2: …/2026/06/2026-06-25-…
-
-## F1 — Eigenanteil
+## F1 — Zuwendungshöhe, Kostenbasis, Eigenanteil
 
 | Claim | Evidenz | Status |
 |---|---|---|
-| F1.1 Förderbetrag entspricht **maximal 95 % des Projektbudgets** | FAQ Förderung 02: „Der Förderbetrag entspricht immer maximal 95 % des gesamten Projektbudgets." | VERIFIED |
-| F1.2 RL-Basis: Bemessungsgrundlage = projektbezogene **Personal- und Gemeinkosten**, „individuell bis zu 95 Prozent gefördert" | RL 2024 Nr. 5 (unverändert durch Ä1/Ä2) | VERIFIED |
-| F1.3 Mindestens 5 % Eigenanteil = **„eure Zeit, die in das Projekt einfließt"** | FAQ Förderung 02 | VERIFIED (Konzept) |
-| F1.4 Nachweis: „über weitere Einkünfte (z. B. Arbeitsverhältnis, Aufträge) oder Rücklagen" | FAQ Förderung 02 | VERIFIED |
-| F1.5 Formaler Nachweis bei Bewilligung: **„Kontoauszug (mindestens Saldo des Eigenanteils des Projektumfangs)"**; RL: „bonitätsprüfungsfähige Unterlagen (zum Beispiel Bankerklärungen über die entsprechende Höhe)" | FAQ Auswahl 03; RL Nr. 4 | VERIFIED — **Nuance:** konzeptionell Zeit, formal Liquiditätsnachweis via Kontoauszug; beides gilt nebeneinander |
-| F1.6 Geltung für Jahrgang 03/Innovation | RL gilt bis 30.06.2031 (Ä2 Nr. 8); Stichtag 30.11.2026 in RL gelistet | VERIFIED |
-| F1.7 Bemessungsgrundlage des 5 %-Anteils: Gesamtkosten (PK+GK) | Folgt aus F1.1+F1.2 (95 % von PK+GK) | VERIFIED als Regel (RL Nr. 5) — **ABER:** die FAQ-Kommunikation „950 h × 50 € = 47.500 € Förderbetrag" ist mit der strikten 95-%-Regellogik (95 % × (PK+GK)) nur vereinbar, wenn GK = 2.500 € (5 % des Gesamtbudgets) gesetzt wird; bei GK = 5 % × PK (2.375 €) beträgt die max. Förderung streng gerechnet **47.381,25 €** (G = 49.875 €). Mehrdeutigkeit → **W2, financial-model.md v2 Szenario E, Q3** |
-| F1.8 Eigene Arbeitszeit als Eigenanteil anrechenbar (statt Geld) | FAQ sagt „eure Zeit"; RL verlangt Bank-Nachweis der Höhe | INTERPRETATION: Zeit konzeptionell ja; formal wird ein Kontosaldo ≥ Eigenanteilshöhe verlangt (F1.5) — praktische Konsequenz im financial-model.md |
-| F1.9 Wann erbracht? | Kontoauszug gehört zur Bewilligungs-Unterlagen-Checkliste (nach Jury-Auswahl) | VERIFIED (Zeitpunkt: formale Antragstellung) |
-| F1.10 Budget-Auswirkung | siehe financial-model.md (Rechenbeispiele) | — |
+| F1.1 Förderung maximal **95 %** der zuwendungsfähigen Personal- und Gemeinkosten | RL Nr. 5: „Bemessungsgrundlage … Personal- und Gemeinkosten, die individuell bis zu 95 Prozent gefördert werden können." | VERBINDLICH |
+| F1.2 Gesamtkosten-Cap solo **50.000 €** (6 Monate), Team **100.000 €** | RL Nr. 5 wörtlich | VERBINDLICH |
+| F1.3 Zweite Phase (10-Monats-Option): Gesamtkosten **33.337 €** solo / **66.674 €** Team | RL Nr. 5 wörtlich | VERBINDLICH |
+| F1.4 Gemeinkosten-Pauschale **5 % der Personalkosten** | FAQ Förderung 02: „pauschal 5 % der Personalkosten geltend machen" | FAQ-ERLÄUTERUNG; die RL nennt „Gemeinkosten" ohne Pauschalsatz |
+| F1.5 Eigenanteil mindestens **5 %** | FAQ Förderung 02; folgt aus 95-%-Quote | FAQ-ERLÄUTERUNG / ABGELEITET |
+| F1.6 Eigenmittel-Nachweis durch **bonitätsprüfungsfähige Unterlagen** (z. B. Bankerklärungen) | RL Nr. 4 | VERBINDLICH |
+| F1.7 Zusätzlich Kontoauszug mit Saldo mindestens des Eigenanteils | FAQ Auswahl 03 | FAQ-ERLÄUTERUNG; formaler Bewilligungsnachweis |
+| F1.8 950 h / 50 €/h solo; 1.900 h / 95.000 € Team | Handbuch Frage 14; FAQ Förderung 01 | HANDBUCH-/FAQ-ERLÄUTERUNG; keine RL-Stundengrenze |
+| F1.9 Höherer Stundensatz nur mit Rechnungsnachweis; in der Second Stage 50 €/h Cap | FAQ Förderung 01 | FAQ-ERLÄUTERUNG |
+| F1.10 47.500 € „Maximalfördersumme" = 950 h × 50 € | FAQ Förderung 01; Handbuch Frage 14; Innovationsseite | **Kommunikationsgröße**, keine aus RL Nr. 5 ableitbare Förderobergrenze; **W2/Q3** |
+| F1.11 Strenge Rechnung bei 950 h + 5 % GK: **47.381,25 €** | [Finanzmodell v4](financial-model.md) Szenario B | ABGELEITET; 102/102 Tests |
+| F1.12 Absolute Untergrenze ohne GK: **45.125,00 €** | Szenario A | ABGELEITET |
+| F1.13 10-Monats-Option: Gesamtkosten 83.337 €, Fördercap **79.170,15 €**; FAQ nennt gerundet 79.167 € | RL Nr. 4/5; FAQ Grundlagen 01 | VERBINDLICH (Rahmen) / ABGELEITET (Cap) |
 
-## F2 — Mehrfachbewerbung
+## F2 — Mehrfachbewerbung und parallele Förderungen
 
 | Claim | Evidenz | Status |
 |---|---|---|
-| F2.1 Mehrere Projektideen gleichzeitig bewerben | FAQ Bewerbung 06: „Kann ich mich mit mehreren Projektideen gleichzeitig bewerben?" → **„Ja."** | VERIFIED |
-| F2.2 Verschiedene Förderlinien gleichzeitig | Nicht explizit geregelt; F2.1-„Ja" lautet allgemein | INTERPRETATION: Ja-Erwiderung ist nicht linienbezogen eingeschränkt; Gleichzeitigkeit über Linien hinweg nicht ausgeschlossen |
-| F2.3 Mehrere Portal-Entwürfe | Portal erlaubt Entwürfe (RepairProbe-Draft existiert faktisch parallel) | VERIFIED (faktischer Zustand) + INTERPRETATION (formal unbegrenzt?) |
-| F2.4 Mehrere gleichzeitige Förderungen | **Nicht geregelt** in FAQ/RL-Textauszug; Arbeitsstunden können objektiv nicht doppelt geleistet werden; FAQ Förderung 01 nennt Arbeitsschutz-Grenzen bei Teilzeit | UNKNOWN (keine Verbotsregel gefunden — kein Erlaubnis-Nachweis!) |
-| F2.5 Interessenkonflikt-Regeln für Bewerber | PTF „Conflict of Interest Policy" existiert (Footer); Inhalt bzgl. Mehrfachbewerbung ungeprüft | UNKNOWN (Doku liegt öffentlich — für Abschluss-Prüfung durch Owner zu lesen) |
-| F2.6 Unterscheidung Bewerbung ↔ Förderung | Förderentscheid: Jury-Vorschlag + BMFTR-Prüfung (FAQ Grundlagen 03, Auswahl 01) | VERIFIED |
+| F2.1 Mehrere Projektideen gleichzeitig bewerben | FAQ Bewerbung 06: „Ja." | FAQ-ERLÄUTERUNG |
+| F2.2 Mehrere gleichzeitige **Förderungen** einer Person | Nicht geregelt; Arbeitsstunden können nicht doppelt geleistet werden; FAQ Förderung 01 nennt Arbeitsschutzgrenzen | UNKNOWN — Anfrage Q1 |
+| F2.3 Zwei Portal-Entwürfe | Faktisch möglich (RepairProbe-Draft existiert) | INTERPRETATION |
+| F2.4 Conflict-of-Interest-Policy | Existiert öffentlich; Inhalt bzgl. Mehrfachbewerbung nicht geprüft | UNKNOWN |
 
-## F3 — Persönliche Förderfähigkeit (alle Statusangaben beziehen sich auf die öffentlich publizierten Kriterien, NICHT auf die Person des Owners)
+## F3 — Persönliche Förderfähigkeit (nur öffentliche Kriterien, keine Aussage über den Owner)
 
 | Konstellation | Regel | Status |
 |---|---|---|
-| Einzelperson allgemein | Volljährig (RL Nr. 3 seit 2024: „Mindestalter 18 Jahre"); Software-Projekt; Wohnsitz DE; **selbstständig oder freiberuflich, Steuern in DE**; Amtssprache Deutsch (formaler Antrag DE) | VERIFIED (FAQ Bewerbung 02; RL 2024 Nr. 3) |
-| Angestellte | „**oder für die Projektlaufzeit (anteilig) vom Arbeitgeber freigestellt. Das heißt, ihr könnt auch weiterhin in Teilzeit angestellt sein.**" (Fußnote ** zur „selbstständig"-Bedingung) | VERIFIED |
-| Arbeitslos / Arbeitssuchend / Leistungsbezug | Keine explizite Regel gefunden; Selbstständigkeit wird vorausgesetzt (Aufnahme möglich?) | UNKNOWN |
-| Selbstständige / Freiberufler | Ausdrücklich antragsberechtigt | VERIFIED |
-| Ohne bisherige Selbstständigkeit / erst ab Förderbeginn selbstständig | Nicht explizit geregelt; RL Nr. 3 (seit 2024): „Vorarbeiten und umfassende Kenntnisse nachweisen" (kein Selbstständigkeits-Zeitpunkt genannt); FAQ: Selbstständigkeit als Bewerbungs-Voraussetzung formuliert | UNKNOWN — Portal-/Antragswerkstatt-Frage |
-| Teams | RL Nr. 3 (seit 2024): „kleine interdisziplinäre Teams"; PTF-Prozess: GbR (FAQ Förderung 04); max. 1/3 Wohnsitz Ausland; Mentor*in ≤ 10 %; Ä2 2026 bestätigt und erlaubt EU-Ausland-Beteiligung außer Leitung | VERIFIED |
-| KI-Kenntnisse-Voraussetzung | „Geförderte müssen über die für die Umsetzung notwendigen Programmierkenntnisse verfügen" (FAQ Förderung 08); Bewerbung mit KI-Sprachhilfe ok, maschinen-konzipierte Ideen nicht (FAQ Bewerbung 09) | VERIFIED |
-| De-minimis-Vorbelastung | RL: Zuwendung ist De-minimis-Beihilfe; De-minimis-Erklärung zur Bewilligung (FAQ Auswahl 03); **Freibetrag 300.000 € innerhalb von 3 Jahren** (alle Unternehmen, die eine Unternehmereinheit bilden) — RL Anlage Nr. 1 (Primärtext; Review-A-Upgrade von INTERPRETATION) | VERIFIED |
+| Einzelperson | Volljährig (RL Nr. 3: Mindestalter 18); Softwareprojekt; Wohnsitz DE; selbstständig oder freiberuflich; Steuern in DE; Amtssprache Deutsch | VERBINDLICH/FAQ |
+| Angestellte | Für die Projektlaufzeit (anteilig) vom Arbeitgeber freigestellt; Teilzeit-Anstellung zulässig | FAQ Bewerbung 02 FN** |
+| Selbstständigkeit erst ab Förderbeginn | Nicht explizit geregelt | UNKNOWN — Q2 |
+| Teams | Kleine interdisziplinäre Teams; GbR; Sitz DE; max. 1/3 Wohnsitz Ausland; Mentor*in <= 10 % | VERBINDLICH/FAQ |
+| Programmierkenntnisse | Erforderlich; Vibe-Coding nicht förderfähig | FAQ Förderung 08 |
+| De-minimis-Vorbelastung | 300.000 € / rollierende 3 Jahre; Erklärung bei Bewilligung | VERBINDLICH (RL Anlage; VO 2023/2831) |
 
 ## F4 — Vorarbeiten und Projektbeginn
 
 | Kategorie | Einstufung | Evidenz |
 |---|---|---|
-| Forschungsarbeiten vor Bewerbung (Recherche, Audits, Referenzfall-Analysen) | **PERMITTED_PREWORK** | Handbuch „Stand des Projektes": „Auch wenn es das Projekt offiziell noch nicht gibt, habt ihr schon gebastelt, ausprobiert, diskutiert?" — ausdrücklich in Ordnung |
-| Öffentliches Forschungs-Repository | **PERMITTED_PREWORK** (sogar erwünscht) | Handbuch Frage 7: „Link zum bestehenden Projekt … Teilt gerne einen Link, über den der aktuelle Stand des Projektes zu sehen ist" |
-| Architekturentwürfe / Spezifikationen / Benchmarks | **PERMITTED_PREWORK** | dito + FAQ Bewerbung 05 (Modul-Erweiterung ausdrücklich) |
-| Proof of Concept vor Bewerbung | **PERMITTED_PREWORK**, aber **NOT_RETROACTIVELY_FUNDABLE** und Minderung des „neuen Umfangs" | FAQ Bewerbung 05: „muss klar erkennbar sein, was im Förderzeitraum erarbeitet wird"; Handbuch: hohe Entwicklungsanteil-Regel |
-| Bereits implementierter Code (vor Förderbeginn) | **NOT_RETROACTIVELY_FUNDABLE** | Handbuch: „Was wurde schon erreicht, was soll nach der Förderung anders sein?"; „Verbesserung der bestehenden Software ist nicht ausreichend" |
-| Feldexa-2.0-Parallelentwicklung | **PERMITTED_PREWORK** (unabhängiges Produkt) | FAQ Bewerbung 05 + Handbuch Bestandsprojekt-Regel; Abgrenzung via project-boundary.md |
-| Förderfähiger Zeitraum | 01.06.2027–30.11.2027 (Beginn = förderfähige Entwicklung) | VERIFIED (details-Seite; FAQ Grundlagen 03) |
-| Abgrenzungsmechanismus | Im Antrag klar trennen: vorhanden / im Förderzeitraum neu | VERIFIED (FAQ Bewerbung 05, Handbuch) |
+| Recherche, Audits, Referenzfall-Analysen | PERMITTED_PREWORK | Handbuch „Stand des Projektes" |
+| Öffentliches Forschungs-Repository | PERMITTED_PREWORK (erwünscht) | Handbuch Frage 7 |
+| Architektur/Spezifikation/Benchmarks | PERMITTED_PREWORK | Handbuch; FAQ Bewerbung 05 |
+| Proof of Concept vor Bewerbung | PERMITTED_PREWORK, aber **nicht rückwirkend förderfähig**; mindert den „neuen Umfang" | FAQ Bewerbung 05 |
+| Bereits implementierter Code | NOT_RETROACTIVELY_FUNDABLE | Handbuch |
+| Feldexa-2.0-Parallelentwicklung | PERMITTED_PREWORK (unabhängiges Produkt) | FAQ Bewerbung 05; project-boundary.md |
+| Förderfähiger Zeitraum | 01.06.2027–30.11.2027; Second Stage 01.12.2027–31.03.2028 | VERBINDLICH/Details |
+| 10-Monats-Option | 6 Monate Entwicklung + 4 Monate Vertiefung nach Evaluation | VERBINDLICH (RL Nr. 4) |
 
 ## F5 — Open Source und Lizenzen
 
 | Frage | Antwort | Status |
 |---|---|---|
-| Lizenz bei Bewerbung bereits festgelegt? | Keine Regel verlangt das; Bewerbung enthält FOSS-**Zusage** („Ich werde mein Softwareprojekt unter einer Freien oder Open-Source-Lizenz veröffentlichen" — /innovation) | VERIFIED (keine Lizenz-Notwendigkeit zur Bewerbung) / INTERPRETATION (frühestmöglicher Zeitpunkt) |
-| Code vor Förderbeginn veröffentlichen? | Keine Regel gefunden | UNKNOWN (nicht gefordert, aber auch nicht verboten — Existenz öffentlicher Vorarbeit ist erwünscht, Handbuch Frage 7) |
-| Wann veröffentlichen? | **„zum Projektabschluss"**: „Neben der Veröffentlichung des Codes in einem offen zugänglichen Repository zum Projektabschluss erstellt ihr … einen Projektbericht" (FAQ Förderung 06); RL: Ergebnisse „auf Open-Source-Plattformen … unter offener Lizenz bereitgestellt" | VERIFIED (Zeitpunkt: Projektabschluss) |
-| Apache-2.0 zulässig? | „Open-Source-Lizenz" allgemein; OSI-kompatibel inkl. Apache-2.0 (PTF verlinkt Lizenz-Übersicht) | VERIFIED (generisch) |
-| Dokumentation/Forschungsdaten | RL: Projektbericht wird veröffentlicht; FAQ Förderung 06 | VERIFIED |
-| Rechte amtliche Formulare / FIM-Metadaten / `copy:no` | **Keine PTF-Regel** zum Urheberrecht Dritter in Projekten gefunden. `copy:no` ist ein technisches PDF-Berechtigungsflag (Owner-Flag); aus ihm folgt **allein** keine urheberrechtliche Unzulässigkeit — Nutzungsrechte sind separat vom Rechteinhaber zu klären; poppler-Tools können Owner-Restriktionen technisch ignorieren, das ist keine Rechtsdienstleistung. | TECHNISCH: VERIFIED / RECHTLICH: UNKNOWN (Owner-Frage, kein PTF-Thema) |
+| Lizenz bei Bewerbung erforderlich? | Keine Regel verlangt eine LICENSE-Datei zur Bewerbung; FOSS-Zusage genügt | VERBINDLICH/FAQ |
+| Veröffentlichungszeitpunkt | „zum Projektabschluss" (FAQ Förderung 06; RL Nr. 2) | VERBINDLICH/FAQ |
+| Apache-2.0 zulässig? | Ja, OSI-konforme Lizenz | FAQ-ERLÄUTERUNG |
+| Rechte an amtlichen PDFs/FIM-Metadaten | Keine PTF-Regel; `copy:no` ist ein technisches Flag, keine urheberrechtliche Freigabe | TECHNISCH VERIFIED / RECHTLICH UNKNOWN |
 
-## F6 — Finanzierung und Arbeitsumfang (Zahlen → financial-model.md)
+## F6 — Finanzierung, Auszahlung, Termine
 
 | Claim | Evidenz | Status |
 |---|---|---|
-| Max. Förderung Einzelperson 6 Monate: **47.500 € kommuniziert**; streng gerechnet (950 h + GK 5 % PK) max. **47.381,25 €** — Differenz 118,75 €, Portal-Klärung offen | FAQ Förderung 01 + /innovation + RL (95 % × 50.000 €) + financial-model.md v2 (Szenarien A–E) | VERIFIED (kommunizierter Wert + strenge Rechnung getrennt ausgewiesen) |
-| **950 h max; 50 €/h** explizit | Handbuch Frage 14 („max. 950 h"); FAQ Förderung 01 („950 Arbeitsstunden mit einem Stundensatz von 50 €") | VERIFIED |
-| Mindeststunden ~250 h (Admin-Aufwand-Arg) | Handbuch Frage 14 | VERIFIED |
-| Höherer Stundensatz möglich bei Nachweis höherer Rechnungen (dann weniger Stunden) | FAQ Förderung 01 | VERIFIED |
-| Gesamtkosten-Cap 50.000 € (Einzelperson, 6 Monate); Second Phase 33.337 € | RL Nr. 5 (unverändert) | VERIFIED |
-| Gemeinkosten: Pauschale bis 5 % der Personalkosten | FAQ Förderung 02 | VERIFIED |
-| Teilzeit-Anstellung parallel: Arbeitsschutz begrenzt Stunden | FAQ Förderung 01 | VERIFIED |
-| Auszahlung: Quartalsraten basierend auf geleisteter Arbeit (nachlaufend) | FAQ Förderung 03 | VERIFIED |
-| Verpflichtende Termine | Kick-Off-Workshop (ganzer Tag, Berlin, um 01.06.), Austauschtermine digital, Demo Day (ganzer Tag, Berlin, um 30.11.) — Teilnahme Pflicht; Second-Stage-Abschluss-Workshop (um 30.04.) bei Second Stage | VERIFIED (FAQ Förderung 05) — Reisekosten-Behandlung in extrahierten Quellen nicht geregelt (UNKNOWN-Detail) |
-| Nebenbestimmungen & Bericht | NKBF 2017 (Kostenbasis) Bestandteil des Bescheids (RL Nr. 6); formaler Antrag fristgebunden „spätestens zwei Wochen nach Aufforderung" (RL 7.2.2); Projektbericht wird veröffentlicht (FAQ Förderung 06); Evaluationsbeteiligung Pflicht (RL Nr. 3 i.d.F. Ä2 2026; FAQ Förderung 05) | VERIFIED |
-| Second Stage: nur bei initialer Bewerbung beantragbar; max. Stunden = Anteil der 1. Phase; 50 €/h Cap; 31.667 € ≈ 633 h; **keine Code-Meilensteine** | FAQ Förderung 01 + Second-Stage-Texte (Handbuch Frage 16) | VERIFIED |
-| De-minimis | RL Nr. 1.3/5; Erklärung zur Bewilligung | VERIFIED |
-| Liquidität | Nachlaufende Auszahlung → mind. 1 Quartal Vorfinanzierung; Kontoauszug ≥ Eigenanteil | VERIFIED (Modalitäten) + INTERPRETATION (praktischer Puffer) |
+| Max. Förderung solo 6 Monate: 47.500 € kommuniziert; streng 47.381,25 € (950 h + 5 % GK) | FAQ Förderung 01; RL Nr. 5; Finanzmodell v4 | Kommunikation VERIFIED / strenge Rechnung ABGELEITET; **Q3 offen** |
+| 950 h max; 50 €/h; 250-h-Planungsheuristik | Handbuch Frage 14; FAQ Förderung 01 | HANDBUCH-/FAQ-ERLÄUTERUNG |
+| Gesamtkosten-Cap 50.000 €; zweite Phase 33.337 € | RL Nr. 5 | VERBINDLICH |
+| Auszahlung: Quartalsraten nachlaufend | FAQ Förderung 03 | FAQ-ERLÄUTERUNG |
+| Pflichttermine: Kick-Off, Austausch, Demo Day, Second-Stage-Abschluss | FAQ Förderung 05 | FAQ-ERLÄUTERUNG; Reisekosten UNKNOWN |
+| NKBF 2017; Projektbericht; Evaluationsbeteiligung | RL Nr. 6/3; FAQ Förderung 06 | VERBINDLICH/FAQ |
+| Second Stage: nur initial mitbeantragbar; max. Stunden = Anteil der 1. Phase; 50 €/h; **keine Code-Meilensteine** | FAQ Förderung 01; Handbuch Frage 16 | FAQ-/HANDBUCH-ERLÄUTERUNG |
+| Second Stage strenge Förderung: 31.570,87 € (633 h) / 31.620,75 € (634 h); Cap 31.670,15 € | Finanzmodell v4 Szenario G | ABGELEITET |
+| De-minimis: 300.000 € / rollierende 3 Jahre; Kumulierungsverbot; Erklärung | RL Anlage Nr. 1; VO 2023/2831 Art. 3 | VERBINDLICH |
+| Aufbewahrung De-minimis-Unterlagen: mindestens 3 Jahre | RL Anlage Nr. 1 | VERBINDLICH; 10-Jahres-Angabe nicht belegt |
+| Liquidität: nachlaufende Zahlung → mind. 1 Quartal Vorfinanzierung; Kontoauszug >= Eigenanteil | FAQ Förderung 03/Auswahl 03 | FAQ-ERLÄUTERUNG |
 
-## F7 — FormBridge-Förderfähigkeit (Kurzfassung; Detail im Vergleichsbericht)
+## F7 — Projektpassung Feldexa 2.0 / FormBridge
 
 | Prüfpunkt | Ergebnis | Status |
 |---|---|---|
-| „Software-Projekt" | Ja (Spec: CLI/Bibliothek/Verifier) | RULE_CONFIRMED |
-| Themenfeld-Fit | FAQ Grundlagen 02: „Software-Infrastruktur … Codebibliotheken … richten sich in der Regel nicht an Endanwender*innen sondern an Programmierer*innen" — FormBridge passt wortwörtlich | RULE_CONFIRMED (Definition) / PROJECT_FIT_INTERPRETATION (Jury-Urteil) |
-| „Neues Modul für bestehende Software" zulässig | FAQ Bewerbung 05: ausdrücklich | RULE_CONFIRMED |
-| Bestehendes Projekt + klare Abgrenzung | project-boundary.md erfüllt die geforderte Trennung strukturell | RULE_CONFIRMED (Mechanik) / Abgrenzungs-**Qualität** = Jury |
-| Hoher Entwicklungsanteil | 6-Monatsplan ist 100 % Entwicklung + Evaluierung | RULE_CONFIRMED (Mechanik) |
-| FOSS-Zusage | Möglich, sobald Owner Lizenz wählt (Apache-2.0-Empfehlung vorliegend) | RULE_CONFIRMED (Regel) / **OFFEN: Owner-Entscheidung** |
-| „Vorarbeiten und umfassende Kenntnisse nachweisen" (RL 2024 Nr. 3; von Ä2 2026 bestätigt/Neufassung um Nachwuchs-Satz ergänzt) | Vorarbeiten vorhanden (public Research-Repo); Nachweis persönlicher SD-Kenntnisse = Bewerbungsantwort („Wild Card"/Motivation) | RULE_CONFIRMED (Anforderung) / INDIVIDUAL_ELIGIBILITY_UNKNOWN (Owner) |
-| Persönliche Antragsberechtigung | — | INDIVIDUAL_ELIGIBILITY_UNKNOWN (Owner) |
+| Softwareprojekt (nicht nur Doku/Marketing) | Ja: Spec + geplanter Code (CLI/Bibliothek/Verifier); aktuell **kein** Produktcode für die FormBridge-Pipeline | RULE_CONFIRMED / IMPLEMENTIERUNG OFFEN |
+| Themenfeld „Software-Infrastruktur" | FAQ Grundlagen 02: „Codebibliotheken … richten sich … an Programmierer*innen" — FormBridge passt der Definition nach | RULE_CONFIRMED / JURY-INTERPRETATION |
+| „Neues Modul für bestehende Software" | FAQ Bewerbung 05: ausdrücklich zulässig | RULE_CONFIRMED |
+| Bestehendes Projekt + klare Abgrenzung | project-boundary.md; Feldexa-Produkt bleibt außerhalb des Förderumfangs | RULE_CONFIRMED (Mechanik) / Qualität = Jury |
+| Hoher Entwicklungsanteil | 6-Monats-Plan = Entwicklung + Evaluierung; kein Docs-only | RULE_CONFIRMED |
+| FOSS-Zusage | Möglich; Lizenz ist Owner-Entscheidung | RULE_CONFIRMED / OWNER |
+| Vorarbeiten/Kenntnisse | Forschungs-Repo vorhanden; persönliche Kenntnisse = Owner-Nachweis | RULE_CONFIRMED / INDIVIDUAL_UNKNOWN |
+| Persönliche Antragsberechtigung | M1–M9 offen | INDIVIDUAL_UNKNOWN |
 
-## W — Ausgewiesene Widersprüche/Spannungen (nicht stillschweigend vereinheitlicht)
+## W — Ausgewiesene Widersprüche/Spannungen
 
 | # | Spannung | Behandlung |
 |---|---|---|
-| W1 | FAQ („Eigenanteil = eure Zeit") vs. RL/Checkliste (Bank-Nachweis/Kontoauszug über die Höhe) | Beide Ebenen dokumentiert (F1.3 vs. F1.5); praktische Konsequenz im financial-model.md; Restklärung im Portal |
-| W2 | FAQ-Modell („Maximalfördersumme = 950 h × 50 € = 47.500 €") vs. RL-Struktur (F = 95 % × (PK+GK)) — **exakt unvereinbar** bei GK = 5 % × PK: strenge Rechnung liefert 47.381,25 € (G = 49.875 €); die 50.000-€-Grenze ist unter 950-h-Cap + 50,00-€-Satz nicht konstruierbar (Modell C: PK müsste 47.619,05 € = 952,38 h sein); **erst mit nachgewiesenem Satz ≥ ~50,13 €/h konstruierbar** (Ratenhebel) | **Revidiert in financial-model.md v3:** altes Modell A/B hatte Finanzierungsidentität verletzt (F = 100 % der Kosten). Neue Trennung: Kostenrechnung/Finanzierung; FAQ-Lesart als Szenario E isoliert; konservative Antragsempfehlung 47.381,25 €; Portal-Klärung verbleibt (Q3) |
-| W3 | RL Ä2 (2026): 3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer" vs. PTF-Innovations-Seite (2 Bereiche) | Beide Zitate getrennt; für die Bewerbung zählt das Portal-/Linienprofil (2 Bereiche); 3. Feld ist Relevanz-Kontext |
-| W4 | Second-Stage-Grenzen: FAQ „31.667 € ≈ gerundet 633 h" (633×50=31.650) vs. RL „33.337 € Gesamtkosten" (95 % = 31.670) | Rundungsinkonsistenz dokumentiert; ohne Förderrelevanz (<20 €) |
-| W5 | Ältere Nebenquelle (Review B vom 13.11. Vormittag): „FOSS-Veröffentlichung 1 Monat nach Förderbeginn" | **CONTRADICTED/UNVERIFIED** — keine Primärquelle stützt „1 Monat"; FAQ/RL sagen „zum Projektabschluss"; Korrektur in sources-evidence-Doku vorgenommen |
+| W1 | FAQ „Eigenanteil = eure Zeit" vs. RL/Checkliste Bank-/Konto-Nachweis | Beide Ebenen dokumentiert (F1.5 vs. F1.6/F1.7); 2.500 € Liquiditätsnachweis empfohlen |
+| W2 | FAQ „47.500 € = 950 h × 50 €" vs. RL „95 % von PK+GK, G <= 50.000 €" | **UNRESOLVED**; fünf Erklärungen in [Q3](q3-clarification.md); konservative Planung 47.381,25 €; Differenz 118,75 € |
+| W3 | RL Ä2 (3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer") vs. PTF-Innovationsseite (2 Bereiche) | Beide Zitate getrennt; für die Bewerbung zählt das Portal-/Linienprofil; 3. Feld ist Relevanz-Kontext |
+| W4 | Second Stage: FAQ 31.667 € / „633 h" vs. RL 33.337 € Kosten-Cap / 95 % = 31.670,15 € vs. 633 h + 5 % GK = 31.570,87 € | **Korrigiert:** 31.650 € sind PK, nicht Förderung; konservativ 31.570,87 € (633 h) / 31.620,75 € (634 h) |
+| W5 | Ältere Nebenquelle „FOSS-Veröffentlichung 1 Monat nach Förderbeginn" | **CONTRADICTED/UNVERIFIED**; FAQ/RL sagen „zum Projektabschluss" |
+| W6 | 10-Monats-Option in FAQ/Detailseite vs. Innovationsseite (nur 6 Monate) | Kein Rechtswiderspruch (RL Nr. 4 erlaubt 10 Monate); Kommunikationsinkonsistenz dokumentiert; Szenario I |
+| W7 | FAQ Grundlagen 01 nennt 79.167 €/158.000 €; RL-Cap ergibt solo 79.170,15 €, Team 158.340,30 € (100.000 + 66.674 = 166.674 € Gesamtkosten; 95 %) | Die FAQ-Zahlen sind gerundet; keine Förderrelevanz für die 6-Monats-Baseline; als Kommunikationsrundung dokumentiert. |
+
+## Rest-UNKNOWN (bewusst offen)
+
+1. Persönliche Antragsberechtigung (M1–M9) — Owner-Nachweise.
+2. Q1: mehrere gleichzeitige Förderungen — nur PTF verbindlich.
+3. Q2: Selbstständigkeit ab Förderbeginn — nur PTF verbindlich.
+4. Q3: 47.500 vs. 47.381,25 — öffentlich nicht auflösbar; Anfrageentwurf.
+5. Q4: erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" — weich.
+6. Rechtliche Nutzungsrechte Fürth-PDF (`copy:no`) — extern, kein PTF-Thema.
+7. Reisekosten für Pflichttermine — in extrahierten Quellen nicht geregelt.
+8. 10-Monats-Option: ob sie für die Innovation-Linie in Jahrgang 03 tatsächlich geöffnet ist, ist aus der Detailseite ableitbar, aber die Innovationsseite nennt nur 6 Monate; im Portal gegenprüfen.
+
+**Gate-Status:** **VALIDATED_WITH_OPEN_QUESTIONS** — Regeln und Rechnungen sind quellenfest und reproduzierbar; Q3 bleibt offen und wird konservativ geplant. Das ist **keine** Förderzusage und **keine** Bestätigung der persönlichen Förderfähigkeit.

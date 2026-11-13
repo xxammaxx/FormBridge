@@ -1,157 +1,261 @@
-# Finanzmodell v3 — Kostenrechnung und Finanzierung getrennt (Revalidierungsrunde 2)
+# Finanzmodell v4 — exakte Dezimalrechnung, getrennte Kosten- und Finanzierungslogik
 
-**Datum:** 13.11.2026 · **Revision 3** (v1: Ursprungsmodell — fehlerhaft, Finanzierungsidentität verletzt; v2: Identitätskorrektur; v3: + Second-Stage-Rahmen, De-minimis-Wirkung, AZK-Anker, Ratenhebel — nach Reviews A2/B2) · **Alle Zahlen exakte Dezimalarithmetik, 2 Nachkommastellen, maschinell getestet (Test-Protokoll in validation-report.md §V3).**
-**RL-Zitate:** konsolidierte Fassung der RL 2024 (BAnz AT 15.11.2024 B4) per Änderungs-Bekanntmachungen vom 01.12.2025 und 25.06.2026; **Nr. 5 (Zuwendungshöhe/-quote) durch beide Änderungen unberührt** (Review B2, K8c).
+**Datum:** 13.11.2026 · **Revision 4** (v1: fehlerhaft, Finanzierungsidentität verletzt; v2: Identitätskorrektur; v3: Second Stage/De-minimis/Ratenhebel; **v4: unabhängige Quellenprüfung, 102/102-Testsuite, Second-Stage-Korrektur, 10-Monats-Option, rollierende De-minimis-Frist, Q3-Analyse**) · **Status:** Planungsmodell, keine Förderzusage · **Testbasis:** [`validation/financial_model.py`](validation/financial_model.py), [`validation/test_financial_model.py`](validation/test_financial_model.py), [`validation/test-output.txt`](validation/test-output.txt), [`validation/scenario-report.md`](validation/scenario-report.md)
 
-## 0. Der korrigierte Rahmen
+**Quellen:** [Quellenregister](source-register-2026-11-13.md) · **Q3:** [Q3-Klärung](q3-clarification.md) · **Regeln:** [funding-rules-verified-2026.md](funding-rules-verified-2026.md)
 
-**Kostenrechnung (AZK-Kostenbasis):**
-```
-Gesamtkosten G = Personalkosten PK + Gemeinkosten GK
-mit PK = Stunden × Stundensatz;  GK ≤ 5 % × PK (FAQ-Pauschale)
-Grenze: G ≤ 50.000 € (RL Nr. 5); PK ≤ 950 h × 50 € (Handbuch Frage 14)
+## 0. Gegenstand und Namensabgrenzung
+
+Dieses Modell rechnet den **6-monatigen Förderzeitraum** der Prototype-Fund-Linie Innovation (01.06.–30.11.2027) und die **4-monatige Second Stage** (01.12.2027–31.03.2028). Es rechnet **nicht** die Feldexa-Produktentwicklung als solche, sondern den in [`project-boundary.md`](../project-boundary.md) abgegrenzten Fördergegenstand (Feldexa-2.0-Kontext / FormBridge-Modul). Die 10-Monats-Option der Richtlinie ist als Szenario I dokumentiert, aber nicht Baseline.
+
+**Kostenrechnung:**
+
+```text
+G = PK + GK
+PK = Stunden × Stundensatz
+GK <= 5 % × PK (FAQ-Pauschale; optional)
+G <= 50.000 € (RL Nr. 5, 6 Monate, solo)
+Stunden <= 950 (Handbuch Frage 14)
 ```
 
 **Finanzierung:**
+
+```text
+G = F + EA
+F <= 95 % × G (RL Nr. 5; FAQ Förderung 02)
+EA >= 5 % × G
 ```
-G = Förderung F + Eigenanteil EA
-mit F ≤ 95 % × G (RL Nr. 5; FAQ Förderung 02)  ⇒  EA ≥ 5 % × G
-```
 
-**Regel:** Förderung und Eigenanteil sind **Finanzierungsanteile der tatsächlich ausgewiesenen Kosten**. Ein Eigenanteil darf nicht auf ein Budget addiert werden, für das keine Kostenposition existiert. (Dies war der Fehler der alten Modell-A-Darstellung; siehe §Fehlerprotokoll.)
+**Grundregel:** Förderung und Eigenanteil sind **Finanzierungsanteile der tatsächlich ausgewiesenen Kosten**. Ein Eigenanteil darf nicht auf ein Budget addiert werden, für das keine Kostenposition existiert. Der Eigenanteil ist nicht zusätzlich zu den Kosten zu addieren; er ist der nicht geförderte Teil derselben Kosten.
 
-## 1. Die offizielle Kommunikationslogik vs. die strenge Regellogik (W2, geschärft)
+## 1. Verbindliche Regel vs. FAQ-Kommunikation
 
-| | FAQ-/Portal-Kommunikation | Strenge RL-Regellogik |
+| Punkt | FAQ-/Handbuch-Kommunikation | Verbindliche RL-Logik |
 |---|---|---|
-| „Maximalfördersumme 47.500 €" | entspricht „950 h × 50 €" (FAQ Förderung 01, wörtlich) | erfordert G = 50.000 € (95 %-Quote) → benötigt PK + GK = 50.000 € |
-| GK | „pauschal 5 % der Personalkosten" (= 2.375 € bei 950 h) | RL: Bemessungsgrundlage PK+GK, „bis zu 95 %" |
-| Team-Konsistenz-Beleg | FAQ-Teamzahl 95.000 € = 0,95 × 100.000 € (RL-Gesamtkosten-Cap Teams) — **bestätigt den 95-%-Frame der Kommunikation** |
-| Kompatibel? | **Nur wenn** GK = 2.500 € (5 % von 50.000) oder als vereinfachte Kommunikation ohne GK-Zählung | ja, ergibt **47.381,25 €** max. Förderung (bei 950 h + GK-Pauschale) |
+| Maximalförderung solo | „47.500 € = 950 h × 50 €" (FAQ Förderung 01; Handbuch Frage 14) | 95 % der Gesamtkosten (PK+GK), Gesamtkosten <= 50.000 € (RL Nr. 5) |
+| Gemeinkosten | „pauschal 5 % der Personalkosten" (FAQ Förderung 02) | Personal- und Gemeinkosten sind Bemessungsgrundlage (RL Nr. 5); die 5-%-Pauschale ist die FAQ-Konkretisierung |
+| Eigenanteil | „mindestens 5 % … eure Zeit" (FAQ Förderung 02) | 95-%-Förderquote impliziert mindestens 5 % Eigenanteil; Nachweis über bonitätsprüfungsfähige Unterlagen (RL Nr. 4) |
+| 950 h | „max. 950 h … insgesamt" (Handbuch Frage 14) | Die RL nennt keine Stundengrenze; die 950 h sind Programm-/Handbuchgrenze |
+| 50.000 € | wird in der FAQ nicht als Gesamtkosten-Cap genannt | **Gesamtkosten**-Cap (RL Nr. 5) |
 
-**Befund:** Die FAQ-Formulierung („Maximalfördersumme = 950 h × 50 €") und die strenge 95-%-Regellogik (95 % × (PK+GK)) sind **nicht gleichzeitig exakt erfüllbar**, wenn GK strikt = 5 % × PK gilt. Differenz: 118,75 €. Dies ist eine **unauflösbare Mehrdeutigkeit der öffentlichen Quellen** → Szenario E bildet die PTF-Kommunikationslogik separat ab; für die Antragsempfehlung gilt die konservative strenge Logik (L1). Klärung: Portal/Antragswerkstatt (remaining-questions.md Q3).
+**Folge:** Die kommunizierte 47.500-€-Zahl ist keine aus der RL abgeleitete Förderobergrenze. Sie ist mit der RL nur vereinbar, wenn die Gesamtkosten 50.000 € erreichen (siehe Q3, Erklärungen E3–E5). Bei 950 h × 50 € und 5 % GK auf PK sind die Gesamtkosten 49.875 €; die strenge Förderung ist 47.381,25 €.
 
-**Stützbeleg für die Kommunikationslogik (Review A2, M6):** Auch die Second-Stage-Zahlen folgen keiner einzelnen strengen Formel — 31.667 € ≙ „gerundet 633 h" (633 × 50 = 31.650,00) bzw. 0,95 × 33.337 = 31.670,15 (RL-Pfad): PTF kommuniziert **gerundete, planungsorientierte Maximalwerte**, keine exakte Formel-Ausgabe. Das stützt die Lesart, dass „47.500 €" als Kommunikations-Deckel und die strenge Rechnung als verbindliche Abrechnungslogik parallel existieren (Q3).
+## 2. Rundungsregeln (verbindlich für dieses Modell)
 
-## 2. Szenarien (95 %-Quote, Stundensatz 50 €, GK-Pauschale 5 % der PK — sofern genutzt)
+Alle Beträge sind `Decimal`, nie `float`. Die Regeln sind bewusst so gewählt, dass keine Rundung zu einer Überzeichnung führt:
+
+| Größe | Regel | Begründung |
+|---|---|---|
+| PK | kaufmännisch auf Cent (`ROUND_HALF_UP`) | übliche Geldrundung |
+| GK | **abrunden** auf Cent (`ROUND_DOWN`) | GK darf 5 % der PK nie überschreiten |
+| G | exakte Summe der cent-gerundeten PK + GK | K1 bleibt cent-exakt |
+| F | **abrunden** auf Cent (`ROUND_DOWN`) | F darf 95 % von G nie überschreiten; Half-up könnte um 0,005 € überzeichnen |
+| EA | `G − F` (exakter Rest) | K2 bleibt cent-exakt |
+| Quartalsraten | erste Raten abrunden, letzte Rate erhält den Rest | Summe = F exakt, keine 1-Cent-Drift |
+| Monatlicher Eigenanteil | abrunden | keine Überzeichnung des eigenen Beitrags |
+
+**Beispiel für die F-Rundung:** G = 36.750,01 €; 95 % = 34.912,5095 €. Half-up ergäbe 34.912,51 € und damit 0,0005 € **über** 95 %. Das Modell liefert 34.912,50 €. Der Test `test_funding_is_floored_not_half_up` sichert das.
+
+## 3. Szenarien (Basis: 50 €/h, 5 % GK auf PK, sofern nicht anders angegeben)
 
 ### Szenario A — 950 h ohne Gemeinkosten
-```
+
+```text
 PK = 950 × 50        = 47.500,00 €
 G  = PK              = 47.500,00 €   (Cap 50.000 ✓)
-F  = 0,95 × G        = 45.125,00 €   ← NICHT 47.500 €
+F  = 0,95 × G        = 45.125,00 €   (nicht 47.500 €)
 EA = G − F           =  2.375,00 €
 ```
 
-### Szenario B — 950 h mit 5 % Gemeinkosten
-```
+### Szenario B — 950 h mit 5 % Gemeinkosten (konservative Planungsbasis)
+
+```text
 PK = 47.500,00 €;  GK = 0,05 × PK = 2.375,00 €
-G  = 49.875,00 €                     (Cap 50.000 ✓, nicht ausgeschöpft)
-F  = 0,95 × G        = 47.381,25 €   ← praktisches Maximum unter strenger Logik
+G  = 49.875,00 €                     (Cap 50.000 ✓, 125,00 € Headroom)
+F  = 0,95 × G        = 47.381,25 €   (strenges Maximum)
 EA = G − F           =  2.493,75 €
 ```
 
-### Szenario C — Gesamtkosten exakt 50.000 € mit GK = 5 % × PK
+**Differenz zur FAQ:** 47.500,00 − 47.381,25 = **118,75 €**. Das ist genau 5 % der GK-Pauschale (5 % × 2.375 €). Die FAQ behandelt die GK insoweit als voll gefördert; die 95-%-Regel verlangt auch auf GK einen Eigenanteil.
 
-**Bei exakt 50 €/h: nicht konstruierbar.**
-```
-1,05 × PK = 50.000 ⇒ PK = 47.619,05 € ⇒ 952,38 h  > 950-h-Obergrenze
-```
-**Mit Ratenhebel (FAQ-Support): konstruierbar.** FAQ Förderung 01 erlaubt einen **höheren Stundensatz bei Rechnungs-Nachweis** höherer Stundenlöhne (50-€-Cap gilt nur für die Second Stage). Bedingung für G = 50.000 € innerhalb von 950 h:
-```
-1,05 × (950 × R) ≤ 50.000  ⇒  R ≤ 50,13 €/h  (genau: 50,1256 €/h)
-Beispiel R = 50,10 €/h: PK = 950 × 50,10 = 47.595,00 €; GK = 2.379,75 €;
-G = 49.974,75 € ≤ 50.000 ✓; F = 0,95 × G = 47.476,01 €; EA = 2.498,74 €
-```
-Das heißt: Die 50.000-€-Grenze **bindet unter Standard-Satz 50 €/h nie** (950 h → max. G 49.875 €), sie wird erst mit nachgewiesen höheren Sätzen relevant (ab ~50,13 €/h). Ob das Portal die GK-Pauschale in dieser Struktur abbildet, bleibt Q3.
+**Absolute Untergrenze, falls GK nicht anerkannt wird:** Szenario A mit 45.125,00 €. Die Planung sollte daher nicht mehr als 47.381,25 € und nicht weniger als 45.125,00 € als belastbaren Korridor behandeln.
 
-### Szenario D — reduzierter Stundenumfang (mit GK-Pauschale; ohne GK in Klammern)
+### Szenario C — Gesamtkosten 50.000 € mit GK = 5 % × PK
+
+Bei exakt 50 €/h ist G = 49.875 €; die 50.000-€-Grenze bindet nicht. Mit einem **nachgewiesenen höheren Satz** (FAQ Förderung 01: Rechnungsnachweis) ist G = 50.000 € konstruierbar:
+
+```text
+1,05 × (950 × R) <= 50.000  ⇒  R <= 50,125313… €/h
+Beispiel R = 50,125313 €/h (gerundeter Beispielsatz, exakt 50,1253132832…):
+PK = 47.619,05 €; GK = 2.380,95 €; G = 50.000,00 €
+F  = 47.500,00 €; EA = 2.500,00 €
+```
+
+Mit dem gerundeten Satz 50,1253 €/h ergibt sich G = 49.999,99 €, F = 47.499,99 €. Mit 50,13 €/h ergibt sich G = 50.004,67 € und damit ein **Cap-Verstoß**. Der exakte Schwellenwert ist `50.000 / (950 × 1,05) = 50,1253132832… €/h`; das Modell prüft ihn in `test_rate_lever_exact_threshold`.
+
+**Praktische Bedeutung:** Der Ratenhebel ist nur relevant, wenn der Antragsteller höhere Stundenlöhne nachweisen kann. Für die Standardplanung bleibt es bei 50 €/h und Szenario B.
+
+### Szenario D — reduzierter Stundenumfang (mit GK)
 
 | Stunden | PK | GK (5 %) | G | F = 95 % × G | EA = 5 % × G |
-|---|---|---|---|---|---|
+|---:|---:|---:|---:|---:|---:|
 | 700 | 35.000,00 | 1.750,00 | 36.750,00 | **34.912,50** | 1.837,50 |
 | 800 | 40.000,00 | 2.000,00 | 42.000,00 | **39.900,00** | 2.100,00 |
 | 850 | 42.500,00 | 2.125,00 | 44.625,00 | **42.393,75** | 2.231,25 |
 | 950 | 47.500,00 | 2.375,00 | 49.875,00 | **47.381,25** | 2.493,75 |
 
-(Ohne GK-Pauschale: F = 0,95 × PK = 33.250,00 / 38.000,00 / 40.375,00 / 45.125,00.)
+Ohne GK: F = 33.250,00 / 38.000,00 / 40.375,00 / 45.125,00 €.
 
-### Szenario E — PTF-Kommunikationslogik (FAQ-Lesart, separat ausgewiesen)
+### Szenario E — FAQ-Kommunikationslogik (separat, nicht regelkonform)
 
+```text
+F = min(950 h × 50 €, 47.500 €) = 47.500,00 €
+Dafür erforderliche Kostenbasis: G = 50.000,00 €
+Erreichbar nur mit GK = 2.500,00 € (5 % des Gesamtbudgets) oder
+1.000 Gesamtstunden ohne GK oder höherem Satz.
 ```
-F = min(950 h × Stundensatz, 47.500 €)   — FAQ formuliert die Höchstförderung direkt aus Stunden × Satz
-Konsistente Kostenbasis dafür: G = 50.000 € (dann EA = 2.500 €)
-Offen: ob das Portal GK-Pauschale (2.375 €) innerhalb dieser 50.000 € abbucht oder die
-Kommunikation vereinfacht. → Nur im Portal/Antragswerkstatt klärbar (Q3).
-Risiko bei Planung nach E: falls das Portal streng rechnet (L1), liegt das Maximum bei 47.381,25 €;
-eine Antragsplanung mit 950 h bleibt zulässig, die Förderhöhe wäre dann 47.381,25 €.
-```
+
+Setzt man GK = 2.500 € an, ist GK/PK = 5,263 % und damit **über** der FAQ-Grenze von 5 % der Personalkosten. Das Modell markiert diese Variante mit `overhead_above_5_percent_of_personnel` und `K7_overhead_base_exceeded`. Sie ist als **Kommunikations-/Portalvariante** dokumentiert, nicht als regelkonforme Planung.
 
 ### Szenario F — Teilzeit/Anstellung (Arbeitsschutz-Obergrenze)
 
-Bei parallel bestehender Teilzeit-Anstellung begrenzen Arbeitsschutzgesetze die Gesamtstunden nach oben (FAQ Förderung 01). Beispiel: 40-h-Anstellung (80 %) ⇒ projektplanbar ≤ 8 h/Woche ≈ 200 h/6 M. → F (mit GK) = 0,95 × (200×50×1,05) = **9.975,00 €**. Formal zulässig, aber unter der ~250-h-Verwaltungsgrenze (Handbuch: darunter „lohnt der administrative Aufwand nicht") → praktisch ungeeignet.
+Bei parallel bestehender Teilzeit-Anstellung begrenzen Arbeitsschutzgesetze die Gesamtstunden nach oben (FAQ Förderung 01). Beispiel 200 h/6 M.:
 
-### Szenario G — Second Stage (nur bei initialer Bewerbung mitbeantragt)
-
-Vier Rahmen für die kommunizierten 31.667 € (alle öffentlich dokumentiert; W4):
-
-| Frame | Rechnung | Wert |
-|---|---|---|
-| FAQ-Kommunikation | „bis zu 31.667 € beantragen … entspricht gerundet 633 Arbeitsstunden mit einem Stundensatz von 50 €" | 31.667 € (kommuniziert) |
-| Stunden × Satz | 633 × 50 | 31.650,00 € |
-| RL-95-%-Pfad | 0,95 × 33.337 € (RL Nr. 5, zweite Förderphase) | 31.670,15 € |
-| Anteil-Frame | 47.500 × 4/6 | 31.666,67 € |
-
-Konservative Planung: **31.650,00 €** (633 h à 50 €). **Keine Code-Meilensteine** in der Second Stage förderfähig (Handbuch Frage 16); 50-€-Cap gilt; Stunden ≤ Anteil der regulären Phase. Klärung der exakten Portal-Berechnung: Q3-Erweiterung.
-
-### Szenario H — De-minimis-Obergrenze (kann die Förderhöhe DECKELN)
-
-RL Nr. 5 + Anlage Nr. 1: Zuwendung ist **De-minimis-Beihilfe**; Freibetrag **300.000 € innerhalb von 3 Jahren** (Kalenderjahre) über alle Beihilfen, die eine „eine Unternehmereinheit" bildenden Struktur kumuliert wurden; **Kumulierungsverbot** (keine Überkompensation); De-minimis-Erklärung ist Teil der Bewilligungsunterlagen (FAQ Auswahl 03).
-
+```text
+PK = 10.000,00 €; GK = 500,00 €; G = 10.500,00 €
+F = 9.975,00 €; EA = 525,00 €
 ```
+
+Formal zulässig, aber unter der ~250-h-Verwaltungsgrenze (Handbuch Frage 14: darunter „lohnt der administrative Aufwand nicht") → praktisch ungeeignet.
+
+### Szenario G — Second Stage (4 Monate; nur bei initialer Bewerbung mitbeantragt)
+
+**Korrigierte Rechnung (vorherige Dokumentation war fehlerhaft):** Die frühere Zeile „konservativ 31.650,00 € (633 h à 50 €)" verwechselte **Personalkosten** mit **Förderung**. 633 h × 50 € = 31.650 € PK; bei 5 % GK und 95 % Förderung ergibt das:
+
+| Variante | PK | GK | G | F = 95 % | EA |
+|---|---:|---:|---:|---:|---:|
+| 633 h | 31.650,00 | 1.582,50 | 33.232,50 | **31.570,87** | 1.661,63 |
+| 634 h | 31.700,00 | 1.585,00 | 33.285,00 | **31.620,75** | 1.664,25 |
+| 635 h | 31.750,00 | 1.587,50 | 33.337,50 | Cap-Verstoß | — |
+
+Der theoretische Cap bei G = 33.337 € und 95 % ist **31.670,15 €**; er ist mit 50 €/h und 5 % GK nicht exakt konstruierbar (634 h liegen darunter, 635 h darüber). Die FAQ-Kommunikation 31.667 € ist eine gerundete Näherung; die Differenz zu 633 h beträgt **96,13 €**, zu 634 h **46,25 €**.
+
+**Regeln:** 50-€/h-Cap in der Second Stage (kein Ratenhebel); Stunden <= Umfang der regulären Phase (Handbuch: bis zu 100 %, wenn 100 % beantragt); **keine Code-Meilensteine** förderfähig (Handbuch Frage 16). Die Second Stage ist nur jetzt mitbeantragbar; späteres Hinzufügen ist ausgeschlossen.
+
+### Szenario H — De-minimis-Obergrenze (kann die Förderhöhe deckeln)
+
+Die Zuwendung ist De-minimis-Beihilfe (RL Nr. 1.3/5; Anlage Nr. 1). Der Freibetrag beträgt **300.000 € in einem rollierenden Dreijahreszeitraum** (VO (EU) 2023/2831, Art. 3 Abs. 2 und Erwägungsgrund 11), nicht kalenderjährlich.
+
+```text
 Verfügbare F-Obergrenze = min(F_Szenario, 300.000 − Summe anderer De-minimis-Beihilfen der letzten 3 Jahre)
 ```
-Für Erst-Antragsteller ohne sonstige Beihilfen ist das nicht bindend; mit vorhandenen Beihilfen (z. B. andere Zuschüsse) **kann F unter 47.381,25 €/47.500 € gedrückt werden** — individuell zu prüfen (Owner, Q-Erweiterung). Aufbewahrung der Erklärungen 10 Jahre (Buchungspflicht AZK/Anlage).
 
-### Zuwendungsfähige Kosten (AZK-Anker)
+Beispiel: Vorbelastung 260.000 € → verfügbar 40.000 € → F = 40.000,00 €; EA steigt auf 9.875,00 €; die Kostenbasis bleibt 49.875,00 €. Bei Vorbelastung 300.000 € ist keine De-minimis-Förderung mehr möglich (`deminimis_exhausted`). Die De-minimis-Prüfung umfasst **auch die Second Stage und andere Projekte**; die Summe aller Förderungen im Dreijahreszeitraum muss <= 300.000 € bleiben. Aufbewahrung nach RL Anlage: mindestens **3 Jahre** (nicht 10; eine längere AZK-Aufbewahrung ist separat zu prüfen).
 
-Gefördert wird auf **Kostenbasis (AZK)**: „Richtlinien für Zuwendungsanträge auf Kostenbasis" (Vordruck 0047) nebst Merkblatt **Vorkalkulation** regeln, welche Kosten zuwendungsfähig sind (RL Nr. 5/6-Verweise). Inhaltlich bestätigt durch FAQ Förderung 02: **Personalkosten** (Stunden × bewilligter Satz) + **Gemeinkosten-Pauschale bis 5 % der Personalkosten**; weitere Kostenpositionen nennt keine öffentliche PTF-Quelle für Einzelpersonen → Modell beschränkt sich bewusst auf PK + GK (weitere Positionen = OWNER-Frage im Antragswerkstatt-Kontext).
+### Szenario I — 10-Monats-Option (6 + 4 Monate; Alternativszenario)
 
-### Vorfinanzierung (nachlaufende Quartalsabrufe)
+Die RL Nr. 4 erlaubt eine zehnmonatige Laufzeit (6 Monate Entwicklung + 4 Monate Vertiefung nach Evaluation); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt gerundet 79.167 € (Differenz 3,15 €). Beispiel mit 950 h + 634 h:
 
-Beispiel Szenario B: Förderzeitraum 01.06.–30.11.2027; Abruf frühestens Anfang Q3 (01.07.) für geleistete Q2-Arbeit — der erste Abruf deckt zunächst **nur den Juni** (F/6 = **7.896,88 €**); konservativer Planungs-Peak ist ein volles Quartal (**F/2 = 23.690,63 €**, z. B. Juli–September vor dem nächsten Abruf). Zusätzlich EA-Kontoauszug (Saldo ≥ 2.500 €; deckt strenge Lesart 2.493,75 € und FAQ-Lesart 2.500 €).
-
-## 3. Identitäten (müssen für JEDES Szenario gelten)
-
+```text
+G = 49.875,00 + 33.285,00 = 83.160,00 €
+F = 79.002,00 €; EA = 4.158,00 €
 ```
+
+Die 10-Monats-Option ist **nicht** die Baseline; sie ist eine strategische Alternative, falls der Owner die längere Laufzeit und die zweite Phase will. Die Detailseite verlangt die Angabe „sechs- oder zehnmonatig" bereits in der Bewerbung.
+
+## 4. Q3 — die 118,75-€-Differenz
+
+**Status: UNRESOLVED.** Die öffentlichen Quellen sind nicht widerspruchsfrei. Die vollständige Analyse mit fünf Erklärungsvarianten und dem Anfrageentwurf steht in [q3-clarification.md](q3-clarification.md). Kurzfassung:
+
+- **Planungsbasis:** 47.381,25 € (Szenario B).
+- **Kommunizierte Obergrenze:** 47.500,00 € (FAQ).
+- **Differenz:** 118,75 € (5 % der GK-Pauschale).
+- **Nicht entschieden:** ob 950 h Gesamt- oder Förderstunden sind; ob GK auf PK oder Gesamtbudget berechnet wird; ob die FAQ vereinfacht.
+- **Nicht senden:** Die Anfrage in Q3 ist ein Entwurf; Versand nur mit Owner-Freigabe.
+- **Nicht als offizielle Klärung darstellen:** Keine der Varianten ist durch eine schriftliche Autoritätsaussage bestätigt.
+
+## 5. Vorfinanzierung und Cash-Flow
+
+Beispiel Szenario B, Förderzeitraum 01.06.–30.11.2027. Die Auszahlung erfolgt nachlaufend zu Quartalsbeginn (FAQ Förderung 03):
+
+| Rate | Zeitpunkt | Zeitraum | Betrag |
+|---|---|---|---|
+| 1 | 01.07.2027 | Juni | **7.896,87 €** |
+| 2 | 01.10.2027 | Juli–September | **23.690,62 €** |
+| 3 | 01.01.2028 | Oktober–November | **15.793,76 €** |
+| **Summe** | | | **47.381,25 €** |
+
+Die Raten werden abgerundet; die letzte Rate erhält den Rest, damit die Summe exakt bleibt. (Die frühere Dokumentation nannte 7.896,88 € und 23.690,63 €; das summierte sich zu 47.381,26 €.)
+
+**Cash-Bedarf:**
+
+- Monatliche Gesamtkosten: 49.875,00 / 6 = **8.312,50 €**.
+- Erstes Monatsloch: 8.312,50 − 7.896,87 = **415,63 €** (das ist der Eigenanteil des ersten Monats).
+- Konservativer Peak **externer Vorfinanzierung**: F/2 = **23.690,62 €** (ein volles Quartal Juli–September vor der nächsten Rate).
+- Peak **gesamter Cash-Bedarf**: G/2 = **24.937,50 €** (davon 1.246,88 € eigener Anteil).
+- Kontoauszug-Saldo für den Eigenanteil: **>= 2.500,00 €** deckt die strenge Lesart (2.493,75 €) und die FAQ-Lesart (2.500,00 €) ab.
+
+**Wichtig:** Die 2.500 € sind ein **Liquiditätsnachweis**, keine zusätzliche Kostenposition. Sie werden nicht auf G addiert.
+
+## 6. Identitäten (müssen für jedes Szenario gelten)
+
+```text
 K1  Kostenidentität:      G = PK + GK
 K2  Finanzierung:         G = F + EA
-K3  Förderquote:          F ≤ 0,95 × G
-K4  Eigenanteil:          EA ≥ 0,05 × G
-K5  Stunden-Cap:          Stunden ≤ 950
-K6  Betrags-Caps:         F ≤ 47.500 €;  G ≤ 50.000 €
-K7  GK-Regel:             GK ≤ 0,05 × PK  (FAQ-Lesart)
-K8  Rundung:              alle Größen auf Cent gerundet; Σ-Identität nach Rundung erhalten
+K3  Förderquote:          F <= 0,95 × G
+K4  Eigenanteil:          EA >= 0,05 × G
+K5  Stunden-Cap:          Stunden <= 950 (regulär; Second Stage <= regulärer Umfang)
+K6  Betrags-Caps:         G <= 50.000 € (regulär); G_second <= 33.337 €; G_ten <= 83.337 €
+K7  GK-Regel:             GK <= 0,05 × PK (FAQ-Lesart)
+K8  Rundung:              alle Größen cent-exakt; K1/K2 nach Rundung erhalten
 ```
 
-## 4. Test-Protokoll (reproduzierbar; Skript + Ausgabe archiviert in validation-report.md §V3)
+Zusätzlich prüft das Modell: `F <= 47.500 €` (Kommunikationsdeckel), `F_second <= 31.667 €` (Kommunikationsdeckel), `F_ten <= 79.170,15 €` (abgeleiteter Cap) und die De-minimis-Restverfügbarkeit.
 
-Das Testskript (exakte Dezimalarithmetik, `decimal`-Modul) prüft K1–K8 für Szenarien A–D und die Grenzfälle (950 h exakt, 951 h → Verstoß, 95 %-Grenze, GK > 5 % → Verstoß, Gesamtkosten 50.000,01 → Verstoß, Teilzeit 200 h, EA-Nachweis-Höhe). Ergebnis: **ALLE TESTS BESTANDEN** nach Korrektur; das alte Modell A wäre in K2/K3 gefailt (F > 0,95 × G). Details: validation-report.md.
+## 7. Reproduzierbare Testevidenz
 
-## 5. Empfehlung für die Antragshöhe
+**Befehl (aus dem Repository-Root):**
 
-- **Planung konservativ nach strenger Logik (Szenario B): 950 h beantragen, Förderhöhe 47.381,25 €** — im Portal ggf. auf 47.381 € runden; falls das Portal die FAQ-Logik (E) abbildet, wird automatisch bis 47.500 € ausgeschöpft.
-- **Nicht** 47.500 € als Förderbetrag in Planungsrechnungen festschreiben, bevor Q3 (Portal-Logik) geklärt ist.
-- **Ratenhebel (nur mit Rechnungs-Nachweis):** ein nachgewiesener Satz > 50 €/h (ab ~50,13 €/h) erlaubt G bis 50.000 € innerhalb von 950 h (Szenario C) — nur relevant für Applicant mit entsprechendem Nachweis.
-- **De-minimis-Vorprüfung:** vorhandene Beihilfen der letzten 3 Jahre summieren (Szenario H); bei Werten nahe 300.000 € F-Limit vor Antrag klären.
-- Kontoauszug-Saldo für den EA-Nachweis: ≥ 2.500 € deckt beide Modelle ab.
-- Second Stage (falls mitbeantragt): konservativ 31.650,00 € planen (633 h à 50 €); keine Code-Meilensteine.
+```bash
+python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v
+```
 
-## 6. Fehlerprotokoll
+**Ergebnis am 13.11.2026:** `Ran 102 tests … OK` — **102/102 PASS**. Vollständige Ausgabe: [`validation/test-output.txt`](validation/test-output.txt). Szenariotabelle: [`validation/scenario-report.md`](validation/scenario-report.md). Modell: [`validation/financial_model.py`](validation/financial_model.py). Tests: [`validation/test_financial_model.py`](validation/test_financial_model.py). Laufzeitumgebung: Python 3.12 (stdlib `unittest`, `decimal`), keine externen Abhängigkeiten.
 
-**Ursache des ursprünglichen Fehlers (v1):** Der FAQ-Satz „Maximalfördersumme = 950 h × 50 €" wurde mit der RL-95-%-Struktur verrechnet, **ohne die Kostenbasis zu prüfen**: Die 95-%-Struktur wurde auf ein angenommenes 50.000-€-Budget angewendet, dessen Kostenpositionen (PK+GK = 50.000 €) unter den 950-h-/GK-5-%-Regeln nicht konstruierbar sind; der Eigenanteil wurde als Finanzierung auf Kosten addiert, die nicht existierten.
+**Abgedeckte Regressionen (Auszug):**
+
+- Ursprüngliches Modell A (F = 47.500 bei G = 47.500) verletzt K2/K3.
+- GK auf Gesamtbudget statt PK (5,263 %) verletzt K7.
+- F > 95 % von G (47.500 auf 49.875) wird erkannt.
+- EA < 5 % von G (2.493,74 auf 49.875) wird erkannt.
+- 951 h, 50.000,01 €, GK > 5 %, Rate > 50 ohne Nachweis, Second-Stage-Rate > 50.
+- Cent-Rundung, Floor-vs-Half-up, Quartalssummen, Schwellenwert 50,125313 €/h.
+- Second Stage 633/634/635 h; 31.650-€-Fehlclaim; 31.667-€-Differenz.
+- De-minimis 0 / 260.000 / 299.900 / 300.000 / 310.000; Kombination regular + Second Stage.
+- 10-Monats-Cap 83.337 € und 79.170,15 €.
+
+**Hinweis zur Vorgeschichte:** Die frühere Behauptung „56/57 Tests, 1 Skript-Bug" war **nicht reproduzierbar**, weil das Testskript nicht im Repository archiviert war. Revision 4 ersetzt sie durch die hier archivierte, vollständig lauffähige Suite. Die Zahl 57 ist damit historisch; der aktuelle, tatsächliche Testumfang ist **102**.
+
+## 8. Planungsempfehlung (keine Förderzusage)
+
+1. **Antragshöhe:** 950 h beantragen; Förderung konservativ mit **47.381,25 €** planen. Im Portal ggf. auf 47.381 € runden; falls das Portal die FAQ-Logik abbildet, wird automatisch bis 47.500 € ausgeschöpft.
+2. **Nicht** 47.500 € als selbstverständliche Planungsgröße festschreiben, bevor Q3 geklärt ist.
+3. **Eigenanteil:** **2.500 €** Kontoauszug-Saldo vorhalten; das deckt 2.493,75 € (streng) und 2.500,00 € (FAQ) ab.
+4. **Ratenhebel:** Nur mit Rechnungsnachweis; ein Satz ab 50,125313 €/h erlaubt G = 50.000 € innerhalb von 950 h. Ohne Nachweis nicht planen.
+5. **Second Stage:** Falls mitbeantragt, konservativ **31.570,87 €** (633 h) bzw. **31.620,75 €** (634 h) planen; nicht 31.650 € als Förderung ansetzen. Keine Code-Meilensteine.
+6. **De-minimis:** Vor Antrag alle Beihilfen der letzten drei Jahre (rollierend) addieren; bei Werten nahe 300.000 € F begrenzen. Die Second Stage zählt mit.
+7. **10 Monate:** Nur als bewusste Alternative; dann 83.337 € Gesamtkosten und 79.170,15 € Fördercap beachten.
+8. **Q3:** Anfrageentwurf vorbereitet, **nicht senden** ohne Owner-Freigabe. Klärung ist nicht einreichungsblockierend.
+
+## 9. Fehlerprotokoll
 
 | Revision | Anlass | Änderung | Validierung |
 |---|---|---|---|
-| v2 | Externer Befund + Review: Finanzierungsidentität verletzt (Modell A/B: F = 100 % der ausgewiesenen Kosten; EA ohne Kostenposition) | Strikte Trennung Kostenrechnung (G = PK + GK) und Finanzierung (G = F + EA); Szenarien A–F neu gerechnet; FAQ-Lesart als Szenario E isoliert; konservative Empfehlung 47.381,25 € | 61/61 Dezimal-Tests, inkl. Negativ-Test „altes Modell A verletzt K3" |
-| v3 | Review B2 K6/K7/K8 + Review A2 M6/M10: Second-Stage- und De-minimis-Sektionen fehlten; Szenario-C-Unkonstruierbarkeit galt nur bei exakt 50 €/h; AZK-Anker fehlte; Vorfinanzierungs-Satz inkonsistent | Szenario G (Second Stage, 4 Frames, konservativ 31.650 €), Szenario H (De-minimis-Limit 300.000 €/3 J.), Szenario C mit Ratenhebel (R ≤ ~50,13 €/h → G = 50.000 € konstruierbar), AZK-Anker-Abschnitt, Team-Konsistenz-Beleg (§1), RL-Konsolidierungs-Label, Vorfinanzierung F/6 je Monat + F/2-Peak | Tests erweitert (Szenario G/H + Ratenhebel-Boundary R = 50,1256 €/h) — validation-report.md §V3 |
+| v1 | — | FAQ-Formel „950 h × 50 €" als Förderbetrag; Eigenanteil additiv | **fehlerhaft** (K2/K3 verletzt) |
+| v2 | Externer Befund | Trennung Kostenrechnung/Finanzierung; Szenarien A–F; FAQ-Lesart als E | 61/61 Dezimal-Tests (nicht archiviert) |
+| v3 | Review A2/B2 | Second Stage, De-minimis, Ratenhebel, AZK-Anker, Vorfinanzierung | 56/57 (1 Skript-Bug; nicht archiviert) |
+| **v4** | **Unabhängige Neuprüfung 13.11.2026** | **Second-Stage-31.650-€-Fehler korrigiert (31.570,87/31.620,75); 10-Monats-Option ergänzt; De-minimis rollierend statt kalenderjährlich; Aufbewahrung 3 statt 10 Jahre; 102/102-Testsuite archiviert; Q3 mit fünf Erklärungen; 47.500-€-Aussage als Kommunikationsgröße präzisiert** | **102/102 PASS; Review A/B siehe [final-validation-report.md](final-validation-report.md)** |
+
+**Ursache des ursprünglichen Fehlers:** Die FAQ-Formel wurde mit der RL-95-%-Struktur verrechnet, ohne die Kostenbasis zu prüfen. Das 50.000-€-„Budget" wurde als Finanzierungsgröße behandelt, obwohl unter 950 h + GK-Regeln nur 47.500 € (ohne GK) bzw. 49.875 € (mit GK) Kosten konstruierbar sind. Der Eigenanteil wurde als zusätzliche Finanzierung auf nicht existierende Kosten addiert.
+
+**Ursache des Second-Stage-Fehlers (v3):** 31.650 € (633 h × 50 €) sind Personalkosten; die Dokumentation bezeichnete sie als Förderung. Das ist dieselbe Kategorienverwechslung wie in v1, nur in der Second Stage. v4 trennt PK, GK, G, F und EA auch dort.

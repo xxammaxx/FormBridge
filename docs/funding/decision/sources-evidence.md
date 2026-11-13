@@ -8,10 +8,10 @@
 |---|---|---|---|---|
 | S1 | https://bewerben.prototypefund.de/ | 13.11.2026 | Frist 30.11.2026; Linien Innovation/Resilienz/Up and Coming | VERIFIED |
 | S2 | https://www.prototypefund.de/innovation | 13.11.2026 | Linienprofil Datensicherheit + Software-Infrastruktur; Antragsberechtigung (18+, Wohnsitz DE solo, Team ≤4 GbR); FOSS-Pflicht; 47.500 €/95.000 € | VERIFIED |
-| S3 | https://www.prototypefund.de/bewerbung/details | 13.11.2026 | Förderperiode 01.06.–30.11.2027; Second Stage 01.12.2027–31.03.2028; 31.667 €/63.333 €; Zeitplan; Sprechstunden 16./19.11.2026; „hoher Entwicklungsanteil", „nur Doku/Release/Marketing nicht förderfähig" | VERIFIED |
+| S3 | https://www.prototypefund.de/bewerbung/details | 13.11.2026 | Förderperiode 01.06.–30.11.2027; Second Stage 01.12.2027–31.03.2028; 31.667 €/63.333 €; Zeitplan; Sprechstunden 16./19.11.2026; Angabe „sechs- oder zehnmonatig"; „hoher Entwicklungsanteil", „nur Doku/Release/Marketing nicht förderfähig" | VERIFIED |
 | S4 | https://www.prototypefund.de/innovativ | 13.11.2026 | Innovationsbegriff inkl. „neues Modul für bestehende Software"; Kriterien Datensparsamkeit/Anwendungsfreundlichkeit/Adaptierbarkeit/Open Source | VERIFIED |
 | S5 | PTF-Handbuch Jahrgang 03: https://www.prototypefund.de/uploads/Publikationen_und_Onepager/PTF_Handbuch_2026.pdf (31 S., lokal extrahiert) | 13.11.2026 | Bestandsprojekte zulässig bei klarer Abgrenzung; „Verbesserung der bestehenden Software nicht ausreichend"; Max. Förderung 47.500 €/Person (Handbuch S.~870 des Textextrakts) | VERIFIED |
-| S6 | Eigenanteil ≥ 5 % des Gesamtaufwands (47.500 € + 2.500 €) | **UPGRADED zu VERIFIED (13.11.2026, Revalidierung):** FAQ Förderung 02 („Förderbetrag entspricht immer maximal 95 % … mindestens 5 % Eigenanteil — eure Zeit") + RL Nr. 4/5 (95 %; Gesamtkosten-Cap 50.000 €; Eigenmittelnachweis per Bankunterlagen) + FAQ Auswahl 03 (Kontoauszug-Saldo) |
+| S6 | Eigenanteil ≥ 5 % der **Gesamtkosten** (nicht additiv zum Budget) | **UPGRADED zu VERIFIED (13.11.2026):** FAQ Förderung 02 („Förderbetrag entspricht immer maximal 95 % … mindestens 5 % Eigenanteil — eure Zeit") + RL Nr. 4/5 (95 %; Gesamtkosten-Cap 50.000 €; Eigenmittelnachweis per Bankunterlagen) + FAQ Auswahl 03 (Kontoauszug-Saldo). Bei 950 h + 5 % GK: EA = **2.493,75 €**; 2.500 € Konto-Saldo deckt beide Lesarten. |
 
 ## B. FormBridge (Kandidat 1)
 
@@ -34,6 +34,11 @@
 | S16 | 850-Stunden-Bewerbungsentwurf als **Draft im deutschen PTF-Portal** (nicht eingereicht) | INTERPRETATION — übernommen aus `docs/funding/research-formbridge-verwaltungsentlastung-2026-11-13.md` §8 („Stand letzter verifizierter Nachweis"; Owner-eigene Aufzeichnung); **Portal ist owner-only, Text dieser Prüfung nicht zugänglich** |
 | S17 | „offenes Reparaturevidenz- und Sicherheitsmodell", Apache-2.0-Lizenz | VERIFIED (S14/S13); fachlicher Gehalt des Modells: **UNKNOWN** (nicht öffentlich detailliert) |
 | S18 | Prior-Art-/Konkurrenz-Audit für RepairProbe | **UNKNOWN** — kein solches Dokument in verfügbaren Quellen gefunden |
+| S19 | `technical-baseline.html` (RepairProbe, Commit `163f067`, 30.10.2026): „Die aktuelle Testsuite umfasst 44 bestandene Tests." | VERIFIED (öffentliche Datei) — **widersprüchlich zu S20** |
+| S20 | `llms.txt` (RepairProbe, gleicher Commit): „… 24 bestandenen Softwaretests." | VERIFIED (öffentliche Datei) — **widersprüchlich zu S19**; die frühere Forschung zitierte 44 |
+| S21 | BMFTR-Richtlinie „Software Sprint", 07.11.2024, BAnz AT 15.11.2024 B4 — https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2024/11/2024-11-15-bekanntmachung-software-sprint.html | VERIFIED (live, 13.11.2026); Nr. 4/5 wörtlich geprüft |
+| S22 | 1. Änderung (BAnz AT 01.12.2025 B4) und 2. Änderung (BAnz AT 25.06.2026 B4) — URLs im [Quellenregister](source-register-2026-11-13.md) | VERIFIED (live, 13.11.2026); Nr. 5 unberührt |
+| S23 | PTF-FAQ (28 Blöcke), Detailseite, Innovationsseite, Handbuch Jahrgang 03 — URLs im [Quellenregister](source-register-2026-11-13.md) | VERIFIED (live, 13.11.2026); 10-Monats-Option und 47.500/47.381,25-Differenz dokumentiert |
 
 ## D. Vertraulichkeit
 

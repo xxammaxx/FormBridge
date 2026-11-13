@@ -2,6 +2,8 @@
 
 **Datum:** 13.11.2026 · **Gegenstand:** Verifizierung der Förderregeln-Forschung (funding-rules-verified-2026.md, financial-model.md, eligibility-decision-tree.md, remaining-questions.md) · **Gate-Charakter:** PASS nur bei vollständiger, unabhängiger Bestätigung; offene Punkte bleiben UNKNOWN.
 
+> **Aktueller Stand (Revalidierungsrunde 3, 13.11.2026):** Das frühere Testskript war **nicht im Repository archiviert**; die berichteten „56/57" waren daher nicht reproduzierbar. Revision 4 ersetzt sie durch eine archivierte, vollständige Suite mit **102/102 PASS** ([`validation/test-output.txt`](validation/test-output.txt)). Zusätzlich korrigiert: Second-Stage-31.650-€-Fehler, 10-Monats-Option, rollierende De-minimis-Frist, 3-Jahres-Aufbewahrung, RepairProbe-Testzahl (24 vs. 44). Die unabhängigen Reviews A/B der Runde 3 stehen in [`review-A-financial-2026-11-13.md`](review-A-financial-2026-11-13.md) und [`review-B-funding-2026-11-13.md`](review-B-funding-2026-11-13.md); die Zusammenfassung in [`final-validation-report.md`](final-validation-report.md). V1–V8 unten sind **historisch** und gelten nur, soweit sie nicht durch R3 überschrieben sind.
+
 ## V1 — Quellenvalidierung
 
 Durchgeführte Eigen-Verifikation (vor den unabhängigen Reviews):
@@ -19,7 +21,7 @@ Unabhängige Prüfung: **Reviewer A** (Auftrag: jede Schlussfolgerung widerlegen
 ## V3 — Finanzvalidierung
 
 - **Runde 1:** 18/18 Arithmetik-Prüfungen OK — **aber:** die Prüfungen deckten einzelne Figuren ab, **nicht** die Identitätslogik; Modell A war strukturell fehlerhaft (Finanzierungsidentität verletzt) und wurde erst durch den externen Befund aufgedeckt. Ursache dokumentiert in financial-model.md §6.
-- **Runde 2:** Modell v3 (Kosten-/Finanzierung getrennt); **56/57 automatisierte Tests bestanden** (1 Test-Skript-Bug — falsche Test-Basis 50.000/1,05 statt 47.500/1,05 — korrigiert und separat re-verifiziert: Rundungs-Fußnote 2.261,90 korrekt); Negativ-Test „altes Modell A verletzt K3" bestanden; Second-Stage-3-Frame-Tests bestanden; De-minimis-Clamp-Test bestanden; Ratenhebel-Boundary (R = 50,1256 €/h → G = 50.000) bestanden.
+- **Runde 2 (historisch):** Modell v3 (Kosten-/Finanzierung getrennt); **56/57 automatisierte Tests bestanden** (1 Test-Skript-Bug — falsche Test-Basis 50.000/1,05 statt 47.500/1,05 — korrigiert und separat re-verifiziert: Rundungs-Fußnote 2.261,90 korrekt); Negativ-Test „altes Modell A verletzt K3" bestanden; Second-Stage-3-Frame-Tests bestanden; De-minimis-Clamp-Test bestanden; Ratenhebel-Boundary (R = 50,1256 €/h → G = 50.000) bestanden. **Dieses Skript war nicht im Repo; die Zahl ist nicht reproduzierbar und wird durch R3 ersetzt.**
 - Unabhängige Neuberechnung: **Reviewer A2 (M1–M10)** — Finanzkern cent-exakt bestätigt nach Fix R2-1; **Reviewer B2 (K1–K8)** — Methodik gegen RL/FAQ/Handbuch bestätigt.
 - Ergebnis: **PASS mit dokumentierter offener Berechnungslogik-Frage (Q3)** — konservative Planung 47.381,25 €.
 
@@ -180,13 +182,15 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 ## Rest-UNKNOWN (bewusst offen)
 
-1. Persönliche Antragsberechtigung (M1–M9 im Entscheidungsbaum) — Owner-Nachweise.
+1. Persönliche Antragsberechtigung (M1–M9 im Entscheidungsbaum) — Owner-Nachweise; Klassifikation in [owner-questions-status.md](owner-questions-status.md).
 2. Q1: Mehrere gleichzeitige Förderungen — nur PTF verbindlich.
 3. Q2: Selbstständigkeit ab Förderbeginn — nur PTF verbindlich.
-4. Q3: GK-Pauschale-Modell (A/B) im Portal — Portal-Check.
-5. Q4: Erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" — weich, PTF-optional.
-6. Rechtliche Nutzungsrechte Fürth-PDF (copy:no ≠ Urheberrecht) — extern, kein PTF-Thema.
-7. Reisekosten für Pflichttermine (Berlin) — in extrahierten Quellen nicht geregelt.
+4. Q3: 47.500 € vs. 47.381,25 € — öffentlich nicht auflösbar; [Q3-Analyse](q3-clarification.md).
+5. Q3b: Second Stage 31.667 € vs. 31.570,87 € — öffentlich nicht auflösbar.
+6. Q4: Erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" — weich, PTF-optional.
+7. Rechtliche Nutzungsrechte Fürth-PDF (copy:no ≠ Urheberrecht) — extern, kein PTF-Thema.
+8. Reisekosten für Pflichttermine (Berlin) — in extrahierten Quellen nicht geregelt.
+9. 10-Monats-Option: Portalverfügbarkeit für die Innovationslinie — Detailseite vs. Innovationsseite; im Portal prüfen.
 
 ## **GATE-ERGEBNIS: VALIDATION_PASS** (mit dokumentierten Rest-UNKNOWNs)
 
@@ -196,4 +200,63 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 > — Regeln und Dokumentation sind quellenfest; die **exakte offizielle Berechnungslogik** (FAQ-Kommunikation 47.500 € vs. strikte 95-%-Rechnung 47.381,25 €) bleibt offen (Q3) und wird konservativ geplant. Kein uneingeschränkter PASS, solange Q3 ungeklärt ist.
 
 **Wichtige Einordnung:** VALIDATION_PASS bedeutet: Die Förderregeln-Recherche ist quellenfest, die Berechnungen stimmen, die Dokumentation ist konsistent und die Abgrenzung ist sauber. Es bedeutet **nicht**: Förderung bewilligt, persönliche Förderfähigkeit bestätigt (M1–M9 offen) oder Jury-Entscheid vorhersehbar.
+
+## Revalidierungsrunde 3 — Reproduzierbarkeit, Second Stage, 10 Monate (13.11.2026)
+
+### R3-1 — Befund: Testskript nicht archiviert
+
+Die frühere Dokumentation berichtete „56/57" bzw. „61/61" Tests, ohne das Skript im Repository zu hinterlegen. Ein unabhängiger Prüfer konnte die Tests daher **nicht** nachvollziehen. Das ist ein Reproduzierbarkeitsmangel, kein Rechenfehler.
+
+**Korrektur:** [`validation/financial_model.py`](validation/financial_model.py), [`validation/test_financial_model.py`](validation/test_financial_model.py), [`validation/test-output.txt`](validation/test-output.txt), [`validation/scenario-report.md`](validation/scenario-report.md) und [`validation/RUNBOOK.md`](validation/RUNBOOK.md) sind archiviert. Befehl:
+
+```bash
+python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v
+```
+
+**Ergebnis:** `Ran 102 tests … OK` — **102/102 PASS**. Der Testumfang ist gegenüber der historischen Zahl 57 gewachsen, weil gezielte Regressionen ergänzt wurden (u. a. Second Stage, De-minimis-Kombination, 10-Monats-Cap, 50,125313-€/h-Schwelle, Floor-vs-Half-up). Es wurden **keine** Erwartungswerte abgeschwächt.
+
+### R3-2 — Befund: Second-Stage-31.650-€-Fehler
+
+Die v3-Dokumentation bezeichnete „31.650 € (633 h × 50 €)" als konservative **Förderung**. Das ist eine Kategorienverwechslung: 31.650 € sind **Personalkosten**. Bei 5 % GK und 95 % Förderung ergibt sich **31.570,87 €** (633 h) bzw. **31.620,75 €** (634 h). Der theoretische Cap bei 33.337 € Gesamtkosten ist 31.670,15 €. Die FAQ-Zahl 31.667 € ist eine gerundete Näherung; die Differenz zu 633 h beträgt 96,13 €.
+
+**Korrektur:** [Finanzmodell v4](financial-model.md) Szenario G; [Q3](q3-clarification.md) §5; Tests `TestSecondStage` (11 Tests). Die alte 31.650-€-Aussage ist an allen aktuellen Stellen entfernt/als falsch markiert.
+
+### R3-3 — Befund: 10-Monats-Option fehlte
+
+RL Nr. 4 erlaubt 10 Monate (6 + 4); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt gerundet 79.167 €. Die frühere Dokumentation erwähnte die Option nicht.
+
+**Korrektur:** [Finanzmodell v4](financial-model.md) Szenario I; [Quellenregister](source-register-2026-11-13.md) R2/R4; Tests `TestTenMonth` (9 Tests). Die 6-Monats-Baseline bleibt unverändert.
+
+### R3-4 — Befund: De-minimis war zu eng formuliert
+
+Die frühere Dokumentation sagte „Kalenderjahre" und „10 Jahre Aufbewahrung". Die VO (EU) 2023/2831, Art. 3 Abs. 2 und Erwägungsgrund 11, sagt **rollierender Dreijahreszeitraum**; die RL-Anlage sagt **mindestens 3 Jahre** Aufbewahrung. Die 10-Jahres-Angabe ist ohne AZK-Prüfung nicht belegt.
+
+**Korrektur:** [Finanzmodell v4](financial-model.md) Szenario H; [Quellenregister](source-register-2026-11-13.md) R7/R8; Tests `TestDeminimis` (8 Tests).
+
+### R3-5 — Befund: RepairProbe-Testzahl widersprüchlich
+
+Die frühere Forschung zitierte „44-Test-Python-Baseline". Die öffentliche Website nennt an einer Stelle 44, `llms.txt` nennt 24 (gleicher Commit). Das private Repo ist nicht einsehbar.
+
+**Korrektur:** [Vergleichsbericht](comparison-report.md) und [Scoring-Matrix](scoring-matrix.md) schreiben „24–44, nicht unabhängig verifiziert". Das ist eine Evidenzgrenze, keine Abwertung der RepairProbe-Arbeit.
+
+### R3-6 — Befund: Namensabgrenzung Feldexa 2.0 vs. FormBridge
+
+Die frühere Dokumentation sprach von „FormBridge vs. RepairProbe", während der Auftrag „Feldexa 2.0 vs. RepairProbe" lautet. FormBridge ist das förderfähige Infrastrukturmodul im Feldexa-Kontext; Feldexa 2.0 ist die Produktanwendung.
+
+**Korrektur:** [Vergleichsbericht](comparison-report.md) §0 mit F1/F2/F3/RP; [Entscheidungsbericht](../decision-report.md) Namensabgrenzung; [Owner-Fragen](owner-questions-status.md).
+
+### R3-7 — Gate-Ergebnis
+
+| Kriterium | Status |
+|---|---|
+| Alle Berechnungen cent-exakt und reproduzierbar | ✅ 102/102 Tests, unabhängige Reviews A/B (Runde 3) |
+| 47.500 vs. 47.381,25 | ⚠️ **UNRESOLVED**, konservativ 47.381,25; Differenz 118,75; Anfrageentwurf |
+| Second Stage | ✅ korrigiert (31.570,87 / 31.620,75); Q3b offen |
+| 10-Monats-Option | ✅ dokumentiert (Szenario I); Kommunikationsinkonsistenz offen |
+| De-minimis | ✅ rollierend, 3 Jahre; Szenario H |
+| RepairProbe-Evidenz | ✅ 24–44-Widerspruch offengelegt; keine privaten Inhalte |
+| Persönliche Förderfähigkeit | ⚠️ M1–M9 offen (Owner) |
+| Q3 blockiert Einreichung? | **Nein**, bei konservativer Planung; ja nur für Maximalausschöpfung |
+
+**R3-Gate:** **VALIDATED_WITH_OPEN_QUESTIONS** — die Rechnungen und die Dokumentation sind konsistent; Q3/Q3b bleiben als nicht blockierende, quantifizierte Unsicherheiten offen. Kein uneingeschränkter PASS, solange Q3 ungeklärt ist.
 

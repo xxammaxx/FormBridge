@@ -3,6 +3,8 @@
 **Reviewer:** separater Agent-Prozess mit Auftrag „widerlege die Innovations- und Förderargumente von RepairProbe"; alle RepairProbe-Quellen selbstständig neu abgerufen und verbatim verifiziert; PTF-Kriterien von prototypefund.de gezogen; Websuche nach Konkurrenz.
 **Datum:** 13.11.2026 · **Datenschutz:** nur öffentliche Quellen; privates Repo/Portal-Entwurf nicht einsehbar.
 
+> **Korrektur-Marker (13.11.2026, Runde 3):** Die im Dokument genannte „44-Test-Baseline" ist öffentlich nicht eindeutig. `technical-baseline.html` nennt 44, `llms.txt` nennt 24 (gleicher Commit). Das private Repo ist nicht einsehbar. Der aktuelle Vergleich verwendet **„24–44, nicht unabhängig verifiziert"**. Der Befund „Baseline vorhanden" bleibt, die exakte Zahl nicht.
+
 ## Angriffsvektoren → Urteile → Restrisiko
 
 | # | Vektor | Urteil | Restrisiko |

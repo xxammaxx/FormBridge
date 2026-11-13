@@ -22,7 +22,7 @@ P5 FOSS-Zusage im Antrag möglich? (Lizenz muss NICHT zur Bewerbung feststehen; 
    ↓ JA (nach Owner-Entscheidung A1)
 P6 Hoher Entwicklungsanteil + realistische Stundenplanung?
    → 6-Monatsplan mit messbaren Abnahmekriterien; Stunden im angemessenen Verhältnis (Handbuch Frage 14: 250–950 h; Jury bewertet Realismus).
-   ↓ JA (Empfehlung: 700–950 h; Förderhöhe streng gerechnet siehe financial-model.md v2, Szenarien D/B)
+   ↓ JA (Empfehlung: 700–950 h; Förderhöhe streng gerechnet siehe financial-model.md v4, Szenarien D/B)
 → PROJEKTSEITIG: Alle öffentlich prüfbaren Voraussetzungen erfüllt bzw. vorbereitet.
 ```
 
@@ -59,4 +59,4 @@ M9 (Optional) Second Stage beantragen? Nur JETZT entscheidbar; keine Code-Meilen
 
 ## Verhältnis zur bisherigen Empfehlung
 
-Die Förderentscheidung FORMBRIDGE (comparison-report.md) basierte auf Projektvergleich. Dieser Baum bestätigt: Es existiert **keine** öffentliche Regel, die FormBridge ausschließt; die offenen Punkte sind ausschließlich persönlich (M1–M9) und zum Teil nur durch PTF-Anfrage auflösbar.
+Die bedingte Empfehlung F3 (FormBridge im Feldexa-Kontext, comparison-report.md) basierte auf Projektvergleich. Dieser Baum bestätigt: Es existiert **keine** öffentliche Regel, die FormBridge ausschließt; die offenen Punkte sind ausschließlich persönlich (M1–M9) und zum Teil nur durch PTF-Anfrage auflösbar. Die detaillierte Klassifikation steht in [owner-questions-status.md](owner-questions-status.md).
