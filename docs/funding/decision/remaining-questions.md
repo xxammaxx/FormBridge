@@ -18,13 +18,13 @@
 - **Verbindlich nötig?** Ja — harte formale Hürde.
 - **Abhängige Entscheidung:** A2 (PTF-Query) und ggf. Gewerbeanmeldung-Timing.
 
-## Q3 — Eigenanteil-Buchungslogik: GK-Pauschale vs. 950 h/47.500-€-Frame (F1/W2)
+## Q3 — Berechnungslogik: FAQ-Kommunikation (950 h × 50 € = 47.500 €) vs. strenge 95-%-Regellogik (F1/W2, financial-model.md v2)
 
-- **Bekannt:** 95 %-Quote; Eigenanteil = „Zeit" + Kontoauszug-Nachweis; 950 h × 50 € = 47.500 €; GK-Pauschale bis 5 % der PK; Gesamtkosten-Cap 50.000 €.
-- **Fehlt:** Ob das Portal GK-Pauschale **innerhalb** der 47.500-€-Förderung rechnet (dann max. ~904 h, Modell B) oder die FAQ-Modell-A-Lesart (47.500 € reine Personalkosten, GK entfällt/sekundär) gilt.
-- **Relevanz:** Bestimmt die maximale Antragshöhe und Stundenplanung (950 vs. ~904 h) — Differenz ~46 h ≈ 2.300 €.
-- **Verbindlich nötig?** Nein für die Einreichung (Modell A = FAQ-Lesart ist absicherbar; weniger Stunden beantragen ist immer zulässig), Ja für Maximalausnutzung.
-- **Abhängige Entscheidung:** Antragshöhe/Zeitplanung.
+- **Bekannt:** FAQ Förderung 01 nennt die Maximalfördersumme 47.500 € „950 Arbeitsstunden mit einem Stundensatz von 50 €"; RL Nr. 5 sagt Förderung = 95 % der Gesamtkosten (PK+GK, Cap 50.000 €); FAQ Förderung 02 sagt GK-Pauschale = 5 % **der Personalkosten** (→ 2.375 €) und Eigenanteil = mind. 5 %.
+- **Fehlt:** Die exakte Kombination: Bei GK = 5 % × PK beträgt die max. Förderung streng **47.381,25 €** (G = 49.875 €). Die kommunizierten 47.500 € erfordern G = 50.000 € — dazu müsste GK 2.500 € sein (5 % des Gesamtbudgets statt der PK) oder die FAQ kommuniziert vereinfacht. Differenz: 118,75 €.
+- **Relevanz:** Bestimmt die max. Antragshöhe (~118 €) und die Stundenplanung (950 h in beiden Fällen zulässig — nur der Förderbetrag unterscheidet sich).
+- **Verbindlich nötig?** Nein für die Einreichung (konservativ planen: 47.381,25 €; weniger beantragen ist immer zulässig), Ja für Maximalausnutzung.
+- **Abhängige Entscheidung:** Antragshöhe/Zeitplanung (financial-model.md v2 §5).
 
 ## Q4 — „Vorarbeiten und umfassende Kenntnisse" — Erwarteter Nachweisgrad (F7)
 

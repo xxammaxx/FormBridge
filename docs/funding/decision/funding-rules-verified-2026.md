@@ -25,7 +25,7 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 | F1.4 Nachweis: „über weitere Einkünfte (z. B. Arbeitsverhältnis, Aufträge) oder Rücklagen" | FAQ Förderung 02 | VERIFIED |
 | F1.5 Formaler Nachweis bei Bewilligung: **„Kontoauszug (mindestens Saldo des Eigenanteils des Projektumfangs)"**; RL: „bonitätsprüfungsfähige Unterlagen (zum Beispiel Bankerklärungen über die entsprechende Höhe)" | FAQ Auswahl 03; RL Nr. 4 | VERIFIED — **Nuance:** konzeptionell Zeit, formal Liquiditätsnachweis via Kontoauszug; beides gilt nebeneinander |
 | F1.6 Geltung für Jahrgang 03/Innovation | RL gilt bis 30.06.2031 (Ä2 Nr. 8); Stichtag 30.11.2026 in RL gelistet | VERIFIED |
-| F1.7 Bemessungsgrundlage des 5 %-Anteils: Gesamtkosten (PK+GK) | Folgt aus F1.1+F1.2 (95 % von PK+GK) | INTERPRETATION (konsistente Lesart; PTF-FAQ rechnet exemplarisch 950 h × 50 € = 47.500 € als Förderbetrag → Gesamt 50.000 €) |
+| F1.7 Bemessungsgrundlage des 5 %-Anteils: Gesamtkosten (PK+GK) | Folgt aus F1.1+F1.2 (95 % von PK+GK) | VERIFIED als Regel (RL Nr. 5) — **ABER:** die FAQ-Kommunikation „950 h × 50 € = 47.500 € Förderbetrag" ist mit der strikten 95-%-Regellogik (95 % × (PK+GK)) nur vereinbar, wenn GK = 2.500 € (5 % des Gesamtbudgets) gesetzt wird; bei GK = 5 % × PK (2.375 €) beträgt die max. Förderung streng gerechnet **47.381,25 €** (G = 49.875 €). Mehrdeutigkeit → **W2, financial-model.md v2 Szenario E, Q3** |
 | F1.8 Eigene Arbeitszeit als Eigenanteil anrechenbar (statt Geld) | FAQ sagt „eure Zeit"; RL verlangt Bank-Nachweis der Höhe | INTERPRETATION: Zeit konzeptionell ja; formal wird ein Kontosaldo ≥ Eigenanteilshöhe verlangt (F1.5) — praktische Konsequenz im financial-model.md |
 | F1.9 Wann erbracht? | Kontoauszug gehört zur Bewilligungs-Unterlagen-Checkliste (nach Jury-Auswahl) | VERIFIED (Zeitpunkt: formale Antragstellung) |
 | F1.10 Budget-Auswirkung | siehe financial-model.md (Rechenbeispiele) | — |
@@ -82,7 +82,7 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 
 | Claim | Evidenz | Status |
 |---|---|---|
-| Max. Förderung Einzelperson 6 Monate: **47.500 €** | FAQ Förderung 01 + /innovation + RL (95 % × 50.000 €) | VERIFIED |
+| Max. Förderung Einzelperson 6 Monate: **47.500 € kommuniziert**; streng gerechnet (950 h + GK 5 % PK) max. **47.381,25 €** — Differenz 118,75 €, Portal-Klärung offen | FAQ Förderung 01 + /innovation + RL (95 % × 50.000 €) + financial-model.md v2 (Szenarien A–E) | VERIFIED (kommunizierter Wert + strenge Rechnung getrennt ausgewiesen) |
 | **950 h max; 50 €/h** explizit | Handbuch Frage 14 („max. 950 h"); FAQ Förderung 01 („950 Arbeitsstunden mit einem Stundensatz von 50 €") | VERIFIED |
 | Mindeststunden ~250 h (Admin-Aufwand-Arg) | Handbuch Frage 14 | VERIFIED |
 | Höherer Stundensatz möglich bei Nachweis höherer Rechnungen (dann weniger Stunden) | FAQ Förderung 01 | VERIFIED |
@@ -114,7 +114,7 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 | # | Spannung | Behandlung |
 |---|---|---|
 | W1 | FAQ („Eigenanteil = eure Zeit") vs. RL/Checkliste (Bank-Nachweis/Kontoauszug über die Höhe) | Beide Ebenen dokumentiert (F1.3 vs. F1.5); praktische Konsequenz im financial-model.md; Restklärung im Portal |
-| W2 | FAQ-Modell (950 h × 50 € = 47.500 € Förderung) vs. RL-Struktur (95 % von PK+GK ≤ 47.500) — wie zählt die GK-Pauschale (5 % PK) in den 950-h-Frame? | Zwei Rechenmodelle (M-A/M-B) im financial-model.md; Portal-Check verbleibt |
+| W2 | FAQ-Modell („Maximalfördersumme = 950 h × 50 € = 47.500 €") vs. RL-Struktur (F = 95 % × (PK+GK)) — **exakt unvereinbar** bei GK = 5 % × PK: strenge Rechnung liefert 47.381,25 € (G = 49.875 €); die 50.000-€-Grenze ist unter 950-h-Cap + GK-5 %-PK nicht konstruierbar (Modell C unmöglich; PK müsste 47.619,05 € = 952,38 h sein) | **Revidiert in financial-model.md v2:** altes Modell A/B hatte Finanzierungsidentität verletzt (F = 100 % der Kosten). Neue Trennung: Kostenrechnung/Finanzierung; FAQ-Lesart als Szenario E isoliert; konservative Antragsempfehlung 47.381,25 €; Portal-Klärung verbleibt (Q3) |
 | W3 | RL Ä2 (2026): 3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer" vs. PTF-Innovations-Seite (2 Bereiche) | Beide Zitate getrennt; für die Bewerbung zählt das Portal-/Linienprofil (2 Bereiche); 3. Feld ist Relevanz-Kontext |
 | W4 | Second-Stage-Grenzen: FAQ „31.667 € ≈ gerundet 633 h" (633×50=31.650) vs. RL „33.337 € Gesamtkosten" (95 % = 31.670) | Rundungsinkonsistenz dokumentiert; ohne Förderrelevanz (<20 €) |
 | W5 | Ältere Nebenquelle (Review B vom 13.11. Vormittag): „FOSS-Veröffentlichung 1 Monat nach Förderbeginn" | **CONTRADICTED/UNVERIFIED** — keine Primärquelle stützt „1 Monat"; FAQ/RL sagen „zum Projektabschluss"; Korrektur in sources-evidence-Doku vorgenommen |

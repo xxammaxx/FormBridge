@@ -22,7 +22,7 @@ P5 FOSS-Zusage im Antrag möglich? (Lizenz muss NICHT zur Bewerbung feststehen; 
    ↓ JA (nach Owner-Entscheidung A1)
 P6 Hoher Entwicklungsanteil + realistische Stundenplanung?
    → 6-Monatsplan mit messbaren Abnahmekriterien; Stunden im angemessenen Verhältnis (Handbuch Frage 14: 250–950 h; Jury bewertet Realismus).
-   ↓ JA (Empfehlung: 700–900 h je nach Modell A/B, siehe financial-model.md)
+   ↓ JA (Empfehlung: 700–950 h; Förderhöhe streng gerechnet siehe financial-model.md v2, Szenarien D/B)
 → PROJEKTSEITIG: Alle öffentlich prüfbaren Voraussetzungen erfüllt bzw. vorbereitet.
 ```
 
@@ -44,7 +44,7 @@ M6 De-minimis-Historie: < 300.000 € Beihilfen in den letzten 3 Jahren (alle �
    → De-minimis-Erklärung wird bei Bewilligung verlangt. [RL Nr. 1.3/5 + EU-VO]
 M7 Kapazität: ~159–167 h/Monat real leistbar (6 Monate); bei Teilzeit-Anstellung Arbeitsschutz-Grenzen?
    → [FAQ Förderung 01; Handbuch]
-M8 Kontoauszug mit Saldo ≥ Eigenanteil (2.500 € bei Modell A) verfügbar/beschaffbar zur Bewilligung?
+M8 Kontoauszug mit Saldo ≥ Eigenanteil (streng gerechnet 2.493,75 € bei 950 h; **2.500 € deckt alle Lesarten ab**) verfügbar/beschaffbar zur Bewilligung?
    → [FAQ Auswahl 03; RL Nr. 4]
 M9 (Optional) Second Stage beantragen? Nur JETZT entscheidbar; keine Code-Meilensteine dort.
    → [Handbuch Frage 16]

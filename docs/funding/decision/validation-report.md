@@ -50,11 +50,30 @@ Nach allen Fixes: Link-Check (0 broken), Zahlen-Konsistenz (Matrix vs. financial
 Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; keine unaufgelösten Widersprüche; beide Reviews abgeschlossen; Fehler korrigiert + revalidiert; persönliche/nicht veröffentlichte Bedingungen ausdrücklich UNKNOWN.
 - **Gate-Ergebnis:** siehe unten.
 
-## Review-Ergebnisse
+## Revalidierungsrunde 2 — Finanzmodell-Korrektur (13.11.2026, nach externem Befund)
+
+**Externer Befund (als Hypothese übernommen und geprüft):** Modell A (PK 47.500 → F 47.500 → Budget 50.000 → EA 2.500) verletze die Finanzierungsidentität: die ausgewiesenen Kosten (47.500 €) tragen nur 100 % Förderung, und die 2.500 € EA hatten keine Kostenposition. Modell B hatte dieselbe Diskrepanz (Kostenbasis 47.500 vs. „Budget" 50.000).
+
+**Prüfung gegen Primärquellen:** RL Nr. 5 („F = bis zu 95 % der Gesamtkosten PK+GK; Gesamtkosten ≤ 50.000 €") + FAQ Förderung 01 („Maximalfördersumme 47.500 € … 950 h × 50 €") + FAQ Förderung 02 („F immer maximal 95 % des Projektbudgets; mind. 5 % Eigenanteil"; „GK-Pauschale 5 % der Personalkosten") → **Befund bestätigt: Der alte Modell-A-/B-Ansatz war fehlerhaft** (F = 100 % der Kostenbasis; 50.000 € ohne Kostenpositionen). Zugleich zeigt der Abgleich eine **echte Quellen-Mehrdeutigkeit**: Die FAQ-Kommunikation (47.500 € ≙ 950 h × 50 €) ist mit der strikten 95-%-Logik nur vereinbar, wenn GK = 2.500 € (5 % des Gesamtbudgets statt der PK) angesetzt wird; bei GK = 5 % × PK (2.375 €) beträgt das strenge Maximum **47.381,25 €** (G = 49.875 €). Differenz 118,75 €; öffentlich nicht auflösbar → W2 geschärft, Q3 verbleibt.
+
+**Ursache des ursprünglichen Fehlers:** Die FAQ-Kommunikationsformel („Maximalfördersumme = 950 h × 50 €") wurde ohne Prüfung der Kostenbasis mit der RL-95-%-Struktur verrechnet; das 50.000-€-„Budget" wurde als Finanzierungsgröße behauptet, obwohl unter den 950-h-/GK-Regeln Kostenpositionen von nur 47.500 € (ohne GK) bzw. 49.875 € (mit GK) konstruierbar sind.
+
+**Korrektur (kleinste sachgerechte Änderung):** financial-model.md **v2** — strikte Trennung Kostenrechnung (G = PK + GK) und Finanzierung (G = F + EA); Szenarien A–E gem. Auftrag; FAQ-Lesart als Szenario E isoliert mit UNRESOLVED-Flag; konservative Antragsempfehlung 47.381,25 € (Szenario B); EA-Nachweis-Empfehlung 2.500 € (deckt beide Lesarten). Abhängige Dokumente aktualisiert: funding-rules (F1.7, F6-Zeile Förderbetrag, W2 geschärft), eligibility-decision-tree (P6, M8), remaining-questions (Q3 neu gefasst).
+
+**Automatisierte Tests (exakte Dezimalarithmetik, decimal-Modul; Skript+Ausgabe in der Recherche-Umgebung `financial-tests-v2-output.txt`):**
+- Identitäten K1–K8 für Szenarien A, B, D (700/800/850 h), F (200 h Teilzeit): **PASS**
+- Exakte Dokumentwerte (PK, GK, G, F, EA) je Szenario: **PASS**
+- Grenzfälle: 951 h → Stunden-Cap-Verstoß erkannt; Modell C (G = 50.000 mit GK = 5 % PK) → 952,38 h > 950, nicht konstruierbar; F-Cap 47.500 (Szenario B unterschreitet korrekt); GK > 5 % PK → Verstoß erkannt; Rundung auf Cent erhält Identität: **PASS**
+- **Negativ-Test:** Das alte Modell A (F = 47.500 bei G = 47.500) verletzt K3 (F ≤ 95 % × G) — **nachgewiesen** und damit die Korrektur begründet.
+- Ergebnis: **61/61 PASS**.
+
+**Reviewer (Revalidierungsrunde 2):** Reviewer A Finanzmathematik (R1–R6), Reviewer B Förderrecht/Kostenbasis (K1–K6) — Ergebnisse unten.
+
+## Review-Ergebnisse Runde 1 (Erstvalidierung)
 
 ### Reviewer A — Förderrecht und Finanzen (R1–R7; alle Primärquellen selbstständig abgerufen: 28 FAQ-Blöcke, RL-2024-BAnz-PDF, beide Änderungen, 31-seitiges Handbuch)
 
-| Aufgabe | Urteil | Kernbefund |
+| Aufgabe | Urteil | Kernbefund | Kernbefund |
 |---|---|---|
 | R1 Arithmetik | **SUPPORTED** | Alle 17 Zahlen verifiziert; 1 Schlampfehler in der Modell-B-Tabellenzeile (gemischt gerundete Werte) → behoben (Fix 1) |
 | R2 Eigenanteil | **SUPPORTED** | „Zeit" (FAQ) + Kontoauszug-Saldo (FAQ Auswahl 03) + Bankerklärungen (RL Nr. 4) — Liquiditätsanforderung real; W1 fair |
@@ -81,6 +100,10 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 | B9 Regression | **REFUTED** | 3 veraltete Textstellen (decision-report B2 „Feldexa" statt „FormBridge"; „(E)"-Referenz; README ohne Decision-Dokumente) + ungetrackte validation-report.md + Stray-Dir → behoben (Fix 1/2/4/5) |
 
 **Gate-B-Fazit:** Kern-Passung SUPPORTED; 9 Korrekturen erforderlich und umgesetzt (siehe unten).
+
+## Revalidierungsrunde 2 — Review-Ergebnisse (Finanzmodell)
+
+*(eingetragen nach Abschluss der beiden unabhängigen Runde-2-Reviews: A Finanzmathematik, B Förderrecht/Kostenbasis — s. unten; Vorlage finalem Bericht vorbehaltlich)*
 
 ## Korrekturen (jede: Befund → Ursache → Fix → Revalidierung)
 
@@ -129,6 +152,11 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 7. Reisekosten für Pflichttermine (Berlin) — in extrahierten Quellen nicht geregelt.
 
 ## **GATE-ERGEBNIS: VALIDATION_PASS** (mit dokumentierten Rest-UNKNOWNs)
+
+> **Änderung durch Revalidierungsrunde 2 (13.11.2026):** Das Gate-PASS der Runde 1 war mit einem fehlerhaften Finanzmodell erteilt worden (Modell A verletzte die Finanzierungsidentität; Review A R1 hatte die Zahlen einzeln, nicht die Identitätslogik geprüft). Nach Korrektur (financial-model.md v2, 61/61 Tests, inkl. Negativ-Test gegen das alte Modell) und erneuter unabhängiger Prüfung gilt:
+>
+> **AMENDIERTES GATE-ERGEBNIS: VALIDATED_WITH_OPEN_QUESTIONS**
+> — Regeln und Dokumentation sind quellenfest; die **exakte offizielle Berechnungslogik** (FAQ-Kommunikation 47.500 € vs. strikte 95-%-Rechnung 47.381,25 €) bleibt offen (Q3) und wird konservativ geplant. Kein uneingeschränkter PASS, solange Q3 ungeklärt ist.
 
 **Wichtige Einordnung:** VALIDATION_PASS bedeutet: Die Förderregeln-Recherche ist quellenfest, die Berechnungen stimmen, die Dokumentation ist konsistent und die Abgrenzung ist sauber. Es bedeutet **nicht**: Förderung bewilligt, persönliche Förderfähigkeit bestätigt (M1–M9 offen) oder Jury-Entscheid vorhersehbar.
 
