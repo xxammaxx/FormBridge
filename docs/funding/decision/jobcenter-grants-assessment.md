@@ -5,6 +5,8 @@
 
 ## 0. Begriffe (2026)
 
+**Abkürzungen:** GSG = Grundsicherungsgeld (früher Bürgergeld); BG = Bedarfsgemeinschaft; ESG = Einstiegsgeld; GZ = Gründungszuschuss.
+
 - Das **Bürgergeld** wird nach der BA-Seite vom **Grundsicherungsgeld** abgelöst; die Änderungen gelten **ab 01.07.2026**. Formulare/Online-Services können weiter „Bürgergeld" heißen. Die Rechtsgrundlagen §§16b/16c SGB II bleiben maßgeblich.
 - **PTF-Zuwendung:** projektbezogene Förderung (Personal- + Gemeinkosten), **kein frei verfügbares Nettoeinkommen**.
 - **Einstiegsgeld/Gründungszuschuss:** Leistungen zur Sicherung des Lebensunterhalts/sozialen Sicherung, nicht Projektkostenförderung.
@@ -44,7 +46,7 @@
 | Punkt | Regel | Status |
 |---|---|---|
 | Zielgruppe | Arbeitnehmer*innen, die durch **selbstständige, hauptberufliche** Tätigkeit die Arbeitslosigkeit beenden | **Gesetz** |
-| ALG-I-Anspruch | Bei Aufnahme der Selbstständigkeit noch **mindestens 150 Tage** ALG-I-Anspruch (Ausnahme: Menschen mit Behinderung nach §19 SGB III) | **Gesetz/BA** |
+| ALG-I-Anspruch | Bei Aufnahme der Selbstständigkeit noch **mindestens 150 Tage** ALG-I-Anspruch (Ausnahme: Menschen mit Behinderung nach §19 SGB III; nicht allein auf §147 Abs. 3 beruhend) | **Gesetz/BA** |
 | Hauptberuflichkeit | mindestens **15 h/Woche**; weitere Tätigkeiten dürfen zeitlich nicht überwiegen | **BA** |
 | Tragfähigkeit | Stellungnahme einer fachkundigen Stelle (IHK/HWK/Bank/Fachverband/Steuerberatung etc.) | **Gesetz/BA** |
 | Kenntnisse | Nachweis der Kenntnisse/Fähigkeiten | **Gesetz** |
@@ -52,12 +54,13 @@
 | Höhe Phase 1 | 6 Monate: zuletzt bezogenes ALG I + **300 €/Monat** | **Gesetz/BA** |
 | Höhe Phase 2 | weitere 9 Monate: **300 €/Monat**, separater Antrag + Nachweis der Geschäftstätigkeit | **Gesetz/BA** |
 | Rechtsanspruch | **nein** — Ermessensleistung | **BA** |
+| Ruhen/Sperrfrist | §§93 Abs. 3/4 SGB III: Ruhenstatbestände; 24-Monats-Sperrfrist nach früherer Gründungsförderung | **Gesetz** |
 | Steuer | GZ ist **nicht einkommensteuerpflichtig** | **BA** |
 | Kombination mit ALG I | GZ ersetzt ALG I; nicht parallel | **Gesetz/BA** |
 
 ## 3. Kombination mit dem Prototype Fund
 
-**Gesichert:** Es gibt **keine öffentliche PTF-Regel**, die eine Kombination mit Einstiegsgeld/Gründungszuschuss ausdrücklich erlaubt oder verbietet. Die Leistungen haben unterschiedliche Zwecke:
+**Gesichert:** In den abgerufenen Quellen wurde **keine öffentliche PTF-Regel** gefunden, die eine Kombination mit Einstiegsgeld/Gründungszuschuss ausdrücklich erlaubt oder verbietet. Die Leistungen haben unterschiedliche Zwecke:
 - PTF: projektbezogene Personal-/Gemeinkosten (95 %).
 - Einstiegsgeld/GZ: Lebensunterhalt/soziale Sicherung.
 
@@ -68,23 +71,28 @@
 4. Beeinflusst der PTF-Zuschuss die **Tragfähigkeitsprüfung** positiv/negativ?
 5. Ist der PTF-Zuschuss **De-minimis-Beihilfe**, und wie wird er mit anderen Beihilfen kumuliert? (Einstiegsgeld/GZ sind sozialrechtliche Leistungen; keine pauschale Aussage.)
 6. Führt die PTF-Zuwendung zu **Sozialversicherungs-/Steuerpflichten** (Einkommensteuer, Krankenversicherung)?
+7. **GZ-Sonderfall:** §§93–94 SGB III sind keine Bedarfsleistung; eine Einkommensanrechnung wie bei Grundsicherungsgeld ist dort nicht vorgesehen. Die PTF-Zuwendung kann aber bei **Erforderlichkeit/Ermessen** und bei der **Tragfähigkeit** relevant sein. Getrennt prüfen, nicht mit GSG/ESG gleichsetzen.
 
-**Regel:** Keine pauschale Aussage „kumulierbar" oder „nicht kumulierbar". Vor Aufnahme der Tätigkeit **schriftlich** Jobcenter/Agentur für Arbeit und PTF fragen; keine Anträge ohne diese Klärung.
+**Regel:** Keine pauschale Aussage „kumulierbar" oder „nicht kumulierbar". Vor Aufnahme der Tätigkeit **schriftlich** Jobcenter/Agentur für Arbeit und PTF fragen; keine Anträge ohne diese Klärung. **ESG und GZ sind systembedingt nicht gleichzeitig** (Grundsicherungsgeld vs. ALG I). Bei Wegfall von Grundsicherungsgeld ist **Wohngeld** als Auffangleistung zu prüfen; §16c-Darlehen sind eine separate Sachgüter-Option.
+
+**Sequenz:** Finanzamt-Registrierung ist nicht automatisch „Aufnahme“ der hauptberuflichen Tätigkeit. Geplanter Beginn ist 01.06.2027; vorher keine ≥15 h/Woche und keine Umsätze. Einstiegsgeld/GZ müssen **vor** Aufnahme beantragt werden — daher Beratung/Antrag Jan–Mai 2027, nicht erst nach der Registrierung.
 
 ## 4. Szenarien (ohne persönliche Beträge)
 
 | Szenario | PTF | Ergänzende Leistung | Gesichert | Offen |
 |---|---|---|---|---|
-| **BG + PTF** | 47.381,25 € Projektförderung | ggf. aufstockendes Grundsicherungsgeld | PTF-Projektkosten; BG ist bedarfsgeprüft | Anrechnung der PTF-Zuwendung; Freibeträge; Meldepflichten |
-| **BG + Einstiegsgeld + PTF** | 47.381,25 € | Einstiegsgeld (Ermessen, max. 24 Mon.) | Einstiegsgeld nicht auf BG angerechnet (BA) | PTF-Anrechnung; Doppelförderung; Tragfähigkeit; Antrag vor Start |
+| **GSG + PTF** | 47.381,25 € Projektförderung | ggf. aufstockendes Grundsicherungsgeld | PTF-Projektkosten; GSG ist bedarfsgeprüft | Anrechnung der PTF-Zuwendung; Freibeträge; Meldepflichten |
+| **GSG + Einstiegsgeld + PTF** | 47.381,25 € | Einstiegsgeld (Ermessen, max. 24 Mon.) | Einstiegsgeld nicht auf GSG angerechnet (BA) | PTF-Anrechnung; Doppelförderung; Tragfähigkeit; Antrag vor Start |
 | **ALG I + GZ + PTF** | 47.381,25 € | GZ 6 Monate ALG I + 300 €, dann 9 × 300 € | GZ ersetzt ALG I; 150-Tage-Voraussetzung | PTF-Anrechnung; Doppelförderung; GZ-Antrag vor Start; Tragfähigkeit |
 | **PTF ohne Gründungsförderung** | 47.381,25 € | keine | Projektkosten; Eigenanteil 2.493,75 € | Lebensunterhalt/Vorfinanzierung aus eigenen Mitteln; Cash-Peak 25.353,13 € |
 
 **Wichtig:** Die PTF-Zuwendung ist **nicht** mit 47.381,25 € Nettoeinkommen gleichzusetzen. Sie deckt projektbezogene Kosten; der Eigenanteil und die Lebenshaltung sind separat zu finanzieren.
 
+**Anrechnungsanker (SGB II):** §11a Abs. 3 SGB II stellt klar, dass zweckbestimmte öffentlich-rechtliche Leistungen nur anrechenbar sind, soweit sie demselben Zweck dienen; §11b SGB II regelt notwendige Ausgaben und Freibeträge. Ob die PTF-Zuwendung danach (teilweise) Einkommen ist, ist **individuell** zu prüfen. Für den **Gründungszuschuss** gilt diese Bedarfsanrechnung nicht; dort sind Erforderlichkeit/Ermessen und Tragfähigkeit die relevanten Hebel.
+
 ## 5. Liquidität und Vorfinanzierung
 
-- PTF zahlt **nachlaufend** zu Quartalsbeginn; kumulativer Cash-Peak **25.353,13 €** (950 h).
+- PTF zahlt **nachlaufend** zu Quartalsbeginn; kumulativer **Projekt-Cash-Peak 25.353,13 €** (950 h). Lebenshaltung, Krankenversicherung und Reisekosten sind **nicht enthalten**.
 - Eigenanteil **2.493,75 €**; Kontoauszug **2.500 €** empfohlen.
 - Einstiegsgeld/GZ können die Lebenshaltung überbrücken, aber **nicht** den Projekt-Cash-Peak.
 - Eine Förderzusage ersetzt keine **Zwischenfinanzierung**; Kontoauszug/Bankengespräch nötig.
@@ -98,6 +106,9 @@
 | Doppelförderung derselben Kosten | Rückforderung | Kosten trennen; PTF nur Projektkosten, GZ/ESG Lebensunterhalt |
 | Keine Hauptberuflichkeit (unter 15 h/Woche) | Einstiegsgeld/GZ entfällt | PTF-Plan 950 h/6 M. = ~36 h/Woche; dokumentieren |
 | Keine Tragfähigkeitsbescheinigung | GZ/§16c entfällt | Businessplan, Finanzplan, fachkundige Stelle |
+| Tragfähigkeit endet mit PTF (30.11.2027) | GZ-Phase 2 nur 300 €/Monat; ESG verlangt Perspektive ohne Grundsicherungsgeld | Umsatz-/Anschlussplan ab 12/2027; Second Stage/andere Säule; rechtzeitig klären |
+| Registrierung wird als „Aufnahme“ gewertet | GZ/ESG können entfallen | Registrierung mit geplantem Beginn 01.06.2027; vorher keine ≥15 h/Woche Tätigkeit; schriftlich mit Jobcenter/BA klären |
+| ESG und GZ gleichzeitig | systembedingt ausgeschlossen (GSG vs. ALG I) | Nur ein Weg; Status zuerst klären |
 | ALG-I-Restanspruch < 150 Tage | GZ entfällt | Früh prüfen; ggf. Einstiegsgeld/Grundsicherungsgeld |
 | Steuernummer nicht rechtzeitig | Formalantrag gefährdet | Finanzamt früh kontaktieren; Anmeldung/Eingangsbestätigung |
 | Sozialversicherung/Krankenkasse unterschätzt | Nachzahlung | Beratung Krankenkasse/Steuerberatung |
@@ -114,6 +125,8 @@
 
 ## 8. Quellen
 
+- §11a SGB II: https://www.gesetze-im-internet.de/sgb_2/__11a.html
+- §11b SGB II: https://www.gesetze-im-internet.de/sgb_2/__11b.html
 - §16b SGB II: https://www.gesetze-im-internet.de/sgb_2/__16b.html
 - §16c SGB II: https://www.gesetze-im-internet.de/sgb_2/__16c.html
 - §§93–94 SGB III: https://www.gesetze-im-internet.de/sgb_3/__93.html · https://www.gesetze-im-internet.de/sgb_3/__94.html

@@ -39,7 +39,7 @@
 **Befehl:**
 
 ```bash
-cd /home/xxammaxx/Schreibtisch/feldexa_forderung/FormBridge
+cd <repo>
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
   -s docs/funding/decision/validation -p 'test_*.py' -v
 ```

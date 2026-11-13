@@ -100,9 +100,9 @@ Jeder Meilenstein endet mit einem reproduzierbaren Testlauf und einem kurzen öf
 
 ## 11. Bisherige Softwareprojekte (max. 100 Wörter; max. 3 Beispiele)
 
-Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben]. Die für den formalen Antrag erforderliche selbstständige Tätigkeit plane ich rechtzeitig vor Antragstellung aufzunehmen.
+Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben].
 
-**Wörter:** 36 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 22 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 
@@ -132,9 +132,9 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 ## 14. Motivation / Wild Card (max. 100 Wörter)
 
-Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
+Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Für den Fall der Auswahl plane ich die Aufnahme einer selbstständigen Tätigkeit vor dem formalen Antrag. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
 
-**Wörter:** 65 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 81 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 

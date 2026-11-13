@@ -11,9 +11,10 @@
 | **Nov 2026** | Q2-Anfrage an PTF vorbereiten/senden; Rechtsstatus klären | PTF/Projektträger | vor Auswahl | external-inquiry-drafts | keine Antwort | Ja (Versand) |
 | **Dez 2026–Feb 2027** | Auswahl abwarten; keine vorschnelle Gründung; Steuer-/Leistungsstatus prüfen | PTF/Jury | Auswahlentscheidung | Q2-Antwort, Statusnachweise | Absage | Nein (nur beobachten) |
 | **nach positiver Auswahl** | Beratungstermin Jobcenter/Agentur für Arbeit; Förderweg klären | Jobcenter/BA | vor Aufnahme der Tätigkeit | Lebenslauf, Businessplan, Finanzplan | Terminverzug | Ja (Termin) |
-| **Feb–März 2027** | Selbstständigkeit/Finanzamt-Registrierung vorbereiten; Steuernummer/Anmeldung | Finanzamt/Steuerberatung | **vor formalem Antrag** | Anmeldung, Steuernummer | Fristverzug | Ja (Anmeldung) |
-| **März 2027** | Antragsworkshop; formalen BMFTR-Antrag einreichen | PTF/Projektträger/BMFTR | März 2027 | Vorhabenbeschreibung, De-minimis, Kontoauszug, Steuernummer | formale Ablehnung | Ja (Antrag) |
-| **Apr–Mai 2027** | Bewilligung abwarten; vor Tätigkeitsaufnahme Einstiegsgeld/GZ beantragen | BMFTR/Jobcenter/BA | **vor Aufnahme** | Businessplan, Tragfähigkeit, Anträge | verspäteter Antrag | Ja (Anträge) |
+| **Jan–Anfang Feb 2027** | Finanzamt-Registrierung vorbereiten/einreichen; **geplanter Tätigkeitsbeginn 01.06.2027**, keine Umsätze/keine ≥15 h vorher | Finanzamt/Steuerberatung | **vor formalem Antrag** | Anmeldung, Steuernummer | Registrierung könnte als „Aufnahme“ gewertet werden | Ja (Anmeldung) |
+| **Ende Februar 2027** | **Formalen BMFTR-Antrag einreichen** | PTF/Projektträger/BMFTR | **Ende Februar 2027** | Vorhabenbeschreibung, De-minimis, Kontoauszug, ggf. Steuernummer | formale Ablehnung | Ja (Antrag) |
+| **März 2027** | Antragsworkshop / Rückmeldung | PTF/Projektträger | März 2027 | Rückfragen beantworten | Terminwiderspruch | Nein |
+| **Jan–Mai 2027** | **Vor** Aufnahme der hauptberuflichen Tätigkeit: Einstiegsgeld/GZ beantragen; Beratungstermin früh | Jobcenter/BA | **vor Aufnahme (01.06.2027)** | Businessplan, Tragfähigkeit, Anträge | verspäteter Antrag; Registrierung ≠ Aufnahme | Ja (Anträge) |
 | **vor 01.06.2027** | Alle Voraussetzungen prüfen: Bescheid, Registrierung, Finanzierung, Versicherung | Owner | vor Förderstart | Bescheid, Nachweise | fehlende Voraussetzung | Ja (Start) |
 | **01.06.2027** | FormBridge starten | Owner | Förderbeginn | Projektplan | Start ohne Bewilligung | Ja (Start) |
 
@@ -21,7 +22,7 @@
 
 ### Variante A — Gründung nach Auswahl, vor formalem Antrag
 
-- **Ablauf:** Bewerbung Nov 2026 → Auswahl → Registrierung Feb/März 2027 → formaler Antrag → Bewilligung → Start Juni 2027.
+- **Ablauf:** Bewerbung Nov 2026 → Auswahl Dez 2026–Feb 2027 → Registrierung Jan/Anfang Feb 2027 → formaler Antrag bis Ende Feb 2027 → Bewilligung → Start Juni 2027.
 - **Vorteil:** Keine vorschnelle Anmeldung; Förderentscheidung abwarten; passt zur PTF-Zeitachse.
 - **Risiko:** Q2 unbestätigt; falls PTF Selbstständigkeit zur Bewerbung verlangt, ist die Bewerbung angreifbar.
 - **Sozialrecht:** Einstiegsgeld/GZ müssen **vor** Aufnahme der hauptberuflichen Tätigkeit beantragt werden; Zeitfenster nach Auswahl beachten.
@@ -55,7 +56,7 @@
 ## 4. Kritische Fristen
 
 - **30.11.2026, 15:00 MEZ:** PTF-Bewerbung.
-- **März 2027:** formaler Antrag/Antragsworkshop.
+- **Ende Februar 2027:** formaler Antrag; **März 2027:** Workshop/Rückmeldung.
 - **Vor Aufnahme der hauptberuflichen Selbstständigkeit:** Einstiegsgeld/GZ-Antrag.
 - **01.06.2027:** Förderbeginn.
 - **Nachlaufende PTF-Auszahlung:** erster Abruf 01.07.2027; Cash-Peak 25.353,13 €.
@@ -81,3 +82,5 @@
 - Keine Selbstständigkeit als bereits bestehend darstellen.
 
 **Nächster Schritt:** Q2-Anfrage und Owner-Entscheidungen; danach Portal/Formalia.
+
+**Sequenzregel:** Finanzamt-Registrierung ist nicht automatisch „Aufnahme“ der hauptberuflichen Tätigkeit. Geplanter Beginn ist 01.06.2027; vorher keine ≥15 h/Woche und keine Umsätze. Einstiegsgeld/GZ müssen **vor** Aufnahme beantragt werden; Termin daher Jan–Mai 2027, nicht erst nach der Registrierung.

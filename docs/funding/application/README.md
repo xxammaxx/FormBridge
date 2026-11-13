@@ -18,10 +18,10 @@
 | [validation-report.md](validation-report.md) | Abschließende Revalidierung | PASS_WITH_BLOCKERS |
 | [submission-runbook.md](submission-runbook.md) | Konkrete Einreichungsschritte | READY |
 | [project-description-short.md](project-description-short.md) | Fünf-Satz- und Ein-Absatz-Beschreibung | READY |
-| [Gründungsstrategie](../decision/founder-strategy-2026-2027.md) | Q2, Varianten, Sozialrechtswege | EXTERNAL_CONFIRMATION_REQUIRED |
-| [Q2-Verifikation](../decision/prototype-fund-q2-verification.md) | Fragen A–H, Quellen, Status | EXTERNAL_CONFIRMATION_REQUIRED |
-| [Jobcenter/BA-Assessment](../decision/jobcenter-grants-assessment.md) | Einstiegsgeld, §16c, Gründungszuschuss, Kombination | EXTERNAL_CONFIRMATION_REQUIRED |
+| [Gründungsstrategie](../decision/founder-strategy-2026-2027.md) | Q2, Varianten, Sozialrechtswege | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
+| [Q2-Verifikation](../decision/prototype-fund-q2-verification.md) | Fragen A–H, Quellen, Status | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
+| [Jobcenter/BA-Assessment](../decision/jobcenter-grants-assessment.md) | Einstiegsgeld, §16c, Gründungszuschuss, Kombination | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
 
-**Gate:** `READY_FOR_OWNER_INPUT` — alle öffentlich prüfbaren Anforderungen erfüllt; offen sind Owner-Angaben (M1–M9), Q2/Q3/Q3b, Portal-Live-Prüfung und Lizenz-/Second-Stage-Entscheidung.
+**Gate:** `READY_FOR_OWNER_INPUT` — alle öffentlich belegbaren Anforderungen erfüllt, soweit nicht Q2 widersprüchlich ist; offen sind Owner-Angaben (M1–M9), Q2/Q3/Q3b, Portal-Live-Prüfung und Lizenz-/Second-Stage-Entscheidung.
 
 **Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung, keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.

@@ -17,7 +17,7 @@
 
 | # | Entscheidung | Optionen | Auswirkung | Fällig |
 |---|---|---|---|---|
-| G1 | **Q2-Anfrage senden?** | ja/nein | Klärt Bewerbungszeitpunkt/Selbstständigkeit | vor 30.11.2026 |
+| G1 | **Q2-Anfrage senden?** | ja/nein | Klärt Bewerbungszeitpunkt/Selbstständigkeit; formaler Antrag **Ende Feb 2027** | vor 30.11.2026 |
 | G2 | **PTF-Bewerbung einreichen?** | ja/nein | Start des Verfahrens | 30.11.2026 |
 | G3 | **Leistungsweg** | Grundsicherungsgeld/Jobcenter · ALG I/Agentur · keiner | Einstiegsgeld/GZ-Strategie | nach Auswahl |
 | G4 | **Gründungsvariante** | A (nach Auswahl) / B (früher) / C (keine) | Risiko/Zeitplan | nach Q2 |
@@ -60,5 +60,5 @@
 ## 6. Aktueller Status
 
 - Bewerbung: **READY_FOR_OWNER_INPUT**.
-- Gründungsstrategie: **EXTERNAL_CONFIRMATION_REQUIRED** (Q2, Leistungsstatus, Gründungsförderung).
+- Gründungsstrategie: **EXTERNAL_CONFIRMATION_REQUIRED** (Q2 widersprüchlich: JG03-Handbuch/FAQ vs. JG02-Wiki; Leistungsstatus, Gründungsförderung).
 - Keine Einreichung, keine Anfrage, keine Anmeldung, keine Lizenzentscheidung.

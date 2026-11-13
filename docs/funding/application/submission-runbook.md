@@ -14,7 +14,7 @@
 ## 1. Preflight (T-7 bis T-3)
 
 ```bash
-cd /home/xxammaxx/Schreibtisch/feldexa_forderung/FormBridge
+cd <repo>
 git fetch origin
 git status --short --branch
 git rev-parse HEAD

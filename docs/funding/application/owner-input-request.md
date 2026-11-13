@@ -8,7 +8,7 @@
 - [ ] **M2:** Ich habe meinen Hauptwohnsitz in Deutschland und zahle hier Steuern.
 - [ ] **M3a:** Ich bin selbstständig oder freiberuflich tätig.
 - [ ] **M3b:** Ich bin angestellt und für 01.06.–30.11.2027 (anteilig) freigestellt.
-- [ ] **M3c:** Nur falls **weder M3a noch M3b** zutrifft: Ich plane, die Selbstständigkeit erst 2027 aufzunehmen. → **Q2-Klärung nötig**; sichere Planung: Registrierung vor dem formalen Antrag (März 2027), nicht erst zum 01.06.2027.
+- [ ] **M3c:** Nur falls **weder M3a noch M3b** zutrifft: Ich plane, die Selbstständigkeit erst 2027 aufzunehmen. → **Q2-Klärung nötig**; sichere Planung: Registrierung vor dem formalen Antrag (Ende Februar 2027), nicht erst zum 01.06.2027.
 - [ ] **M4:** Ich verfüge über die für die Umsetzung notwendigen Programmierkenntnisse (KI nur als Werkzeug).
 - [ ] **M5:** Ich kann einschlägige Vorarbeiten/Kenntnisse nachweisen (öffentliche Repos/Projekte).
 - [ ] **M6:** Ich habe in den letzten rollierenden 3 Jahren **weniger als 300.000 €** De-minimis-Beihilfen erhalten. *(Betrag nicht hier eintragen; nur Bestätigung.)*

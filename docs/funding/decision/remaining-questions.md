@@ -25,9 +25,9 @@
 - **Verbindlich nötig?** Nein für **eine** Einreichung; ja, wenn beide aktiv gehalten werden.
 - **Abhängige Entscheidung:** Owner-Strategie A5/B3 (`owner-decisions.md`).
 
-## Q2 — Selbstständigkeit: Bewerbung, formaler Antrag, Förderbeginn (UNRESOLVED)
+## Q2 — Selbstständigkeit: Bewerbung, formaler Antrag, Förderbeginn (CONTRADICTED)
 
-- **Bekannt:** Bewerbung setzt „selbstständig oder freiberuflich“ voraus; Angestellte mit (anteiliger) Freistellung sind ausdrücklich zulässig (FAQ Bewerbung 02 FN**). Der aktuelle PTF-Wiki-Eintrag „Antragstellung“ (Stand 03.03.2026) verlangt für den **formalen Antrag** eine „Steuernummer für selbständige Tätigkeit … bzw. Kopie der Anmeldung/Eingangsbestätigung beim Finanzamt“. Historische Seiten (2020/2022) nennen „spätestens bei Projektbeginn“.
+- **Bekannt:** Bewerbung setzt „selbstständig oder freiberuflich“ voraus; Angestellte mit (anteiliger) Freistellung sind ausdrücklich zulässig (FAQ Bewerbung 02 FN**). **JG03-Handbuch/FAQ:** Bewerbung „als Privatperson“; keine Solo-Steuernummer in der Bewilligungs-Checkliste; formaler Antrag bis **Ende Februar 2027**. **JG02-Wiki** (03.03.2026) verlangt dagegen Steuernummer/Anmeldung zum formalen Antrag. Historische Seiten (2020/2022): „spätestens bei Projektbeginn“. **Widerspruch.**
 - **Fehlt:** Ob die Selbstständigkeit bereits zur **Jury-Bewerbung** (Nov 2026) bestehen muss, ob sie bis zum **formalen Antrag** (Frühjahr 2027) genügt oder ob eine Aufnahme **erst zum Förderbeginn** (01.06.2027) akzeptiert wird — und welcher Nachweis zu welchem Zeitpunkt.
 - **Tendenz (keine Rechtsaussage):** Der aktuelle Wiki-Eintrag spricht für eine Registrierung **vor dem formalen Antrag**; „erst zum Förderbeginn“ ist **nicht sicher** tragfähig.
 - **Relevanz:** Entscheidend, falls der Owner derzeit nicht selbstständig/freiberuflich ist und keine Freistellung hat.

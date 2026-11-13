@@ -2,7 +2,7 @@
 
 **Status:** ENTWURF — Versand nur nach Owner-Freigabe. Bevorzugter Kanal 1: Sprechstunde 16.11.2026, 17:00 Uhr (https://meet.prototypefund.de/user/rooms/hdc-57c-tif-s4m/join) — dort mündlich stellen und Antwort protokollieren. Kanal 2: info@prototypefund.de.
 
-**Enthaltene Fragen:** Q1 (Mehrfachantrag/parallele Förderung), Q2 (Selbstständigkeit ab Förderbeginn). **Q3/Q3b** (47.500 vs. 47.381,25; 31.667 vs. 31.570,87) stehen als eigener Text in [q3-clarification.md](q3-clarification.md) §7. **Keine Anfrage wurde versendet.**
+**Hinweis:** Q2 ist hier nur noch eine kurze Fassung; der **kanonische Q2-Text** steht in [external-inquiry-drafts.md](external-inquiry-drafts.md) §A. **Enthaltene Fragen:** Q1 (Mehrfachantrag/parallele Förderung), Q2 (kurz). **Q3/Q3b** (47.500 vs. 47.381,25; 31.667 vs. 31.570,87) stehen als eigener Text in [q3-clarification.md](q3-clarification.md) §7. **Keine Anfrage wurde versendet.**
 
 ## Q1 + Q2 — Textentwurf (Deutsch)
 

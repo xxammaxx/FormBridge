@@ -2,7 +2,7 @@
 
 **Status:** ENTWÜRFE · **NICHT VERSENDET** · Versand nur mit Owner-Freigabe. Keine persönlichen Daten in diesem Dokument.
 
-## A. Prototype Fund — Q2 (Selbstständigkeit)
+## A. Prototype Fund — Q2 (Selbstständigkeit) — **kanonischer Text**
 
 > **Betreff:** Klärung: Zeitpunkt der Selbstständigkeit im Bewerbungs- und Antragsverfahren (Jahrgang 03, Innovation)
 >
@@ -16,6 +16,8 @@
 > 3. Welcher Nachweis wird zu welchem Zeitpunkt verlangt: Steuernummer, Anmeldung/Eingangsbestätigung beim Finanzamt oder beides?
 > 4. Reicht bei einer bestehenden Anstellung eine Arbeitgeber-Freistellung für die Projektlaufzeit als Alternative, und welcher Nachweis wird erwartet?
 > 5. Kann die Steuernummer nach dem formalen Antrag nachgereicht werden, falls das Finanzamt sie nicht rechtzeitig vergibt?
+>
+> Hintergrund: Das Handbuch Jahrgang 03 sagt, man bewerbe sich „als Privatperson"; die FAQ-Checkliste (Auswahl 03) nennt für Einzelpersonen keine Steuernummer. Das Wiki zur Antragstellung (Stand 03.03.2026, Jahrgang 02) verlangt dagegen eine Steuernummer/Anmeldung bereits zum formalen Antrag. Bitte erklären Sie, welche Regel für Jahrgang 03 gilt.
 >
 > Ich möchte keine falschen Angaben machen und plane konservativ. Vielen Dank!
 >

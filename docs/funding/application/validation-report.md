@@ -53,13 +53,13 @@
 | M1 | Alter ≥ 18 | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M2 | Wohnsitz DE + Steuern DE | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Selbstständigkeit ab Förderbeginn | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + ggf. PTF-Antwort (Q2); sichere Planung: Registrierung vor formalem Antrag |
-| Q2 | Zeitpunkt der Selbstständigkeit | `[PTF_BESTÄTIGUNG]` | Aktueller PTF-Wiki-Eintrag verlangt Steuernummer/Anmeldung zum formalen Antrag; „erst zum Förderbeginn" nicht sicher. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
+| Q2 | Zeitpunkt der Selbstständigkeit | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-Handbuch/FAQ sehen Bewerbung als Privatperson und keine Solo-Steuernummer vor; JG02-Wiki verlangt Steuernummer/Anmeldung zum formalen Antrag. „Erst zum Förderbeginn" nicht sicher. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M5 | Vorarbeiten/Kenntnisse | `[OWNER_ANGABE]` | §11/§14 personalisieren |
 | M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
 | M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
 
-**Q2/M3c** ist die einzige potenziell harte externe Hürde. **Keine Anfrage versendet.** Die Quellenlage ist präzisiert: Der aktuelle PTF-Wiki-Eintrag „Antragstellung" verlangt eine Steuernummer/Anmeldung bereits zum **formalen Antrag**; die historische Formulierung „spätestens bei Projektbeginn" ist sekundär und nicht bindend. „Erst zum 01.06.2027" ist daher **nicht sicher**; die konservative Planung ist Registrierung vor dem formalen Antrag oder Arbeitgeber-Freistellung.
+**Q2/M3c** ist die einzige potenziell harte externe Hürde. **Keine Anfrage versendet.** Die Quellenlage ist **widersprüchlich**: Das JG03-Handbuch/FAQ sehen die Bewerbung als Privatperson und keine Solo-Steuernummer vor; das JG02-Wiki verlangt eine Steuernummer/Anmeldung bereits zum **formalen Antrag**. Die historische Formulierung „spätestens bei Projektbeginn" ist sekundär. „Erst zum 01.06.2027" ist daher **nicht sicher**; konservativ: Registrierung **Jan–Anfang Feb 2027** (vor Antrag Ende Februar) oder Arbeitgeber-Freistellung.
 
 ### 3.2 Portal-Live-Prüfung
 
@@ -89,11 +89,11 @@
 
 | Punkt | Ergebnis |
 |---|---|
-| Bewerbung ohne Selbstständigkeit | **nicht ausdrücklich verboten, aber nicht bestätigt**; PTF-Anfrage nötig |
-| Maßgeblicher Registrierungszeitpunkt | aktueller PTF-Wiki-Eintrag (Jahrgang 02, 03.03.2026) verlangt Steuernummer/Anmeldung **zum formalen Antrag**; historische „spätestens bei Projektbeginn“-Seiten sind sekundär |
+| Bewerbung ohne Selbstständigkeit | JG03-Handbuch/FAQ sehen Bewerbung **als Privatperson** und keine Solo-Steuernummer vor; JG02-Wiki verlangt Steuernummer/Anmeldung zum formalen Antrag → **Widerspruch**, PTF-Anfrage nötig |
+| Maßgeblicher Registrierungszeitpunkt | JG02-Wiki: Steuernummer/Anmeldung zum **formalen Antrag**; JG03-FAQ/Handbuch: keine Solo-Steuernummer, Bewerbung als Privatperson; historische Seiten sekundär. Formaler Antrag: **bis Ende Februar 2027**. |
 | „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn |
-| Empfohlene Variante | **A**: Bewerbung ohne falschen Status; nach Auswahl, vor formalem Antrag registrieren; vor Tätigkeitsaufnahme Jobcenter/BA kontaktieren |
-| Q2-Status | **EXTERNAL_CONFIRMATION_REQUIRED**; Anfrage in [external-inquiry-drafts.md](../decision/external-inquiry-drafts.md), **nicht versendet** |
+| Empfohlene Variante | **A**: Bewerbung ohne falschen Status; nach Auswahl **Jan–Anfang Feb 2027** registrieren; **bis Ende Feb 2027** formaler Antrag; vor Tätigkeitsaufnahme (01.06.2027) Jobcenter/BA kontaktieren |
+| Q2-Status | **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**; kanonische Anfrage in [external-inquiry-drafts.md](../decision/external-inquiry-drafts.md) §A, **nicht versendet** |
 | Gründungsförderung | Einstiegsgeld (§16b SGB II) und §16c SGB II sind Ermessensleistungen; Gründungszuschuss (§§93–94 SGB III) setzt ALG I, 150 Tage, Hauptberuflichkeit und Tragfähigkeit voraus; **keine pauschale Kumulierbarkeit** mit PTF |
 | Persönliche Daten | keine im Repo; Owner-Input nur über Platzhalter/geschützten Bereich |
 
