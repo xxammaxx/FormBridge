@@ -54,6 +54,10 @@ dokumentiert und **nicht** stillschweigend aufgelöst.
 | F20 | FIM-Portal: Datenschema-Konverter/XDF-XSD-Konverter — https://fimportal.de/arbeitsmittel · https://fimportal.de/releases | 13.11.2026 | XDF2/XDF3 ↔ JSON Schema/XSD; XDF-XSD-Konverter (Release-Notes 24.06./03.08.2026). Repariert kein veröffentlichtes defektes XSD und liefert keine PDF→FIM-Zuordnung. | VERIFIED (Dokumentation) |
 | F21 | PTF-Wiki „Antragstellung" — https://wiki.prototypefund.de/index.php?title=Antragstellung (letzte Bearbeitung 03.03.2026) | 13.11.2026 | Formaler Antrag: „Steuernummer für selbständige Tätigkeit … bzw. Kopie der Anmeldung/Eingangsbestätigung beim Finanzamt"; bei Anstellung Arbeitgeber-Genehmigung für Nebentätigkeit. **Hinweis für Jahrgang 02; für Jahrgang 03 nicht bestätigt.** Das JG03-Handbuch/FAQ sehen die Bewerbung als Privatperson und keine Solo-Steuernummer vor (siehe F22) — **Widerspruch**, daher Q2 `CONTRADICTED`. | VERIFIED (offizielles PTF-Wiki; JG02) |
 | F22 | PTF-Handbuch Jahrgang 03 + FAQ Auswahl 03 | 13.11.2026 | Handbuch: „Ich bewerbe mich … als Privatperson"; „Bis Ende Februar muss der Antrag beim BMFTR eingereicht sein." FAQ Auswahl 03: Für alle nur Vorhabenbeschreibung, De-minimis, Kontoauszug; **keine Solo-Steuernummer**; GbR-Steuernummer ggf. nach Bewilligung. | VERIFIED (JG03) |
+| F23 | PTF-Bewerbungsseite „Formalien" + FAQ Bewerbung 02 — https://www.prototypefund.de/bewerbung · https://www.prototypefund.de/faq | 14.11.2026 | Einzelentwickler*innen: Wohnsitz DE, „seid selbstständig** oder Freiberufler*innen und zahlt eure Steuern hier"; **oder** anteilige Arbeitgeber-Freistellung. | OFFIZIELL (JG03); materielle Voraussetzung |
+| F24 | PTF-Handbuch JG03, „Förderbedingungen" (Sept. 2026) | 14.11.2026 | Zwingende Bedingungen: FOSS, Einzelpersonen/Teams ≤ 4, keine Unternehmen/Hochschulen/Institute/Vereine, verständlich, Wortlimits. **Selbstständigkeit wird nicht genannt.** Checkliste: „als Privatperson". | OFFIZIELL (JG03); Widerspruch zu F23 |
+| F25 | PTF-FAQ Auswahl 03 + Detailseite „Ablauf" — https://www.prototypefund.de/bewerbung/details | 14.11.2026 | Für Einzelpersonen: Vorhabenbeschreibung, De-minimis, Kontoauszug; **keine Solo-Steuernummer**. Detailseite: Auswahl Dez 2026–Feb 2027, Rückmeldung März, Antragswerkstatt März; zugleich „Bis Ende Februar muss der Antrag beim BMFTR eingereicht sein". | OFFIZIELL (JG03); Terminwiderspruch |
+| F26 | Offizielles Fragen-PDF Innovation | 14.11.2026 | Allgemeine Angaben, Projekt 1–9, Team/Erfahrung 1–7, Second Stage 1–3. **Kein Steuernummer-/Selbstständigkeitsfeld.** | VERIFIED (JG03) |
 
 ## C. Abgeleitete Rechenregeln (keine Primärquelle)
 
@@ -69,7 +73,13 @@ dokumentiert und **nicht** stillschweigend aufgelöst.
 | C8 | `F_ten,max <= 79.170,15 €` | C7 × 0,95 | ABGELEITET; FAQ nennt 79.167 € (Summe 47.500 + 31.667) |
 | C9 | `F_second,max <= 31.670,15 €` | C6 × 0,95 | ABGELEITET; FAQ nennt gerundet 31.667 € |
 
-## D. Was am 13.11.2026 neu oder anders ist
+## D. Was am 14.11.2026 neu oder anders ist
+
+1. **Q2 präzisiert:** Das JG03-Handbuch listet Selbstständigkeit nicht unter den zwingenden Förderbedingungen; FAQ/Bewerbungsseite verlangen sie weiterhin. Die Online-Fragen enthalten kein Status-/Steuernummerfeld. Materielles Teilnahmerisiko, nicht nur Nachweiszeitpunkt.
+2. **Formaler Antrag:** Detailseite nennt März 2027 und zugleich „bis Ende Februar“; Terminwiderspruch bleibt offen.
+3. **Portal:** Keine authentifizierte Sitzung; Innovation leitet auf `/auth/` um. Live-Abgleich ist eine einmalige Owner-Aktion; Status `READY_WITH_EXPLICIT_BLOCKERS`.
+
+## E. Was am 13.11.2026 neu oder anders ist
 
 1. **10-Monats-Option:** Die RL Nr. 4 erlaubt sie ausdrücklich (6 Monate Entwicklung + 4 Monate Vertiefung). FAQ Grundlagen 01 nennt 79.167 €/158.000 €; die Detailseite verlangt eine Angabe „sechs- oder zehnmonatig". Die Innovationsseite nennt weiterhin nur 6 Monate. Das ist **kein Widerspruch zur Rechtslage**, aber eine inkonsistente Programmkommunikation. Für die Entscheidung wird die 6-Monats-Baseline verwendet; die 10-Monats-Option ist als Szenario I dokumentiert.
 2. **De-minimis ist rollierend, nicht kalenderjährlich:** R8 (Erwägungsgrund 11) stellt klar: „rollierender Zeitraum". Die frühere Dokumentation („Kalenderjahre") war zu eng.

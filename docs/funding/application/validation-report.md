@@ -2,7 +2,7 @@
 
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
 **Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Gründungs-Delta:** A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)** · **Tests:** 109/109 PASS · **Relative Links:** 0 gebrochen
-**Gate:** **READY_FOR_OWNER_INPUT** (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) — Bewerbung vollständig vorbereitet; die verbleibenden Punkte sind ausschließlich Owner-Angaben, Owner-Entscheidungen, Portal-Live-Prüfung und ausdrücklich benannte externe Klärungen.
+**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben, die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
 
 ## 1. Was geprüft wurde
 
@@ -52,20 +52,21 @@
 |---|---|---|---|
 | M1 | Alter ≥ 18 | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M2 | Wohnsitz DE + Steuern DE | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Selbstständigkeit ab Förderbeginn | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + ggf. PTF-Antwort (Q2); sichere Planung: Registrierung vor formalem Antrag |
-| Q2 | Zeitpunkt der Selbstständigkeit | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-Handbuch/FAQ sehen Bewerbung als Privatperson und keine Solo-Steuernummer vor; JG02-Wiki verlangt Steuernummer/Anmeldung zum formalen Antrag. „Erst zum Förderbeginn" nicht sicher. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
+| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme erst 2027 | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + PTF-Antwort (Q2); **materielles Risiko**; falls Zustimmung: Registrierung vor PTF-bestätigtem formalem Antrag |
+| Q2 | Materielle Selbstständigkeitsvoraussetzung und Nachweiszeitpunkt | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen; Online-Fragen ohne Statusfeld; JG02-Wiki verlangt Steuernummer zum formalen Antrag. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
 | M5 | Vorarbeiten/Kenntnisse | `[OWNER_ANGABE]` | §11/§14 personalisieren |
 | M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
 | M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
 
-**Q2/M3c** ist die einzige potenziell harte externe Hürde. **Keine Anfrage versendet.** Die Quellenlage ist **widersprüchlich**: Das JG03-Handbuch/FAQ sehen die Bewerbung als Privatperson und keine Solo-Steuernummer vor; das JG02-Wiki verlangt eine Steuernummer/Anmeldung bereits zum **formalen Antrag**. Die historische Formulierung „spätestens bei Projektbeginn" ist sekundär. „Erst zum 01.06.2027" ist daher **nicht sicher**; konservativ: Registrierung **Jan–Anfang Feb 2027** (vor Antrag Ende Februar) oder Arbeitgeber-Freistellung.
+**Q2/M3c** ist das zentrale materielle Risiko. **Keine Anfrage versendet.** Die Quellenlage ist **widersprüchlich**: FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die Online-Fragen enthalten kein Statusfeld. Das JG02-Wiki verlangt eine Steuernummer/Anmeldung zum **formalen Antrag**. „Erst zum 01.06.2027" ist **nicht sicher**; konservativ: Registrierung **vor dem PTF-bestätigten formalen Antragstermin** oder Arbeitgeber-Freistellung. Die materielle Förderfähigkeit bleibt offen.
 
 ### 3.2 Portal-Live-Prüfung
 
 - Exakte Zeichenlimits, Pflichtfeldmarkierungen, Q19-Checkbox-Formulierung: `PORTAL_UNVERIFIED`.
 - Portal ist login-geschützt; die öffentliche Landingpage ist erreichbar, `/jahrgang-03-innovation/` leitet auf `/auth/`.
-- Vor „Submit“: Live-Fragen und Limits gegen [portal-field-mapping.md](portal-field-mapping.md) prüfen.
+- **Keine authentifizierte Sitzung** am 14.11.2026; Login ist eine einmalige Owner-Aktion.
+- Vor „Submit“: Live-Fragen und Limits gegen [portal-field-mapping.md](portal-field-mapping.md) und [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md) prüfen.
 
 ### 3.3 Owner-Entscheidungen
 
@@ -85,16 +86,18 @@
 - M5-Tightness (155 h) und externe Testpersonen (n=2–3) bleiben Risiken.
 - Kein benannter Adopter/Pilotpartner.
 
-## 3.5 Q2 und Gründungsstrategie (Stand 13.11.2026)
+## 3.5 Q2, Gründungsstrategie und Portal-Preflight (Stand 14.11.2026)
 
 | Punkt | Ergebnis |
 |---|---|
-| Bewerbung ohne Selbstständigkeit | JG03-Handbuch/FAQ sehen Bewerbung **als Privatperson** und keine Solo-Steuernummer vor; JG02-Wiki verlangt Steuernummer/Anmeldung zum formalen Antrag → **Widerspruch**, PTF-Anfrage nötig |
-| Maßgeblicher Registrierungszeitpunkt | JG02-Wiki: Steuernummer/Anmeldung zum **formalen Antrag**; JG03-FAQ/Handbuch: keine Solo-Steuernummer, Bewerbung als Privatperson; historische Seiten sekundär. Formaler Antrag: **bis Ende Februar 2027**. |
-| „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn |
-| Empfohlene Variante | **A**: Bewerbung ohne falschen Status; nach Auswahl **Jan–Anfang Feb 2027** registrieren; **bis Ende Feb 2027** formaler Antrag; vor Tätigkeitsaufnahme (01.06.2027) Jobcenter/BA kontaktieren |
+| Materielle Teilnahmevoraussetzung | **Widersprüchlich:** JG03-FAQ Bewerbung 02 und Bewerbungsseite verlangen selbstständig/freiberuflich oder Arbeitgeber-Freistellung; das JG03-Handbuch listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. **Materielles Risiko**, PTF-Anfrage nötig. |
+| Nachweiszeitpunkt | Offizielle Online-Fragen (Innovation) enthalten **kein** Steuernummer-/Selbstständigkeitsfeld. JG03-Checkliste für Einzelpersonen: keine Solo-Steuernummer; JG02-Wiki: zum formalen Antrag. **Offen.** |
+| Formaler Antrag | Antragswerkstatt **März 2027**; Detailseite nennt zugleich „bis Ende Februar“. **Terminwiderspruch**, PTF-bestätigen lassen. |
+| „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn; Registrierung ≠ Aufnahme |
+| Empfohlene Variante | **A**: Bewerbung ohne falschen Status; nach Auswahl Registrierung **vor dem PTF-bestätigten formalen Antragstermin**; vor Tätigkeitsaufnahme (01.06.2027) Jobcenter/BA kontaktieren |
 | Q2-Status | **CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED**; kanonische Anfrage in [external-inquiry-drafts.md](../decision/external-inquiry-drafts.md) §A, **nicht versendet** |
-| Gründungsförderung | Einstiegsgeld (§16b SGB II) und §16c SGB II sind Ermessensleistungen; Gründungszuschuss (§§93–94 SGB III) setzt ALG I, 150 Tage, Hauptberuflichkeit und Tragfähigkeit voraus; **keine pauschale Kumulierbarkeit** mit PTF |
+| Portal-Preflight | **READY_WITH_EXPLICIT_BLOCKERS**: Text/Feldvorlage vorbereitet; keine authentifizierte Sitzung; persönliche Angaben fehlen; Q2 materiell offen. Siehe [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md). |
+| Gründungsförderung | Einstiegsgeld (§16b SGB II) und §16c SGB II sind Ermessensleistungen; Gründungszuschuss (§§93–94 SGB III) setzt ALG I, 150 Tage, Hauptberuflichkeit und Tragfähigkeit voraus; **keine pauschale Kumulierbarkeit** mit PTF. Nachgelagert: [post-selection-founding-plan.md](../decision/post-selection-founding-plan.md). |
 | Persönliche Daten | keine im Repo; Owner-Input nur über Platzhalter/geschützten Bereich |
 
 **Wichtig:** Die Projektzuwendung ist **kein frei verfügbares Nettoeinkommen**. Anrechnung, Doppelförderung, Liquidität und Steuern sind individuell mit Jobcenter/BA/Steuerberatung zu klären.
@@ -113,10 +116,10 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 
 ## 5. Gate-Begründung
 
-**READY_FOR_OWNER_INPUT** (früher `APPLICATION_READY_WITH_BLOCKERS`), weil:
+**READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight (Bewerbungspaket: `READY_FOR_OWNER_INPUT`), weil:
 
 - alle öffentlich prüfbaren Anforderungen erfüllt sind, soweit öffentlich belegbar, und beide Reviews PASS sind;
-- aber M1–M6, Q2, die Portal-Live-Prüfung und die Lizenz-/Second-Stage-Entscheidung echte Owner-/externe Voraussetzungen sind;
+- aber M1–M6, **die materielle Q2-Frage**, die Portal-Live-Prüfung (kein Login) und die Lizenz-/Second-Stage-Entscheidung echte Owner-/externe Voraussetzungen sind;
 - Q3/Q3b bewusst offen, aber quantifiziert und bei konservativer Planung nicht einreichungsblockierend.
 
-**Nicht** `READY_FOR_FINAL_APPROVAL`, solange Q2/M3c und die persönlichen Pflichtangaben nicht geklärt sind. **Nicht** `VALIDATION_FAILED`; es gibt keinen ungelösten materiellen Fehler. **Nicht** `BLOCKED`; die offenen Punkte sind Owner-Input, nicht fehlender Zugriff.
+**Nicht** `READY_FOR_PORTAL_OWNER_APPROVAL`, solange Q2/M3c, die persönlichen Pflichtangaben und der Live-Abgleich nicht geklärt sind. **Nicht** `VALIDATION_FAILED`; es gibt keinen ungelösten materiellen Fehler. **Nicht** `BLOCKED`; die offenen Punkte sind Owner-Input, nicht fehlender Zugriff.

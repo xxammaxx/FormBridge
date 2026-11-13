@@ -1,13 +1,14 @@
 # Owner-Decision-Gate — FormBridge-Bewerbung
 
-**Stand:** 13.11.2026 · **Status:** `EXTERNAL_CONFIRMATION_REQUIRED` (Gründungsstrategie) / `READY_FOR_OWNER_INPUT` (Bewerbung)
+**Stand:** 14.11.2026 · **Status:** `EXTERNAL_CONFIRMATION_REQUIRED` (Gründungsstrategie) / `READY_WITH_EXPLICIT_BLOCKERS` (Portal-Preflight)
 **Zweck:** Die minimale Menge an Entscheidungen, die der Owner treffen muss, bevor die Bewerbung final eingereicht werden kann. **Keine persönlichen Daten in diesem Dokument.**
 
 ## 1. Gate-Stufen
 
 | Stufe | Bedeutung | Erreichbar? |
 |---|---|---|
-| **READY_FOR_OWNER_INPUT** | Bewerbung vollständig vorbereitet; offen sind Owner-Angaben/Entscheidungen und externe Klärungen | **Ja, aktuell** |
+| **READY_FOR_OWNER_INPUT** | Bewerbungstext/Feldvorlage vollständig vorbereitet; offen sind Owner-Angaben/Entscheidungen und externe Klärungen | **Ja** |
+| **READY_WITH_EXPLICIT_BLOCKERS** | Portal-Preflight vorbereitet; Live-Login, persönliche Angaben und materielles Q2-Risiko bleiben offen | **Ja, aktuell** |
 | **READY_FOR_FINAL_APPROVAL** | Alle Pflichtangaben ergänzt; Q2/Q3 geklärt; Portal-Live-Abgleich erfolgt; Lizenz/Stunden/Second Stage entschieden | Nein, erst nach Owner-Input |
 | **EXTERNAL_CONFIRMATION_REQUIRED** | Q2/Gründungsförderung hängen von PTF/Jobcenter/BA-Antworten ab | **Ja, Q2** |
 | **VALIDATION_FAILED** | Materialer Fehler ungelöst | Nein |
@@ -17,7 +18,7 @@
 
 | # | Entscheidung | Optionen | Auswirkung | Fällig |
 |---|---|---|---|---|
-| G1 | **Q2-Anfrage senden?** | ja/nein | Klärt Bewerbungszeitpunkt/Selbstständigkeit; formaler Antrag **Ende Feb 2027** | vor 30.11.2026 |
+| G1 | **Q2-Anfrage senden?** | ja/nein | Klärt **materielle Selbstständigkeitsvoraussetzung** und Nachweiszeitpunkt; formaler Antrag März/Ende Feb (Widerspruch) | vor 30.11.2026 |
 | G2 | **PTF-Bewerbung einreichen?** | ja/nein | Start des Verfahrens | 30.11.2026 |
 | G3 | **Leistungsweg** | Grundsicherungsgeld/Jobcenter · ALG I/Agentur · keiner | Einstiegsgeld/GZ-Strategie | nach Auswahl |
 | G4 | **Gründungsvariante** | A (nach Auswahl) / B (früher) / C (keine) | Risiko/Zeitplan | nach Q2 |
@@ -59,6 +60,6 @@
 
 ## 6. Aktueller Status
 
-- Bewerbung: **READY_FOR_OWNER_INPUT**.
-- Gründungsstrategie: **EXTERNAL_CONFIRMATION_REQUIRED** (Q2 widersprüchlich: JG03-Handbuch/FAQ vs. JG02-Wiki; Leistungsstatus, Gründungsförderung).
+- Bewerbung: **READY_FOR_OWNER_INPUT**; Portal-Preflight: **READY_WITH_EXPLICIT_BLOCKERS**.
+- Gründungsstrategie: **EXTERNAL_CONFIRMATION_REQUIRED** (Q2 materiell widersprüchlich: JG03-FAQ/Bewerbungsseite vs. JG03-Handbuch/JG02-Wiki; Leistungsstatus, Gründungsförderung).
 - Keine Einreichung, keine Anfrage, keine Anmeldung, keine Lizenzentscheidung.

@@ -1,6 +1,7 @@
 # Submission-Runbook — FormBridge, Prototype Fund 2027
 
 **Zweck:** Schritt-für-Schritt-Anleitung für den Owner nach der Freigabe. **Keine Aktion in diesem Runbook wurde ausgeführt.** Keine Einreichung, keine E-Mail, keine Portaländerung.
+**Stand 14.11.2026:** Keine authentifizierte Portalsitzung; der Login ist eine **einmalige Owner-Aktion**. Vorbereitung: [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md). Status: `READY_WITH_EXPLICIT_BLOCKERS`.
 
 ## 0. Harte Grenzen
 
@@ -25,7 +26,7 @@ Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/1
 
 **Owner-Checkliste:** [owner-checklist.md](owner-checklist.md) vollständig abarbeiten. Besonders:
 
-- [ ] M1–M6 positiv; M8 planbar.
+- [ ] M1–M6 positiv; M8 planbar. **M3a/M3c: materielles Q2-Risiko dokumentiert und entschieden.**
 - [ ] O1 Lizenz; O2 Stunden (950/850); O3 Second Stage; O4 Projektfassung; O5 Q2-Anfrage.
 - [ ] Persönliche Felder ergänzt; keine Platzhalter mehr im Portaltext.
 - [ ] Q3/Q3b als offen dokumentiert; keine 47.500-€-Planung ohne Q3.
@@ -33,7 +34,7 @@ Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/1
 ## 2. Portal öffnen
 
 1. `https://bewerben.prototypefund.de/` öffnen.
-2. Einloggen (E-Mail/Passwort oder bestehender Account). **Kein** neues Konto mit fremden Daten.
+2. Einloggen (E-Mail/Passwort oder bestehender Account). **Kein** neues Konto mit fremden Daten. Falls keine Sitzung besteht: Login/Kontoerstellung ist eine einmalige Owner-Aktion; der Agent führt sie nicht aus.
 3. **Jahrgang 03: Innovation** wählen.
 4. Prüfen: Frist wird als **30.11.2026** angezeigt; Förderlinie Innovation; Sprache Deutsch.
 
@@ -66,6 +67,7 @@ Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9
 - [ ] Second Stage = Ja/Nein, konsistent mit §16/§17.
 - [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
 - [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) gesetzt.
+- [ ] Q2-Risiko: keine falsche Selbstständigkeitsangabe; Owner hat die materielle Voraussetzung geprüft oder das Risiko bewusst akzeptiert.
 - [ ] FOSS-Zusage gesetzt; Lizenzstatus korrekt (offen oder entschieden).
 - [ ] Keine sensiblen personenbezogenen Daten in öffentlichen Feldern, die nicht erforderlich sind.
 - [ ] RepairProbe-Draft unverändert.

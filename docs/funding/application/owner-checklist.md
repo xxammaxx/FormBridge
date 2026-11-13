@@ -1,6 +1,6 @@
 # Owner-Checkliste — FormBridge-Bewerbung
 
-**Stand:** 13.11.2026 · **Zweck:** Nur die Punkte, die der Owner persönlich entscheiden, bestätigen oder ergänzen muss. **Keine persönlichen Daten in diesem Repository.**
+**Stand:** 14.11.2026 · **Zweck:** Nur die Punkte, die der Owner persönlich entscheiden, bestätigen oder ergänzen muss. **Keine persönlichen Daten in diesem Repository.**
 **Legende:** `BLOCKER` = Einreichung/Förderung ohne Klärung nicht möglich · `PLANUNG` = beeinflusst Qualität/Umfang · `FORMAL` = bei Bewilligung erforderlich
 
 ## A. Harte persönliche Voraussetzungen
@@ -9,9 +9,9 @@
 |---|---|---|---|
 | M1 | Mindestalter 18? | Eigene Bestätigung | **BLOCKER** |
 | M2 | Wohnsitz in Deutschland + Steuern in DE? | Eigene Bestätigung; ggf. Nachweis | **BLOCKER** |
-| M3a | Selbstständig oder freiberuflich? | Status bestätigen | **BLOCKER**, falls weder a/b/c |
+| M3a | Derzeit selbstständig oder freiberuflich? | Status bestätigen; FAQ/Bewerbungsseite verlangen es, JG03-Handbuch nennt es nicht unter den zwingenden Förderbedingungen | **MATERIELLES RISIKO** |
 | M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für 01.06.–30.11.2027? | Schriftliche Freistellung klären | **BLOCKER**, falls nicht freigestellt |
-| M3c | Selbstständigkeit erst ab Förderbeginn geplant? | PTF-Anfrage Q2; **sichere Planung: Registrierung vor formalem Antrag (Ende Februar 2027)** oder Freistellung; „erst 01.06.2027" ist nicht sicher; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **POTENZIELLER BLOCKER** |
+| M3c | Nicht selbstständig, Aufnahme erst 2027 geplant? | PTF-Anfrage Q2; materielle Voraussetzung klären oder Risiko bewusst tragen; falls Zustimmung: Registrierung vor dem PTF-bestätigten formalen Antragstermin, nicht erst 01.06.2027; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **MATERIELLES RISIKO / POTENZIELLER BLOCKER** |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
 | M5 | Einschlägige Vorarbeiten + umfassende Kenntnisse nachweisbar? | Bewerbungstext §11/§14 ergänzen; Nachweise | **BLOCKER**, falls kein Nachweis |
 | M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | Alle Beihilfen auflisten; De-minimis-Erklärung | **BLOCKER**, falls überschritten |
@@ -59,11 +59,12 @@
 | F4 | Held-out-Wohngeld-PDF (anderes Bundesland) + Rechte | Generalisierbarkeit und `copy:no`-Rechtslage | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | F5 | Rechte an Fürther PDF/FIM-XSD für Tests | Redistribution/Testnutzung | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | F6 | 10-Monats-Option | Nur falls 10 Monate gewollt | `[PTF_BESTÄTIGUNG_ERFORDERLICH]` |
-| F7 | Portal-Zeichenlimits/Pflichtfelder | Portal login-geschützt | `[PORTAL_UNVERIFIED]` |
+| F7 | Portal-Zeichenlimits/Pflichtfelder | Portal login-geschützt; keine authentifizierte Sitzung | `[PORTAL_UNVERIFIED]` |
+| F8 | Materielle Selbstständigkeitsvoraussetzung | FAQ/Bewerbungsseite: ja; JG03-Handbuch: nicht in zwingenden Förderbedingungen; Online-Fragen: kein Feld | `[PTF_BESTÄTIGUNG_ERFORDERLICH]` |
 
 ## E. Vor der Einreichung abzuhaken
 
-- [ ] M1–M6 positiv geklärt; M8 planbar.
+- [ ] M1–M6 positiv geklärt; M8 planbar. **M3a/M3c: materielles Q2-Risiko dokumentiert und entschieden.**
 - [ ] O1 Lizenz entschieden (oder bewusst offen bis nach Auswahl; FOSS-Zusage bleibt).
 - [ ] O2 Stunden entschieden; Budget/Plan konsistent.
 - [ ] O3 Second Stage entschieden; §16/§17 entfernt oder final.
@@ -72,7 +73,7 @@
 - [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
 - [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) bestätigt.
 - [ ] Persönliche Felder aus B ergänzt; keine Platzhalter mehr im Portaltext.
-- [ ] Portal-Live-Fragen/Wortlimits geprüft; Abweichungen in `portal-field-mapping.md` nachgezogen.
+- [ ] Portal-Live-Fragen/Wortlimits geprüft; Abweichungen in `portal-field-mapping.md` nachgezogen. Der Live-Login ist eine einmalige Owner-Aktion; siehe [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md).
 - [ ] `application-final-de.md` von Platzhaltern befreit (außer bewusst markierten).
 - [ ] Keine sensiblen Daten im öffentlichen Repo.
 - [ ] RepairProbe-Portal-Draft unverändert.

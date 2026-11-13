@@ -12,7 +12,7 @@
 | A4 | **Bewerbungstext-Ergänzungen** einarbeiten: RF-Messabsatz, Document-AI-/LLM-Abgrenzung, XSD-Verbraucher-Argument, Adaptierbarkeits-Story (2. Schema-Demo-Pfad) | Review A Vektoren 1/2/6/7 | bis 26.11. |
 | A5 | **Feldexa-Fassung (F1/F2/F3) vs. RepairProbe final bestätigen** (dieser Bericht = bedingte Empfehlung F3; ggf. RepairProbe-Portal-Draft bewusst ruhen lassen) | Auftrag: genau ein Antrag; **Owner entscheidet, nicht der Agent** | bis 27.11. |
 | A6 | **Portal-Eintragung** (FormBridge-Bausteine übertragen, Fragen des Live-Portals gegen Vorlage prüfen) | Frist 30.11. 15:00 CET — Puffer einplanen | bis 28.11. |
-| A7 | **Q2/Gründungsstrategie entscheiden:** Q2-Anfrage senden; Variante A/B/C wählen; keine Anmeldung ohne Freigabe | Q2 ungeklärt; formaler Antrag verlangt voraussichtlich Steuernummer/Anmeldung; „erst Juni“ nicht sicher | bis 24.11. |
+| A7 | **Q2/Gründungsstrategie entscheiden:** Q2-Anfrage senden; Variante A/B/C wählen; keine Anmeldung ohne Freigabe | **Q2 materiell widersprüchlich** (FAQ/Bewerbungsseite vs. JG03-Handbuch); Online-Fragen ohne Statusfeld; formaler Antrag März/Ende Feb; „erst Juni“ nicht sicher | bis 24.11. |
 
 ## Entscheidungs-Block B — optional/strategisch
 

@@ -30,7 +30,7 @@ Ein Teil der amtlichen Formulare wird als statische PDF bereitgestellt und ist n
 
 Besonders relevant ist diese Lücke für Anträge mit sensiblen Daten, etwa Sozialleistungen, sowie für Beratungsstellen und Kommunen. FormBridge setzt nicht beim Endnutzer, sondern bei der Software an, die solche Anträge baut: Wenn Zuordnungen nachvollziehbar und unsicherheitsbewusst sind, können darauf aufbauende Anwendungen Medienbrüche reduzieren, ohne vertrauliche Daten an einen zentralen Dienst zu geben. Das ist kein Ersatz für Rechtsberatung oder Behördenentscheidungen, sondern eine technische Grundlage für verlässlichere digitale Verfahren.
 
-**Wörter:** 160 / 175 · **Status:** FINAL
+**Wörter:** 163 / 175 · **Status:** FINAL
 
 ---
 
@@ -40,7 +40,7 @@ Geplant ist ein Python-3.12-Modul mit CLI und Bibliotheks-API. Die PDF-Textlage 
 
 Das Provenienz-Manifest FB-1 enthält SHA-256 von PDF und Schema, Tool-/Regelversion, Normalisierungsschritte und Review-Hashes; ein separater Verifier prüft es ohne App-Abhängigkeit. Die Ausgabe wird mit lxml gegen die dokumentiert normalisierte, verlustbehaftete Schema-Variante validiert; wo verfügbar, ist FITKO-JSON-Schema der primäre Pfad. Die Laufzeit ist offline; Schema und optionale Modellgewichte werden lokal bereitgestellt und gehasht. Cloud-Dienste und ein produktiver Behördenanschluss sind ausgeschlossen. Ein kleines lokales ML-Modell ist optional, nicht Voraussetzung. Die Architektur bleibt ohne Feldexa-Abhängigkeit nutzbar.
 
-**Wörter:** 135 / 175 · **Status:** FINAL
+**Wörter:** 133 / 175 · **Status:** FINAL
 
 ---
 
@@ -64,7 +64,7 @@ https://github.com/xxammaxx/FormBridge
 
 Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne Lizenz und Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Kein einzelner Baustein deckt die Kette ab; die Kombination ist Eigenarbeit. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
 
-**Wörter:** 82 / 100 · **Status:** FINAL
+**Wörter:** 86 / 100 · **Status:** FINAL
 
 ---
 
@@ -72,7 +72,7 @@ Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-D
 
 Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*innen in Kommunen und IT-Dienstleistern sowie die FIM-/OZG-Community. Sie erhalten eine Bibliothek und CLI, die sie in eigene Produkte integrieren können. Erreicht werden sie über das öffentliche GitHub-Repository, technische Dokumentation, Vorträge und Austausch im FIM-/FITKO-Umfeld sowie über bestehende Open-Source-Netzwerke. Open Source, damit andere die Infrastruktur prüfen, erweitern und unabhängig betreiben können. Sekundär profitieren Bürger*innen und Verwaltungsmitarbeitende über Anwendungen, die FormBridge einsetzen. Eine direkte Endnutzer-UI ist nicht Teil des Vorhabens; Feldexa 2.0 ist die vorgesehene erste Anwendung, aber nicht integriert und nicht Teil des Förderumfangs.
 
-**Wörter:** 94 / 100 · **Status:** FINAL
+**Wörter:** 90 / 100 · **Status:** FINAL
 
 ---
 
@@ -86,7 +86,7 @@ Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*
 6. Monat: Review-Zeit-Messung, Dokumentation, FOSS-Release, Abschlussbericht.
 Jeder Meilenstein endet mit einem reproduzierbaren Testlauf und einem kurzen öffentlichen Bericht.
 
-**Wörter:** 67 / 100 · **Status:** FINAL
+**Wörter:** 68 / 100 · **Status:** FINAL
 
 ---
 
@@ -102,7 +102,7 @@ Jeder Meilenstein endet mit einem reproduzierbaren Testlauf und einem kurzen öf
 
 Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben].
 
-**Wörter:** 22 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 16 + Platzhalter / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 
@@ -134,7 +134,7 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Ich bin bereit, die für eine Förderung erforderlichen formalen Schritte rechtzeitig einzuleiten. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
 
-**Wörter:** 77 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 77 + Platzhalter / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 

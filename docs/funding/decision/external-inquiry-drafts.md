@@ -16,8 +16,9 @@
 > 3. Welcher Nachweis wird zu welchem Zeitpunkt verlangt: Steuernummer, Anmeldung/Eingangsbestätigung beim Finanzamt oder beides?
 > 4. Reicht bei einer bestehenden Anstellung eine Arbeitgeber-Freistellung für die Projektlaufzeit als Alternative, und welcher Nachweis wird erwartet?
 > 5. Kann die Steuernummer nach dem formalen Antrag nachgereicht werden, falls das Finanzamt sie nicht rechtzeitig vergibt?
+> 6. Gilt der Antragsschluss **Ende Februar 2027** oder erst **nach der März-Rückmeldung/Antragswerkstatt**?
 >
-> Hintergrund: Das Handbuch Jahrgang 03 sagt, man bewerbe sich „als Privatperson"; die FAQ-Checkliste (Auswahl 03) nennt für Einzelpersonen keine Steuernummer. Das Wiki zur Antragstellung (Stand 03.03.2026, Jahrgang 02) verlangt dagegen eine Steuernummer/Anmeldung bereits zum formalen Antrag. Bitte erklären Sie, welche Regel für Jahrgang 03 gilt.
+> Hintergrund: Das JG03-Handbuch (Sept. 2026) listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die JG03-FAQ Bewerbung 02 und die Bewerbungsseite verlangen aber weiterhin Selbstständigkeit/Freiberuflichkeit oder eine Arbeitgeber-Freistellung. Die offiziellen Fragen für Innovation enthalten kein Steuernummer-/Selbstständigkeitsfeld. Die FAQ-Checkliste (Auswahl 03) nennt für Einzelpersonen keine Steuernummer; das Wiki zur Antragstellung (Stand 03.03.2026, Jahrgang 02) verlangt dagegen eine Steuernummer/Anmeldung bereits zum formalen Antrag. Die Detailseite nennt für den Antrag März 2027, zugleich aber „bis Ende Februar“. Bitte erklären Sie, welche Regel für Jahrgang 03 gilt.
 >
 > Ich möchte keine falschen Angaben machen und plane konservativ. Vielen Dank!
 >

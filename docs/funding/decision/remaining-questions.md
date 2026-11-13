@@ -27,11 +27,11 @@
 
 ## Q2 — Selbstständigkeit: Bewerbung, formaler Antrag, Förderbeginn (CONTRADICTED)
 
-- **Bekannt:** Bewerbung setzt „selbstständig oder freiberuflich“ voraus; Angestellte mit (anteiliger) Freistellung sind ausdrücklich zulässig (FAQ Bewerbung 02 FN**). **JG03-Handbuch/FAQ:** Bewerbung „als Privatperson“; keine Solo-Steuernummer in der Bewilligungs-Checkliste; formaler Antrag bis **Ende Februar 2027**. **JG02-Wiki** (03.03.2026) verlangt dagegen Steuernummer/Anmeldung zum formalen Antrag. Historische Seiten (2020/2022): „spätestens bei Projektbeginn“. **Widerspruch.**
-- **Fehlt:** Ob die Selbstständigkeit bereits zur **Jury-Bewerbung** (Nov 2026) bestehen muss, ob sie bis zum **formalen Antrag** (Frühjahr 2027) genügt oder ob eine Aufnahme **erst zum Förderbeginn** (01.06.2027) akzeptiert wird — und welcher Nachweis zu welchem Zeitpunkt.
-- **Tendenz (keine Rechtsaussage):** Der aktuelle Wiki-Eintrag spricht für eine Registrierung **vor dem formalen Antrag**; „erst zum Förderbeginn“ ist **nicht sicher** tragfähig.
+- **Bekannt:** FAQ Bewerbung 02 und Bewerbungsseite verlangen „selbstständig oder freiberuflich“ **oder** eine anteilige Arbeitgeber-Freistellung. Das **JG03-Handbuch** (Sept. 2026) listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. Die **Online-Fragen Innovation** enthalten kein Steuernummer-/Statusfeld. **JG03-FAQ Auswahl 03:** für Einzelpersonen keine Solo-Steuernummer; **JG02-Wiki** (03.03.2026): Steuernummer/Anmeldung zum formalen Antrag. **Materieller Widerspruch.**
+- **Fehlt:** Ob die Selbstständigkeit bereits zur **Online-Bewerbung** (Nov 2026) materielle Voraussetzung ist, ob sie bis zum **formalen Antrag** (März 2027 / Ende Feb) genügt oder ob eine Aufnahme **erst zum Förderbeginn** (01.06.2027) akzeptiert wird — und welcher Nachweis zu welchem Zeitpunkt.
+- **Tendenz (keine Rechtsaussage):** Eine Registrierung **vor dem PTF-bestätigten formalen Antragstermin** ist die konservative Planung; „erst zum Förderbeginn“ ist **nicht sicher** tragfähig. Das JG03-Handbuch stützt die Bewerbung als Privatperson, entkräftet die FAQ aber nicht ausdrücklich.
 - **Relevanz:** Entscheidend, falls der Owner derzeit nicht selbstständig/freiberuflich ist und keine Freistellung hat.
-- **Verbindlich nötig?** **Ja — potenziell harte formale Hürde.**
+- **Verbindlich nötig?** **Ja — materielles Teilnahmerisiko, nicht nur Nachweis-/Zeitplanfrage.**
 - **Vollständige Analyse:** [q2-employment-status.md](q2-employment-status.md).
 - **Abhängige Entscheidung:** A2 (PTF-Query) und Gewerbe-/Finanzamt-Timing; Owner-Checkliste M3c.
 

@@ -1,6 +1,6 @@
 # Bewerbungspaket FormBridge — Index
 
-**Stand:** 13.11.2026 · **Status:** `READY_FOR_OWNER_INPUT` (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Stand:** 14.11.2026 · **Status Bewerbungspaket:** `READY_FOR_OWNER_INPUT` · **Status Portal-Preflight:** `READY_WITH_EXPLICIT_BLOCKERS` · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` (Bewerbungstext/Finanzen) · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Gründungs-Delta (docs-only):** Reviewer A **PASS (bedingt, `STRATEGY_CONDITIONALLY_VALID`)**, Reviewer B **PASS (bedingt, `EXTERNAL_CONFIRMATION_REQUIRED`)**; geprüfter Candidate `d062d9db` ([Review](../decision/review-founder-strategy-2026-11-13.md))
 
 | Dokument | Zweck | Status |
@@ -13,6 +13,7 @@
 | [owner-checklist.md](owner-checklist.md) | M1–M9, persönliche Angaben, Owner-Entscheidungen | OWNER_ACTION |
 | [owner-input-request.md](owner-input-request.md) | Minimal zusammengefasste Owner-Abfrage | OWNER_ACTION |
 | [owner-decision-gate.md](owner-decision-gate.md) | Minimale Owner-Entscheidungen und Gate-Stufen | OWNER_ACTION |
+| [portal-preflight-2026-11-14.md](portal-preflight-2026-11-14.md) | Live-Portalstatus, Feldvorlage, fehlende Owner-Angaben, Q2-Risiko | READY_WITH_EXPLICIT_BLOCKERS |
 | [founder-timeline.md](founder-timeline.md) | Zeitplan Nov 2026–Jun 2027, Varianten A/B/C | REVIEWED |
 | [review-report.md](review-report.md) | Unabhängige Reviews A/B | PASS/PASS |
 | [validation-report.md](validation-report.md) | Abschließende Revalidierung | PASS_WITH_BLOCKERS |
@@ -22,7 +23,8 @@
 | [Q2-Verifikation](../decision/prototype-fund-q2-verification.md) | Fragen A–H, Quellen, Status | CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED |
 | [Jobcenter/BA-Assessment](../decision/jobcenter-grants-assessment.md) | Einstiegsgeld, §16c, Gründungszuschuss, Kombination | EXTERNAL_CONFIRMATION_REQUIRED |
 | [Review Gründungsstrategie](../decision/review-founder-strategy-2026-11-13.md) | Unabhängige Reviews A/B, Residual LOW | PASS (bedingt) |
+| [Post-Selection-Gründungsplan](../decision/post-selection-founding-plan.md) | Finanzamt, ESG/§16c, GZ, Tragfähigkeit, Liquidität | EXTERNAL_CONFIRMATION_REQUIRED |
 
-**Gate:** `READY_FOR_OWNER_INPUT` — alle öffentlich belegbaren Anforderungen erfüllt, soweit nicht Q2 widersprüchlich ist; offen sind Owner-Angaben (M1–M9), Q2/Q3/Q3b, Portal-Live-Prüfung und Lizenz-/Second-Stage-Entscheidung.
+**Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. **Keine Einreichung ohne Owner-Freigabe.**
 
 **Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung, keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.
