@@ -96,3 +96,16 @@ wartet auf Owner-Freigabe.
   zitiert.
 - Alle Zitate sind wortgleich aus der abgerufenen Fassung; Auslassungen sind
   mit „…" markiert.
+
+## G. Sozialrechtliche Quellen (Gründungsförderung, Stand 13.11.2026)
+
+| ID | Quelle | Kernaussage | Status |
+|---|---|---|---|
+| S1 | §16b SGB II — https://www.gesetze-im-internet.de/sgb_2/__16b.html | Einstiegsgeld: „kann“, max. 24 Monate, bei Aufnahme einer selbstständigen Erwerbstätigkeit; Bemessung nach Regelbedarf/Bedarfsgemeinschaft | VERBINDLICH |
+| S2 | §16c SGB II — https://www.gesetze-im-internet.de/sgb_2/__16c.html | Darlehen/Zuschüsse für notwendige Sachgüter, Zuschüsse max. 5.000 €; hauptberufliche Tätigkeit; Tragfähigkeitsprüfung | VERBINDLICH |
+| S3 | §§93–94 SGB III — https://www.gesetze-im-internet.de/sgb_3/__93.html · __94.html | Gründungszuschuss: ALG-I-Restanspruch ≥150 Tage, Hauptberuflichkeit, Tragfähigkeit; 6 Monate ALG I + 300 €, dann 9 × 300 € | VERBINDLICH |
+| S4 | BA „Einstiegsgeld für eine Selbstständigkeit“ — https://www.arbeitsagentur.de/grundsicherung/arbeit-finden/einstiegsgeld-selbststaendigkeit | Voraussetzungen; Antrag vor Aufnahme; 15 h/Woche; Einstiegsgeld nicht auf Grundsicherungsgeld angerechnet; keine Pflichtleistung | OFFIZIELL |
+| S5 | BA „Gründungszuschuss beantragen“ — https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/gruendungszuschuss-beantragen | 150 Tage, 15 h/Woche, fachkundige Stelle, Antrag vor Aufnahme, 6+9 Monate, keine Pflichtleistung | OFFIZIELL |
+| S6 | BMWK/Existenzgründungsportal — https://www.existenzgruendungsportal.de/Redaktion/DE/BMWK-Infopool/Antworten/Foerderung-Finanzierung/Foerderung/Gruendungszuschuss/Gruendungszuschuss-selbstaendig-taetig-vor-Antragstellung | Antrag vor Beginn der hauptberuflichen Selbstständigkeit (§324 SGB III) | OFFIZIELL (Hinweis: Infopool nicht mehr aktualisiert) |
+
+**Terminologie:** Die BA-Seite „Einstiegsgeld“ weist darauf hin, dass das **Grundsicherungsgeld** das Bürgergeld **ab 01.07.2026** ablöst; Formulare können weiter „Bürgergeld“ heißen. Die Rechtsgrundlagen §§16b/16c SGB II bleiben maßgeblich.

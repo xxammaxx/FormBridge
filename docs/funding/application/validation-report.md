@@ -85,6 +85,20 @@
 - M5-Tightness (155 h) und externe Testpersonen (n=2–3) bleiben Risiken.
 - Kein benannter Adopter/Pilotpartner.
 
+## 3.5 Q2 und Gründungsstrategie (Stand 13.11.2026)
+
+| Punkt | Ergebnis |
+|---|---|
+| Bewerbung ohne Selbstständigkeit | **nicht ausdrücklich verboten, aber nicht bestätigt**; PTF-Anfrage nötig |
+| Maßgeblicher Registrierungszeitpunkt | aktueller PTF-Wiki-Eintrag (Jahrgang 02, 03.03.2026) verlangt Steuernummer/Anmeldung **zum formalen Antrag**; historische „spätestens bei Projektbeginn“-Seiten sind sekundär |
+| „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn |
+| Empfohlene Variante | **A**: Bewerbung ohne falschen Status; nach Auswahl, vor formalem Antrag registrieren; vor Tätigkeitsaufnahme Jobcenter/BA kontaktieren |
+| Q2-Status | **EXTERNAL_CONFIRMATION_REQUIRED**; Anfrage in [external-inquiry-drafts.md](../decision/external-inquiry-drafts.md), **nicht versendet** |
+| Gründungsförderung | Einstiegsgeld (§16b SGB II) und §16c SGB II sind Ermessensleistungen; Gründungszuschuss (§§93–94 SGB III) setzt ALG I, 150 Tage, Hauptberuflichkeit und Tragfähigkeit voraus; **keine pauschale Kumulierbarkeit** mit PTF |
+| Persönliche Daten | keine im Repo; Owner-Input nur über Platzhalter/geschützten Bereich |
+
+**Wichtig:** Die Projektzuwendung ist **kein frei verfügbares Nettoeinkommen**. Anrechnung, Doppelförderung, Liquidität und Steuern sind individuell mit Jobcenter/BA/Steuerberatung zu klären.
+
 ## 4. Test- und Reproduktionsnachweis
 
 ```bash

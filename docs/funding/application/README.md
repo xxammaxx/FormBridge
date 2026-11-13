@@ -12,10 +12,15 @@
 | [innovation-evidence.md](innovation-evidence.md) | Prior Art, Abgrenzung, belegte vs. getestete Aussagen | REVIEWED_PASS |
 | [owner-checklist.md](owner-checklist.md) | M1–M9, persönliche Angaben, Owner-Entscheidungen | OWNER_ACTION |
 | [owner-input-request.md](owner-input-request.md) | Minimal zusammengefasste Owner-Abfrage | OWNER_ACTION |
+| [owner-decision-gate.md](owner-decision-gate.md) | Minimale Owner-Entscheidungen und Gate-Stufen | OWNER_ACTION |
+| [founder-timeline.md](founder-timeline.md) | Zeitplan Nov 2026–Jun 2027, Varianten A/B/C | REVIEWED |
 | [review-report.md](review-report.md) | Unabhängige Reviews A/B | PASS/PASS |
 | [validation-report.md](validation-report.md) | Abschließende Revalidierung | PASS_WITH_BLOCKERS |
 | [submission-runbook.md](submission-runbook.md) | Konkrete Einreichungsschritte | READY |
 | [project-description-short.md](project-description-short.md) | Fünf-Satz- und Ein-Absatz-Beschreibung | READY |
+| [Gründungsstrategie](../decision/founder-strategy-2026-2027.md) | Q2, Varianten, Sozialrechtswege | EXTERNAL_CONFIRMATION_REQUIRED |
+| [Q2-Verifikation](../decision/prototype-fund-q2-verification.md) | Fragen A–H, Quellen, Status | EXTERNAL_CONFIRMATION_REQUIRED |
+| [Jobcenter/BA-Assessment](../decision/jobcenter-grants-assessment.md) | Einstiegsgeld, §16c, Gründungszuschuss, Kombination | EXTERNAL_CONFIRMATION_REQUIRED |
 
 **Gate:** `READY_FOR_OWNER_INPUT` — alle öffentlich prüfbaren Anforderungen erfüllt; offen sind Owner-Angaben (M1–M9), Q2/Q3/Q3b, Portal-Live-Prüfung und Lizenz-/Second-Stage-Entscheidung.
 

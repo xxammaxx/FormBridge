@@ -100,9 +100,9 @@ Jeder Meilenstein endet mit einem reproduzierbaren Testlauf und einem kurzen öf
 
 ## 11. Bisherige Softwareprojekte (max. 100 Wörter; max. 3 Beispiele)
 
-Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben].
+Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben]. Die für den formalen Antrag erforderliche selbstständige Tätigkeit plane ich rechtzeitig vor Antragstellung aufzunehmen.
 
-**Wörter:** 22 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 36 / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 
