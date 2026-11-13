@@ -4,7 +4,7 @@
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
 
-**Wortlimits:** aus dem offiziellen PTF-Handbuch Jahrgang 03 (Fragen 2–19). Das Portal kann zusätzlich Zeichenlimits erzwingen; diese wurden nicht eingesehen.
+**Wortlimits:** aus dem offiziellen PTF-Handbuch Jahrgang 03 (Fragen 2–19). Die hier angegebenen Wortzahlen nutzen einen einfachen Whitespace-Tokenizer; das Portal kann anders zählen und zusätzlich Zeichenlimits erzwingen. Diese wurden nicht eingesehen.
 
 ---
 
@@ -18,7 +18,7 @@ FormBridge ist ein geplantes freies, lokal laufendes Softwaremodul, das statisch
 
 ## 2. Projektbeschreibung (max. 100 Wörter)
 
-Im Förderzeitraum entsteht ein eigenständiges Open-Source-Modul mit Bibliothek und CLI. Es erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs, schlägt Zuordnungen zu versionierten FIM-Datenfeldern vor und markiert Unsicherheit ausdrücklich als UNKNOWN. Menschen prüfen und korrigieren die Vorschläge. Ein versioniertes Provenienz-Manifest und ein unabhängiger Verifier machen Quelle, Schema-Version, Koordinaten und Review-Entscheidungen nachprüfbar. Eine gegen die dokumentiert normalisierte Schema-Variante validierte Ausgabe und ein Abdeckungsbericht runden den Kern ab. Referenz ist der Wohngeldantrag S00000159; Scans, Produkt-UI und Behördenanschluss sind nicht Teil des Vorhabens. Alle selbst erstellten Code- und Dokumentationsergebnisse werden als FOSS veröffentlicht; amtliche PDFs/XSDs werden nur per URL/Hash referenziert.
+Im Förderzeitraum entsteht ein eigenständiges Open-Source-Modul mit Bibliothek und CLI. Es erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs, schlägt Zuordnungen zu versionierten FIM-Datenfeldern vor und markiert Unsicherheit ausdrücklich als UNKNOWN. Menschen prüfen und korrigieren die Vorschläge. Ein versioniertes Provenienz-Manifest und ein unabhängiger Verifier machen Quelle, Schema-Version, Koordinaten und Review-Entscheidungen nachprüfbar. Eine gegen die dokumentiert normalisierte Schema-Variante validierte Ausgabe und ein Abdeckungsbericht runden den Kern ab. Referenz ist der Wohngeldantrag S00000159; Scans, Produkt-UI und Behördenanschluss sind nicht Teil des Vorhabens. Selbst erstellter Code und Dokumentation werden FOSS; amtliche PDFs/XSDs und abgeleitete FIM-Metadaten nur nach Rechteklärung per URL/Hash.
 
 **Wörter:** 96 / 100 · **Status:** FINAL
 
@@ -46,9 +46,9 @@ Das Provenienz-Manifest FB-1 enthält SHA-256 von PDF und Schema, Tool-/Regelver
 
 ## 5. Aktueller Stand und geplante Neuerungen (max. 100 Wörter)
 
-Die Idee ist erforscht, aber das Modul ist nicht implementiert. Vorhanden sind ein öffentlicher Prior-Art-Audit über 13 Projekte, ein Referenzfall zum Fürther Wohngeldantrag und FIM S00000159 v1.4, ein 30-Feld-Referenzdatensatz, eine technische Spezifikation sowie der Nachweis von 170 betroffenen Elementen im amtlichen XSD (169 xmllint-Meldungen). Diese Arbeiten sind Vorarbeit und werden nicht als Förderleistung abgerechnet. Im Förderzeitraum entstehen die eigenständige Codebasis, der Regelkatalog, die Review- und Verifier-Komponenten sowie der Testkorpus. Die Feldexa-App bleibt ein unabhängiges Produkt und wird nicht verändert.
+Die Idee ist erforscht, aber das Modul ist nicht implementiert. Vorhanden sind ein öffentlicher Prior-Art-Audit über 13 Projekte, ein Referenzfall zum Fürther Wohngeldantrag und FIM S00000159 v1.4, ein 30-Feld-Referenzdatensatz, eine technische Spezifikation sowie der Nachweis von 170 Parser-Fehlern im amtlichen XSD (1 NCName + 169 D2-Meldungen). Diese Arbeiten sind Vorarbeit und werden nicht als Förderleistung abgerechnet. Im Förderzeitraum entstehen die eigenständige Codebasis, der Regelkatalog, die Review- und Verifier-Komponenten sowie der Testkorpus. Die Feldexa-App bleibt ein unabhängiges Produkt und wird nicht verändert.
 
-**Wörter:** 80 / 100 · **Status:** FINAL
+**Wörter:** 81 / 100 · **Status:** FINAL
 
 ---
 
@@ -62,9 +62,9 @@ https://github.com/xxammaxx/FormBridge
 
 ## 7. Innovation (max. 100 Wörter)
 
-Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne Lizenz und Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Darauf aufbauen geht nicht, weil keiner der Bausteine PDF-Koordinaten, FIM-Versionierung, UNKNOWN-Gate und Provenienz zugleich liefert. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
+Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne Lizenz und Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Kein einzelner Baustein deckt die Kette ab; die Kombination ist Eigenarbeit. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
 
-**Wörter:** 86 / 100 · **Status:** FINAL
+**Wörter:** 82 / 100 · **Status:** FINAL
 
 ---
 
@@ -112,11 +112,11 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 **Antwort:** [OWNER_BESTÄTIGUNG_ERFORDERLICH: Ja/Nein]
 
-**Q5 — Wenn ja, erläutere, weshalb das Projekt nicht der Entwicklung von Software für den eigenen Geschäftsbetrieb dient (max. 60 Wörter).**
+**Q5 — nur falls Q4 = Ja: Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln (max. 60 Wörter).**
 
-Ich bin nicht Gesellschafter*in einer GmbH, eines Vereins oder einer vergleichbaren Organisation und arbeite nicht für eine thematisch verbundene Institution. [OWNER_BESTÄTIGUNG_ERFORDERLICH: Falls abweichend, Beteiligung/Anstellung und die klare Trennung zum Projekt erläutern.] FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.
+[OWNER_BESTÄTIGUNG_ERFORDERLICH: Falls Q4 = Ja, Beteiligung/Anstellung nennen und die klare Trennung zum Projekt erläutern. Falls Q4 = Nein, Q5 entfällt.] FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.
 
-**Wörter Q5:** 33 / 60 · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
+**Wörter Q5:** 21 / 60 · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
 
 ---
 
@@ -126,7 +126,7 @@ Ich bin nicht Gesellschafter*in einer GmbH, eines Vereins oder einer vergleichba
 
 **Begründung:** 950 h entsprechen der maximalen Stundenzahl für Einzelpersonen; die Aufteilung ist im [Sechs-Monats-Plan](six-month-development-plan.md) dokumentiert. Eine realistische 850-h-Variante liegt in [budget-final.md](budget-final.md).
 
-**Status:** OWNER_ENTSCHEIDUNG_ERFORDERLICH (950 vs. 850)
+**Status:** FINAL (950; 850 nur bei bewusster Owner-Änderung vor Einreichung)
 
 ---
 
@@ -140,7 +140,7 @@ Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist
 
 ## 15. Second Stage — Ja/Nein
 
-**Antwort:** Ja. [OWNER_ENTSCHEIDUNG_ERFORDERLICH: Falls Nein, diesen Abschnitt und §16/§17 entfernen.]
+**Antwort:** Ja. [OWNER_ENTSCHEIDUNG_ERFORDERLICH: Falls Nein, §15 auf „Nein“ setzen und §16/§17 entfernen.]
 
 **Begründung:** FormBridge ist Infrastruktur; der Prototyp allein erzeugt noch keine Nutzung. Die Second Stage ist für Integration, Dokumentation und Pflege sinnvoll.
 

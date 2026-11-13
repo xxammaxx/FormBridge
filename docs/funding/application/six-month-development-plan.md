@@ -81,22 +81,39 @@ M1 Fundament ──► M2 Kandidaten ──► M3 Goldstandard/Review ──► 
 - **Kritische Felder:** Identität (Name, Geburtsdatum, Anschrift, Steuer-ID, IBAN/Konto), Beträge (Einkommen, Miete, Leistungen) und Pflicht-/Ja-Nein-Erklärungen. Die vollständige Liste steht in Anhang A des Messberichts.
 - **Stille kritische Fehlzuordnung:** eine kritische Zuordnung, die ohne Review-Gate und ohne UNKNOWN in die Endausgabe gelangt. Vor Review dürfen kritische Felder nur als Kandidat mit Review-Pflicht erscheinen.
 
+### 5.1a Mapping-fähige Felder, Lücken und Review-Zeitpunkt
+
+**Mapping-fähige Felder** sind Felder mit einem fachlich möglichen FIM-Ziel: `MAPPED`, `CONTEXT_REQUIRED`, `VALUE_CODELIST`, `STRUCTURAL_EXPANSION`, `STRUCTURAL_MISMATCH` und auflösbare `AMBIGUOUS_SEMANTIC`. **Nicht mapping-fähig** sind `COVERAGE_GAP` und `UNMATCHED`; sie haben kein FIM-Ziel und werden **nicht** in Precision/Recall gezählt.
+
+| Metrik | Definition |
+|---|---|
+| Precision | korrekte Top-1-Zuordnungen / alle Top-1-Zuordnungen auf **mapping-fähigen** Gold-Feldern |
+| Recall | korrekte Top-1-Zuordnungen / alle **mapping-fähigen** Gold-Felder; `UNKNOWN` auf einem mapping-fähigen Feld zählt als Miss |
+| Selektiver Recall | korrekte Top-1-Zuordnungen / nicht-`UNKNOWN`-Ausgaben (zusätzlich, nicht Ersatz) |
+| Gap-Erkennung | Anteil der `COVERAGE_GAP`/`UNMATCHED`-Felder, die korrekt als nicht abbildbar markiert werden; getrennt von P/R |
+| End-to-End-Qualität | P/R **nach** Review separat; menschliche Korrekturen werden nicht der Systemgüte zugerechnet |
+
+**Review-Zeitpunkt:** Die Muss-P/R wird auf der **Systemausgabe vor Review** gemessen. Die End-to-End-Qualität nach Review wird separat berichtet. „0 stille kritische Fehlzuordnungen“ gilt für die **Endausgabe nach Review**.
+
+**Goldstandard-Größe:** 950 h: ≥ 120 Felder insgesamt, davon **≥ 96 mapping-fähig** (80 %); 850 h: ≥ 100 Felder insgesamt, davon **≥ 80 mapping-fähig**. Die P/R-Muss-Werte gelten für die mapping-fähige Teilmenge. Gap-Erkennung: ≥ 90 % (950 h) bzw. ≥ 85 % (850 h). Damit ist die Metrik nicht durch einen hohen Gap-Anteil mathematisch unerreichbar.
+
 ### 5.2 Coverage- und UNKNOWN-Grenzen
 
 Damit „alles UNKNOWN“ keine triviale Lösung ist, gelten Mindest-Coverage und Obergrenzen:
 
 | Größe | 950-h-Muss | 850-h-Muss |
 |---|---:|---:|
-| Nicht-kritische Felder mit automatischem Top-1-Vorschlag (Confidence ≥ Schwelle) | ≥ 60 % | ≥ 50 % |
-| UNKNOWN-Anteil bei nicht-kritischen Feldern | ≤ 40 % | ≤ 50 % |
+| Nicht-kritische **mapping-fähige** Felder mit automatischem Top-1-Vorschlag (Confidence ≥ Schwelle) | ≥ 60 % | ≥ 50 % |
+| UNKNOWN-Anteil bei nicht-kritischen **mapping-fähigen** Feldern | ≤ 40 % | ≤ 50 % |
 | Kritische Felder ohne Review/Gate in Endausgabe | 0 | 0 |
 | Stille kritische Fehlzuordnungen in Endausgabe | 0 | 0 |
+| Gap-Erkennung (`COVERAGE_GAP`/`UNMATCHED` korrekt markiert) | ≥ 90 % | ≥ 85 % |
 
 Die Confidence-Schwelle wird im Messbericht vor der Auswertung festgelegt und nicht nachträglich an die Ergebnisse angepasst.
 
 ### 5.3 Goldstandard und Zweitannotation
 
-- Seed: 30-Feld-Referenzdatensatz (Vorarbeit) + ≥ 90 neue Felder für 950 h (≥ 70 für 850 h).
+- Seed: 30-Feld-Referenzdatensatz (Vorarbeit; 24 mapping-fähig) + ≥ 90 neue Felder für 950 h (≥ 70 für 850 h); insgesamt ≥ 120 (850: ≥ 100), davon ≥ 96 (850: ≥ 80) mapping-fähig.
 - **Zweitannotation:** mindestens 30 % der Felder werden von einer zweiten Person unabhängig annotiert; Cohen's κ ≥ 0,80; Abweichungen werden dokumentiert und adjudiziert.
 - Die Autorenannotation wird offengelegt. Der Held-out-Test ist die externe Gegenprobe; ohne vollständige Held-out-Annotation wird er als qualitative Grenzprüfung ausgewiesen, nicht als P/R-Zahl.
 - Der Regelkatalog wird nicht auf dem Held-out-Dokument entwickelt. Wird das Held-out-Dokument nachträglich einbezogen, wird es als „nicht mehr held-out“ markiert.
@@ -131,8 +148,8 @@ Die Confidence-Schwelle wird im Messbericht vor der Auswertung festgelegt und ni
 ### 6.1 950-h-Muss
 
 1. End-to-End-Lauf auf Referenz-PDF und mindestens einem Held-out-Dokument (vollständig annotiert oder qualitativ geprüft).
-2. Goldstandard **≥ 120 annotierte Felder** (Seed 30 + ≥ 90 neue), stratifiziert nach Feldklassen.
-3. Precision **≥ 0,90**, Recall **≥ 0,85** (Top-1) auf dem Referenzdokument; Held-out separat, sofern vollständig annotiert.
+2. Goldstandard **≥ 120 Felder insgesamt, davon ≥ 96 mapping-fähig** (Seed 30 + neue; stratifiziert nach Feldklassen). `COVERAGE_GAP`/`UNMATCHED` werden separat als Gap-Erkennung gemessen.
+3. Precision **≥ 0,90**, Recall **≥ 0,85** (Top-1 **vor Review**) auf der **mapping-fähigen** Teilmenge des Referenzdokuments; Held-out separat, sofern vollständig annotiert. End-to-End-Qualität nach Review separat.
 4. Coverage/UNKNOWN-Grenzen aus §5.2 eingehalten.
 5. **0 stille kritische Fehlzuordnungen** in der Endausgabe; kritische Felder nur mit Review/Gate.
 6. Schema-Hygiene: **≥ 3** FIM-XSDs normalisiert/kompiliert mit Semantikverlust-Protokoll; 5 als Stretch.
@@ -143,8 +160,8 @@ Die Confidence-Schwelle wird im Messbericht vor der Auswertung festgelegt und ni
 ### 6.2 850-h-Muss (eigene Tabelle)
 
 1. End-to-End-Lauf auf Referenz-PDF und einem Held-out-Dokument (qualitativ oder vollständig annotiert).
-2. Goldstandard **≥ 100 annotierte Felder** (Seed 30 + ≥ 70 neue).
-3. Precision **≥ 0,85**, Recall **≥ 0,80** (Top-1) auf dem Referenzdokument.
+2. Goldstandard **≥ 100 Felder insgesamt, davon ≥ 80 mapping-fähig** (Seed 30 + neue; stratifiziert).
+3. Precision **≥ 0,85**, Recall **≥ 0,80** (Top-1 **vor Review**) auf der **mapping-fähigen** Teilmenge des Referenzdokuments. End-to-End-Qualität nach Review separat.
 4. Coverage/UNKNOWN-Grenzen aus §5.2 eingehalten.
 5. 0 stille kritische Fehlzuordnungen.
 6. Schema-Hygiene: **≥ 2** FIM-XSDs mit Semantikverlust-Protokoll; 3 als Stretch.

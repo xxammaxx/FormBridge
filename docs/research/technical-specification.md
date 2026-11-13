@@ -2,7 +2,7 @@
 
 **Datum:** 13.11.2026 · **Charakter:** Spezifikation für ein künftig zu entwickelndes, unabhängiges Infrastruktur-Modul. **KEINE Implementierungsanweisung** für das Feldexa-2.0-Produkt und keine Vorab-Förderleistung. Referenzhypothesen: `innovation-assessment.md`.
 
-> **Vorarbeit-Hinweis (Validierung 13.11.2026):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis 170 Fehler + validierende Instanz) ist **bereits als Forschungsvorarbeit** im Referenzfall nachgewiesen (`../research/reference-case-wohngeld.md`) und zählt **nicht** als Förderleistung. Fördergegenstand in Monat 1 (RF2) ist daraus abgegrenzt: das **deterministische Normalisierungswerkzeug**, dessen CI-Automatisierung und der **Korpus von ≥ 3 amtlichen FIM-XSDs im 6-Monats-Kern (5 als Stretch)** mit vollständigen Reparaturprotokollen — nicht die bereits dokumentierte Ein-Schema-Analyse.
+> **Vorarbeit-Hinweis (Validierung 13.11.2026):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis 170 Fehler + validierende Instanz) ist **bereits als Forschungsvorarbeit** im Referenzfall nachgewiesen (`../research/reference-case-wohngeld.md`) und zählt **nicht** als Förderleistung. Fördergegenstand in Monat 1 (RF2) ist daraus abgegrenzt: das **deterministische Normalisierungswerkzeug**, dessen CI-Automatisierung und der **Korpus von ≥ 3 amtlichen FIM-XSDs im Förderkern (Spec-Forschungsziel ≥ 5; 5 als Stretch)** mit vollständigen Reparaturprotokollen — nicht die bereits dokumentierte Ein-Schema-Analyse.
 
 ## 0. Abgrenzung
 
@@ -88,7 +88,7 @@ Regeln (3) werden als **datengetriebener, versionierter Regelkatalog** (YAML/JSO
 |---|---|---|
 | 1 | Format FB-1, PDF-Textlage-Extraktion, Schema-Laden+Hash+Normalisierung (RF2-Kern) | FB-1-Spezifikation v1; S00000159 normalisiert+kompiliert in CI |
 | 2 | Regelkatalog v1 (Antragsteller-/Wohnung-Abschnitte), Kandidaten-Engine, Confidence-Modell | Erste End-to-End-Kandidaten auf Referenz-PDF, UNKNOWN-Mechanik |
-| 3 | Goldstandard ≥ 200 Felder (synthetisch), Review-CLI, Codelisten-Bindung; **Rekrutierung von 2–3 externen Testpersonen** | Precision/Recall-Baseline veröffentlicht |
+| 3 | Goldstandard ≥ 200 Felder (Spec-Ziel; Förderplan: 120 Muss / 200 Stretch), Review-CLI, Codelisten-Bindung; **Rekrutierung von 2–3 externen Testpersonen** | Precision/Recall-Baseline veröffentlicht |
 | 4 | Disambiguierung mit Abschnittskontext (RF1), kritische Kategorien-Hard-Gates, Erarbeitung des **Held-out-Dokuments** (andere Landes-Variante) | RF1-Messung, Fehlkategorien-Analyse |
 | 5 | Emit+Validate+Verify (RF3), Inkonsistenz-Negativtests, ≥ 3 FIM-Schemata im Kern (5 als Stretch, RF2-Korpus) | Reproduzierbarkeits-/Erkennungsraten |
 | 6 | Review-Zeit-Messung (RF4), Dokumentation, FOSS-Release, Bericht zu allen RFs | Abnahmekriterien §6 geprüft; Demo ohne Produkt/App |
