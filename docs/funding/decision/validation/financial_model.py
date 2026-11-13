@@ -331,7 +331,7 @@ def second_stage_budget(
 def combined_ten_month_budget(
     regular: Budget,
     second: Budget,
-) -> dict[str, Decimal | bool | list[str]]:
+) -> dict[str, Decimal | bool | tuple[str, ...]]:
     """Combine a regular and a Second-Stage budget into the legal 10-month frame.
 
     Guideline No. 5 caps the second phase at 33,337 EUR costs, so the total
@@ -460,7 +460,7 @@ def cash_flow(budget: Budget) -> dict[str, Decimal]:
     # remains unfunded until the second call.
     four_month_cost = money(monthly_cost * Decimal(4))
     cumulative_peak_cash_need = four_month_cost - parts[0]
-    four_month_ea = money(budget.ea_effective * Decimal(4) / Decimal(6))
+    four_month_ea = floor_money(budget.ea_effective * Decimal(4) / Decimal(6))
     cumulative_peak_external = cumulative_peak_cash_need - four_month_ea
     return {
         "first_call": parts[0],

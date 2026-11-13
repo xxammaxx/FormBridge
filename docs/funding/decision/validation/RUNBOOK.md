@@ -91,10 +91,8 @@ Vollständige Begründung: [financial-model.md](../financial-model.md) §2.
 
 | Datei | SHA-256 |
 |---|---|
-| `financial_model.py` | `dbf3fdec5a2eb915233d9792ede3aacff8b6c14bd99f50a7976ceccaf3296036` |
+| `financial_model.py` | `1b4e281e01910991a93bee05006f165274d335d8276565cb437b26093fe0939d` |
 | `test_financial_model.py` | `a60bcc4a305d470d41cc970ffc887991f1075ce99d44d10a372606e75bfdd579` |
 | `scenario-report.md` | `2a05539028a36d5d73b36b91e4d08f39b15ae5c069695622e82d23a484561383` |
 
-Diese Hashes beziehen sich auf den Stand **vor** dem finalen Commit; nach dem
-Commit werden sie in [`final-validation-report.md`](../final-validation-report.md)
-mit dem Candidate-SHA erneut ausgewiesen.
+Diese Hashes sind die **Candidate-Hashes** des geprüften Modell-/Teststands. Der finale Dokumentations-Commit kann die Hashes nicht selbst enthalten (Self-Reference); der geprüfte Candidate ist in [`final-validation-report.md`](../final-validation-report.md) §9 genannt.

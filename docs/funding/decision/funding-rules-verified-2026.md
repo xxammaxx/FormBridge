@@ -46,7 +46,7 @@
 
 | Konstellation | Regel | Status |
 |---|---|---|
-| Einzelperson | Volljährig (RL Nr. 3: Mindestalter 18); Softwareprojekt; Wohnsitz DE; selbstständig oder freiberuflich; Steuern in DE; Amtssprache Deutsch | VERBINDLICH/FAQ |
+| Einzelperson | Volljährig (RL Nr. 3: Mindestalter 18); Softwareprojekt; Wohnsitz DE; selbstständig oder freiberuflich; Steuern in DE; Bewerbung auch auf Englisch zulässig (FAQ Bewerbung 08), formaler Antrag/amtliche Dokumente auf Deutsch | VERBINDLICH/FAQ |
 | Angestellte | Für die Projektlaufzeit (anteilig) vom Arbeitgeber freigestellt; Teilzeit-Anstellung zulässig | FAQ Bewerbung 02 FN** |
 | Selbstständigkeit erst ab Förderbeginn | Nicht explizit geregelt | UNKNOWN — Q2 |
 | Teams | Kleine interdisziplinäre Teams; GbR; Sitz DE; max. 1/3 Wohnsitz Ausland; Mentor*in <= 10 % **nur in der Linie Up and Coming** | VERBINDLICH/FAQ |

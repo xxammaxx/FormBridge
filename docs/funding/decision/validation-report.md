@@ -148,12 +148,14 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 | 8 | Spec-M1/Boundary-Überlappung (Normalisierung bereits Vorarbeit) | M1-Meilenstein wurde nie gegen den Referenzfall abgeglichen | Vorarbeit-Hinweis in Spec §0 + Offenlegung in boundary §E (Förderleistung = Werkzeug+CI+≥5-Schemata-Korpus) | Textlich abgeglichen mit reference-case |
 | 9 | README ohne Decision-Dokumente; Stray-Dir `{docs`; validation-report.md ungetrackt | Migration-Artefakt; Commit-Reihenfolge | README-Tabelle erweitert; `{docs` rekursiv gelöscht; validation-report.md in diesem Commit | `git status`/`ls` clean |
 
+> **Historisch:** Die Tabelle oben und die folgende Runde-2-Tabelle sind Stand vor Revision 4. Die dort genannten Testzahlen (61/61, 56/57, 31.650 €) sind **nicht** aktuell; aktuell gilt 109/109 und 31.570,87/31.620,75. Siehe R3 unten.
+
 **Revalidierungsrunde 2 (Finanzmodell):**
 
 | # | Befund | Ursache | Korrektur | Revalidierung |
 |---|---|---|---|---|
 | R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Runde 2: **F/6 = 7.896,88 €**; Peak = **F/2 = 23.690,63 €**. R3 aktuell: 7.896,87 / 23.690,62; kumulativer Peak 25.353,13 €. | Review A2 (historisch) + Review A3 (R3) |
-| R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Runde 2: Szenario G mit 4 Frames; **die 31.650-€-Zeile war falsch** (PK statt Förderung). R3: 31.570,87 / 31.620,75 / Cap 31.670,15. | Review B2 (historisch) + Review A3/B3 (R3) |
+| R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Runde 2: Szenario G mit 4 Frames; **die 31.650-€-Zeile war falsch** (PK statt Förderung). R3: 31.570,87 / 31.620,75 / Cap 31.670,15. | Review B2 (historisch) + Review A/B (Runde 3) |
 | R2-3 | De-minimis-Wirkung auf F fehlte (K7 REFUTED) | Anlage Nr. 1 nur in funding-rules, nicht im Modell | Szenario H: F-Limit = min(Szenario-F, 300.000 − Vorbelastung); Erklärung/Aufbewahrung | Review B2 (RL Anlage) |
 | R2-4 | Szenario C „nicht konstruierbar" zu absolut (K3¹) | Ratenhebel (FAQ: höherer Satz mit Rechnungs-Nachweis) nicht abgebildet | Relativierung: bei R ≤ ~50,13 €/h konstruierbar (Beispiel 50,10 €/h → G 49.974,75, F 47.476,01) | Review B2 + Nachrechnung |
 | R2-5 | AZK-Anker fehlte (K8a) | RL Nr. 5/6-Verweise nicht als Kostenbasis-Anker dokumentiert | AZK-Abschnitt (Vordruck 0047 + Merkblatt Vorkalkulation; PK + GK-Pauschale als einzige öffentlich belegte Positionen) | Review B2-Zitate |
@@ -225,9 +227,9 @@ Die v3-Dokumentation bezeichnete „31.650 € (633 h × 50 €)" als konservati
 
 ### R3-3 — Befund: 10-Monats-Option fehlte
 
-RL Nr. 4 erlaubt 10 Monate (6 + 4); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt gerundet 79.167 €. Die frühere Dokumentation erwähnte die Option nicht.
+RL Nr. 4 erlaubt 10 Monate (6 + 4); RL Nr. 5 begrenzt die zweite Phase auf 33.337 € Gesamtkosten. Die kombinierte Obergrenze ist 83.337 €; die strikte Förderobergrenze ist **79.170,15 €**. Die FAQ nennt **79.167 €** = 47.500 + 31.667 (Summe der gerundeten Kommunikationsgrößen). Die frühere Dokumentation erwähnte die Option nicht.
 
-**Korrektur:** [Finanzmodell v4](financial-model.md) Szenario I; [Quellenregister](source-register-2026-11-13.md) R2/R4; Tests `TestTenMonth` (9 Tests). Die 6-Monats-Baseline bleibt unverändert.
+**Korrektur:** [Finanzmodell v4](financial-model.md) Szenario I; [Quellenregister](source-register-2026-11-13.md) R2/R4; Tests `TestTenMonth` (12 Tests). Die 6-Monats-Baseline bleibt unverändert.
 
 ### R3-4 — Befund: De-minimis war zu eng formuliert
 
@@ -251,7 +253,7 @@ Die frühere Dokumentation sprach von „FormBridge vs. RepairProbe", während d
 
 | Kriterium | Status |
 |---|---|
-| Alle Berechnungen cent-exakt und reproduzierbar | ✅ 109/109 Tests; unabhängige Reviews A/B (Runde 3): **PENDING** |
+| Alle Berechnungen cent-exakt und reproduzierbar | ✅ 109/109 Tests; Reviewer A **PASS**, Reviewer B **PASS** (Runde 3) |
 | 47.500 vs. 47.381,25 | ⚠️ **UNRESOLVED**, konservativ 47.381,25; Differenz 118,75; Anfrageentwurf |
 | Second Stage | ✅ korrigiert (31.570,87 / 31.620,75); Q3b offen |
 | 10-Monats-Option | ✅ dokumentiert (Szenario I); Kommunikationsinkonsistenz offen |

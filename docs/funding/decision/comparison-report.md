@@ -47,7 +47,7 @@ Die **bedingte Empfehlung** bezieht sich auf **F3 als Fördergegenstand** für d
 | Testzahl: **24** in `llms.txt`, **44** auf `technical-baseline.html` (gleicher Commit) | **CONTRADICTED** (öffentliche Quellen widersprechen sich) | Die frühere Forschung zitierte 44; das ist nicht belastbar. Die private Suite ist nicht einsehbar. |
 | 850 h / 6 Monate; Second Stage vorgesehen; Bewerbung nicht eingereicht | VERIFIED (öffentliche Website/llms.txt) | hoch für Planung |
 | n=1-explorative Rückmeldung; Schmerz „verlorener Kontext" selten; Info-/Teilesuche und Zugang häufiger; keine Pilotpartner | VERIFIED (öffentliche Website) | ehrlich, aber **widerspricht** der Nutzenhypothese |
-| Kein öffentlicher Prior-Art-Audit; externe Review fand iFixit FixBot, NORA, AugRep/GYVA, RepairVision (gleicher USP), YProbe/ARBoard/PCBSpot, ORDS/ORA | VERIFIED (Review B, öffentliche Quellen) | hohe Konkurrenz; Novelty nicht belegt |
+| Kein öffentlicher Prior-Art-Audit; externe Review fand iFixit FixBot, NORA, AugRep/GYVA, RepairVision (gleicher USP); YProbe/ARBoard/PCBSpot und ORDS/ORA nur als Kontext, nicht im Detail geprüft | VERIFIED (Review B, öffentliche Quellen; §4a) | hohe Konkurrenz; Novelty nicht belegt |
 | Keine Wirkungs-/KI-Qualitätsnachweise; Produkt-Repo privat | VERIFIED (Selbstauskunft) | schwache Verifizierbarkeit für die Jury |
 
 ## 2. Zehn Kriterien im direkten Vergleich
