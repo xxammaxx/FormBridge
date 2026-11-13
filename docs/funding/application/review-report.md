@@ -1,6 +1,6 @@
 # Unabhängige Reviews — FormBridge-Bewerbung (Runde 3, final)
 
-**Geprüfter Candidate:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Branch:** `docs/funding-decision-2026-11-13`
+**Geprüfter Candidate:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Branch:** `docs/funding-decision-2026-11-13`
 **Verdicts:** Reviewer A **PASS** · Reviewer B **PASS**
 **Charakter:** Zwei getrennte, read-only Reviewer-Prozesse mit eigenen Primärquellen-Abrufen. Keine Selbstrezension. Keine Förderzusage.
 

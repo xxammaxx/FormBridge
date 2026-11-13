@@ -8,7 +8,7 @@
 | Zeitpunkt | Was passiert | Offizielle Anforderung? |
 |---|---|---|
 | **A. Bewerbung/Juryphase** (01.10.–30.11.2026) | Projektidee wird im Portal eingereicht; Jury wählt aus | PTF-Bewerbungsseite: Einzelentwickler*innen „seid selbstständig** oder Freiberufler*innen und zahlt eure Steuern hier" (Präsens). Keine ausdrückliche Regel, ob die Selbstständigkeit **zu diesem Zeitpunkt** bereits bestehen muss. |
-| **B. Formaler Antrag** (Dezember 2026–März 2027, Antragsworkshop) | Ausgewählte Projekte stellen den formalen BMFTR-Antrag über den Projektträger | PTF-Wiki „Antragstellung" (Stand 03.03.2026): **„Steuernummer für selbständige Tätigkeit … bzw. Kopie der Anmeldung/Eingangsbestätigung beim Finanzamt"** ist der Antrags-Checkliste beizufügen. Das spricht für eine Registrierung **spätestens zum formalen Antrag**, nicht erst zum Förderbeginn. |
+| **B. Formaler Antrag** (Dezember 2026–März 2027, Antragsworkshop) | Ausgewählte Projekte stellen den formalen BMFTR-Antrag über den Projektträger | PTF-Wiki „Antragstellung" (Stand 03.03.2026; dokumentiert den **Jahrgang-02**-Workshop, Deadline 14.03.2026): **„Steuernummer für selbständige Tätigkeit … bzw. Kopie der Anmeldung/Eingangsbestätigung beim Finanzamt"** ist der Antrags-Checkliste beizufügen. Für Jahrgang 03 ist die analoge Checkliste zu erwarten, aber nicht bestätigt. Das spricht für eine Registrierung **spätestens zum formalen Antrag**, nicht erst zum Förderbeginn. |
 | **C. Bewilligung** | BMFTR prüft und erlässt den Zuwendungsbescheid | Keine öffentliche Regel, die eine bestimmte Registrierung exakt zu diesem Zeitpunkt verlangt. |
 | **D. Förderbeginn** (01.06.2027) | Projekt startet; Auszahlung nachlaufend | Keine öffentliche Regel, die eine **erst zum 01.06.2027** beginnende Selbstständigkeit ausdrücklich erlaubt. |
 
@@ -30,7 +30,7 @@
 | kompetenzz | 03.08.2022 | „**Zu Projektbeginn** wird eine deutsche Steuernummer als Selbständige*r/Freiberufler*in oder eine … Freistellung benötigt." | **HISTORISCH/SEKUNDÄR**; ältere Förderrunde |
 | PTF-Wiki (aktuell) | 03.03.2026 | Steuernummer/Anmeldung bereits **zum formalen Antrag** | **AKTUELLER und strenger** als die historischen Seiten |
 
-**Befund:** Die historischen Seiten stützen die Lesart „spätestens bei Projektbeginn". Der aktuelle PTF-Wiki-Eintrag zum formalen Antrag verlangt die Steuernummer bzw. die Anmeldung/Eingangsbestätigung jedoch bereits **zum Antrag** (März 2027). Damit ist „erst zum Förderbeginn" (Juni 2027) **nicht sicher tragfähig**.
+**Befund:** Die historischen Seiten stützen die Lesart „spätestens bei Projektbeginn". Der PTF-Wiki-Eintrag zum formalen Antrag (Jahrgang 02, Stand 03.03.2026) verlangt die Steuernummer bzw. die Anmeldung/Eingangsbestätigung jedoch bereits **zum Antrag** (März 2026; für Jahrgang 03 analog zu erwarten). Damit ist „erst zum Förderbeginn" (Juni 2027) **nicht sicher tragfähig**.
 
 ## 4. Was daraus folgt (ohne rechtliche Schlussfolgerung)
 

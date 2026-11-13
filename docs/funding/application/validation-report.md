@@ -1,6 +1,6 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
-**Candidate:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
+**Review-PASS:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 13.11.2026
 **Reviewer:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Tests:** 109/109 PASS · **Relative Links:** 0 gebrochen
 **Gate:** **READY_FOR_OWNER_INPUT** (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) — Bewerbung vollständig vorbereitet; die verbleibenden Punkte sind ausschließlich Owner-Angaben, Owner-Entscheidungen, Portal-Live-Prüfung und ausdrücklich benannte externe Klärungen.
 
@@ -101,7 +101,7 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 
 **READY_FOR_OWNER_INPUT** (früher `APPLICATION_READY_WITH_BLOCKERS`), weil:
 
-- alle öffentlich prüfbaren Anforderungen erfüllt und beide Reviews PASS sind;
+- alle öffentlich prüfbaren Anforderungen erfüllt sind, soweit öffentlich belegbar, und beide Reviews PASS sind;
 - aber M1–M6, Q2, die Portal-Live-Prüfung und die Lizenz-/Second-Stage-Entscheidung echte Owner-/externe Voraussetzungen sind;
 - Q3/Q3b bewusst offen, aber quantifiziert und bei konservativer Planung nicht einreichungsblockierend.
 

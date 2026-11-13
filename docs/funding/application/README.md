@@ -1,7 +1,7 @@
 # Bewerbungspaket FormBridge — Index
 
 **Stand:** 13.11.2026 · **Status:** `READY_FOR_OWNER_INPUT` (entspricht dem früheren `APPLICATION_READY_WITH_BLOCKERS`) · **Frist:** 30.11.2026, 15:00 Uhr MEZ
-**Geprüfter Candidate:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Reviews:** A PASS, B PASS
+**Review-PASS:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Q2/Owner-Input-Delta:** `d98e80eb892027d65067f2626b437a99e5048883` (dokumentations-only) · **Reviews:** A PASS, B PASS
 
 | Dokument | Zweck | Status |
 |---|---|---|
