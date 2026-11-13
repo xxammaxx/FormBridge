@@ -24,13 +24,16 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Prototype-Fund-Machbarkeit | [`docs/funding/prototype-fund-feasibility.md`](docs/funding/prototype-fund-feasibility.md) |
 | Bewerbungsentwurf (DE) | [`docs/funding/application-draft-de.md`](docs/funding/application-draft-de.md) |
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
-| Entscheidungsbericht (CONDITIONAL_GO) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
+| Entscheidungsbericht (CONDITIONAL_GO F3) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
 | Lizenz-Empfehlung | [`docs/governance/license-decision.md`](docs/governance/license-decision.md) |
-| Validierungsberichte | [`docs/validation/`](docs/validation/) |
+| Förderentscheid vs. RepairProbe | [`docs/funding/decision/comparison-report.md`](docs/funding/decision/comparison-report.md) (+ [Scoring-Matrix](docs/funding/decision/scoring-matrix.md), [Reviews A/B (alt)](docs/funding/decision/review-A-formbridge.md), [Quellen](docs/funding/decision/sources-evidence.md), [Owner-Entscheidungen](docs/funding/decision/owner-decisions.md)) |
+| Verifizierte Förderregeln & Finanzmodell (13.11.2026) | [`funding-rules-verified-2026.md`](docs/funding/decision/funding-rules-verified-2026.md) · [`financial-model.md`](docs/funding/decision/financial-model.md) · [`eligibility-decision-tree.md`](docs/funding/decision/eligibility-decision-tree.md) · [`remaining-questions.md`](docs/funding/decision/remaining-questions.md) · [`source-register-2026-11-13.md`](docs/funding/decision/source-register-2026-11-13.md) · [`q3-clarification.md`](docs/funding/decision/q3-clarification.md) |
+| Reproduzierbare Finanztests | [`validation/RUNBOOK.md`](docs/funding/decision/validation/RUNBOOK.md) · [`validation/test-output.txt`](docs/funding/decision/validation/test-output.txt) · [`validation/scenario-report.md`](docs/funding/decision/validation/scenario-report.md) |
+| Validierungsberichte | [`docs/validation/`](docs/validation/) · [`validation-report.md`](docs/funding/decision/validation-report.md) · [`final-validation-report.md`](docs/funding/decision/final-validation-report.md) · [Review A (Finanzen)](docs/funding/decision/review-A-financial-2026-11-13.md) · [Review B (Förderrecht)](docs/funding/decision/review-B-funding-2026-11-13.md) |
 
 ## Bezug zu Feldexa 2.0
 
-FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Feldexa_2.0) (kein Code-Austausch, keine Abhängigkeit). Feldexa 2.0 ist als **erste Anwendung** des künftigen Moduls vorgesehen (siehe ADR-001). Die ursprüngliche Forschung entstand im Feldexa-2.0-Repository (Issue [#167](https://github.com/xxammaxx/Feldexa_2.0/issues/167), Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168), Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, 13.11.2026) und wurde hierher migriert — Herkunft ist je Datei ausgewiesen.
+FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Feldexa_2.0) (kein Code-Austausch, keine Abhängigkeit). Feldexa 2.0 ist als **vorgesehene erste Anwendung** des künftigen Moduls vorgesehen, aber **nicht integriert** und **nicht Teil des Förderumfangs** (siehe ADR-001). Die ursprüngliche Forschung entstand im Feldexa-2.0-Repository (Issue [#167](https://github.com/xxammaxx/Feldexa_2.0/issues/167), Draft-PR [#168](https://github.com/xxammaxx/Feldexa_2.0/pull/168), Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, 13.11.2026) und wurde hierher migriert — Herkunft ist je Datei ausgewiesen.
 
 ## Lizenz
 
