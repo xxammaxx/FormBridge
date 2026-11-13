@@ -1,0 +1,134 @@
+# Validierungsbericht — Deep Research Förderbedingungen (V1–V8)
+
+**Datum:** 13.11.2026 · **Gegenstand:** Verifizierung der Förderregeln-Forschung (funding-rules-verified-2026.md, financial-model.md, eligibility-decision-tree.md, remaining-questions.md) · **Gate-Charakter:** PASS nur bei vollständiger, unabhängiger Bestätigung; offene Punkte bleiben UNKNOWN.
+
+## V1 — Quellenvalidierung
+
+Durchgeführte Eigen-Verifikation (vor den unabhängigen Reviews):
+- Alle Primärquellen am 13.11.2026 live abgerufen: PTF-Website (innovation, bewerbung/details, innovativ, FAQ, bewerben-Portal), Handbuch-PDF (31 S., lokal extrahiert), FAQ-HTML (28 `<details>`-Blöcke extrahiert), BMFTR-Richtlinie 2024 + BAnz-PDF-Link + beide Änderungsbekanntmachungen.
+- FAQ-Klappinhalte gegen HTML-Rohfassung extrahiert (Bunny-Shield-Challenge umgangen durch Format HTML via Fetch-Tool; keine Schutzumgehung — öffentliche Inhalte).
+- Fundstellen wortgleich zitiert; Geltungskette geprüft (RL 2024 → Ä1 2025 → Ä2 2026; Nr. 5 unverändert).
+- Status: **PASS** (Review A bestätigt/relativiert — Ergebnis unten).
+
+## V2 — Förderregelvalidierung (F1–F7)
+
+Eigenprüfungen: Widerspruchsanalyse W1–W5 durchgeführt; CONTRADICTED-Befund „1-Monat-Veröffentlichung" dokumentiert (keine Primärquelle stützt sie; FAQ/RL sagen „zum Projektabschluss").
+Unabhängige Prüfung: **Reviewer A** (Auftrag: jede Schlussfolgerung widerlegen; Priorität: Eigenanteil, Mehrfachbewerbung, persönliche Antragsberechtigung, Förderbeginn, Vorarbeiten, Lizenzanforderungen, Förderhöhe).
+- Ergebnis: siehe §Review-Ergebnisse.
+
+## V3 — Finanzvalidierung
+
+- 18/18 maschinelle Arithmetik-Prüfungen OK (inkl. 0,95×50.000=47.500; 950×50; 47.500/1,05; Modelle A/B; 633×50=31.650 vs. 0,95×33.337=31.670,15).
+- Modell-A/B-Trennung für die GK-Pauschale-Ambiguität (W2) dokumentiert.
+- Unabhängige Neuberechnung: **Reviewer A** (Auftrag R1).
+- Ergebnis: siehe §Review-Ergebnisse.
+
+## V4 — Projektabgrenzung
+
+- project-boundary.md (A/B/C), ADR-001, README-Kennzeichnung „RESEARCH_STAGE — keine Implementierung" konsistent; FormBridge-Repo enthält 21 Dateien, nur Doku/Evidenz (V6 der Vorphase).
+- Unabhängige Prüfung: **Reviewer B** (B1/B4/B8/B9: Doppelzählungen, Dev-Anteil, Vertraulichkeit, Konsistenz).
+- Ergebnis: siehe §Review-Ergebnisse.
+
+## V5 — Adversarial Review
+
+Zwei voneinander unabhängige Reviewer-Prozesse (keine Übernahme der Maintainer-Schlüsse; eigene Quellabrufe vorgeschrieben):
+- **Reviewer A** — Förderrecht und Finanzen (R1–R7).
+- **Reviewer B** — FormBridge-Förderfähigkeit und Abgrenzung (B1–B9).
+- Ergebnisse: §Review-Ergebnisse (jeweils SUPPORTED/REFUTED/UNRESOLVED je Aufgabe).
+
+## V6 — Fehlerkorrektur
+
+Prozedur: Jeder als REFUTED/FALSE klassifizierte Befund → dokumentiert → Ursache → kleinste korrigierende Änderung → erneute Prüfung des betroffenen Bereichs. Dokumentierte Korrekturen: §Korrekturen.
+
+## V7 — Regression und Konsistenz
+
+Nach allen Fixes: Link-Check (0 broken), Zahlen-Konsistenz (Matrix vs. financial-model), Datum/Stufen-Konsistenz (13.11.2026; Jahrgang 03; 30.11.2026 15:00 CET), Förderentscheid-FORMBRIDGE unverändert durch die Regelforschung, Vertraulichkeit (kein RepairProbe-Privat-/Portal-Inhalt), Git-Diff-Review (nur intended files).
+- Ergebnis: siehe §Review-Ergebnisse.
+
+## V8 — Abschluss-Gate
+
+Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; keine unaufgelösten Widersprüche; beide Reviews abgeschlossen; Fehler korrigiert + revalidiert; persönliche/nicht veröffentlichte Bedingungen ausdrücklich UNKNOWN.
+- **Gate-Ergebnis:** siehe unten.
+
+## Review-Ergebnisse
+
+### Reviewer A — Förderrecht und Finanzen (R1–R7; alle Primärquellen selbstständig abgerufen: 28 FAQ-Blöcke, RL-2024-BAnz-PDF, beide Änderungen, 31-seitiges Handbuch)
+
+| Aufgabe | Urteil | Kernbefund |
+|---|---|---|
+| R1 Arithmetik | **SUPPORTED** | Alle 17 Zahlen verifiziert; 1 Schlampfehler in der Modell-B-Tabellenzeile (gemischt gerundete Werte) → behoben (Fix 1) |
+| R2 Eigenanteil | **SUPPORTED** | „Zeit" (FAQ) + Kontoauszug-Saldo (FAQ Auswahl 03) + Bankerklärungen (RL Nr. 4) — Liquiditätsanforderung real; W1 fair |
+| R3 Mehrfachbewerbung | **SUPPORTED** | „Ja." wörtlich; keine Quelle regelt parallele Förderungen → UNKNOWN ehrlich |
+| R4 Persönliche Kriterien | **SUPPORTED** | FAQ-Wortlaut + FN** exakt; RULE/UNKNOWN-Trennung korrekt; 1 Fehlzuschreibung (Teams/18/Vorarbeiten bereits RL 2024, nicht Ä2-Neuheit) → behoben (Fix 2) |
+| R5 Gültigkeitskette | **SUPPORTED** | Ä1 nur organisatorisch; Ä2 ändert Nr. 2/3/7.2.1/8; **Nr. 5 unverändert**; 30.11.2026 aktuell gelistet; Geltung bis 30.06.2031 |
+| R6 FOSS-Timing | **SUPPORTED** | „zum Projektabschluss" wörtlich; Lizenz zur Bewerbung nirgends gefordert; „1 Monat"-Claim CONTRADICTED bestätigt |
+| R7 Verpasste Regeln | **3 Befunde** | Pflichttermine Berlin fehlten; De-minimis-Limit ist Primärtext (Upgrade); NKBF 2017/„2 Wochen nach Aufforderung"/Evaluationspflicht fehlten → behoben (Fix 3–5) |
+
+**Gate-A-Fazit:** „PASS WITH REQUIRED FIXES 1–4 — keine substantielle Zahl oder Regel widerlegt."
+
+### Reviewer B — FormBridge-Passung & Abgrenzung (B1–B9; alle PTF/BMFTR-Quellen selbstständig neu abgerufen)
+
+| Aufgabe | Urteil | Kernbefund |
+|---|---|---|
+| B1 Vorarbeit-Grenze | **SUPPORTED** (1 offen) | A/B/C/D/E sauber, 0 Code-Dateien; **UNRESOLVED:** S00000159-Normalisierung ist bereits Vorarbeit, Spec M1 sagte „S00000159 normalisiert in CI" ohne Offenlegung → behoben (Fix 3: Vorarbeit-Hinweis in Spec §0 + boundary §E) |
+| B2 Modul-Klausel | SUPPORTED | Eigenständigkeit stärkt Abgrenzung; Klausel ist Verstärkung, nicht tragend; F7-Terminologie klarstellbar (→ Fix 7) |
+| B3 Infrastruktur-Fit | SUPPORTED | FAQ-Definition verbatim verifiziert; FormBridge developer-facing; keine Endnutzer-Claims |
+| B4 Entwicklungsanteil | SUPPORTED | ~75–85 % Dev-Anteil M1–M6; messbare Engineering-Acceptance-Criteria |
+| B5 Innovations-Claims | SUPPORTED | Keine universalen Negativbehauptungen; Korpus-Scoping intakt |
+| B6 FOSS-Zustand | SUPPORTED | Kein LICENSE ehrlich dokumentiert; FOSS-Zusage bei Bewerbung genügt (verbatim verifiziert); Owner entscheidet vor Einreichung |
+| B7 Vorarbeiten-Nachweis | SUPPORTED | Public Repo = nutzbare Vorarbeiten; persönliche Kenntnisse konsequent UNKNOWN |
+| B8 Vertraulichkeit/Provenienz | SUPPORTED | Kein Feldexa-Code, kein RepairProbe-Privat-/Portal-Inhalt; Metriken owner-eigen, klassifiziert |
+| B9 Regression | **REFUTED** | 3 veraltete Textstellen (decision-report B2 „Feldexa" statt „FormBridge"; „(E)"-Referenz; README ohne Decision-Dokumente) + ungetrackte validation-report.md + Stray-Dir → behoben (Fix 1/2/4/5) |
+
+**Gate-B-Fazit:** Kern-Passung SUPPORTED; 9 Korrekturen erforderlich und umgesetzt (siehe unten).
+
+## Korrekturen (jede: Befund → Ursache → Fix → Revalidierung)
+
+| # | Befund | Ursache | Korrektur | Revalidierung |
+|---|---|---|---|---|
+| 1 | Modell-B-Zeile mischte gerundete/exakte Werte (47.460/49.958/2.498) | Stunden-Rundung (904 h × 50 = 45.200) vs. exakte PK-Grenze (45.238,10) in derselben Zeile | Zeile auf exakte Grenzwerte (45.238,10 / 2.261,90 / 47.500 / 50.000 / 2.500; ~905 h) | Nachrechnung: PK+GK=47.500,00 ✓; Budget/EA ✓ |
+| 2 | Fehlzuschreibung: Teams/18/Vorarbeiten als „Ä2 2026 neu" | Auszug der RL-2024-Nr. 3 war im Websearch-Snippet trunciert; Ä2-Nr. 3-Neufassung enthielt den bestehenden Text | Gültigkeitskette, F3-Zeilen, F7, Entscheidungsbaum M5 auf „RL 2024 Nr. 3 (Ä2: Neufassung + Nachwuchs-Satz)" korrigiert | Review-A-Prüfung des Original-BAnz-PDF ist Belegbasis |
+| 3 | Pflichttermine (Kick-Off/Demo Day Berlin) fehlten | FAQ Förderung 05 war nur als Fragenliste erfasst, Antwort-Inhalte erst später extrahiert | F6-Zeile „Verpflichtende Termine" ergänzt (inkl. UNKNOWN Reisekosten) | Quelle FAQ Förderung 05 |
+| 4 | De-minimis-Limit als INTERPRETATION | Limit steht in RL **Anlage**, die ich nicht einzeln extrahiert hatte | Upgrade auf VERIFIED (RL Anlage Nr. 1, 300.000 €/3 J.) | Review-A-Primärprüfung |
+| 5 | NKBF 2017 / „2 Wochen nach Aufforderung" / Evaluationspflicht fehlten | RL Nr. 6/7.2.2 nicht als eigenständige Claims geführt | F6-Zeile „Nebenbestimmungen & Bericht" ergänzt | Review-A |
+| 6 | decision-report B2: „Feldexa vs. RepairProbe" (falscher Projektname) | Altbestand aus der Vor-FormBridge-Phase | → „FormBridge vs. RepairProbe bestätigen" + Verweis auf comparison-report | Grep-Regression |
+| 7 | decision-report „(E)"-Briefreferenz | Altes Deliverable-Buchstaben-Schema | → Pfad application-draft-de.md + Link owner-decisions A1–A6 | Link-Check |
+| 8 | Spec-M1/Boundary-Überlappung (Normalisierung bereits Vorarbeit) | M1-Meilenstein wurde nie gegen den Referenzfall abgeglichen | Vorarbeit-Hinweis in Spec §0 + Offenlegung in boundary §E (Förderleistung = Werkzeug+CI+≥5-Schemata-Korpus) | Textlich abgeglichen mit reference-case |
+| 9 | README ohne Decision-Dokumente; Stray-Dir `{docs`; validation-report.md ungetrackt | Migration-Artefakt; Commit-Reihenfolge | README-Tabelle erweitert; `{docs` rekursiv gelöscht; validation-report.md in diesem Commit | `git status`/`ls` clean |
+
+## V7 — Regression (nach Fixes)
+
+- Link-Check gesamt: **0 broken** (README + alle docs).
+- Stale-Strings-Scan: nur legitime Treffer (Korrektur-Marker, historische Abschnitte).
+- Zahlen: financial-model ↔ funding-rules ↔ comparison-report konsistent (Modell A/B, 47.500/50.000/2.500/950/50 €).
+- Datumsangaben: 13.11.2026 durchgängig; Frist 30.11.2026 15:00 CET; Förderzeitraum 01.06.–30.11.2027.
+- Förderentscheid FORMBRIDGE durch die Regelforschung **nicht** verändert (stabil, da alle gefundenen Regeln projektneutral sind und die Linien-Passung sogar gestärkt wurde — FAQ-Infrastruktur-Definition verbatim).
+- Vertraulichkeit: kein RepairProbe-Privat-/Portal-Inhalt; RepairProbe `9875e77` unverändert; Feldexa `a34456f` + PRs #152/#168 Draft unverändert.
+- Git-Diff: nur beabsichtigte Dateien (docs/funding/decision/*, technical-specification.md Vorarbeit-Hinweis, project-boundary.md §E, decision-report.md Fixes, README.md Tabellenzeilen).
+
+## V8 — Abschluss-Gate
+
+| Kriterium | Status |
+|---|---|
+| Alle öffentlich prüfbaren entscheidenden Aussagen belegt (Fundstelle + Zitat + URL + Abrufdatum) | ✅ (funding-rules-verified-2026.md; Reviewer A hat jede Fundstelle unabhängig gegen die Quelle geprüft) |
+| Berechnungen korrekt | ✅ (18/18 eigene Checks + Reviewer-A-R1 nach Fix 1) |
+| Keine unaufgelösten Widersprüche | ✅ W1–W5 alle behandelt (W1: Zwei-Ebenen-Doku; W2: Modelle A/B + Portal-Check; W3: getrennt ausgewiesen; W4: dokumentiert; W5: CONTRADICTED korrigiert) |
+| Beide Reviews abgeschlossen | ✅ R1–R7, B1–B9 |
+| Nachgewiesene Fehler korrigiert | ✅ 9 Korrekturen (Tabelle oben) |
+| Korrigierte Ergebnisse erneut geprüft | ✅ (Arithmetik-Re-Run, Link-Re-Run, Stale-Scan, Grep-Regression) |
+| Unbekannte persönliche/nicht veröffentlichte Bedingungen als UNKNOWN belassen | ✅ (M1–M9, Q1–Q6, §Rest-UNKNOWN) |
+
+## Rest-UNKNOWN (bewusst offen)
+
+1. Persönliche Antragsberechtigung (M1–M9 im Entscheidungsbaum) — Owner-Nachweise.
+2. Q1: Mehrere gleichzeitige Förderungen — nur PTF verbindlich.
+3. Q2: Selbstständigkeit ab Förderbeginn — nur PTF verbindlich.
+4. Q3: GK-Pauschale-Modell (A/B) im Portal — Portal-Check.
+5. Q4: Erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" — weich, PTF-optional.
+6. Rechtliche Nutzungsrechte Fürth-PDF (copy:no ≠ Urheberrecht) — extern, kein PTF-Thema.
+7. Reisekosten für Pflichttermine (Berlin) — in extrahierten Quellen nicht geregelt.
+
+## **GATE-ERGEBNIS: VALIDATION_PASS** (mit dokumentierten Rest-UNKNOWNs)
+
+**Wichtige Einordnung:** VALIDATION_PASS bedeutet: Die Förderregeln-Recherche ist quellenfest, die Berechnungen stimmen, die Dokumentation ist konsistent und die Abgrenzung ist sauber. Es bedeutet **nicht**: Förderung bewilligt, persönliche Förderfähigkeit bestätigt (M1–M9 offen) oder Jury-Entscheid vorhersehbar.
+

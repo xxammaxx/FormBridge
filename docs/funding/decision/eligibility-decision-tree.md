@@ -39,7 +39,7 @@ M4 Programmierkenntnisse vorhanden (KI nur als Werkzeug, kein „Vibe-Coding")?
    → JA/NEIN [FAQ Förderung 08]
 M5 „Einschlägige Vorarbeiten + umfassende Kenntnisse" nachweisbar?
    → FormBridge-Repo + Feldexa-Arbeit + eigene Entwicklungsbiografie als Nachweismaterial.
-   [RL Ä2 Nr. 3 (2026) — NEUE Anforderung]  → JA mit Material / prüfen
+   [RL 2024 Nr. 3 (seit 2024); von Ä2 2026 neu gefasst + Nachwuchs-Satz ergänzt]  → JA mit Material / prüfen
 M6 De-minimis-Historie: < 300.000 € Beihilfen in den letzten 3 Jahren (alle „eine Unternehmereinheit" bildenden Unternehmen)?
    → De-minimis-Erklärung wird bei Bewilligung verlangt. [RL Nr. 1.3/5 + EU-VO]
 M7 Kapazität: ~159–167 h/Monat real leistbar (6 Monate); bei Teilzeit-Anstellung Arbeitsschutz-Grenzen?

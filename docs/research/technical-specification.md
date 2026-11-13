@@ -2,6 +2,8 @@
 
 **Datum:** 13.11.2026 · **Charakter:** Spezifikation für ein künftig zu entwickelndes, unabhängiges Infrastruktur-Modul. **KEINE Implementierungsanweisung** für das Feldexa-2.0-Produkt und keine Vorab-Förderleistung. Referenzhypothesen: `innovation-assessment.md`.
 
+> **Vorarbeit-Hinweis (Validierung 13.11.2026):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis 170 Fehler + validierende Instanz) ist **bereits als Forschungsvorarbeit** im Referenzfall nachgewiesen (`../research/reference-case-wohngeld.md`) und zählt **nicht** als Förderleistung. Fördergegenstand in Monat 1 (RF2) ist daraus abgegrenzt: das **deterministische Normalisierungswerkzeug**, dessen CI-Automatisierung und der **Korpus von ≥ 5 amtlichen FIM-XSDs** mit vollständigen Reparaturprotokollen — nicht die bereits dokumentierte Ein-Schema-Analyse.
+
 ## 0. Abgrenzung
 
 - Eigenständige Codebasis (eigenes Repo), keine Abhängigkeit von der Feldexa-App, keine UI-Pflicht (CLI + Library + maschinenlesbare Artefakte).

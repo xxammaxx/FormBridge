@@ -32,18 +32,18 @@ Wenn die GK-Pauschale (5 % der PK) zusätzlich beantragt wird und alles unter de
 
 ```
 PK + GK ≤ F_max = 47.500 €   mit GK = 0,05·PK
-⇒ 1,05·PK ≤ 47.500 €  ⇒ PK ≤ 45.238,10 €  ⇒ max. Stunden ≈ 904 h (à 50 €)
-Beispiel (904 h): PK = 45.200 €, GK = 2.260 €, förderfähig 47.460 € ≈ 47.500 €-Cap
-Gesamtbudget B = 47.460 € / 0,95 = 49.958 €; Eigenanteil ≈ 2.498 €
+⇒ 1,05·PK ≤ 47.500 €  ⇒ PK ≤ 45.238,10 €  ⇒ max. Stunden ≈ 905 h (904,76 à 50 €)
+Maximalausnutzung: PK = 45.238,10 €, GK = 2.261,90 €, förderfähig = 47.500,00 €
+Gesamtbudget B = 47.500,00 € / 0,95 = 50.000,00 €; Eigenanteil = 2.500,00 €
 ```
-**Konsequenz:** Unter Modell B kostet die voll ausgenutzte GK-Pauschale ca. 46 förderfähige Stunden (950 → ~904). Welches Modell das Portal rechnet, ist dort zu klären (W2).
+**Konsequenz:** Unter Modell B kostet die voll ausgenutzte GK-Pauschale ca. 45 förderfähige Stunden (950 → ~905). Welches Modell das Portal rechnet, ist dort zu klären (W2).
 
 ## Rechenbeispiele (beide Modelle)
 
 | Szenario | Stunden | PK | GK (5 %) | Förderbetrag | Budget | Eigenanteil |
 |---|---|---|---|---|---|---|
 | A: Vollausbau | 950 | 47.500 | — | **47.500** | 50.000 | **2.500** |
-| B: Vollausbau mit GK | ~904 | 45.238 | 2.262 | ~47.460 | ~49.958 | ~2.498 |
+| B: Vollausbau mit GK | ~905 | 45.238,10 | 2.261,90 | 47.500,00 | 50.000,00 | 2.500,00 |
 | Reduziert (FAQ-Lesart) | 850 | 42.500 | — | 42.500 | 44.737 | 2.237 |
 | Reduziert mit GK (Modell B) | 850 | 42.500 | 2.125 | 42.394* | 44.625 | 2.231 |
 

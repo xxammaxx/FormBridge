@@ -10,7 +10,7 @@
 |---|---|---|---|
 | RL 2024 | 07.11.2024 (BAnz AT 15.11.2024 B4) | Basistext: 95 % Förderquote, Gesamtkosten-Grenzen, AZK-Kostenbasis, Eigenmittelnachweis, De-minimis | VERIFIED |
 | Änderung 1 | 07.11.2025 (BAnz AT 01.12.2025 B4) | Nur organisatorisch: BMBF→BMFTR, Projektträger-Kontakt (VDI/VDE-IT), elektronische Einreichung empfohlen | VERIFIED |
-| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026) | Substanziell: 3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer"; Teams explizit antragsberechtigt; Mindestalter 18; **Nachweis „einschlägige Vorarbeiten und umfassende Kenntnisse"**; Nachwuchs mit geringen Erfahrungen ausdrücklich zulässig; 6 Stichtage (incl. 30.11.2026); Geltung bis 30.06.2031 | VERIFIED |
+| Änderung 2 | 15.06.2026 (BAnz AT 25.06.2026) | Substanziell: 3. Themenfeld „Souveräne Software für Endnutzerinnen und Endnutzer" (Nr. 2 neu); Nr. 3 neu gefasst — **zudem expliziter Nachwuchs-Satz** („Nachwuchsentwickler und -entwicklerinnen mit bereits vorhandenen, aber noch geringen Erfahrungen … sind ausdrücklich auch antragsberechtigt") und Evaluationsbeteiligungspflicht; 6 Stichtage (incl. 30.11.2026); Geltung bis 30.06.2031. **Hinweis (Review-A-Korrektur):** Teams, Mindestalter 18 und die Anforderung „einschlägige Vorarbeiten und umfassende Kenntnisse" waren **bereits in RL 2024 Nr. 3** enthalten (BAnz-PDF geprüft) — Ä2-Nr. 3 fasst den Absatz neu und ergänzt primär den Nachwuchs-Satz | VERIFIED |
 | **Nr. 5 (Zuwendungshöhe)** | **NICHT geändert** | 95 % / 50.000 € / 33.337 € unverändert gültig | VERIFIED |
 
 Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2024/11/2024-11-15-bekanntmachung-software-sprint.html (BAnz-PDF: https://www.bundesanzeiger.de/pub/publication/EYdMVzE1Nv1zV8NeRh5/content/EYdMVzE1Nv1zV8NeRh5/BAnz%20AT%2015.11.2024%20B4.pdf) · Ä1: …/2025/12/2025-12-01-… · Ä2: …/2026/06/2026-06-25-…
@@ -45,14 +45,14 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 
 | Konstellation | Regel | Status |
 |---|---|---|
-| Einzelperson allgemein | Volljährig; Software-Projekt; Wohnsitz DE; **selbstständig oder freiberuflich, Steuern in DE**; Amtssprache Deutsch (formaler Antrag DE) | VERIFIED (FAQ Bewerbung 02; RL Ä2 Nr. 3: „Mindestalter 18 Jahre") |
+| Einzelperson allgemein | Volljährig (RL Nr. 3 seit 2024: „Mindestalter 18 Jahre"); Software-Projekt; Wohnsitz DE; **selbstständig oder freiberuflich, Steuern in DE**; Amtssprache Deutsch (formaler Antrag DE) | VERIFIED (FAQ Bewerbung 02; RL 2024 Nr. 3) |
 | Angestellte | „**oder für die Projektlaufzeit (anteilig) vom Arbeitgeber freigestellt. Das heißt, ihr könnt auch weiterhin in Teilzeit angestellt sein.**" (Fußnote ** zur „selbstständig"-Bedingung) | VERIFIED |
 | Arbeitslos / Arbeitssuchend / Leistungsbezug | Keine explizite Regel gefunden; Selbstständigkeit wird vorausgesetzt (Aufnahme möglich?) | UNKNOWN |
 | Selbstständige / Freiberufler | Ausdrücklich antragsberechtigt | VERIFIED |
-| Ohne bisherige Selbstständigkeit / erst ab Förderbeginn selbstständig | Nicht explizit geregelt; RL: „Vorarbeiten und umfassende Kenntnisse nachweisen" (kein Selbstständigkeits-Zeitpunkt genannt); FAQ: Selbstständigkeit als Bewerbungs-Voraussetzung formuliert | UNKNOWN — Portal-/Antragswerkstatt-Frage |
-| Teams | Ä2 Nr. 3: „kleine interdisziplinäre Teams" explizit; PTF-Prozess: GbR (FAQ Förderung 04); max. 1/3 Wohnsitz Ausland; Mentor*in ≤ 10 % | VERIFIED |
+| Ohne bisherige Selbstständigkeit / erst ab Förderbeginn selbstständig | Nicht explizit geregelt; RL Nr. 3 (seit 2024): „Vorarbeiten und umfassende Kenntnisse nachweisen" (kein Selbstständigkeits-Zeitpunkt genannt); FAQ: Selbstständigkeit als Bewerbungs-Voraussetzung formuliert | UNKNOWN — Portal-/Antragswerkstatt-Frage |
+| Teams | RL Nr. 3 (seit 2024): „kleine interdisziplinäre Teams"; PTF-Prozess: GbR (FAQ Förderung 04); max. 1/3 Wohnsitz Ausland; Mentor*in ≤ 10 %; Ä2 2026 bestätigt und erlaubt EU-Ausland-Beteiligung außer Leitung | VERIFIED |
 | KI-Kenntnisse-Voraussetzung | „Geförderte müssen über die für die Umsetzung notwendigen Programmierkenntnisse verfügen" (FAQ Förderung 08); Bewerbung mit KI-Sprachhilfe ok, maschinen-konzipierte Ideen nicht (FAQ Bewerbung 09) | VERIFIED |
-| De-minimis-Vorbelastung | RL: Zuwendung ist De-minimis-Beihilfe; De-minimis-Erklärung zur Bewilligung (FAQ Auswahl 03); 3-Jahres-Limit 300.000 € (EU-VO — aus Sekundärwissen, nicht aus PTF-Quelle) | VERIFIED (De-minimis gilt) / INTERPRETATION (Limit-Details EU-VO) |
+| De-minimis-Vorbelastung | RL: Zuwendung ist De-minimis-Beihilfe; De-minimis-Erklärung zur Bewilligung (FAQ Auswahl 03); **Freibetrag 300.000 € innerhalb von 3 Jahren** (alle Unternehmen, die eine Unternehmereinheit bilden) — RL Anlage Nr. 1 (Primärtext; Review-A-Upgrade von INTERPRETATION) | VERIFIED |
 
 ## F4 — Vorarbeiten und Projektbeginn
 
@@ -90,6 +90,8 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 | Gemeinkosten: Pauschale bis 5 % der Personalkosten | FAQ Förderung 02 | VERIFIED |
 | Teilzeit-Anstellung parallel: Arbeitsschutz begrenzt Stunden | FAQ Förderung 01 | VERIFIED |
 | Auszahlung: Quartalsraten basierend auf geleisteter Arbeit (nachlaufend) | FAQ Förderung 03 | VERIFIED |
+| Verpflichtende Termine | Kick-Off-Workshop (ganzer Tag, Berlin, um 01.06.), Austauschtermine digital, Demo Day (ganzer Tag, Berlin, um 30.11.) — Teilnahme Pflicht; Second-Stage-Abschluss-Workshop (um 30.04.) bei Second Stage | VERIFIED (FAQ Förderung 05) — Reisekosten-Behandlung in extrahierten Quellen nicht geregelt (UNKNOWN-Detail) |
+| Nebenbestimmungen & Bericht | NKBF 2017 (Kostenbasis) Bestandteil des Bescheids (RL Nr. 6); formaler Antrag fristgebunden „spätestens zwei Wochen nach Aufforderung" (RL 7.2.2); Projektbericht wird veröffentlicht (FAQ Förderung 06); Evaluationsbeteiligung Pflicht (RL Nr. 3 i.d.F. Ä2 2026; FAQ Förderung 05) | VERIFIED |
 | Second Stage: nur bei initialer Bewerbung beantragbar; max. Stunden = Anteil der 1. Phase; 50 €/h Cap; 31.667 € ≈ 633 h; **keine Code-Meilensteine** | FAQ Förderung 01 + Second-Stage-Texte (Handbuch Frage 16) | VERIFIED |
 | De-minimis | RL Nr. 1.3/5; Erklärung zur Bewilligung | VERIFIED |
 | Liquidität | Nachlaufende Auszahlung → mind. 1 Quartal Vorfinanzierung; Kontoauszug ≥ Eigenanteil | VERIFIED (Modalitäten) + INTERPRETATION (praktischer Puffer) |
@@ -104,7 +106,7 @@ Quelle-URLs: RL 2024: https://www.bmftr.bund.de/SharedDocs/Bekanntmachungen/DE/2
 | Bestehendes Projekt + klare Abgrenzung | project-boundary.md erfüllt die geforderte Trennung strukturell | RULE_CONFIRMED (Mechanik) / Abgrenzungs-**Qualität** = Jury |
 | Hoher Entwicklungsanteil | 6-Monatsplan ist 100 % Entwicklung + Evaluierung | RULE_CONFIRMED (Mechanik) |
 | FOSS-Zusage | Möglich, sobald Owner Lizenz wählt (Apache-2.0-Empfehlung vorliegend) | RULE_CONFIRMED (Regel) / **OFFEN: Owner-Entscheidung** |
-| „Vorarbeiten und umfassende Kenntnisse nachweisen" (RL Ä2 Nr. 3) | Vorarbeiten vorhanden (public Research-Repo); Nachweis persönlicher SD-Kenntnisse = Bewerbungsantwort („Wild Card"/Motivation) | RULE_CONFIRMED (Anforderung) / INDIVIDUAL_ELIGIBILITY_UNKNOWN (Owner) |
+| „Vorarbeiten und umfassende Kenntnisse nachweisen" (RL 2024 Nr. 3; von Ä2 2026 bestätigt/Neufassung um Nachwuchs-Satz ergänzt) | Vorarbeiten vorhanden (public Research-Repo); Nachweis persönlicher SD-Kenntnisse = Bewerbungsantwort („Wild Card"/Motivation) | RULE_CONFIRMED (Anforderung) / INDIVIDUAL_ELIGIBILITY_UNKNOWN (Owner) |
 | Persönliche Antragsberechtigung | — | INDIVIDUAL_ELIGIBILITY_UNKNOWN (Owner) |
 
 ## W — Ausgewiesene Widersprüche/Spannungen (nicht stillschweigend vereinheitlicht)

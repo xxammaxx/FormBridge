@@ -31,7 +31,7 @@
 
 **D. Open-Source-Wirkung:** FormBridge: infrastrukturell (CLI/Bibliothek/Verifier) angelegt, öffentliches Repo, Lizenz offen (Owner-Entscheidung). RepairProbe: Apache-2.0 fixiert, aber Hauptcode **privat** — „eigene Vorarbeiten" für die Jury nicht verifizierbar (PTF-Kriterium, Review B: MED).
 
-**E. Förderrechtliche Abgrenzung:** FormBridge: explizite A/B/C-Grenze mit Verbotensliste; Lehrbuch-Passung zur Linie („neues Modul", Infrastruktur). RepairProbe: Endnutzer-Werkzeug — Passung zur Linie argumentabel, aber schwächer (Review B); FOSS-Veröffentlichung des bisher Privaten nötig.
+**E. Förderrechtliche Abgrenzung:** FormBridge: explizite A/B/C-Grenze mit Verbotensliste; Lehrbuch-Passung zur Linie („neues Modul", Infrastruktur) — die FAQ-Definition von Software-Infrastruktur („Werkzeuge … die … in der Regel nicht an Endanwender*innen … sondern an Programmierer*innen gerichtet sind", FAQ Grundlagen 02) trifft FormBridge als CLI/Bibliothek wortwörtlich; die „neues Modul"-Klausel ist hier Verstärkung, nicht tragender Pfeil, da FormBridge eigenständig ist. RepairProbe: Endnutzer-Werkzeug — Passung zur Linie argumentabel, aber schwächer (Review B); FOSS-Veröffentlichung des bisher Privaten nötig.
 
 **F. Bewerbung & Evidenz:** FormBridge: vollständiger Bewerbungsentwurf + Evidenzkette im Repo, **noch nicht im Portal**; Review A fordert 3 Ergänzungen (§6). RepairProbe: 850-Stunden-Entwurf im Portal (Draft) — **Qualität für diese Prüfung nicht einsehbar** (UNKNOWN); öffentliche Kommunikation stark und ehrlich.
 

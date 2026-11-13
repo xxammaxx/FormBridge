@@ -13,6 +13,8 @@
 | 4 | Praktische Umsetzbarkeit | WEAK — getrimmter Scope, 44-Test-Baseline; Engpässe: Quellen-Copyright M4, Evaluationsdesign M6 | MED |
 | 5 | Zielgruppe & Nutzen | **SUPPORTED** — **entscheidend**: einzige Rückmeldung (n=1) berichtet verlorenen Reparaturkontext als *selten* und nennt Leiden (Infosuche, Teile, Zugang), die FixBot/Teilemärkte bereits bedienen; keine Pilotpartner; Netzwerk-Reparatur-KI-Diskurs läuft ohne RepairProbe | **HIGH** |
 | 6 | Open-Source-Wirkung | WEAK — FOSS-Veröffentlichung erst 1 Monat nach Förderbeginn nötig; aber privates Repo macht „eigene Vorarbeiten" für die Jury unverifizierbar (bewertetes Kriterium) — FormBridge gewinnt diesen Vergleich | LOW formal / MED Glaubwürdigkeit |
+
+> **Korrektur-Marker (13.11.2026, Revalidierung):** Die Aussage „FOSS-Veröffentlichung erst 1 Monat nach Förderbeginn" konnte in **keiner** aktuellen Primärquelle bestätigt werden und ist als **CONTRADICTED/UNVERIFIED** einzustufen. Aktuelle Primärquellen: FAQ Förderung 06 („Veröffentlichung des Codes in einem offen zugänglichen Repository **zum Projektabschluss**") und RL (Ergebnisse „auf Open-Source-Plattformen … unter offener Lizenz bereitgestellt"). Vektor 6 bleibt im Kern (privates Repo → Jury kann Vorarbeiten nicht verifizieren) gültig; das zeitliche Detail wird gestrichen. Siehe funding-rules-verified-2026.md §W5.
 | 7 | Antragsqualität | UNRESOLVED — Jury-Proben: Abgrenzung, Foto→KI-Datenfluss, Quellenrechte, Adoption/Pflege, KI-Eval-Metriken, Linien-Passung, ORDS-Duplizierung | MED |
 | 8 | Sicherheit/Haftung | WEAK — beratende FOSS ist keine regulierte Klasse; Blockier-Gates defensiv; Risiko nur bei Überbehauptung des „Sicherheitsmodells" | MED |
 

@@ -11,7 +11,7 @@
 | S3 | https://www.prototypefund.de/bewerbung/details | 13.11.2026 | Förderperiode 01.06.–30.11.2027; Second Stage 01.12.2027–31.03.2028; 31.667 €/63.333 €; Zeitplan; Sprechstunden 16./19.11.2026; „hoher Entwicklungsanteil", „nur Doku/Release/Marketing nicht förderfähig" | VERIFIED |
 | S4 | https://www.prototypefund.de/innovativ | 13.11.2026 | Innovationsbegriff inkl. „neues Modul für bestehende Software"; Kriterien Datensparsamkeit/Anwendungsfreundlichkeit/Adaptierbarkeit/Open Source | VERIFIED |
 | S5 | PTF-Handbuch Jahrgang 03: https://www.prototypefund.de/uploads/Publikationen_und_Onepager/PTF_Handbuch_2026.pdf (31 S., lokal extrahiert) | 13.11.2026 | Bestandsprojekte zulässig bei klarer Abgrenzung; „Verbesserung der bestehenden Software nicht ausreichend"; Max. Förderung 47.500 €/Person (Handbuch S.~870 des Textextrakts) | VERIFIED |
-| S6 | Eigenanteil ≥ 5 % des Gesamtaufwands (47.500 € + 2.500 €) | Feldexa_2.0-Doku (`docs/funding/deep-research-2026-11-13.md`, Branch `docs/prototype-fund-2027-feldexa-concept`) | im Handbuch-Textextrakt nicht direkt gefunden | **INTERPRETATION** — im Bewerbungsportal prüfen |
+| S6 | Eigenanteil ≥ 5 % des Gesamtaufwands (47.500 € + 2.500 €) | **UPGRADED zu VERIFIED (13.11.2026, Revalidierung):** FAQ Förderung 02 („Förderbetrag entspricht immer maximal 95 % … mindestens 5 % Eigenanteil — eure Zeit") + RL Nr. 4/5 (95 %; Gesamtkosten-Cap 50.000 €; Eigenmittelnachweis per Bankunterlagen) + FAQ Auswahl 03 (Kontoauszug-Saldo) |
 
 ## B. FormBridge (Kandidat 1)
 
@@ -28,10 +28,10 @@
 
 | # | Quelle | Status |
 |---|---|---|
-| S13 | GitHub-Org https://github.com/RepairProbe — Repos: `repair-probe` (**PRIVATE**, Apache-2.0, Python ~63 KB, erstellt 2026-08-28, letzter Push 2026-10-30, 5 Testdateien); `RepairProbe.github.io` (PUBLIC, Apache-2.0); `.github` (PUBLIC) | VERIFIED (gh API, 13.11.2026) |
+| S13 | GitHub-Org https://github.com/RepairProbe — Repos: `repair-probe` (**PRIVATE**, Apache-2.0, Python ~63 KB, erstellt 2026-08-28, letzter Push 2026-10-30, 5 Testdateien); `RepairProbe.github.io` (PUBLIC, Apache-2.0); `.github` (PUBLIC). *(Metadaten mittels Owner-authentifiziertem gh-Zugriff abgerufen; Strukturmetriken, keine privaten Inhalte zitiert)* | VERIFIED (gh API, 13.11.2026) |
 | S14 | Öffentliches Org-README (raw.githubusercontent.com/RepairProbe/.github/main/profile/README.md): Zielgruppe Repair-Cafés/Werkstätten; „kleine Python-Baseline" vorhanden; „Reparaturerfolg, Bildverständnis und KI-Qualität … nicht nachgewiesen"; Prototyp geplant, **noch nicht öffentlich**; PTF-Antrag „in Vorbereitung und noch nicht eingereicht"; Repair-Café-Rückmeldung **explorativ n=1** | VERIFIED (öffentliches Artefakt, eigene Aussage des Projekts) |
 | S15 | Öffentliche Website https://repairprobe.github.io/ (index/evidenzmodell/roadmap/technical-baseline) | VERIFIED (Abruf 13.11.2026) |
-| S16 | 850-Stunden-Bewerbungsentwurf als **Draft im deutschen PTF-Portal** (nicht eingereicht) | INTERPRETATION — übernommen aus `docs/funding/research-formbridge-verwaltungsentlastung-2026-11-13.md` §8 („Stand letzter verifizierter Nachweis"); **Portal ist owner-only, Text dieser Prüfung nicht zugänglich** |
+| S16 | 850-Stunden-Bewerbungsentwurf als **Draft im deutschen PTF-Portal** (nicht eingereicht) | INTERPRETATION — übernommen aus `docs/funding/research-formbridge-verwaltungsentlastung-2026-11-13.md` §8 („Stand letzter verifizierter Nachweis"; Owner-eigene Aufzeichnung); **Portal ist owner-only, Text dieser Prüfung nicht zugänglich** |
 | S17 | „offenes Reparaturevidenz- und Sicherheitsmodell", Apache-2.0-Lizenz | VERIFIED (S14/S13); fachlicher Gehalt des Modells: **UNKNOWN** (nicht öffentlich detailliert) |
 | S18 | Prior-Art-/Konkurrenz-Audit für RepairProbe | **UNKNOWN** — kein solches Dokument in verfügbaren Quellen gefunden |
 

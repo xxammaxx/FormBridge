@@ -19,7 +19,7 @@ FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quel
 | # | Bedingung | Fälligkeit |
 |---|---|---|
 | B1 | **Formale Klärung Antragsteller** (Einzelperson Wohnsitz DE / Team-GbR) + Portal-Check aktueller Kriterien + Teilnahme an Sprechstunde 16.11.2026 | vor Einreichung |
-| B2 | **Entscheid Feldexa vs. RepairProbe** für genau eine Bewerbung (RepairProbe bleibt unverändert; Vergleichskriterien lt. Issue #165 G5) | vor Einreichung |
+| B2 | **Entscheid FormBridge vs. RepairProbe bestätigen** für genau eine Bewerbung (RepairProbe bleibt unverändert; Vergleich: docs/funding/decision/comparison-report.md, Empfehlung FORMBRIDGE) | vor Einreichung |
 | B3 | **Modul-Repo-Isolierung beschließen** (eigenes Repo/Lizenz; kein Produktcode im Förderumfang; bis Förderbeginn keine Modul-Implementierung, um Vorab-Leistungs-Problematik zu vermeiden) | vor Einreichung |
 | B4 | **Falsifikations-Fortlauf:** Suche nach konkurrierenden Projekten (incl. FITKO-Announcements) bis Abgabedatum; bei fundierter Widerlegung → PIVOT (Alternative: Schema-Hygiene-Tool + Provenienzformat als schmaleres Vorhaben) | bis 30.11.2026 |
 | B5 | **De-Overclaim-Pass auf Bewerbungstext** (keine universalen Negativbehauptungen; Nutzenkette nicht über das Modul hinaus) | vor Einreichung — in Revisionsstufe 2 (13.11.2026) vorab umgesetzt, vor Einreichung final prüfen |
@@ -35,7 +35,7 @@ FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quel
 ## Nächste Aktionen (konkret)
 
 1. B1–B3 durch Maintainer entscheiden (keine Agentur-Aktion möglich).
-2. Falls GO bestätigt: Bewerbungsbausteine (E) finalisieren, Portal-Felder ausfüllen, Audit-Matrix als Anhang exportieren, Einreichung vor 30.11.2026 15:00 CET.
+2. Falls GO bestätigt: Bewerbungsbausteine ([application-draft-de.md](application-draft-de.md)) finalisieren und um Review-A-Ergänzungen (RF-Messabsatz, Document-AI-Abgrenzung, XSD-Verbraucherargument, Held-out-PDF) erweitern, Portal-Felder ausfüllen, Audit-Matrix als Anhang exportieren; Voraussetzungen A1–A6 siehe [decision/owner-decisions.md](decision/owner-decisions.md); Einreichung vor 30.11.2026 15:00 CET.
 3. Issue #165 (Produkt-Pilot) bleibt separat; Issue #151/#167-Verweise pflegen.
 4. Falls PIVOT/NO_GO: Schema-Hygiene + Provenienzformat als eigenständige, kleinere FOSS-Beitragsoption dokumentieren (keine Förderabhängigkeit).
 

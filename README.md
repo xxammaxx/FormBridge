@@ -26,7 +26,9 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
 | Entscheidungsbericht (CONDITIONAL_GO) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
 | Lizenz-Empfehlung | [`docs/governance/license-decision.md`](docs/governance/license-decision.md) |
-| Validierungsberichte | [`docs/validation/`](docs/validation/) |
+| Förderentscheid vs. RepairProbe | [`docs/funding/decision/comparison-report.md`](docs/funding/decision/comparison-report.md) (+ [Scoring-Matrix](docs/funding/decision/scoring-matrix.md), [Reviews A/B](docs/funding/decision/review-A-formbridge.md), [Quellen](docs/funding/decision/sources-evidence.md), [Owner-Entscheidungen](docs/funding/decision/owner-decisions.md)) |
+| Verifizierte Förderregeln & Finanzmodell (13.11.2026) | [`docs/funding/decision/funding-rules-verified-2026.md`](docs/funding/decision/funding-rules-verified-2026.md) · [`docs/funding/decision/financial-model.md`](docs/funding/decision/financial-model.md) · [`docs/funding/decision/eligibility-decision-tree.md`](docs/funding/decision/eligibility-decision-tree.md) · [`docs/funding/decision/remaining-questions.md`](docs/funding/decision/remaining-questions.md) |
+| Validierungsberichte | [`docs/validation/`](docs/validation/) · [`docs/funding/decision/validation-report.md`](docs/funding/decision/validation-report.md) |
 
 ## Bezug zu Feldexa 2.0
 
