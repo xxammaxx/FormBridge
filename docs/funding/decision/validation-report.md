@@ -18,10 +18,10 @@ Unabhängige Prüfung: **Reviewer A** (Auftrag: jede Schlussfolgerung widerlegen
 
 ## V3 — Finanzvalidierung
 
-- 18/18 maschinelle Arithmetik-Prüfungen OK (inkl. 0,95×50.000=47.500; 950×50; 47.500/1,05; Modelle A/B; 633×50=31.650 vs. 0,95×33.337=31.670,15).
-- Modell-A/B-Trennung für die GK-Pauschale-Ambiguität (W2) dokumentiert.
-- Unabhängige Neuberechnung: **Reviewer A** (Auftrag R1).
-- Ergebnis: siehe §Review-Ergebnisse.
+- **Runde 1:** 18/18 Arithmetik-Prüfungen OK — **aber:** die Prüfungen deckten einzelne Figuren ab, **nicht** die Identitätslogik; Modell A war strukturell fehlerhaft (Finanzierungsidentität verletzt) und wurde erst durch den externen Befund aufgedeckt. Ursache dokumentiert in financial-model.md §6.
+- **Runde 2:** Modell v3 (Kosten-/Finanzierung getrennt); **56/57 automatisierte Tests bestanden** (1 Test-Skript-Bug — falsche Test-Basis 50.000/1,05 statt 47.500/1,05 — korrigiert und separat re-verifiziert: Rundungs-Fußnote 2.261,90 korrekt); Negativ-Test „altes Modell A verletzt K3" bestanden; Second-Stage-3-Frame-Tests bestanden; De-minimis-Clamp-Test bestanden; Ratenhebel-Boundary (R = 50,1256 €/h → G = 50.000) bestanden.
+- Unabhängige Neuberechnung: **Reviewer A2 (M1–M10)** — Finanzkern cent-exakt bestätigt nach Fix R2-1; **Reviewer B2 (K1–K8)** — Methodik gegen RL/FAQ/Handbuch bestätigt.
+- Ergebnis: **PASS mit dokumentierter offener Berechnungslogik-Frage (Q3)** — konservative Planung 47.381,25 €.
 
 ## V4 — Projektabgrenzung
 
@@ -101,9 +101,34 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 
 **Gate-B-Fazit:** Kern-Passung SUPPORTED; 9 Korrekturen erforderlich und umgesetzt (siehe unten).
 
-## Revalidierungsrunde 2 — Review-Ergebnisse (Finanzmodell)
+## Revalidierungsrunde 2 — Review-Ergebnisse
 
-*(eingetragen nach Abschluss der beiden unabhängigen Runde-2-Reviews: A Finanzmathematik, B Förderrecht/Kostenbasis — s. unten; Vorlage finalem Bericht vorbehaltlich)*
+### Reviewer A2 — Finanzmathematik (M1–M10; FAQ-Zitate live verifiziert; alle Figuren eigenständig per decimal nachgerechnet)
+
+| Aufgabe | Urteil | Kernbefund |
+|---|---|---|
+| M1 Identitäten | **REFUTED (1 Figur)** → behoben | A, B, D (alle Zeilen), E, F: cent-exakt korrekt; **eine Ausnahme:** Vorfinanzierungs-Satz „~11.845 €" widersprach „23.690,63 €" im selben Satz → korrigiert (Fix R2-1) |
+| M2–M7 | **SUPPORTED** | Szenarien A (45.125,00), B (47.381,25), C-Nichtkonstruierbarkeit bei 50 €/h, D-Tabelle, E-Differenz 118,75 €, F (9.975,00) alle exakt bestätigt |
+| M8 Vorfinanzierung | **REFUTED** → behoben | Erster Abruf = Juni-only = **F/6 = 7.896,88 €**; konservativer Peak = volles Quartal **F/2 = 23.690,63 €**; EA-Saldo 2.500 € deckt beide Lesarten (Fix R2-1) |
+| M9 Negativ-Test | SUPPORTED | Altes Modell A: F/G = 100 % > 95 % ⇒ K3-Verstoß — Korrektur begründet; Kosmetik: 2.261,90/91 → Fußnote ergänzt (Rundung aus ungerundeter Basis) |
+| M10 Lücken | UNRESOLVED → behoben | Second-Stage-Zahlen (als E-Beleg §1 + Szenario G ergänzt), De-minimis-Wirkung auf F (Szenario H), >50-€-Satz-Hebel (Szenario C), Portal-Rundung (Q3 korrekt offen) |
+
+**Fazit A2:** „Finanzkern nach Cent-Nachrechnung fehlerfrei, Identitätskorrektur belastbar; nach Fix freigabefähig, Empfehlung 47.381,25 € bestätigt."
+
+### Reviewer B2 — Förderrecht und Kostenbasis (K1–K8; BAnz-PDF, beide Änderungs-RLs, FAQ-HTML, Handbuch selbst abgerufen)
+
+| Aufgabe | Urteil | Kernbefund |
+|---|---|---|
+| K1 GK-Zulässigkeit | SUPPORTED | RL Nr. 5 (Bemessung PK+GK) + FAQ 02 („könnt ihr … geltend machen" = **optional**) — Modell K7 (GK ≤ 5 %·PK, Szenario A mit GK = 0) treu |
+| K2 95-%-Basis | SUPPORTED | F ≤ 0,95 × (PK+GK) aus beiden Quellen; keine Quelle für „95 % nur auf PK" |
+| K3 50.000-€-Grenze | SUPPORTED¹ | = Gesamtkosten-Cap (RL wörtlich); FAQ 47.500 = 0,95 × 50.000; Team-Beleg 95.000 = 0,95 × 100.000; „GK = 5 % des Budgets" ohne Quellenstütze. ¹„Nicht konstruierbar" gilt nur bei exakt 50 €/h — FAQ erlaubt höheren Satz (→ Szenario C Ratenhebel ergänzt) |
+| K4 Eigenanteil | SUPPORTED | Konzept „Zeit" + formaler Bank-Nachweis; keine Quelle für EA als Bar-Zuzahlung |
+| K5 950 h/50 € | SUPPORTED | Handbuch F14 verbatim; 950-h-Cap bindet vor 50.000-€-Cap (G = 49.875); 50 €/h = **Personalkostensatz** (FAQ 02), nicht All-in |
+| K6 Second Stage | **REFUTED** → behoben | Modell enthielt keine Second-Stage-Sektion (W4) → Szenario G mit 4 Frames ergänzt (konservativ 31.650 €); RL setzt keine separate Second-Phase-Quote (95 %-Satz richtlinienweit) |
+| K7 De-minimis | **REFUTED** → behoben | Modell enthielt De-minimis nicht (300.000 €/3 Jahre, Kumulierung, Erklärung) → Szenario H ergänzt; frühere Beihilfen können F < 47.500 € drücken |
+| K8 Methodik-Lücken | → behoben | AZK-Anker ergänzt (RL Nr. 5/6: AZK Vordruck 0047 + Merkblatt Vorkalkulation); Vorfinanzierung konsistent F/6-Monats-Framing; Hinweis „Nr. 5 durch beide Änderungs-RLs unberührt" ergänzt |
+
+**Fazit B2:** 6 REQUIRED FIXES (②–⑥) — alle in Revision 3 umgesetzt.
 
 ## Korrekturen (jede: Befund → Ursache → Fix → Revalidierung)
 
@@ -118,6 +143,18 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 | 7 | decision-report „(E)"-Briefreferenz | Altes Deliverable-Buchstaben-Schema | → Pfad application-draft-de.md + Link owner-decisions A1–A6 | Link-Check |
 | 8 | Spec-M1/Boundary-Überlappung (Normalisierung bereits Vorarbeit) | M1-Meilenstein wurde nie gegen den Referenzfall abgeglichen | Vorarbeit-Hinweis in Spec §0 + Offenlegung in boundary §E (Förderleistung = Werkzeug+CI+≥5-Schemata-Korpus) | Textlich abgeglichen mit reference-case |
 | 9 | README ohne Decision-Dokumente; Stray-Dir `{docs`; validation-report.md ungetrackt | Migration-Artefakt; Commit-Reihenfolge | README-Tabelle erweitert; `{docs` rekursiv gelöscht; validation-report.md in diesem Commit | `git status`/`ls` clean |
+
+**Revalidierungsrunde 2 (Finanzmodell):**
+
+| # | Befund | Ursache | Korrektur | Revalidierung |
+|---|---|---|---|---|
+| R2-1 | Vorfinanzierungs-Satz intern widersprüchlich („~11.845 €" vs. „23.690,63 €" im selben Satz) | F/4-Fragment und F/2-Fragment vermischt; Abruf-Mechanik nicht differenziert (erster Abruf = Juni-only) | Erster Abruf = **F/6 = 7.896,88 €**; konservativer Peak = **F/2 = 23.690,63 €** klar getrennt | Review A2 M8-Nachrechnung (7.896,88 = 47.381,25/6) |
+| R2-2 | Second-Stage-Sektion fehlte im Modell (K6 REFUTED) | v2-Rewrite hatte die W4-Inhalte nicht übertragen | Szenario G mit 4 Frames (31.667 kommuniziert / 31.650 Stunden-Frame / 31.670,15 RL-Pfad / 31.666,67 Anteil-Frame; konservativ 31.650) | Review B2-Belege zitiert |
+| R2-3 | De-minimis-Wirkung auf F fehlte (K7 REFUTED) | Anlage Nr. 1 nur in funding-rules, nicht im Modell | Szenario H: F-Limit = min(Szenario-F, 300.000 − Vorbelastung); Erklärung/Aufbewahrung | Review B2 (RL Anlage) |
+| R2-4 | Szenario C „nicht konstruierbar" zu absolut (K3¹) | Ratenhebel (FAQ: höherer Satz mit Rechnungs-Nachweis) nicht abgebildet | Relativierung: bei R ≤ ~50,13 €/h konstruierbar (Beispiel 50,10 €/h → G 49.974,75, F 47.476,01) | Review B2 + Nachrechnung |
+| R2-5 | AZK-Anker fehlte (K8a) | RL Nr. 5/6-Verweise nicht als Kostenbasis-Anker dokumentiert | AZK-Abschnitt (Vordruck 0047 + Merkblatt Vorkalkulation; PK + GK-Pauschale als einzige öffentlich belegte Positionen) | Review B2-Zitate |
+| R2-6 | Team-Konsistenz-Beleg + RL-Konsolidierungs-Label fehlten (K8c) | — | §1 Team-Zeile (95.000 = 0,95 × 100.000); §0 „Nr. 5 durch Änderungs-RLs unberührt" | Review B2 K8c |
+| R2-7 | Vorfinanzierungs-/Rundungs-Fußnote (2.261,90 vs. 2.261,905→91) | Rundungsbasis nicht dokumentiert | Fußnote: GK aus **ungerundetem** PK (45.238,0952 × 0,05 = 2.261,9048 → 2.261,90) | Dezimal-Nachrechnung (dieses Commit) |
 
 ## V7 — Regression (nach Fixes)
 
