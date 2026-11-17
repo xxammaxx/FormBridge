@@ -25,6 +25,7 @@ class SiteTest(unittest.TestCase):
 
     def test_navigation_and_research_status(self):
         page = self.page()
+        page.locator('.technical-example summary').click()
         self.assertEqual(page.locator('main section').count(), 6)
         self.assertIn('Forschungsprojekt', page.locator('h1').inner_text())
         self.assertIn('Simulation', page.locator('#demo').inner_text())
@@ -37,6 +38,7 @@ class SiteTest(unittest.TestCase):
 
     def test_mapping_requires_human_confirmation(self):
         page = self.page()
+        page.locator('.technical-example summary').click()
         button = page.get_by_role('button', name='Zuordnung bestätigen')
         self.assertTrue(button.is_disabled())
         page.get_by_label('Ziel auswählen').select_option('applicant')
@@ -50,6 +52,7 @@ class SiteTest(unittest.TestCase):
 
     def test_unmapped_does_not_export_value(self):
         page = self.page()
+        page.locator('.technical-example summary').click()
         page.get_by_label('Ziel auswählen').select_option('unknown')
         page.get_by_role('button', name='Zuordnung bestätigen').click()
         self.assertIn('Keine Zuordnung', page.locator('#result').inner_text())
@@ -57,6 +60,7 @@ class SiteTest(unittest.TestCase):
 
     def test_conflicting_section_does_not_export_value(self):
         page = self.page()
+        page.locator('.technical-example summary').click()
         page.get_by_label('Ziel auswählen').select_option('household')
         page.get_by_role('button', name='Zuordnung bestätigen').click()
         result = page.locator('#result').inner_text()
@@ -75,6 +79,50 @@ class SiteTest(unittest.TestCase):
         self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), 360)
         self.assertEqual(network, [])
         self.assertEqual(errors, [])
+
+    def test_story_animation_shows_paper_detour_then_digital_signing(self):
+        page = self.page()
+        page.clock.install()
+        page.get_by_role('button', name='Animation neu starten').click()
+        active = page.locator('#story [aria-current="step"]')
+        self.assertIn('Herunterladen', active.inner_text())
+        for expected in ('Ausdrucken', 'Unterschreiben', 'Einscannen', 'Abschicken'):
+            page.clock.run_for(1800)
+            self.assertIn(expected, active.inner_text())
+        page.clock.run_for(1800)
+        self.assertTrue(page.locator('#paper-cross').is_visible())
+        page.clock.run_for(1800)
+        self.assertIn('Herunterladen', active.inner_text())
+        page.clock.run_for(1800)
+        self.assertIn('Auf dem Display unterschreiben', active.inner_text())
+        page.clock.run_for(1800)
+        self.assertIn('Digital abschicken', active.inner_text())
+        page.clock.run_for(1800)
+        self.assertTrue(page.locator('#story-done').is_visible())
+
+    def test_story_pause_and_restart(self):
+        page = self.page()
+        page.clock.install()
+        page.get_by_role('button', name='Animation neu starten').click()
+        page.get_by_role('button', name='Animation anhalten').click()
+        page.clock.run_for(4000)
+        self.assertIn('Herunterladen', page.locator('#story [aria-current="step"]').inner_text())
+        page.get_by_role('button', name='Animation fortsetzen').click()
+        page.clock.run_for(1800)
+        self.assertIn('Ausdrucken', page.locator('#story [aria-current="step"]').inner_text())
+
+    def test_story_reduced_motion_and_no_horizontal_overflow(self):
+        for scheme in ('light', 'dark'):
+            for width in (320, 390, 1280):
+                with self.subTest(scheme=scheme, width=width):
+                    page = self.browser.new_page(viewport={'width': width, 'height': 800}, color_scheme=scheme, reduced_motion='reduce')
+                    self.addCleanup(page.close)
+                    page.goto(SITE.as_uri())
+                    self.assertEqual(page.locator('#story li').count(), 8)
+                    self.assertTrue(page.locator('#paper-cross').is_visible())
+                    self.assertTrue(page.locator('#story-done').is_visible())
+                    self.assertFalse(page.get_by_role('button', name='Animation neu starten').is_visible())
+                    self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), width)
 
     def test_mobile_heading_uses_available_width_without_splitting_words(self):
         for width in (320, 360, 390, 545, 768):
@@ -107,6 +155,7 @@ class SiteTest(unittest.TestCase):
                 with self.subTest(scheme=scheme, width=width):
                     page = self.page(width, scheme)
                     self.assertEqual(page.evaluate('getComputedStyle(document.documentElement).colorScheme'), scheme)
+                    page.locator('.technical-example summary').click()
                     page.get_by_label('Ziel auswählen').select_option('applicant')
                     page.get_by_role('button', name='Zuordnung bestätigen').click()
                     contrasts = page.evaluate('''() => {

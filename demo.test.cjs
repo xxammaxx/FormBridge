@@ -14,3 +14,11 @@ test('household target conflicts with the visible applicant section and must not
 test('unknown field never exports the synthetic value', () => {
   assert.deepEqual(decision('unknown'), {approved:true, target:null, value:null});
 });
+test('story visits every paper station, crosses it out, then signs and sends digitally', () => {
+  const { storyStage } = require(modulePath);
+  assert.deepEqual(Array.from({length:10}, (_, i) => storyStage(i)), [
+    'paper-download', 'paper-print', 'paper-sign', 'paper-scan', 'paper-send',
+    'paper-cross', 'digital-download', 'digital-sign', 'digital-send', 'story-done'
+  ]);
+  assert.equal(storyStage(10), 'story-done');
+});
