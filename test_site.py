@@ -1,3 +1,4 @@
+import os
 import pathlib
 import unittest
 from playwright.sync_api import sync_playwright
@@ -8,15 +9,16 @@ class SiteTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.p = sync_playwright().start()
-        cls.browser = cls.p.chromium.launch(executable_path='/usr/bin/chromium', args=['--no-sandbox'])
+        executable = os.environ.get('CHROMIUM_EXECUTABLE')
+        cls.browser = cls.p.chromium.launch(**({'executable_path': executable} if executable else {}), args=['--no-sandbox'])
 
     @classmethod
     def tearDownClass(cls):
         cls.browser.close()
         cls.p.stop()
 
-    def page(self, width=1280):
-        page = self.browser.new_page(viewport={'width': width, 'height': 800})
+    def page(self, width=1280, color_scheme='light'):
+        page = self.browser.new_page(viewport={'width': width, 'height': 800}, color_scheme=color_scheme)
         self.addCleanup(page.close)
         page.goto(SITE.as_uri())
         return page
@@ -27,6 +29,9 @@ class SiteTest(unittest.TestCase):
         self.assertIn('Forschungsprojekt', page.locator('h1').inner_text())
         self.assertIn('Simulation', page.locator('#demo').inner_text())
         self.assertIn('keine fertige', page.locator('#forschung').inner_text())
+        self.assertTrue(page.get_by_role('heading', name='Was soll gefördert werden?').is_visible())
+        self.assertIn('Nicht Gegenstand der Förderung', page.locator('#loesung').inner_text())
+        self.assertIn('Diese Website erkennt keine PDFs', page.locator('#demo').inner_text())
         for link in page.locator('nav a[href^="#"]').all():
             self.assertEqual(page.locator(link.get_attribute('href')).count(), 1)
 
@@ -70,6 +75,67 @@ class SiteTest(unittest.TestCase):
         self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), 360)
         self.assertEqual(network, [])
         self.assertEqual(errors, [])
+
+    def test_mobile_heading_uses_available_width_without_splitting_words(self):
+        for width in (320, 360, 390, 545, 768):
+            with self.subTest(width=width):
+                page = self.page(width)
+                dimensions = page.evaluate('''() => {
+                    const h = document.querySelector('h1');
+                    const range = document.createRange();
+                    const walker = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);
+                    let split = [];
+                    while (walker.nextNode()) {
+                        const node = walker.currentNode;
+                        for (const match of node.textContent.matchAll(/\\S+/g)) {
+                            range.setStart(node, match.index);
+                            range.setEnd(node, match.index + match[0].length);
+                            if (range.getClientRects().length > 1) split.push(match[0]);
+                        }
+                    }
+                    return {heading: h.getBoundingClientRect().width,
+                            available: h.parentElement.getBoundingClientRect().width,
+                            scroll: document.documentElement.scrollWidth, split};
+                }''')
+                self.assertGreaterEqual(dimensions['heading'], dimensions['available'] * 0.95)
+                self.assertLessEqual(dimensions['scroll'], width)
+                self.assertEqual(dimensions['split'], [])
+
+    def test_theme_follows_system_and_readable_controls(self):
+        for scheme in ('light', 'dark'):
+            for width in (360, 1280):
+                with self.subTest(scheme=scheme, width=width):
+                    page = self.page(width, scheme)
+                    self.assertEqual(page.evaluate('getComputedStyle(document.documentElement).colorScheme'), scheme)
+                    page.get_by_label('Ziel auswählen').select_option('applicant')
+                    page.get_by_role('button', name='Zuordnung bestätigen').click()
+                    contrasts = page.evaluate('''() => {
+                        const lum = rgb => {
+                            const c = rgb.match(/\\d+(?:\\.\\d+)?/g).slice(0, 3).map(x => {
+                                const s = Number(x)/255;
+                                return s <= .04045 ? s/12.92 : ((s+.055)/1.055)**2.4;
+                            });
+                            return .2126*c[0]+.7152*c[1]+.0722*c[2];
+                        };
+                        const pairs = ['body', '.site-header .brand', '.nav a', '.hero-visual',
+                          '.card p', '.pill', '.notice', '.field', 'select', '#confirm',
+                          '#reset', '#result', '.month', '.status-box', '.foot a'];
+                        return pairs.map(selector => {
+                            const el = document.querySelector(selector);
+                            const fg = getComputedStyle(el).color;
+                            let bg = getComputedStyle(el).backgroundColor;
+                            let ancestor = el;
+                            while (bg === 'rgba(0, 0, 0, 0)' && ancestor.parentElement) {
+                                ancestor = ancestor.parentElement;
+                                bg = getComputedStyle(ancestor).backgroundColor;
+                            }
+                            const a = lum(fg), b = lum(bg);
+                            return {selector, ratio:(Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
+                        });
+                    }''')
+                    for contrast in contrasts:
+                        self.assertGreaterEqual(contrast['ratio'], 4.5, contrast['selector'])
+                    self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), width)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
