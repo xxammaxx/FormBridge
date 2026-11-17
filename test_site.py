@@ -86,6 +86,7 @@ class SiteTest(unittest.TestCase):
         page.get_by_role('button', name='Animation neu starten').click()
         active = page.locator('#story [aria-current="step"]')
         self.assertIn('Herunterladen', active.inner_text())
+        self.assertNotEqual(active.locator('.person-arm').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
         for expected in ('Ausdrucken', 'Unterschreiben', 'Einscannen', 'Abschicken'):
             page.clock.run_for(1800)
             self.assertIn(expected, active.inner_text())
@@ -95,6 +96,8 @@ class SiteTest(unittest.TestCase):
         self.assertIn('Herunterladen', active.inner_text())
         page.clock.run_for(1800)
         self.assertIn('Auf dem Display unterschreiben', active.inner_text())
+        self.assertNotEqual(active.locator('.finger').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
+        self.assertNotEqual(active.locator('.signature').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
         page.clock.run_for(1800)
         self.assertIn('Digital abschicken', active.inner_text())
         page.clock.run_for(1800)
@@ -110,6 +113,16 @@ class SiteTest(unittest.TestCase):
         page.get_by_role('button', name='Animation fortsetzen').click()
         page.clock.run_for(1800)
         self.assertIn('Ausdrucken', page.locator('#story [aria-current="step"]').inner_text())
+
+    def test_story_does_not_reuse_unversioned_cached_demo_script(self):
+        page = self.browser.new_page(viewport={'width': 1280, 'height': 800})
+        self.addCleanup(page.close)
+        requests = []
+        page.on('request', lambda request: requests.append(request.url) if request.resource_type == 'script' else None)
+        page.goto(SITE.as_uri())
+        self.assertTrue(any('demo.js?v=' in url for url in requests), requests)
+        self.assertFalse(any(url.endswith('/demo.js') for url in requests), requests)
+        self.assertTrue(page.get_by_role('button', name='Animation neu starten').is_visible())
 
     def test_story_reduced_motion_and_no_horizontal_overflow(self):
         for scheme in ('light', 'dark'):
