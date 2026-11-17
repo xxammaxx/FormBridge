@@ -8,8 +8,8 @@ test('unselected or invalid selection has no export', () => {
 test('applicant confirmation maps the synthetic name', () => {
   assert.deepEqual(decision('applicant'), {approved:true, target:'Antragstellende Person', value:'Alex Muster'});
 });
-test('household confirmation maps only the explicitly selected target', () => {
-  assert.deepEqual(decision('household'), {approved:true, target:'Haushaltsmitglied', value:'Alex Muster'});
+test('household target conflicts with the visible applicant section and must not export', () => {
+  assert.deepEqual(decision('household'), {approved:true, target:null, value:null, conflict:true});
 });
 test('unknown field never exports the synthetic value', () => {
   assert.deepEqual(decision('unknown'), {approved:true, target:null, value:null});

@@ -50,6 +50,15 @@ class SiteTest(unittest.TestCase):
         self.assertIn('Keine Zuordnung', page.locator('#result').inner_text())
         self.assertNotIn('Alex Muster', page.locator('#result').inner_text())
 
+    def test_conflicting_section_does_not_export_value(self):
+        page = self.page()
+        page.get_by_label('Ziel auswählen').select_option('household')
+        page.get_by_role('button', name='Zuordnung bestätigen').click()
+        result = page.locator('#result').inner_text()
+        self.assertIn('Widerspruch', result)
+        self.assertIn('Keine Ausgabe', result)
+        self.assertNotIn('Alex Muster', result)
+
     def test_mobile_no_horizontal_overflow_or_external_requests(self):
         page = self.browser.new_page(viewport={'width': 360, 'height': 800})
         self.addCleanup(page.close)

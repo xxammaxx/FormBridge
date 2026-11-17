@@ -2,7 +2,7 @@
   'use strict';
   function decision(value) {
     if (value === 'applicant') return {approved:true, target:'Antragstellende Person', value:'Alex Muster'};
-    if (value === 'household') return {approved:true, target:'Haushaltsmitglied', value:'Alex Muster'};
+    if (value === 'household') return {approved:true, target:null, value:null, conflict:true};
     if (value === 'unknown') return {approved:true, target:null, value:null};
     return {approved:false, target:null, value:null};
   }
@@ -21,7 +21,7 @@
   confirm.addEventListener('click', () => {
     const d = decision(choice.value);
     if (!d.approved) return;
-    result.textContent = d.target ? 'Bestätigte Beispielzuordnung: ' + d.target + ' → Name: ' + d.value + '. Dies ist keine amtliche Datenvalidierung.' : 'Keine Zuordnung: Das Feld wird nicht exportiert. Weitere Prüfung erforderlich.';
+    result.textContent = d.conflict ? 'Widerspruch zum Formularabschnitt: Das Feld gehört zur antragstellenden Person. Keine Ausgabe – bitte Zuordnung korrigieren.' : d.target ? 'Bestätigte Beispielzuordnung: ' + d.target + ' → Name: ' + d.value + '. Dies ist keine amtliche Datenvalidierung.' : 'Keine Zuordnung: Das Feld wird nicht exportiert. Weitere Prüfung erforderlich.';
     result.hidden = false;
   });
   reset.addEventListener('click', () => {
