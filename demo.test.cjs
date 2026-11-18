@@ -22,3 +22,11 @@ test('story visits every paper station, crosses it out, then signs and sends dig
   ]);
   assert.equal(storyStage(10), 'story-done');
 });
+test('scene chapters and numbers reset for the digital route, with separate transition and finish frames', () => {
+  const {storyFrame} = require(modulePath);
+  assert.equal(typeof storyFrame, 'function');
+  assert.deepEqual([0,4,5,6,7,8,9].map(i => {
+    const {phase, position, total} = storyFrame(i);
+    return [phase, position, total];
+  }), [['paper',1,5],['paper',5,5],['transition',0,0],['digital',1,3],['digital',2,3],['digital',3,3],['finish',0,0]]);
+});

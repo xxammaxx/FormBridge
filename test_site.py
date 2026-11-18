@@ -85,23 +85,30 @@ class SiteTest(unittest.TestCase):
         page.clock.install()
         page.get_by_role('button', name='Animation neu starten').click()
         active = page.locator('#story [aria-current="step"]')
+        self.assertTrue(page.locator('#story-stage').is_visible())
+        self.assertEqual(page.locator('#story-art svg').count(), 1)
+        self.assertEqual(page.locator('#story-chapter').inner_text(), 'Heute · 1 / 5')
+        self.assertIn('Formular herunterladen', page.locator('#story-title').inner_text())
         self.assertIn('Herunterladen', active.inner_text())
-        self.assertNotEqual(active.locator('.person-arm').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
+        self.assertNotEqual(page.locator('#story-art .person-arm').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
         for expected in ('Ausdrucken', 'Unterschreiben', 'Einscannen', 'Abschicken'):
-            page.clock.run_for(1800)
+            page.clock.run_for(2400)
             self.assertIn(expected, active.inner_text())
-        page.clock.run_for(1800)
+        page.clock.run_for(2400)
         self.assertTrue(page.locator('#paper-cross').is_visible())
-        page.clock.run_for(1800)
+        self.assertEqual(page.locator('#story-stage').get_attribute('data-phase'), 'transition')
+        page.clock.run_for(2400)
         self.assertIn('Herunterladen', active.inner_text())
-        page.clock.run_for(1800)
+        self.assertIn('Zukunftsvision · 1 / 3', page.locator('#story-chapter').inner_text())
+        page.clock.run_for(2400)
         self.assertIn('Auf dem Display unterschreiben', active.inner_text())
-        self.assertNotEqual(active.locator('.finger').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
-        self.assertNotEqual(active.locator('.signature').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
-        page.clock.run_for(1800)
+        self.assertNotEqual(page.locator('#story-art .finger').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
+        self.assertNotEqual(page.locator('#story-art .signature').evaluate('(el) => getComputedStyle(el).animationName'), 'none')
+        page.clock.run_for(2400)
         self.assertIn('Digital abschicken', active.inner_text())
-        page.clock.run_for(1800)
+        page.clock.run_for(2400)
         self.assertTrue(page.locator('#story-done').is_visible())
+        self.assertEqual(page.locator('#story-stage').get_attribute('data-phase'), 'finish')
 
     def test_story_pause_and_restart(self):
         page = self.page()
@@ -111,7 +118,7 @@ class SiteTest(unittest.TestCase):
         page.clock.run_for(4000)
         self.assertIn('Herunterladen', page.locator('#story [aria-current="step"]').inner_text())
         page.get_by_role('button', name='Animation fortsetzen').click()
-        page.clock.run_for(1800)
+        page.clock.run_for(2400)
         self.assertIn('Ausdrucken', page.locator('#story [aria-current="step"]').inner_text())
 
     def test_story_does_not_reuse_unversioned_cached_demo_script(self):
@@ -135,7 +142,24 @@ class SiteTest(unittest.TestCase):
                     self.assertTrue(page.locator('#paper-cross').is_visible())
                     self.assertTrue(page.locator('#story-done').is_visible())
                     self.assertFalse(page.get_by_role('button', name='Animation neu starten').is_visible())
+                    self.assertFalse(page.locator('#story-stage').is_visible())
                     self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), width)
+
+    def test_story_player_mobile_and_desktop_scene_stays_inside_viewport(self):
+        for scheme in ('light', 'dark'):
+            for width in (320, 390, 1280):
+                with self.subTest(scheme=scheme, width=width):
+                    page = self.page(width, scheme)
+                    page.clock.install()
+                    page.get_by_role('button', name='Animation neu starten').click()
+                    for frame in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9):
+                        self.assertLessEqual(page.evaluate('document.documentElement.scrollWidth'), width)
+                        self.assertEqual(page.locator('#story-art svg').count(), 1)
+                        box = page.locator('#story-art svg').bounding_box()
+                        self.assertGreaterEqual(box['x'], 0)
+                        self.assertLessEqual(box['x'] + box['width'], width + 1)
+                        if frame < 9:
+                            page.clock.run_for(2400)
 
     def test_mobile_heading_uses_available_width_without_splitting_words(self):
         for width in (320, 360, 390, 545, 768):
