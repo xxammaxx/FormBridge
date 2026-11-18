@@ -210,18 +210,38 @@
 
 <section class="chapter" id="forschung" aria-labelledby="research-title">
   <div class="wrap">
-    <p class="eyebrow">Forschungsstand</p>
-    <h2 id="research-title">Was der Fürther Wohngeldantrag zeigt</h2>
-    <p class="lead">Der untersuchte Vordruck hat acht Seiten und kein einziges ausfüllbares PDF-Feld. Trotzdem enthält er lesbaren digitalen Text. An 30 ausgewählten Feldern wurde von Hand untersucht, wie gut der Vordruck zum FIM-Datenmodell für Wohngeld passt.</p>
+    <p class="eyebrow">Forschung für den Verwaltungsalltag</p>
+    <h2 id="research-title">Der Antrag ist da. Wie kommen seine Angaben ins Fachverfahren?</h2>
+    <p class="lead">Wenn ein Wohngeldantrag als PDF eingeht und das Fachverfahren die Angaben daraus nicht übernehmen kann, muss die Sachbearbeitung sie im Dokument suchen und von Hand übertragen. FormBridge soll diesen Schritt verkürzen.</p>
+    <p>Der geplante Prototyp soll Angaben den passenden Datenfeldern zuordnen und nach der Prüfung für die Weiterverarbeitung bereitstellen. Bei unklaren Fällen soll die Sachbearbeitung direkt sehen, welche Stelle im Formular sie prüfen muss. So soll weniger Zeit fürs Suchen und Abtippen anfallen.</p>
+
+    <h3>Was wir am Fürther Wohngeldantrag untersucht haben</h3>
+    <p>Wir haben 30 Felder des Fürther Wohngeldvordrucks von Hand mit dem FIM-Datenmodell für Wohngeld verglichen. Dieses Modell beschreibt, welche Angaben und Datenformate für die Übergabe vorgesehen sind.</p>
     <div class="columns">
-      <div><h3>Der Abschnitt entscheidet</h3><p>Bei sieben der 30 Felder gab erst der Zusammenhang den Ausschlag. In drei weiteren Fällen fehlte eine fachlich passende Entsprechung im untersuchten Modell. Dazu zählte die Identität des Vermieters.</p></div>
-      <div><h3>Auch der Prüfmaßstab braucht Prüfung</h3><p>Ein verbreitetes Prüfprogramm meldete bei Version 1.4 des maschinenlesbaren Regelwerks für Wohngeld im Test 170 Fehler. Erst mit einer dokumentiert angepassten Fassung bestand ein Datensatz mit erfundenen Angaben die technische Prüfung. Eine amtliche Freigabe ergibt sich daraus nicht.</p></div>
+      <div>
+        <h4>Bei 7 Feldern entschied der Abschnitt</h4>
+        <p>„Name“ kann den Namen der antragstellenden Person oder den eines Haushaltsmitglieds meinen. Erst der Abschnitt zeigt, wohin die Angabe gehört.</p>
+      </div>
+      <div>
+        <h4>Bei 3 Angaben fehlte ein passendes Feld</h4>
+        <p>Ein Beispiel ist der Name samt Anschrift des Vermieters. Der Vordruck fragt danach. In der untersuchten Version des Datenmodells fehlt dafür eine passende Stelle. Der Prototyp soll solche Fälle zur Prüfung anzeigen, damit die Angabe sichtbar bleibt.</p>
+      </div>
     </div>
-    <h3>Was vorhandene Werkzeuge schon leisten</h3>
-    <p>CommonForms erkennt Feldpositionen in PDFs. Der Formularagent überführt digitale Formularbeschreibungen in ein anderes Format. Unter den 13 im Projekt untersuchten Lösungen fand sich keine, die für diesen Vordruck den gesamten Weg von der sichtbaren Stelle zum geprüften FIM-Feld dokumentiert.</p>
-    <h3>Welche Rolle lokale KI spielen könnte</h3>
-    <p>Geprüft werden soll, wie weit feste Regeln und Formularüberschriften tragen. Als Ergänzung kommen kleine spezialisierte Sprachmodelle auf dem eigenen Rechner infrage. Ein LoRA-Adapter ist eine kleine, auf eine Aufgabe trainierte Ergänzung für ein vorhandenes Modell. So lässt es sich mit weniger Rechenaufwand an Fachbegriffe anpassen.</p>
-    <p>Ob das die Zuordnung verbessert, ist offen. Für die geplante Verarbeitung bleiben die Formulardaten auf dem Gerät. Auch ein Modell müsste für jeden Vorschlag eine prüfbare Grundlage liefern. Unsichere Zuordnungen bleiben bis zur menschlichen Klärung offen.</p>
+    <p><a href="https://github.com/xxammaxx/FormBridge/blob/main/docs/research/reference-case-wohngeld.md">Untersuchung zum Fürther Wohngeldantrag nachlesen</a></p>
+
+    <h3>Wie wir die Entlastung prüfen wollen</h3>
+    <p>Testpersonen sollen die Vorschläge des Prototyps überprüfen. Wir erfassen, wie viel Zeit die Prüfung pro Feld braucht und welche Zuordnungen korrigiert werden müssen. Die tatsächliche Zeitersparnis im Amt lässt sich später durch einen Vergleich mit der manuellen Übertragung messen.</p>
+
+    <details>
+      <summary>Technische Befunde und verwandte Ansätze</summary>
+      <h3>Prüfbarkeit des FIM-Datenmodells</h3>
+      <p>Ein Prüfprogramm meldete bei Version 1.4 des maschinenlesbaren Regelwerks für Wohngeld im Test 170 Fehler. Mit einer dokumentiert angepassten Fassung bestand ein Datensatz mit erfundenen Angaben die technische Prüfung.</p>
+      <h3>Was vorhandene Werkzeuge schon leisten</h3>
+      <p>CommonForms erkennt Feldpositionen in PDFs. Der Formularagent überführt digitale Formularbeschreibungen in ein anderes Format. Unter den 13 im Projekt untersuchten Lösungen fand sich keine, die für diesen Vordruck den gesamten Weg von der sichtbaren Stelle zum geprüften FIM-Feld dokumentiert.</p>
+      <h3>Welche Rolle lokale KI spielen könnte</h3>
+      <p>Geprüft werden soll, wie weit feste Regeln und Formularüberschriften tragen. Als Ergänzung kommen kleine spezialisierte Sprachmodelle auf dem eigenen Rechner infrage. Ein LoRA-Adapter ist eine kleine, auf eine Aufgabe trainierte Ergänzung für ein vorhandenes Modell. So lässt es sich mit weniger Rechenaufwand an Fachbegriffe anpassen.</p>
+      <p>Ob das die Zuordnung verbessert, ist offen. Für die geplante Verarbeitung bleiben die Formulardaten auf dem Gerät. Auch ein Modell müsste für jeden Vorschlag eine prüfbare Grundlage liefern. Unsichere Zuordnungen bleiben bis zur menschlichen Klärung offen.</p>
+    </details>
   </div>
 </section>
 
