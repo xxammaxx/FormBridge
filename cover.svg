@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 400" fill="none">
+<defs><pattern id="dots" width="19" height="19" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#8cb4a8" opacity=".4"/></pattern><pattern id="lines" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M1 0v6" stroke="#72a897" opacity=".5"/></pattern></defs>
+<rect width="580" height="400" fill="#173c3b"/><rect width="580" height="400" fill="url(#dots)"/>
+<g stroke="#a6c7b5" fill="none"><path d="M27 40V25h15m496 0h15v15M27 360v15h15m496 0h15v-15"/></g>
+<g transform="matrix(.88 .28 -.49 .68 222 117)">
+<rect x="-4" y="37" width="277" height="261" rx="3" fill="url(#lines)" stroke="#87a798"/>
+<rect x="0" y="0" width="267" height="270" rx="3" fill="#9cd0b7" stroke="#132f30" stroke-width="3"/><path d="M14 244h237M15 252h118" stroke="#4a8877"/>
+</g>
+<g transform="matrix(.88 .28 -.49 .68 209 50)" stroke-linejoin="round">
+<path d="M0 0h220l46 46v220H0z" fill="#f4efd9" stroke="#152e30" stroke-width="3"/><path d="M220 0v46h46" fill="#d3d5b8" stroke="#152e30" stroke-width="3"/>
+<g fill="#264942"><rect x="24" y="22" width="34" height="5"/><rect x="24" y="44" width="142" height="13"/><rect x="24" y="66" width="111" height="5"/></g>
+<path d="M24 91h212" stroke="#789180"/><rect x="24" y="109" width="194" height="38" fill="#d9e5ce" stroke="#63877a"/><path d="M34 122h47m-47 10h84" stroke="#264942" stroke-width="3"/>
+<rect x="24" y="163" width="91" height="34" stroke="#8fa494"/><rect x="125" y="163" width="93" height="34" stroke="#8fa494"/><path d="M36 177h42m58 0h49m-160 41h133m-133 11h83" stroke="#869684" stroke-width="3"/>
+</g>
+<path d="m338 198 40 13 48-53h69" stroke="#1a3737" stroke-width="7"/><path d="m338 198 40 13 48-53h69" stroke="#f6aa78" stroke-width="2.5"/><circle cx="338" cy="198" r="6" fill="#f6aa78" stroke="#173c3b" stroke-width="2"/>
+<g transform="translate(443 114)"><rect width="93" height="60" rx="5" fill="#173c3b" stroke="#f6aa78"/><path d="M20 18l-8 11 8 11m52-22 8 11-8 11" stroke="#f6aa78" stroke-width="3"/><path d="M30 23h29m-29 10h22" stroke="#c4ddc9" stroke-width="4"/></g>
+</svg>

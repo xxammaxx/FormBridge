@@ -1,5 +1,9 @@
 # FormBridge – öffentliche Projektwebsite
 
-Nur die statische Informationswebsite und die ausdrücklich gekennzeichnete Simulation. Diese Branch ist nicht der Produktcode und wird nicht in main gemergt.
+Der Branch `gh-pages` enthält die statische Projektpräsentation, den Erklärfilm und die Simulation mit fiktiven Daten. Die Forschungsdokumentation liegt auf `main`.
 
-Tests: `node --test demo.test.cjs`, `node --check demo.js`; der Browser-Test `python3 test_site.py` benötigt Playwright und Chromium unter `/usr/bin/chromium`. Die Demo verarbeitet ausschließlich vordefinierte fiktive Eingaben lokal. Keine echte PDF-/FIM-Engine, keine amtliche Prüfung.
+## Prüfen
+
+- `node --check demo.js && node --check film.js`
+- `node --test demo.test.cjs`
+- `python -m unittest discover -p 'test_*.py' -v` mit Python Playwright und Chromium. Optional setzt `CHROMIUM_EXECUTABLE` den Pfad zu einer bestehenden Chromium-Installation.
