@@ -3,154 +3,216 @@
 
   const film = document.querySelector('.fb-film');
   if (!film) return;
-  const get = id => film.querySelector('#film-' + id);
+
+  const nodes = Object.fromEntries(
+    [...film.querySelectorAll('[id^="film-"]')].map(node => [node.id.slice(5), node])
+  );
   const player = film.querySelector('.film-player');
-  const still = film.querySelector('.film-transcript');
+  const transcript = film.querySelector('.film-transcript');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
-  const duration = 2600;
   const scenes = [
     ['Formular herunterladen', 'Ein Antrag landet als PDF auf dem Computer.'],
-    ['Ausdrucken', 'Der Drucker gibt das Formular auf Papier aus.'],
-    ['Von Hand unterschreiben', 'Die Person trägt ihre Unterschrift auf dem Blatt ein.'],
+    ['Ausdrucken', 'Der Drucker gibt dasselbe Formular auf Papier aus.'],
+    ['Von Hand unterschreiben', 'Die Unterschrift kommt mit dem Stift aufs Papier.'],
     ['Wieder einscannen', 'Das unterschriebene Blatt wird wieder zu einer Datei.'],
-    ['Datei verschicken', 'Am Computer geht die eingescannte Fassung auf den Weg.'],
-    ['Der Umweg über Papier', 'Drucker und Scanner waren für den Wechsel des Mediums nötig.'],
-    ['Auf dem Smartphone öffnen', 'In dieser Zukunftsvision bleibt derselbe Antrag digital.'],
-    ['Mit dem Finger unterschreiben', 'Die Linie entsteht unmittelbar unter der Fingerspitze.'],
-    ['Digital versenden', 'Eine Berührung löst die Übermittlung im dargestellten Beispiel aus.'],
-    ['Durchgängig digital', 'In diesem Zielbild entfällt der Weg über Drucker und Scanner.']
+    ['Datei verschicken', 'Der Scan wird digital verschickt.'],
+    ['Der Umweg über Papier', 'Für die Unterschrift wurde aus einer Datei wieder ein Blatt Papier.'],
+    ['Auf dem Smartphone öffnen', 'Das Formular erscheint auf dem Smartphone.'],
+    ['Mit dem Finger unterschreiben', 'Die Unterschrift entsteht direkt auf dem Display.'],
+    ['Digital versenden', 'Ein Tipp auf Senden übermittelt das Formular im gezeigten Beispiel.'],
+    ['Durchgängig digital', 'In dieser Zukunftsvision bleibt das Formular von Anfang bis Ende digital.']
   ];
-  const total = duration * scenes.length;
+  const sceneDuration = 2000;
+  const totalDuration = sceneDuration * scenes.length;
+
+  // Both media share this origin. Zoom keeps the midpoint of the signing line fixed.
+  const centerX = 320;
+  const signatureY = 263;
+  const phoneFormWidthScale = 0.34;
+  const phoneFormHeightScale = 0.47;
+  const phoneCloseUp = 2;
+  const signature = nodes['signature-shape'];
+  const signatureLength = signature.getTotalLength();
+
   const clamp = value => Math.max(0, Math.min(1, value));
-  const ease = value => value * value * (3 - 2 * value);
-  const mix = (a, b, t) => a + (b - a) * t;
-  function interval(t, start, end) {
-    return ease(clamp((t - start) / (end - start)));
-  }
-  const nodes = Object.fromEntries([...film.querySelectorAll('[id^="film-"]')].map(el => [el.id.slice(5), el]));
-  const move = (name, x, y, angle = 0, scale = 1) =>
-    nodes[name].setAttribute('transform', 'translate(' + x + ' ' + y + ') rotate(' + angle + ') scale(' + scale + ')');
-  const fade = (name, opacity) => nodes[name].setAttribute('opacity', opacity);
-  const path = (name, d) => nodes[name].setAttribute('d', d);
-  function paperScene(i, t) {
-    const locations = [151, 248, 358, 486, 151, 151];
-    const start = locations[Math.max(0, i - 1)];
-    const end = locations[i];
-    const walk = interval(t, 0, .55);
-    const x = mix(start, end, walk);
-    const stride = Math.sin(walk * Math.PI * 6) * Math.min(1, Math.abs(start - end) / 50) * 10;
-    move('avatar', x, 0);
-    path('leg-a', 'M-7 218l' + (-3 - stride * .3) + ' 33L' + (-9 - stride) + ' 281h-7');
-    path('leg-b', 'M6 218l' + (4 + stride * .3) + ' 33L' + (12 + stride) + ' 281h7');
-    const contact = interval(t, .48, .72);
-    let hand = [mix(24, 31, contact), mix(203, 199, contact)];
-    let sheetX = 0, sheetY = 0, angle = 0, scale = .75;
-    if (i === 1) {
-      sheetX = 254; sheetY = mix(184, 200, interval(t,.38,.84)); angle = -83;
-      hand = [mix(24, 30, contact), mix(203, 193, contact)];
-    } else if (i === 2 || i === 3) {
-      const previousX = i === 2 ? 254 : 394;
-      const currentX = i === 2 ? 394 : 528;
-      sheetX = mix(previousX, currentX, walk);
-      sheetY = 199 - Math.sin(walk * Math.PI) * 6;
-      angle = -83;
-      hand = [mix(sheetX - x + 4, i === 2 ? 45 + 4 * Math.sin(t * 20) : 50, contact), mix(sheetY, i === 2 ? 189 : 191, contact)];
-    }
-    if (i === 4) {
-      sheetX=528; sheetY=199; angle=-83;
-    }
-    const elbowX = hand[0] * .43 + 3, elbowY = hand[1] - 2;
-    path('arm', 'M1 176Q' + elbowX + ' ' + elbowY + ' ' + hand[0] + ' ' + hand[1]);
-    path('sleeve', 'M1 176l' + (elbowX * .65) + ' ' + ((elbowY - 176) * .65));
-    fade('moving-sheet', i >= 1 && i <= 4 ? (i === 1 ? interval(t,.38,.52) : 1) : 0);
-    move('moving-sheet', sheetX, sheetY, angle, scale);
-    nodes.ink.style.strokeDasharray = '1';
-    nodes.ink.style.strokeDashoffset = i < 2 ? 1 : i > 2 ? 0 : 1 - interval(t,.59,.9);
-    fade('pen', i === 2 ? contact : 0);
-    path('pen','M' + (x+hand[0]+2) + ' ' + (hand[1]-9) + 'l-4 15');
-    fade('scanlight', i === 3 ? Math.sin(interval(t,.59,.96)*Math.PI) : 0);
-    move('scanlight',0, i === 3 ? interval(t,.59,.96)*6 : 0);
-    const send = interval(t,.52,.97);
-    fade('mail', i === 4 ? Math.sin(send*Math.PI) : 0);
-    move('mail',mix(145,251,send),mix(143,62,send),-12*send,.75);
+  const mix = (from, to, t) => from + (to - from) * t;
+  const ease = (t, from, to) => {
+    const part = clamp((t - from) / (to - from));
+    return part * part * (3 - 2 * part);
+  };
+
+  function move(node, x, y, scale = 1, angle = 0) {
+    node.setAttribute('transform', `translate(${x} ${y}) scale(${scale}) rotate(${angle})`);
   }
 
-  const signature = get('signature');
-  const signatureLength = signature.getTotalLength();
-  function phoneScene(i, t) {
-    const trace = i < 7 ? 0 : i > 7 ? 1 : interval(t,.15,.9);
-    const point = signature.getPointAtLength(trace * signatureLength);
-    signature.style.strokeDasharray = '1';
-    signature.style.strokeDashoffset = 1 - trace;
-    let x = point.x, y = point.y;
-    if (i === 6) {
-      const enter = interval(t,0,1);
-      x = mix(469,point.x,enter); y = mix(235,point.y,enter);
-    } else if (i >= 8) {
-      const tap = i === 9 ? 1 : interval(t,0,.52);
-      x = mix(point.x,352,tap); y = mix(point.y,237,tap);
-    }
-    move('finger',x,y);
-    const send = interval(t,.51,.98);
-    fade('mobile-mail', i === 8 ? Math.sin(send*Math.PI) : 0);
-    move('mobile-mail',mix(350,465,send),mix(226,61,send),-10*send,1);
+  function fade(node, amount) {
+    node.setAttribute('opacity', amount);
   }
-  let previous = -1;
+
+  function trace(node, progress) {
+    node.style.strokeDasharray = '1';
+    node.style.strokeDashoffset = 1 - progress;
+    fade(node, progress > 0 ? 1 : 0);
+    return signature.getPointAtLength(progress * signatureLength);
+  }
+
+  function drawPaper(scene, t) {
+    let x = centerX;
+    let y = signatureY;
+    let scale = 1;
+    let angle = 0;
+    let ink = scene > 2 ? 1 : 0;
+    let opacity = 1;
+    let mailOpacity = 0;
+    const feeding = scene === 1 || scene === 3;
+    const paperWindow = nodes['paper-window'];
+
+    if (feeding) paperWindow.setAttribute('clip-path', 'url(#film-feed)');
+    else paperWindow.removeAttribute('clip-path');
+
+    fade(nodes.browser, scene === 0 ? 1 : 0);
+    fade(nodes.printer, scene === 1 ? 1 : 0);
+    fade(nodes.scanner, scene === 3 ? 1 : 0);
+    fade(nodes.pen, 0);
+
+    if (scene === 0) {
+      const click = ease(t, 0.15, 0.48);
+      move(nodes.cursor, mix(475, 450, click), mix(308, 281, click));
+      nodes['download-pulse'].setAttribute('r', mix(24, 34, ease(t, 0.48, 0.88)));
+      fade(nodes['download-pulse'], Math.sin(Math.PI * ease(t, 0.44, 0.92)));
+      y = mix(285, 299, ease(t, 0.52, 0.83));
+      scale = 0.78;
+    } else if (scene === 1) {
+      y = mix(85, 345, ease(t, 0.08, 0.92));
+    } else if (scene === 2) {
+      ink = ease(t, 0.14, 0.86);
+      const point = signature.getPointAtLength(ink * signatureLength);
+      move(nodes.pen, centerX + point.x, signatureY + point.y);
+      fade(nodes.pen, ease(t, 0, 0.12));
+    } else if (scene === 3) {
+      const insert = ease(t, 0.06, 0.92);
+      y = mix(345, 85, insert);
+      fade(nodes['scan-light'], Math.sin(Math.PI * ease(t, 0.05, 0.94)));
+    } else if (scene === 4) {
+      const seal = ease(t, 0.03, 0.53);
+      const send = ease(t, 0.51, 0.96);
+      x = mix(centerX, 310, seal);
+      y = mix(signatureY, 216, seal);
+      scale = mix(0.66, 0.14, seal);
+      angle = mix(0, 7, seal);
+      opacity = 1 - ease(t, 0.38, 0.59);
+      mailOpacity = ease(t, 0.05, 0.32) * (1 - ease(t, 0.86, 1));
+      move(nodes.mail, mix(310, 544, send), mix(216, 111, send), mix(1.15, 0.63, send), -11 * send);
+    }
+
+    fade(nodes.mail, mailOpacity);
+    trace(nodes['paper-signature'], ink);
+    move(nodes.paper, x, y, scale, angle);
+    fade(paperWindow, opacity);
+  }
+
+  function drawPhone(scene, t) {
+    const zoom = scene === 6 ? mix(1, phoneCloseUp, ease(t, 0.4, 0.95)) : phoneCloseUp;
+    move(nodes.mobile, centerX, signatureY, zoom);
+
+    const progress = scene === 6 ? 0 : scene === 7 ? ease(t, 0.14, 0.88) : 1;
+    const point = trace(nodes.signature, progress);
+    const tap = scene >= 8 ? ease(t, 0.06, 0.58) : 0;
+    const entry = scene === 6 ? ease(t, 0.75, 1) : 1;
+    const x = mix(mix(44, point.x * phoneFormWidthScale, entry), 1, tap);
+    const y = mix(mix(38, point.y * phoneFormHeightScale, entry), 12, tap);
+    move(nodes.finger, x, y);
+
+    const fingerOpacity = scene === 6 ? entry : scene === 9 ? 0 : 1 - ease(t, 0.63, 0.94) * tap;
+    fade(nodes.finger, fingerOpacity);
+    fade(nodes.send, scene < 8 ? 0 : scene === 8 ? ease(t, 0, 0.25) : 1);
+
+    const send = ease(t, 0.58, 0.98);
+    move(nodes.mail, mix(centerX, 487, send), mix(signatureY + 26, 123, send), mix(0.64, 0.86, send), -10 * send);
+    fade(nodes.mail, scene === 8 ? Math.sin(Math.PI * send) : 0);
+  }
+
+  let previousScene = -1;
   function draw(time) {
-    const i = Math.min(scenes.length - 1, Math.floor(time / duration));
-    const t = clamp((time - i * duration) / duration);
-    if (i !== previous) {
-      get('chapter').textContent = i < 6 ? 'Heute · Der Papierumweg' : 'Zukunftsvision · Digital';
-      get('count').textContent = String(i + 1).padStart(2,'0') + ' / 10';
-      [get('title').textContent, get('description').textContent] = scenes[i];
-      previous = i;
+    const scene = Math.min(scenes.length - 1, Math.floor(time / sceneDuration));
+    const t = clamp((time - scene * sceneDuration) / sceneDuration);
+    if (scene !== previousScene) {
+      nodes.chapter.textContent = scene < 6 ? 'Heute · Der Papierumweg' : 'Zukunftsvision · Digital';
+      nodes.count.textContent = String(scene + 1).padStart(2, '0') + ' / ' + scenes.length;
+      [nodes.title.textContent, nodes.description.textContent] = scenes[scene];
+      previousScene = scene;
     }
-    fade('desk', i <= 5 ? 1 : 0);
-    fade('mobile', i < 6 ? 0 : i === 6 ? interval(t,0,.17) : 1);
-    if (i < 6) paperScene(i,t); else phoneScene(i,t);
-    const verdict = i === 5 || i === 9;
-    fade('verdict',verdict ? interval(t,0,.22) : 0);
-    move('verdict',i === 5 ? 423 : 482,i === 5 ? 123 : 103,0,.86 + .14 * interval(t,0,.22));
-    nodes.verdict.style.color = i === 5 ? '#a5362b' : '#207157';
-    path('verdict-stroke',i === 5 ? 'm-14-14 28 28m0-28-28 28' : 'm-19 0 13 13 25-28');
-    get('progress').value = time / duration;
+
+    if (scene < 6) {
+      fade(nodes.mobile, 0);
+      drawPaper(scene, t);
+    } else {
+      fade(nodes.browser, 0);
+      fade(nodes.printer, 0);
+      fade(nodes.scanner, 0);
+      fade(nodes['paper-window'], 0);
+      fade(nodes.pen, 0);
+      fade(nodes.mobile, 1);
+      drawPhone(scene, t);
+    }
+
+    const paperVerdict = scene === 5;
+    const digitalVerdict = scene === 9;
+    fade(nodes.verdict, paperVerdict || digitalVerdict ? ease(t, 0.02, 0.28) : 0);
+    move(nodes.verdict, paperVerdict ? 443 : 429, paperVerdict ? 145 : 141);
+    nodes.verdict.setAttribute('color', paperVerdict ? '#983d33' : '#20664e');
+    nodes['verdict-stroke'].setAttribute('d', paperVerdict
+      ? 'm-8-8 16 16m0-16-16 16' : 'm-10 0 7 7 13-15');
+    nodes.progress.value = time / sceneDuration;
   }
-  let elapsed = 0, last = 0, raf = 0, running = false;
-  const toggle = get('toggle');
+
+  let elapsed = 0;
+  let lastFrameTime = 0;
+  let frame = 0;
+  let running = false;
+
   function stop(label) {
     running = false;
-    cancelAnimationFrame(raf);
-    toggle.textContent = label;
+    cancelAnimationFrame(frame);
+    nodes.toggle.textContent = label;
   }
+
   function tick(now) {
     if (!running) return;
-    elapsed = Math.min(total, elapsed + Math.max(0, now - last));
-    last = now;
+    elapsed = Math.min(totalDuration, elapsed + Math.max(0, now - lastFrameTime));
+    lastFrameTime = now;
     draw(elapsed);
-    if (elapsed >= total) stop('Erneut abspielen');
-    else raf = requestAnimationFrame(tick);
+    if (elapsed >= totalDuration) stop('Erneut abspielen');
+    else frame = requestAnimationFrame(tick);
   }
+
   function play() {
     if (running || motion.matches) return;
-    if (elapsed >= total) elapsed = 0;
-    last = performance.now();
+    if (elapsed >= totalDuration) elapsed = 0;
+    lastFrameTime = performance.now();
     running = true;
-    toggle.textContent = 'Anhalten';
+    nodes.toggle.textContent = 'Anhalten';
     draw(elapsed);
-    raf = requestAnimationFrame(tick);
+    frame = requestAnimationFrame(tick);
   }
-  toggle.addEventListener('click', () => running ? stop('Fortsetzen') : play());
-  get('restart').addEventListener('click', () => {
-    stop('Film starten'); elapsed = 0; play();
-  });
-  function preference() {
+
+  nodes.toggle.addEventListener('click', () => running ? stop('Fortsetzen') : play());
+  nodes.restart.addEventListener('click', () => {
     stop('Film starten');
-    elapsed = 0; draw(0);
+    elapsed = 0;
+    play();
+  });
+
+  function showMotionPreference() {
+    stop('Film starten');
+    elapsed = 0;
+    draw(0);
     player.hidden = motion.matches;
-    still.open = motion.matches;
+    transcript.open = motion.matches;
   }
-  preference();
-  motion.addEventListener('change',preference);
+
+  showMotionPreference();
+  motion.addEventListener('change', showMotionPreference);
   document.addEventListener('visibilitychange', () => {
     if (document.hidden && running) stop('Fortsetzen');
   });
