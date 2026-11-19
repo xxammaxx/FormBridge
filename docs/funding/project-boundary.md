@@ -20,9 +20,11 @@ Diese Datei trennt nachweisbar, was bereits existiert, was bis Förderbeginn una
 
 Das in [`docs/research/technical-specification.md`](../research/technical-specification.md) spezifizierte Modul (Erkennung, Zuordnungs-Engine, Review-Gate, Provenienz-Manifest FB-1, Validierung, Verifier, Schema-Hygiene) **wurde nicht implementiert** und wird vor einem Förderbescheid nicht implementiert. Sechs-Monatsplan und Abnahmekriterien siehe Spezifikation §6–7. Bedingungen B1–B6 siehe [`decision-report.md`](decision-report.md).
 
+**Ergänzung 19.11.2026:** Der [RF1-LoRA-Vergleich](application/lora-research-extension-2026-11-19.md) ist Teil der optionalen Disambiguierungsforschung, nicht zusätzlicher Fördergegenstand. Allgemeine Gewichtsraum-/LoRA-Forschung außerhalb der Formularzuordnung bleibt separat; bereits erbrachte Arbeiten, Modellpatches und Artefakte werden als Vorarbeit getrennt, nicht abgerechnet. Vor Förderbeginn keine FormBridge-Adapterimplementierung oder Vorwegnahme dieses Arbeitspakets.
+
 ## C. Explizite Verbotsliste bis zu einem Förderbescheid
 
-1. Keine produktiven oder prototypischen Quellcodedateien in diesem Repository (auch keine "Beispiel"-Implementierungen).
+1. Keine produktiven oder prototypischen Quellcodedateien **des FormBridge-Moduls** in diesem Repository (auch keine "Beispiel"-Implementierungen). Analyse-/Validierungsskripte (z. B. `docs/funding/decision/validation/financial_model.py`) sind davon nicht erfasst; sie implementieren keine FormBridge-Pipeline.
 2. Keine Behauptung, irgendein Forschungsziel sei erreicht; alle Formulierungen bleiben Forschungsziele.
 3. Keine Verwendung von Feldexa-Produktcode (auch nicht "als Ausgangsbasis").
 4. Keine Vorab-Erledigung von Meilensteinen aus Spezifikation §7 (diese würden sonst als Förderleistungen verloren).
@@ -34,4 +36,6 @@ Entwickelt der Maintainer vor Förderbeginn (unabhängig von dieser Recherche) F
 
 ## E. Provenienz der migrierten Dokumente
 
-Alle unter `docs/research/` und `docs/funding/` liegenden Analysen wurden am **13.11.2026** im Feldexa-2.0-Repository erstellt (Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, PR #168) und am gleichen Tag hierher überführt. inhaltliche Änderungen bei der Migration beschränken sich auf: Pfade/Dateinamen, Entfernung der redistribuierten XSD-Ableitung (Lizenz unklar; Verfahren dokumentiert in reference-case-wohngeld.md §Reproduktion), Ergänzungen um diese Grenzdokumentation. Keine Forschungsergebnisse wurden inhaltlich verändert.
+Alle unter `docs/research/` und `docs/funding/` liegenden Analysen wurden am **13.11.2026** im Feldexa-2.0-Repository erstellt (Commit `cb122fe2f96a8f5cbde2f075e0b6529342caf676`, PR #168) und am gleichen Tag hierher überführt. Inhaltliche Änderungen bei der Migration beschränken sich auf: Pfade/Dateinamen, Entfernung der redistribuierten XSD-Ableitung (Lizenz unklar; Verfahren dokumentiert in reference-case-wohngeld.md §Reproduktion), Ergänzungen um diese Grenzdokumentation. Keine Forschungsergebnisse wurden inhaltlich verändert.
+
+**Abgrenzungs-Offenlegung (Validierung 13.11.2026, Review B/B1):** Die Ein-Schema-Normalisierung von S00000159V1.4 (Defektnachweis + validierende Instanz) ist **bereits erledigte Forschungsvorarbeit** (§A) und wird im Förderplan (Spec M1, RF2) **nicht** als Förderleistung wiederholt — förderfähig wäre nur das deterministische Werkzeug, die CI-Automatisierung und der ≥5-Schemata-Korpus. Diese Trennung ist im Antrag explizit auszuweisen.

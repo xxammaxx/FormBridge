@@ -10,7 +10,8 @@
 | Förderlinie Innovation | „innovative Softwareideen in den Bereichen Datensicherheit und Software-Infrastruktur" (https://www.prototypefund.de/innovation) |
 | Förderperiode regulär | **01.06.2027–30.11.2027** (6 Monate) (details-Seite) |
 | Second Stage (optional) | 01.12.2027–31.03.2028 (4 Monate); Konzept muss **zur initialen Bewerbung** vorliegen (details-Seite) |
-| Fördersumme | bis 47.500 € Einzelperson / 95.000 € Team (≤4, GbR) + 31.667 €/63.333 € Second Stage (details-Seite) |
+| Fördersumme | bis 47.500 € Einzelperson / 95.000 € Team (≤4, GbR) + 31.667 €/63.333 € Second Stage (details-Seite); **strenge Rechnung bei 950 h + 5 % GK: 47.381,25 €** (Q3 offen) |
+| 10-Monats-Option | RL Nr. 4 erlaubt 6 + 4 Monate; FAQ nennt 79.167 €/158.000 €; kombinierter Kosten-Cap 83.337 €, Förder-Cap 79.170,15 € (Szenario I) |
 | Antragsteller | über 18; solo: Wohnsitz Deutschland; Team: GbR-Sitz Deutschland (innovation-Seite) |
 | Lizenz | Veröffentlichung unter Freier/Open-Source-Lizenz **Pflicht** (innovation-Seite) |
 | Sprechstunden | 16.11.2026 17:00 (allgemein), 19.11.2026 (FLINTA*) (details-Seite) |
@@ -42,7 +43,7 @@
 
 ## 3. Abgrenzung zum Bestandsprojekt (förderrelevante Dokumentation)
 
-- **Vor Förderbeginn vorhanden (Produkt):** Feldexa-2.0-App (Flutter/Dart-Monorepo), bestehende MVP-Spezifikation, Evidence-/Test-Struktur — bleibt reguläre Produktentwicklung, wird nicht umdeklariert.
+- **Vor Förderbeginn vorhanden (Produkt):** Feldexa-2.0-App (Flutter/Dart-Monorepo), bestehende MVP-Spezifikation, Evidence-/Test-Struktur — bleibt reguläre Produktentwicklung, wird nicht umdeklariert. **Stand 13.11.2026:** 23 Produktions-Dart-Dateien, 240 Tests in fünf Paketen (App 56, core 24, ports 33, testkit 110, ui 17), aber **keine** implementierte PDF-Import-/Erkennungs-/Export-/Verifier-Pipeline; `main.dart` ist eine Shell. Die 240 Tests belegen Infrastruktur, nicht Produktreife.
 - **Bis Förderbeginn unabhängig entstehend:** alle Produkt-Tasks (T0xx), die Recognition/Export implementieren — transparent nach Issue #167 führen („Änderungen am geplanten Modul vor Förderbeginn nachführen").
 - **Fördergegenstand (neu):** eigenständiges Repo/Modul „FormBridge" gemäß `../research/technical-specification.md` — eigene Codebasis, keine App-Abhängigkeit, eigene Lizenz, eigener Release. Keine Zeile Produktcode im Förderumfang.
 - **Vorarbeit-Ehrlichkeit:** Diese Recherche (Prior-Art-Audit, Referenzfall, Spec) ist Vorarbeit — im Antrag als „Vorkenntnis" einordnen, nicht als geförderte Leistung. Sie beginnt **nicht** mit Implementierung des Moduls (erfolgt nicht vor Bewerbung/Förderbeginn ohne separate Freigabe).
@@ -55,6 +56,10 @@
 | Neuheitsangriff: „das macht doch MACH/SurveyJS/open-formulieren" | mittel | Audit + Matrix + doc-only-Kennzeichnung als Anhang; Narrow-Hypothesis-Formulierung |
 | Scope-Risiko 6 Monate (Detektion ohne Lizenzbasis) | hoch→mittel | Spec §5: Detektionsminimum auf Vordruckklasse; Scans out-of-scope; RF-abhängige Messziele statt Feature-Versprechen |
 | Second-Stage-Konzept-Pflicht | niedrig | Konzept (Nutzung/Community) in Bewerbung mitdenken; optional deklarieren |
+
+### 4a. Aktualisierung 19.11.2026 — RF1-LoRA/Cloud
+
+Der eng an die FIM-Disambiguierung gebundene optionale Modellvergleich stärkt die Hypothese ressourcenschonender lokaler Infrastruktur; keine neue KI-Grundlagenforschung und keine Förderzusage. Laut https://www.prototypefund.de/foerderlinien liegt der Richtwert für Softwareentwicklung in Innovation bei 80 % (kein starres Kriterium). Laut https://www.prototypefund.de/faq kann KI Werkzeug sein, aber eigenverantwortliche Entwicklungsarbeit nicht ersetzen; erforderliche Programmierkenntnisse müssen vorliegen. Cloud-Rechenmiete ist von Fremdimplementierung zu unterscheiden. Förderbasis sind Personalkosten und pauschal 5 % Gemeinkosten auf PK; keine separate GPU-/API-Kostenerstattung bestätigt. Klärung mit Projektträger vor jeder Ausgabe und keine Antragserhöhung. Details: [RF1-Ergänzungsblatt](application/lora-research-extension-2026-11-19.md).
 
 ## 5. Fazit
 

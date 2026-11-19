@@ -17,7 +17,7 @@
 
 ## 2. Was ist technisch ungelöst? (nach Audit + Referenzfall)
 
-1. **Die Brücke selbst:** kein geprüftes Projekt mappt sichtbare Felder **statischer** Behörden-PDFs auf **versionierte FIM-Datenfeld-IDs** (Referenz: `prior-art-audit.md`, Matrix). Formularagent nimmt kein PDF an und gibt Fachdaten-IDs nur durchreichend aus; KIWo hat null FIM-Bezug; FITKO dokumentiert den XDF-Converter als „in der Konzeption".
+1. **Die Brücke selbst:** kein geprüftes Projekt mappt sichtbare Felder **statischer** Behörden-PDFs auf **versionierte FIM-Datenfeld-IDs** (Referenz: `prior-art-audit.md`, Matrix). Formularagent nimmt kein PDF an und gibt Fachdaten-IDs nur durchreichend aus; KIWo hat null FIM-Bezug; FITKO dokumentierte den XDF-Converter früher als „in der Konzeption"; **seit 2026 ist ein allgemeiner Datenschema-Konverter live** (XDF2/XDF3 ↔ JSON Schema/XSD), der aber kein veröffentlichtes defektes XSD repariert und keine PDF→FIM-Zuordnung liefert.
 2. **Abschnitts-Kontext-Disambiguierung:** gleiche Labels (Name/Vorname/Geburtsdatum) treten im Fürth-Vordruck in ≥6 fachlichen Kontexten auf; im FIM-Schema sind es dieselben Feld-IDs an verschiedenen Pfaden (Referenzfall: 7/30 Felder `CONTEXT_REQUIRED`). Öffentliche Ansätze (LLM-Prompts bei KIWo) lösen das nur app-intern, ohne nachprüfbare Regel/Confidence.
 3. **Strukturtransformation:** PDF-Zeile → Feld-Gruppen (Anschrift→4 Felder; Geburtsdatum→3 Integer; Tabellenzeilen→wiederholbare Gruppen) ist ungelöst und fehlerkritisch (4/30 `STRUCTURAL_*`).
 4. **Codelisten-Abbildung:** PDF-Checkbox-Freitext ↔ FIM-Enums (Geschlecht `{d,m,w,x}`, ISO-Staatscodes, Familienstand `{001..007}`) — trivial klingend, aber fehlerkritisches Mapping ohne offene Referenzdaten (4/30).
