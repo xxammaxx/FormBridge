@@ -1,6 +1,6 @@
 # FormBridge — Bewerbung Prototype Fund 2027, Jahrgang 03, Förderlinie Innovation
 
-**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 13.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 19.11.2026 (LoRA-Delta) · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
 
@@ -12,15 +12,15 @@
 
 FormBridge ist ein geplantes freies, lokal laufendes Softwaremodul, das statische Behörden-PDFs analysiert, Formularfelder nachvollziehbar versionierten FIM-Datenfeldern zuordnet und prüfbare, strukturierte Ergebnisse bereitstellt.
 
-**Wörter:** 23 / 30 · **Status:** FINAL
+**Wörter:** 22 / 30 · **Status:** FINAL
 
 ---
 
 ## 2. Projektbeschreibung (max. 100 Wörter)
 
-Im Förderzeitraum entsteht ein eigenständiges Open-Source-Modul mit Bibliothek und CLI. Es erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs, schlägt Zuordnungen zu versionierten FIM-Datenfeldern vor und markiert Unsicherheit ausdrücklich als UNKNOWN. Menschen prüfen und korrigieren die Vorschläge. Ein versioniertes Provenienz-Manifest und ein unabhängiger Verifier machen Quelle, Schema-Version, Koordinaten und Review-Entscheidungen nachprüfbar. Eine gegen die dokumentiert normalisierte Schema-Variante validierte Ausgabe und ein Abdeckungsbericht runden den Kern ab. Referenz ist der Wohngeldantrag S00000159; Scans, Produkt-UI und Behördenanschluss sind nicht Teil des Vorhabens. Selbst erstellter Code und Dokumentation werden FOSS; amtliche PDFs/XSDs und abgeleitete FIM-Metadaten nur nach Rechteklärung per URL/Hash.
+Im Förderzeitraum entsteht eine eigenständige Open-Source-Bibliothek mit CLI. Sie erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs, schlägt versionierte FIM-Zuordnungen vor und markiert Unsicherheit als UNKNOWN. Menschen prüfen Vorschläge. Ein Provenienz-Manifest und unabhängiger Verifier machen Quelle, Schema-Version, Koordinaten und Review-Entscheidungen nachprüfbar. Eine validierte strukturierte Ausgabe und ein Abdeckungsbericht ergänzen den Kern. Optional wird untersucht, ob ein gezielt berechneter LoRA-Adapter auf einem kleinen lokalen Sprachmodell mehrdeutige Feldzuordnungen verbessert. Referenz ist Wohngeld S00000159; Scans, Produkt-UI und Behördenanschluss bleiben ausgeschlossen. Eigene Ergebnisse werden FOSS; Drittmaterial nur nach Rechteklärung.
 
-**Wörter:** 97 / 100 · **Status:** FINAL
+**Wörter:** 84 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -30,25 +30,23 @@ Ein Teil der amtlichen Formulare wird als statische PDF bereitgestellt und ist n
 
 Besonders relevant ist diese Lücke für Anträge mit sensiblen Daten, etwa Sozialleistungen, sowie für Beratungsstellen und Kommunen. FormBridge setzt nicht beim Endnutzer, sondern bei der Software an, die solche Anträge baut: Wenn Zuordnungen nachvollziehbar und unsicherheitsbewusst sind, können darauf aufbauende Anwendungen Medienbrüche reduzieren, ohne vertrauliche Daten an einen zentralen Dienst zu geben. Das ist kein Ersatz für Rechtsberatung oder Behördenentscheidungen, sondern eine technische Grundlage für verlässlichere digitale Verfahren.
 
-**Wörter:** 169 / 175 · **Status:** FINAL
+**Wörter:** 168 / 175 · **Status:** FINAL
 
 ---
 
 ## 4. Technische Umsetzung (max. 175 Wörter)
 
-Geplant ist ein Python-3.12-Modul mit CLI und Bibliotheks-API. Die PDF-Textlage wird mit pypdfium2 oder pdfminer.six extrahiert; Layout- und Abschnittsanalyse erfolgen regelbasiert. Ein versionierter Regelkatalog (YAML/JSON) beschreibt Labelmuster, Kontextbedingungen, Zielpfade und Confidence-Beiträge. Kandidaten werden gegen versionierte FIM-Schemata geprüft; Codelisten werden aus Schema-Facetten gebunden. Jede Ausgabe enthält lokale Feld-ID, Seite, Koordinaten, Label, Kandidaten, Confidence und Zustand PROPOSED/UNKNOWN/REJECTED. Ein Review-Schritt speichert menschliche Entscheidungen.
+Geplant ist ein Python-Modul mit CLI und Bibliotheks-API. PDF-Textlage und Layout werden extrahiert; ein versionierter Regelkatalog ordnet Label und Abschnittskontext FIM-Zielpfaden zu. Kandidaten werden gegen Schema und Codelisten geprüft; jede Ausgabe enthält Koordinaten, Confidence und PROPOSED/UNKNOWN/REJECTED. Menschen bestätigen kritische Zuordnungen. Optional vergleiche ich einen regelbasierten Ansatz, ein kleines unverändertes Qwen-Modell und einen gezielt berechneten LoRA-Adapter ohne Gradiententraining, ausschließlich für mehrdeutige Feldzuordnungen. Das Modell darf nur Kandidaten vorschlagen; keine Umgehung von UNKNOWN, Review oder Schema-Prüfung. Bei fehlendem Mehrwert bleibt es deaktiviert. Das Provenienz-Manifest FB-1 enthält PDF-/Schema-Hashes, Versionen, Normalisierungsschritte, Review-Hashes und gegebenenfalls Adapterprovenienz. Ein unabhängiger Verifier prüft es. Ausgabevalidierung erfolgt gegen dokumentiert normalisiertes XSD bzw. FITKO-JSON-Schema. Die Anwendung selbst läuft offline; rechenintensive Forschungsversuche auf gemieteter Hardware sind nur optional, mit synthetischen Daten und nach gesonderter Kostenfreigabe. Die Entwicklungsarbeit bleibt eigenverantwortlich. Keine Feldexa-Abhängigkeit, keine produktive Cloud-Anbindung.
 
-Das Provenienz-Manifest FB-1 enthält SHA-256 von PDF und Schema, Tool-/Regelversion, Normalisierungsschritte und Review-Hashes; ein separater Verifier prüft es ohne App-Abhängigkeit. Die Ausgabe wird mit lxml gegen die dokumentiert normalisierte, verlustbehaftete Schema-Variante validiert; wo verfügbar, ist FITKO-JSON-Schema der primäre Pfad. Die Laufzeit ist offline; Schema und optionale Modellgewichte werden lokal bereitgestellt und gehasht. Cloud-Dienste und ein produktiver Behördenanschluss sind ausgeschlossen. Ein kleines lokales ML-Modell ist optional, nicht Voraussetzung. Die Architektur bleibt ohne Feldexa-Abhängigkeit nutzbar.
-
-**Wörter:** 133 / 175 · **Status:** FINAL
+**Wörter:** 133 / 175 · **Status:** FINAL (Entwurf)
 
 ---
 
 ## 5. Aktueller Stand und geplante Neuerungen (max. 100 Wörter)
 
-Die Idee ist erforscht, aber das Modul ist nicht implementiert. Vorhanden sind ein öffentlicher Prior-Art-Audit über 13 Projekte, ein Referenzfall zum Fürther Wohngeldantrag und FIM S00000159 v1.4, ein 30-Feld-Referenzdatensatz, eine technische Spezifikation sowie der Nachweis von 170 Parser-Fehlern im amtlichen XSD (1 NCName + 169 D2-Meldungen). Diese Arbeiten sind Vorarbeit und werden nicht als Förderleistung abgerechnet. Im Förderzeitraum entstehen die eigenständige Codebasis, der Regelkatalog, die Review- und Verifier-Komponenten sowie der Testkorpus. Die Feldexa-App bleibt ein unabhängiges Produkt und wird nicht verändert.
+Die Idee ist erforscht, aber das Modul ist nicht implementiert. Vorarbeit: öffentlicher Prior-Art-Audit über 13 Projekte, Referenzfall Fürther Wohngeldantrag/FIM S00000159 v1.4, 30-Feld-Referenzdatensatz, Spezifikation und Nachweis von 170 XSD-Parser-Fehlern (1 NCName + 169 D2-Meldungen). Der LoRA-Versuch ist bislang nur konzipiert; keine Adapterwirkung ist belegt. Vorarbeiten werden nicht abgerechnet. Im Förderzeitraum entstehen eigenständige Codebasis, Regelkatalog, Review, Verifier, Testkorpus und optional der lokale Adapter-Vergleich. Feldexa bleibt unabhängiges, nicht gefördertes Produkt.
 
-**Wörter:** 81 / 100 · **Status:** FINAL
+**Wörter:** 67 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -62,9 +60,9 @@ https://github.com/xxammaxx/FormBridge
 
 ## 7. Innovation (max. 100 Wörter)
 
-Die untersuchte Kombination ist: statisches Behörden-PDF → versionierte FIM-Datenfeld-IDs → explizite Unsicherheit/UNKNOWN → menschliche Freigabe → prüfbares Provenienz-Manifest → unabhängiger Verifier. Einzelne Bausteine existieren: Formularagent migriert Formulardefinitionen ohne PDF-Eingang; KIWO extrahiert Werte cloudbasiert ohne FIM-Koordinaten; CommonForms erkennt Felder ohne im geprüften Stand gefundene Lizenzdatei und ohne Semantik; FITKO betreibt Schema-Infrastruktur und Konverter, aber keine PDF→FIM-Zuordnung. In unserem 13-Projekte-Audit (Quellcode, wo verfügbar) haben wir diese Kette nicht gefunden. Kein einzelner Baustein deckt die Kette ab; die Kombination ist Eigenarbeit. Wir behaupten keine weltweite Erstmaligkeit; die Förderung testet, ob die Kombination praktisch trägt.
+FormBridge kombiniert statisches Behörden-PDF, versionierte FIM-Datenfeld-IDs, UNKNOWN, menschliche Freigabe, überprüfbare Provenienz und unabhängigen Verifier. Formularagent migriert Definitionen ohne PDF-Eingang, KIWO extrahiert cloudbasiert ohne FIM-Koordinaten, CommonForms erkennt Felder ohne FIM-Semantik und FITKO betreibt Schema-Infrastruktur ohne diese Zuordnungskette. Im begrenzten 13-Projekte-Audit wurde die Kette nicht gefunden. Zusätzlich wird geprüft, ob ein gezielt berechneter LoRA-Adapter die lokale Kontextzuordnung ohne Training verbessert. Dieses Experiment ist optional, kein Nachweis einer neuen Modellfähigkeit; die Innovation ist die prüfbare Infrastruktur, nicht LoRA an sich. Keine weltweite Erstmaligkeit wird behauptet.
 
-**Wörter:** 92 / 100 · **Status:** FINAL
+**Wörter:** 82 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -78,15 +76,15 @@ Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*
 
 ## 9. Meilensteine im Förderzeitraum (max. 100 Wörter)
 
-1. Monat: Repository, CLI-Grundgerüst, PDF-Textlage, Schema-Laden/Hash, FB-1-Spezifikation; Normalisierungswerkzeug und CI für den XSD-Korpus.
-2. Monat: Regelkatalog v1, Feldkandidaten, Confidence/UNKNOWN, erste End-to-End-Tests.
-3. Monat: Goldstandard, Review-CLI, Codelisten, Precision/Recall-Baseline; externe Testpersonen gewinnen.
-4. Monat: Abschnitts-Disambiguierung, Hard Gates für Identität/Betrag, Held-out-PDF, Messung.
-5. Monat: Emit/Validate/Verify, 10 Manipulations-Negativtests, ≥ 3 FIM-XSDs (5 als Stretch).
-6. Monat: Review-Zeit-Messung, Dokumentation, FOSS-Release, Abschlussbericht.
-Jeder Meilenstein endet mit einem reproduzierbaren Testlauf und einem kurzen öffentlichen Bericht.
+1. Monat: CLI-Grundgerüst, PDF-Textlage, Schema-Hash, FB-1, Normalisierung und CI.
+2. Monat: Regelkatalog, Feldkandidaten, Confidence/UNKNOWN, erste End-to-End-Tests.
+3. Monat: Goldstandard, Review-CLI, Codelisten, Baseline; externe Testpersonen gewinnen.
+4. Monat: Abschnitts-Disambiguierung, Hard Gates, Held-out-PDF; optionaler begrenzter LoRA-Vergleich bei gesichertem Kernfortschritt.
+5. Monat: Emit/Validate/Verify, 10 Negativtests, ≥ 3 FIM-XSDs (5 Stretch).
+6. Monat: Review-Zeit, Dokumentation, FOSS-Release, Abschlussbericht.
+Jeder Meilenstein endet mit reproduzierbarem Testlauf und öffentlichem Bericht.
 
-**Wörter:** 68 / 100 · **Status:** FINAL
+**Wörter:** 62 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -152,7 +150,7 @@ Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist
 
 Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr Funktionsumfang. In vier Monaten will ich: (1) eine externe Integration begleiten und optional eine kommunale Testumgebung prüfen; Feldexa 2.0 bleibt optionaler Consumer, nicht geförderte Integration; (2) Integrationsrezepte, stabile Schnittstellen und Beispieldaten veröffentlichen; (3) eine kleine Regelkatalog- und Schema-Community aufbauen, mit dokumentiertem Review- und Release-Prozess; (4) Nutzertests zur Verständlichkeit von UNKNOWN und zur Review-Zeit durchführen; (5) einen Wartungsplan und eine Governance-Skizze für die Zeit nach der Förderung erstellen. Erfolg wäre: mindestens eine externe Integration, eine veröffentlichte Version 0.2 und ein dokumentierter Pflegeweg. Keine neuen Kernfunktionen, keine Produkt-UI.
 
-**Wörter:** 99 / 175 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
+**Wörter:** 98 / 175 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
 
 ---
 
@@ -163,7 +161,7 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 3. Monat: Nutzertests zu UNKNOWN/Review-Zeit, Community-Austausch, Dokumentation.
 4. Monat: Version 0.2, Wartungs- und Governance-Skizze, Abschlussbericht.
 
-**Wörter:** 30 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
+**Wörter:** 29 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
 
 ---
 
@@ -183,3 +181,4 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 - Keine Behauptung, eine Behörde akzeptiere die Ausgabe.
 - Keine weltweite Erstmaligkeitsbehauptung.
 - Keine erfundenen persönlichen Angaben, Zeichenlimits oder Portalfragen.
+- Der optionale LoRA-Vergleich ist im [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md) begrenzt; keine zusätzliche Förderforderung, keine Zusage von Modellverbesserung oder Cloud-Förderfähigkeit.

@@ -74,3 +74,7 @@
 - Keine Anfrage wird automatisch versendet.
 - Antworten werden nach Eingang mit Datum, Wortlaut und Konsequenz in den jeweiligen Dokumenten protokolliert.
 - Bis zur Antwort bleiben **Q2 `CONTRADICTED / EXTERNAL_CONFIRMATION_REQUIRED`**, **Q3 `UNRESOLVED`** und die Gründungsförderung **EXTERNAL_CONFIRMATION_REQUIRED**.
+
+## Ergänzende Frage: Rechenmiete/API (optional, Entwurf — nicht versendet)
+
+Sind kurzzeitige externe GPU-Rechenmiete bzw. API-Nutzung für einen eng abgegrenzten, synthetischen Modellvergleich innerhalb der FormBridge-Entwicklungsarbeit unter der pauschalen Gemeinkostenregelung zulässig? Der ausgelieferte Prototyp läuft offline ohne diese Dienste; die Entwicklungsleistung wird eigenverantwortlich erbracht. Wir beantragen keinen erhöhten Förderbetrag und würden bei Nichtzulässigkeit ausschließlich lokal oder aus zulässig separat finanzierten Mitteln arbeiten. Bitte um schriftliche Einordnung, keine Zusage unterstellen.

@@ -61,6 +61,10 @@ Die 800-h-Variante ist eine **Sensitivitätsrechnung**, keine wählbare Antragso
 | Keine weiteren Förderungen | 0 € | **Owner muss prüfen** |
 | Eigenmittel als Zeit + Liquiditätsnachweis | 2.500 € Saldo | FAQ/RL; keine Barzuzahlung behauptet |
 
+### 4.1 Optionaler RF1-LoRA-Vergleich (19.11.2026)
+
+Kein zusätzlicher Stunden- oder Förderbetrag: bis 30 h in M4 der 950-h-Variante, bis 15 h in M4 der 850-h-Variante. Bestehende Beträge, Eigenanteil und Q3/Q3b unverändert. Nur tatsächlich eigene Entwicklungs-/Messarbeit. Optionale GPU-Rechenmiete/API-Nutzung ist **keine separat bestätigte zuwendungsfähige Kostenposition**; vor Nutzung schriftliche PTF-/Projektträgerklärung zur 5-%-Gemeinkostenpauschale und gesonderte Kostenfreigabe. Ansonsten lokale Ausführung oder separat zulässig finanzierte Ressourcen (keine Doppelabrechnung). Keine laufende Cloud-Pflicht. Kosten-/Budgetgate: [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md).
+
 ## 5. Q3/Q3b — offene Berechnungslogik
 
 - **Q3:** FAQ nennt 47.500 € = 950 h × 50 €; RL Nr. 5 fördert 95 % von PK+GK mit G ≤ 50.000 €. Bei 950 h + 5 % GK ist F = **47.381,25 €**. Die 47.500 € sind nur bei G = 50.000 € erreichbar (z. B. 1.000 Gesamtstunden ohne GK, GK = 5 % des Gesamtbudgets oder nachgewiesener Satz ab 50,125313 €/h). Keine Variante ist offiziell bestätigt.

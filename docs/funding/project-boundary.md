@@ -20,6 +20,8 @@ Diese Datei trennt nachweisbar, was bereits existiert, was bis Förderbeginn una
 
 Das in [`docs/research/technical-specification.md`](../research/technical-specification.md) spezifizierte Modul (Erkennung, Zuordnungs-Engine, Review-Gate, Provenienz-Manifest FB-1, Validierung, Verifier, Schema-Hygiene) **wurde nicht implementiert** und wird vor einem Förderbescheid nicht implementiert. Sechs-Monatsplan und Abnahmekriterien siehe Spezifikation §6–7. Bedingungen B1–B6 siehe [`decision-report.md`](decision-report.md).
 
+**Ergänzung 19.11.2026:** Der [RF1-LoRA-Vergleich](application/lora-research-extension-2026-11-19.md) ist Teil der optionalen Disambiguierungsforschung, nicht zusätzlicher Fördergegenstand. Allgemeine Gewichtsraum-/LoRA-Forschung außerhalb der Formularzuordnung bleibt separat; bereits erbrachte Arbeiten, Modellpatches und Artefakte werden als Vorarbeit getrennt, nicht abgerechnet. Vor Förderbeginn keine FormBridge-Adapterimplementierung oder Vorwegnahme dieses Arbeitspakets.
+
 ## C. Explizite Verbotsliste bis zu einem Förderbescheid
 
 1. Keine produktiven oder prototypischen Quellcodedateien **des FormBridge-Moduls** in diesem Repository (auch keine "Beispiel"-Implementierungen). Analyse-/Validierungsskripte (z. B. `docs/funding/decision/validation/financial_model.py`) sind davon nicht erfasst; sie implementieren keine FormBridge-Pipeline.

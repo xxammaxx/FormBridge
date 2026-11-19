@@ -57,6 +57,10 @@
 | Scope-Risiko 6 Monate (Detektion ohne Lizenzbasis) | hoch→mittel | Spec §5: Detektionsminimum auf Vordruckklasse; Scans out-of-scope; RF-abhängige Messziele statt Feature-Versprechen |
 | Second-Stage-Konzept-Pflicht | niedrig | Konzept (Nutzung/Community) in Bewerbung mitdenken; optional deklarieren |
 
+### 4a. Aktualisierung 19.11.2026 — RF1-LoRA/Cloud
+
+Der eng an die FIM-Disambiguierung gebundene optionale Modellvergleich stärkt die Hypothese ressourcenschonender lokaler Infrastruktur; keine neue KI-Grundlagenforschung und keine Förderzusage. Laut https://www.prototypefund.de/foerderlinien liegt der Richtwert für Softwareentwicklung in Innovation bei 80 % (kein starres Kriterium). Laut https://www.prototypefund.de/faq kann KI Werkzeug sein, aber eigenverantwortliche Entwicklungsarbeit nicht ersetzen; erforderliche Programmierkenntnisse müssen vorliegen. Cloud-Rechenmiete ist von Fremdimplementierung zu unterscheiden. Förderbasis sind Personalkosten und pauschal 5 % Gemeinkosten auf PK; keine separate GPU-/API-Kostenerstattung bestätigt. Klärung mit Projektträger vor jeder Ausgabe und keine Antragserhöhung. Details: [RF1-Ergänzungsblatt](application/lora-research-extension-2026-11-19.md).
+
 ## 5. Fazit
 
 Förderlinie Innovation ist nach verifizierten Kriterien **passungsfähig** (Infrastruktur + Datensparsamkeit + zulässiger „neues Modul"-Fall + hoher Entwicklungsanteil). Verbleibende Unklarheiten sind vor Einreichung durch Sprechstunde/Portal-Check zu klären. Eine Aussage zur **Bewerbungserfolgswahrscheinlichkeit** wird bewusst nicht getroffen.

@@ -23,6 +23,7 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Evidenz (Datensatz, Feldindex, Instanz) | [`docs/research/evidence/`](docs/research/evidence/) |
 | Prototype-Fund-Machbarkeit | [`docs/funding/prototype-fund-feasibility.md`](docs/funding/prototype-fund-feasibility.md) |
 | Bewerbungsentwurf (DE) | [`docs/funding/application-draft-de.md`](docs/funding/application-draft-de.md) |
+| Optionaler RF1-LoRA-Vergleich (19.11.2026) | [`lora-research-extension-2026-11-19.md`](docs/funding/application/lora-research-extension-2026-11-19.md) — geplant, nicht ausgeführt |
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
 | Entscheidungsbericht (CONDITIONAL_GO F3) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
 | Lizenz-Empfehlung | [`docs/governance/license-decision.md`](docs/governance/license-decision.md) |

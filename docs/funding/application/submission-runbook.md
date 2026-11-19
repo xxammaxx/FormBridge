@@ -31,6 +31,7 @@ Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/1
 - [ ] O1 Lizenz; O2 Stunden (950/850); O3 Second Stage; O4 Projektfassung; O5 Q2-Anfrage.
 - [ ] Persönliche Felder ergänzt; keine Platzhalter mehr im Portaltext.
 - [ ] Q3/Q3b als offen dokumentiert; keine 47.500-€-Planung ohne Q3.
+- [ ] RF1-LoRA-Delta geprüft (optional, keine zusätzliche Förderung, keine Vorabimplementierung); GPU-/API-Ausgaben ggf. separat schriftlich klären und genehmigen; kein Cloud-Zwang, keine Fremdimplementierung.
 
 ## 2. Portal öffnen
 

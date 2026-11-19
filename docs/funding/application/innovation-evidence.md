@@ -96,6 +96,10 @@ FormBridge kombiniert sieben Elemente in einer Kette:
 
 Das FB-1-Manifest ist ein **Audit-Artefakt**, kein Sicherheitsanker. Es erkennt Inkonsistenzen und versehentliche Veränderungen, aber **nicht** einen Angreifer, der PDF und Manifest konsistent neu berechnet. Ohne Signatur, externen Timestamp oder Trust Anchor wird keine Manipulationsfestigkeit behauptet. C2PA/pyHanko sind verwandte Standards, aber im 6-Monats-Plan **nicht integriert**; eine optionale Signatur ist eine Härtung, keine Voraussetzung.
 
+## 8a. Ergänzende, noch ungetestete RF1-Hypothese (19.11.2026)
+
+MIT CSAIL demonstrierte an Qwen3.5-0.8B die direkte Bearbeitung eines anderen Fehlermusters (Wiederholungsschleifen); daraus folgt kein belegter Vorteil für FIM-Zuordnungen. FormBridge beansprucht nicht die Erfindung von LoRA oder Weight-Space Programming. Geprüft werden soll ausschließlich, ob berechnete Adapter als optionaler lokaler Kandidaten-Ranker gegenüber Regeln und unverändertem Modell einen messbaren Vorteil bringen; UNKNOWN und Review bleiben unverändert. [Versuchsgrenzen, Vorarbeit, Quellen und Kosten](lora-research-extension-2026-11-19.md). Status NOT_RUN; keine neuen Aussagen über Vorliegen einer Alleinstellung.
+
 ## 9. Fazit
 
 FormBridge ist **keine weltweit neue Erfindung**, sondern eine sorgfältig abgegrenzte Infrastruktur-Hypothese: die prüfbare Kette von statischen Behörden-PDFs zu versionierten FIM-Datenfeldern mit Unsicherheit, menschlicher Kontrolle und Provenienz. Ob diese Kette praktisch trägt, ist die Forschungsfrage — nicht eine Vorab-Behauptung.

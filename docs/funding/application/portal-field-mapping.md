@@ -1,6 +1,6 @@
 # Portal-Feld-Mapping — Jahrgang 03, Förderlinie Innovation
 
-**Stand:** 13.11.2026 · **Zweck:** Zuordnung der offiziellen Bewerbungsfragen zu den Antworten in [application-final-de.md](application-final-de.md), mit belegten Wortlimits und klaren Unbekannten.
+**Stand:** 19.11.2026 (LoRA-Delta) · **Zweck:** Zuordnung der offiziellen Bewerbungsfragen zu den Antworten in [application-final-de.md](application-final-de.md), mit belegten Wortlimits und klaren Unbekannten.
 
 ## Quellenlage
 
@@ -31,15 +31,15 @@
 
 | # | Offizielle Frage (wörtlich) | Limit | Antwort | Status |
 |---|---|---|---:|---|
-| P1 | Beschreibe dein Projekt in einem Satz. | 30 Wörter | §1 (23 W.) | FINAL |
-| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (97 W.) | FINAL |
-| P3 | Welche gesellschaftliche Herausforderung willst du mit dem Projekt angehen? | 175 Wörter | §3 (169 W.) | FINAL |
+| P1 | Beschreibe dein Projekt in einem Satz. | 30 Wörter | §1 (22 W.) | FINAL |
+| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (84 W.) | FINAL |
+| P3 | Welche gesellschaftliche Herausforderung willst du mit dem Projekt angehen? | 175 Wörter | §3 (168 W.) | FINAL |
 | P4 | Wie willst du dein Projekt technisch umsetzen? | 175 Wörter | §4 (133 W.) | FINAL |
-| P5 | Hast du schon an der Idee gearbeitet? Wenn ja, beschreibe kurz den aktuellen Stand und erkläre die geplanten Neuerungen. | 100 Wörter | §5 (81 W.) | FINAL |
+| P5 | Hast du schon an der Idee gearbeitet? Wenn ja, beschreibe kurz den aktuellen Stand und erkläre die geplanten Neuerungen. | 100 Wörter | §5 (67 W.) | FINAL |
 | P6 | Link zum bestehenden Projekt (falls vorhanden). | optional | §6 | FINAL |
-| P7 | Was ist das Innovative an deinem Projekt? Wenn es ähnliche Projekte gibt, was geht bei deinem Ansatz darüber hinaus und **warum kannst du nicht auf ihnen aufbauen**? | 100 Wörter | §7 (92 W.) | FINAL |
+| P7 | Was ist das Innovative an deinem Projekt? Wenn es ähnliche Projekte gibt, was geht bei deinem Ansatz darüber hinaus und **warum kannst du nicht auf ihnen aufbauen**? | 100 Wörter | §7 (82 W.) | FINAL |
 | P8 | Wer ist die Zielgruppe und wie soll dein Projekt sie erreichen? | 100 Wörter | §8 (90 W.) | FINAL |
-| P9 | Skizziere kurz die wichtigsten Meilensteine, die im Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §9 (68 W.) | FINAL |
+| P9 | Skizziere kurz die wichtigsten Meilensteine, die im Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §9 (62 W.) | FINAL |
 
 ## C. Team und Erfahrung
 
@@ -58,8 +58,8 @@
 | # | Offizielle Frage (wörtlich) | Limit | Antwort | Status |
 |---|---|---|---:|---|
 | S1 | Beantragst du die viermonatige Second-Stage-Förderung nach Ablauf der sechsmonatigen regulären Förderung? | Ja/Nein | §15: Ja | OWNER_ENTSCHEIDUNG |
-| S2 | Wenn du eine Verlängerung beantragen möchtest: Erzähle uns kurz, was dein Projekt braucht, um aus dem Prototypen-Stadium herauszukommen und wie du dein Projekt in den vier Monaten nachhaltig aufbauen willst. | 175 Wörter | §16 (99 W.) | FINAL (bei Ja; S1 Owner) |
-| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (30 W.) | FINAL (bei Ja; S1 Owner) |
+| S2 | Wenn du eine Verlängerung beantragen möchtest: Erzähle uns kurz, was dein Projekt braucht, um aus dem Prototypen-Stadium herauszukommen und wie du dein Projekt in den vier Monaten nachhaltig aufbauen willst. | 175 Wörter | §16 (98 W.) | FINAL (bei Ja; S1 Owner) |
+| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (29 W.) | FINAL (bei Ja; S1 Owner) |
 
 ## E. Bestätigungen (Q19; Handbuch, Portal-Checkbox unverified)
 

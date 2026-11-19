@@ -1,6 +1,6 @@
 # Owner-Decision-Gate — FormBridge-Bewerbung
 
-**Stand:** 14.11.2026 · **Status:** `EXTERNAL_CONFIRMATION_REQUIRED` (Gründungsstrategie) / `READY_WITH_EXPLICIT_BLOCKERS` (Portal-Preflight)
+**Stand:** 19.11.2026 (RF1-Delta) · **Status:** `EXTERNAL_CONFIRMATION_REQUIRED` (Gründungsstrategie) / `READY_WITH_EXPLICIT_BLOCKERS` (Portal-Preflight)
 **Zweck:** Die minimale Menge an Entscheidungen, die der Owner treffen muss, bevor die Bewerbung final eingereicht werden kann. **Keine persönlichen Daten in diesem Dokument.**
 
 ## 1. Gate-Stufen
@@ -28,6 +28,7 @@
 | G8 | **Projektfassung** | F3 FormBridge (Empfehlung) / F1 / F2 / RepairProbe | Antragsobjekt | vor Einreichung |
 | G9 | **Q3/Q3b-Anfrage** | ja/nein | Maximalausschöpfung | optional |
 | G10 | **Held-out-PDF/Rechte** | vorhanden/beschaffen/Fallback | Evaluationsqualität | vor Förderbeginn |
+| G11 | **Optionale GPU-/API-Ausgaben** (RF1) | lokal / nach schriftlicher Kostenklärung und gesonderter Budgetfreigabe / zulässig separat finanziert | keine Erhöhung, kein Hindernis für regelbasierten Kern | vor Ausgabe |
 
 ## 3. Was der Owner liefern muss
 

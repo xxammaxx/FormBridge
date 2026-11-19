@@ -24,7 +24,7 @@ FormBridge wird eine lokal ausführbare Software-Infrastruktur mit:
 | **M1** Juni | 160 | Fundament, PDF-Textlage, Schema-Laden/Hash, FB-1-Spezifikation, Normalisierungswerkzeug + CI | `D1`: lauffähiges CLI-Grundgerüst; FB-1-Spec v1; CI-Normalisierungslauf für S00000159 | CLI startet ohne Netz; Schema-Hash und Normalisierungsprotokoll werden erzeugt; ein Testlauf ist reproduzierbar |
 | **M2** Juli | 165 | Felderkennung, Abschnittssegmentierung, Regelkatalog v1, Kandidaten-Engine, Confidence/UNKNOWN | `D2`: End-to-End-Kandidaten auf Referenz-PDF; Regelkatalog v1 | mindestens 30 Felder erkannt; jeder Kandidat hat Zustand/Confidence; unklare Fälle sind `UNKNOWN` |
 | **M3** August | 160 | Goldstandard, Review-CLI, Codelisten, Precision/Recall-Baseline, externe Testpersonen | `D3`: Goldstandard ≥ 120 Felder (Stretch 200); Review-CLI; Baseline-Bericht | Baseline auf Referenzdokument gemessen; Review-Entscheidungen versioniert; 2–3 externe Testpersonen gewonnen |
-| **M4** September | 160 | Abschnitts-Disambiguierung, Hard Gates für Identität/Betrag/Pflichtfeld, Held-out-PDF, Fehleranalyse | `D4`: Disambiguierungs-Messung; Held-out-Auswertung; Fehlerkatalog | Mindestprecision/Recall erreicht oder Abweichung dokumentiert; 0 stille kritische Fehlzuordnungen |
+| **M4** September | 160 | Abschnitts-Disambiguierung, Hard Gates für Identität/Betrag/Pflichtfeld, Held-out-PDF, Fehleranalyse; optionaler RF1-LoRA-Vergleich (max. 30 h innerhalb M4, nur bei gesichertem Kernfortschritt) | `D4`: Disambiguierungs-Messung; Held-out-Auswertung; Fehlerkatalog | Mindestprecision/Recall erreicht oder Abweichung dokumentiert; 0 stille kritische Fehlzuordnungen |
 | **M5** Oktober | 155 | Emit, Validierung, FB-1-Manifest, unabhängiger Verifier, Negativtests, ≥ 3 FIM-XSDs (5 als Stretch) | `D5`: validierte Ausgabe; Verifier; 10 Manipulations-Negativtests; Schema-Korpus | Ausgabe validiert gegen dokumentiert normalisierte Schema-Variante; Verifier reproduziert 100 %; alle Negativfälle erkannt |
 | **M6** November | 150 | Review-Zeit-Messung, Dokumentation DE/EN, FOSS-Release, Abschlussbericht, Demo | `D6`: Version 0.1; Doku; Messbericht; Demo ohne App/Cloud | Release öffentlich; Tests/Doku vollständig; alle Messwerte und Grenzen dokumentiert |
 | **Summe** | **950** | | | |
@@ -42,12 +42,16 @@ Falls die verfügbare Kapazität 950 h nicht realistisch trägt, wird der Umfang
 | M1 | 140 | weniger Schema-Korpus im ersten Lauf |
 | M2 | 145 | Regelkatalog nur für Kernabschnitte |
 | M3 | 145 | Goldstandard ≥ 100 statt ≥ 120 (Stretch 200 entfällt) |
-| M4 | 145 | Held-out-Auswertung qualitativ oder ein Dokument |
+| M4 | 145 | Held-out-Auswertung qualitativ oder ein Dokument; optionaler RF1-LoRA-Vergleich max. 15 h innerhalb M4 |
 | M5 | 140 | 8 statt 10 Negativtests; 2 statt 3 XSDs (3 als Stretch) |
 | M6 | 135 | Doku/Release unverändert, weniger Demo-Ausarbeitung |
 | **Summe** | **850** | **Kern bleibt: lokale Pipeline, UNKNOWN, Review, Manifest, Verifier, FOSS** |
 
 **Finanzielle Wirkung:** siehe [budget-final.md](budget-final.md). 850 h → 42.500 € PK, 2.125 € GK, 44.625 € G, **42.393,75 € F**, 2.231,25 € EA.
+
+### 3.1 Optionaler LoRA-Vergleich in M4 (keine zusätzlichen Stunden)
+
+[RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md): Regelbaseline A → unverändertes lokales Modell B → analytisch berechneter LoRA-Adapter C für genau einen beobachteten semantischen Fehlertyp; keine Gradienten im primären Arm. 950 h: max. 30/160 h M4, 850 h: max. 15/145 h M4. Zeit ausschließlich innerhalb der Monatsstunden; Pflichtziele gehen vor. A ist Muss, B/C entfallen bei Zeit-/Kosten-/Rechte-/Kompatibilitätsgrenze. Keine Antragserhöhung. Lokale GTX-1070-Abnahme vor Übernahme; zwischen Dev/Holdout trennen. Cloud-Rechenmiete nur als optionales Forschungswerkzeug nach gesonderter Freigabe, keine Cloud-Abhängigkeit im Modul. Keine unbeaufsichtigte Agentenzeit abrechnen. Abrechnung nur tatsächlich eigener Entwicklungsarbeit; keine Fremdimplementierung. Positive Wirkung nicht zugesagt.
 
 ## 4. Meilenstein-Abhängigkeiten
 

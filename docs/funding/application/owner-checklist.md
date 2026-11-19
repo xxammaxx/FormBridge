@@ -85,3 +85,9 @@
 - Keine Offenlegung privater Dokumente, die nicht für die Förderung erforderlich sind.
 - Keine Festlegung auf eine Lizenz, bevor er/sie es will — aber die FOSS-Zusage im Antrag muss stehen.
 - Keine Bestätigung von Zahlen, die nur der Agent geprüft hat; die Quellen liegen offen.
+
+## Ergänzung 19.11.2026: RF1-LoRA
+
+- [ ] Eigene Entwicklungs-/Programmierkompetenz und Verantwortlichkeit belegen; KI nur als Hilfsmittel (PTF-FAQ).
+- [ ] Bei beabsichtigter GPU-/API-Miete vor Nutzung die Behandlung in bestehender Gemeinkostenpauschale schriftlich klären und separates Ausgabenlimit genehmigen; keine Antragserhöhung. Andernfalls lokal/zulässig separat finanzieren. [RF1-Versuchsgrenze](lora-research-extension-2026-11-19.md).
+- [ ] Vorarbeiten/Überschneidungen vor Förderbeginn nachführen; keine FormBridge-Implementierung vor Freigabe.

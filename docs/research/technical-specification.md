@@ -19,6 +19,10 @@ Lokal betreibbare FOSS-Komponente, die sichtbare Felder statischer (nicht ausfü
 - **RF3 (Provenienz):** Reicht ein offenes Provenienz-Artefakt (Hashes, Koordinaten, Zielpfade, Schema-Variante, Review-Entscheid) aus, um jede Ausgabe unabhängig zu reproduzieren und **Inkonsistenzen/versehentliche Änderungen** sichtbar zu machen? Messgrößen: Reproduzierbarkeitsrate, Inkonsistenz-Erkennungsrate im Negativtest. **Keine Tamper-Proof-Behauptung ohne Signatur/Trust Anchor.**
 - **RF4 (Aufwand):** Welcher menschliche Review-Aufwand (Zeit/Korrektur je Feld) bleibt bei Ziel-Precision ≥ 0,95 gegenüber vollautomatischer Zuordnung?
 
+### RF1a (optional): berechneter LoRA-Adapter
+
+Der [begrenzte RF1-Vergleich](../funding/application/lora-research-extension-2026-11-19.md) untersucht kleine Modelle lediglich als Kandidaten-Ranker aus Textlage, Abschnittskontext und gültigem FIM-Schema. Vergleich Regelkern / unverändertes lokales Qwen / analytisch berechneter LoRA-Adapter ohne Gradiententraining. Keine Änderung der Muss-Kriterien; ungeklärte Vorschläge bleiben UNKNOWN und kritische Felder unter Review. Vorher/nachher, Modell-/Adapter-Hashes, unabhängiger Holdout und lokale GTX-1070-Abnahme. Keine Cloud-Abhängigkeit; optionale externe Rechenmiete für synthetische Versuche nur nach gesonderter Freigabe. Nicht vor Förderbeginn implementieren. Status NOT_RUN.
+
 ## 2. Ein-/Ausgaben
 
 **Eingaben**
