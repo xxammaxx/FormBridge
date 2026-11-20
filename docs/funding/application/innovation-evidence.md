@@ -103,3 +103,8 @@ MIT CSAIL demonstrierte an Qwen3.5-0.8B die direkte Bearbeitung eines anderen Fe
 ## 9. Fazit
 
 FormBridge ist **keine weltweit neue Erfindung**, sondern eine sorgfältig abgegrenzte Infrastruktur-Hypothese: die prüfbare Kette von statischen Behörden-PDFs zu versionierten FIM-Datenfeldern mit Unsicherheit, menschlicher Kontrolle und Provenienz. Ob diese Kette praktisch trägt, ist die Forschungsfrage — nicht eine Vorab-Behauptung.
+
+
+## Literatur-Nachtrag 20.11.2026: optionales RF1
+
+Direkte LoRA-Konstruktion ist bereits Gegenstand externer Arbeiten (u. a. [WSP-Lang](https://github.com/FiveTechSoft/weights), [Steer2Edit](https://arxiv.org/abs/2602.09870), [WSP-Scope](https://arxiv.org/abs/2611.09382)). Keine Neuheitsbehauptung für diese Methode; keine nachgewiesene Verbesserung von FIM-Feldzuordnung, Review-Zeit oder lokaler GTX-1070-Ressourcennutzung. Die anwendungsbezogene Evaluationshypothese, der reproduzierbare Open-Source-Nachnutzungsbeitrag und die unveränderten Aufwand-/Sicherheitsgrenzen stehen im [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md#5-literatur-update-20112026--neue-prior-art-und-rf1-grenzen). Externe Befunde zählen nicht als eigene Testergebnisse; RF1 bleibt `NOT_RUN`. Kernhypothesen H1–H4 und Pflichtlieferungen unverändert. Keine neue Aussage zum Feldexa-Produktstand.
