@@ -2,7 +2,7 @@
 
 **Verifizierbare Zuordnung statischer Behörden-PDFs zu versionierten FIM-Datenfeld-Identifikatoren.**
 
-FormBridge ist ein unabhängiges, anwendungsübergreifendes Open-Source-**Forschungs- und Infrastrukturprojekt** (Forschungsstufe). Es verbindet sichtbare Felder in alten, nicht ausfüllbaren Verwaltungs-PDFs mit den versionierten Datenfeld-Identifikatoren des föderalen Informationsmanagements (FIM) — mit nachprüfbarer Unsicherheit (Konfidenz + explizites UNKNOWN), menschlicher Freigabe, maschinenlesbarer Provenienz und validierter strukturierter Ausgabe, lokal und ohne Cloud-Zwang.
+FormBridge ist ein unabhängiges, anwendungsübergreifendes Open-Source-**Forschungs- und Infrastrukturprojekt** (Forschungsstufe). Es verbindet sichtbare Felder in alten, nicht ausfüllbaren Verwaltungs-PDFs mit den versionierten Datenfeld-Identifikatoren des föderalen Informationsmanagements (FIM) — mit nachprüfbarer Unsicherheit (Konfidenz + explizites UNKNOWN), menschlicher Freigabe, maschinenlesbarer Provenienz und validierter strukturierter Ausgabe, lokal und ohne Cloud-Dienst.
 
 > **Status: RESEARCH_STAGE — keine Implementierung.** Dieses Repository enthält aktuell **Ausschließlich** Forschungsdokumentation, Evidenz und Spezifikation. Es existiert **kein** produktiver oder prototypischer Quellcode; jede Formulierung über künftige Fähigkeiten ist ein Forschungsziel, keine zugesagte Funktion.
 
@@ -22,7 +22,8 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Raw-Audits (Anhang) | [`docs/research/appendix/`](docs/research/appendix/) |
 | Evidenz (Datensatz, Feldindex, Instanz) | [`docs/research/evidence/`](docs/research/evidence/) |
 | Prototype-Fund-Machbarkeit | [`docs/funding/prototype-fund-feasibility.md`](docs/funding/prototype-fund-feasibility.md) |
-| Bewerbungsentwurf (DE) | [`docs/funding/application-draft-de.md`](docs/funding/application-draft-de.md) |
+| Aktueller Bewerbungsentwurf (DE) | [`application-final-de.md`](docs/funding/application/application-final-de.md) · [historischer Entwurf](docs/funding/application-draft-de.md) |
+| [Lokaler LLM-/LoRA-Nachweis und Homelab-Vorarbeit](docs/funding/application/local-llm-evidence-strategy-2026-11-20.md) | Geplante parallele Forschung, keine Ausführung |
 | Optionaler RF1-LoRA-Vergleich (19.11.2026) | [`lora-research-extension-2026-11-19.md`](docs/funding/application/lora-research-extension-2026-11-19.md) — geplant, nicht ausgeführt |
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
 | Entscheidungsbericht (CONDITIONAL_GO F3) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |

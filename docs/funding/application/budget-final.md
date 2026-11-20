@@ -63,7 +63,7 @@ Die 800-h-Variante ist eine **Sensitivitätsrechnung**, keine wählbare Antragso
 
 ### 4.1 Optionaler RF1-LoRA-Vergleich (19.11.2026)
 
-Kein zusätzlicher Stunden- oder Förderbetrag: bis 30 h in M4 der 950-h-Variante, bis 15 h in M4 der 850-h-Variante. Bestehende Beträge, Eigenanteil und Q3/Q3b unverändert. Nur tatsächlich eigene Entwicklungs-/Messarbeit. Optionale GPU-Rechenmiete/API-Nutzung ist **keine separat bestätigte zuwendungsfähige Kostenposition**; vor Nutzung schriftliche PTF-/Projektträgerklärung zur 5-%-Gemeinkostenpauschale und gesonderte Kostenfreigabe. Ansonsten lokale Ausführung oder separat zulässig finanzierte Ressourcen (keine Doppelabrechnung). Keine laufende Cloud-Pflicht. Kosten-/Budgetgate: [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md).
+Kein zusätzlicher Stunden- oder Förderbetrag: bis 30 h in M4 der 950-h-Variante, bis 15 h in M4 der 850-h-Variante. Bestehende Beträge, Eigenanteil und Q3/Q3b unverändert. Nur tatsächlich eigene Entwicklungs-/Messarbeit. RF1-Inferenz, Adapterberechnung und Evaluation erfolgen lokal; keine GPU-Miete oder externen Inferenz-API-Kosten für RF1 veranschlagt. Externe KI als geprüftes Entwicklungshilfsmittel begründet keine zusätzliche Kostenposition; keine stillen Ausgaben. Allgemeine Gewichtsraumforschung im unabhängigen Lab separat finanzieren und zeitlich abgrenzen, keine Doppelabrechnung. Eine spätere Änderung bedürfte ausdrücklicher Freigabe und ggf. schriftlicher Kostenklärung. [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md).
 
 ## 5. Q3/Q3b — offene Berechnungslogik
 

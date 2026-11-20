@@ -1,5 +1,7 @@
 # Bewerbungsbausteine (Deutsch) — FormBridge, Förderlinie Innovation
 
+> Historischer Entwurf vom 13.11.2026; nicht für die Portaleingabe verwenden. Maßgeblich sind [aktuelle Bewerbung](application/application-final-de.md), [Monatsplan und Muss-/Stretch-Grenzen](application/six-month-development-plan.md) sowie [RF1-Offline-Nachweis](application/local-llm-evidence-strategy-2026-11-20.md). Frühere Zielwerte sind Forschungsziele, keine aktuellen Muss-Werte.
+
 > **SUPERSEDED (13.11.2026):** Dieser ältere Entwurf wird durch das vollständige Paket unter [`application/application-final-de.md`](application/application-final-de.md) ersetzt. Der Satz „FITKO ... Konvertierungspfad in der Konzeption" ist durch den Nachtrag im Prior-Art-Audit überholt: Das FIM-Portal betreibt einen allgemeinen Datenschema-Konverter, der aber kein veröffentlichtes defektes XSD repariert und keine PDF→FIM-Zuordnung liefert. Dieser Entwurf bleibt aus Provenienzgründen erhalten.
 
 **Zweck:** Rohbausteine für das Bewerbungsformular (Handbuch Jahrgang 03). Verständliche Sprache, keine überzogenen Innovationssansprüche, klare Trennung von Bestehendem und Neuem. **Entwurf — kein eingereichter Antrag.**

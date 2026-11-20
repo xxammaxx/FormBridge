@@ -49,9 +49,9 @@ Falls die verfügbare Kapazität 950 h nicht realistisch trägt, wird der Umfang
 
 **Finanzielle Wirkung:** siehe [budget-final.md](budget-final.md). 850 h → 42.500 € PK, 2.125 € GK, 44.625 € G, **42.393,75 € F**, 2.231,25 € EA.
 
-### 3.1 Optionaler LoRA-Vergleich in M4 (keine zusätzlichen Stunden)
+### 3.1 Parallel zur Modulentwicklung: optionaler lokaler LoRA-Vergleich in M4 (keine zusätzlichen Stunden)
 
-[RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md): Regelbaseline A → unverändertes lokales Modell B → analytisch berechneter LoRA-Adapter C für genau einen beobachteten semantischen Fehlertyp; keine Gradienten im primären Arm. 950 h: max. 30/160 h M4, 850 h: max. 15/145 h M4. Zeit ausschließlich innerhalb der Monatsstunden; Pflichtziele gehen vor. A ist Muss, B/C entfallen bei Zeit-/Kosten-/Rechte-/Kompatibilitätsgrenze. Keine Antragserhöhung. Lokale GTX-1070-Abnahme vor Übernahme; zwischen Dev/Holdout trennen. Cloud-Rechenmiete nur als optionales Forschungswerkzeug nach gesonderter Freigabe, keine Cloud-Abhängigkeit im Modul. Keine unbeaufsichtigte Agentenzeit abrechnen. Abrechnung nur tatsächlich eigener Entwicklungsarbeit; keine Fremdimplementierung. Positive Wirkung nicht zugesagt. Entstehen Analyse-/Adapter-/Evaluationsskripte, werden sie in M6 mit reproduzierbaren Ergebnissen (auch NO_BENEFIT) und dokumentierten Nutzungsgrenzen unter offener Projektlizenz als nachnutzbare Bausteine veröffentlicht; NOT_RUN wird begründet. Keine zusätzliche Stunden- oder Budgetposition und kein zweites Projekt.
+[RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md): Regelbaseline A → unverändertes lokales Modell B → analytisch berechneter LoRA-Adapter C für genau einen beobachteten semantischen Fehlertyp; keine Gradienten im primären Arm. 950 h: max. 30/160 h M4, 850 h: max. 15/145 h M4. Zeit ausschließlich innerhalb der Monatsstunden; Pflichtziele gehen vor. A ist Muss, B/C entfallen bei Zeit-/Kosten-/Rechte-/Kompatibilitätsgrenze. Keine Antragserhöhung. Lokale GTX-1070-Abnahme vor Übernahme; zwischen Dev/Holdout trennen. RF1-Inferenz, Adapterberechnung und Evaluation ausschließlich auf eigener lokaler Hardware; keine gemieteten Referenzläufe oder externen FormBridge-Modellendpunkte. Externe KI ggf. nur als geprüftes Entwicklungshilfsmittel mit abstrakten maschinenlesbaren Vorschlägen anhand freigegebener synthetischer Daten; lokales kleines Modell/Controller plus deterministische Skripte führen alle RF1-Tests aus; keine realen Dokumentdaten oder davon abgeleiteten Informationen nach außen; allgemeine, getrennt finanzierte Forschung außerhalb dieses Plans. [Offline-Nachweis](local-llm-evidence-strategy-2026-11-20.md). Keine unbeaufsichtigte Agentenzeit abrechnen. Abrechnung nur tatsächlich eigener Entwicklungsarbeit; keine Fremdimplementierung. Positive Wirkung nicht zugesagt. Entstehen Analyse-/Adapter-/Evaluationsskripte, werden sie in M6 mit reproduzierbaren Ergebnissen (auch NO_BENEFIT) und dokumentierten Nutzungsgrenzen unter offener Projektlizenz als nachnutzbare Bausteine veröffentlicht; NOT_RUN wird begründet. Keine zusätzliche Stunden- oder Budgetposition und kein zweites Projekt.
 
 ## 4. Meilenstein-Abhängigkeiten
 
@@ -77,7 +77,7 @@ M1 Fundament ──► M2 Kandidaten ──► M3 Goldstandard/Review ──► 
 | Reproduzierbarkeit | zweimaliger Lauf erzeugt identische Hashes/Reports | CI-Vergleich |
 | Messung | Precision/Recall, UNKNOWN-Anteil, Review-Zeit, kritische Fehler | Messbericht |
 
-**CI-Regel:** Kein Test benötigt Netzwerk, Cloud, Behördenzugang oder Feldexa. Externe Testpersonen werden nicht in CI simuliert; ihre Messungen werden separat dokumentiert.
+**CI-Regel:** Kein Test benötigt Netzwerk, Cloud, Behördenzugang oder Feldexa. Lokale Modelldaten werden vorab bereitgestellt; die tatsächliche optionale GPU-Abnahme wird separat mit technisch gesperrtem Netzzugang und Negativkontrollen protokolliert. Externe Testpersonen werden nicht in CI simuliert; ihre Messungen werden separat dokumentiert.
 
 ### 5.1 Primärmetrik und Zähleinheit
 
@@ -95,7 +95,7 @@ M1 Fundament ──► M2 Kandidaten ──► M3 Goldstandard/Review ──► 
 |---|---|
 | Precision | korrekte Top-1-Zuordnungen / alle Top-1-Zuordnungen auf **mapping-fähigen** Gold-Feldern |
 | Recall | korrekte Top-1-Zuordnungen / alle **mapping-fähigen** Gold-Felder; `UNKNOWN` auf einem mapping-fähigen Feld zählt als Miss |
-| Selektiver Recall | korrekte Top-1-Zuordnungen / nicht-`UNKNOWN`-Ausgaben (zusätzlich, nicht Ersatz) |
+| Selektive Genauigkeit | korrekte Top-1-Zuordnungen / beantwortete mapping-fähige Gold-Felder (zusätzlich, kein Recall-Ersatz; entspricht hier selektiver Precision) |
 | Gap-Erkennung | Anteil der `COVERAGE_GAP`/`UNMATCHED`-Felder, die korrekt als nicht abbildbar markiert werden; getrennt von P/R |
 | End-to-End-Qualität | P/R **nach** Review separat; menschliche Korrekturen werden nicht der Systemgüte zugerechnet |
 
