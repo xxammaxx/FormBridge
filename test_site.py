@@ -38,6 +38,28 @@ class Website(unittest.TestCase):
         page.keyboard.press("Enter")
         self.assertTrue(page.url.endswith("#inhalt"))
 
+    def test_local_research_and_funding_scope(self):
+        page = self.browser.new_page()
+        self.addCleanup(page.close)
+        page.goto(PAGE)
+        heading = page.locator("#lokale-ki")
+        self.assertTrue(heading.is_visible())
+        self.assertIn("ohne Weitergabe sensibler Daten", heading.inner_text())
+        research = page.locator("#forschung")
+        for claim in ("auch ohne Sprachmodell", "weder echte Dokumente",
+                      "keinen direkten Zugriff", "bleiben lokal",
+                      "noch kein Nachweis", "gesperrtem Netzzugang",
+                      "einschließlich negativer Ergebnisse"):
+            self.assertIn(claim, research.inner_text())
+        plan = page.locator("#plan")
+        self.assertIn("120 Felder", plan.inner_text())
+        plan.locator("details summary").click()
+        plan_text = plan.inner_text().replace("\u00a0", " ")
+        for claim in ("90 % der Vorschläge", "85 % der zuordenbaren Felder",
+                      "95 % beziehungsweise 90 %", "Mindestens drei",
+                      "Forschungsziel: fünf", "950-Stunden-Plan"):
+            self.assertIn(claim, plan_text)
+
     def test_responsive_themes_and_local_assets(self):
         for width in (320, 360, 390, 545, 768, 1280, 1920):
             for scheme in ("light", "dark"):

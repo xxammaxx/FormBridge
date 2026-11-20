@@ -235,13 +235,26 @@
     <details>
       <summary>Technische Befunde und verwandte Ansätze</summary>
       <h3>Prüfbarkeit des FIM-Datenmodells</h3>
-      <p>Ein Prüfprogramm meldete bei Version 1.4 des maschinenlesbaren Regelwerks für Wohngeld im Test 170 Fehler. Mit einer dokumentiert angepassten Fassung bestand ein Datensatz mit erfundenen Angaben die technische Prüfung.</p>
+      <p>Ein Prüfprogramm meldete bei Version 1.4 des maschinenlesbaren Regelwerks für Wohngeld im Test 170 Parser-Meldungen. Mit einer dokumentiert angepassten Fassung bestand ein Datensatz mit erfundenen Angaben die technische Prüfung.</p>
       <h3>Was vorhandene Werkzeuge schon leisten</h3>
       <p>CommonForms erkennt Feldpositionen in PDFs. Der Formularagent überführt digitale Formularbeschreibungen in ein anderes Format. Unter den 13 im Projekt untersuchten Lösungen fand sich keine, die für diesen Vordruck den gesamten Weg von der sichtbaren Stelle zum geprüften FIM-Feld dokumentiert.</p>
-      <h3>Welche Rolle lokale KI spielen könnte</h3>
-      <p>Geprüft werden soll, wie weit feste Regeln und Formularüberschriften tragen. Als Ergänzung kommen kleine spezialisierte Sprachmodelle auf dem eigenen Rechner infrage. Ein LoRA-Adapter ist eine kleine, auf eine Aufgabe trainierte Ergänzung für ein vorhandenes Modell. So lässt es sich mit weniger Rechenaufwand an Fachbegriffe anpassen.</p>
-      <p>Ob das die Zuordnung verbessert, ist offen. Für die geplante Verarbeitung bleiben die Formulardaten auf dem Gerät. Auch ein Modell müsste für jeden Vorschlag eine prüfbare Grundlage liefern. Unsichere Zuordnungen bleiben bis zur menschlichen Klärung offen.</p>
     </details>
+
+    <h3 id="lokale-ki">Lokale KI – Forschung ohne Weitergabe sensibler Daten</h3>
+    <p>FormBridge soll bereits mit festen Regeln funktionieren, auch ohne Sprachmodell. Parallel wollen wir untersuchen, ob kleine lokale Modelle durch gezielte Änderungen ihre Zuordnungsvorschläge verbessern. Ein LoRA-Adapter ergänzt ein bestehendes Modell um eine kleine, austauschbare Gewichtsänderung. Er soll in diesem Versuch direkt berechnet werden, ohne das sonst übliche Training mit Gradienten.</p>
+    <div class="columns">
+      <div>
+        <h4>Extern · Forschungsvorschläge</h4>
+        <p>Ein größeres KI-Modell darf abstrakte, maschinenlesbare Vorschläge anhand öffentlicher oder erfundener Testaufgaben liefern. Es erhält weder echte Dokumente noch daraus abgeleitete Informationen und hat keinen direkten Zugriff auf die lokale Umgebung.</p>
+      </div>
+      <div>
+        <h4>Lokal · Durchführung und Prüfung</h4>
+        <p>Ein kleines Sprachmodell koordiniert mit einer lokalen Steuerung und überprüfbaren Skripten die freigegebenen Adapteränderungen und Tests. Die Dokumentverarbeitung, Berechnung und Auswertung bleiben lokal. Vorschläge werden vor der Ausführung geprüft; der Mensch verantwortet die Entscheidungen.</p>
+      </div>
+    </div>
+    <p>Erste dokumentierte, separate Homelab-Vorarbeiten geben einen Hinweis darauf, dass Qwen auf einer vorhandenen GTX 1070 mit 8&nbsp;GB Grafikspeicher lokal läuft und strukturierte Ausgaben erzeugen kann. Bei der Dokumentklassifikation traten auch Fehler auf. Das ist ein Machbarkeitshinweis für die Infrastruktur, noch kein Nachweis eines Nutzens der LoRA-Adapter.</p>
+    <p>Für den geplanten Versuch vergleichen wir feste Regeln, das unveränderte lokale Modell und einen berechneten Adapter an einer konkreten Mehrdeutigkeit. Tests mit gesperrtem Netzzugang und dokumentierten Modell- und Adapter-Fingerabdrücken sollen die lokale Ausführung nachvollziehbar machen. Nur ein messbar besserer Ansatz ohne kritische Verschlechterungen kommt für die optionale Nutzung infrage.</p>
+    <p>Entstehende eigene Analyse-, Adapter- und Prüfwerkzeuge sollen nach Rechteklärung als Open Source veröffentlicht werden, einschließlich negativer Ergebnisse. So könnten auch andere Digitalisierungsprojekte von nachvollziehbaren, ressourcenschonenden Verfahren profitieren.</p>
   </div>
 </section>
 
@@ -255,16 +268,16 @@
     <p>Beantragt wird die Entwicklung von FormBridge als eigenständigem Open-Source-Modul. Es soll Angaben aus PDF-Formularen nachvollziehbar den passenden Verwaltungsdaten zuordnen. Feldexa 2.0 ist als erste Anwendung vorgesehen. Über die öffentliche Schnittstelle sollen auch andere Anwendungen das Modul nutzen können. Die Entwicklung der Feldexa-App wird außerhalb dieses Förderantrags getragen. <a href="https://github.com/xxammaxx/FormBridge/blob/main/docs/architecture/ADR-001.md">Architekturentscheidung zu FormBridge</a></p>
     <dl class="rows">
       <dt>Monate 1–2 · Grundlagen</dt><dd>Felder und Abschnittsüberschriften erfassen, Regeln für erste Vorschläge erstellen und festhalten, aus welcher Quelle jede Zuordnung stammt.</dd>
-      <dt>Monate 3–4 · Gegenprobe</dt><dd>Mindestens 200 Felder von Hand kennzeichnen. Die Zuordnung zusätzlich an mindestens einem Wohngeldformular eines anderen Landes testen, das bei der Entwicklung der Regeln zurückgehalten wurde.</dd>
+      <dt>Monate 3–4 · Gegenprobe</dt><dd>Mindestens 120 Felder von Hand kennzeichnen (Forschungsziel: 200). Die Zuordnung zusätzlich an mindestens einem zurückgehaltenen Wohngeldformular prüfen. Bei gesichertem Kernfortschritt ist ein begrenzter lokaler LoRA-Vergleich vorgesehen.</dd>
       <dt>Monate 5–6 · Unabhängig prüfen</dt><dd>Ausgabedaten und Herkunftsnachweise prüfen, Änderungen gezielt nachstellen und den Korrekturaufwand mit externen Testpersonen messen. Regelkatalog, Testformat, Software und Ergebnisse sollen öffentlich werden.</dd>
     </dl>
-    <details><summary>Woran der Prototyp gemessen werden soll</summary>
+    <details><summary>Woran der Prototyp gemessen werden soll (950-Stunden-Plan und Forschungsziele)</summary>
       <ul>
-        <li>Mindestens 95&nbsp;% der vorgeschlagenen Zuordnungen sollen richtig sein. Mindestens 90&nbsp;% der erwarteten richtigen Zuordnungen sollen gefunden werden.</li>
+        <li>Vor menschlicher Prüfung sollen mindestens 90&nbsp;% der Vorschläge für zuordenbare Felder richtig sein und mindestens 85&nbsp;% der zuordenbaren Felder richtig zugeordnet werden. Die weitergehenden Forschungsziele sind 95&nbsp;% beziehungsweise 90&nbsp;%.</li>
         <li>Die bestätigte Endausgabe soll keine unbeabsichtigte kritische Fehlzuordnung bei Identitäten, Beträgen oder Pflichtfeldern enthalten.</li>
-        <li>Mindestens fünf amtliche FIM-Regelwerke sollen nach dokumentierten Anpassungen maschinell lesbar sein. Jede Anpassung soll überprüfbar bleiben.</li>
+        <li>Mindestens drei amtliche FIM-Regelwerke sollen nach dokumentierten Anpassungen maschinell lesbar sein (Forschungsziel: fünf). Jede Anpassung und mögliche semantische Veränderung soll überprüfbar bleiben.</li>
         <li>Alle Prüfartefakte sollen unabhängig reproduzierbar sein. Mindestens zehn gezielt veränderte Testfälle sollen zuverlässig als verändert erkannt werden.</li>
-        <li>Zwei bis drei externe Testpersonen sollen den Prüfaufwand je Feld messen. Für Felder ohne offene Zuordnung liegt der Zielwert für die mittlere Prüfzeit (Median) unter 15 Sekunden.</li>
+        <li>Zwei bis drei externe Testpersonen sollen den Prüfaufwand je Feld messen. Für verbleibende, nicht automatisch zugeordnete Felder liegt der Zielwert für die Prüfzeit unter 15 Sekunden pro Feld.</li>
       </ul>
     </details>
     <p>Scans mit Texterkennung, rechtswirksame Signaturen, die Übermittlung an Behörden und der Betrieb eines Antragsportals liegen außerhalb dieses Fördervorhabens.</p>
