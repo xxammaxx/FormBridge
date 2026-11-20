@@ -1,6 +1,6 @@
 # Portal-Feld-Mapping — Jahrgang 03, Förderlinie Innovation
 
-**Stand:** 19.11.2026 (LoRA-Delta) · **Zweck:** Zuordnung der offiziellen Bewerbungsfragen zu den Antworten in [application-final-de.md](application-final-de.md), mit belegten Wortlimits und klaren Unbekannten.
+**Stand:** 20.11.2026 (RF1-Nachnutzung) · **Zweck:** Zuordnung der offiziellen Bewerbungsfragen zu den Antworten in [application-final-de.md](application-final-de.md), mit belegten Wortlimits und klaren Unbekannten.
 
 ## Quellenlage
 
@@ -32,14 +32,14 @@
 | # | Offizielle Frage (wörtlich) | Limit | Antwort | Status |
 |---|---|---|---:|---|
 | P1 | Beschreibe dein Projekt in einem Satz. | 30 Wörter | §1 (22 W.) | FINAL |
-| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (84 W.) | FINAL |
-| P3 | Welche gesellschaftliche Herausforderung willst du mit dem Projekt angehen? | 175 Wörter | §3 (168 W.) | FINAL |
-| P4 | Wie willst du dein Projekt technisch umsetzen? | 175 Wörter | §4 (133 W.) | FINAL |
-| P5 | Hast du schon an der Idee gearbeitet? Wenn ja, beschreibe kurz den aktuellen Stand und erkläre die geplanten Neuerungen. | 100 Wörter | §5 (67 W.) | FINAL |
+| P2 | Beschreibe dein Projekt kurz. | 100 Wörter | §2 (93 W.) | FINAL |
+| P3 | Welche gesellschaftliche Herausforderung willst du mit dem Projekt angehen? | 175 Wörter | §3 (174 W.) | FINAL |
+| P4 | Wie willst du dein Projekt technisch umsetzen? | 175 Wörter | §4 (151 W.) | FINAL |
+| P5 | Hast du schon an der Idee gearbeitet? Wenn ja, beschreibe kurz den aktuellen Stand und erkläre die geplanten Neuerungen. | 100 Wörter | §5 (71 W.) | FINAL |
 | P6 | Link zum bestehenden Projekt (falls vorhanden). | optional | §6 | FINAL |
-| P7 | Was ist das Innovative an deinem Projekt? Wenn es ähnliche Projekte gibt, was geht bei deinem Ansatz darüber hinaus und **warum kannst du nicht auf ihnen aufbauen**? | 100 Wörter | §7 (82 W.) | FINAL |
-| P8 | Wer ist die Zielgruppe und wie soll dein Projekt sie erreichen? | 100 Wörter | §8 (90 W.) | FINAL |
-| P9 | Skizziere kurz die wichtigsten Meilensteine, die im Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §9 (62 W.) | FINAL |
+| P7 | Was ist das Innovative an deinem Projekt? Wenn es ähnliche Projekte gibt, was geht bei deinem Ansatz darüber hinaus und **warum kannst du nicht auf ihnen aufbauen**? | 100 Wörter | §7 (87 W.) | FINAL |
+| P8 | Wer ist die Zielgruppe und wie soll dein Projekt sie erreichen? | 100 Wörter | §8 (93 W.) | FINAL |
+| P9 | Skizziere kurz die wichtigsten Meilensteine, die im Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §9 (72 W.) | FINAL |
 
 ## C. Team und Erfahrung
 

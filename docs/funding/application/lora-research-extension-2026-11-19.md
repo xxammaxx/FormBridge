@@ -1,6 +1,6 @@
 # Erweiterung RF1: lokal programmierte LoRA-Adapter (optionaler Vergleichsversuch)
 
-**Stand:** 19.11.2026 · **Status:** `PROPOSED / NOT_RUN` · **Antragsgegenstand:** FormBridge, Förderlinie Innovation, Jahrgang 03. Kein eigenständiges KI-Forschungsprojekt, kein zusätzlicher Förderbetrag, keine Implementierungsfreigabe.
+**Stand:** 20.11.2026 · **Status:** `PROPOSED / NOT_RUN` · **Antragsgegenstand:** FormBridge, Förderlinie Innovation, Jahrgang 03. Kein eigenständiges KI-Forschungsprojekt, kein zusätzlicher Förderbetrag, keine Implementierungsfreigabe.
 
 ## 1. Abgrenzung und Zweck
 
@@ -19,6 +19,10 @@ Die Idee, Modellgewichtsdeltas gezielt zu berechnen, stammt aus der aktuellen We
 Zuerst A und B auf identischem, lizenzgeklärtem Dev-Split und versioniertem Modell/Tokenizer messen; nur bei konkretem, reproduzierbarem Fehlermuster C auf **einem** Fehlertyp erproben. Qwen3.5-0.8B ist ein Kandidat, keine endgültige Modellauswahl. Basismodell, Adapter-Tensorformen, Rank/Skalierung, Modellrevision, Prüfsummen, Sampling, Runtime und Datensatzhash dokumentieren. Bewertung vor menschlichem Review: Top-1-Precision/Recall auf mapping-fähiger Teilmenge, Coverage, UNKNOWN, Gap-Erkennung, kritische Fehlzuordnung, Laufzeit, Peak VRAM/RAM; Review-Zeit separat. Holdout bis zum eingefrorenen Kandidaten unangetastet lassen. Modellvorschläge müssen auf gültige FIM-Zielpfade und konkrete Feld-/Abschnittsevidenz eingeschränkt sein; Herkunft (Modell-/Adapter-Hash und Entscheidung) auditierbar. Keine personenbezogenen Echtdaten, keine Übermittlung an Behörden oder externe Inferenzdienste. Der Prototyp bleibt ohne Modell und ohne Netz nutzbar.
 
 **Übernahmegate:** reproduzierbarer Vorteil in mindestens einer vorab gewählten Zielmetrik auf ungesehenen Fällen, keine Verschlechterung der verbindlichen Sicherheits-/Qualitätsgates und kein materieller Laufzeit-/Ressourcenrückschritt innerhalb vorab definierter Grenzen; echte GTX 1070 (8 GB VRAM) als lokale Abnahme. Wenn dies nicht gelingt: `NO_BENEFIT` oder `NOT_RUN` dokumentieren, Modell deaktiviert lassen; Kern-Release bleibt unverändert. Ein positiver Modellnutzen wird nicht versprochen. Selbst entwickelte Skripte/Adapter/Tests und Dokumentation nur bei geklärten Rechten unter offener Lizenz veröffentlichen; keine ungeklärte Weitergabe von Modell-/FIM-Drittmaterial.
+
+## 2a. Zusätzlicher Open-Source-Gemeinwohlbeitrag
+
+Neben der konkreten FIM-Zuordnung soll der Vergleich als eigenständig nachnutzbarer, vom Format und von Feldexa unabhängiger Satz kleiner Forschungswerkzeuge dokumentiert werden: Analyse-Skript, direkte Berechnung und Export kompatibler Adapter-Gewichte, kontrollierte A/B/C-Evaluation mit synthetischen Fällen, Versions-/Hash-Provenienz und reproduzierbare Ergebnisdokumentation. Nur soweit der begrenzte Versuch diese Artefakte tatsächlich hervorbringt; keine Zusage einer eigenständigen universellen Plattform. Eigene, rechtegeklärte Artefakte werden unter der vorgesehenen offenen Projektlizenz freigegeben, auch bei NO_BENEFIT; bei NOT_RUN wird der Grund öffentlich dokumentiert. Weitere Open-Source-Projekte, insbesondere freie Verwaltungssoftware und datensparsame Dokumentenverarbeitung, können Methoden und Werkzeuge nachnutzen, ohne neue Modelltrainings oder Cloud-Abhängigkeiten vorauszusetzen. Übertragbarkeit und Ressourcenvorteil sind zu prüfen, nicht versprochen. Dieses Ergebnis schafft keinen zusätzlichen Fördergegenstand und keine neuen Pflichtmeilensteine. FormBridge bleibt alleiniger Antragsgegenstand.
 
 ## 3. Aufwand und Finanzierung
 
