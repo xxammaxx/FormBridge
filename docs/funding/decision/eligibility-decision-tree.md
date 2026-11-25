@@ -33,8 +33,8 @@ M1 Alter ≥ 18?                                        [RL 2024 Nr. 3; FAQ Bewe
 M2 Wohnsitz Deutschland + Steuerzahlung in DE?        [FAQ Bewerbung 02]               → JA/NEIN
 M3 (a) Selbstständig oder freiberuflich?
     (b) ODER angestellt + (anteilige) Arbeitgeber-Freistellung für die Laufzeit?
-    (c) ODER geplante Selbstständigkeit ab Förderbeginn? → NICHT explizit geregelt = UNKNOWN,
-        vor Einreichung im Portal/Sprechstunde klären.  [FAQ Bewerbung 02 FN**]
+    (c) ODER geplante Selbstständigkeit ab Förderbeginn? → PLAN: Registrierung vor dem formalen
+        BMFTR-Antrag und vor 01.06.2027; offen ist nur der exakte Stichtag (PTF-Auskunft).  [FAQ Bewerbung 02 FN**]
 M4 Programmierkenntnisse vorhanden (KI nur als Werkzeug, kein „Vibe-Coding")?
    → JA/NEIN [FAQ Förderung 08]
 M5 „Einschlägige Vorarbeiten + umfassende Kenntnisse" nachweisbar?
@@ -47,14 +47,14 @@ M7 Kapazität: ~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat) real leistb
 M8 Kontoauszug mit Saldo ≥ Eigenanteil (streng gerechnet 2.493,75 € bei 950 h; **2.500 € deckt alle Lesarten ab**) verfügbar/beschaffbar zur Bewilligung?
    → [FAQ Auswahl 03; RL Nr. 4]
 M9 (Optional) Second Stage beantragen? Nur JETZT entscheidbar; keine Code-Meilensteine dort.
-   → [Handbuch Frage 16]
+   → JA (Owner-Entscheidung 25.11.2026)  [Handbuch Frage 16]
 ```
 
 ## Auswertung
 
 - **M1–M4 + M5–M8 alle „JA"** → Persönliche Förderfähigkeit nach veröffentlichten Kriterien erfüllt (Nachweispflichten bleiben formal).
 - **Ein „NEIN" in M1–M4** → INDIVIDUAL_ELIGIBILITY_UNKNOWN → Sprechstunde 16.11.2026 oder info@prototypefund.de.
-- **M3c „UNKNOWN"** → explizite Anfrage (kanonisch: [external-inquiry-drafts.md](external-inquiry-drafts.md) §A).
+- **M3c „Stichtag offen"** → Registrierung vor Förderbeginn einplanen und den Stichtag bestätigen lassen (kanonisch: [external-inquiry-drafts.md](external-inquiry-drafts.md) §A); kein Erfüllungs-, nur ein Terminrisiko.
 - **M6 nein** → Förderhöhe ggf. durch De-minimis-Freiraum begrenzt (individuell rechnen).
 
 ## Verhältnis zur bisherigen Empfehlung

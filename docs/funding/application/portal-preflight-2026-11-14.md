@@ -67,25 +67,25 @@
 | T1 | Team? | 30 W. | §10: Nein (7 W.) | **FINAL** |
 | T2 | Teammitglieder | dasselbe Feld | nicht ausgefüllt (Solo) | **N/A** |
 | E1 | Bisherige Softwareprojekte | 100 W. | §11 (77 W.) | **FINAL** |
-| E2 | GmbH/Verein/Institut? | Ja/Nein | §12 Q4 | **OWNER** |
-| E3 | Falls ja: Abgrenzung | 60 W. | §12 Q5 (31 W. inkl. Platzhalterhinweis, 11 W. Antworttext; frühere Angabe 21 W. war eine Fehlzählung) | **OWNER/BEDINGT** |
-| E4 | Arbeitsstunden | Zahl ≤ 950 | 950 | **FINAL (950)** |
+| E2 | GmbH/Verein/Institut? | Ja/Nein | §12 Q4: Nein | **FINAL** |
+| E3 | Falls ja: Abgrenzung | 60 W. | §12 Q5: entfällt (Q4 = Nein), Vorlagetext 11 W. | **FINAL (entfällt)** |
+| E4 | Arbeitsstunden | Zahl ≤ 950 | 950 | **FINAL (950; Owner-Entscheidung)** |
 | E5 | Erfahrung/Motivation | 100 W. | §14 (83 W.) | **FINAL** |
 
 ### D. Second Stage
 
 | # | Frage | Limit | Vorlage | Status |
 |---|---|---:|---|---|
-| S1 | Second Stage beantragen? | Ja/Nein | Ja | **OWNER-ENTSCHEIDUNG** |
-| S2 | Schwerpunkt | 175 W. | §16 (98 W.) | **FINAL (bei Ja)** |
-| S3 | Meilensteine | 100 W. | §17 (29 W.) | **FINAL (bei Ja)** |
+| S1 | Second Stage beantragen? | Ja/Nein | Ja | **FINAL (Ja; Owner-Entscheidung)** |
+| S2 | Schwerpunkt | 175 W. | §16 (98 W.) | **FINAL (Second Stage = Ja)** |
+| S3 | Meilensteine | 100 W. | §17 (29 W.) | **FINAL (Second Stage = Ja)** |
 
 ### E. Bestätigungen
 
 | # | Bestätigung | Status |
 |---|---|---|
-| Q19a | 18+ und Hauptwohnsitz Deutschland | **OWNER** |
-| Q19b | FOSS-Lizenz-Zusage | **OWNER** |
+| Q19a | 18+ und Hauptwohnsitz Deutschland | **FINAL (Owner-Bestätigung 25.11.2026)** |
+| Q19b | FOSS-Lizenz-Zusage | **FINAL (Owner-Bestätigung 25.11.2026)** |
 
 ## 4. Noch fehlende persönliche Angaben (gesammelt)
 
@@ -107,7 +107,7 @@
 
 | Aspekt | Befund | Konsequenz |
 |---|---|---|
-| Materielle Voraussetzung | BMFTR-RL Nr. 3 und FAQ/Bewerbungsseite: selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Freistellung. JG03-Handbuch: nicht in den zwingenden Förderbedingungen; „als Privatperson“. | **Formale Zulassungsvoraussetzung derzeit nicht erfüllt**; Ablehnung möglich |
+| Materielle Voraussetzung | BMFTR-RL Nr. 3 und FAQ/Bewerbungsseite: selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Freistellung. JG03-Handbuch: nicht in den zwingenden Förderbedingungen; „als Privatperson“. | **Plan erfüllt** (Registrierung vor Förderbeginn und vor dem formalen Antrag); **offen: exakter Stichtag** (PTF-Auskunft) |
 | Nachweiszeitpunkt | Online-Fragen: kein Steuernummerfeld. JG03-Checkliste: keine Solo-Steuernummer. JG02-Wiki: zum formalen Antrag. | offen |
 | Formaler Antrag | März 2027 vs. „bis Ende Februar“ | Terminwiderspruch |
 | Tätigkeitsbeginn | geplant 01.06.2027; Registrierung ≠ Aufnahme | nicht sicher |
@@ -121,7 +121,7 @@
 3. A1–A5 ausfüllen; P1–P9 aus `application-final-de.md` übertragen.
 4. T1/E1–E5 ausfüllen; Q4/Q5 getrennt beantworten.
 5. S1–S3 ausfüllen.
-6. Q19a/Q19b bestätigen.
+6. Q19a/Q19b im Portal ankreuzen (Zusage liegt seit 25.11.2026 vor).
 7. Entwurf speichern (falls das Portal dies unterstützt) und Vollständigkeit prüfen.
 8. **Nicht absenden** ohne ausdrückliche Owner-Freigabe.
 
@@ -132,7 +132,7 @@
 **Für `READY_FOR_PORTAL_OWNER_APPROVAL` fehlen:**
 
 - authentifizierter Live-Abgleich der Felder, Zeichenlimits und Pflichtfelder;
-- vollständige persönliche Angaben (A2–A5 inkl. Wohnsitz, E1, E5, Q4/Q5, Q19);
+- Portal-Stammdaten A2–A5 (Wohnsitz/Name/Kontakt); E1, E5, Q4/Q5 und Q19 sind final vorbereitet bzw. zugesagt;
 - Entscheidung zu Second Stage, Stunden und ggf. Lizenz;
 - hinreichende Klärung der materiellen Q2-Voraussetzung oder bewusste Owner-Entscheidung, das Risiko zu tragen;
 - Nutzung der Bewerbungssprechstunde am 16.11.2026, 17:00 Uhr (empfohlen).

@@ -85,7 +85,7 @@ Vollständige Klassifikation: [owner-questions-status.md](owner-questions-status
 
 **Harte formale Blocker:** M1 (Alter), M2 (Wohnsitz/Steuern), M3a/b/c (Selbstständigkeit/Freistellung), M4 (Programmierkenntnisse), M5 (Vorarbeiten/Kenntnisse), M6 (De-minimis). **M8** (Kontoauszug) ist erst bei Bewilligung formal. **M7** (Kapazität) und **M9** (Second Stage) sind Planung, keine formalen Blocker.
 
-**Kritischste Klärung:** **Q2/M3c** — Selbstständigkeit erst ab Förderbeginn. Öffentlich nicht geregelt; potenziell harte Hürde. **Q3/Q3b** sind finanziell, nicht einreichungsblockierend.
+**Kritischste Klärung (Stand 13.11.2026):** **Q2/M3c** — Selbstständigkeit erst ab Förderbeginn. Öffentlich nicht geregelt; potenziell harte Hürde. **Seit 25.11.2026:** Registrierung vor Förderbeginn und vor dem formalen Antrag geplant, offen nur der Stichtag. **Q3/Q3b** sind finanziell, nicht einreichungsblockierend.
 
 ## 9. Branch / Commit / PR
 

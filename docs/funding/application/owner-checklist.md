@@ -7,17 +7,17 @@
 
 | # | Frage | Was der Owner tun muss | Status |
 |---|---|---|---|
-| M1 | Mindestalter 18? | Eigene Bestätigung | **BLOCKER** |
-| M2 | Wohnsitz in Deutschland + Steuern in DE? | Eigene Bestätigung; ggf. Nachweis | **BLOCKER** |
-| M3a | Derzeit selbstständig oder freiberuflich? | Status bestätigen; BMFTR-RL/FAQ/Bewerbungsseite verlangen es; JG03-Handbuch nennt es nicht unter den zwingenden Förderbedingungen. Derzeit **nicht erfüllt**, falls keine Selbstständigkeit/Freistellung. | **FORMALE ZULASSUNGSVORAUSSETZUNG / RISIKO** |
+| M1 | Mindestalter 18? | Eigene Bestätigung | **BESTÄTIGT (25.11.2026)** |
+| M2 | Wohnsitz in Deutschland + Steuern in DE? | Eigene Bestätigung; ggf. Nachweis | **BESTÄTIGT (25.11.2026)** |
+| M3a | Selbstständig oder freiberuflich? | Registrierung **vor Förderbeginn (01.06.2027) und vor dem formalen BMFTR-Antrag** einplanen; BMFTR-RL/FAQ verlangen den Status, das JG03-Handbuch nennt ihn nicht unter den zwingenden Förderbedingungen. | **PLAN ERFÜLLT / STICHTAG OFFEN** |
 | M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für 01.06.–30.11.2027? | Schriftliche Freistellung klären | **BLOCKER**, falls nicht freigestellt |
-| M3c | Nicht selbstständig, Aufnahme erst 2027 geplant? | PTF-Anfrage Q2; materielle Voraussetzung klären oder Risiko bewusst tragen; falls Zustimmung: Registrierung vor dem PTF-bestätigten formalen Antragstermin, nicht erst 01.06.2027; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **MATERIELLES RISIKO / POTENZIELLER BLOCKER** |
+| M3c | Aufnahme der Tätigkeit 2027 geplant? | Registrierung vor dem PTF-bestätigten formalen Antragstermin einplanen (nicht erst 01.06.2027); Stichtag bestätigen lassen; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **PLAN ERFÜLLT / STICHTAG OFFEN** |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
 | M5 | Einschlägige Vorarbeiten + umfassende Kenntnisse nachweisbar? | Bewerbungstext §11/§14 ergänzen; Nachweise | **BLOCKER**, falls kein Nachweis |
 | M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | Alle Beihilfen auflisten; De-minimis-Erklärung | **BLOCKER**, falls überschritten |
 | M7 | Kapazität für 950 h / 6 Monate (~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat))? | Kalender prüfen; sonst 850-h-Variante wählen | **PLANUNG** |
 | M8 | Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) zur Bewilligung? | Liquidität prüfen | **FORMAL** |
-| M9 | Second Stage beantragen? | Ja/Nein entscheiden; Konzept liegt vor | **PLANUNG** |
+| M9 | Second Stage beantragen? | Ja/Nein entscheiden; Konzept liegt vor | **ENTschieden: Ja (25.11.2026)** |
 
 ## B. Persönliche Angaben für das Portal
 
@@ -32,20 +32,20 @@
 | Projektlink (Q6) | `https://github.com/xxammaxx/FormBridge` (öffentlich) |
 | Bisherige Projekte (max. 3) | **ERLEDIGT 25.11.2026** — §11 final (77 W.): Feldexa 2.0, FormBridge, Umliva-Vorarbeit mit Links |
 | Motivation/persönlicher Bezug | **ERLEDIGT 25.11.2026** — §14 final (83 W.): technischer Autodidakt, Praxis, Prüfanspruch, Formularerfahrung |
-| Q4: Gesellschafter*in/GmbH/Verein/Institut? | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Ja/Nein |
-| Q5: Falls ja, Trennung erläutern | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — max. 60 Wörter |
+| Q4: Gesellschafter*in/GmbH/Verein/Institut? | **Nein** (Owner-Bestätigung 25.11.2026) — FINAL |
+| Q5: Falls ja, Trennung erläutern | **entfällt (Q4 = Nein)**; Vorlagetext 11 W. — FINAL |
 | Team | Nein (Solo) — bestätigen |
-| Arbeitsstunden | 950 oder 850 — entscheiden |
-| Q19a: 18+ / Hauptwohnsitz DE | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Checkbox |
-| Q19b: FOSS-Lizenz-Zusage | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Checkbox |
+| Arbeitsstunden | **950 entschieden (25.11.2026)** |
+| Q19a: 18+ / Hauptwohnsitz DE | **zugesagt (25.11.2026)** — Portal-Checkbox noch zu setzen |
+| Q19b: FOSS-Lizenz-Zusage | **zugesagt (25.11.2026)** — Portal-Checkbox noch zu setzen |
 
 ## C. Owner-Entscheidungen
 
 | # | Entscheidung | Optionen | Empfehlung | Status |
 |---|---|---|---|---|
 | O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** entschieden (25.11.2026), `LICENSE` committet | **ERLEDIGT** |
-| O2 | **Stunden** | 950 (Default) / 850 (bewusste Änderung) | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
-| O3 | **Second Stage** | Ja / Nein | Ja, wenn Integration/Community gewollt; sonst Nein und §16/§17 entfernen | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O2 | **Stunden** | 950 (Default) / 850 (bewusste Änderung) | **950 entschieden (25.11.2026)** | **ERLEDIGT** |
+| O3 | **Second Stage** | Ja / Nein | **Ja entschieden (25.11.2026)**; §16/§17 sind final | **ERLEDIGT** |
 | O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | Bedingte Empfehlung F3; Owner entscheidet | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O5 | **Q1/Q2/Q3-Anfragen** | senden / nicht senden | Q2 ist kritisch; Q3 nur für Maximalausschöpfung | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 

@@ -13,4 +13,20 @@
 - Original-FIM-XSD (amtlich) — Referenz: URL + SHA-256 `36250e69a5954b6e233f49a75c021e5cf2cf69a6f26a72c59829fc496ecda6d3`
 - Normalisierte XSD-Variante (Derivat des amtlichen XSD; Lizenz unklar) — **Reproduktionsverfahren** dokumentiert in reference-case-wohngeld.md (4 deterministische Schritte + Validierungsbefehl)
 
+## Hashregister der lokalen Artefakte (Stand 25.11.2026)
+
+Diese Tabelle ist die **Quelle der Wahrheit** für die Unverändertheit der veröffentlichten Forschungsartefakte. Sie wird automatisiert geprüft:
+
+```bash
+python3 -m unittest discover -s docs/research/evidence -p 'test_*.py' -v
+```
+
+| Artefakt | Bytes | Zeilen | SHA-256 |
+|---|---:|---:|---|
+| `reference-dataset.json` | 9009 | 422 | `91799582ac2d46e62a761893354dd280a12c7e5d5b52df89b0e961b6e186380d` |
+| `fim-fields-S00000159V1.4.json` | 136657 | 5122 | `663cd4a266c8c8c029e718472edcf08f83c55ffc8cfe53167803c9ad5018a5e5` |
+| `synthetic-instance.xml` | 4391 | 145 | `f02e032c51b1eae58aa8f755c08c93726b566370a7d429c32404ac8634deb5b6` |
+
+Das Register belegt **Integrität, nicht Urheberschaft**: es zeigt, dass die Dateien unverändert sind; es ersetzt keine rechtliche Prüfung der abgeleiteten FIM-Metadaten (siehe Vorbehalt oben). Die Prüfungen decken Struktur, Klassifikationsverteilung, Feldindex-Invarianten und die Bindung der synthetischen Instanz an den Index ab; sie implementieren **keine** FormBridge-Pipeline (`project-boundary.md` §C.1).
+
 **Reproduktionsbefehle:** siehe [reference-case-wohngeld.md](../reference-case-wohngeld.md) §Reproduktion.

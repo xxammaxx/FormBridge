@@ -69,7 +69,7 @@
 1. EUR-Lex direkt nicht erreichbar; Art. 3 Abs. 2 über RL-Anlage, Erwägungsgrund 11 über Snippet belegt; Art. 6 (Register) inhaltlich, nicht nummerisch unmittelbar geprüft.
 2. Q3/Q3b bleiben UNRESOLVED; nur Maximalausschöpfung (118,75 € / 96,13 €).
 3. Q1/Q2-Anfrage ist Entwurf; Q1 offenbart gegenüber PTF einen zweiten Portal-Entwurf — Owner-Abwägung vor Versand.
-4. M1–M9 offen; Q2 ist die einzige potenziell harte Hürde.
+4. M1–M9 offen (Stand 13.11.2026); Q2 war damals die einzige potenziell harte Hürde — seit 25.11.2026 gilt: Registrierung vor Förderbeginn geplant, offen nur der Stichtag.
 5. Team-Pfad W9 (Unternehmen vs. GbR) dokumentiert, nicht aufgelöst; für Solo-Baseline irrelevant.
 6. Feldexa-Kennzahlen (240 Tests, 23 Dateien) wurden nicht nachgefahren (Flutter/Fremd-Repo), aber intern konsistent.
 7. Nits: „Evaluationspflicht neu" könnte als Ä2-Neuheit gelesen werden (sie bestand 2024); „Amtssprache Deutsch" unterschlägt englische Bewerbungen (FAQ Bewerbung 08). Beide im finalen Commit präzisiert.

@@ -1,6 +1,6 @@
 # FormBridge — Bewerbung Prototype Fund 2027, Jahrgang 03, Förderlinie Innovation
 
-**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **§11/§14 final:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **§11/§14/E2–E4/S1/Q19 final:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Lizenz:** Apache-2.0 (Eigentümerentscheidung 25.11.2026; `LICENSE` im Repository, SPDX `Apache-2.0`). Die FOSS-Zusage in §18 bleibt unabhängig davon erforderlich.
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
@@ -111,13 +111,13 @@ Als Alleinentwickler konzipiere, implementiere und teste ich:
 
 **Q4 — Bist du Gesellschafter*in einer GmbH/anderen Unternehmensform, hast du einen Verein/eine Organisation gegründet oder arbeitest du für einen thematisch verbundenen Verein, ein Forschungsinstitut o. Ä.?**
 
-**Antwort:** [OWNER_BESTÄTIGUNG_ERFORDERLICH: Ja/Nein]
+**Antwort:** Nein. *(Owner-Bestätigung 25.11.2026)*
 
 **Q5 — nur falls Q4 = Ja: Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln (max. 60 Wörter).**
 
-[OWNER_BESTÄTIGUNG_ERFORDERLICH: Falls Q4 = Ja, Beteiligung/Anstellung nennen und die klare Trennung zum Projekt erläutern. Falls Q4 = Nein, Q5 entfällt.] FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.
+Entfällt (Q4 = Nein). Vorlagetext, nur relevant, falls sich diese Angabe ändert: „FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.“
 
-**Wörter Q5:** 31 / 60 (11 Token Antworttext + 20 Token Platzhalterhinweis; bei Q4 = Ja ersetzt die Owner-Antwort den Platzhalter) · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
+**Wörter Q5:** entfällt bei Q4 = Nein (Vorlagetext 11 / 60) · **Status:** FINAL (entfällt bei Nein / Vorlagetext nur falls relevant)
 
 ---
 
@@ -127,7 +127,7 @@ Als Alleinentwickler konzipiere, implementiere und teste ich:
 
 **Begründung:** 950 h entsprechen der maximalen Stundenzahl für Einzelpersonen; die Aufteilung ist im [Sechs-Monats-Plan](six-month-development-plan.md) dokumentiert. Eine realistische 850-h-Variante liegt in [budget-final.md](budget-final.md).
 
-**Status:** FINAL (950)
+**Status:** FINAL (950; Owner-Entscheidung 25.11.2026)
 
 ---
 
@@ -141,11 +141,11 @@ Ich bin technischer Autodidakt mit praktischer Erfahrung in CNC-Zerspanung, Elek
 
 ## 15. Second Stage — Ja/Nein
 
-**Antwort:** Ja. [OWNER_ENTSCHEIDUNG_ERFORDERLICH: Falls Nein, §15 auf „Nein“ setzen und §16/§17 entfernen.]
+**Antwort:** Ja. *(Owner-Entscheidung 25.11.2026)*
 
 **Begründung:** FormBridge ist Infrastruktur; der Prototyp allein erzeugt noch keine Nutzung. Die Second Stage ist für Integration, Dokumentation und Pflege sinnvoll.
 
-**Status:** OWNER_ENTSCHEIDUNG_ERFORDERLICH
+**Status:** FINAL (Ja)
 
 ---
 
@@ -153,7 +153,7 @@ Ich bin technischer Autodidakt mit praktischer Erfahrung in CNC-Zerspanung, Elek
 
 Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr Funktionsumfang. In vier Monaten will ich: (1) eine externe Integration begleiten und optional eine kommunale Testumgebung prüfen; Feldexa 2.0 bleibt optionaler Consumer, nicht geförderte Integration; (2) Integrationsrezepte, stabile Schnittstellen und Beispieldaten veröffentlichen; (3) eine kleine Regelkatalog- und Schema-Community aufbauen, mit dokumentiertem Review- und Release-Prozess; (4) Nutzertests zur Verständlichkeit von UNKNOWN und zur Review-Zeit durchführen; (5) einen Wartungsplan und eine Governance-Skizze für die Zeit nach der Förderung erstellen. Erfolg wäre: mindestens eine externe Integration, eine veröffentlichte Version 0.2 und ein dokumentierter Pflegeweg. Keine neuen Kernfunktionen, keine Produkt-UI.
 
-**Wörter:** 98 / 175 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
+**Wörter:** 98 / 175 · **Status:** FINAL (Second Stage = Ja)
 
 ---
 
@@ -164,16 +164,16 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 3. Monat: Nutzertests zu UNKNOWN/Review-Zeit, Community-Austausch, Dokumentation.
 4. Monat: Version 0.2, Wartungs- und Governance-Skizze, Abschlussbericht.
 
-**Wörter:** 29 / 100 · **Status:** FINAL (bei Second Stage = Ja; S1 bleibt Owner-Entscheidung)
+**Wörter:** 29 / 100 · **Status:** FINAL (Second Stage = Ja)
 
 ---
 
 ## 18. Bestätigungen (Handbuch Q19; Portal-Checkbox unverified)
 
-- [ ] „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ (Handbuch JG03, Q19, Sept. 2026)
-- [ ] „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ (Handbuch JG03, Q19, Sept. 2026)
+- [x] „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ (Handbuch JG03, Q19, Sept. 2026)
+- [x] „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ (Handbuch JG03, Q19, Sept. 2026)
 
-**Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH · **Hinweis:** Q19 steht **nicht** im Fragen-PDF Innovation, sondern im Handbuch und in der Portal-Checkbox; die exakte Live-Formulierung ist `PORTAL_UNVERIFIED`.
+**Status:** FINAL (Owner-Bestätigung 25.11.2026; beide Zusagen erteilt, Portal-Checkbox noch zu setzen) · **Hinweis:** Q19 steht **nicht** im Fragen-PDF Innovation, sondern im Handbuch und in der Portal-Checkbox; die exakte Live-Formulierung ist `PORTAL_UNVERIFIED`.
 
 ---
 

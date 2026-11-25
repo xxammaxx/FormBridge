@@ -8,17 +8,17 @@
 
 | ID | Frage | Klassifikation | Blockiert? | Begründung / Quelle | Was der Owner tun muss |
 |---|---|---|---|---|---|
-| M1 | Mindestalter 18? | REQUIRES_OWNER_INPUT | **BLOCKER** | RL Nr. 3; FAQ Bewerbung 02 | Eigene Bestätigung; kein Nachweis im Repo nötig |
-| M2 | Wohnsitz Deutschland + Steuern in DE? | REQUIRES_OWNER_INPUT | **BLOCKER** | FAQ Bewerbung 02 | Eigene Bestätigung; ggf. Melde-/Steuernachweis |
-| M3a | Selbstständig oder freiberuflich? | REQUIRES_OWNER_INPUT | **BLOCKER**, falls weder a noch b noch c | FAQ Bewerbung 02 | Status klären |
-| M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für die Laufzeit? | REQUIRES_OWNER_INPUT | **BLOCKER**, falls nicht freigestellt | FAQ Bewerbung 02 FN** | Freistellung schriftlich klären |
-| M3c | Selbstständigkeit erst ab Förderbeginn geplant? | REQUIRES_AUTHORITY_CLARIFICATION | **POTENZIELLER BLOCKER** | Nicht explizit geregelt (Q2) | PTF-Anfrage; Gewerbe-/Finanzamt-Timing |
+| M1 | Mindestalter 18? | **BEANTWORTET (25.11.2026)** | nicht blockierend | RL Nr. 3; FAQ Bewerbung 02 | Owner hat bestätigt; kein Nachweis im Repo nötig |
+| M2 | Wohnsitz Deutschland + Steuern in DE? | **BEANTWORTET (25.11.2026)** | nicht blockierend | FAQ Bewerbung 02 | Owner hat bestätigt; ggf. Melde-/Steuernachweis im Portal |
+| M3a | Selbstständig oder freiberuflich? | **GEPLANT: Registrierung vor Förderbeginn (01.06.2027) und vor dem formalen BMFTR-Antrag** | nicht blockierend bei diesem Plan | FAQ Bewerbung 02; RL Nr. 3 | Registrierung terminieren; Stichtag mit PTF klären (Q2) |
+| M3b | Angestellt + (anteilige) Arbeitgeber-Freistellung für die Laufzeit? | **NICHT EINSCHLÄGIG** (Plan: selbstständige Tätigkeit in der Laufzeit) | nicht blockierend | FAQ Bewerbung 02 FN** | nur relevant, falls doch eine Anstellung besteht |
+| M3c | Selbstständigkeit ab 2027 geplant? | **PLAN ERFÜLLT; offen ist nur der exakte Stichtag** (`REQUIRES_AUTHORITY_CLARIFICATION` für den Stichtag) | **nicht blockierend bei Registrierung vor Förderbeginn** | Öffentlich nicht geregelt (Q2) | Registrierung vor dem PTF-bestätigten formalen Antragstermin einplanen; Stichtag schriftlich bestätigen lassen |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | **BEANTWORTET / FINAL im Bewerbungstext** (25.11.2026) | nicht mehr blockierend | FAQ Förderung 08; §14 | §14 beschreibt Praxis, Datenmodelle, Skripte und automatisierte Tests; Owner bestätigt damit die Programmierpraxis |
 | M5 | „Einschlägige Vorarbeiten + umfassende Kenntnisse" nachweisbar? | **BEANTWORTET / FINAL im Bewerbungstext** (25.11.2026) | nicht mehr blockierend | RL Nr. 3; §11 (Feldexa 2.0, FormBridge, Umliva-Vorarbeit) und §14 (Praxis, Arbeitsweise) | Nachweis im Antragstext erbracht; öffentliche Repos verlinkt |
 | M6 | De-minimis-Historie: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | REQUIRES_OWNER_INPUT | **BLOCKER**, falls überschritten | RL Anlage Nr. 1; VO 2023/2831 Art. 3 | Alle Beihilfen der letzten 3 Jahre auflisten; De-minimis-Erklärung |
 | M7 | Kapazität ~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat) (950 h/6 M.) real leistbar? | REQUIRES_OWNER_INPUT | **PLANNING** (kein formaler Blocker, aber Realismusrisiko) | FAQ Förderung 01; Handbuch Frage 14 | Kalender-/Kapazitätsplan; ggf. Stunden reduzieren |
 | M8 | Kontoauszug mit Saldo >= Eigenanteil (2.493,75 €; 2.500 € deckt alle Lesarten) zur Bewilligung? | REQUIRES_OWNER_INPUT | **BLOCKER bei Bewilligung**, nicht bei Einreichung | RL Nr. 4; FAQ Auswahl 03 | Liquidität prüfen; Kontoauszug zum richtigen Zeitpunkt |
-| M9 | Second Stage beantragen? | REQUIRES_OWNER_INPUT | **Kein Blocker** (optional) | Handbuch Frage 16; Detailseite | Strategische Entscheidung; nur jetzt möglich |
+| M9 | Second Stage beantragen? | **BEANTWORTET: Ja (25.11.2026)** | kein Blocker | Handbuch Frage 16; Detailseite | §15–§17 sind final |
 
 ## Projektknoten P1–P6 (objektiv, nicht personenbezogen)
 
@@ -63,4 +63,4 @@ Die einzige Kombination, die eine sonst förderfähige Person **hart** ausschlie
 - Keine Offenlegung privater Dokumente, die für die Förderung nicht erforderlich sind.
 - Keine Festlegung auf eine Lizenz, bevor der Owner die Lizenzentscheidung treffen will (aber die FOSS-Zusage muss im Antrag stehen).
 
-**Status:** Alle persönlichen Fragen bleiben **offen**. Dieses Dokument ersetzt keine rechtliche Beratung und keine Prüfung durch den Projektträger.
+**Status (25.11.2026):** **M1, M2, M4, M5 und M9 sind beantwortet**; M3a–M3c sind durch den Registrierungsplan vor Förderbeginn erfüllt, offen ist nur der exakte **Stichtag** (Q2). Weiterhin offen: **M6** (De-minimis), **M7** (Kapazität), **M8** (Liquiditätsnachweis) und die Portal-Stammdaten. Dieses Dokument ersetzt keine rechtliche Beratung und keine Prüfung durch den Projektträger.

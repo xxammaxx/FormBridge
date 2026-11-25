@@ -39,7 +39,7 @@
 
 1. **Portal-Login/Live-Abgleich:** Felder, Zeichenlimits und Pflichtfeldmarkierungen sind ohne Owner-Sitzung `PORTAL_UNVERIFIED`.
 2. **Persönliche Angaben:** Accountname, Vorname/Name, E-Mail, Wohnsitzland/-ort, persönlicher GitHub-Link, §11-Projekte, §14-Motivation, Q4/Q5, Q19.
-3. **Q2:** formale Zulassungsvoraussetzung derzeit nicht erfüllt; PTF-Antwort oder bewusste Owner-Risikoentscheidung nötig. Schnellster Kanal: Bewerbungssprechstunde **16.11.2026, 17:00 Uhr**.
+3. **Q2 (Stand 14.11.2026):** damals war die formale Zulassungsvoraussetzung nicht erfüllt. **Seit 25.11.2026:** Registrierung vor Förderbeginn und vor dem formalen BMTFR-Antrag geplant; offen ist nur der exakte Stichtag (PTF-Auskunft).
 4. **Owner-Entscheidungen:** Second Stage Ja/Nein, 950/850 h, ggf. Lizenz.
 
 ## Verifikation

@@ -65,10 +65,10 @@ Reihenfolge: §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8 → §9
 - [ ] Keine Platzhalter mehr im Portaltext.
 - [ ] Wort-/Zeichenlimits eingehalten.
 - [ ] Projektlink `https://github.com/xxammaxx/FormBridge` korrekt.
-- [ ] Stunden = 950 (Default) oder 850 (bewusste Owner-Änderung), konsistent mit Budget/Plan.
+- [ ] Stunden = **950** (entschieden 25.11.2026), konsistent mit Budget/Plan.
 - [ ] Second Stage = Ja/Nein, konsistent mit §16/§17.
-- [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
-- [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) gesetzt.
+- [ ] Q4 (Ja/Nein) beantwortet: **Nein** (final, 25.11.2026); Q5 entfällt bei Q4 = Nein (Vorlagetext 11 W. nur falls relevant).
+- [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) im Portal angekreuzt — beide Zusagen liegen seit 25.11.2026 vor.
 - [ ] Q2-Risiko: keine falsche Selbstständigkeitsangabe; Owner hat die materielle Voraussetzung geprüft oder das Risiko bewusst akzeptiert.
 - [ ] FOSS-Zusage gesetzt; Lizenzstatus korrekt (offen oder entschieden).
 - [ ] Keine sensiblen personenbezogenen Daten in öffentlichen Feldern, die nicht erforderlich sind.

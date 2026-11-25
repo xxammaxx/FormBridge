@@ -22,9 +22,9 @@
 | G2 | **PTF-Bewerbung einreichen?** | ja/nein | Start des Verfahrens | 30.11.2026 |
 | G3 | **Leistungsweg** | Grundsicherungsgeld/Jobcenter · ALG I/Agentur · keiner | Einstiegsgeld/GZ-Strategie | nach Auswahl |
 | G4 | **Gründungsvariante** | A (nach Auswahl) / B (früher) / C (keine) | Risiko/Zeitplan | nach Q2 |
-| G5 | **Stunden** | 950 (Default) / 850 | Förderhöhe/Kapazität | vor Einreichung |
-| G6 | **Second Stage** | Ja (Default) / Nein | §16/§17 | vor Einreichung |
-| G7 | **Lizenz** | Apache-2.0 (Empfehlung) / andere OSI / offen | FOSS-Zusage | vor Einreichung |
+| G5 | **Stunden** | 950 (Default) / 850 | Förderhöhe/Kapazität | **ERLEDIGT: 950 (25.11.2026)** |
+| G6 | **Second Stage** | Ja (Default) / Nein | §16/§17 | **ERLEDIGT: Ja (25.11.2026)** |
+| G7 | **Lizenz** | Apache-2.0 (Empfehlung) / andere OSI / offen | FOSS-Zusage | **ERLEDIGT: Apache-2.0 (25.11.2026)** |
 | G8 | **Projektfassung** | F3 FormBridge (Empfehlung) / F1 / F2 / RepairProbe | Antragsobjekt | vor Einreichung |
 | G9 | **Q3/Q3b-Anfrage** | ja/nein | Maximalausschöpfung | optional |
 | G10 | **Held-out-PDF/Rechte** | vorhanden/beschaffen/Fallback | Evaluationsqualität | vor Förderbeginn |

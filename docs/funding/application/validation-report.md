@@ -1,9 +1,9 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 14.11.2026
-**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 249, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
+**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 250, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
 **Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `58edd9f73bf986d688bc6e241446c57b5b782d59`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
-**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, die verbleibenden persönlichen Angaben (A2–A5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung; §11 (E1) und §14 (E5) sind seit 25.11.2026 final. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
+**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; §11, §12, §13, §14, §15 und §18 sind seit 25.11.2026 final. Offen sind nur noch der authentifizierte Live-Abgleich, die Portal-Stammdaten A2–A5, De-minimis (M6), Kapazität/Liquidität (M7/M8) und die **Stichtagsfrage** aus Q2 (Registrierung vor Förderbeginn geplant). Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
 
 ## 0. Nachführung auf den Branch-Tip (25.11.2026)
 
@@ -11,9 +11,11 @@
 |---|---|
 | Nachführungs-Commit | `58edd9f73bf986d688bc6e241446c57b5b782d59` — alle Metriken dieser Tabelle gelten für diesen Baum; danach folgt nur noch eine Kennzeichnungs-Ergänzung ohne Inhaltsänderung |
 | Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
-| Relative Links (Markdown, Branch-Baum) | **249 geprüft, 0 gebrochen** |
+| Relative Links (Markdown, Branch-Baum) | **250 geprüft, 0 gebrochen** |
 | Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
 | Owner-Texte §11 (E1) / §14 (E5) | **final** (25.11.2026): 77/100 bzw. 83/100 Wörter, Status FINAL, Platzhalter entfernt; synchronisiert in `portal-field-mapping.md`, `portal-preflight-2026-11-14.md`, `owner-checklist.md` |
+| Owner-Entscheidungen §12 (E2/E3), §13 (E4), §15 (S1), §18 (Q19a/b) | **final** (25.11.2026): E2 = Nein (E3 entfällt, Vorlagetext 11 W.), 950 h, Second Stage = Ja (§16/§17 final), beide Q19-Zusagen erteilt |
+| Evidenz-Integritätssuite | **19/19 PASS** (`python3 -m unittest discover -s docs/research/evidence -p 'test_*.py' -q`); Hashregister in [EVIDENCE.md](../../research/evidence/EVIDENCE.md) |
 | Q5/E3-Wortzahl | **31 W. inkl. Platzhalterhinweis (11 W. Antworttext) / 60** — einheitlich in application-final-de.md, portal-field-mapping.md, portal-preflight-2026-11-14.md |
 | Überschriebene Abweichungen | frühere Zahlen aus älteren Baselines (`§2 97`, `§3 169`, `§4 133`, `Q5 21` als Fehlzählung) sind in [portal-field-mapping.md](portal-field-mapping.md) durch die verifizierten Werte ersetzt; der Preflight-Snapshot kennzeichnet seine Zahlen als historisch |
 
@@ -65,16 +67,16 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 
 | # | Blocker | Status | Was fehlt |
 |---|---|---|---|
-| M1 | Alter ≥ 18 | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M2 | Wohnsitz DE + Steuern DE | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme erst 2027 | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + PTF-Antwort (Q2); **formale Zulassungsvoraussetzung derzeit nicht erfüllt**; falls Zustimmung: Registrierung vor PTF-bestätigtem formalem Antrag |
+| M1 | Alter ≥ 18 | **BEANTWORTET (25.11.2026)** | Owner-Bestätigung liegt vor |
+| M2 | Wohnsitz DE + Steuern DE | **BEANTWORTET (25.11.2026)** | Owner-Bestätigung liegt vor |
+| M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme 2027 | Plan: **Registrierung vor Förderbeginn (01.06.2027)** und vor dem formalen BMFTR-Antrag | Offen ist nur der exakte **Stichtag** (Online-Bewerbung vs. formaler Antrag März 2027) — PTF-Auskunft ausstehend; nicht blockierend bei Registrierung vor Förderbeginn |
 | Q2 | Materielle Selbstständigkeitsvoraussetzung und Nachweiszeitpunkt | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen; Online-Fragen ohne Statusfeld; JG02-Wiki verlangt Steuernummer zum formalen Antrag. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
-| M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
+| M4 | Programmierkenntnisse | **belegt (25.11.2026)** | §14 beschreibt Praxis, Datenmodelle, Skripte und automatisierte Tests |
 | M5 | Vorarbeiten/Kenntnisse | **erledigt (25.11.2026)** | §11/§14 final personalisiert (77 bzw. 83 W.) |
 | M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
 | M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
 
-**Q2/M3c** ist das zentrale materielle Risiko. **Keine Anfrage versendet.** Die Quellenlage ist **widersprüchlich**: FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die Online-Fragen enthalten kein Statusfeld. Das JG02-Wiki verlangt eine Steuernummer/Anmeldung zum **formalen Antrag**. „Erst zum 01.06.2027" ist **nicht sicher**; konservativ: Registrierung **vor dem PTF-bestätigten formalen Antragstermin** oder Arbeitgeber-Freistellung. Die materielle Förderfähigkeit bleibt offen.
+**Q2/M3c** bleibt die einzige offene Zulassungsfrage — als **Stichtagsfrage**, nicht als Erfüllungsfrage. Die Quellenlage ist **widersprüchlich**: FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die Online-Fragen enthalten kein Statusfeld; das JG02-Wiki verlangt eine Steuernummer/Anmeldung zum **formalen Antrag**. Der Plan erfüllt die Voraussetzung, indem die selbstständige/freiberufliche Registrierung **vor dem formalen Förderbeginn (01.06.2027)** und **vor dem formalen BMFTR-Antrag** erfolgt; nur der exakte Stichtag ist noch zu bestätigen. **Keine Anfrage versendet.**
 
 ### 3.2 Portal-Live-Prüfung
 
@@ -85,9 +87,9 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 
 ### 3.3 Owner-Entscheidungen
 
-- Lizenz (Apache-2.0 empfohlen, nicht festgelegt).
-- 950 oder 850 h (Default 950; 850 nur bewusste Änderung).
-- Second Stage Ja/Nein (Default Ja; §16/§17 sonst entfernen).
+- ~~Lizenz~~ — **entschieden: Apache-2.0 (25.11.2026)**, `LICENSE` committet.
+- ~~950 oder 850 h~~ — **entschieden: 950 h (25.11.2026)**.
+- ~~Second Stage Ja/Nein~~ — **entschieden: Ja (25.11.2026)**, §16/§17 final.
 - Projektfassung F1/F2/F3 vs. RepairProbe.
 - Q3/Q3b-Anfrage senden oder zurückstellen.
 - Held-out-PDF/Rechte; Fürther PDF/FIM-XSD-Rechte.
@@ -105,7 +107,7 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 
 | Punkt | Ergebnis |
 |---|---|
-| Materielle Teilnahmevoraussetzung | **Formale Zulassungsvoraussetzung derzeit nicht erfüllt:** BMFTR-RL Nr. 3 und JG03-FAQ/Bewerbungsseite verlangen selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Arbeitgeber-Freistellung. Das JG03-Handbuch listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen (Redaktionslücke), spricht von „Privatperson“. **Materielles Risiko**, PTF-Anfrage nötig. |
+| Materielle Teilnahmevoraussetzung | **Plan erfüllt; offen ist der Stichtag:** BMFTR-RL Nr. 3 und JG03-FAQ/Bewerbungsseite verlangen selbstständige Programmierer*innen bzw. Freiberuflichkeit oder Arbeitgeber-Freistellung. Die selbstständige/freiberufliche Registrierung ist **vor Förderbeginn (01.06.2027) und vor dem formalen BMFTR-Antrag** eingeplant; zu bestätigen ist nur der exakte Stichtag. Das JG03-Handbuch listet die Voraussetzung **nicht** unter den zwingenden Förderbedingungen (Redaktionslücke) und spricht von „Privatperson“. |
 | Nachweiszeitpunkt | Offizielle Online-Fragen (Innovation) enthalten **kein** Steuernummer-/Selbstständigkeitsfeld. JG03-Checkliste für Einzelpersonen: keine Solo-Steuernummer; JG02-Wiki: zum formalen Antrag. **Offen.** |
 | Formaler Antrag | Antragswerkstatt **März 2027**; Detailseite nennt zugleich „bis Ende Februar“. **Terminwiderspruch**, PTF-bestätigen lassen. |
 | „Erst zum 01.06.2027“ | **nicht sicher**; formaler Antrag liegt vor Förderbeginn; Registrierung ≠ Aufnahme |

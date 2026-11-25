@@ -5,7 +5,7 @@
 
 | Dokument | Zweck | Status |
 |---|---|---|
-| [application-final-de.md](application-final-de.md) | Vollständiger deutscher Bewerbungstext mit Wortlimits; §11/§14 final, restliche Owner-Platzhalter A2–A5, Q4/Q5, Q19 | READY_WITH_REMAINING_OWNER_INPUT |
+| [application-final-de.md](application-final-de.md) | Vollständiger deutscher Bewerbungstext mit Wortlimits; **§11–§15 und §18 final**, keine Textplatzhalter mehr; offen sind nur die Portal-Stammdaten A2–A5 | READY_FOR_PORTAL_FIELDS |
 | [portal-field-mapping.md](portal-field-mapping.md) | Offizielle Fragen, Wortlimits, Antwortzuordnung, Portal-Unbekannte | READY_WITH_PORTAL_CHECK |
 | [six-month-development-plan.md](six-month-development-plan.md) | 950-h-Plan, 850-h-Alternative, Deliverables, Tests, Risiken | DELTA_VALIDATED |
 | [budget-final.md](budget-final.md) | Baseline 950 h, 850-Variante, 800-Sensitivität, Q3/Q3b, Cash-Flow, De-minimis | DELTA_VALIDATED |
@@ -32,6 +32,6 @@
 
 **Hinweis zum Delta:** Die historischen A/B-PASS-Berichte gelten für die damaligen SHAs; die neue Fassung hat eine eigene dokumentarische Revalidierung, keine neue unabhängige Förderzusage. Der RF1-LoRA-Vergleich ist optional und ohne zusätzlichen Förderbetrag; RF1 ausschließlich lokal; frühere Cloud-Referenzoption durch die aktuelle Offline-Abgrenzung ersetzt. Externe Kostenklärung bleibt für eine eventuelle spätere, separat freigegebene Änderung offen. Die mögliche Veröffentlichung nachnutzbarer RF1-Werkzeuge ist ein zusätzlicher Gemeinwohlbeitrag, kein zweites Förderprojekt. [Revalidierung des Offline-Deltas vom 20.11.2026](revalidation-offline-rf1-2026-11-20.md).
 
-**Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung (formale Zulassungsvoraussetzung derzeit nicht erfüllt). **Keine Einreichung ohne Owner-Freigabe.**
+**Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; entschieden sind Lizenz (Apache-2.0), Stunden (950), Second Stage (Ja) und die Q19-Zusagen. Offen sind nur der authentifizierte Live-Abgleich, die Portal-Stammdaten A2–A5, De-minimis/Kapazität/Liquidität (M6–M8) und der **Stichtag** aus Q2 (Registrierung vor Förderbeginn geplant). **Keine Einreichung ohne Owner-Freigabe.**
 
 **Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung ohne Owner-Freigabe (Apache-2.0 am 25.11.2026 freigegeben), keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.

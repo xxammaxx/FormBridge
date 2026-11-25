@@ -9,7 +9,7 @@
 | ID | Frage | Klassifikation | Blockiert die Einreichung? | Wirkung |
 |---|---|---|---|---|
 | Q1 | Mehrere gleichzeitige Förderungen einer Person | REQUIRES_AUTHORITY_CLARIFICATION | Nein, für **eine** Einreichung; ja, wenn beide Projekte parallel gefördert werden sollen | Strategie |
-| Q2 | Selbstständigkeit erst ab Förderbeginn | REQUIRES_AUTHORITY_CLARIFICATION | **Ja, potenziell harte Hürde** | Formale Antragsberechtigung |
+| Q2 | Selbstständigkeit: exakter Stichtag | REQUIRES_AUTHORITY_CLARIFICATION (nur Stichtag) | Nein bei Registrierung vor Förderbeginn | Formale Antragsberechtigung |
 | Q3 | 47.500 € vs. 47.381,25 € (GK-/95-%-Logik) | **UNRESOLVED / REQUIRES_AUTHORITY_CLARIFICATION** | Nein, bei konservativer Planung; ja nur für Maximalausschöpfung | 118,75 € |
 | Q3b | Second Stage 31.667 € vs. 31.570,87 € | **UNRESOLVED / REQUIRES_AUTHORITY_CLARIFICATION** | Nein, bei konservativer Planung | 96,13 € |
 | Q4 | Erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" | REQUIRES_AUTHORITY_CLARIFICATION | Nein (weiche Bewertung) | Bewerbungstext |
@@ -27,11 +27,11 @@
 
 ## Q2 — Selbstständigkeit: Bewerbung, formaler Antrag, Förderbeginn (CONTRADICTED)
 
-- **Bekannt:** FAQ Bewerbung 02 und Bewerbungsseite verlangen „selbstständig oder freiberuflich“ **oder** eine anteilige Arbeitgeber-Freistellung. Das **JG03-Handbuch** (Sept. 2026) listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. Die **Online-Fragen Innovation** enthalten kein Steuernummer-/Statusfeld. **JG03-FAQ Auswahl 03:** für Einzelpersonen keine Solo-Steuernummer; **JG02-Wiki** (03.03.2026): Steuernummer/Anmeldung zum formalen Antrag. **Formale Zulassungsvoraussetzung derzeit nicht erfüllt; Widerspruch beim Nachweiszeitpunkt.**
+- **Bekannt:** FAQ Bewerbung 02 und Bewerbungsseite verlangen „selbstständig oder freiberuflich“ **oder** eine anteilige Arbeitgeber-Freistellung. Das **JG03-Handbuch** (Sept. 2026) listet Selbstständigkeit **nicht** unter den zwingenden Förderbedingungen und spricht von „Privatperson“. Die **Online-Fragen Innovation** enthalten kein Steuernummer-/Statusfeld. **JG03-FAQ Auswahl 03:** für Einzelpersonen keine Solo-Steuernummer; **JG02-Wiki** (03.03.2026): Steuernummer/Anmeldung zum formalen Antrag. **Plan erfüllt die Voraussetzung** (Registrierung vor Förderbeginn und vor dem formalen Antrag); offen ist der **Nachweiszeitpunkt**.
 - **Fehlt:** Ob die Selbstständigkeit bereits zur **Online-Bewerbung** (Nov 2026) materielle Voraussetzung ist, ob sie bis zum **formalen Antrag** (März 2027 / Ende Feb) genügt oder ob eine Aufnahme **erst zum Förderbeginn** (01.06.2027) akzeptiert wird — und welcher Nachweis zu welchem Zeitpunkt.
 - **Tendenz (keine Rechtsaussage):** Eine Registrierung **vor dem PTF-bestätigten formalen Antragstermin** ist die konservative Planung; „erst zum Förderbeginn“ ist **nicht sicher** tragfähig. Das JG03-Handbuch stützt die Bewerbung als Privatperson, entkräftet die FAQ aber nicht ausdrücklich.
 - **Relevanz:** Entscheidend, falls der Owner derzeit nicht selbstständig/freiberuflich ist und keine Freistellung hat.
-- **Verbindlich nötig?** **Ja — materielles Teilnahmerisiko, nicht nur Nachweis-/Zeitplanfrage.**
+- **Verbindlich nötig?** **Ja, aber nur für den Stichtag** — nicht für die Erfüllung: die Registrierung ist vor dem formalen Antrag und vor dem Förderbeginn eingeplant.
 - **Vollständige Analyse:** [q2-employment-status.md](q2-employment-status.md).
 - **Abhängige Entscheidung:** A2 (PTF-Query) und Gewerbe-/Finanzamt-Timing; Owner-Checkliste M3c.
 
@@ -79,4 +79,4 @@
 - **Relevanz:** Nur falls der Owner 10 Monate anstrebt; für die 6-Monats-Baseline irrelevant.
 - **Verbindlich nötig?** Nein für die 6-Monats-Einreichung; ja für die 10-Monats-Planung.
 
-**Fazit:** Q2 ist die einzige potenziell **harte** formale Hürde. Q1/Q3/Q3b/Q4/Q5/Q7 sind Klärungen, die die Planung verbessern, aber eine Einreichung mit konservativer Planung nicht blockieren. Q6 ist gegenstandslos. **Keine Anfrage wurde versendet.**
+**Fazit:** Q2 bleibt die einzige offene Zulassungsfrage — als **Stichtagsfrage** (Registrierung vor Förderbeginn geplant), nicht als Erfüllungsfrage. Q1/Q3/Q3b/Q4/Q5/Q7 sind Klärungen, die die Planung verbessern, aber eine Einreichung mit konservativer Planung nicht blockieren. Q6 ist gegenstandslos. **Keine Anfrage wurde versendet.**

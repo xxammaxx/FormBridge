@@ -50,25 +50,25 @@
 | T1 | Bewerbt ihr euch als Team um die Förderung? | 30 Wörter (gesamtes Teamfeld) | §10: Nein (7 W.) | FINAL |
 | T2 | Für Teams: Namen der Teammitglieder (verbindliche Nennung), Funktion im Team sowie geschätzte Wochenstunden pro Teammitglied. | dasselbe 30-Wörter-Feld | nicht ausgefüllt (Solo) | NOT_APPLICABLE |
 | E1 | An welchen Software-Projekten hast du / habt ihr bisher gearbeitet? **Bei Open-Source-Projekten bitte einen Link zum Repository angeben.** Max. 3 Beispiele. | 100 Wörter | §11 (77 W.) | FINAL |
-| E2 | Bist du oder sind deine Teammitglieder Gesellschafter*innen einer GmbH (oder andere Unternehmensform), haben einen Verein oder eine Organisation gegründet oder arbeiten für einen thematisch mit dem Projekt verbundenen Verein, ein Forschungsinstitut o. Ä.? | Ja/Nein | §12 Q4: `[OWNER_BESTÄTIGUNG]` | OWNER_BESTÄTIGUNG_ERFORDERLICH |
-| E3 | Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln. | 60 Wörter | §12 Q5 (31 W. inkl. Platzhalterhinweis, 11 W. Antworttext) | OWNER_BESTÄTIGUNG_ERFORDERLICH |
-| E4 | Wie viele Stunden willst du (bzw. will das Team) in den 6 Monaten Förderzeitraum insgesamt an der Umsetzung arbeiten? | Zahl, max. 950 | §13: 950 | FINAL (950; 850 nur bei Owner-Änderung) |
+| E2 | Bist du oder sind deine Teammitglieder Gesellschafter*innen einer GmbH (oder andere Unternehmensform), haben einen Verein oder eine Organisation gegründet oder arbeiten für einen thematisch mit dem Projekt verbundenen Verein, ein Forschungsinstitut o. Ä.? | Ja/Nein | §12 Q4: **Nein** (Owner-Bestätigung 25.11.2026) | FINAL |
+| E3 | Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln. | 60 Wörter | §12 Q5: **entfällt (Q4 = Nein)**; Vorlagetext 11 W. | FINAL (entfällt bei Nein / Vorlagetext nur falls relevant) |
+| E4 | Wie viele Stunden willst du (bzw. will das Team) in den 6 Monaten Förderzeitraum insgesamt an der Umsetzung arbeiten? | Zahl, max. 950 | §13: **950** | FINAL (Owner-Entscheidung 25.11.2026) |
 | E5 | Erfahrung, Hintergrund, Motivation, Perspektive: Was sollte die Jury über dich (bzw. euch) wissen und bei der Auswahl berücksichtigen? | 100 Wörter | §14 (83 W.) | FINAL |
 
 ## D. Second Stage
 
 | # | Offizielle Frage (wörtlich) | Limit | Antwort | Status |
 |---|---|---|---:|---|
-| S1 | Beantragst du die viermonatige Second-Stage-Förderung nach Ablauf der sechsmonatigen regulären Förderung? | Ja/Nein | §15: Ja | OWNER_ENTSCHEIDUNG |
-| S2 | Wenn du eine Verlängerung beantragen möchtest: Erzähle uns kurz, was dein Projekt braucht, um aus dem Prototypen-Stadium herauszukommen und wie du dein Projekt in den vier Monaten nachhaltig aufbauen willst. | 175 Wörter | §16 (98 W.) | FINAL (bei Ja; S1 Owner) |
-| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (29 W.) | FINAL (bei Ja; S1 Owner) |
+| S1 | Beantragst du die viermonatige Second-Stage-Förderung nach Ablauf der sechsmonatigen regulären Förderung? | Ja/Nein | §15: **Ja** | FINAL (Owner-Entscheidung 25.11.2026) |
+| S2 | Wenn du eine Verlängerung beantragen möchtest: Erzähle uns kurz, was dein Projekt braucht, um aus dem Prototypen-Stadium herauszukommen und wie du dein Projekt in den vier Monaten nachhaltig aufbauen willst. | 175 Wörter | §16 (98 W.) | FINAL (Second Stage = Ja) |
+| S3 | Skizziere die wichtigsten Meilensteine, die in der viermonatigen Verlängerung deines Förderzeitraum umgesetzt werden sollen. | 100 Wörter | §17 (29 W.) | FINAL (Second Stage = Ja) |
 
 ## E. Bestätigungen (Q19; Handbuch, Portal-Checkbox unverified)
 
 | # | Bestätigung | Quelle | Status |
 |---|---|---|---|
-| Q19a | „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
-| Q19b | „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | OWNER_BESTÄTIGUNG_ERFORDERLICH |
+| Q19a | „Ich bin über 18 Jahre alt und habe meinen Hauptwohnsitz in Deutschland.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | FINAL (Owner-Bestätigung 25.11.2026; Portal-Checkbox offen) |
+| Q19b | „Ich bin damit einverstanden, die Projektergebnisse unter einer Open-Source-Lizenz (z. B. MIT-Lizenz), öffentlich zugänglich (z. B. über Github/Gitlab/Codeberg) zur Verfügung zu stellen.“ | Handbuch JG03, Q19, Sept. 2026; **nicht im Fragen-PDF Innovation** | FINAL (Owner-Bestätigung 25.11.2026; Portal-Checkbox offen) |
 
 **Hinweis:** Q19 ist **nicht** im Fragen-PDF Innovation enthalten. Der Inhalt ist im Handbuch belegt; die exakte Checkbox-Formulierung und Reihenfolge im Portal ist `PORTAL_UNVERIFIED`.
 
