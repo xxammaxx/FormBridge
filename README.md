@@ -2,14 +2,15 @@
 
 Der Branch `gh-pages` enthält die statische Projektpräsentation, den Erklärfilm und die Simulation mit fiktiven Daten. Er enthält **keine** Forschungsdokumentation.
 
-## Wo liegt welche Dokumentation?
+## Wo liegt die Dokumentation?
 
 | Ort | Inhalt | Status |
 |---|---|---|
-| `main` | Ursprünglicher Recherche-Baseline-Stand (13.11.2026, 3 Commits) | **Baseline**, nicht mehr aktuell |
-| `docs/funding-decision-2026-11-13` | Aktive Forschung, Prototype-Fund-Bewerbungspaket (`docs/funding/application/**`) und Entscheidungsdokumente (`docs/funding/decision/**`) | **maßgeblich**, offener Draft-PR [#1](https://github.com/xxammaxx/FormBridge/pull/1) |
+| `main` | Forschungsdokumentation, Evidenz, technische Spezifikation **und** das vollständige Prototype-Fund-Bewerbungspaket (`docs/funding/application/**`, `docs/funding/decision/**`) sowie `LICENSE` (Apache-2.0) | **maßgeblich** |
+| `docs/funding-decision-2026-11-13` | Arbeitsbranch der Bewerbungsvorbereitung; am 25.11.2026 nach `main` gemergt, Inhalt identisch | historisch / identisch |
+| `5ad209a` | Ursprünglicher Recherche-Baseline-Stand (13.11.2026) | historischer Ausgangsstand |
 
-Bis PR #1 gemergt ist, sind die Dokumentationslinks auf dieser Website (`blob/main/...`) an den **Baseline-Stand auf `main`** gebunden. Sie können daher von der aktuellen Forschung abweichen; maßgeblich ist der Branch `docs/funding-decision-2026-11-13`. Nach dem Merge werden die Links auf den dann aktuellen `main`-Stand umgestellt.
+Die Dokumentationslinks dieser Website (`blob/main/...`) verweisen damit auf den **aktuellen** Stand: ADR-001, Lizenz-Entscheidung, Prior-Art-Audit, Referenzfall, technische Spezifikation und Referenzdatensatz sind nach dem Merge vom 25.11.2026 unverändert gültig.
 
 ## Prüfen
 
