@@ -32,10 +32,10 @@
 
 ## 3. Was der Owner liefern muss
 
-- M1–M6: Ja/Nein-Bestätigungen (Alter, Wohnsitz/Steuern, Status/Freistellung, Programmierkenntnisse, Vorarbeiten, De-minimis).
-- M7: Kapazität 950/850.
-- M8: Kontoauszug-Saldo ≥ 2.493,75 € (950 h; 2.500 € empfohlen).
-- M9: Second Stage Ja/Nein.
+- M1–M9: **beantwortet** (M1/M2/M4/M5/M9 bestätigt bzw. im Antragstext belegt, M3a–c Registrierungsplan, M6 0 €, M7/M8 bestätigt).
+- M7: Kapazität 950 h bestätigt/geplant (158 h/Monat im Schnitt).
+- M8: Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) bestätigt/geplant — Vorlage bei Bewilligung.
+- M9: Second Stage **Ja** (entschieden 25.11.2026).
 - Lizenz, Stunden, Projektfassung.
 - Q4/Q5 (Beteiligungen) und Q19a/b im Portal.
 - Keine sensiblen Werte im Repo.

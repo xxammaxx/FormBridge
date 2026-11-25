@@ -22,7 +22,7 @@ git rev-parse HEAD
 python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -v
 ```
 
-Erwartet: Branch `docs/funding-decision-2026-11-13`, Working Tree clean, **109/109 Tests OK**. Linkcheck: 0 gebrochene relative Links.
+Erwartet: Branch `main` (seit 25.11.2026 konsolidiert), Working Tree clean, **109/109 Finanztests und 19/19 Evidenztests OK**. Linkcheck: 0 gebrochene relative Links.
 
 **Owner-Checkliste:** [owner-checklist.md](owner-checklist.md) vollständig abarbeiten. Besonders:
 

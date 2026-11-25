@@ -14,9 +14,9 @@
 | M3c | Aufnahme der Tätigkeit 2027 geplant? | Registrierung vor dem PTF-bestätigten formalen Antragstermin einplanen (nicht erst 01.06.2027); Stichtag bestätigen lassen; Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) | **PLAN ERFÜLLT / STICHTAG OFFEN** |
 | M4 | Notwendige Programmierkenntnisse vorhanden (KI nur Werkzeug)? | Eigene Bestätigung; ggf. Code-/Projektnachweise | **BLOCKER** |
 | M5 | Einschlägige Vorarbeiten + umfassende Kenntnisse nachweisbar? | Bewerbungstext §11/§14 ergänzen; Nachweise | **BLOCKER**, falls kein Nachweis |
-| M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | Alle Beihilfen auflisten; De-minimis-Erklärung | **BLOCKER**, falls überschritten |
-| M7 | Kapazität für 950 h / 6 Monate (~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat))? | Kalender prüfen; sonst 850-h-Variante wählen | **PLANUNG** |
-| M8 | Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) zur Bewilligung? | Liquidität prüfen | **FORMAL** |
+| M6 | De-minimis: < 300.000 € Beihilfen in den letzten **rollierenden** 3 Jahren? | De-minimis-Erklärung im formalen Antrag | **BESTÄTIGT: 0 € (25.11.2026)** |
+| M7 | Kapazität für 950 h / 6 Monate (~158 h/Monat im Durchschnitt (Plan 150–165 h/Monat))? | Kalender prüfen; sonst 850-h-Variante wählen | **BESTÄTIGT/GEPLANT (25.11.2026)** |
+| M8 | Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) zur Bewilligung? | Kontoauszug zum Bewilligungszeitpunkt | **BESTÄTIGT/GEPLANT (25.11.2026)** |
 | M9 | Second Stage beantragen? | Ja/Nein entscheiden; Konzept liegt vor | **ENTschieden: Ja (25.11.2026)** |
 
 ## B. Persönliche Angaben für das Portal

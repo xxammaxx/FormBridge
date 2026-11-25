@@ -1,5 +1,7 @@
 # V8 — Veröffentlichungs-Verifikation
 
+> **Historischer Prüfstand 13.11.2026** (Initialstand `78d7fc3`, `main`). Seit der Konsolidierung vom 25.11.2026 trägt `main` den vollständigen Forschungs- und Bewerbungsstand inklusive `LICENSE` (Apache-2.0).
+
 **Datum/Uhrzeit:** 13.11.2026 (direkt nach Push) · **Methode:** `gh repo view` + **frischer** Clone von `https://github.com/xxammaxx/FormBridge.git` in isoliertes Verzeichnis, Prüfung gegen die lokalen Erwartungen.
 
 | Prüfung | Ergebnis |

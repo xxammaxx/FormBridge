@@ -57,7 +57,7 @@ Die 800-h-Variante ist eine **Sensitivitätsrechnung**, keine wählbare Antragso
 | Gesamtkosten-Cap | 50.000,00 € | RL Nr. 5 |
 | 6-Monats-Laufzeit | 01.06.–30.11.2027 | PTF-Details |
 | Keine weiteren Kostenpositionen | PK + GK | öffentlich belegte Positionen; weitere Positionen nicht behauptet |
-| Keine De-minimis-Vorbelastung | 0 € | **Owner muss prüfen**; Annahme, keine Feststellung |
+| Keine De-minimis-Vorbelastung | 0 € | **Owner-Bestätigung 25.11.2026** (Erklärung im formalen Antrag) |
 | Keine weiteren Förderungen | 0 € | **Owner muss prüfen** |
 | Eigenmittel als Zeit + Liquiditätsnachweis | 2.500 € Saldo | FAQ/RL; keine Barzuzahlung behauptet |
 
@@ -99,7 +99,7 @@ Die Second Stage ist nur bei initialer Bewerbung mitbeantragbar; keine Code-Meil
 
 - 300.000 € pro Unternehmen in einem **rollierenden** Dreijahreszeitraum (VO (EU) 2023/2831 Art. 3 Abs. 2; RL Anlage Nr. 1).
 - Die Förderung inkl. Second Stage zählt mit.
-- Vorbelastung **nicht** angenommen: Der Owner muss alle Beihilfen der letzten drei Jahre addieren.
+- **Vorbelastung: 0 €** — vom Owner am 25.11.2026 bestätigt (keine De-minimis-Beihilfen in den letzten drei Jahren). Die De-minimis-Erklärung wird mit dem formalen Antrag abgegeben; Werte gehören nicht in dieses öffentliche Repository.
 - Bei Vorbelastung 300.000 € ist keine De-minimis-Förderung mehr möglich; bei 260.000 € wäre F auf 40.000 € begrenzt.
 
 ## 9. 10-Monats-Option

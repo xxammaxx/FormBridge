@@ -12,12 +12,12 @@
 - [ ] **M3d:** Ich habe zur Kenntnis genommen, dass die Online-Fragen kein Steuernummer-/Selbstständigkeitsfeld enthalten, die FAQ/Bewerbungsseite aber Selbstständigkeit verlangen.
 - [x] **M4:** Ich verfüge über die für die Umsetzung notwendigen Programmierkenntnisse (KI nur als Werkzeug). *(belegt in §14, 25.11.2026)*
 - [x] **M5:** Ich kann einschlägige Vorarbeiten/Kenntnisse nachweisen (öffentliche Repos/Projekte). *(belegt in §11/§14, 25.11.2026)*
-- [ ] **M6:** Ich habe in den letzten rollierenden 3 Jahren **weniger als 300.000 €** De-minimis-Beihilfen erhalten. *(Betrag nicht hier eintragen; nur Bestätigung.)*
+- [x] **M6:** Ich habe in den letzten rollierenden 3 Jahren **weniger als 300.000 €** De-minimis-Beihilfen erhalten — **0 € Vorbelastung**. *(bestätigt 25.11.2026; Betrag nicht im Repo)*
 
 ## B. Kapazität, Liquidität, Second Stage
 
-- [ ] **M7:** 950 h in 6 Monaten sind realistisch (ca. 158 h/Monat). Falls nein: 850-h-Variante wählen.
-- [ ] **M8:** Ein Kontoauszug-Saldo von mindestens 2.493,75 € (950 h; empfohlen 2.500 €) ist zur Bewilligung darstellbar. Bei 850 h wären 2.231,25 € ausreichend.
+- [x] **M7:** 950 h in 6 Monaten sind realistisch (ca. 158 h/Monat). *(bestätigt/geplant 25.11.2026)*
+- [x] **M8:** Ein Kontoauszug-Saldo von mindestens 2.493,75 € (empfohlen 2.500 €) ist zur Bewilligung darstellbar. *(bestätigt/geplant 25.11.2026; Vorlage bei Bewilligung)*
 - [x] **M9:** Second Stage: **Ja**. *(entschieden 25.11.2026; §16/§17 final)*
 
 ## C. Entscheidungen

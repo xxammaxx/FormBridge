@@ -1,9 +1,9 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
-**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 14.11.2026
-**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 250, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
-**Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `58edd9f73bf986d688bc6e241446c57b5b782d59`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
-**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; §11, §12, §13, §14, §15 und §18 sind seit 25.11.2026 final. Offen sind nur noch der authentifizierte Live-Abgleich, die Portal-Stammdaten A2–A5, De-minimis (M6), Kapazität/Liquidität (M7/M8) und die **Stichtagsfrage** aus Q2 (Registrierung vor Förderbeginn geplant). Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
+**Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` (25.11.2026 nach `main` konsolidiert) · **Datum:** 14.11.2026
+**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 251, 0 gebrochen (Stand Nachführungs-Commit `58edd9f`; nach der Konsolidierung ist `main` maßgeblich)
+**Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Die Nachführung von Wortzahlen und Metriken erfolgte in `58edd9f`; spätere Deltas (Owner-Texte, Entscheidungen, Evidenzsuite) sind dokumentarisch belegt bzw. ausgeführt, aber nicht erneut unabhängig reviewt. Seit dem Merge vom 25.11.2026 ist `main` der maßgebliche Stand; die aktuellen Metriken stehen in §0.
+**Gate:** **READY_FOR_PORTAL_FIELDS** — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; §11–§15 und §18 sind seit 25.11.2026 final, **M1–M9 sind beantwortet** (M6: 0 € De-minimis-Vorbelastung; M7: Kapazität bestätigt; M8: Liquidität ≥ 2.500 € geplant). Offen sind nur die **Portal-Stammdaten A2–A5a**, der authentifizierte Live-Abgleich und die **Stichtagsfrage** aus Q2 (Registrierung vor Förderbeginn geplant).
 
 ## 0. Nachführung auf den Branch-Tip (25.11.2026)
 
@@ -11,7 +11,7 @@
 |---|---|
 | Nachführungs-Commit | `58edd9f73bf986d688bc6e241446c57b5b782d59` — alle Metriken dieser Tabelle gelten für diesen Baum; danach folgt nur noch eine Kennzeichnungs-Ergänzung ohne Inhaltsänderung |
 | Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
-| Relative Links (Markdown, Branch-Baum) | **250 geprüft, 0 gebrochen** |
+| Relative Links (Markdown, Branch-Baum) | **251 geprüft, 0 gebrochen** |
 | Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
 | Owner-Texte §11 (E1) / §14 (E5) | **final** (25.11.2026): 77/100 bzw. 83/100 Wörter, Status FINAL, Platzhalter entfernt; synchronisiert in `portal-field-mapping.md`, `portal-preflight-2026-11-14.md`, `owner-checklist.md` |
 | Owner-Entscheidungen §12 (E2/E3), §13 (E4), §15 (S1), §18 (Q19a/b) | **final** (25.11.2026): E2 = Nein (E3 entfällt, Vorlagetext 11 W.), 950 h, Second Stage = Ja (§16/§17 final), beide Q19-Zusagen erteilt |
@@ -73,8 +73,9 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 | Q2 | Materielle Selbstständigkeitsvoraussetzung und Nachweiszeitpunkt | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen; Online-Fragen ohne Statusfeld; JG02-Wiki verlangt Steuernummer zum formalen Antrag. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | **belegt (25.11.2026)** | §14 beschreibt Praxis, Datenmodelle, Skripte und automatisierte Tests |
 | M5 | Vorarbeiten/Kenntnisse | **erledigt (25.11.2026)** | §11/§14 final personalisiert (77 bzw. 83 W.) |
-| M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
-| M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
+| M6 | De-minimis-Historie | **BEANTWORTET (25.11.2026): 0 €** | De-minimis-Erklärung im formalen Antrag |
+| M7 | Kapazität 950 h / 6 Monate (158 h/Monat) | **BEANTWORTET (25.11.2026): bestätigt/geplant** | Kapazitätsplan bei Bedarf nachführen |
+| M8 | Kontoauszug ≥ 2.493,75 € | **BEANTWORTET (25.11.2026): bestätigt/geplant** | Vorlage erst bei Bewilligung formal |
 
 **Q2/M3c** bleibt die einzige offene Zulassungsfrage — als **Stichtagsfrage**, nicht als Erfüllungsfrage. Die Quellenlage ist **widersprüchlich**: FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; das JG03-Handbuch listet sie nicht unter den zwingenden Förderbedingungen und spricht von „Privatperson“; die Online-Fragen enthalten kein Statusfeld; das JG02-Wiki verlangt eine Steuernummer/Anmeldung zum **formalen Antrag**. Der Plan erfüllt die Voraussetzung, indem die selbstständige/freiberufliche Registrierung **vor dem formalen Förderbeginn (01.06.2027)** und **vor dem formalen BMFTR-Antrag** erfolgt; nur der exakte Stichtag ist noch zu bestätigen. **Keine Anfrage versendet.**
 

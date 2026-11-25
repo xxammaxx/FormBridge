@@ -1,5 +1,7 @@
 # Validierungsbericht FormBridge-Repository — 13.11.2026
 
+> **Nachführung 25.11.2026:** Dieser Bericht dokumentiert den Prüfstand vom 13.11.2026 (Initialstand `78d7fc3`, Veröffentlichung `5ad209a`). Seit dem Merge von `docs/funding-decision-2026-11-13` nach `main` ist `main` der einheitliche, maßgebliche Stand; die damaligen Aussagen zu Dateizahl, Lizenzstatus („kein LICENSE“) und Branch-Struktur sind historisch. Aktuelle Metriken: [Bewerbungs-Validierungsbericht](../funding/application/validation-report.md) §0.
+
 **Umfang:** Vollvalidierung der migrierten Forschung und des neuen Repositories vor und nach Veröffentlichung.
 **Methode:** Zwei unabhängige Reviewer (A: Technik/Evidenz; B: Funding/Compliance, adversarial) + eigene mechanische Checks. Review-Protokolle: [`review-A-technical-evidence.md`](review-A-technical-evidence.md), [`review-B-funding-compliance.md`](review-B-funding-compliance.md).
 

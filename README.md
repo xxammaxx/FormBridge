@@ -6,6 +6,10 @@ FormBridge ist ein unabhängiges, anwendungsübergreifendes Open-Source-**Forsch
 
 > **Status: RESEARCH_STAGE — keine Implementierung.** Dieses Repository enthält aktuell **Ausschließlich** Forschungsdokumentation, Evidenz und Spezifikation. Es existiert **kein** produktiver oder prototypischer Quellcode; jede Formulierung über künftige Fähigkeiten ist ein Forschungsziel, keine zugesagte Funktion.
 
+## Repository-Stand
+
+`main` ist der **einheitliche, maßgebliche Stand** dieses Repositories: Forschungsdokumentation, Evidenz, technische Spezifikation und das vollständige Prototype-Fund-Bewerbungspaket (`docs/funding/application/**`) liegen gemeinsam hier. Der Merge von `docs/funding-decision-2026-11-13` nach `main` (25.11.2026) hat den früheren Baseline-Zustand abgelöst; Commit `5ad209a` bleibt als **historischer Ausgangsstand vom 13.11.2026** dokumentiert. Die Website (`gh-pages`) verweist damit auf aktuelle Dokumente.
+
 ## Warum?
 
 Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert die Verwaltungsdaten dahinter — aber kein geprüftes freies Projekt verbindet beides nachprüfbar. In unserer [Quellcodeprüfung vom 13.11.2026](docs/research/prior-art-audit.md) (13 Projekte, u. a. Formularagent, OpenForm/KIWO, CommonForms, FITKO-Ökosystem) wurde die Brücke nicht gefunden; das offizielle Referenz-XSD (Wohngeld S00000159 v1.4) ist zudem nachweislich nicht standardkonform kompilierbar (170 Parser-Fehler — [Referenzfall](docs/research/reference-case-wohngeld.md)).
