@@ -21,7 +21,7 @@
 | S8 | `docs/research/prior-art-audit.md` + Appendix: 13 Projekte mit Clone-SHAs (u. a. KIWO `c40bb34`, Formularagent `4085c46`) | VERIFIED (Reviews 13.11.2026, V1/V2) |
 | S9 | `docs/research/reference-case-wohngeld.md`: Fürth-PDF SHA-256 `57f4f3f9…`; FIM-XSD SHA-256 `36250e69…`; 170 Parser-Fehler; Normalisierung+Instanz-Validierung reproduziert | VERIFIED (V3, unabhängige Reproduktion) |
 | S10 | `docs/funding/application-draft-de.md` (Bewerbungsbausteine) — **noch nicht ins PTF-Portal übertragen** | VERIFIED (Datei) / Portal-Status: UNKNOWN |
-| S11 | Lizenz: **OWNER_DECISION_REQUIRED**, keine LICENSE committet | VERIFIED |
+| S11 | Lizenz: **Apache-2.0** (Eigentümerentscheidung 25.11.2026), `LICENSE` committet | VERIFIED |
 | S12 | Implementierungsstand: kein Code (21 Dateien, nur Docs/Evidenz) | VERIFIED (V6/V8) |
 
 ## C. RepairProbe (Kandidat 2)

@@ -39,7 +39,7 @@ FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Fel
 
 ## Lizenz
 
-**OWNER_DECISION_REQUIRED** — Es wurde bewusst **keine** Lizenzdatei committet; die Empfehlung (Apache-2.0) und Begründung stehen in [`docs/governance/license-decision.md`](docs/governance/license-decision.md). Bis zur Eigentümerentscheidung ist die Nutzung des Repository-Inhalts nicht lizenziert.
+**Apache-2.0** — Der Repository-Inhalt ist unter der Apache License 2.0 lizenziert (SPDX: `Apache-2.0`); der vollständige Lizenztext liegt als [`LICENSE`](LICENSE) im Wurzelverzeichnis. Die Entscheidung des Eigentümers, die Begründung gegen MIT/MPL-2.0 und die Abgrenzung zu Drittmaterial stehen in [`docs/governance/license-decision.md`](docs/governance/license-decision.md). Copyright 2026 xxammaxx. Amtliche Quellen (PDF, XSD) und daraus abgeleitete FIM-Metadaten sind **nicht** Teil der Lizenzierung (siehe Drittmaterial unten).
 
 ## Drittmaterial
 

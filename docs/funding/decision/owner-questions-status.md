@@ -28,7 +28,7 @@
 | P2 | Themenfeld Software-Infrastruktur | VERIFIED (Definition) / JURY-INTERPRETATION | FAQ Grundlagen 02 passt auf CLI/Bibliothek/Verifier |
 | P3 | Innovativ / „neues Modul für bestehende Software" | VERIFIED (Regel) / JURY-INTERPRETATION | FAQ Bewerbung 05; Prior-Art-Audit liegt vor |
 | P4 | Bestehendes Projekt klar abgrenzbar | VERIFIED (Mechanik) / QUALITÄT = JURY | project-boundary.md A/B/C |
-| P5 | FOSS-Zusage möglich | VERIFIED (Regel) / OWNER-ENTSCHEIDUNG | Lizenz noch offen |
+| P5 | FOSS-Zusage möglich | VERIFIED (Regel) / **ENTSCHIEDEN** | Apache-2.0, `LICENSE` committet (25.11.2026) |
 | P6 | Hoher Entwicklungsanteil + realistische Stunden | VERIFIED (Plan) / JURY-INTERPRETATION | 6-Monats-Plan; 950 h Baseline; 250-h-Heuristik |
 
 ## Welche Fragen sind echte Eligibility-Blocker?

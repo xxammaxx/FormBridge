@@ -96,7 +96,7 @@ Kriterien: alle öffentlich prüfbaren Aussagen belegt; Berechnungen korrekt; ke
 | B3 Infrastruktur-Fit | SUPPORTED | FAQ-Definition verbatim verifiziert; FormBridge developer-facing; keine Endnutzer-Claims |
 | B4 Entwicklungsanteil | SUPPORTED | ~75–85 % Dev-Anteil M1–M6; messbare Engineering-Acceptance-Criteria |
 | B5 Innovations-Claims | SUPPORTED | Keine universalen Negativbehauptungen; Korpus-Scoping intakt |
-| B6 FOSS-Zustand | SUPPORTED | Kein LICENSE ehrlich dokumentiert; FOSS-Zusage bei Bewerbung genügt (verbatim verifiziert); Owner entscheidet vor Einreichung |
+| B6 FOSS-Zustand | SUPPORTED | Am 13.11.2026 kein LICENSE (ehrlich dokumentiert); FOSS-Zusage bei Bewerbung genügt (verbatim verifiziert); **25.11.2026: Apache-2.0 entschieden, `LICENSE` committet** |
 | B7 Vorarbeiten-Nachweis | SUPPORTED | Public Repo = nutzbare Vorarbeiten; persönliche Kenntnisse konsequent UNKNOWN |
 | B8 Vertraulichkeit/Provenienz | SUPPORTED | Kein Feldexa-Code, kein RepairProbe-Privat-/Portal-Inhalt; Metriken owner-eigen, klassifiziert |
 | B9 Regression | **REFUTED** | 3 veraltete Textstellen (decision-report B2 „Feldexa" statt „FormBridge"; „(E)"-Referenz; README ohne Decision-Dokumente) + ungetrackte validation-report.md + Stray-Dir → behoben (Fix 1/2/4/5) |

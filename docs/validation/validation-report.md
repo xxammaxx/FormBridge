@@ -32,7 +32,7 @@
 
 ## V5 — Lizenz & Datenschutz: PASS (nach Fixes)
 
-- **Kein** LICENSE-File committet (OWNER_DECISION_REQUIRED, README + `docs/governance/license-decision.md` konsistent); Empfehlung Apache-2.0 dokumentiert, nicht bindend.
+- **Kein** LICENSE-File committet (OWNER_DECISION_REQUIRED, README + `docs/governance/license-decision.md` konsistent); Empfehlung Apache-2.0 dokumentiert, nicht bindend. **Nachtrag 25.11.2026:** Der Eigentümer hat Apache-2.0 entschieden; `LICENSE` ist committet (SPDX `Apache-2.0`, Copyright 2026 xxammaxx) und README, ADR-001, `license-decision.md` sowie die Statusdokumente sind nachgeführt. Der Befund oben bleibt als Prüfstand vom 13.11.2026 gültig.
 - **0 Geheimnisse** (ghp_/github_pat/AKIA/Private-Key-Scan leer).
 - **Keine personenbezogenen Daten** — nur erkennbar synthetische Werte (Mustermann/Musterstadt/`max@example.com`/synthetische IBAN); `reference-dataset.json` enthält keine Werte, nur Koordinaten/Klassifikationen.
 - **Keine urheberrechtlich geschützten Drittassets:** PDF-Bytes und Original-/Normalisierungs-XSD sind **nicht** im Repo (URL + SHA-256 + Reproduktionsbefehle stattdessen); Zitate auf Fremdcode max. einzeilig mit Quellenangabe.

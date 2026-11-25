@@ -7,7 +7,7 @@
 ## Ergebnis: V5 PASS · V7 PASS (conditional auf V7-1, inzwischen aufgelöst)
 
 **Verifiziert:**
-- V5: kein LICENSE (konsistent OWNER_DECISION_REQUIRED in README + license-decision.md); 0 Geheimnisse; keine personenbezogenen Daten (nur synthetische Werte); keine Drittassets (PDF/XSD-Bytes fehlen absichtlich; nur URL+SHA-256+Reproduktionsbefehle); XSD-Zitate einzeilig mit Beleg.
+- V5 (Stand 13.11.2026): kein LICENSE (damals konsistent OWNER_DECISION_REQUIRED in README + license-decision.md); **Nachtrag 25.11.2026:** Apache-2.0 durch den Eigentümer entschieden, `LICENSE` committet, alle Statusverweise nachgeführt — der Befund bleibt als damaliger Prüfstand dokumentiert; 0 Geheimnisse; keine personenbezogenen Daten (nur synthetische Werte); keine Drittassets (PDF/XSD-Bytes fehlen absichtlich; nur URL+SHA-256+Reproduktionsbefehle); XSD-Zitate einzeilig mit Beleg.
 - V7: Provenienz konsistent (cb122fe, PR #168, 13.11.2026) über README/ADR-001/boundary/EVIDENCE; Grenze A/B/C explizit; B1–B6 in Spec §6/§7 verankert; **keine Implementierung** (keine Code-/Manifest-/CI-Dateien).
 - Adversarial 1–6: keine Treffer — keine Funktions-Claims als vorhanden/getarnt; Neuheits-Sprache korpus-spezifisch; Feldexa-Unabhängigkeit beidseitig korrekt; Lizenz-Status erklärt; Fremdattribution sauber (URLs+SHAs, keine Lizenztext-Kopien).
 

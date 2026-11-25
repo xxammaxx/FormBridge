@@ -2,6 +2,7 @@
 
 **Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
+**Lizenz:** Apache-2.0 (Eigentümerentscheidung 25.11.2026; `LICENSE` im Repository, SPDX `Apache-2.0`). Die FOSS-Zusage in §18 bleibt unabhängig davon erforderlich.
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
 
 **Wortlimits:** aus dem offiziellen PTF-Handbuch Jahrgang 03 (Fragen 2–19). **Zählregel (reproduzierbar, Stand 25.11.2026):** gezählt wird der Antworttext eines Abschnitts ohne die `**Wörter:**`-Metazeile, getrennt an Whitespace (`len(text.split())`); Platzhalter in eckigen Klammern zählen mit und werden zusätzlich getrennt ausgewiesen. Das Portal kann anders zählen und zusätzlich Zeichenlimits erzwingen; diese wurden nicht eingesehen (`PORTAL_UNVERIFIED`). Alle Abschnitte liegen innerhalb der dokumentierten Limits.

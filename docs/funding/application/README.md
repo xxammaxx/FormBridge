@@ -34,4 +34,4 @@
 
 **Gate:** `READY_WITH_EXPLICIT_BLOCKERS` für den Portal-Preflight — Text und Feldvorlage sind vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben (A2–A5, E1, E5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung (formale Zulassungsvoraussetzung derzeit nicht erfüllt). **Keine Einreichung ohne Owner-Freigabe.**
 
-**Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung, keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.
+**Verbindliche Grenzen:** keine Einreichung, keine E-Mail, keine Lizenzfestlegung ohne Owner-Freigabe (Apache-2.0 am 25.11.2026 freigegeben), keine Implementierung, keine Änderung an Feldexa/RepairProbe, kein Merge. Persönliche Daten gehören nicht in dieses öffentliche Repo.

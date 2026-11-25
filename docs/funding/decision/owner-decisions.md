@@ -6,7 +6,7 @@
 
 | # | Entscheidung/Aktion | Warum | Deadline-Empfehlung |
 |---|---|---|---|
-| A1 | **Lizenz verbindlich wählen** (Empfehlung Apache-2.0 liegt in `docs/governance/license-decision.md`) und LICENSE-Datei committen | PTF: FOSS-Pflicht | bis 20.11. — **Empfehlungstermin verstrichen; offen (Stand 25.11.2026)** |
+| A1 | **Lizenz verbindlich wählen** (Empfehlung Apache-2.0 liegt in `docs/governance/license-decision.md`) und LICENSE-Datei committen | PTF: FOSS-Pflicht | **ERLEDIGT 25.11.2026** — Apache-2.0 entschieden, `LICENSE` committet (Empfehlungstermin 20.11. war verstrichen) |
 | A2 | **PTF-Team schriftlich anfragen:** (a) zulässig zwei Anträge einer Person (FormBridge + RepairProbe-Draft) im selben Jahrgang? (b) Eigenanteil-Modell (≥5 %?) bestätigen; (c) Q3: 47.500 vs. 47.381,25 und Second Stage 31.667 vs. 31.570,87; (d) Selbstständigkeit ab Förderbeginn (Q2) | deep-research-Doku markiert diese Punkte OFFEN; Schweizer FAQ nicht übertragbar; Q3-Anfrageentwurf liegt vor | bis 18.11. (Antwortzeit!) — **Empfehlungstermin verstrichen, keine Anfrage versendet; offen (Stand 25.11.2026)** |
 | A3 | **Held-out-Wohngeld-PDF** (anderes Bundesland) beschaffen + Rechte prüfen (inkl. Klärung `copy:no`-Rechtslage der Fürther Quelle; ggf. Behördenanfrage um Nutzungsgenehmigung) | Review A: HIGH-Risiko Ein-Dokument-Evidenz | bis 24.11. — **Empfehlungstermin verstrichen; offen (Stand 25.11.2026)** |
 | A4 | **Bewerbungstext-Ergänzungen** einarbeiten: RF-Messabsatz, Document-AI-/LLM-Abgrenzung, XSD-Verbraucher-Argument, Adaptierbarkeits-Story (2. Schema-Demo-Pfad) | Review A Vektoren 1/2/6/7 | bis 26.11. |
@@ -16,7 +16,7 @@
 
 ## Statusnachtrag 25.11.2026 — verstrichene Empfehlungstermine
 
-Die Empfehlungstermine **18.11.** (A2), **20.11.** (A1), **24.11.** (A3, A7) sind verstrichen. Aus dem Repository lässt sich **keine** Erledigung belegen: es gibt weiterhin **keine** LICENSE-Datei, **keine** versendete Anfrage (Entwürfe in [external-inquiry-drafts.md](external-inquiry-drafts.md) sind als „NICHT VERSENDET“ markiert), **kein** Held-out-PDF und **keine** dokumentierte Q2-Klärung. Alle vier Punkte bleiben **offen** und sind vor der Einreichungsfrist **30.11.2026, 15:00 MEZ** zu entscheiden; A4 (26.11.), A5 (27.11.) und A6 (28.11.) liegen noch in der Zukunft. Diese Eintragung ist eine Statusfeststellung, keine Bewertung des Owners und keine Entscheidung.
+Die Empfehlungstermine **18.11.** (A2), **20.11.** (A1), **24.11.** (A3, A7) sind verstrichen. **A1 ist am 25.11.2026 erledigt** (Apache-2.0, `LICENSE` committet). Für A2, A3 und A7 lässt sich **keine** Erledigung belegen: es gibt weiterhin **keine** versendete Anfrage, **keine** versendete Anfrage (Entwürfe in [external-inquiry-drafts.md](external-inquiry-drafts.md) sind als „NICHT VERSENDET“ markiert), **kein** Held-out-PDF und **keine** dokumentierte Q2-Klärung. Alle vier Punkte bleiben **offen** und sind vor der Einreichungsfrist **30.11.2026, 15:00 MEZ** zu entscheiden; A4 (26.11.), A5 (27.11.) und A6 (28.11.) liegen noch in der Zukunft. Diese Eintragung ist eine Statusfeststellung, keine Bewertung des Owners und keine Entscheidung.
 
 ## Entscheidungs-Block B — optional/strategisch
 

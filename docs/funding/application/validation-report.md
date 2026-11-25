@@ -1,7 +1,7 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 14.11.2026
-**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 247, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
+**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 249, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
 **Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `58edd9f73bf986d688bc6e241446c57b5b782d59`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
 **Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben, die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
 
@@ -11,7 +11,7 @@
 |---|---|
 | Nachführungs-Commit | `58edd9f73bf986d688bc6e241446c57b5b782d59` — alle Metriken dieser Tabelle gelten für diesen Baum; danach folgt nur noch eine Kennzeichnungs-Ergänzung ohne Inhaltsänderung |
 | Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
-| Relative Links (Markdown, Branch-Baum) | **247 geprüft, 0 gebrochen** |
+| Relative Links (Markdown, Branch-Baum) | **249 geprüft, 0 gebrochen** |
 | Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
 | Q5/E3-Wortzahl | **31 W. inkl. Platzhalterhinweis (11 W. Antworttext) / 60** — einheitlich in application-final-de.md, portal-field-mapping.md, portal-preflight-2026-11-14.md |
 | Überschriebene Abweichungen | frühere Zahlen aus älteren Baselines (`§2 97`, `§3 169`, `§4 133`, `Q5 21` als Fehlzählung) sind in [portal-field-mapping.md](portal-field-mapping.md) durch die verifizierten Werte ersetzt; der Preflight-Snapshot kennzeichnet seine Zahlen als historisch |
@@ -31,7 +31,7 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 | Q3/Q3b | **UNRESOLVED**; 118,75 € / 96,13 € / 46,25 €; konservativ geplant |
 | Second Stage | 633 h 31.570,87 €; 634 h 31.620,75 €; Cap 31.670,15 € |
 | De-minimis | 300.000 € / rollierende 3 Jahre; 3 Jahre Aufbewahrung |
-| FOSS | Zusage vorhanden; **keine Lizenz festgelegt**; Apache-2.0 nur Empfehlung |
+| FOSS | Zusage vorhanden; **Lizenz entschieden: Apache-2.0** (25.11.2026), `LICENSE` committet, SPDX `Apache-2.0` |
 | Vorarbeit/Förderbeginn | Kein Modulcode; Vorarbeit nicht abgerechnet; Feldexa nicht integriert |
 | Implementierungsstand | **NICHT IMPLEMENTIERT**; nur Forschung/Spezifikation |
 | Reviewer A | **PASS** |
@@ -126,7 +126,7 @@ python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' 
 - Relative Links: 0 gebrochen.
 - `git ls-files` enthält keine `.pyc`/`__pycache__`.
 - Bewerbungspaket-Basis `9ed86225`; Gründungs-Delta `d062d9db`; Readiness-Delta `ef968f9` (A/B PASS, [Readiness-Review](review-application-readiness-2026-11-14.md)); Working Tree clean.
-- Keine Einreichung, keine E-Mail, keine Portaländerung, keine Lizenzfestlegung, kein Merge.
+- Keine Einreichung, keine E-Mail, keine Portaländerung, keine Lizenzfestlegung im Rahmen dieses Reviews, kein Merge. *(Die Lizenz wurde separat durch den Eigentümer am 25.11.2026 auf Apache-2.0 festgelegt.)*
 
 ## 5. Gate-Begründung
 

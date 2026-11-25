@@ -36,7 +36,7 @@ Die **bedingte Empfehlung** bezieht sich auf **F3 als Fördergegenstand** für d
 | Spezifikation `specs/001-scanned-form-workflow/spec.md` Status **Draft**; FR-001… beschreiben Import/Erkennung/Export | VERIFIED (Datei) | hoch für Planung, nicht für Umsetzung |
 | Prior-Art-Audit 13 Projekte, Referenzfall Fürth/Wohngeld, 170 XSD-Parser-Fehler, 30-Feld-Datensatz | VERIFIED (Dokumente; Reproduktion im Repo dokumentiert) | hoch für Forschungsleistung; **keine** Nutzermessung |
 | Keine gemessene Entlastung von Behörden/Bürgern; keine Nutzertests; kein E2E-Pilot | VERIFIED (explizit in der Forschung dokumentiert) | hohe Ehrlichkeit; schwache Wirkungsevidenz |
-| Lizenz: keine LICENSE; Owner-Entscheidung offen | VERIFIED | Förderrisiko (FOSS-Zusage nötig) |
+| Lizenz: Apache-2.0 entschieden (25.11.2026), LICENSE committet | VERIFIED | Förderrisiko „keine Lizenz“ entfallen; FOSS-Zusage im Antrag bleibt erforderlich |
 
 ### RepairProbe
 

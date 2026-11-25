@@ -43,7 +43,7 @@
 
 | # | Entscheidung | Optionen | Empfehlung | Status |
 |---|---|---|---|---|
-| O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** empfohlen; **keine Festlegung ohne Owner-Freigabe** | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** entschieden (25.11.2026), `LICENSE` committet | **ERLEDIGT** |
 | O2 | **Stunden** | 950 (Default) / 850 (bewusste Änderung) | 950 nur bei gesicherter Vollzeitkapazität; sonst 850 | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O3 | **Second Stage** | Ja / Nein | Ja, wenn Integration/Community gewollt; sonst Nein und §16/§17 entfernen | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 | O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | Bedingte Empfehlung F3; Owner entscheidet | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
@@ -65,7 +65,7 @@
 ## E. Vor der Einreichung abzuhaken
 
 - [ ] M1–M6 positiv geklärt; M8 planbar. **M3a/M3c: materielles Q2-Risiko dokumentiert und entschieden.**
-- [ ] O1 Lizenz entschieden (oder bewusst offen bis nach Auswahl; FOSS-Zusage bleibt).
+- [x] O1 Lizenz entschieden: Apache-2.0 (25.11.2026), `LICENSE` im Wurzelverzeichnis; FOSS-Zusage in Q19b bleibt zusätzlich erforderlich.
 - [ ] O2 Stunden entschieden; Budget/Plan konsistent.
 - [ ] O3 Second Stage entschieden; §16/§17 entfernt oder final.
 - [ ] O4 Projektfassung final bestätigt (F3 empfohlen).
