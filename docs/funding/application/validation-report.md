@@ -1,15 +1,15 @@
 # Revalidierungsbericht — FormBridge-Bewerbung (final)
 
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 14.11.2026
-**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 247, 0 gebrochen (Stand Branch-Tip `PENDING_TIP`)
-**Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `PENDING_TIP`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
+**Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 247, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
+**Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `58edd9f73bf986d688bc6e241446c57b5b782d59`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
 **Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben, die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
 
-## 0. Nachführung auf den Branch-Tip (`PENDING_TIP`, 25.11.2026)
+## 0. Nachführung auf den Branch-Tip (`58edd9f73bf986d688bc6e241446c57b5b782d59`, 25.11.2026)
 
 | Prüfung | Ergebnis (Stand Tip) |
 |---|---|
-| Branch-Tip | `PENDING_TIP` |
+| Branch-Tip | `58edd9f73bf986d688bc6e241446c57b5b782d59` |
 | Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
 | Relative Links (Markdown, Branch-Baum) | **247 geprüft, 0 gebrochen** |
 | Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
