@@ -1,6 +1,45 @@
 # Finaler Validierungsbericht — Runde 3 (13.11.2026)
 
-**Status:** **FINAL (Dokumentation)** · **Geprüfter Candidate:** `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` · **Branch:** `docs/funding-decision-2026-11-13` · **Reviewer:** A (Finanzen) **PASS**, B (Förderrecht/Evidenz/Vergleich) **PASS**
+**Status:** **FINAL (Dokumentation)**
+
+> **Nachtrag 25.11.2026 — End-to-End-Sign-Off (V1–V8) auf `main` @ `fbeffda`.** Dieser Bericht dokumentiert die Validierungsrunde 3 vom 13.11.2026. Der aktuelle Stand wurde am 25.11.2026 vollständig neu geprüft (frischer Checkout, alle Prüfungen erneut ausgeführt):
+
+### End-to-End-Sign-Off (V1–V8), 25.11.2026
+
+Vollständige Nachprüfung des aktuellen `main`-Tips `fbeffda` gegen einen frischen Checkout; alle Prüfungen wurden in diesem Lauf erneut ausgeführt.
+
+| Prüfung | Ergebnis (Stand Tip `fbeffda`) |
+|---|---|
+| **V1** Research-Integrität | **PASS** — Prior-Art-Audit 13 Projekte (10 Repo-Zeilen + 3 dokumentbasierte), Referenzfall 30 Felder, 170 betroffene XSD-Elemente / 169 D2-Meldungen + 1 NCName, Normalisierung D1/D2/D3/D4 = 1/170/21/4 |
+| **V2** Technische Aussagen | **PASS** — FIM-Index 640 Knoten = 185 Gruppen + 88 Felder (+367 builtin); RF1/LoRA durchgängig `PROPOSED / NOT_RUN`, Inferenz lokal, kein abgeschlossener Lauf behauptet |
+| **V3** PDF/XSD-Evidenz | **PASS** — `test_evidence_integrity.py` **19/19**; alle drei SHA-256 im Hashregister von `EVIDENCE.md` stimmen (Bytegröße + Digest) |
+| **V4** Doku- und Link-Konsistenz | **PASS** — `main`: 251 relative Links **0 gebrochen**, zusätzlich 0 defekte Anker; `gh-pages`: 6 Asset-Referenzen 0 gebrochen |
+| **V5** Lizenz und Datenschutz | **PASS** — `LICENSE` (Apache-2.0, 11.358 B, `cfc7749b…`) im Wurzelverzeichnis, GitHub `license.spdx_id = Apache-2.0`; 427 distinkte Blobs der gesamten Git-Historie gescannt: 0 Geheimnisse, keine unerwarteten personenbezogenen Daten (nur synthetisch/öffentlich: `max@example.com`, `info@prototypefund.de`) |
+| **V6** Repo-Unabhängigkeit und B3-Grenze | **PASS** — 0 Produktcode-Dateien (.dart/.java/.kt/.ts), 3 Python-Dateien ausschließlich als Finanzmodell, Finanztests und Evidenzprüfung; keine Pipeline-Marker; ADR-001-Unabhängigkeitstext vorhanden |
+| **V7** Förder- und Antragsintegrität | **PASS** — `test_financial_model.py` **109/109**; alle 13 wortlimiterten Abschnitte innerhalb der Limits; **0 `OWNER_*`-Platzhalter** in §1–§18; M1–M9 ohne offene Owner-Rückfrage; `LIC`/`HOURS`/`SECOND_STAGE`/`A1`/`A4`/`A5`/`B2` final bzw. entschieden |
+| **V8** Öffentliche Website | **PASS** — `node --check` demo.js/film.js OK, `demo.test.cjs` 2/2; 7 `blob/main/...`-Dokumentationslinks der Website lösen alle auf existierende Dateien auf; letzter Actions-Lauf „Verify project website“ = success |
+
+**Sign-Off:** Alle acht Prüfungen bestehen auf dem aktuellen `main`-Tip `fbeffda` gegen einen frischen Checkout (keine Arbeitskopie-Artefakte). **C15 (Validierungs-Baseline-Lag) ist damit `RESOLVED`:** die früheren A/B-Reviews galten ihren Baseline-SHAs; dieser Lauf zertifiziert den aktuellen Stand mechanisch und reproduzierbar.
+ — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; §11–§15 und §18 sind seit 25.11.2026 final, **M1–M9 sind beantwortet** (M6: 0 € De-minimis-Vorbelastung; M7: Kapazität bestätigt; M8: Liquidität ≥ 2.500 € geplant). Offen sind nur die **Portal-Stammdaten A2–A5a**, der authentifizierte Live-Abgleich und die **Stichtagsfrage** aus Q2 (Registrierung vor Förderbeginn geplant).
+
+## 0. Nachführung auf den Branch-Tip (25.11.2026)
+
+| Prüfung | Ergebnis (Stand Tip) |
+|---|---|
+| Nachführungs-Commit | `58edd9f73bf986d688bc6e241446c57b5b782d59` — alle Metriken dieser Tabelle gelten für diesen Baum; danach folgt nur noch eine Kennzeichnungs-Ergänzung ohne Inhaltsänderung |
+| Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
+| Relative Links (Markdown, Branch-Baum) | **251 geprüft, 0 gebrochen** |
+| Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
+| Owner-Texte §11 (E1) / §14 (E5) | **final** (25.11.2026): 77/100 bzw. 83/100 Wörter, Status FINAL, Platzhalter entfernt; synchronisiert in `portal-field-mapping.md`, `portal-preflight-2026-11-14.md`, `owner-checklist.md` |
+| Owner-Entscheidungen §12 (E2/E3), §13 (E4), §15 (S1), §18 (Q19a/b) | **final** (25.11.2026): E2 = Nein (E3 entfällt, Vorlagetext 11 W.), 950 h, Second Stage = Ja (§16/§17 final), beide Q19-Zusagen erteilt |
+| Evidenz-Integritätssuite | **19/19 PASS** (`python3 -m unittest discover -s docs/research/evidence -p 'test_*.py' -q`); Hashregister in [EVIDENCE.md](../../research/evidence/EVIDENCE.md) |
+| Q5/E3-Wortzahl | **31 W. inkl. Platzhalterhinweis (11 W. Antworttext) / 60** — einheitlich in application-final-de.md, portal-field-mapping.md, portal-preflight-2026-11-14.md |
+| Überschriebene Abweichungen | frühere Zahlen aus älteren Baselines (`§2 97`, `§3 169`, `§4 133`, `Q5 21` als Fehlzählung) sind in [portal-field-mapping.md](portal-field-mapping.md) durch die verifizierten Werte ersetzt; der Preflight-Snapshot kennzeichnet seine Zahlen als historisch |
+
+Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage; sie beseitigt ausschließlich Zahlen- und Baseline-Drift zwischen den Dokumenten.
+
+**Damit ist C15 (`Validierungs-Baseline-Lag`) `RESOLVED`:** die PASS-Records der Runden 1–3 gelten unverändert für ihre Baseline-SHAs, und der aktuelle Tip ist zusätzlich mechanisch zertifiziert (128/128 Tests, 0 gebrochene Links, 0 Platzhalter, Lizenz und Datenschutz geprüft).
+ · **Geprüfter Candidate:** `b85ef7e2ae9ced55ef3b393399688fb8b03b3ce1` · **Branch:** `docs/funding-decision-2026-11-13` · **Reviewer:** A (Finanzen) **PASS**, B (Förderrecht/Evidenz/Vergleich) **PASS**
 
 > **Scope-Hinweis:** Dieser PASS gilt für das **Entscheidungs-/Finanzpaket** (Decision-Dokumente), **nicht** für das separate Bewerbungspaket unter [`application/`](../application/README.md). Die Bewerbungs-Reviews A/B haben einen eigenen Candidate und ein eigenes Gate.
 
