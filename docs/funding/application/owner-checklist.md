@@ -30,8 +30,8 @@
 | Wohnsitzland/-ort | `[OWNER_ANGABE_ERFORDERLICH]` |
 | Persönlicher GitHub-/Bitbucket-Link | `[OWNER_ANGABE_ERFORDERLICH]` |
 | Projektlink (Q6) | `https://github.com/xxammaxx/FormBridge` (öffentlich) |
-| Bisherige Projekte (max. 3) | `[OWNER_ANGABE_ERFORDERLICH]` — Name, Link, Rolle/Umfang |
-| Motivation/persönlicher Bezug | `[OWNER_ANGABE_ERFORDERLICH]` — max. 100 Wörter |
+| Bisherige Projekte (max. 3) | **ERLEDIGT 25.11.2026** — §11 final (77 W.): Feldexa 2.0, FormBridge, Umliva-Vorarbeit mit Links |
+| Motivation/persönlicher Bezug | **ERLEDIGT 25.11.2026** — §14 final (83 W.): technischer Autodidakt, Praxis, Prüfanspruch, Formularerfahrung |
 | Q4: Gesellschafter*in/GmbH/Verein/Institut? | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — Ja/Nein |
 | Q5: Falls ja, Trennung erläutern | `[OWNER_BESTÄTIGUNG_ERFORDERLICH]` — max. 60 Wörter |
 | Team | Nein (Solo) — bestätigen |

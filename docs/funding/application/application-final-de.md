@@ -1,6 +1,6 @@
 # FormBridge — Bewerbung Prototype Fund 2027, Jahrgang 03, Förderlinie Innovation
 
-**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **§11/§14 final:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Lizenz:** Apache-2.0 (Eigentümerentscheidung 25.11.2026; `LICENSE` im Repository, SPDX `Apache-2.0`). Die FOSS-Zusage in §18 bleibt unabhängig davon erforderlich.
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
@@ -99,9 +99,11 @@ Jeder Meilenstein endet mit reproduzierbarem Testlauf und öffentlichem Bericht.
 
 ## 11. Bisherige Softwareprojekte (max. 100 Wörter; max. 3 Beispiele)
 
-Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben].
+Als Alleinentwickler konzipiere, implementiere und teste ich:
+1. Feldexa 2.0 (https://github.com/xxammaxx/Feldexa_2.0): Android-App für digitale Formulare mit PDF-Import, lokaler Verarbeitung und verschlüsselter Ablage (Überführung meiner privaten Vorarbeit Umliva in modulare Open-Source-Bausteine).
+2. FormBridge (https://github.com/xxammaxx/FormBridge): Öffentliche Vorarbeiten zur Zuordnung statischer Wohngeld-PDFs zu FIM-Datenfeldern inkl. XSD-Defektanalyse, Referenzdatensatz und Prior-Art-Audit. Parallel bereite ich dort einen lokalen Vergleichsversuch vor, der prüft, ob ein kleines Offline-Sprachmodell mit direkt berechnetem, reversiblem LoRA-Adapter mehrdeutige Formularfelder besser zuordnen kann als regelbasierte Zuordnung oder das unveränderte Modell.
 
-**Wörter:** 31 / 100 (davon 13 Platzhalter-Token; 18 Token Antworttext) · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 77 / 100 · **Status:** FINAL
 
 ---
 
@@ -131,9 +133,9 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 ## 14. Motivation / Wild Card (max. 100 Wörter)
 
-Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Ich bin bereit, die für eine Förderung erforderlichen formalen Schritte rechtzeitig einzuleiten. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
+Ich bin technischer Autodidakt mit praktischer Erfahrung in CNC-Zerspanung, Elektronik, Reparatur und Automatisierung. Aus dieser Praxis bringe ich den Anspruch an klare Toleranzen und reproduzierbare Prüfungen in meine Softwareprojekte ein: Ich formuliere Anforderungen, entwickle Datenmodelle, Skripte und automatisierte Tests und prüfe Ergebnisse systematisch anhand konkreter Anwendungsfälle. Diese experimentelle Arbeitsweise bringe ich auch in die parallele Offline-LoRA-Forschung ein. Aus eigener Erfahrung kenne ich die Hürden beim Ausfüllen von Behördenformularen. Mit FormBridge möchte ich die Verarbeitung solcher Formulare nachvollziehbar machen und sensible Daten lokal halten.
 
-**Wörter:** 81 / 100 (davon 4 Platzhalter-Token; 77 Token Antworttext) · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 83 / 100 · **Status:** FINAL
 
 ---
 

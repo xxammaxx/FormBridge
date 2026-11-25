@@ -3,7 +3,7 @@
 **Zweck:** Den tatsächlichen Stand der Online-Bewerbung dokumentieren, die öffentlich belegbaren Portalfelder gegen die vorhandene Fassung prüfen und die verbleibenden Owner-Aktionen benennen. **Keine Einreichung, keine Kontoerstellung, keine E-Mail.**
 **Status:** **READY_WITH_EXPLICIT_BLOCKERS** — Bewerbungstext und Feldvorlage sind vorbereitet; der Live-Abgleich ist ohne Owner-Login nicht möglich, persönliche Angaben fehlen, und die formale Q2-Zulassungsvoraussetzung ist derzeit **nicht erfüllt**.
 
-**Zählstand:** Die Wortzahlen der Spalte „Vorlage“ wurden am 25.11.2026 gegen den aktuellen Bewerbungstext nachgezählt und entsprechen der Zählregel in [application-final-de.md](application-final-de.md) (Whitespace-Tokenizer, ohne `**Wörter:**`-Metazeile; Platzhalter zählen mit). Der Portalzugriff und alle übrigen Befunde dieses Dokuments bleiben der Stand vom 14.11.2026. Abweichende Zahlen in älteren Ständen waren: 23, 97, 169, 133, 81, 92, 90, 68 W. (Abschnitte 1, 2, 3, 4, 5, 7, 8, 9) sowie 16 und 77 W. (Abschnitte 11 und 14, jeweils ohne Platzhalter).
+**Zählstand:** Die Wortzahlen der Spalte „Vorlage“ wurden am 25.11.2026 gegen den aktuellen Bewerbungstext nachgezählt und entsprechen der Zählregel in [application-final-de.md](application-final-de.md) (Whitespace-Tokenizer, ohne `**Wörter:**`-Metazeile; Platzhalter zählen mit). Der Portalzugriff und alle übrigen Befunde dieses Dokuments bleiben der Stand vom 14.11.2026. Abweichende Zahlen in älteren Ständen waren: 23, 97, 169, 133, 81, 92, 90, 68 W. (Abschnitte 1, 2, 3, 4, 5, 7, 8, 9) sowie 31 W. inkl. Platzhalter (18 W. Antworttext) für Abschnitt 11 und 81 W. inkl. Platzhalter (77 W. Antworttext) für Abschnitt 14; §11 und §14 wurden am 25.11.2026 durch die freigegebenen Owner-Texte ersetzt und sind jetzt FINAL (77 bzw. 83 W.).
 
 ## 1. Portalzugriff — tatsächlich geprüft
 
@@ -66,11 +66,11 @@
 |---|---|---:|---|---|
 | T1 | Team? | 30 W. | §10: Nein (7 W.) | **FINAL** |
 | T2 | Teammitglieder | dasselbe Feld | nicht ausgefüllt (Solo) | **N/A** |
-| E1 | Bisherige Softwareprojekte | 100 W. | §11 (31 W. inkl. Platzhalter; 18 W. Antworttext) | **OWNER** |
+| E1 | Bisherige Softwareprojekte | 100 W. | §11 (77 W.) | **FINAL** |
 | E2 | GmbH/Verein/Institut? | Ja/Nein | §12 Q4 | **OWNER** |
 | E3 | Falls ja: Abgrenzung | 60 W. | §12 Q5 (31 W. inkl. Platzhalterhinweis, 11 W. Antworttext; frühere Angabe 21 W. war eine Fehlzählung) | **OWNER/BEDINGT** |
 | E4 | Arbeitsstunden | Zahl ≤ 950 | 950 | **FINAL (950)** |
-| E5 | Erfahrung/Motivation | 100 W. | §14 (81 W. inkl. Platzhalter; 77 W. Antworttext) | **OWNER** |
+| E5 | Erfahrung/Motivation | 100 W. | §14 (83 W.) | **FINAL** |
 
 ### D. Second Stage
 

@@ -5,7 +5,7 @@
 
 | Dokument | Zweck | Status |
 |---|---|---|
-| [application-final-de.md](application-final-de.md) | Vollständiger deutscher Bewerbungstext mit Wortlimits und Owner-Platzhaltern | READY_WITH_OWNER_INPUT |
+| [application-final-de.md](application-final-de.md) | Vollständiger deutscher Bewerbungstext mit Wortlimits; §11/§14 final, restliche Owner-Platzhalter A2–A5, Q4/Q5, Q19 | READY_WITH_REMAINING_OWNER_INPUT |
 | [portal-field-mapping.md](portal-field-mapping.md) | Offizielle Fragen, Wortlimits, Antwortzuordnung, Portal-Unbekannte | READY_WITH_PORTAL_CHECK |
 | [six-month-development-plan.md](six-month-development-plan.md) | 950-h-Plan, 850-h-Alternative, Deliverables, Tests, Risiken | DELTA_VALIDATED |
 | [budget-final.md](budget-final.md) | Baseline 950 h, 850-Variante, 800-Sensitivität, Q3/Q3b, Cash-Flow, De-minimis | DELTA_VALIDATED |

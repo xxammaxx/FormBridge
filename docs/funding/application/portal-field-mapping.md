@@ -11,7 +11,7 @@
 | Portal `https://bewerben.prototypefund.de/jahrgang-03-innovation/` | **PORTAL_UNVERIFIED** | Login erforderlich; exakte Zeichenlimits, Pflichtfeldmarkierungen und Portal-Sonderfelder nicht eingesehen |
 | PTF-Detailseite/Innovationsseite | **VERIFIED** | Frist, Förderlinie, Beträge, FOSS-Pflicht |
 
-**Wortzahlen (verifiziert 25.11.2026):** Alle `W.`-Angaben in dieser Datei wurden gegen den aktuellen Stand von [application-final-de.md](application-final-de.md) mit der dort dokumentierten Zählregel nachgezählt (Whitespace-Tokenizer, ohne `**Wörter:**`-Metazeile; Platzhalter zählen mit und sind separat ausgewiesen). Abweichende Angaben aus älteren Ständen (Abschnitt 4 mit 133 W., Abschnitt 2 mit 97 W., Abschnitt 3 mit 169 W.) sind damit überholt. Die frühere Angabe 21 W. für Q5 war eine Fehlzählung: korrekt sind **11 W. Antworttext** bzw. **31 W. inklusive Platzhalterhinweis**.
+**Wortzahlen (verifiziert 25.11.2026; §11 und §14 am 25.11.2026 finalisiert):** Alle `W.`-Angaben in dieser Datei wurden gegen den aktuellen Stand von [application-final-de.md](application-final-de.md) mit der dort dokumentierten Zählregel nachgezählt (Whitespace-Tokenizer, ohne `**Wörter:**`-Metazeile; Platzhalter zählen mit und sind separat ausgewiesen). Abweichende Angaben aus älteren Ständen (Abschnitt 4 mit 133 W., Abschnitt 2 mit 97 W., Abschnitt 3 mit 169 W.) sind damit überholt. Die frühere Angabe 21 W. für Q5 war eine Fehlzählung: korrekt sind **11 W. Antworttext** bzw. **31 W. inklusive Platzhalterhinweis**.
 
 **Wichtig:** Die Wortlimits stammen aus dem **Handbuch**, nicht aus dem Fragen-PDF. Das Portal kann zusätzlich **Zeichenlimits** erzwingen; diese wurden nicht eingesehen. Vor dem Absenden muss der Owner die Live-Anzeige prüfen. Es werden **keine** erfundenen Zeichenlimits angegeben.
 
@@ -49,11 +49,11 @@
 |---|---|---|---:|---|
 | T1 | Bewerbt ihr euch als Team um die Förderung? | 30 Wörter (gesamtes Teamfeld) | §10: Nein (7 W.) | FINAL |
 | T2 | Für Teams: Namen der Teammitglieder (verbindliche Nennung), Funktion im Team sowie geschätzte Wochenstunden pro Teammitglied. | dasselbe 30-Wörter-Feld | nicht ausgefüllt (Solo) | NOT_APPLICABLE |
-| E1 | An welchen Software-Projekten hast du / habt ihr bisher gearbeitet? **Bei Open-Source-Projekten bitte einen Link zum Repository angeben.** Max. 3 Beispiele. | 100 Wörter | §11 (31 W. inkl. Platzhalter, davon 18 W. Antworttext; max. 3 Projekte, Links prüfen/ergänzen) | OWNER_ANGABE_ERFORDERLICH |
+| E1 | An welchen Software-Projekten hast du / habt ihr bisher gearbeitet? **Bei Open-Source-Projekten bitte einen Link zum Repository angeben.** Max. 3 Beispiele. | 100 Wörter | §11 (77 W.) | FINAL |
 | E2 | Bist du oder sind deine Teammitglieder Gesellschafter*innen einer GmbH (oder andere Unternehmensform), haben einen Verein oder eine Organisation gegründet oder arbeiten für einen thematisch mit dem Projekt verbundenen Verein, ein Forschungsinstitut o. Ä.? | Ja/Nein | §12 Q4: `[OWNER_BESTÄTIGUNG]` | OWNER_BESTÄTIGUNG_ERFORDERLICH |
 | E3 | Wenn ja, erläutere, weshalb das Projekt nicht dazu dient, eine für den eigenen Geschäftsbetrieb benötigte Software zu entwickeln. | 60 Wörter | §12 Q5 (31 W. inkl. Platzhalterhinweis, 11 W. Antworttext) | OWNER_BESTÄTIGUNG_ERFORDERLICH |
 | E4 | Wie viele Stunden willst du (bzw. will das Team) in den 6 Monaten Förderzeitraum insgesamt an der Umsetzung arbeiten? | Zahl, max. 950 | §13: 950 | FINAL (950; 850 nur bei Owner-Änderung) |
-| E5 | Erfahrung, Hintergrund, Motivation, Perspektive: Was sollte die Jury über dich (bzw. euch) wissen und bei der Auswahl berücksichtigen? | 100 Wörter | §14 (81 W. inkl. Platzhalter, davon 77 W. Antworttext) | OWNER_ANGABE_ERFORDERLICH |
+| E5 | Erfahrung, Hintergrund, Motivation, Perspektive: Was sollte die Jury über dich (bzw. euch) wissen und bei der Auswahl berücksichtigen? | 100 Wörter | §14 (83 W.) | FINAL |
 
 ## D. Second Stage
 

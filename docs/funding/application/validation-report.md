@@ -3,7 +3,7 @@
 **Review-PASS Bewerbungspaket:** `9ed862253da0be133157540ae0891d26bf65ade9` · **Gründungs-Delta:** `d062d9db` · **Readiness-Delta:** `ef968f9` · **Branch:** `docs/funding-decision-2026-11-13` · **Datum:** 14.11.2026
 **Reviewer Bewerbungspaket:** A **PASS**, B **PASS** ([Review-Bericht](review-report.md)) · **Reviewer Readiness/Gründung:** A **PASS**, B **PASS** ([Readiness-Review](review-application-readiness-2026-11-14.md)) · **Tests:** 109/109 PASS · **Relative Links:** 249, 0 gebrochen (Stand Branch-Tip `58edd9f73bf986d688bc6e241446c57b5b782d59`)
 **Hinweis:** Die A/B-PASS-Zeilen oben gelten für ihre jeweiligen Baseline-SHAs (`9ed8622`, `d062d9d`, `ef968f9`). Der aktuelle Branch-Tip ist `58edd9f73bf986d688bc6e241446c57b5b782d59`; die RF1-/LoRA-Deltas danach sind ausschließlich dokumentarisch revalidiert (`DELTA_VALIDATED_WITH_BLOCKERS`), nicht erneut unabhängig reviewt. Die aktuellen Metriken stehen in §0.
-**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, persönliche Angaben, die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
+**Gate:** **READY_WITH_EXPLICIT_BLOCKERS** für den Portal-Preflight — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; offen sind der authentifizierte Live-Abgleich, die verbleibenden persönlichen Angaben (A2–A5, Q4/Q5, Q19), die Second-Stage-/Stundenentscheidung und die materielle Q2-Klärung; §11 (E1) und §14 (E5) sind seit 25.11.2026 final. Das Bewerbungspaket selbst bleibt `READY_FOR_OWNER_INPUT`.
 
 ## 0. Nachführung auf den Branch-Tip (25.11.2026)
 
@@ -13,6 +13,7 @@
 | Tests | **109/109 PASS** (`python3 -m unittest discover -s docs/funding/decision/validation -p 'test_*.py' -q`) |
 | Relative Links (Markdown, Branch-Baum) | **249 geprüft, 0 gebrochen** |
 | Wortzahlen §1–§18 | nachgezählt mit der in [application-final-de.md](application-final-de.md) dokumentierten Zählregel; alle Abschnitte innerhalb der Limits |
+| Owner-Texte §11 (E1) / §14 (E5) | **final** (25.11.2026): 77/100 bzw. 83/100 Wörter, Status FINAL, Platzhalter entfernt; synchronisiert in `portal-field-mapping.md`, `portal-preflight-2026-11-14.md`, `owner-checklist.md` |
 | Q5/E3-Wortzahl | **31 W. inkl. Platzhalterhinweis (11 W. Antworttext) / 60** — einheitlich in application-final-de.md, portal-field-mapping.md, portal-preflight-2026-11-14.md |
 | Überschriebene Abweichungen | frühere Zahlen aus älteren Baselines (`§2 97`, `§3 169`, `§4 133`, `Q5 21` als Fehlzählung) sind in [portal-field-mapping.md](portal-field-mapping.md) durch die verifizierten Werte ersetzt; der Preflight-Snapshot kennzeichnet seine Zahlen als historisch |
 
@@ -69,7 +70,7 @@ Diese Nachführung ändert keine Bewertung, keine Frist und keine Förderzusage;
 | M3a/b/c | Selbstständig/freiberuflich oder Freistellung; M3c Aufnahme erst 2027 | `[OWNER_BESTÄTIGUNG]` / `[PTF_BESTÄTIGUNG]` | Status + PTF-Antwort (Q2); **formale Zulassungsvoraussetzung derzeit nicht erfüllt**; falls Zustimmung: Registrierung vor PTF-bestätigtem formalem Antrag |
 | Q2 | Materielle Selbstständigkeitsvoraussetzung und Nachweiszeitpunkt | `[PTF_BESTÄTIGUNG]` | **CONTRADICTED:** JG03-FAQ/Bewerbungsseite verlangen Selbstständigkeit/Freistellung; JG03-Handbuch nennt sie nicht unter den zwingenden Förderbedingungen; Online-Fragen ohne Statusfeld; JG02-Wiki verlangt Steuernummer zum formalen Antrag. Analyse: [q2-employment-status.md](../decision/q2-employment-status.md) |
 | M4 | Programmierkenntnisse | `[OWNER_BESTÄTIGUNG]` | Eigene Bestätigung |
-| M5 | Vorarbeiten/Kenntnisse | `[OWNER_ANGABE]` | §11/§14 personalisieren |
+| M5 | Vorarbeiten/Kenntnisse | **erledigt (25.11.2026)** | §11/§14 final personalisiert (77 bzw. 83 W.) |
 | M6 | De-minimis-Historie | `[OWNER_ANGABE]` | Beihilfen der letzten 3 Jahre addieren |
 | M8 | Kontoauszug ≥ 2.493,75 € | `[OWNER_BESTÄTIGUNG]` | Erst bei Bewilligung formal |
 
