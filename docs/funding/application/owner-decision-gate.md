@@ -25,7 +25,7 @@
 | G5 | **Stunden** | 950 (Default) / 850 | Förderhöhe/Kapazität | **ERLEDIGT: 950 (25.11.2026)** |
 | G6 | **Second Stage** | Ja (Default) / Nein | §16/§17 | **ERLEDIGT: Ja (25.11.2026)** |
 | G7 | **Lizenz** | Apache-2.0 (Empfehlung) / andere OSI / offen | FOSS-Zusage | **ERLEDIGT: Apache-2.0 (25.11.2026)** |
-| G8 | **Projektfassung** | F3 FormBridge (Empfehlung) / F1 / F2 / RepairProbe | Antragsobjekt | vor Einreichung |
+| G8 | **Projektfassung** | F3 FormBridge (Empfehlung) / F1 / F2 / RepairProbe | Antragsobjekt | **ERLEDIGT: F3 exklusiv (25.11.2026), keine RepairProbe-Bewerbung** |
 | G9 | **Q3/Q3b-Anfrage** | ja/nein | Maximalausschöpfung | optional |
 | G10 | **Held-out-PDF/Rechte** | vorhanden/beschaffen/Fallback | Evaluationsqualität | vor Förderbeginn |
 | G11 | **Optionale GPU-/API-Ausgaben** (RF1) | lokal / nach schriftlicher Kostenklärung und gesonderter Budgetfreigabe / zulässig separat finanziert | keine Erhöhung, kein Hindernis für regelbasierten Kern | vor Ausgabe |
@@ -36,7 +36,7 @@
 - M7: Kapazität 950 h bestätigt/geplant (158 h/Monat im Schnitt).
 - M8: Kontoauszug-Saldo ≥ 2.493,75 € (2.500 € empfohlen) bestätigt/geplant — Vorlage bei Bewilligung.
 - M9: Second Stage **Ja** (entschieden 25.11.2026).
-- Lizenz, Stunden, Projektfassung.
+- Lizenz (Apache-2.0), Stunden (950) und Projektfassung (F3 exklusiv) sind entschieden; offen sind nur Portal-Stammdaten, Live-Abgleich und der Q2-Stichtag.
 - Q4/Q5 (Beteiligungen) und Q19a/b im Portal.
 - Keine sensiblen Werte im Repo.
 

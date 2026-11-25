@@ -21,7 +21,9 @@ Die vorhandene Forschung verwendet zwei Namen, die nicht deckungsgleich sind:
 - **F3 — FormBridge:** die FIM-Zuordnungs-/Verifier-Infrastruktur aus PR #168 (gegenwärtige Forschung).
 - **RP — RepairProbe:** die Reparaturdiagnose-App.
 
-Die **bedingte Empfehlung** bezieht sich auf **F3 als Fördergegenstand** für die Innovationslinie; F1 ist die stärkere Nutzergeschichte, aber die schwächere Innovations-/Abgrenzungsposition; F2 ist eine mittlere Option. Der Owner entscheidet, welche Fassung – oder ob RP – eingereicht wird.
+Die **bedingte Empfehlung** bezieht sich auf **F3 als Fördergegenstand** für die Innovationslinie; F1 ist die stärkere Nutzergeschichte, aber die schwächere Innovations-/Abgrenzungsposition; F2 ist eine mittlere Option.
+
+> **Entscheidung des Owners (25.11.2026, A5/B2):** **exklusive Einreichung von FormBridge (F3)**. RepairProbe wird **nicht** eingereicht und **nicht weiter untersucht**; der Vergleich bleibt als Begründungsdokument erhalten. Damit ist der Testzahl-Widerspruch bei RepairProbe (24 vs. 44) für dieses Vorhaben **gegenstandslos**.
 
 ## 1. Evidenzlage und ihre Grenzen
 

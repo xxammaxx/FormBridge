@@ -46,7 +46,7 @@
 | O1 | **Lizenz** | Apache-2.0 / MPL-2.0 / andere OSI-Lizenz | **Apache-2.0** entschieden (25.11.2026), `LICENSE` committet | **ERLEDIGT** |
 | O2 | **Stunden** | 950 (Default) / 850 (bewusste Änderung) | **950 entschieden (25.11.2026)** | **ERLEDIGT** |
 | O3 | **Second Stage** | Ja / Nein | **Ja entschieden (25.11.2026)**; §16/§17 sind final | **ERLEDIGT** |
-| O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | Bedingte Empfehlung F3; Owner entscheidet | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
+| O4 | **Feldexa-Fassung** | F1 App / F2 ProofLayer / F3 FormBridge / RepairProbe | **F3 entschieden (25.11.2026): exklusive Einreichung FormBridge; keine Parallelbewerbung mit RepairProbe** | **ERLEDIGT** |
 | O5 | **Q1/Q2/Q3-Anfragen** | senden / nicht senden | Q2 ist kritisch; Q3 nur für Maximalausschöpfung | `[OWNER_ENTSCHEIDUNG_ERFORDERLICH]` |
 
 ## D. Formale/externe Klärungen
@@ -68,7 +68,7 @@
 - [x] O1 Lizenz entschieden: Apache-2.0 (25.11.2026), `LICENSE` im Wurzelverzeichnis; FOSS-Zusage in Q19b bleibt zusätzlich erforderlich.
 - [ ] O2 Stunden entschieden; Budget/Plan konsistent.
 - [ ] O3 Second Stage entschieden; §16/§17 entfernt oder final.
-- [ ] O4 Projektfassung final bestätigt (F3 empfohlen).
+- [x] O4 Projektfassung final bestätigt: **F3 FormBridge, exklusiv** (25.11.2026); RepairProbe wird nicht eingereicht und nicht weiter untersucht.
 - [ ] O5 Q2-Anfrage gestellt oder bewusst zurückgestellt. **Schnellster Kanal: Bewerbungssprechstunde 16.11.2026, 17:00 Uhr.**
 - [ ] Q4 (Ja/Nein) und Q5 (max. 60 Wörter) getrennt beantwortet.
 - [ ] Q19a (18+/Hauptwohnsitz DE) und Q19b (FOSS-Zusage) bestätigt.

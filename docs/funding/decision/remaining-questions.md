@@ -8,16 +8,18 @@
 
 | ID | Frage | Klassifikation | Blockiert die Einreichung? | Wirkung |
 |---|---|---|---|---|
-| Q1 | Mehrere gleichzeitige Förderungen einer Person | REQUIRES_AUTHORITY_CLARIFICATION | Nein, für **eine** Einreichung; ja, wenn beide Projekte parallel gefördert werden sollen | Strategie |
+| Q1 | Mehrere gleichzeitige Förderungen einer Person | **NOT_APPLICABLE** (Entscheidung A5: genau eine Bewerbung, F3) | Nein | gegenstandslos |
 | Q2 | Selbstständigkeit: exakter Stichtag | REQUIRES_AUTHORITY_CLARIFICATION (nur Stichtag) | Nein bei Registrierung vor Förderbeginn | Formale Antragsberechtigung |
 | Q3 | 47.500 € vs. 47.381,25 € (GK-/95-%-Logik) | **UNRESOLVED / REQUIRES_AUTHORITY_CLARIFICATION** | Nein, bei konservativer Planung; ja nur für Maximalausschöpfung | 118,75 € |
 | Q3b | Second Stage 31.667 € vs. 31.570,87 € | **UNRESOLVED / REQUIRES_AUTHORITY_CLARIFICATION** | Nein, bei konservativer Planung | 96,13 € |
 | Q4 | Erwarteter Nachweisgrad „Vorarbeiten/Kenntnisse" | REQUIRES_AUTHORITY_CLARIFICATION | Nein (weiche Bewertung) | Bewerbungstext |
 | Q5 | Lizenzzeitpunkt im formalen Antrag | REQUIRES_AUTHORITY_CLARIFICATION | Nein; Owner-Lizenzentscheidung separat | Formalie |
-| Q6 | Unbenutzter RepairProbe-Portal-Draft | NOT_APPLICABLE / Beobachtung | Nein | Plattformmechanik |
+| Q6 | Unbenutzter RepairProbe-Portal-Draft | **NOT_APPLICABLE** (A5: RepairProbe wird nicht eingereicht und nicht weiter untersucht) | Nein | gegenstandslos |
 | Q7 | 10-Monats-Option in der Innovationslinie | REQUIRES_AUTHORITY_CLARIFICATION | Nein, nur falls 10 Monate beantragt werden | Laufzeit/Finanzierung |
 
-## Q1 — Mehrere gleichzeitige Förderungen einer Person (F2.4)
+## Q1 — Mehrere gleichzeitige Förderungen einer Person (F2.4) — NOT_APPLICABLE
+
+> **Entscheidung A5/B2 (25.11.2026):** Es wird **exakt eine** Bewerbung eingereicht (FormBridge, F3). Die Frage paralleler Förderungen ist damit gegenstandslos; die Anfrage wird nicht versendet. Die Analyse unten bleibt als Prüfprotokoll erhalten.
 
 - **Bekannt:** Mehrere Bewerbungen gleichzeitig sind ausdrücklich zulässig (FAQ Bewerbung 06: „Ja."). Ein RepairProbe-Draft liegt faktisch parallel.
 - **Fehlt:** Ob **zwei gleichzeitige Förderzusagen** (zwei geförderte Projekte desselben Antragstellers im selben Zeitraum) möglich sind und ob Stundenkapazität/Haftung begrenzen.

@@ -2,7 +2,7 @@
 
 **Datum:** 13.11.2026 · **Bezug:** Issue #167 · Basis: `../research/prior-art-audit.md`, `../research/innovation-assessment.md`, `../research/reference-case-wohngeld.md`, `../research/technical-specification.md`, `prototype-fund-feasibility.md`, [Vergleichsbericht](decision/comparison-report.md)
 
-> **Namensabgrenzung:** „Feldexa 2.0" ist die Produktanwendung; „FormBridge" ist das eigenständige, förderfähige Infrastrukturmodul im Feldexa-Kontext (siehe [project-boundary.md](project-boundary.md)). Dieser Bericht empfiehlt **FormBridge als Fördergegenstand**; die Entscheidung über F1 (Produkt), F2 (ProofLayer), F3 (FormBridge) oder RepairProbe trifft der Owner.
+> **Namensabgrenzung:** „Feldexa 2.0" ist die Produktanwendung; „FormBridge" ist das eigenständige, förderfähige Infrastrukturmodul im Feldexa-Kontext (siehe [project-boundary.md](project-boundary.md)). Dieser Bericht empfiehlt **FormBridge als Fördergegenstand**; die Entscheidung über F1 (Produkt), F2 (ProofLayer), F3 (FormBridge) oder RepairProbe hat der Owner getroffen: **exklusiv F3, keine Parallelbewerbung mit RepairProbe (25.11.2026, A5/B2).**
 
 ## Empfehlung: **CONDITIONAL_GO für FormBridge (F3) als Fördergegenstand**
 
@@ -21,7 +21,7 @@ FormBridge (eng gefasst, als app-unabhängiges Infrastrukturmodul) ist nach Quel
 | # | Bedingung | Fälligkeit |
 |---|---|---|
 | B1 | **Formale Klärung Antragsteller** (Einzelperson Wohnsitz DE / Team-GbR) + Portal-Check aktueller Kriterien + Teilnahme an Sprechstunde 16.11.2026 | vor Einreichung |
-| B2 | **Entscheid Feldexa-Fassung (F1/F2/F3) vs. RepairProbe bestätigen** für genau eine Bewerbung (RepairProbe bleibt unverändert; Vergleich: docs/funding/decision/comparison-report.md, bedingte Empfehlung F3) | vor Einreichung |
+| B2 | **Entscheid Feldexa-Fassung (F1/F2/F3) vs. RepairProbe bestätigen** für genau eine Bewerbung (RepairProbe bleibt unverändert; Vergleich: docs/funding/decision/comparison-report.md, bedingte Empfehlung F3) | **ERLEDIGT / DECIDED (25.11.2026): Exklusive Einreichung von FormBridge (F3); keine Parallelbewerbung mit RepairProbe.** |
 | B3 | **Modul-Repo-Isolierung beschließen** (eigenes Repo/Lizenz; kein Produktcode im Förderumfang; bis Förderbeginn keine Modul-Implementierung, um Vorab-Leistungs-Problematik zu vermeiden) | vor Einreichung |
 | B4 | **Falsifikations-Fortlauf:** Suche nach konkurrierenden Projekten (incl. FITKO-Announcements) bis Abgabedatum; bei fundierter Widerlegung → PIVOT (Alternative: Schema-Hygiene-Tool + Provenienzformat als schmaleres Vorhaben) | bis 30.11.2026 |
 | B5 | **De-Overclaim-Pass auf Bewerbungstext** (keine universalen Negativbehauptungen; Nutzenkette nicht über das Modul hinaus) | vor Einreichung — in Revisionsstufe 2 (13.11.2026) vorab umgesetzt, vor Einreichung final prüfen |
