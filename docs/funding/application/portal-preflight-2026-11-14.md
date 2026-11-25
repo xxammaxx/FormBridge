@@ -3,6 +3,8 @@
 **Zweck:** Den tatsächlichen Stand der Online-Bewerbung dokumentieren, die öffentlich belegbaren Portalfelder gegen die vorhandene Fassung prüfen und die verbleibenden Owner-Aktionen benennen. **Keine Einreichung, keine Kontoerstellung, keine E-Mail.**
 **Status:** **READY_WITH_EXPLICIT_BLOCKERS** — Bewerbungstext und Feldvorlage sind vorbereitet; der Live-Abgleich ist ohne Owner-Login nicht möglich, persönliche Angaben fehlen, und die formale Q2-Zulassungsvoraussetzung ist derzeit **nicht erfüllt**.
 
+**Zählstand:** Die Wortzahlen der Spalte „Vorlage“ wurden am 25.11.2026 gegen den aktuellen Bewerbungstext nachgezählt und entsprechen der Zählregel in [application-final-de.md](application-final-de.md) (Whitespace-Tokenizer, ohne `**Wörter:**`-Metazeile; Platzhalter zählen mit). Der Portalzugriff und alle übrigen Befunde dieses Dokuments bleiben der Stand vom 14.11.2026. Abweichende Zahlen in älteren Ständen waren: 23, 97, 169, 133, 81, 92, 90, 68 W. (Abschnitte 1, 2, 3, 4, 5, 7, 8, 9) sowie 16 und 77 W. (Abschnitte 11 und 14, jeweils ohne Platzhalter).
+
 ## 1. Portalzugriff — tatsächlich geprüft
 
 | Prüfung | Ergebnis |
@@ -48,15 +50,15 @@
 
 | # | Frage | Limit | Vorlage | Status |
 |---|---|---:|---|---|
-| P1 | Projekt in einem Satz | 30 W. | §1 (23 W.) | **FINAL** |
-| P2 | Projekt kurz beschreiben | 100 W. | §2 (97 W.) | **FINAL** |
-| P3 | Gesellschaftliche Herausforderung | 175 W. | §3 (169 W.) | **FINAL** |
-| P4 | Technische Umsetzung | 175 W. | §4 (133 W.) | **FINAL** |
-| P5 | Aktueller Stand/Neuerungen | 100 W. | §5 (81 W.) | **FINAL** |
+| P1 | Projekt in einem Satz | 30 W. | §1 (22 W.) | **FINAL** |
+| P2 | Projekt kurz beschreiben | 100 W. | §2 (90 W.) | **FINAL** |
+| P3 | Gesellschaftliche Herausforderung | 175 W. | §3 (170 W.) | **FINAL** |
+| P4 | Technische Umsetzung | 175 W. | §4 (165 W.) | **FINAL** |
+| P5 | Aktueller Stand/Neuerungen | 100 W. | §5 (77 W.) | **FINAL** |
 | P6 | Link zum bestehenden Projekt | optional | §6 | **FINAL** |
-| P7 | Innovation/Abgrenzung | 100 W. | §7 (92 W.) | **FINAL** |
-| P8 | Zielgruppe/Zugang | 100 W. | §8 (90 W.) | **FINAL** |
-| P9 | Meilensteine | 100 W. | §9 (68 W.) | **FINAL** |
+| P7 | Innovation/Abgrenzung | 100 W. | §7 (85 W.) | **FINAL** |
+| P8 | Zielgruppe/Zugang | 100 W. | §8 (93 W.) | **FINAL** |
+| P9 | Meilensteine | 100 W. | §9 (75 W.) | **FINAL** |
 
 ### C. Team und Erfahrung
 
@@ -64,19 +66,19 @@
 |---|---|---:|---|---|
 | T1 | Team? | 30 W. | §10: Nein (7 W.) | **FINAL** |
 | T2 | Teammitglieder | dasselbe Feld | nicht ausgefüllt (Solo) | **N/A** |
-| E1 | Bisherige Softwareprojekte | 100 W. | §11 (16 W. + Platzhalter) | **OWNER** |
+| E1 | Bisherige Softwareprojekte | 100 W. | §11 (31 W. inkl. Platzhalter; 18 W. Antworttext) | **OWNER** |
 | E2 | GmbH/Verein/Institut? | Ja/Nein | §12 Q4 | **OWNER** |
-| E3 | Falls ja: Abgrenzung | 60 W. | §12 Q5 (21 W.) | **OWNER/BEDINGT** |
+| E3 | Falls ja: Abgrenzung | 60 W. | §12 Q5 (31 W. inkl. Platzhalterhinweis, 11 W. Antworttext; frühere Angabe 21 W. war eine Fehlzählung) | **OWNER/BEDINGT** |
 | E4 | Arbeitsstunden | Zahl ≤ 950 | 950 | **FINAL (950)** |
-| E5 | Erfahrung/Motivation | 100 W. | §14 (77 W. + Platzhalter) | **OWNER** |
+| E5 | Erfahrung/Motivation | 100 W. | §14 (81 W. inkl. Platzhalter; 77 W. Antworttext) | **OWNER** |
 
 ### D. Second Stage
 
 | # | Frage | Limit | Vorlage | Status |
 |---|---|---:|---|---|
 | S1 | Second Stage beantragen? | Ja/Nein | Ja | **OWNER-ENTSCHEIDUNG** |
-| S2 | Schwerpunkt | 175 W. | §16 (99 W.) | **FINAL (bei Ja)** |
-| S3 | Meilensteine | 100 W. | §17 (30 W.) | **FINAL (bei Ja)** |
+| S2 | Schwerpunkt | 175 W. | §16 (98 W.) | **FINAL (bei Ja)** |
+| S3 | Meilensteine | 100 W. | §17 (29 W.) | **FINAL (bei Ja)** |
 
 ### E. Bestätigungen
 

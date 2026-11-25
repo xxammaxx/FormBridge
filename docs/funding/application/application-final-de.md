@@ -1,10 +1,10 @@
 # FormBridge — Bewerbung Prototype Fund 2027, Jahrgang 03, Förderlinie Innovation
 
-**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
 
-**Wortlimits:** aus dem offiziellen PTF-Handbuch Jahrgang 03 (Fragen 2–19). Die hier angegebenen Wortzahlen nutzen einen einfachen Whitespace-Tokenizer; das Portal kann anders zählen und zusätzlich Zeichenlimits erzwingen. Diese wurden nicht eingesehen.
+**Wortlimits:** aus dem offiziellen PTF-Handbuch Jahrgang 03 (Fragen 2–19). **Zählregel (reproduzierbar, Stand 25.11.2026):** gezählt wird der Antworttext eines Abschnitts ohne die `**Wörter:**`-Metazeile, getrennt an Whitespace (`len(text.split())`); Platzhalter in eckigen Klammern zählen mit und werden zusätzlich getrennt ausgewiesen. Das Portal kann anders zählen und zusätzlich Zeichenlimits erzwingen; diese wurden nicht eingesehen (`PORTAL_UNVERIFIED`). Alle Abschnitte liegen innerhalb der dokumentierten Limits.
 
 ---
 
@@ -100,7 +100,7 @@ Jeder Meilenstein endet mit reproduzierbarem Testlauf und öffentlichem Bericht.
 
 Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. Öffentlich: Feldexa 2.0 (Flutter/Dart), https://github.com/xxammaxx/Feldexa_2.0, und das FormBridge-Research-Repo, https://github.com/xxammaxx/FormBridge. [OWNER_ANGABE_ERFORDERLICH: max. 3 Projekte, Links, Rolle und Umfang; keine erfundenen Angaben].
 
-**Wörter:** 16 + Platzhalter / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 31 / 100 (davon 13 Platzhalter-Token; 18 Token Antworttext) · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 
@@ -114,7 +114,7 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 [OWNER_BESTÄTIGUNG_ERFORDERLICH: Falls Q4 = Ja, Beteiligung/Anstellung nennen und die klare Trennung zum Projekt erläutern. Falls Q4 = Nein, Q5 entfällt.] FormBridge ist ein eigenständiges Gemeinwohlprojekt und keine Auftragsentwicklung für einen Geschäftsbetrieb.
 
-**Wörter Q5:** 11 / 60 (Antworttext; Owner-Ergänzung bei Q4=Ja) · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
+**Wörter Q5:** 31 / 60 (11 Token Antworttext + 20 Token Platzhalterhinweis; bei Q4 = Ja ersetzt die Owner-Antwort den Platzhalter) · **Status:** OWNER_BESTÄTIGUNG_ERFORDERLICH
 
 ---
 
@@ -132,7 +132,7 @@ Seit [JAHR] arbeite ich an [PROJEKT] und habe dort [ROLLE/UMFANG] verantwortet. 
 
 Das Problem begleitet mich [OWNER_ANGABE: persönlicher Bezug]. Entscheidend ist für mich, dass digitale Verwaltung nicht bedeutet, sensible Daten an intransparente Dienste zu geben. FormBridge verbindet technische Sorgfalt mit einem konkreten öffentlichen Nutzen: nachvollziehbare Zuordnungen, offene Standards und Werkzeuge, die andere wiederverwenden können. Ich möchte die förderfähige Zeit nutzen, um die offene Lücke zwischen amtlichen PDFs und FIM-Datenfeldern belastbar zu schließen und die Ergebnisse vollständig zu veröffentlichen. Ich bin bereit, die für eine Förderung erforderlichen formalen Schritte rechtzeitig einzuleiten. [OWNER_ANGABE: Erfahrung/Motivation ergänzen].
 
-**Wörter:** 77 + Platzhalter / 100 · **Status:** OWNER_ANGABE_ERFORDERLICH
+**Wörter:** 81 / 100 (davon 4 Platzhalter-Token; 77 Token Antworttext) · **Status:** OWNER_ANGABE_ERFORDERLICH
 
 ---
 

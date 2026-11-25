@@ -1,18 +1,22 @@
 # Offene Owner-Entscheidungen (Liste)
 
-**Stand:** 13.11.2026 · **Kontext:** Bedingte Empfehlung **F3 (FormBridge im Feldexa-Kontext)** (siehe [comparison-report.md](comparison-report.md)); Frist 30.11.2026, 15:00 CET. Nur der Repository-Eigentümer kann diese Punkte entscheiden/ausführen; der Bericht wurde ohne sie finalisiert, aber die Einreichung hängt an ihnen.
+**Stand:** 13.11.2026 · **Statusnachtrag:** 25.11.2026 (siehe unten) · **Kontext:** Bedingte Empfehlung **F3 (FormBridge im Feldexa-Kontext)** (siehe [comparison-report.md](comparison-report.md)); Frist 30.11.2026, 15:00 CET. Nur der Repository-Eigentümer kann diese Punkte entscheiden/ausführen; der Bericht wurde ohne sie finalisiert, aber die Einreichung hängt an ihnen.
 
 ## Entscheidungs-Block A — zwingend vor Einreichung FormBridge
 
 | # | Entscheidung/Aktion | Warum | Deadline-Empfehlung |
 |---|---|---|---|
-| A1 | **Lizenz verbindlich wählen** (Empfehlung Apache-2.0 liegt in `docs/governance/license-decision.md`) und LICENSE-Datei committen | PTF: FOSS-Pflicht | bis 20.11. |
-| A2 | **PTF-Team schriftlich anfragen:** (a) zulässig zwei Anträge einer Person (FormBridge + RepairProbe-Draft) im selben Jahrgang? (b) Eigenanteil-Modell (≥5 %?) bestätigen; (c) Q3: 47.500 vs. 47.381,25 und Second Stage 31.667 vs. 31.570,87; (d) Selbstständigkeit ab Förderbeginn (Q2) | deep-research-Doku markiert diese Punkte OFFEN; Schweizer FAQ nicht übertragbar; Q3-Anfrageentwurf liegt vor | bis 18.11. (Antwortzeit!) |
-| A3 | **Held-out-Wohngeld-PDF** (anderes Bundesland) beschaffen + Rechte prüfen (inkl. Klärung `copy:no`-Rechtslage der Fürther Quelle; ggf. Behördenanfrage um Nutzungsgenehmigung) | Review A: HIGH-Risiko Ein-Dokument-Evidenz | bis 24.11. |
+| A1 | **Lizenz verbindlich wählen** (Empfehlung Apache-2.0 liegt in `docs/governance/license-decision.md`) und LICENSE-Datei committen | PTF: FOSS-Pflicht | bis 20.11. — **Empfehlungstermin verstrichen; offen (Stand 25.11.2026)** |
+| A2 | **PTF-Team schriftlich anfragen:** (a) zulässig zwei Anträge einer Person (FormBridge + RepairProbe-Draft) im selben Jahrgang? (b) Eigenanteil-Modell (≥5 %?) bestätigen; (c) Q3: 47.500 vs. 47.381,25 und Second Stage 31.667 vs. 31.570,87; (d) Selbstständigkeit ab Förderbeginn (Q2) | deep-research-Doku markiert diese Punkte OFFEN; Schweizer FAQ nicht übertragbar; Q3-Anfrageentwurf liegt vor | bis 18.11. (Antwortzeit!) — **Empfehlungstermin verstrichen, keine Anfrage versendet; offen (Stand 25.11.2026)** |
+| A3 | **Held-out-Wohngeld-PDF** (anderes Bundesland) beschaffen + Rechte prüfen (inkl. Klärung `copy:no`-Rechtslage der Fürther Quelle; ggf. Behördenanfrage um Nutzungsgenehmigung) | Review A: HIGH-Risiko Ein-Dokument-Evidenz | bis 24.11. — **Empfehlungstermin verstrichen; offen (Stand 25.11.2026)** |
 | A4 | **Bewerbungstext-Ergänzungen** einarbeiten: RF-Messabsatz, Document-AI-/LLM-Abgrenzung, XSD-Verbraucher-Argument, Adaptierbarkeits-Story (2. Schema-Demo-Pfad) | Review A Vektoren 1/2/6/7 | bis 26.11. |
 | A5 | **Feldexa-Fassung (F1/F2/F3) vs. RepairProbe final bestätigen** (dieser Bericht = bedingte Empfehlung F3; ggf. RepairProbe-Portal-Draft bewusst ruhen lassen) | Auftrag: genau ein Antrag; **Owner entscheidet, nicht der Agent** | bis 27.11. |
 | A6 | **Portal-Eintragung** (FormBridge-Bausteine übertragen, Fragen des Live-Portals gegen Vorlage prüfen) | Frist 30.11. 15:00 CET — Puffer einplanen | bis 28.11. |
-| A7 | **Q2/Gründungsstrategie entscheiden:** Q2-Anfrage senden; Variante A/B/C wählen; keine Anmeldung ohne Freigabe | **Q2 materiell widersprüchlich** (FAQ/Bewerbungsseite vs. JG03-Handbuch); Online-Fragen ohne Statusfeld; formaler Antrag März/Ende Feb; „erst Juni“ nicht sicher | bis 24.11. |
+| A7 | **Q2/Gründungsstrategie entscheiden:** Q2-Anfrage senden; Variante A/B/C wählen; keine Anmeldung ohne Freigabe | **Q2 materiell widersprüchlich** (FAQ/Bewerbungsseite vs. JG03-Handbuch); Online-Fragen ohne Statusfeld; formaler Antrag März/Ende Feb; „erst Juni“ nicht sicher | bis 24.11. — **Empfehlungstermin verstrichen; offen (Stand 25.11.2026)** |
+
+## Statusnachtrag 25.11.2026 — verstrichene Empfehlungstermine
+
+Die Empfehlungstermine **18.11.** (A2), **20.11.** (A1), **24.11.** (A3, A7) sind verstrichen. Aus dem Repository lässt sich **keine** Erledigung belegen: es gibt weiterhin **keine** LICENSE-Datei, **keine** versendete Anfrage (Entwürfe in [external-inquiry-drafts.md](external-inquiry-drafts.md) sind als „NICHT VERSENDET“ markiert), **kein** Held-out-PDF und **keine** dokumentierte Q2-Klärung. Alle vier Punkte bleiben **offen** und sind vor der Einreichungsfrist **30.11.2026, 15:00 MEZ** zu entscheiden; A4 (26.11.), A5 (27.11.) und A6 (28.11.) liegen noch in der Zukunft. Diese Eintragung ist eine Statusfeststellung, keine Bewertung des Owners und keine Entscheidung.
 
 ## Entscheidungs-Block B — optional/strategisch
 
