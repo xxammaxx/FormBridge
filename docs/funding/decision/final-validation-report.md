@@ -2,13 +2,13 @@
 
 **Status:** **FINAL (Dokumentation)**
 
-> **Nachtrag 25.11.2026 — End-to-End-Sign-Off (V1–V8) auf `main` @ `fbeffda`.** Dieser Bericht dokumentiert die Validierungsrunde 3 vom 13.11.2026. Der aktuelle Stand wurde am 25.11.2026 vollständig neu geprüft (frischer Checkout, alle Prüfungen erneut ausgeführt):
+> **Nachtrag 25.11.2026 — End-to-End-Sign-Off (V1–V8) auf `main` (Code-Stand `fbeffda`, Zertifikat `b7aff8b`).** Dieser Bericht dokumentiert die Validierungsrunde 3 vom 13.11.2026. Der aktuelle Stand wurde am 25.11.2026 vollständig neu geprüft (frischer Checkout, alle Prüfungen erneut ausgeführt):
 
 ### End-to-End-Sign-Off (V1–V8), 25.11.2026
 
-Vollständige Nachprüfung des aktuellen `main`-Tips `fbeffda` gegen einen frischen Checkout; alle Prüfungen wurden in diesem Lauf erneut ausgeführt.
+Vollständige Nachprüfung des `main`-Code-Stands `fbeffda` gegen einen frischen Checkout; alle Prüfungen wurden in diesem Lauf erneut ausgeführt.
 
-| Prüfung | Ergebnis (Stand Tip `fbeffda`) |
+| Prüfung | Ergebnis (zertifizierter Code-Stand `fbeffda`; Zertifikat `b7aff8b`) |
 |---|---|
 | **V1** Research-Integrität | **PASS** — Prior-Art-Audit 13 Projekte (10 Repo-Zeilen + 3 dokumentbasierte), Referenzfall 30 Felder, 170 betroffene XSD-Elemente / 169 D2-Meldungen + 1 NCName, Normalisierung D1/D2/D3/D4 = 1/170/21/4 |
 | **V2** Technische Aussagen | **PASS** — FIM-Index 640 Knoten = 185 Gruppen + 88 Felder (+367 builtin); RF1/LoRA durchgängig `PROPOSED / NOT_RUN`, Inferenz lokal, kein abgeschlossener Lauf behauptet |
@@ -19,7 +19,7 @@ Vollständige Nachprüfung des aktuellen `main`-Tips `fbeffda` gegen einen frisc
 | **V7** Förder- und Antragsintegrität | **PASS** — `test_financial_model.py` **109/109**; alle 13 wortlimiterten Abschnitte innerhalb der Limits; **0 `OWNER_*`-Platzhalter** in §1–§18; M1–M9 ohne offene Owner-Rückfrage; `LIC`/`HOURS`/`SECOND_STAGE`/`A1`/`A4`/`A5`/`B2` final bzw. entschieden |
 | **V8** Öffentliche Website | **PASS** — `node --check` demo.js/film.js OK, `demo.test.cjs` 2/2; 7 `blob/main/...`-Dokumentationslinks der Website lösen alle auf existierende Dateien auf; letzter Actions-Lauf „Verify project website“ = success |
 
-**Sign-Off:** Alle acht Prüfungen bestehen auf dem aktuellen `main`-Tip `fbeffda` gegen einen frischen Checkout (keine Arbeitskopie-Artefakte). **C15 (Validierungs-Baseline-Lag) ist damit `RESOLVED`:** die früheren A/B-Reviews galten ihren Baseline-SHAs; dieser Lauf zertifiziert den aktuellen Stand mechanisch und reproduzierbar.
+**Sign-Off:** Alle acht Prüfungen bestehen auf dem `main`-Code-Stand `fbeffda` gegen einen frischen Checkout (keine Arbeitskopie-Artefakte). **C15 (Validierungs-Baseline-Lag) ist damit `RESOLVED`:** die früheren A/B-Reviews galten ihren Baseline-SHAs; dieser Lauf zertifiziert den aktuellen Stand mechanisch und reproduzierbar.
  — Bewerbungstext und Feldvorlage sind vollständig vorbereitet; §11–§15 und §18 sind seit 25.11.2026 final, **M1–M9 sind beantwortet** (M6: 0 € De-minimis-Vorbelastung; M7: Kapazität bestätigt; M8: Liquidität ≥ 2.500 € geplant). Offen sind nur die **Portal-Stammdaten A2–A5a**, der authentifizierte Live-Abgleich und die **Stichtagsfrage** aus Q2 (Registrierung vor Förderbeginn geplant).
 
 ## 0. Nachführung auf den Branch-Tip (25.11.2026)
