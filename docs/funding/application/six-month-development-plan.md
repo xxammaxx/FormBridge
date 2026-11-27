@@ -126,7 +126,9 @@ Die Confidence-Schwelle wird im Messbericht vor der Auswertung festgelegt und ni
 
 ### 5.4 Held-out-Dokument
 
-- Ziel: eine Wohngeld-Variante eines anderen Bundeslandes, vollständig annotiert (≥ 50 Felder) oder mindestens qualitativ geprüft.
+> **Entschieden 27.11.2026 (OD5): synthetischer Fallback.** Ein rechtegeklärtes zweites Landes-PDF liegt nicht vor; es wird **nicht** beschafft. Die Generalisierbarkeit wird im Abschlussbericht ausdrücklich als **schwach belegt** ausgewiesen; die P/R-Muss-Werte gelten nur für das Referenzdokument. Keine Behauptung von Held-out-P/R.
+
+- Ziel (nicht erreicht): eine Wohngeld-Variante eines anderen Bundeslandes, vollständig annotiert (≥ 50 Felder) oder mindestens qualitativ geprüft.
 - Ist das Dokument nicht rechtzeitig/rechtssicher beschaffbar, wird eine synthetische Variante plus ein öffentlich verfügbares Alternativdokument genutzt; die Generalisierbarkeit wird dann ausdrücklich als schwach belegt bezeichnet.
 - P/R-Muss gilt für das Referenzdokument; für das Held-out gilt P/R nur, wenn es vollständig annotiert ist. Sonst gilt eine qualitative Grenzprüfung (keine stillen kritischen Fehler, UNKNOWN korrekt).
 

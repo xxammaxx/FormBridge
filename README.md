@@ -27,7 +27,7 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Evidenz (Datensatz, Feldindex, Instanz) | [`docs/research/evidence/`](docs/research/evidence/) |
 | Prototype-Fund-Machbarkeit | [`docs/funding/prototype-fund-feasibility.md`](docs/funding/prototype-fund-feasibility.md) |
 | Aktueller Bewerbungsentwurf (DE) | [`application-final-de.md`](docs/funding/application/application-final-de.md) · [historischer Entwurf](docs/funding/application-draft-de.md) |
-| [Lokaler LLM-/LoRA-Nachweis und Homelab-Vorarbeit](docs/funding/application/local-llm-evidence-strategy-2026-11-20.md) | Geplante parallele Forschung, keine Ausführung |
+| Lokaler LLM-/LoRA-Nachweis und Homelab-Vorarbeit | [`local-llm-evidence-strategy-2026-11-20.md`](docs/funding/application/local-llm-evidence-strategy-2026-11-20.md) — geplante parallele Forschung, keine Ausführung |
 | Optionaler RF1-LoRA-Vergleich (19.11.2026) | [`lora-research-extension-2026-11-19.md`](docs/funding/application/lora-research-extension-2026-11-19.md) — geplant, nicht ausgeführt |
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
 | Entscheidungsbericht (CONDITIONAL_GO F3) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
@@ -43,7 +43,7 @@ FormBridge ist **unabhängig** von [Feldexa 2.0](https://github.com/xxammaxx/Fel
 
 ## Lizenz
 
-**Apache-2.0** — Der Repository-Inhalt ist unter der Apache License 2.0 lizenziert (SPDX: `Apache-2.0`); der vollständige Lizenztext liegt als [`LICENSE`](LICENSE) im Wurzelverzeichnis. Die Entscheidung des Eigentümers, die Begründung gegen MIT/MPL-2.0 und die Abgrenzung zu Drittmaterial stehen in [`docs/governance/license-decision.md`](docs/governance/license-decision.md). Copyright 2026 xxammaxx. Amtliche Quellen (PDF, XSD) und daraus abgeleitete FIM-Metadaten sind **nicht** Teil der Lizenzierung (siehe Drittmaterial unten).
+**Apache-2.0** — Der Repository-Inhalt ist unter der Apache License 2.0 lizenziert (SPDX: `Apache-2.0`); der vollständige Lizenztext liegt als [`LICENSE`](LICENSE) im Wurzelverzeichnis. Die Entscheidung des Eigentümers, die Begründung gegen MIT/MPL-2.0 und die Abgrenzung zu Drittmaterial stehen in [`docs/governance/license-decision.md`](docs/governance/license-decision.md). Copyright 2026 xxammaxx (Urheberrechtshinweis dieses Repositories, dokumentiert hier und in `docs/governance/license-decision.md`; der `LICENSE`-Text bleibt bewusst der unveränderte kanonische Apache-2.0-Text, dessen Anhang-Vorlage nicht ausgefüllt ist — Entscheidung 27.11.2026). Amtliche Quellen (PDF, XSD) und daraus abgeleitete FIM-Metadaten sind **nicht** Teil der Lizenzierung (siehe Drittmaterial unten).
 
 ## Drittmaterial
 
