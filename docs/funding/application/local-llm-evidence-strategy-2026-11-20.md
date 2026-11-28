@@ -1,5 +1,8 @@
 # RF1: lokale Forschungssteuerung, LoRA-Adapter und Offline-Nachweis
 
+> **Aktualisierung 28.11.2026 – maßgebliche RF1-Neuausrichtung:** PX-51 Delta, inkrementelle Kontextverdichtung und kontrollierte Inferenz ohne Gewichtsänderungen ersetzen den bisherigen optionalen Adapterarm. A = Regeln (Pflicht), B = unverändertes lokales Modell, C = dasselbe Modell mit Protokollsteuerung. LoRA/Weightspace bleibt separate historische Vergleichsforschung, kein Pflichtdeliverable. Der Eigentümer berichtet praktischen Skill-Einsatz; Protokolltreue, Tokenbedarf, Peak RAM/VRAM, Laufzeit und FIM-Zuordnungsqualität sind auf identischen ungesehenen Fällen zu messen. Protokollversion, Validator, Kontextbudget und Modell-/Tokenizerhash dokumentieren. UNKNOWN, menschliche Freigabe, Netzsperre, unabhängiger Verifier, bestehende Stunden und Fördergrenzen bleiben verbindlich. RF1 bleibt NOT_RUN. Die nachfolgenden historischen Adapterdetails sind archivierte Planung, keine aktuellen Anforderungen.
+
+
 Stand 20.11.2026 · **PLAN / NOT_RUN** · Fördergegenstand ausschließlich FormBridge, keine Vorimplementierung, kein zusätzlicher Förderbetrag.
 
 ## Leitfrage und Abgrenzung
