@@ -1,6 +1,6 @@
 # FormBridge — Bewerbung Prototype Fund 2027, Jahrgang 03, Förderlinie Innovation
 
-**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 25.11.2026 · **§11/§14/E2–E4/S1/Q19 final:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
+**Status:** Einreichungsentwurf zur Owner-Freigabe · **Datum:** 20.11.2026 (RF1-Offline-Nachweis) · **Wortzählung verifiziert:** 28.11.2026 (RF1-Neuausrichtung) · **§11/§14/E2–E4/S1/Q19 final:** 25.11.2026 · **Frist:** 30.11.2026, 15:00 Uhr MEZ
 **Förderzeitraum:** 01.06.2027–30.11.2027 · **Antragstellerin:** Einzelperson · **Projekt:** FormBridge
 **Lizenz:** Apache-2.0 (Eigentümerentscheidung 25.11.2026; `LICENSE` im Repository, SPDX `Apache-2.0`). Die FOSS-Zusage in §18 bleibt unabhängig davon erforderlich.
 **Wichtig:** Dieser Text enthält Platzhalter für persönliche Angaben. Er ist **kein** eingereichter Antrag. Es wurden keine persönlichen Daten erfunden. Exakte Portal-Zeichenlimits sind `PORTAL_UNVERIFIED`.
@@ -19,9 +19,9 @@ FormBridge ist ein geplantes freies, lokal laufendes Softwaremodul, das statisch
 
 ## 2. Projektbeschreibung (max. 100 Wörter)
 
-Im Förderzeitraum entsteht eine eigenständige Open-Source-Bibliothek mit CLI. Sie erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs und ordnet sie nachvollziehbar versionierten FIM-Datenfeldern zu. Unsicherheit bleibt UNKNOWN; Menschen prüfen kritische Vorschläge. Parallel zur regelbasierten Modulentwicklung untersuche ich optional, ob direkt berechnete LoRA-Adapter kleine lokale Sprachmodelle ohne erneutes Gradiententraining gezielt verbessern. Die Inferenz bleibt offline; ein unabhängiger Verifier prüft die Provenienz. Entstehende eigene Analyse-, Adapter- und Testwerkzeuge werden nach Rechteklärung offen veröffentlicht, auch bei negativen Ergebnissen. Referenz ist Wohngeld S00000159. Scans, Produkt-UI und Behördenanschluss bleiben ausgeschlossen; der Kern ist ohne KI nutzbar.
+Im Förderzeitraum entsteht eine eigenständige Open-Source-Bibliothek mit CLI. Sie erkennt Formularfelder in nicht interaktiven, born-digitalen Behörden-PDFs und ordnet sie nachvollziehbar versionierten FIM-Datenfeldern zu. Unsicherheit bleibt UNKNOWN; Menschen prüfen kritische Vorschläge. Parallel zur regelbasierten Modulentwicklung untersuche ich optional, ob PX-51 Delta, inkrementelle Kontextverdichtung und kontrollierte Inferenz kleine lokale Sprachmodelle ohne Gewichtsänderungen effizient spezialisieren. Die Inferenz bleibt offline; ein unabhängiger Verifier prüft die Provenienz. Entstehende eigene Analyse-, Protokoll- und Testwerkzeuge werden nach Rechteklärung offen veröffentlicht, auch bei negativen Ergebnissen. Referenz ist Wohngeld S00000159. Scans, Produkt-UI und Behördenanschluss bleiben ausgeschlossen; der Kern ist ohne KI nutzbar.
 
-**Wörter:** 90 / 100 · **Status:** FINAL (Entwurf)
+**Wörter:** 93 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -37,17 +37,17 @@ Besonders relevant ist diese Lücke für Anträge mit sensiblen Daten, etwa Sozi
 
 ## 4. Technische Umsetzung (max. 175 Wörter)
 
-FormBridge entsteht als Python-Bibliothek mit CLI und API. PDF-Textlage und Layout werden extrahiert; ein versionierter Regelkatalog ordnet Label und Abschnittskontext gültigen FIM-Zielpfaden zu. Kandidaten werden gegen Schema und Codelisten geprüft, mit Koordinaten und Confidence. Unsicherheit bleibt UNKNOWN; kritische Zuordnungen erfordern menschliche Freigabe. Der obligatorische Regelkern funktioniert offline ohne KI. Parallel zur weiteren Entwicklung untersuche ich optional kleine lokale Modelle mit direkt berechneten, reversiblen LoRA-Adaptern ohne Gradiententraining. Verglichen werden Regeln, unverändertes Modell und Adapter bei einer Mehrdeutigkeitsklasse. Bei fehlendem Mehrwert auf ungesehenen Fällen bleibt KI deaktiviert. Inferenz und Adapterversuche bleiben lokal. Ein Controller koordiniert Modell und deterministische Skripte. Externe KI liefert höchstens maschinenlesbare Hypothesen zu synthetischen Tests; reale Dokumente, OCR-Texte und daraus abgeleitete Daten bleiben lokal. Ich verantworte und prüfe die Entwicklung. Netzgesperrte Abnahme, Modell-/Adapterhashes und reproduzierbare Messberichte belegen den Betriebsweg. Das FB-1-Manifest und ein unabhängiger Verifier dokumentieren PDF-, Schema-, Review- und gegebenenfalls Adapterprovenienz. Ausgabevalidierung erfolgt gegen dokumentiert normalisiertes XSD bzw. FITKO-JSON-Schema. Eigene entstandene Forschungswerkzeuge und Ergebnisse werden nach Rechteklärung offen veröffentlicht. Keine Feldexa-Abhängigkeit, keine Behördenübermittlung.
+FormBridge entsteht als Python-Bibliothek mit CLI und API. PDF-Textlage und Layout werden extrahiert; ein versionierter Regelkatalog ordnet Label und Abschnittskontext gültigen FIM-Zielpfaden zu. Kandidaten werden gegen Schema und Codelisten geprüft, mit Koordinaten und Confidence. Unsicherheit bleibt UNKNOWN; kritische Zuordnungen erfordern menschliche Freigabe. Der obligatorische Regelkern funktioniert offline ohne KI. Parallel zur weiteren Entwicklung untersuche ich optional kleine lokale Modelle mit PX-51 Delta, Kontextverdichtung und kontrollierter Inferenz ohne Gewichtsänderungen. Verglichen werden Regeln, unverändertes Modell und protokollgesteuertes Modell bei einer Mehrdeutigkeitsklasse. Bei fehlendem Mehrwert auf ungesehenen Fällen bleibt KI deaktiviert. Inferenz und Protokollversuche bleiben lokal. Ein Controller koordiniert Modell und deterministische Skripte. Externe KI liefert höchstens maschinenlesbare Hypothesen zu synthetischen Tests; reale Dokumente, OCR-Texte und daraus abgeleitete Daten bleiben lokal. Ich verantworte und prüfe die Entwicklung. Netzgesperrte Abnahme, Modell-/Protokollhashes und reproduzierbare Messberichte belegen den Betriebsweg. Das FB-1-Manifest und ein unabhängiger Verifier dokumentieren PDF-, Schema-, Review- und gegebenenfalls Protokollprovenienz. Ausgabevalidierung erfolgt gegen dokumentiert normalisiertes XSD bzw. FITKO-JSON-Schema. Eigene entstandene Forschungswerkzeuge und Ergebnisse werden nach Rechteklärung offen veröffentlicht. Keine Feldexa-Abhängigkeit, keine Behördenübermittlung.
 
-**Wörter:** 165 / 175 · **Status:** FINAL (Entwurf)
+**Wörter:** 168 / 175 · **Status:** FINAL (Entwurf)
 
 ---
 
 ## 5. Aktueller Stand und geplante Neuerungen (max. 100 Wörter)
 
-Die Idee ist erforscht, das Modul ist nicht implementiert. Vorarbeit: Prior-Art-Audit über 13 Projekte, Fürther Wohngeldantrag/FIM S00000159 v1.4, 30-Feld-Referenzdatensatz, Spezifikation und 170 XSD-Parser-Meldungen (1 NCName + 169 D2). Separate Homelab-Erfahrungen mit lokaler Dokumentenverarbeitung und Qwen illustrieren vorhandene praktische Infrastruktur; sie sind kein FormBridge- oder Adapter-Nutzennachweis. Der LoRA-Versuch ist konzipiert, nicht ausgeführt. Vorarbeiten werden nicht abgerechnet. Im Förderzeitraum entstehen eigenständiger Regelkern, Review, Verifier, Testkorpus und optional der lokale Adaptervergleich mit nachnutzbaren Forschungswerkzeugen. Feldexa bleibt unabhängiges, nicht gefördertes Produkt.
+Die Idee ist erforscht, das Modul ist nicht implementiert. Vorarbeit: Prior-Art-Audit über 13 Projekte, Fürther Wohngeldantrag/FIM S00000159 v1.4, 30-Feld-Referenzdatensatz, Spezifikation und 170 XSD-Parser-Meldungen (1 NCName + 169 D2). Separate Homelab-Erfahrungen mit lokaler Dokumentenverarbeitung und Qwen illustrieren vorhandene praktische Infrastruktur; sie sind kein FormBridge-Nutzennachweis. PX-51 Delta wird nach eigener Erfahrung bereits in Entwicklungsagenten eingesetzt; kontrollierte RF1-Messungen stehen aus. Separate Gewichtsraumversuche dienen als Vergleichsbasis. Vorarbeiten werden nicht abgerechnet. Im Förderzeitraum entstehen eigenständiger Regelkern, Review, Verifier, Testkorpus und optional der lokale Protokollvergleich mit nachnutzbaren Forschungswerkzeugen. Feldexa bleibt unabhängiges, nicht gefördertes Produkt.
 
-**Wörter:** 77 / 100 · **Status:** FINAL (Entwurf)
+**Wörter:** 88 / 100 · **Status:** FINAL (Entwurf)
 
 ---
 
@@ -61,7 +61,7 @@ https://github.com/xxammaxx/FormBridge
 
 ## 7. Innovation (max. 100 Wörter)
 
-FormBridge kombiniert statisches Behörden-PDF, versionierte FIM-IDs, UNKNOWN, menschliche Freigabe, überprüfbare Provenienz und unabhängigen Verifier. Formularagent migriert Definitionen ohne PDF-Eingang, KIWO extrahiert cloudbasiert ohne FIM-Koordinaten, CommonForms erkennt Felder ohne FIM-Semantik; FITKO liefert Schema-Infrastruktur. Im begrenzten 13-Projekte-Audit fehlte die Gesamtkette; geeignete Bausteine werden nach Rechteprüfung nachgenutzt. Parallel untersucht RF1, ob direkt berechnete LoRA-Adapter auf verfügbarer älterer Hardware lokal einen messbaren Zuordnungsvorteil bringen. Offene, reproduzierbare Adapter- und Prüfwerkzeuge könnten anderen Digitalisierungsprojekten ressourcenschonende KI-Anpassungen ermöglichen. Auch negative Befunde werden dokumentiert. Keine behauptete Erstmaligkeit, kein bereits belegter Modell- oder Ressourcenvorteil.
+FormBridge kombiniert statisches Behörden-PDF, versionierte FIM-IDs, UNKNOWN, menschliche Freigabe, überprüfbare Provenienz und unabhängigen Verifier. Formularagent migriert Definitionen ohne PDF-Eingang, KIWO extrahiert cloudbasiert ohne FIM-Koordinaten, CommonForms erkennt Felder ohne FIM-Semantik; FITKO liefert Schema-Infrastruktur. Im begrenzten 13-Projekte-Audit fehlte die Gesamtkette; geeignete Bausteine werden nach Rechteprüfung nachgenutzt. Parallel untersucht RF1, ob PX-51 Delta und kontrollierte Inferenz auf älterer Hardware Zuordnungsqualität und Ressourcenbedarf verbessern. Offene, reproduzierbare Protokoll- und Prüfwerkzeuge könnten anderen Digitalisierungsprojekten ressourcenschonende KI-Anpassungen ermöglichen. Auch negative Befunde werden dokumentiert. Keine behauptete Erstmaligkeit, kein bereits belegter Modell- oder Ressourcenvorteil.
 
 **Wörter:** 85 / 100 · **Status:** FINAL (Entwurf)
 
@@ -69,7 +69,7 @@ FormBridge kombiniert statisches Behörden-PDF, versionierte FIM-IDs, UNKNOWN, m
 
 ## 8. Zielgruppe und Zugang (max. 100 Wörter)
 
-Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*innen in Kommunen und IT-Dienstleistern sowie die FIM-/OZG-Community. Sie erhalten eine Bibliothek und CLI, die sie in eigene Produkte integrieren können. Erreicht werden sie über das öffentliche GitHub-Repository, technische Dokumentation, Vorträge und Austausch im FIM-/FITKO-Umfeld sowie über bestehende Open-Source-Netzwerke. Open Source, damit andere Infrastruktur und gegebenenfalls entstehende Adapterwerkzeuge prüfen, erweitern und unabhängig betreiben können. Sekundär profitieren Bürger*innen und Verwaltungsmitarbeitende über Anwendungen, die FormBridge einsetzen. Eine direkte Endnutzer-UI ist nicht Teil des Vorhabens; Feldexa 2.0 ist die vorgesehene erste Anwendung, aber nicht integriert und nicht Teil des Förderumfangs.
+Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*innen in Kommunen und IT-Dienstleistern sowie die FIM-/OZG-Community. Sie erhalten eine Bibliothek und CLI, die sie in eigene Produkte integrieren können. Erreicht werden sie über das öffentliche GitHub-Repository, technische Dokumentation, Vorträge und Austausch im FIM-/FITKO-Umfeld sowie über bestehende Open-Source-Netzwerke. Open Source, damit andere Infrastruktur und gegebenenfalls entstehende Protokollwerkzeuge prüfen, erweitern und unabhängig betreiben können. Sekundär profitieren Bürger*innen und Verwaltungsmitarbeitende über Anwendungen, die FormBridge einsetzen. Eine direkte Endnutzer-UI ist nicht Teil des Vorhabens; Feldexa 2.0 ist die vorgesehene erste Anwendung, aber nicht integriert und nicht Teil des Förderumfangs.
 
 **Wörter:** 93 / 100 · **Status:** FINAL
 
@@ -80,7 +80,7 @@ Primär: Entwickler*innen und Maintainer freier Verwaltungssoftware, Entwickler*
 1. Monat: CLI-Grundgerüst, PDF-Textlage, Schema-Hash, FB-1, Normalisierung und CI.
 2. Monat: Regelkatalog, Feldkandidaten, Confidence/UNKNOWN, erste End-to-End-Tests.
 3. Monat: Goldstandard, Review-CLI, Codelisten, Baseline; externe Testpersonen gewinnen.
-4. Monat: Abschnitts-Disambiguierung, Hard Gates, Held-out-PDF; parallel optionaler lokaler LoRA-Vergleich samt Offline-Nachweis bei gesichertem Kernfortschritt.
+4. Monat: Abschnitts-Disambiguierung, Hard Gates, Held-out-PDF; parallel optionaler lokaler PX-51-Delta-Vergleich samt Offline-Nachweis bei gesichertem Kernfortschritt.
 5. Monat: Emit/Validate/Verify, 10 Negativtests, ≥ 3 FIM-XSDs (5 Stretch).
 6. Monat: Review-Zeit, Dokumentation, FOSS-Release, Abschlussbericht einschließlich nachnutzbarer RF1-Artefakte und negativer Ergebnisse, sofern der Versuch stattfindet.
 Jeder Meilenstein endet mit reproduzierbarem Testlauf und öffentlichem Bericht.
@@ -101,9 +101,9 @@ Jeder Meilenstein endet mit reproduzierbarem Testlauf und öffentlichem Bericht.
 
 Als Alleinentwickler konzipiere, implementiere und teste ich:
 1. Feldexa 2.0 (https://github.com/xxammaxx/Feldexa_2.0): Android-App für digitale Formulare mit PDF-Import, lokaler Verarbeitung und verschlüsselter Ablage (Überführung meiner privaten Vorarbeit Umliva in modulare Open-Source-Bausteine).
-2. FormBridge (https://github.com/xxammaxx/FormBridge): Öffentliche Vorarbeiten zur Zuordnung statischer Wohngeld-PDFs zu FIM-Datenfeldern inkl. XSD-Defektanalyse, Referenzdatensatz und Prior-Art-Audit. Parallel bereite ich dort einen lokalen Vergleichsversuch vor, der prüft, ob ein kleines Offline-Sprachmodell mit direkt berechnetem, reversiblem LoRA-Adapter mehrdeutige Formularfelder besser zuordnen kann als regelbasierte Zuordnung oder das unveränderte Modell.
+2. FormBridge (https://github.com/xxammaxx/FormBridge): Öffentliche Vorarbeiten zur Zuordnung statischer Wohngeld-PDFs zu FIM-Datenfeldern inkl. XSD-Defektanalyse, Referenzdatensatz und Prior-Art-Audit. Parallel bereite ich dort einen lokalen Vergleichsversuch vor, der prüft, ob ein kleines Offline-Sprachmodell mit PX-51 Delta und kontrollierter Inferenz mehrdeutige Formularfelder besser zuordnen kann als regelbasierte Zuordnung oder das unveränderte Modell.
 
-**Wörter:** 77 / 100 · **Status:** FINAL
+**Wörter:** 78 / 100 · **Status:** FINAL
 
 ---
 
@@ -133,9 +133,9 @@ Entfällt (Q4 = Nein). Vorlagetext, nur relevant, falls sich diese Angabe änder
 
 ## 14. Motivation / Wild Card (max. 100 Wörter)
 
-Ich bin technischer Autodidakt mit praktischer Erfahrung in CNC-Zerspanung, Elektronik, Reparatur und Automatisierung. Aus dieser Praxis bringe ich den Anspruch an klare Toleranzen und reproduzierbare Prüfungen in meine Softwareprojekte ein: Ich formuliere Anforderungen, entwickle Datenmodelle, Skripte und automatisierte Tests und prüfe Ergebnisse systematisch anhand konkreter Anwendungsfälle. Diese experimentelle Arbeitsweise bringe ich auch in die parallele Offline-LoRA-Forschung ein. Aus eigener Erfahrung kenne ich die Hürden beim Ausfüllen von Behördenformularen. Mit FormBridge möchte ich die Verarbeitung solcher Formulare nachvollziehbar machen und sensible Daten lokal halten.
+Ich bin technischer Autodidakt mit praktischer Erfahrung in CNC-Zerspanung, Elektronik, Reparatur und Automatisierung. Aus dieser Praxis bringe ich den Anspruch an klare Toleranzen und reproduzierbare Prüfungen in meine Softwareprojekte ein: Ich formuliere Anforderungen, entwickle Datenmodelle, Skripte und automatisierte Tests und prüfe Ergebnisse systematisch anhand konkreter Anwendungsfälle. Diese experimentelle Arbeitsweise bringe ich auch in die parallele Offline-Forschung zu PX-51 Delta ein. Aus eigener Erfahrung kenne ich die Hürden beim Ausfüllen von Behördenformularen. Mit FormBridge möchte ich die Verarbeitung solcher Formulare nachvollziehbar machen und sensible Daten lokal halten.
 
-**Wörter:** 83 / 100 · **Status:** FINAL
+**Wörter:** 86 / 100 · **Status:** FINAL
 
 ---
 
@@ -184,4 +184,4 @@ Nach dem Prototyp braucht FormBridge vor allem Adoption und Pflege, nicht mehr F
 - Keine Behauptung, eine Behörde akzeptiere die Ausgabe.
 - Keine weltweite Erstmaligkeitsbehauptung.
 - Keine erfundenen persönlichen Angaben, Zeichenlimits oder Portalfragen.
-- Der optionale LoRA-Vergleich ist im [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md) begrenzt; keine zusätzliche Förderforderung, keine Zusage von Modellverbesserung oder Ressourceneinsparung; RF1 ausschließlich lokal. Die Nachnutzung eigener Forschungsartefakte ist ein zusätzlicher Gemeinwohlbeitrag, kein zweiter Fördergegenstand.
+- Der optionale PX-51-Delta-Vergleich ist im [RF1-Ergänzungsblatt](lora-research-extension-2026-11-19.md) begrenzt; keine zusätzliche Förderforderung, keine Zusage von Modellverbesserung oder Ressourceneinsparung; RF1 ausschließlich lokal. Die Nachnutzung eigener Forschungsartefakte ist ein zusätzlicher Gemeinwohlbeitrag, kein zweiter Fördergegenstand.
