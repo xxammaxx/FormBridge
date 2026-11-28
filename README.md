@@ -27,8 +27,8 @@ Viele amtliche Vordrucke existieren nur als statisches PDF. FIM standardisiert d
 | Evidenz (Datensatz, Feldindex, Instanz) | [`docs/research/evidence/`](docs/research/evidence/) |
 | Prototype-Fund-Machbarkeit | [`docs/funding/prototype-fund-feasibility.md`](docs/funding/prototype-fund-feasibility.md) |
 | Aktueller Bewerbungsentwurf (DE) | [`application-final-de.md`](docs/funding/application/application-final-de.md) · [historischer Entwurf](docs/funding/application-draft-de.md) |
-| Lokaler LLM-/LoRA-Nachweis und Homelab-Vorarbeit | [`local-llm-evidence-strategy-2026-11-20.md`](docs/funding/application/local-llm-evidence-strategy-2026-11-20.md) — geplante parallele Forschung, keine Ausführung |
-| Optionaler RF1-LoRA-Vergleich (19.11.2026) | [`lora-research-extension-2026-11-19.md`](docs/funding/application/lora-research-extension-2026-11-19.md) — geplant, nicht ausgeführt |
+| Lokaler LLM-/PX-51-Nachweis und Homelab-Vorarbeit | [`local-llm-evidence-strategy-2026-11-20.md`](docs/funding/application/local-llm-evidence-strategy-2026-11-20.md) — geplante parallele Forschung, keine Ausführung |
+| Optionaler RF1-PX-51-Delta-Vergleich (19.11.2026) | [`lora-research-extension-2026-11-19.md`](docs/funding/application/lora-research-extension-2026-11-19.md) — geplant, nicht ausgeführt |
 | Projektgrenze (Bestand vs. Fördergegenstand) | [`docs/funding/project-boundary.md`](docs/funding/project-boundary.md) |
 | Entscheidungsbericht (CONDITIONAL_GO F3) | [`docs/funding/decision-report.md`](docs/funding/decision-report.md) |
 | Lizenz-Empfehlung | [`docs/governance/license-decision.md`](docs/governance/license-decision.md) |
