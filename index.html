@@ -241,7 +241,7 @@
     </details>
 
     <h3 id="lokale-ki">Lokale KI – Forschung ohne Weitergabe sensibler Daten</h3>
-    <p>FormBridge soll bereits mit festen Regeln funktionieren, auch ohne Sprachmodell. Parallel wollen wir untersuchen, ob kleine lokale Modelle durch gezielte Änderungen ihre Zuordnungsvorschläge verbessern. Ein LoRA-Adapter ergänzt ein bestehendes Modell um eine kleine, austauschbare Gewichtsänderung. Er soll in diesem Versuch direkt berechnet werden, ohne das sonst übliche Training mit Gradienten.</p>
+    <p>FormBridge soll bereits mit festen Regeln funktionieren, auch ohne Sprachmodell. Parallel wollen wir untersuchen, ob kleine lokale Modelle durch PX-51 Delta, inkrementelle Kontextverdichtung und kontrollierte Inferenz ihre Zuordnungsvorschläge verbessern können, ohne Modellgewichte zu ändern. Der bisherige Gewichtsraum-Forschungsstrang bleibt als separate Vergleichsbasis erhalten.</p>
     <div class="columns">
       <div>
         <h4>Extern · Forschungsvorschläge</h4>
@@ -249,12 +249,12 @@
       </div>
       <div>
         <h4>Lokal · Durchführung und Prüfung</h4>
-        <p>Ein kleines Sprachmodell koordiniert mit einer lokalen Steuerung und überprüfbaren Skripten die freigegebenen Adapteränderungen und Tests. Die Dokumentverarbeitung, Berechnung und Auswertung bleiben lokal. Vorschläge werden vor der Ausführung geprüft; der Mensch verantwortet die Entscheidungen.</p>
+        <p>Ein kleines Sprachmodell koordiniert mit einer lokalen Steuerung und überprüfbaren Skripten die freigegebenen Protokollschritte und Tests. Die Dokumentverarbeitung, Berechnung und Auswertung bleiben lokal. Vorschläge werden vor der Ausführung geprüft; der Mensch verantwortet die Entscheidungen.</p>
       </div>
     </div>
-    <p>Erste dokumentierte, separate Homelab-Vorarbeiten geben einen Hinweis darauf, dass Qwen auf einer vorhandenen GTX 1070 mit 8&nbsp;GB Grafikspeicher lokal läuft und strukturierte Ausgaben erzeugen kann. Bei der Dokumentklassifikation traten auch Fehler auf. Das ist ein Machbarkeitshinweis für die Infrastruktur, noch kein Nachweis eines Nutzens der LoRA-Adapter.</p>
-    <p>Für den geplanten Versuch vergleichen wir feste Regeln, das unveränderte lokale Modell und einen berechneten Adapter an einer konkreten Mehrdeutigkeit. Tests mit gesperrtem Netzzugang und dokumentierten Modell- und Adapter-Fingerabdrücken sollen die lokale Ausführung nachvollziehbar machen. Nur ein messbar besserer Ansatz ohne kritische Verschlechterungen kommt für die optionale Nutzung infrage.</p>
-    <p>Entstehende eigene Analyse-, Adapter- und Prüfwerkzeuge sollen nach Rechteklärung als Open Source veröffentlicht werden, einschließlich negativer Ergebnisse. So könnten auch andere Digitalisierungsprojekte von nachvollziehbaren, ressourcenschonenden Verfahren profitieren.</p>
+    <p>Erste dokumentierte, separate Homelab-Vorarbeiten geben einen Hinweis darauf, dass Qwen auf einer vorhandenen GTX 1070 mit 8&nbsp;GB Grafikspeicher lokal läuft und strukturierte Ausgaben erzeugen kann. Bei der Dokumentklassifikation traten auch Fehler auf. Das ist ein Machbarkeitshinweis für die Infrastruktur, noch kein Nachweis eines Nutzens der Protokollsteuerung. Der praktische Einsatz von PX-51 Delta in Entwicklungsagenten wird vom Projektinhaber berichtet; kontrollierte Messungen für FormBridge stehen aus.</p>
+    <p>Für den geplanten Versuch vergleichen wir feste Regeln, das unveränderte lokale Modell und dasselbe Modell mit PX-51 Delta an einer konkreten Mehrdeutigkeit. Tests mit gesperrtem Netzzugang und dokumentierten Modell- und Protokoll-Fingerabdrücken sollen die lokale Ausführung nachvollziehbar machen. Nur ein messbar besserer Ansatz ohne kritische Verschlechterungen kommt für die optionale Nutzung infrage.</p>
+    <p>Entstehende eigene Analyse-, Protokoll- und Prüfwerkzeuge sollen nach Rechteklärung als Open Source veröffentlicht werden, einschließlich negativer Ergebnisse. So könnten auch andere Digitalisierungsprojekte von nachvollziehbaren, ressourcenschonenden Verfahren profitieren.</p>
   </div>
 </section>
 
@@ -268,7 +268,7 @@
     <p>Beantragt wird die Entwicklung von FormBridge als eigenständigem Open-Source-Modul. Es soll Angaben aus PDF-Formularen nachvollziehbar den passenden Verwaltungsdaten zuordnen. Feldexa 2.0 ist als erste Anwendung vorgesehen. Über die öffentliche Schnittstelle sollen auch andere Anwendungen das Modul nutzen können. Die Entwicklung der Feldexa-App wird außerhalb dieses Förderantrags getragen. <a href="https://github.com/xxammaxx/FormBridge/blob/main/docs/architecture/ADR-001.md">Architekturentscheidung zu FormBridge</a></p>
     <dl class="rows">
       <dt>Monate 1–2 · Grundlagen</dt><dd>Felder und Abschnittsüberschriften erfassen, Regeln für erste Vorschläge erstellen und festhalten, aus welcher Quelle jede Zuordnung stammt.</dd>
-      <dt>Monate 3–4 · Gegenprobe</dt><dd>Mindestens 120 Felder von Hand kennzeichnen (Forschungsziel: 200). Die Zuordnung zusätzlich an mindestens einem zurückgehaltenen Wohngeldformular prüfen. Bei gesichertem Kernfortschritt ist ein begrenzter lokaler LoRA-Vergleich vorgesehen.</dd>
+      <dt>Monate 3–4 · Gegenprobe</dt><dd>Mindestens 120 Felder von Hand kennzeichnen (Forschungsziel: 200). Die Zuordnung zusätzlich an mindestens einem zurückgehaltenen Wohngeldformular prüfen. Bei gesichertem Kernfortschritt ist ein begrenzter lokaler PX-51-Delta-Vergleich vorgesehen.</dd>
       <dt>Monate 5–6 · Unabhängig prüfen</dt><dd>Ausgabedaten und Herkunftsnachweise prüfen, Änderungen gezielt nachstellen und den Korrekturaufwand mit externen Testpersonen messen. Regelkatalog, Testformat, Software und Ergebnisse sollen öffentlich werden.</dd>
     </dl>
     <details><summary>Woran der Prototyp gemessen werden soll (950-Stunden-Plan und Forschungsziele)</summary>
